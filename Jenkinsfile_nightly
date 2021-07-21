@@ -35,15 +35,20 @@ withNightlyPipeline(type, product, component) {
     loadVaultSecrets(secrets)
     enableMutationTest();
     enableSlackNotifications('#pcq-builds')
+    enableFortifyScan()
     enableSecurityScan()
     enableCrossBrowserTest()
     enableFullFunctionalTest(20)
+
+    after('fortify-scan') {
+        steps.archiveArtifacts allowEmptyArchive: true, artifacts: '**/Fortify Scan/**/*'
+    }
+
     after('crossBrowserTest') {
         steps.archiveArtifacts allowEmptyArchive: true, artifacts: 'functional-output/**/*'
     }
 
     after('fullFunctionalTest') {
-
         publishHTML target: [
                 allowMissing : true,
                 alwaysLinkToLastBuild: true,
