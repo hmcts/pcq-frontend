@@ -32,6 +32,7 @@
     "test:crossbrowser_chrome": "NODE_PATH=. codeceptjs run-multiple chrome -c test/end-to-end/saucelabs.conf.js --plugins retryFailedStep --steps --reporter mocha-multi",
     "test:crossbrowser_safari": "NODE_PATH=. codeceptjs run-multiple safari -c test/end-to-end/saucelabs.conf.js --plugins retryFailedStep --steps --reporter mocha-multi",
     "test:fullfunctional": "NODE_PATH=. node ./node_modules/codeceptjs/bin/codecept.js run -c ./test/end-to-end/ --steps --reporter mocha-multi",
+    "fortifyScan": "./test/java/gradlew -p test/java fortifyScan",
     "sonar-scan": "sonar-scanner -Dsonar.projectName='pcq-frontend' -Dsonar.sources=app -Dsonar.cpd.exclusions=app/steps/** -Dsonar.exclusions=app/journeys/**,app/assets/**,app/healthcheck.js -Dsonar.language=js -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info",
     "git-info": "node-git-info-json",
     "//": "The below scripts are just stubs, don't use them in production",
