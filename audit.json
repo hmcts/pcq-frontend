@@ -308,6 +308,7 @@
   "10031_User Controllable HTML Element Attribute (Potential XSS)_https://pcq.aat.platform.hmcts.net/cookies?lng=cy_GET": "ignore",
   "10019_Content-Type Header Missing_https://pcq.aat.platform.hmcts.net/offline_GET": "ignore",
   "10019_Content-Type Header Missing_https://pcq.aat.platform.hmcts.net_GET": "ignore",
+  "10019_Content-Type Header Missing_https://pcq.aat.platform.hmcts.net/robots.txt_GET": "ignore",
   "10109_Modern Web Application_https://pcq.aat.platform.hmcts.net/offline_GET": "ignore",
   "10109_Modern Web Application_https://pcq.aat.platform.hmcts.net/offline?lng=en_GET": "ignore",
   "10109_Modern Web Application_https://pcq.aat.platform.hmcts.net/offline?lng=cy_GET":  "ignore",
