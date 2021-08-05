@@ -128,6 +128,7 @@
     "underscore": "^1.13.0-2",
     "hosted-git-info": "^4.0.2",
     "trim-newlines": "^3.0.1",
-    "normalize-url": "^4.5.1"
+    "normalize-url": "^4.5.1",
+    "node-gyp": "^8.1.0"
   }
 }
