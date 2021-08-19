@@ -68,6 +68,10 @@ describe('Invoker', () => {
                         text: 'DIVORCE'
                     },
                     {
+                        value: 'NEW_DIVORCE_LAW',
+                        text: 'NEW_DIVORCE_LAW'
+                    },
+                    {
                         value: 'SSCS',
                         text: 'SSCS'
                     }
@@ -84,6 +88,12 @@ describe('Invoker', () => {
                         'PETITIONER',
                         'RESPONDENT',
                         'CORESPONDENT'
+                    ],
+                    'NEW_DIVORCE_LAW': [
+                        'APPLICANT',
+                        'RESPONDENT',
+                        'APPLICANT1',
+                        'APPLICANT2'
                     ],
                     'SSCS': [
                         'APPELLANT'
