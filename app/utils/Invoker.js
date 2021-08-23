@@ -27,7 +27,7 @@ class Invoker {
 
     serviceEndpoint(form) {
         const qs = Object.keys(form)
-            .filter(key => form[key] !== '' && key !== '_csrf')
+            .filter(key => form[key] !== '' && key !== '_csrf' && key !== 'authTag')
             .map(key => key + '=' + encodeURIComponent(form[key]))
             .join('&');
 

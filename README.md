@@ -90,13 +90,28 @@ When the PCQ service endpoint is called it will verify the serviceId that has be
 The redirect link is used in case there is a problem with PCQ and the users session has been lost. In this case PCQ will not know the return url, that was passed in the invocation parameters, and will instead show a list of registered services and their associated redirect link. 
 
 There are 3 pages which require specific wording regarding your service. 
-Please see the [README](app/resources/en/translation/variable/README.md) for adding your services text.
+Please see the [Variable text README](app/resources/en/translation/variable/README.md) for adding your services text.
 
 If there are questions you want to be excluded from the questionnaire because they are irrelevant (such as asking someone if they are married when coming from the divorce app), 
-please see the [README](app/journeys/README.md) for creating a service specific journey.
+please see the [Journey README](app/journeys/README.md) for creating a service specific journey.
 
+### Token key
 
+A new token key will need to be added in order to generate the token that authenticates the invoking service with PCQ.
+This key is shared with the invoking service.
+
+The following changes will need to be made to setup the token key in PCQ:
+
+1. [Default config](config/default.yaml): Add a new property for the service in the `tokenKeys` object. 
+Set the value to `SERVICE_TOKEN_KEY`, this is the default key we use and will inform the logs if AKS is not being used.
+2. [Environment config](config/custom-environment-variables.yaml): Add a new property in the `tokenKeys` object with the same name as created in the default.yaml file.
+Set the value with the convention `<SERVICE_NAME>_TOKEN_KEY`.
+3. [Chart values](charts/pcq-frontend/values.yaml): Add a new entry to `keyVaults.pcq.secrets` with the following convention `<service_name>-token-key`
+4. [Secrets setup](app/setupSecrets.js): Add a new line under Token Keys comment with the following content: `setSecret('secrets.pcq.<Azure KeyVault Key Name>', 'tokenKeys.<Config property name>'); // SERVICE NAME`
+The Azure KeyVault key name was defined in step 3. The Config property name was defined in step 1 and 2.
+
+IMPORTANT: This token key will also need to be added to the invoking service.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details..
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.

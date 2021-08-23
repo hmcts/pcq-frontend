@@ -96,6 +96,7 @@
         e.preventDefault();
 
         const token = document.querySelector('#token');
+        const authTag = document.querySelector('#authTag');
         const formInputs = document.getElementById('invoker-form').getElementsByTagName('input');
 
         const queries = [];
@@ -108,6 +109,7 @@
         fetch(`/invoker/genToken?${queries.join('&')}`).then((res) => {
             res.json().then((json) => {
                 token.value = json.token;
+                authTag.value = json.authTag;
             });
         });
     };

@@ -14,7 +14,7 @@ module.exports = function (pcqId) {
         returnUrl: 'dummy-return-url',
         language: 'en'
     };
-    params.token = generateToken(params);
+    params.token = generateToken(params).token;
 
     // eslint-disable-next-line no-unused-vars
     I.amOnPage(serviceEndpointUrl(params));

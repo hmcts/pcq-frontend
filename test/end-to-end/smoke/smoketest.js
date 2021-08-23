@@ -18,7 +18,7 @@ const params = {
     returnUrl: 'dummy-return-url',
     language: 'en'
 };
-params.token = generateToken(params);
+params.token = generateToken(params).token;
 
 Given('user is on pcq start page', () => {
     I.amOnPage(serviceEndpointUrl(params));
