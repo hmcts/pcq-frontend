@@ -38,6 +38,7 @@ tokenKeys:
   probate: 'SERVICE_TOKEN_KEY'
   cmc: 'SERVICE_TOKEN_KEY'
   divorce: 'SERVICE_TOKEN_KEY'
+  new_divorce_law: 'SERVICE_TOKEN_KEY'
   sscs: 'SERVICE_TOKEN_KEY'
 redis:
   host: 'localhost'

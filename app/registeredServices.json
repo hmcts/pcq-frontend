@@ -33,6 +33,19 @@
     }
   },
   {
+    "serviceId": "NEW_DIVORCE_LAW",
+    "actors": [
+      "APPLICANT",
+      "RESPONDENT",
+      "APPLICANT1",
+      "APPLICANT2"
+    ],
+    "redirectLinks": {
+      "divorce_petitioner": "https://www.apply-divorce.service.gov.uk",
+      "divorce_respondent": "https://www.respond-divorce.service.gov.uk"
+    }
+  },
+  {
     "serviceId": "SSCS",
     "actors": [
       "APPELLANT"
