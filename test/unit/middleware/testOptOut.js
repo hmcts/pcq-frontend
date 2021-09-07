@@ -3,7 +3,6 @@
 const expect = require('chai').expect;
 const nock = require('nock');
 const sinon = require('sinon');
-const rewire = require('rewire');
 const optOut = require('app/middleware/optOut');
 
 describe('optOut', () => {
@@ -120,14 +119,12 @@ describe('optOut', () => {
             //req.session.returnUrl = 'http://test.com';
 
             optOut(req, res).then(() => {
-                    expect(req.session.form).to.have.property('optOut');
-                    expect(req.session.form.pcqAnswers).to.deep.equal(req.session.form.pcqAnswers);
-                    expect(req.session.ctx).to.deep.equal(req.session.ctx);
-                    nock.cleanAll();
-                    done();
-                }
-            )
-
+                expect(req.session.form).to.have.property('optOut');
+                expect(req.session.form.pcqAnswers).to.deep.equal(req.session.form.pcqAnswers);
+                expect(req.session.ctx).to.deep.equal(req.session.ctx);
+                nock.cleanAll();
+                done();
+            });
         });
 
         it('should redirect to the given return URL when backend is down', (done) => {
@@ -140,12 +137,11 @@ describe('optOut', () => {
             req.session.returnUrl = 'http://test.com';
 
             optOut(req, res).then(() => {
-                    expect(res.redirect.calledOnce).to.equal(true);
-                    expect(res.redirect.args[0][0]).to.equal('http://test.com');
-                    nock.cleanAll();
-                    done();
-                }
-            )
+                expect(res.redirect.calledOnce).to.equal(true);
+                expect(res.redirect.args[0][0]).to.equal('http://test.com');
+                nock.cleanAll();
+                done();
+            });
         });
     });
 });
