@@ -3,7 +3,8 @@ nodejs:
     REDIS_HOST: ${SERVICE_NAME}-redis-master
     REDIS_PORT: 6379
     REDIS_USE_TLS: false
-  image: ${IMAGE_NAME}
+    #PCQ_BACKEND_URL: http://pcq-backend-{{ .Values.global.environment }}.service.core-compute-{{ .Values.global.environment }}.internalimage: ${IMAGE_NAME}
+    PCQ_BACKEND_URL:https://pcq-backend-pr-380.service.core-compute-preview.internal
   ingressHost: ${SERVICE_FQDN}
 
 redis:
