@@ -384,5 +384,10 @@
   "10036_Server Leaks Version Information via \"Server\" HTTP Response Header Field_https://pcq.aat.platform.hmcts.net_GET": "ignore",
   "10036_Server Leaks Version Information via \"Server\" HTTP Response Header Field_https://pcq.aat.platform.hmcts.net/_GET": "ignore",
   "10036_Server Leaks Version Information via \"Server\" HTTP Response Header Field_https://pcq.aat.platform.hmcts.net/robots.txt_GET": "ignore",
-  "10036_Server Leaks Version Information via \"Server\" HTTP Response Header Field_https://pcq.aat.platform.hmcts.net/sitemap.xml_GET": "ignore"
+  "10036_Server Leaks Version Information via \"Server\" HTTP Response Header Field_https://pcq.aat.platform.hmcts.net/sitemap.xml_GET": "ignore",
+  "10010_Cookie No HttpOnly Flag_https://pcq.aat.platform.hmcts.net/offline?lng=cy_GET": "ignore",
+  "10011_Cookie Without Secure Flag_https://pcq.aat.platform.hmcts.net/offline?lng=cy_GET": "ignore",
+  "10054_Cookie without SameSite Attribute_https://pcq.aat.platform.hmcts.net/offline?lng=cy_GET": "ignore",
+  "90033_Loosely Scoped Cookie_https://pcq.aat.platform.hmcts.net/offline?lng=cy_GET": "ignore"
+
 }
