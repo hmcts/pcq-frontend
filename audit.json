@@ -390,5 +390,4 @@
   "10011_Cookie Without Secure Flag_https://pcq.aat.platform.hmcts.net/offline?lng=cy_GET": "ignore",
   "10054_Cookie without SameSite Attribute_https://pcq.aat.platform.hmcts.net/offline?lng=cy_GET": "ignore",
   "90033_Loosely Scoped Cookie_https://pcq.aat.platform.hmcts.net/offline?lng=cy_GET": "ignore"
-
 }
