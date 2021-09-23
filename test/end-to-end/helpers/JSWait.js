@@ -4,7 +4,7 @@ class JSWait extends codecept_helper { // eslint-disable-line camelcase
 
         // Wait for content to load before checking URL
         if (step.name === 'seeCurrentUrlEquals') {
-            helper.waitForElement('#content', 350);
+            helper.waitForElement('#content', 5000);
         }
     }
 }
