@@ -13,7 +13,7 @@ class TestConfigurator {
 
     getUserData(pcqid) {
         request({
-            url: `http://pcq-backend-pr-383.service.core-compute-preview.internal/getAnswer/${pcqid}`,
+            url: `http://pcq-backend-pr-383.service.core-compute-preview.internal/pcq/backend/getAnswer/${pcqid}`,
             method: 'GET',
             headers: {'content-type': 'application/json'},
             // eslint-disable-next-line no-unused-vars
