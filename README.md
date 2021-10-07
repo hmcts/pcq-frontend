@@ -84,13 +84,18 @@ For test coverage:
 When your service has got approval and is ready to integrate with PCQ 
 you will firstly need to add your service to the [registered service JSON file](app/registeredServices.json).
 Add a new object to the array with your service id, list of actors, and redirect links. 
-The redirect link property name must match the property name of the [shutter page text](app/resources/en/translation/shutterpage.json) which will hold the link 
+The redirect link property name must match the property name of the [shutter page text](app/resources/en/translation/shutterpage.json) which will hold the link.
+This property will define the name for the service when the user is on the shutter page in the case where the parameters have been lost. property is also added to the welsh resources.
 
 When the PCQ service endpoint is called it will verify the serviceId that has been passed and is in the list of registered services. If it's not, the user will be shown the 'service down' page. 
 The redirect link is used in case there is a problem with PCQ and the users session has been lost. In this case PCQ will not know the return url, that was passed in the invocation parameters, and will instead show a list of registered services and their associated redirect link. 
 
 There are 3 pages which require specific wording regarding your service. 
 Please see the [Variable text README](app/resources/en/translation/variable/README.md) for adding your services text.
+
+The phone number for the service's accessibility helpline needs to be added to the [resource file](app/resources/en/translation/static/accessibility.json). 
+Ensure this is also added to the welsh translations file. Once added, the [template](app/steps/ui/static/accessibility/template.html) will need to be updated to add the new line in. 
+Add `content["list2-<service-name>"]` to the 2 unordered lists.
 
 If there are questions you want to be excluded from the questionnaire because they are irrelevant (such as asking someone if they are married when coming from the divorce app), 
 please see the [Journey README](app/journeys/README.md) for creating a service specific journey.
