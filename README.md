@@ -81,9 +81,7 @@ For test coverage:
 
 ## Registering a service with PCQ
 
-When your service has got approval and is ready to integrate with PCQ 
-you will firstly need to add your service to the [registered service JSON file](app/registeredServices.json).
-Add a new object to the array with your service id, list of actors, and redirect links. 
+When your service has got approval and is ready to integrate with PCQ you will firstly need to add your service to the [registered service JSON file](app/registeredServices.json). Add a new object to the array with your service id, list of actors, and redirect links. 
 The redirect link property name must match the property name of the [shutter page text](app/resources/en/translation/shutterpage.json) which will hold the link 
 
 When the PCQ service endpoint is called it will verify the serviceId that has been passed and is in the list of registered services. If it's not, the user will be shown the 'service down' page. 
