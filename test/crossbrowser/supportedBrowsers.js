@@ -4,7 +4,11 @@ const supportedBrowsers = {
             browserName: 'internet explorer',
             name: 'PCQ_WIN10_IE11_11',
             platform: 'Windows 10',
-            version: '11.285'
+            version: '11.285',
+            'sauce:options': {
+                extendedDebugging: true,
+                capturePerformance: true
+            }
         }
     },
     microsoftEdge: {
@@ -12,7 +16,11 @@ const supportedBrowsers = {
             browserName: 'MicrosoftEdge',
             name: 'PCQ_WIN10_EDGE_18',
             platform: 'Windows 10',
-            version: '18.17763'
+            version: '18.17763',
+            'sauce:options': {
+                extendedDebugging: true,
+                capturePerformance: true
+            }
         }
     },
     chrome: {
@@ -20,13 +28,22 @@ const supportedBrowsers = {
             browserName: 'chrome',
             name: 'PCQ_WIN10_CHROME_LATEST',
             platform: 'Windows 10',
-            version: 'latest'
+            version: 'latest',
+            'sauce:options': {
+                extendedDebugging: true,
+                capturePerformance: true
+            }
         },
         chrome_mac_latest: {
             browserName: 'chrome',
             name: 'PCQ_MAC_CHROME_LATEST',
             platform: 'macOS 10.13',
-            version: 'latest'
+            version: 'latest',
+            'sauce:options': {
+                name: 'PCQ: MAC_CHROME_LATEST',
+                extendedDebugging: true,
+                capturePerformance: true
+            }
         }
     },
     firefox: {
@@ -34,13 +51,21 @@ const supportedBrowsers = {
             browserName: 'firefox',
             name: 'PCQ_WIN10_FIREFOX_LATEST',
             platform: 'Windows 10',
-            version: 'latest'
+            version: 'latest',
+            'sauce:options': {
+                extendedDebugging: true,
+                capturePerformance: true
+            }
         },
         firefox_mac_latest: {
             browserName: 'firefox',
             name: 'PCQ_MAC_FIREFOX_LATEST',
             platform: 'macOS 10.13',
-            version: 'latest'
+            version: 'latest',
+            'sauce:options': {
+                extendedDebugging: true,
+                capturePerformance: true
+            }
         },
     },
     safari: {
@@ -50,7 +75,11 @@ const supportedBrowsers = {
             platform: 'macOS 10.13',
             OS: 'Mac 10.13',
             Browser: 'safari',
-            version: '11.1'
+            version: '11.1',
+            'sauce:options': {
+                extendedDebugging: true,
+                capturePerformance: true
+            }
         }
     }
 };
