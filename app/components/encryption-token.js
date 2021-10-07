@@ -14,6 +14,7 @@ const generateToken = (params, algorithm) => {
     const tokenKey = config.tokenKeys[(serviceId || '').toLowerCase()];
 
     let encrypted = '';
+    let authTag = '';
 
     if (!params.serviceId) {
         logError('serviceId is missing from the incoming parameters.');
@@ -26,9 +27,13 @@ const generateToken = (params, algorithm) => {
         const cipher = crypto.createCipheriv(algorithm, key, iv);
         encrypted = cipher.update(strParams, 'utf8', 'hex');
         encrypted += cipher.final('hex');
+
+        if (algorithm === algorithmAesGcm256) {
+            authTag = cipher.getAuthTag().toString('base64');
+        }
     }
 
-    return encrypted;
+    return {token: encrypted, authTag};
 
 };
 
@@ -37,13 +42,13 @@ const verifyToken = (reqQuery) => {
 
     let verified = false;
     if (token) {
-        const myToken = generateToken(params);
+        const myToken = generateToken(params).token;
         verified = myToken === token;
 
         if (verified) {
             logger.info('Token successfully verified.');
         } else {
-            const myTokenLegacy = generateToken(params, algorithmAesCbc256);
+            const myTokenLegacy = generateToken(params, algorithmAesCbc256).token;
             verified = myTokenLegacy === token;
 
             if (verified) {

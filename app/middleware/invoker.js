@@ -19,7 +19,7 @@ const formFiller = (req, res) => {
 };
 
 const genToken = (req, res) => {
-    res.json({token: invoker.generateToken(req.query)});
+    res.json(invoker.generateToken(req.query));
 };
 
 const postForm = (req, res) => {
