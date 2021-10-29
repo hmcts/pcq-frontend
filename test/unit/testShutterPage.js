@@ -61,7 +61,8 @@ describe('ShutterPage', () => {
                     'cmc_defendant': 'https://www.moneyclaims.service.gov.uk/dashboard',
                     'divorce_petitioner': 'https://www.apply-divorce.service.gov.uk',
                     'divorce_respondent': 'https://www.respond-divorce.service.gov.uk',
-                    'sscs': 'https://www.gov.uk/appeal-benefit-decision/submit-appeal'
+                    'sscs': 'https://www.gov.uk/appeal-benefit-decision/submit-appeal',
+                    'iac': 'https://www.appeal-immigration-asylum-decision.service.gov.uk'
                 }
             );
             done();

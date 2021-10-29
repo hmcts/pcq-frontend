@@ -74,6 +74,10 @@ describe('Invoker', () => {
                     {
                         value: 'SSCS',
                         text: 'SSCS'
+                    },
+                    {
+                        value: 'IAC',
+                        text: 'IAC'
                     }
                 ],
                 actorList: {
@@ -96,6 +100,9 @@ describe('Invoker', () => {
                         'APPLICANT2'
                     ],
                     'SSCS': [
+                        'APPELLANT'
+                    ],
+                    'IAC': [
                         'APPELLANT'
                     ]
                 }
