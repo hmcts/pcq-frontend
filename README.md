@@ -117,6 +117,14 @@ The Azure KeyVault key name was defined in step 3. The Config property name was 
 
 IMPORTANT: This token key will also need to be added to the invoking service.
 
+## Test
+
+The following change need to made so that test will pass.
+
+1. Add the new service in (test/unit/util/testInvoker.js.)
+2. Add the new service redirect link in (test/unit/util/testShutterPage.js)
+3. Add the new service rediret link property name in (test/component/testShutterPage.js)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
