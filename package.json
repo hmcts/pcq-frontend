@@ -82,7 +82,7 @@
     "superagent": "^5.1.0",
     "traverse": "^0.6.6",
     "uuid": "^3.3.2",
-    "validator": "^11.1.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "@stryker-mutator/api": "^3.3.1",
