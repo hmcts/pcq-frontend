@@ -114,6 +114,14 @@ Set the value with the convention `<SERVICE_NAME>_TOKEN_KEY`.
 3. [Chart values](charts/pcq-frontend/values.yaml): Add a new entry to `keyVaults.pcq.secrets` with the following convention `<service_name>-token-key`
 4. [Secrets setup](app/setupSecrets.js): Add a new line under Token Keys comment with the following content: `setSecret('secrets.pcq.<Azure KeyVault Key Name>', 'tokenKeys.<Config property name>'); // SERVICE NAME`
 The Azure KeyVault key name was defined in step 3. The Config property name was defined in step 1 and 2.
+5. Generate a random token value using this site https://www.grc.com/passwords.htm and use the 63 random alpha-numeric characters (a-z, A-Z, 0-9) option
+and add this key in vault with below command for pcq-aat,pcq-perftest and pcq-demo. For pcq-prod crate a separate token value and add.
+
+az keyvault secret set --vault-name pcq-aat --name <service_name>-token-key --value <generated Value>
+az keyvault secret set --vault-name pcq-perftest --name <service_name>-token-key --value <generated Value>
+az keyvault secret set --vault-name pcq-demo --name <service_name>-token-key --value <generated Value>
+
+az keyvault secret set --vault-name pcq-prod --name <service_name>-token-key --value <another generated Value>
 
 IMPORTANT: This token key will also need to be added to the invoking service.
 
@@ -124,6 +132,7 @@ The following change need to made so that test will pass.
 1. Add the new service in (test/unit/util/testInvoker.js.)
 2. Add the new service redirect link in (test/unit/util/testShutterPage.js)
 3. Add the new service rediret link property name in (test/component/testShutterPage.js)
+
 
 ## License
 
