@@ -43,7 +43,6 @@ if (sessionStore.constructor.name === 'RedisStore') {
         return healthy ? healthcheck.up() : healthcheck.down();
     });
     checks.redis = redisHealthcheck;
-    readinessChecks.redis = redisHealthcheck;
 }
 
 const setup = app => {
