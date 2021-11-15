@@ -4,9 +4,6 @@ const healthcheck = require('@hmcts/nodejs-healthcheck');
 const logger = require('app/components/logger')('Init');
 const os = require('os');
 const config = require('config');
-const getStore = require('app/components/utils').getStore;
-const session = require('express-session');
-
 const osHostname = os.hostname();
 const gitProperties = require('git.properties');
 const gitCommitId = gitProperties.git.commit.id;
