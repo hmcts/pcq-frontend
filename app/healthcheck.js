@@ -6,7 +6,6 @@ const os = require('os');
 const config = require('config');
 const getStore = require('app/components/utils').getStore;
 const session = require('express-session');
-const sessionStore = getStore(config.redis, session);
 
 const osHostname = os.hostname();
 const gitProperties = require('git.properties');
