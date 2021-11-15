@@ -34,17 +34,6 @@ if (config.services.pcqBackend.enabled === 'true') {
     });
 }
 
-if (sessionStore.constructor.name === 'RedisStore') {
-    const redisHealthcheck = healthcheck.raw(() => {
-        const healthy = sessionStore.client.status === 'ready';
-        if (!healthy) {
-            logger.info('redis is DOWN');
-        }
-        return healthy ? healthcheck.up() : healthcheck.down();
-    });
-    checks.redis = redisHealthcheck;
-}
-
 const setup = app => {
     healthcheck.addTo(app, {
         checks: checks,
