@@ -1,0 +1,18 @@
+{
+    "services":
+    {   
+        "iacFormData" :
+        {
+            "serviceId": "iac",
+            "actor" : "appellant" 
+        },
+        "iacNextStep": 
+        {
+            "ApplicantLanguage": {
+                "name": "ApplicantLanguage"
+            }
+        },
+        "iacCurrentStep" : "StartPage"
+    }
+}
+    
