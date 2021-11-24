@@ -1,18 +1,341 @@
 {
     "services":
     {   
-        "iacFormData" :
-        {
-            "serviceId": "iac",
-            "actor" : "appellant" 
-        },
-        "iacNextStep": 
-        {
-            "ApplicantLanguage": {
-                "name": "ApplicantLanguage"
+        "iac" :
+            {
+                "nextStep": 
+                {
+                    "ApplicantLanguage": {
+                        "name": "ApplicantLanguage"
+                    }
+                },
+                "nextStepName" :
+                {
+                    "name": "ApplicantLanguage"  
+                },
+                "skipStepName" :
+                {
+                    "name": "ApplicantDateOfBirth"  
+                },
+                "currentStep" : "StartPage",
+                "datas" :
+                {
+                    "appellant":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "iac",
+                            "actor" : "appellant" 
+                        },
+                        "startPageTextEn" : "Your answers will not affect your appeal.",
+                        "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich apêl.",
+                        "endPageTextEn" : "The next steps are to check your appeal details.",
+                        "endPageTextCy" : "Y cam nesaf yw gwirio manylion eich apêl.",
+                        "shutterPageTextEn" : "We have saved your answers and will direct you back to your appeal application now.",
+                        "shutterPageTextCy" : "Rydym wedi cadw eich atebion, ac fe’ch cyfeirir yn ôl at eich cais apêl yn awr"
+                    }
+                }
+            },
+        "probate" :
+            {
+                "nextStep": 
+                {
+                    "ApplicantDateOfBirth": {
+                        "name": "ApplicantDateOfBirth"
+                    }
+                },
+                "nextStepName" :
+                {
+                    "name": "ApplicantDateOfBirth" 
+                },
+                "currentStep" : "StartPage",
+                "skipStepName" :{},
+                "datas" :
+                {
+                    "applicant":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "probate",
+                            "actor" : "applicant" 
+                        },
+                        "startPageTextEn" : "Your answers will not affect your application.",
+                        "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais.",
+                        "endPageTextEn" : "The next steps are to check your application details.",
+                        "endPageTextCy" : "Y cam nesaf yw gwirio manylion eich cais.",
+                        "shutterPageTextEn" : "We have saved your answers and will direct you back to your application now.",
+                        "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl at eich cais yn awr."
+                    }
+                }
+            
+            },
+        "sscs" :
+            {
+                "nextStep": 
+                {
+                    "ApplicantLanguage": {
+                        "name": "ApplicantLanguage"
+                    }
+                },
+                "nextStepName" :
+                {
+                    "name": "ApplicantLanguage"  
+                },
+                "currentStep" : "StartPage",
+                "skipStepName" :
+                {
+                    "name": "ApplicantDateOfBirth"  
+                },
+                "datas" :
+                {
+                    "appellant":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "sscs",
+                            "actor" : "appellant" 
+                        },
+                        "startPageTextEn" : "Your answers will not affect your appeal.",
+                        "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich apêl.",
+                        "endPageTextEn" : "The next steps are to check your appeal details.",
+                        "endPageTextCy" : "Y cam nesaf yw gwirio manylion eich apêl.",
+                        "shutterPageTextEn" : "We have saved your answers and will direct you back to your appeal now.",
+                        "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl at eich apêl yn awr."
+                    },
+                    "appointee":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "sscs",
+                            "actor" : "appointee" 
+                        },
+                        "startPageTextEn" : "Your answers will not affect your appeal.",
+                        "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich apêl.",
+                        "endPageTextEn" : "The next steps are to check your appeal details.",
+                        "endPageTextCy" : "Y cam nesaf yw gwirio manylion eich apêl.",
+                        "shutterPageTextEn" : "We have saved your answers and will direct you back to your appeal now.",
+                        "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl at eich apêl yn awr."
+                    }
+                }
+            
+            },
+        "divorce" :
+            {
+                "nextStep": 
+                {
+                    "ApplicantDateOfBirth": {
+                        "name": "ApplicantDateOfBirth"
+                    }
+                },
+                "nextStepName" :
+                {
+                    "name": "ApplicantDateOfBirth" 
+                },
+                "currentStep" : "StartPage",
+                "skipStepName" :{},
+                "datas" :
+                {
+                    "petitioner":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "divorce",
+                            "actor" : "petitioner" 
+                        },
+                        "startPageTextEn" : "Your answers will not affect your application.",
+                        "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais.",
+                        "endPageTextEn" : "The next steps are to check your application details.",
+                        "endPageTextCy" : "Y cam nesaf yw gwirio manylion eich cais.",
+                        "shutterPageTextEn" : "We have saved your answers and will direct you back to your application now.",
+                        "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl at eich cais yn awr."
+                    },
+                    "respondent":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "divorce",
+                            "actor" : "respondent" 
+                        },
+                        "startPageTextEn" : "Your answers will not affect your response.",
+                        "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich ymateb.",
+                        "endPageTextEn" : "The next steps are to check your response details.",
+                        "endPageTextCy" : "Y cam nesaf yw gwirio manylion eich ymateb.",
+                        "shutterPageTextEn" : "We have saved your answers and will direct you back to your response now.",
+                        "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio'n ôl at eich ymateb yn awr."
+                    },
+                    "corespondent":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "divorce",
+                            "actor" : "respondent" 
+                        },
+                        "startPageTextEn" : "Your answers will not affect your response.",
+                        "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich ymateb.",
+                        "endPageTextEn" : "The next steps are to check your response details.",
+                        "endPageTextCy" : "Y cam nesaf yw gwirio manylion eich ymateb.",
+                        "shutterPageTextEn" : "We have saved your answers and will direct you back to your response now.",
+                        "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio'n ôl at eich ymateb yn awr."
+                    }
+                }
+            
+            },
+        "new_divorce_law" :
+            {
+                "nextStep": 
+                {
+                    "ApplicantDateOfBirth": {
+                        "name": "ApplicantDateOfBirth"
+                    }
+                },
+                "nextStepName" :
+                {
+                    "name": "ApplicantDateOfBirth" 
+                },
+                "currentStep" : "StartPage",
+                "skipStepName" :{},
+                "datas" :
+                {
+                    "applicant":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "new_divorce_law",
+                            "actor" : "applicant" 
+                        },
+                        "startPageTextEn" : "Your answers will not affect your divorce application.",
+                        "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais am ysgariad.",
+                        "endPageTextEn" : "The next steps are to check your divorce application details.",
+                        "endPageTextCy" : "Byddwn yn gwirio’r manylion ar eich cais am ysgariad yn y camau nesaf.",
+                        "shutterPageTextEn" : "We have saved your answers and will direct you back to your divorce application now.",
+                        "shutterPageTextCy" : "Rydym wedi cadw eich atebion a byddwn yn eich cyfeirio yn ôl at eich cais am ysgariad yn awr."
+                    },
+                    "respondent":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "new_divorce_law",
+                            "actor" : "respondent" 
+                        },
+                        "startPageTextEn" : "Your answers will not affect your divorce application.",
+                        "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais am ysgariad.",
+                        "endPageTextEn" : "The next steps are to check your divorce application details.",
+                        "endPageTextCy" : "Byddwn yn gwirio’r manylion ar eich cais am ysgariad yn y camau nesaf.",
+                        "shutterPageTextEn" : "We have saved your answers and will direct you back to your divorce application now.",
+                        "shutterPageTextCy" : "Rydym wedi cadw eich atebion a byddwn yn eich cyfeirio yn ôl at eich cais am ysgariad yn awr."
+                    },
+                    "applicant1":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "new_divorce_law",
+                            "actor" : "applicant1" 
+                        },
+                        "startPageTextEn" : "Your answers will not affect your divorce application.",
+                        "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais am ysgariad.",
+                        "endPageTextEn" : "The next steps are to check your divorce application details.",
+                        "endPageTextCy" : "Byddwn yn gwirio’r manylion ar eich cais am ysgariad yn y camau nesaf.",
+                        "shutterPageTextEn" : "We have saved your answers and will direct you back to your divorce application now.",
+                        "shutterPageTextCy" : "Rydym wedi cadw eich atebion a byddwn yn eich cyfeirio yn ôl at eich cais am ysgariad yn awr."
+                    },
+                    "applicant2":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "new_divorce_law",
+                            "actor" : "applicant2" 
+                        },
+                        "startPageTextEn" : "Your answers will not affect your divorce application.",
+                        "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais am ysgariad.",
+                        "endPageTextEn" : "The next steps are to check your divorce application details.",
+                        "endPageTextCy" : "Byddwn yn gwirio’r manylion ar eich cais am ysgariad yn y camau nesaf.",
+                        "shutterPageTextEn" : "We have saved your answers and will direct you back to your divorce application now.",
+                        "shutterPageTextCy" : "Rydym wedi cadw eich atebion a byddwn yn eich cyfeirio yn ôl at eich cais am ysgariad yn awr."
+                    }
+                }
+            },
+
+        "cmc" :
+            {
+                "nextStep": 
+                {
+                    "ApplicantDateOfBirth": {
+                        "name": "ApplicantDateOfBirth"
+                    }
+                },
+                "nextStepName" :
+                {
+                    "name": "ApplicantDateOfBirth" 
+                },
+                "currentStep" : "StartPage",
+                "skipStepName" :{},
+                "datas" :
+                {
+                    "claimant" :
+                        {
+                           "formData" :
+                            {
+                                "serviceId": "cmc",
+                                "actor" : "claimant" 
+                            },
+                            "startPageTextEn" : "Your answers will not affect your claim.",
+                            "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich hawliad.",
+                            "endPageTextEn" : "The next steps are to check your claim details.",
+                            "endPageTextCy" : "Y cam nesaf yw gwirio manylion eich hawliad.",
+                            "shutterPageTextEn" : "We have saved your answers and will direct you back to your claim now.",
+                            "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl at eich hawliad yn awr."
+                        },
+                    "defendent" :
+                        {
+                            "formData" :
+                            {
+                                "serviceId": "cmc",
+                                "actor" : "defendant" 
+                            },
+                            "startPageTextEn" : "Your answers will not affect your case.",
+                            "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich achos.",
+                            "endPageTextEn" : "The next steps are to check your case details.",
+                            "endPageTextCy" : "Y cam nesaf yw gwirio manylion eich achos.",
+                            "shutterPageTextEn" : "We have saved your answers and will direct you back to your case now.",
+                            "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl i'ch achos yn awr."
+                        }
+                }
+            },
+            
+        "default" :
+            {
+                "nextStep": 
+                {
+                    "ApplicantDateOfBirth": {
+                        "name": "ApplicantDateOfBirth"
+                    }
+                },
+                "nextStepName" :
+                {
+                    "name": "ApplicantDateOfBirth" 
+                },
+                "currentStep" : "StartPage",
+                "skipStepName" :{},
+                "datas" :
+                {
+                    "applicant" :
+                        {
+                        "formData" :
+                        {
+                            "serviceId": "default",
+                            "actor" : "applicant" 
+                        },
+                        "startPageTextEn" : "Your answers will not affect your application.",
+                        "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais.",
+                        "endPageTextEn" : "The next steps are to check your details.",
+                        "endPageTextCy" : "Y cam nesaf yw gwirio manylion eich cais.",
+                        "shutterPageTextEn" : "We have saved your answers and will direct you back to your application now.",
+                        "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl at eich cais yn awr."
+                    }
+                }
+            
             }
-        },
-        "iacCurrentStep" : "StartPage"
+
     }
 }
     

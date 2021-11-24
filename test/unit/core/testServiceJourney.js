@@ -3,83 +3,117 @@
 const expect = require('chai').expect;
 const rewire = require('rewire');
 const JourneyMap = rewire('app/core/JourneyMap');
-const iacJourney = require('app/journeys/iac');
 const initSteps = require('app/core/initSteps');
 const steps = initSteps([`${__dirname}/../../../app/steps/ui`]);
-const formdata = require('test/unit/core/testServiceData.json');
+const serviceData = require('test/unit/core/testServiceData.json');
 const StartPage = steps.StartPage;
 const EndPage = steps.EndPage;
 const ShutterPage = steps.ShutterPage;
+//requiring path and fs modules
+const path = require('path');
+const fs = require('fs');
+//joining path of directory 
+const directoryPath = path.join(`${__dirname}/../../../app`, 'journeys');
 
-describe('ServiceJourneyMap.js', () => {
-    const currentStep = {};
-    describe('stepList()', () => {
-        it('should return the journey step list', (done) => {
-            const journeyMap = new JourneyMap(iacJourney);
-            const stepList = journeyMap.stepList();
-            expect(stepList).to.deep.equal(iacJourney.stepList);
-            done();
-        });
-    });
+//passsing directoryPath and callback function
+fs.readdir(directoryPath, function (err, files) {
+    //handling error
+    if (err) {
+        return console.log('Unable to scan directory: ' + err);
+    } 
+    //listing all files using forEach
+    files.forEach(function (file) {
+        // your tests logic
+        console.log(file); 
+        const filePathFragments = file.split(".");
+        const serviceName = filePathFragments[0];
+        if(filePathFragments[1] == "js"){
+            const currentStep = {};
+            const serviceJourney = require(`app/journeys/${serviceName}`)();
+            const skipStepName = serviceData.services[serviceName].skipStepName;
+            describe('stepList()', () => {
+                it('should return the journey step list without skip list', (done) => {
+                    const journeyMap = new JourneyMap(serviceJourney);
+                    const stepList = journeyMap.stepList();
+                    if(stepList !=null){
+                        expect(stepList).to.not.contain(skipStepName);
+                    }
+                    done();
+                });
+            });
+            
+            describe('nextStep()', () => {
+                let journey;
+                let revert;
+                const nextStep = serviceData.services[serviceName].nextStep;
+                const nextStepName = serviceData.services[serviceName].nextStepName;
+                beforeEach(() => {
+                    revert = JourneyMap.__set__('steps', nextStep);
+                    journey = serviceJourney;
+                });
+        
+                afterEach(() => {
+                    revert();
+                });
+        
+                it('should skip a step and go to next step as mentioned in service', (done) => {
+                    currentStep.name = serviceData.services[serviceName].currentStep;
+                    const ctx = {};
+                    const journeyMap = new JourneyMap(journey);
+                    const nextStep = journeyMap.nextStep(currentStep, ctx);
+                    expect(nextStep).to.deep.equal(nextStepName);
+                    done();
+                });
+            });
 
-    describe('nextStep()', () => {
-        let journey;
-        let revert;
-        const iacNextStep = formdata.services.iacNextStep;
-        beforeEach(() => {
-            revert = JourneyMap.__set__('steps', iacNextStep);
-            journey = iacJourney();
-        });
+            const datas = serviceData.services[serviceName].datas;
+            for(const data in datas){
+            
+                describe('generateStartPageContent()', () => {
+                    const formData = serviceData.services[serviceName].datas[data].formData;
+                    const startPageTextEn = serviceData.services[serviceName].datas[data].startPageTextEn;
+                    const startPageTextCy = serviceData.services[serviceName].datas[data].startPageTextCy;
+                    it('should return variable text for a service', () => {
+                        const content = StartPage.generateContent({}, formData);
+                        expect(content.paragraph2).to.equal(startPageTextEn);
+                    });
+            
+                    it('should return variable text for a service in welsh', () => {
+                        const content = StartPage.generateContent({}, formData, 'cy');
+                        expect(content.paragraph2).to.equal(startPageTextCy);
+                    });
+                });
 
-        afterEach(() => {
-            revert();
-        });
+                describe('generateEndPageContent()', () => {
+                    const formData = serviceData.services[serviceName].datas[data].formData;
+                    const endPageTextEn = serviceData.services[serviceName].datas[data].endPageTextEn;
+                    const endPageTextCy = serviceData.services[serviceName].datas[data].endPageTextCy;
+                    it('should return variable text for a service', () => {
+                        const content = EndPage.generateContent({}, formData);
+                        expect(content.paragraph1).to.equal(endPageTextEn);
+                    });
+            
+                    it('should return variable text for a service in welsh', () => {
+                        const content = EndPage.generateContent({}, formData, 'cy');
+                        expect(content.paragraph1).to.equal(endPageTextCy);
+                    });
+                });
 
-        it('should skip a step and go to next step as mentioned in service', (done) => {
-            currentStep.name = formdata.services.iacCurrentStep;
-            const ctx = {};
-            const journeyMap = new JourneyMap(journey);
-            const nextStep = journeyMap.nextStep(currentStep, ctx);
-            expect(nextStep).to.deep.equal({name: 'ApplicantLanguage'});
-            done();
-        });
-    });
-    describe('generateStartPageContent()', () => {
-        const iacFormData = formdata.services.iacFormData;
-        it('should return variable text for a service', () => {
-            const content = StartPage.generateContent({}, iacFormData);
-            expect(content.paragraph2).to.equal('Your answers will not affect your appeal.');
-        });
-
-        it('should return variable text for a service in welsh', () => {
-            const content = StartPage.generateContent({}, iacFormData, 'cy');
-            expect(content.paragraph2).to.equal('Ni fydd eich atebion yn effeithio ar eich apêl.');
-        });
-    });
-
-    describe('generateEndPageContent()', () => {
-        const iacFormData = formdata.services.iacFormData;
-        it('should return variable text for a service', () => {
-            const content = EndPage.generateContent({}, iacFormData);
-            expect(content.paragraph1).to.equal('The next steps are to check your appeal details.');
-        });
-
-        it('should return variable text for a service in welsh', () => {
-            const content = EndPage.generateContent({}, iacFormData, 'cy');
-            expect(content.paragraph1).to.equal('Y cam nesaf yw gwirio manylion eich apêl.');
-        });
-    });
-
-    describe('generateShutterPageContent()', () => {
-        const iacFormData = formdata.services.iacFormData;
-        it('should return variable text for a service', () => {
-            const content = ShutterPage.generateContent({}, iacFormData);
-            expect(content.paragraph1).to.equal('We have saved your answers and will direct you back to your appeal application now.');
-        });
-
-        it('should return variable text for a service in welsh', () => {
-            const content = ShutterPage.generateContent({}, iacFormData, 'cy');
-            expect(content.paragraph1).to.equal('Rydym wedi cadw eich atebion, ac fe’ch cyfeirir yn ôl at eich cais apêl yn awr');
-        });
-    });
+                describe('generateShutterPageContent()', () => {
+                    const formData = serviceData.services[serviceName].datas[data].formData;
+                    const shutterPageTextEn = serviceData.services[serviceName].datas[data].shutterPageTextEn;
+                    const shutterPageTextCy = serviceData.services[serviceName].datas[data].shutterPageTextCy;
+                    it('should return variable text for a service', () => {
+                        const content = ShutterPage.generateContent({}, formData);
+                        expect(content.paragraph1).to.equal(shutterPageTextEn);
+                    });
+            
+                    it('should return variable text for a service in welsh', () => {
+                        const content = ShutterPage.generateContent({}, formData, 'cy');
+                        expect(content.paragraph1).to.equal(shutterPageTextCy);
+                    });
+                });
+            }
+        }
+    })
 });
