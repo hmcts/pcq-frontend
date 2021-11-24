@@ -12,7 +12,7 @@ const ShutterPage = steps.ShutterPage;
 //requiring path and fs modules
 const path = require('path');
 const fs = require('fs');
-//joining path of directory 
+//joining path of directory
 const directoryPath = path.join(`${__dirname}/../../../app`, 'journeys');
 
 //passsing directoryPath and callback function
@@ -20,14 +20,14 @@ fs.readdir(directoryPath, function (err, files) {
     //handling error
     if (err) {
         return console.log('Unable to scan directory: ' + err);
-    } 
+    }
     //listing all files using forEach
     files.forEach(function (file) {
         // your tests logic
-        console.log(file); 
-        const filePathFragments = file.split(".");
+        console.log(file);
+        const filePathFragments = file.split('.');
         const serviceName = filePathFragments[0];
-        if(filePathFragments[1] == "js"){
+        if (filePathFragments[1] === 'js') {
             const currentStep = {};
             const serviceJourney = require(`app/journeys/${serviceName}`)();
             const skipStepName = serviceData.services[serviceName].skipStepName;
@@ -35,13 +35,12 @@ fs.readdir(directoryPath, function (err, files) {
                 it('should return the journey step list without skip list', (done) => {
                     const journeyMap = new JourneyMap(serviceJourney);
                     const stepList = journeyMap.stepList();
-                    if(stepList !=null){
+                    if (stepList !== null) {
                         expect(stepList).to.not.contain(skipStepName);
                     }
                     done();
                 });
             });
-            
             describe('nextStep()', () => {
                 let journey;
                 let revert;
@@ -51,11 +50,9 @@ fs.readdir(directoryPath, function (err, files) {
                     revert = JourneyMap.__set__('steps', nextStep);
                     journey = serviceJourney;
                 });
-        
                 afterEach(() => {
                     revert();
                 });
-        
                 it('should skip a step and go to next step as mentioned in service', (done) => {
                     currentStep.name = serviceData.services[serviceName].currentStep;
                     const ctx = {};
@@ -67,8 +64,7 @@ fs.readdir(directoryPath, function (err, files) {
             });
 
             const datas = serviceData.services[serviceName].datas;
-            for(const data in datas){
-            
+            for (const data in datas) {
                 describe('generateStartPageContent()', () => {
                     const formData = serviceData.services[serviceName].datas[data].formData;
                     const startPageTextEn = serviceData.services[serviceName].datas[data].startPageTextEn;
@@ -77,7 +73,6 @@ fs.readdir(directoryPath, function (err, files) {
                         const content = StartPage.generateContent({}, formData);
                         expect(content.paragraph2).to.equal(startPageTextEn);
                     });
-            
                     it('should return variable text for a service in welsh', () => {
                         const content = StartPage.generateContent({}, formData, 'cy');
                         expect(content.paragraph2).to.equal(startPageTextCy);
@@ -92,7 +87,6 @@ fs.readdir(directoryPath, function (err, files) {
                         const content = EndPage.generateContent({}, formData);
                         expect(content.paragraph1).to.equal(endPageTextEn);
                     });
-            
                     it('should return variable text for a service in welsh', () => {
                         const content = EndPage.generateContent({}, formData, 'cy');
                         expect(content.paragraph1).to.equal(endPageTextCy);
@@ -107,7 +101,6 @@ fs.readdir(directoryPath, function (err, files) {
                         const content = ShutterPage.generateContent({}, formData);
                         expect(content.paragraph1).to.equal(shutterPageTextEn);
                     });
-            
                     it('should return variable text for a service in welsh', () => {
                         const content = ShutterPage.generateContent({}, formData, 'cy');
                         expect(content.paragraph1).to.equal(shutterPageTextCy);
@@ -115,5 +108,5 @@ fs.readdir(directoryPath, function (err, files) {
                 });
             }
         }
-    })
+    });
 });
