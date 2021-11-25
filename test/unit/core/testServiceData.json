@@ -132,7 +132,7 @@
                     "name": "ApplicantDateOfBirth" 
                 },
                 "currentStep" : "StartPage",
-                "skipStepName" :{},
+                "skipStepName" :{"name": "ApplicantMaritalStatus"},
                 "datas" :
                 {
                     "petitioner":
@@ -193,7 +193,7 @@
                     "name": "ApplicantDateOfBirth" 
                 },
                 "currentStep" : "StartPage",
-                "skipStepName" :{},
+                "skipStepName" :{"name": "ApplicantMaritalStatus"},
                 "datas" :
                 {
                     "applicant":
