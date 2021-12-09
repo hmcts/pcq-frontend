@@ -53,5 +53,14 @@
     "redirectLinks": {
       "sscs": "https://www.gov.uk/appeal-benefit-decision/submit-appeal"
     }
+  },
+  {
+    "serviceId": "IAC",
+    "actors": [
+      "APPELLANT"
+    ],
+    "redirectLinks": {
+      "iac": "https://www.appeal-immigration-asylum-decision.service.gov.uk"
+    }
   }
 ]

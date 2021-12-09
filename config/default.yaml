@@ -40,6 +40,7 @@ tokenKeys:
   divorce: 'SERVICE_TOKEN_KEY'
   new_divorce_law: 'SERVICE_TOKEN_KEY'
   sscs: 'SERVICE_TOKEN_KEY'
+  iac: 'SERVICE_TOKEN_KEY'
 redis:
   host: 'localhost'
   port: 6379
