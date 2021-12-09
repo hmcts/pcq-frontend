@@ -1,0 +1,216 @@
+{
+    "services":
+    {   
+        "iac" :
+            {
+                "datas" :
+                {
+                    "appellant":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "IAC",
+                            "actor" : "APPELLANT" ,
+                            "pcqId" : "07a0444f-5c98-4c7f-9c79-cf81de37ceac",
+                            "ccdCaseId" : "c0608c22-41aa-4f82-a0ee-703b8436b627",
+                            "partyId" : "IAC_APPELLANT@test.gov.uk",
+                            "returnUrl" : "IAC_APPELLANT.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2
+                        }
+                    }
+                }
+            },
+        "probate" :
+            {
+                "datas" :
+                {
+                    "applicant":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "probate",
+                            "actor" : "applicant" ,
+                            "pcqId" : "fa35d79e-684b-4ff1-bde4-089e1ca8b892",
+                            "ccdCaseId" : "847030d5-240c-4a5f-a384-6e2f0236aee9",
+                            "partyId" : "PROBATE_APPLICANT@test.gov.uk",
+                            "returnUrl" : "PROBATE_APPLICANT.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2
+                        }
+                    }
+                }
+            },
+        "sscs" :
+            {
+                "datas" :
+                {
+                    "appellant":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "sscs",
+                            "actor" : "appellant",
+                            "pcqId" : "59940cb8-aec7-424b-bacb-a93e0e3b13b5",
+                            "ccdCaseId" : "377c0fdc-b215-4511-a211-0aecf62d47c4",
+                            "partyId" : "SSCS_APPELLANT@test.gov.uk",
+                            "returnUrl" : "SSCS_APPELLANT.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2
+                        }
+                        
+                    }
+                    
+                }
+            
+            },
+        "divorce" :
+            {
+                "datas" :
+                {
+                    "petitioner":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "divorce",
+                            "actor" : "petitioner" ,
+                            "pcqId" : "93c51b43-acc8-42eb-b60f-1fd75322961b",
+                            "ccdCaseId" : "aee52c09-f4e8-4dbd-b3be-e8101e9fddfd",
+                            "partyId" : "DIVORCE_PETITIONER@test.gov.uk",
+                            "returnUrl" : "DIVORCE_PETITIONER.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2
+                            
+                        }
+                        
+                    },
+                    "respondent":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "divorce",
+                            "actor" : "respondent",
+                            "pcqId" : "376a91c1-3435-49df-b727-f32bd3151728",
+                            "ccdCaseId" : "0c7b8326-76aa-4ee0-a7a9-c93c08c69a2c",
+                            "partyId" : "DIVORCE_RESPONDENT@test.gov.uk",
+                            "returnUrl" : "DIVORCE_RESPONDENT.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2
+                        }
+                    },
+                    "corespondent":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "divorce",
+                            "actor" : "respondent" ,
+                            "pcqId" : "15e7f714-d61d-4d22-a26d-010a7eb68983",
+                            "ccdCaseId" : "501169db-c0e2-4273-83ad-8d48f70f04b9",
+                            "partyId" : "DIVORCE_CORESPONDENT@test.gov.uk",
+                            "returnUrl" : "DIVORCE_CORESPONDENT.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2
+                        }
+                    }
+                }
+            
+            },
+        "new_divorce_law" :
+            {
+                "datas" :
+                {
+                    "applicant":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "new_divorce_law",
+                            "actor" : "applicant" ,
+                            "pcqId" : "4c3c852b-cd9e-48cb-90fe-e26a54025b0d",
+                            "ccdCaseId" : "d1a0e4f8-d8aa-48dc-9ab4-dbde0f19911f",
+                            "partyId" : "NEW_DIVORCE_LAW_APPLICANT@test.gov.uk",
+                            "returnUrl" : "NEW_DIVORCE_LAW_APPLICANT.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2
+                        }
+                       
+                    },
+                    "respondent":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "new_divorce_law",
+                            "actor" : "respondent" ,
+                            "pcqId" : "e6bc630e-7540-4a50-8657-cd7c67fd1803",
+                            "ccdCaseId" : "2ed01b65-d845-4e2c-b9e8-3e5130d83dee",
+                            "partyId" : "NEW_DIVORCE_LAW_RESPONDENT@test.gov.uk",
+                            "returnUrl" : "NEW_DIVORCE_LAW_RESPONDENT.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2
+                        }
+                    },
+                    "applicant1":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "new_divorce_law",
+                            "actor" : "applicant1" ,
+                            "pcqId" : "f7bbaf36-42a9-4d5f-b389-4afba79dbce5",
+                            "ccdCaseId" : "7d643aad-3036-405d-979f-c0581532e5f8",
+                            "partyId" : "NEW_DIVORCE_LAW_APPLICANT1@test.gov.uk",
+                            "returnUrl" : "NEW_DIVORCE_LAW_APPLICANT1.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2
+                        }
+                    },
+                    "applicant2":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "new_divorce_law",
+                            "actor" : "applicant2" ,
+                            "pcqId" : "cf24e2a1-7820-47bd-b941-88c4fb1ec6f8",
+                            "ccdCaseId" : "e32c77a3-1c01-43d8-b344-073e14d0afae",
+                            "partyId" : "NEW_DIVORCE_LAW_APPLICANT2@test.gov.uk",
+                            "returnUrl" : "NEW_DIVORCE_LAW_APPLICANT2.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2
+                        }
+                    }
+                }
+            },
+        "cmc" :
+            {
+            "datas" :
+            {
+                "claimant" :
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "cmc",
+                            "actor" : "claimant" ,
+                            "pcqId" : "d4dcf3dc-e551-4a19-8aec-adf7128a5500",
+                            "ccdCaseId" : "97ed2081-fd17-491f-bd4f-4bb65503b0f4",
+                            "partyId" : "CMC_CLAIMANT@test.gov.uk",
+                            "returnUrl" : "CMC_CLAIMANT.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2
+                        }
+                    },
+                "defendent" :
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "cmc",
+                            "actor" : "defendant",
+                            "pcqId" : "3cdafd3a-46b4-4398-8eb1-8cd892025aa6",
+                            "ccdCaseId" : "3fda1187-d1f4-40af-9b4d-0dcd1bec1d1a",
+                            "partyId" : "CMC_DEFENDANT@test.gov.uk",
+                            "returnUrl" : "CMC_DEFENDANT.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2
+                        }
+                    }
+            }
+        }
+    }
+}
