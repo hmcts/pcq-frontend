@@ -23,6 +23,7 @@ tokenKeys:
   new_divorce_law: NEW_DIVORCE_LAW_TOKEN_KEY
   sscs: SSCS_TOKEN_KEY
   iac: IAC_TOKEN_KEY
+  adoption: ADOPTION_TOKEN_KEY
 redis:
   host: REDIS_HOST
   port: REDIS_PORT

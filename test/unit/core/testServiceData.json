@@ -334,6 +334,39 @@
                     }
                 }
             
+            },
+        "adoption" :
+            {
+                "nextStep": 
+                {
+                    "ApplicantDateOfBirth": {
+                        "name": "ApplicantDateOfBirth"
+                    }
+                },
+                "nextStepName" :
+                {
+                    "name": "ApplicantDateOfBirth" 
+                },
+                "currentStep" : "StartPage",
+                "skipStepName" :{},
+                "datas" :
+                {
+                    "applicant" :
+                        {
+                        "formData" :
+                        {
+                            "serviceId": "adoption",
+                            "actor" : "applicant" 
+                        },
+                        "startPageTextEn" : "Your answers will not be shared with anyone involved in your application.",
+                        "startPageTextCy" : "Your answers will not be shared with anyone involved in your application.(Needed in welsh)",
+                        "endPageTextEn" : "You should now check your application details.",
+                        "endPageTextCy" : "You should now check your application details.(Needed in welsh)",
+                        "shutterPageTextEn" : "Your answers have been saved. We will now direct you back to your application.",
+                        "shutterPageTextCy" : "Your answers have been saved. We will now direct you back to your application.(Needed in welsh)"
+                    }
+                }
+            
             }
 
     }

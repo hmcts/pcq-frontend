@@ -1,0 +1,13 @@
+{
+    "applicant": {
+      "startpage": {
+        "paragraph2": "Your answers will not be shared with anyone involved in your application.(Needed in welsh)"
+      },
+      "endpage": {
+        "paragraph1": "You should now check your application details.(Needed in welsh)"
+      },
+      "shutterpage": {
+        "paragraph1": "Your answers have been saved. We will now direct you back to your application.(Needed in welsh)"
+      }
+    }
+}
