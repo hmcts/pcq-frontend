@@ -358,12 +358,12 @@
                             "serviceId": "adoption",
                             "actor" : "applicant" 
                         },
-                        "startPageTextEn" : "Your answers will not be shared with anyone involved in your application.",
-                        "startPageTextCy" : "Your answers will not be shared with anyone involved in your application.(Needed in welsh)",
-                        "endPageTextEn" : "You should now check your application details.",
-                        "endPageTextCy" : "You should now check your application details.(Needed in welsh)",
-                        "shutterPageTextEn" : "Your answers have been saved. We will now direct you back to your application.",
-                        "shutterPageTextCy" : "Your answers have been saved. We will now direct you back to your application.(Needed in welsh)"
+                        "startPageTextEn" : "Your answers won't affect your application.",
+                        "startPageTextCy" : "Your answers won't affect your application.(Needed in welsh)",
+                        "endPageTextEn" : "The next steps are to check your application details.",
+                        "endPageTextCy" : "The next steps are to check your application details.(Needed in welsh)",
+                        "shutterPageTextEn" : "We have saved your answers and will direct you back to your application now.",
+                        "shutterPageTextCy" : "We have saved your answers and will direct you back to your application now.(Needed in welsh)"
                     }
                 }
             
