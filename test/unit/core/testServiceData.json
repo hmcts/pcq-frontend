@@ -359,11 +359,11 @@
                             "actor" : "applicant" 
                         },
                         "startPageTextEn" : "Your answers won't affect your application.",
-                        "startPageTextCy" : "Your answers won't affect your application.(Needed in welsh)",
+                        "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais.",
                         "endPageTextEn" : "The next steps are to check your application details.",
-                        "endPageTextCy" : "The next steps are to check your application details.(Needed in welsh)",
+                        "endPageTextCy" : "Y cam nesaf yw gwirio manylion eich cais.",
                         "shutterPageTextEn" : "We have saved your answers and will direct you back to your application now.",
-                        "shutterPageTextCy" : "We have saved your answers and will direct you back to your application now.(Needed in welsh)"
+                        "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl at eich cais yn awr."
                     }
                 }
             
