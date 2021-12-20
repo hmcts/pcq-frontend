@@ -1,13 +1,13 @@
 {
     "applicant": {
       "startpage": {
-        "paragraph2": "Your answers won't affect your application.(Needed in welsh)"
+        "paragraph2": "Ni fydd eich atebion yn effeithio ar eich cais."
       },
       "endpage": {
-        "paragraph1": "The next steps are to check your application details.(Needed in welsh)"
+        "paragraph1": "Y cam nesaf yw gwirio manylion eich cais."
       },
       "shutterpage": {
-        "paragraph1": "We have saved your answers and will direct you back to your application now.(Needed in welsh)"
+        "paragraph1": "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl at eich cais yn awr."
       }
     }
 }
