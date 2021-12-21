@@ -4,7 +4,7 @@
   "version": "1.2.2",
   "license": "MIT",
   "engines": {
-    "node": ">=12.15.0"
+    "node": ">=14.18.1"
   },
   "scripts": {
     "setup": "NODE_PATH=. npm run sass && npm run git-info && npm run sass-ie8",
