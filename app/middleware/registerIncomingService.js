@@ -31,9 +31,13 @@ const setSession = req => {
                     break;
                 case 'pcqId':
                 case 'ccdCaseId':
-                case 'partyId':
                     form[param.name] = value;
                     break;
+                case 'partyId': {
+                    const changedValue = value.trim().replace(/\s/g, '+');
+                    form[param.name] = changedValue;
+                    break;
+                }
                 case 'returnUrl':
                     session[param.name] = stringUtils.prefixHttps(value);
                     break;
@@ -78,6 +82,9 @@ const validatedService = (serviceId) => {
 
 const registerIncomingService = (req) => {
     logger.info(req.query);
+    const partyId = req.query.partyId;
+    const changedPartyId = partyId.trim().replace(/\s/g, '+');
+    req.query.partyId = changedPartyId;
     if (verifyToken(req.query)) {
         validateParameters(req);
     }
