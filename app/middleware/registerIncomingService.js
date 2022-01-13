@@ -83,7 +83,7 @@ const validatedService = (serviceId) => {
 const registerIncomingService = (req) => {
     logger.info(req.query);
     const partyId = req.query.partyId;
-    if (partyId !== null) {
+    if (partyId) {
         const changedPartyId = partyId.trim().replace(/\s/g, '+');
         req.query.partyId = changedPartyId;
         req.session.form[partyId]=changedPartyId;
