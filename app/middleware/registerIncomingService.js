@@ -31,13 +31,9 @@ const setSession = req => {
                     break;
                 case 'pcqId':
                 case 'ccdCaseId':
+                case 'partyId':
                     form[param.name] = value;
                     break;
-                case 'partyId': {
-                    const changedValue = value.trim().replace(/\s/g, '+');
-                    form[param.name] = changedValue;
-                    break;
-                }
                 case 'returnUrl':
                     session[param.name] = stringUtils.prefixHttps(value);
                     break;
@@ -86,7 +82,6 @@ const registerIncomingService = (req) => {
     if (partyId) {
         const changedPartyId = partyId.trim().replace(/\s/g, '+');
         req.query.partyId = changedPartyId;
-        req.session.form[partyId]=changedPartyId;
     }
     if (verifyToken(req.query)) {
         validateParameters(req);
