@@ -54,6 +54,45 @@
   "identityCookiePurpose1": "Gadael i&rsquo;r gwasanaeth wybod pwy ydych chi",
   "identityCookieExpiry1": "Pan fyddwch chi&rsquo;n cau&rsquo;ch porwr",
 
+  "googleAnalyticsAllowParagraph": "Caniatáu cwcis sy&rsquo;n mesur y defnydd a wneir o&rsquo;r wefan?",
+  "optionYes": "Ydw",
+  "optionNo": "Na",
+
+  "performanceCookiesHeading1": "Mesur perfformiad y rhaglen",
+  "performanceCookiesParagraph1": "Rydym yn defnyddio Platfform Deallusrwydd Meddalwedd Dynatrace i ddarparu gwasanaeth monitro perfformiad rhaglen i gasglu gwybodaeth am sut rydych yn defnyddio gwasanaethau GLlTEM.  Rydym yn gwneud hyn i fonitro gwasanaethau Gwasanaeth Llysoedd a Thribiwnlysoedd EM i ddatrys problemau o fewn ein gwasanaethau yn ogystal â chasglu data ar sut y gellir gwella ein gwasanaethau. Mae GLlTEM yn cadw gwybodaeth am:",
+
+  "performanceCookies-item1": "berfformiad y safle",
+  "performanceCookies-item2": "y defnydd a wneir o&rsquo;r wefan",
+  "performanceCookies-item3": "arferion defnyddwyr",
+
+  "performanceCookiesParagraph2": "Cyflwynir gwybodaeth o fewn y Rhaglen Monitro Perfformiad at y dibenion a nodir uchod.  Nid ydym yn defnyddio nac yn rhannu&rsquo;r wybodaeth at unrhyw ddibenion eraill. Ni chaniateir i Dynatrace ddefnyddio na rhannu&rsquo;r wybodaeth at unrhyw ddibenion eraill chwaith.",
+
+  "performanceCookieName1": "dtCookie",
+  "performanceCookiePurpose1": "Tracio ymweliad a cheisiadau amrywiol",
+  "performanceCookieExpiry1": "Pan fydd y sesiwn yn dod i ben",
+
+  "performanceCookieName2": "dtLatC",
+  "performanceCookiePurpose2": "Mesur natur gudd y gweinyddwr i fonitro perfformiad",
+  "performanceCookieExpiry2": "Pan fydd y sesiwn yn dod i ben",
+
+  "performanceCookieName3": "dtPC",
+  "performanceCookiePurpose3": "Angenrheidiol i ganfod manau gorffen go iawn ar gyfer trosglwyddo tywysydd; yn cynnwys rhif adnabod sesiwn ar gyfer paru",
+  "performanceCookieExpiry3": "Pan fydd y sesiwn yn dod i ben",
+
+  "performanceCookieName4": "dtSa",
+  "performanceCookiePurpose4": "Storfa dros dro ar gyfer camau gweithredu ar draws tudalennau",
+  "performanceCookieExpiry4": "Pan fydd y sesiwn yn dod i ben",
+
+  "performanceCookieName5": "rxVisitor",
+  "performanceCookiePurpose5": "Dull adnabod defnyddwyr i baru sesiynau",
+  "performanceCookieExpiry5": "1 flwyddyn",
+
+  "performanceCookieName6": "rxvt",
+  "performanceCookiePurpose6": "Sesiwn wedi dod i ben",
+  "performanceCookieExpiry6": "Pan fydd y sesiwn yn dod i ben",
+
+  "performanceAllowParagraph": "Caniatáu cwcis sy&rsquo;n mesur y defnydd a wneir o&rsquo;r wefan a monitro perfformiad?",
+
   "securityCookiesHeading1": "Gwneud y gwasanaeth yn fwy diogel",
   "securityCookiesParagraph1": "Rydym yn gosod cwcis er mwyn rhwystro hacwyr rhag addasu cynnwys y cwcis eraill a osodon ni. Mae hyn yn gwneud y gwasanaeth yn fwy diogel ac yn diogelu eich gwybodaeth bersonol.",
 
@@ -67,5 +106,7 @@
 
   "securityCookieName3": "_csrf",
   "securityCookiePurpose3": "Helpu i amddiffyn rhag ffugio",
-  "securityCookieExpiry3": "Pan fyddwch chi&rsquo;n cau&rsquo;ch porwr"
+  "securityCookieExpiry3": "Pan fyddwch chi&rsquo;n cau&rsquo;ch porwr",
+
+  "save": "Arbed"
 }

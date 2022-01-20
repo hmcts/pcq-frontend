@@ -54,6 +54,45 @@
   "identityCookiePurpose1": "Identifies you to the service",
   "identityCookieExpiry1": "When you close your browser",
 
+  "googleAnalyticsAllowParagraph": "Allow cookies that measure website use?",
+  "optionYes": "Yes",
+  "optionNo": "No",
+
+  "performanceCookiesHeading1": "To measure application performance",
+  "performanceCookiesParagraph1": "We use Dynatrace Software Intelligence Platform to provide an Application Performance Monitoring Service to collect information about how you use HMCTS services. We do this to monitor HM Courts and Tribunals (HMCTS) services in order to resolve issues within our services as well as collect data on how our services can be improved. HMCTS stores information about:",
+
+  "performanceCookies-item1": "site performance",
+  "performanceCookies-item2": "website usage",
+  "performanceCookies-item3": "user behaviour",
+
+  "performanceCookiesParagraph2": "Information is presented within the Application Performance Monitoring service for the purposes detailed above. We do not use or share the information for any other purpose. We do not allow Dynatrace to use or share the information for any other purposes.",
+
+  "performanceCookieName1": "dtCookie",
+  "performanceCookiePurpose1": "Tracks a visit across multiple requests",
+  "performanceCookieExpiry1": "When session ends",
+
+  "performanceCookieName2": "dtLatC",
+  "performanceCookiePurpose2": "Measures server latency for performance monitoring",
+  "performanceCookieExpiry2": "When session ends",
+
+  "performanceCookieName3": "dtPC",
+  "performanceCookiePurpose3": "Required to identify proper endpoints for beacon transmission; includes session ID for correlation",
+  "performanceCookieExpiry3": "When session ends",
+
+  "performanceCookieName4": "dtSa",
+  "performanceCookiePurpose4": "Intermediate store for page-spanning actions",
+  "performanceCookieExpiry4": "When session ends",
+
+  "performanceCookieName5": "rxVisitor",
+  "performanceCookiePurpose5": "Visitor ID to correlate sessions",
+  "performanceCookieExpiry5": "1 year",
+
+  "performanceCookieName6": "rxvt",
+  "performanceCookiePurpose6": "Session timeout",
+  "performanceCookieExpiry6": "When session ends",
+
+  "performanceAllowParagraph": "Allow cookies that measure website application performance monitoring?",
+
   "securityCookiesHeading1": "Cookies used to make the service more secure",
   "securityCookiesParagraph1": "We set cookies which prevent attackers from modifying the contents of the other cookies we set. This makes the service more secure and protects your personal information.",
 
@@ -67,5 +106,7 @@
 
   "securityCookieName3": "_csrf",
   "securityCookiePurpose3": "Helps protect against forgery",
-  "securityCookieExpiry3": "When you close your browser"
+  "securityCookieExpiry3": "When you close your browser",
+
+  "save": "Save"
 }

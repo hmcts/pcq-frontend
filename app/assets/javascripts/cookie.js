@@ -2,9 +2,9 @@
     'use strict';
     const cookieManager = require('@hmcts/cookie-manager');
 
-    const cookieBanner = document.querySelector('#pcq-cookie-banner');
-    const cookieBannerDecision = cookieBanner?.querySelector('.govuk-cookie-banner__decision');
-    const cookieBannerConfirmation = cookieBanner?.querySelector('.govuk-cookie-banner__confirmation');
+    const cookieBanner = document.querySelector('#cm-cookie-banner');
+    const cookieBannerDecision = cookieBanner?.querySelector('.cm-cookie-banner__decision');
+    const cookieBannerConfirmation = cookieBanner?.querySelector('.cm-cookie-banner__confirmation');
 
     function cookieBannerAccept() {
         const confirmationMessage = cookieBannerConfirmation?.querySelector('p');
@@ -22,7 +22,7 @@
     }
 
     function preferenceFormSaved() {
-        const message = qs('.cookie-preference-success');
+        const message = document.querySelector('.cookie-preference-success');
         message.style.display = 'block';
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -46,7 +46,7 @@
         }
     }
 
-    console.log('Initialising Cookie Manager...');
+    console.log('*PCQ* Initialising Cookie Manager...');
     cookieManager.init({
         'user-preference-cookie-name': 'pcq-cookie-preferences',
         'user-preference-saved-callback': cookiePreferencesUpdated,
