@@ -21,6 +21,7 @@
   "websiteUsageCookiesParagraph4": "Gallwch <a target=\"_blank\" rel=\"external noopener noreferrer\" href=\"{googleAnalyticsOptOutLink}\" class=\"govuk-link\">optio allan o Google Analytics</a>os nad ydych eisiau i Google gael mynediad at eich gwybodaeth.",
   "websiteUsageCookiesParagraph5": "Mae Google Analytics yn gosod y cwcis canlynol:",
 
+  "cookieDetailsTableHeading": "Manylion y cwci", 
   "cookieNameHeader": "Enw&rsquo;r cwci",
   "cookiePurposeHeader": "Pwrpas y cwci",
   "cookieExpiryHeader": "Darfod ymhen",

@@ -21,6 +21,7 @@
   "websiteUsageCookiesParagraph4": "You can <a href=\"{googleAnalyticsOptOutLink}\" class=\"govuk-link\" target=\"_blank\" rel=\"external noopener noreferrer\" aria-label=\"opt out of Google Analytics\">opt out of Google Analytics</a> if you do not want Google to have access to your information.",
   "websiteUsageCookiesParagraph5": "Google Analytics sets the following cookies:",
 
+  "cookieDetailsTableHeading": "Cookie details", 
   "cookieNameHeader": "Cookie name",
   "cookiePurposeHeader": "What this cookie is for",
   "cookieExpiryHeader": "Expires after",
