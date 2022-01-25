@@ -1,0 +1,13 @@
+{
+    "applicant": {
+      "startpage": {
+        "paragraph2": "Your answers won't affect your application."
+      },
+      "endpage": {
+        "paragraph1": "The next steps are to check your application details."
+      },
+      "shutterpage": {
+        "paragraph1": "We have saved your answers and will direct you back to your application now."
+      }
+    }
+}

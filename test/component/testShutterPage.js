@@ -32,7 +32,8 @@ describe('shutter-page', () => {
                         'divorce_petitioner',
                         'divorce_respondent',
                         'sscs',
-                        'iac'
+                        'iac',
+                        'adoption'
                     ]);
                 });
         });
