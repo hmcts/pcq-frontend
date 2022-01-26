@@ -64,7 +64,7 @@
             {
                 'category-name': 'essential',
                 optional: false,
-                cookies: ['pcq-cookie-preferences', 'pcq-session', 'Idam.Session', 'seen_cookie_message'],
+                cookies: ['pcq-cookie-preferences', 'pcq-session', 'Idam.Session', 'seen_cookie_message', '_oauth2_proxy'],
             },
             {
                 'category-name': 'analytics',
