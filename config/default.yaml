@@ -14,7 +14,7 @@ featureToggles:
   launchDarklyUser:
     firstName: 'PCQ'
     lastName: 'Frontend'
-    key: '3a96565155d056217ec19ac363a5b7a7'
+    key: 'LD_USER_KEY'
   ft_sscs_disability_stage_1: 'sscs-disability-stage-1'
   ft_sscs_disability_stage_2: 'sscs-disability-stage-2'
   appwideToggles: []
