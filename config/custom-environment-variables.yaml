@@ -6,6 +6,8 @@ gitRevision: GIT_REVISION
 externalHostNameUrl: EXTERNAL_HOSTNAME_URL
 featureToggles:
   launchDarklyKey: LAUNCHDARKLY_KEY
+  launchDarklyUser:
+    key: LD_USER_KEY
 app:
   useHttps: USE_HTTPS
   port: PORT
