@@ -13,6 +13,7 @@ const setupSecrets = () => {
         setSecret('secrets.pcq.jwt-secret', 'auth.jwt.secret');
         setSecret('secrets.pcq.AppInsightsInstrumentationKey', 'appInsights.instrumentationKey');
         setSecret('secrets.pcq.launchdarkly-key', 'featureToggles.launchDarklyKey');
+        setSecret('secrets.pcq.launchdarkly-user-key', 'featureToggles.launchDarklyUser.key');
         // ------------------------------------------ Token Keys ------------------------------------------
         setSecret('secrets.pcq.probate-token-key', 'tokenKeys.probate'); // Probate
         setSecret('secrets.pcq.cmc-token-key', 'tokenKeys.cmc'); // CMC
