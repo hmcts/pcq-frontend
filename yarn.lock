@@ -5663,7 +5663,7 @@ module-deps@^6.2.3:
   dependencies:
     JSONStream "^1.0.3"
     browser-resolve "^2.0.0"
-    cached-path-relative "^1.0.2"
+    cached-path-relative "^1.1.0"
     concat-stream "~1.6.0"
     defined "^1.0.0"
     detective "^5.2.0"
