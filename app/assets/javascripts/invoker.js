@@ -1,3 +1,6 @@
+// Hide coookie banner on invoker page.
+document.getElementById("cm-cookie-banner").style.display = "none";
+
 // ------------ Actor Select ------------
 (function () {
     'use strict';
