@@ -8,12 +8,12 @@
 
     function cookieBannerAccept() {
         const confirmationMessage = cookieBannerConfirmation?.querySelector('p');
-        confirmationMessage.innerHTML = 'You’ve accepted additional cookies. ' + confirmationMessage.innerHTML;
+        // confirmationMessage.innerHTML = 'You’ve accepted additional cookies. ' + confirmationMessage.innerHTML;
     }
 
     function cookieBannerReject() {
         const confirmationMessage = cookieBannerConfirmation?.querySelector('p');
-        confirmationMessage.innerHTML = 'You’ve rejected additional cookies. ' + confirmationMessage.innerHTML;
+        // confirmationMessage.innerHTML = 'You’ve rejected additional cookies. ' + confirmationMessage.innerHTML;
     }
 
     function cookieBannerSaved() {
