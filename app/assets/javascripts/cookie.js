@@ -5,15 +5,17 @@
     const cookieBanner = document.querySelector('#cm-cookie-banner');
     const cookieBannerDecision = cookieBanner?.querySelector('.cm-cookie-banner__decision');
     const cookieBannerConfirmation = cookieBanner?.querySelector('.cm-cookie-banner__confirmation');
+    const cookieBannerAccepted = document.querySelector('#cm-accepted-cookies');
+    const cookieBannerRejected = document.querySelector('#cm-rejected-cookies');
 
     function cookieBannerAccept() {
-        const confirmationMessage = cookieBannerConfirmation?.querySelector('p');
-        // confirmationMessage.innerHTML = 'You’ve accepted additional cookies. ' + confirmationMessage.innerHTML;
+        cookieBannerAccepted.hidden = false;
+        cookieBannerRejected.hidden = true;
     }
 
     function cookieBannerReject() {
-        const confirmationMessage = cookieBannerConfirmation?.querySelector('p');
-        // confirmationMessage.innerHTML = 'You’ve rejected additional cookies. ' + confirmationMessage.innerHTML;
+        cookieBannerAccepted.hidden = true;
+        cookieBannerRejected.hidden = false;
     }
 
     function cookieBannerSaved() {

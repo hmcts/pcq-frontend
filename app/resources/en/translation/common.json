@@ -26,6 +26,8 @@
   "cookieBannerAnalyticCookies": "We’d also like to use analytics cookies so we can understand how you use the service and make improvements.",
   "cookieBannerAcceptCookies": "Accept additional cookies",
   "cookieBannerRejectCookies": "Reject additional cookies",
+  "cookieBannerAcceptedCookies": "You have accepted additional cookies. ",
+  "cookieBannerRejectedCookies": "You have rejected additional cookies. ",
   "cookieBannerViewCookies": "View cookies",
   "cookieBannerChangeCookies": "You can <a href=\"/cookies\">change your cookie settings</a> at any time.",
   "cookieBannerHideMessage": "Hide this message",

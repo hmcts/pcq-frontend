@@ -22,7 +22,8 @@
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
                     <div class="govuk-cookie-banner__content">
-                        <p>{{ common.cookieBannerChangeCookies | safe }}</p>
+                        <p id="cm-accepted-cookies">{{ common.cookieBannerAcceptedCookies | safe }} {{ common.cookieBannerChangeCookies | safe }}</p>
+                        <p id="cm-rejected-cookies">{{ common.cookieBannerRejectedCookies | safe }} {{ common.cookieBannerChangeCookies | safe }}</p>
                     </div>
                 </div>
             </div>
