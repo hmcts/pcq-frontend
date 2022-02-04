@@ -16,7 +16,8 @@
                             "partyId" : "IAC_APPELLANT@test.gov.uk",
                             "returnUrl" : "IAC_APPELLANT.test.gov.uk",
                             "language" : "en",
-                            "channel" : 2
+                            "channel" : 2,
+                            "redirect" : "Appeal an immigration or asylum decision"
                         }
                     }
                 }
@@ -36,7 +37,8 @@
                             "partyId" : "PROBATE_APPLICANT@test.gov.uk",
                             "returnUrl" : "PROBATE_APPLICANT.test.gov.uk",
                             "language" : "en",
-                            "channel" : 2
+                            "channel" : 2,
+                            "redirect" : "Apply for probate"
                         }
                     }
                 }
@@ -56,7 +58,8 @@
                             "partyId" : "SSCS_APPELLANT@test.gov.uk",
                             "returnUrl" : "SSCS_APPELLANT.test.gov.uk",
                             "language" : "en",
-                            "channel" : 2
+                            "channel" : 2,
+                            "redirect" : "Appeal a benefit decision"
                         }
                         
                     }
@@ -79,7 +82,8 @@
                             "partyId" : "DIVORCE_PETITIONER@test.gov.uk",
                             "returnUrl" : "DIVORCE_PETITIONER.test.gov.uk",
                             "language" : "en",
-                            "channel" : 2
+                            "channel" : 2,
+                            "redirect" : "Apply for a divorce"
                             
                         }
                         
@@ -95,7 +99,8 @@
                             "partyId" : "DIVORCE_RESPONDENT@test.gov.uk",
                             "returnUrl" : "DIVORCE_RESPONDENT.test.gov.uk",
                             "language" : "en",
-                            "channel" : 2
+                            "channel" : 2,
+                            "redirect" : "Respond to a divorce application"
                         }
                     },
                     "corespondent":
@@ -109,7 +114,8 @@
                             "partyId" : "DIVORCE_CORESPONDENT@test.gov.uk",
                             "returnUrl" : "DIVORCE_CORESPONDENT.test.gov.uk",
                             "language" : "en",
-                            "channel" : 2
+                            "channel" : 2,
+                            "redirect" : "Apply for a divorce"
                         }
                     }
                 }
@@ -130,7 +136,8 @@
                             "partyId" : "NEW_DIVORCE_LAW_APPLICANT@test.gov.uk",
                             "returnUrl" : "NEW_DIVORCE_LAW_APPLICANT.test.gov.uk",
                             "language" : "en",
-                            "channel" : 2
+                            "channel" : 2,
+                            "redirect" : "Apply for a divorce"
                         }
                        
                     },
@@ -145,7 +152,8 @@
                             "partyId" : "NEW_DIVORCE_LAW_RESPONDENT@test.gov.uk",
                             "returnUrl" : "NEW_DIVORCE_LAW_RESPONDENT.test.gov.uk",
                             "language" : "en",
-                            "channel" : 2
+                            "channel" : 2,
+                            "redirect" : "Respond to a divorce application"
                         }
                     },
                     "applicant1":
@@ -159,7 +167,8 @@
                             "partyId" : "NEW_DIVORCE_LAW_APPLICANT1@test.gov.uk",
                             "returnUrl" : "NEW_DIVORCE_LAW_APPLICANT1.test.gov.uk",
                             "language" : "en",
-                            "channel" : 2
+                            "channel" : 2,
+                            "redirect" : "Apply for a divorce"
                         }
                     },
                     "applicant2":
@@ -173,7 +182,8 @@
                             "partyId" : "NEW_DIVORCE_LAW_APPLICANT2@test.gov.uk",
                             "returnUrl" : "NEW_DIVORCE_LAW_APPLICANT2.test.gov.uk",
                             "language" : "en",
-                            "channel" : 2
+                            "channel" : 2,
+                            "redirect" : "Apply for a divorce"
                         }
                     }
                 }
@@ -193,7 +203,8 @@
                             "partyId" : "CMC_CLAIMANT@test.gov.uk",
                             "returnUrl" : "CMC_CLAIMANT.test.gov.uk",
                             "language" : "en",
-                            "channel" : 2
+                            "channel" : 2,
+                            "redirect" : "Make a money claim"
                         }
                     },
                 "defendent" :
@@ -207,7 +218,8 @@
                             "partyId" : "CMC_DEFENDANT@test.gov.uk",
                             "returnUrl" : "CMC_DEFENDANT.test.gov.uk",
                             "language" : "en",
-                            "channel" : 2
+                            "channel" : 2,
+                            "redirect" : "Respond to a money claim"
                         }
                     }
             }

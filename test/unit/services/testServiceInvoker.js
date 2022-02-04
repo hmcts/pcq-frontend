@@ -152,6 +152,31 @@ fs.readdir(directoryPath, function (err, files) {
                                     done();
                                 });
                         });
+                        it('should redirect to /offline if the redirectURL is not sent', (done) => {
+                            nock('http://localhost:4000')
+                                .get('/health')
+                                .reply(
+                                    200,
+                                    {'pcq-backend': {'status': 'UP'}}
+                                );
+                            const server = app.init();
+                            const agent = request.agent(server.app);
+                            const url = '/service-endpoint?serviceId='+formData.serviceId+'&actor='+formData.actor+'&pcqId='+formData.pcqId+'&ccdCaseId='+formData.ccdCaseId+
+                            '&partyId='+formData.partyId;
+                            agent.get(`${url}`).redirects(1)
+                                .expect(302)
+                                .end((err, res) => {
+                                    server.http.close();
+                                    if (err) {
+                                        throw err;
+                                    }
+                                    //res.redirect()
+                                    expect(res.redirect).to.equal(true);
+                                    expect(res.header.location).to.equal('/offline');
+                                    //expect(res).to.deep.contains(formData.redirect);
+                                    done();
+                                });
+                            });
                     });
                 }
             });
