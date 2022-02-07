@@ -26,12 +26,14 @@ nodejs:
         - frontend-redis-access-key
         - jwt-secret
         - launchdarkly-key
+        - launchdarkly-user-key
         - probate-token-key
         - cmc-token-key
         - divorce-token-key
         - nfd-token-key
         - sscs-token-key
         - iac-token-key
+        - adoption-token-key
 
 redis:
   cluster:

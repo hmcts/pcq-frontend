@@ -30,6 +30,9 @@ const generateToken = (params, algorithm) => {
 
         if (algorithm === algorithmAesGcm256) {
             authTag = cipher.getAuthTag().toString('base64');
+            if (config.environment !== 'prod') {
+                logger.info('Auth Tag : ' + authTag);
+            }
         }
     }
 
