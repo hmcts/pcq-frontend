@@ -7,7 +7,7 @@ describe('cookies', () => {
     let testWrapper;
 
     beforeEach(() => {
-        testWrapper = new TestWrapper('Cookies');
+        testWrapper = new TestWrapper('Cookies', {ft_new_cookie_banner: true});
     });
 
     afterEach(() => {
@@ -21,7 +21,6 @@ describe('cookies', () => {
                 googlePrivacyPolicyLink: config.links.googlePrivacyPolicy,
                 googleAnalyticsOptOutLink: config.links.googleAnalyticsOptOut
             };
-
             testWrapper.testContent(done, contentData);
         });
     });
