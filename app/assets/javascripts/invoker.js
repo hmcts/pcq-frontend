@@ -1,5 +1,8 @@
-// Hide coookie banner on invoker page.
-document.getElementById("cm-cookie-banner").style.display = "none";
+// Hide cookie banner on invoker page.
+const cookieBanner = document.getElementById("cm-cookie-banner");
+if (cookieBanner) {
+    cookieBanner.style.display = "none";
+}
 
 // ------------ Actor Select ------------
 (function () {
