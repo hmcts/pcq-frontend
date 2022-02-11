@@ -29,8 +29,7 @@ module.exports = {
             [
                 'test/component/**',
                 'test/unit/**'
-            ],
-        timeout: 8000
+            ]
     },
     logLevel: 'debug'
 };
