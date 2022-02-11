@@ -76,7 +76,7 @@
     "node-emoji": "^1.10.0",
     "node-fetch": "^2.6.7",
     "node-git-info-json": "^0.1.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "nunjucks": "^3.2.0",
     "request": "^2.88.0",
     "require-directory": "^2.1.1",
