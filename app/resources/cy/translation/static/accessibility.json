@@ -1,9 +1,9 @@
 {
   "title": "Datganiad Hygyrchedd",
   "heading1": "Datganiad hygyrchedd ar gyfer y cwestiynau cydraddoldeb ac amrywiaeth",
-  "paragraph1": "Mae&rsquo;r gwasanaeth hwn yn gofyn cyfres o gwestiynau a fydd yn ein helpu ni i wirio ein bod yn trin pobl yn deg ac yn gydradd. Mae&#39;n ein helpu i gyflawni ein hymrwymiad i gydraddoldeb (o dan Ddeddf Cydraddoldeb 2010).",
-  "paragraph2": "Gwasanaeth Llysoedd a Thribiwnlysoedd EM sy&rsquo;n gyfrifol am y wefan hon. Rydym eisiau i gymaint o bobl &acirc; phosib allu defnyddio&#39;r wefan, felly rydym wedi ceisio ei gwneud mor hygyrch &acirc; phosib. Er enghraifft, golyga hyn y dylech allu:",
-  "list1-item1": "newid y lliwiau, y lefelau cyferbyniad a&rsquo;r ffontiau",
+  "paragraph1": "Mae'r gwasanaeth hwn yn gofyn cyfres o gwestiynau a fydd yn ein helpu ni i wirio ein bod yn trin pobl yn deg ac yn gydradd. Mae&#39;n ein helpu i gyflawni ein hymrwymiad i gydraddoldeb (o dan Ddeddf Cydraddoldeb 2010).",
+  "paragraph2": "Gwasanaeth Llysoedd a Thribiwnlysoedd EM sy'n gyfrifol am y wefan hon. Rydym eisiau i gymaint o bobl &acirc; phosib allu defnyddio&#39;r wefan, felly rydym wedi ceisio ei gwneud mor hygyrch &acirc; phosib. Er enghraifft, golyga hyn y dylech allu:",
+  "list1-item1": "newid y lliwiau, y lefelau cyferbyniad a'r ffontiau",
   "list1-item2": "gwneud y testun hyd at 300% yn fwy heb iddo ddiflannu oddi ar y sgrin",
   "list1-item3": "llywio&#39;r rhan fwyaf o&#39;r wefan gan ddefnyddio bysellfwrdd yn unig",
   "list1-item4": "llywio&#39;r rhan fwyaf o&#39;r wefan gan ddefnyddio meddalwedd adnabod llais",
@@ -12,7 +12,7 @@
   "paragraph4": "Gallwch gael cyngor gan <a href=\"{myAbilityLink}\" class=\"govuk-link\" target=\"_blank\" rel=\"external noopener noreferrer\">AbilityNet</a> ynghylch gwneud eich dyfais yn haws i’w defnyddio os oes gennych anabledd.",
 
   "heading2": "Pa mor hygyrch yw&#39;r wefan hon?",
-  "paragraph5": "Mae&rsquo;r wefan yn cydymffurfio &acirc; WCAG 2.1 AA ac mae hefyd yn defnyddio fersiwn ddiweddaraf System Dylunio GOV.UK. Rydym hefyd wedi profi&#39;r wefan yn fewnol ac yn allanol i sicrhau ein bod yn cydymffurfio &acirc;&rsquo;r safonau hygyrchedd diweddaraf.",
+  "paragraph5": "Mae'r wefan yn cydymffurfio &acirc; WCAG 2.1 AA ac mae hefyd yn defnyddio fersiwn ddiweddaraf System Dylunio GOV.UK. Rydym hefyd wedi profi&#39;r wefan yn fewnol ac yn allanol i sicrhau ein bod yn cydymffurfio &acirc;'r safonau hygyrchedd diweddaraf.",
 
   "heading3": "Adborth a gwybodaeth gyswllt",
   "paragraph6": "Os ydych angen gwybodaeth sydd ar y wefan hon mewn fformat arall megis ar ffurf PDF hygyrch, print bras, fformat hawdd ei ddarllen, neu braille:",
@@ -27,17 +27,17 @@
   "paragraph10": "Byddwn yn ystyried eich cais ac yn ymateb o fewn 10 diwrnod gwaith.",
 
   "heading4": "Riportio problemau hygyrchedd gyda&#39;r wefan hon",
-  "paragraph11": "Rydym wastad yn ceisio gwella hygyrchedd y wefan hon. Os byddwch yn cael unrhyw broblemau nad ydynt wedi&rsquo;u cynnwys ar y dudalen hon, neu&rsquo;n credu nad ydym yn bodloni&rsquo;r gofynion o ran hygyrchedd, cysylltwch &acirc;:",
+  "paragraph11": "Rydym wastad yn ceisio gwella hygyrchedd y wefan hon. Os byddwch yn cael unrhyw broblemau nad ydynt wedi'u cynnwys ar y dudalen hon, neu'n credu nad ydym yn bodloni'r gofynion o ran hygyrchedd, cysylltwch &acirc;:",
 
   "heading5": "Y Weithdrefn Orfodi",
-  "paragraph12": "Y Comisiwn Cydraddoldeb a Hawliau Dynol (EHRC) sy&rsquo;n gyfrifol am orfodi Rheoliadau Hygyrchedd Cyrff y Sector Cyhoeddus (Gwefannau a Rhaglenni Symudol) (Rhif 2) 2018 (y &lsquo;rheoliadau hygyrchedd&rsquo;). Os ydych chi&rsquo;n anhapus gyda&rsquo;r ffordd rydym yn ymateb i&rsquo;ch cwyn, <a href=\"{equalityAdvisorLink}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">cysylltwch &acirc;&rsquo;r Gwasanaeth Cynghori a Chymorth Cydraddoldeb (EASS)</a>.",
+  "paragraph12": "Y Comisiwn Cydraddoldeb a Hawliau Dynol (EHRC) sy'n gyfrifol am orfodi Rheoliadau Hygyrchedd Cyrff y Sector Cyhoeddus (Gwefannau a Rhaglenni Symudol) (Rhif 2) 2018 (y &lsquo;rheoliadau hygyrchedd'). Os ydych chi'n anhapus gyda'r ffordd rydym yn ymateb i'ch cwyn, <a href=\"{equalityAdvisorLink}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">cysylltwch &acirc;'r Gwasanaeth Cynghori a Chymorth Cydraddoldeb (EASS)</a>.",
 
   "heading6": "Cysylltu &acirc; ni dros y ff&ocirc;n",
   "paragraph13": "Rydym yn darparu gwasanaeth cyfnewid negeseuon testun ar gyfer pobl byddar, pobl sydd &acirc; nam ar eu clyw a phobl sydd &acirc; nam ar eu lleferydd.",
 
   "heading7": "Gwybodaeth dechnegol am hygyrchedd y wefan hon",
   "paragraph14": "Mae GLlTEM wedi ymrwymo i sicrhau bod ei wefannau yn hygyrch, a hynny yn unol &acirc; Rheoliadau Hygyrchedd Cyrff y Sector Cyhoeddus (Gwefannau a Rhaglenni Symudol) (Rhif 2) 2018.",
-  "paragraph15": "Mae&rsquo;r wefan hon yn cydymffurfio&rsquo;n llwyr &acirc; <a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Canllawiau Hygyrchedd Cynnwys Gwe fersiwn 2.1</a> safon AA.",
+  "paragraph15": "Mae'r wefan hon yn cydymffurfio'n llwyr &acirc; <a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Canllawiau Hygyrchedd Cynnwys Gwe fersiwn 2.1</a> safon AA.",
 
   "heading8": "Paratoi&#39;r datganiad hygyrchedd hwn",
   "paragraph16": "Cafodd y datganiad hwn ei baratoi ar yr 28ain o Fai 2020. Cafodd ei ddiweddaru diwethaf ar yr 28ain o Fai 2020.",
