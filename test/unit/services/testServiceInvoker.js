@@ -173,6 +173,7 @@ fs.readdir(directoryPath, function (err, files) {
                                     //res.redirect()
                                     expect(res.redirect).to.equal(true);
                                     expect(res.header.location).to.equal('/offline');
+                                    /*To Do checkRedirect Link is there on offline page*/
                                     //expect(res).to.deep.contains(formData.redirect);
                                     done();
                                 });
