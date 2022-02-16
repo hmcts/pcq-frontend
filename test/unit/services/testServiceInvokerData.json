@@ -223,6 +223,27 @@
                         }
                     }
             }
-        }
+        },
+        "adoption" :
+            {
+                "datas" :
+                {
+                    "applicant":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "ADOPTION",
+                            "actor" : "APPLICANT" ,
+                            "pcqId" : "5d41724f-a65d-4936-af08-c4b0c76398af",
+                            "ccdCaseId" : "b7330045-d0e8-4408-87d0-55c8caa331cc",
+                            "partyId" : "ADOPTION_APPLICANT@test.gov.uk",
+                            "returnUrl" : "ADOPTION_APPLICANT.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2,
+                            "redirect" : "Adopting a child placed in your care"
+                        }
+                    }
+                }
+            }
     }
 }
