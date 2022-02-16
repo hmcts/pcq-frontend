@@ -32,7 +32,7 @@
   "usingYourDataParagraph1": "We will use your data for analytical purposes only. We will create statistics that will never show an individuals record. Statistics will help HMCTS understand if people from different groups are treated fairly and have the same access to our services.",
   "usingYourDataParagraph2": "We will use the statistics that are created to inform policy and service design that prevents discrimination and promotes fairness and equitable access to justice for everyone who used our services.",
   "usingYourDataParagraph3": "We use <a href=\"{cookiesLink}\" class=\"govuk-link\" aria-label=\"cookies\">cookies</a> to collect data that tells us about how you’re using this service, including:",
-  "usingYourData-item1": "your computer, phone or tablet&apos;s IP address",
+  "usingYourData-item1": "your computer, phone or tablet’s IP address",
   "usingYourData-item2": "the region or town where you are using your computer, phone or tablet",
   "usingYourData-item3": "the web browser you use",
 
@@ -69,8 +69,8 @@
   "yourRights-item12": "emailing: <a href=\"mailto:data.compliance@justice.gov.uk\" class=\"govuk-link\">data.compliance@justice.gov.uk</a>",
 
   "howToComplainHeading": "How to complain",
-  "howToComplainParagraph1": "See our <a href=\"{complaintsProcedureLink}\" class=\"govuk-link\" target=\"_blank\" rel=\"external noopener noreferrer\" aria-label=\"complaints procedure\">complaints procedure</a> if you want to complain about how we&apos;ve handled your personal data.",
+  "howToComplainParagraph1": "See our <a href=\"{complaintsProcedureLink}\" class=\"govuk-link\" target=\"_blank\" rel=\"external noopener noreferrer\" aria-label=\"complaints procedure\">complaints procedure</a> if you want to complain about how we’ve handled your personal data.",
   "howToComplainParagraph2": "Write to: Post point 10.38, 102 Petty France, London, SW1H 9AJ",
   "howToComplainParagraph3": "Email: <a href=\"mailto:data.compliance@justice.gov.uk\" class=\"govuk-link\">data.compliance@justice.gov.uk</a>",
-  "howToComplainParagraph4": "You can also complain to the <a href=\"{informationCommissionersOfficeLink}\" class=\"govuk-link\" target=\"_blank\" rel=\"external noopener noreferrer\" aria-label=\"Information Commissioner&apos;s Office\">Information Commissioner&apos;s Office</a> if you&apos;re not satisfied with our response or believe we are not processing your personal data lawfully."
+  "howToComplainParagraph4": "You can also complain to the <a href=\"{informationCommissionersOfficeLink}\" class=\"govuk-link\" target=\"_blank\" rel=\"external noopener noreferrer\" aria-label=\"Information Commissioner’s Office\">Information Commissioner’s Office</a> if you’re not satisfied with our response or believe we are not processing your personal data lawfully."
 }
