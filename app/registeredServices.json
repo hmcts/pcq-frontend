@@ -62,5 +62,14 @@
     "redirectLinks": {
       "iac": "https://www.appeal-immigration-asylum-decision.service.gov.uk"
     }
+  },
+  {
+    "serviceId": "ADOPTION",
+    "actors": [
+      "APPLICANT"
+    ],
+    "redirectLinks": {
+      "adoption": "https://www.adoption-web.service.gov.uk/review-pay-submit/check-your-answers"
+    }
   }
 ]
