@@ -8,11 +8,11 @@
   "list1-item3": "navigate most of the website using just a keyboard",
   "list1-item4": "navigate most of the website using speech recognition software",
   "list1-item5": "listen to most of the website using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver)",
-  "paragraph3": "We've also made the website text as simple as possible to understand.",
+  "paragraph3": "We&apos;ve also made the website text as simple as possible to understand.",
   "paragraph4": "<a href=\"{myAbilityLink}\" class=\"govuk-link\" target=\"_blank\" rel=\"external noopener noreferrer\">AbilityNet</a> has advice on making your device easier to use if you have a disability.",
 
   "heading2": "How accessible this website is",
-  "paragraph5": "This website is WCAG 2.1 AA compliant and also uses the latest version of the GOV.UK Design System. In addition, we've carried out internal and external accessibility testing to ensure that we're in-line with the latest accessibility standards.",
+  "paragraph5": "This website is WCAG 2.1 AA compliant and also uses the latest version of the GOV.UK Design System. In addition, we&apos;ve carried out internal and external accessibility testing to ensure that we&apos;re in-line with the latest accessibility standards.",
 
   "heading3": "Feedback and contact information",
   "paragraph6": "If you need information on this website in a different format like accessible PDF, large print, easy read or braille:",
@@ -24,18 +24,18 @@
   "list2-sscs": "If you were appealing to the Social Security and Child Support Tribunal: 0300 123 1142",
   "list2-iac": "If you were appealing to the Immigration or Asylum service: 0300 123 1711 or email contactia@justice.gov.uk",
   "paragraph9": "{helpLineHours}<br><a target=\"_blank\" rel=\"external noopener noreferrer\" href=\"{callChargesLink}\" class=\"govuk-link\">Find out about call charges</a>",
-  "paragraph10": "We'll consider your request and get back to you within 10 working days.",
+  "paragraph10": "We&apos;ll consider your request and get back to you within 10 working days.",
 
   "heading4": "Reporting accessibility problems with this website",
-  "paragraph11": "We're always looking to improve the accessibility of this website. If you find any problems that are not listed on this page or think we're not meeting accessibility requirements, contact:",
+  "paragraph11": "We&apos;re always looking to improve the accessibility of this website. If you find any problems that are not listed on this page or think we&apos;re not meeting accessibility requirements, contact:",
 
   "heading5": "Enforcement procedure",
-  "paragraph12": "The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the &lsquo;accessibility regulations'). If you're not happy with how we respond to your complaint, <a href=\"{equalityAdvisorLink}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">contact the Equality Advisory and Support Service (EASS)</a>.",
+  "paragraph12": "The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the &lsquo;accessibility regulations&apos;). If you&apos;re not happy with how we respond to your complaint, <a href=\"{equalityAdvisorLink}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">contact the Equality Advisory and Support Service (EASS)</a>.",
 
   "heading6": "Contacting us by phone",
   "paragraph13": "We provide a text relay service for people who are deaf, hearing impaired or have a speech impediment.",
 
-  "heading7": "Technical information about this website's accessibility",
+  "heading7": "Technical information about this website&apos;s accessibility",
   "paragraph14": "HMCTS is committed to making its websites accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.",
   "paragraph15": "This website is fully compliant with the <a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Web Content Accessibility Guidelines version 2.1</a> AA standard",
 
@@ -44,6 +44,6 @@
   "paragraph17": "This website was last tested on 15<sup>th</sup> May 2020. The test was carried out by Digital Accessibility Centre Ltd.",
   "paragraph18": "We tested all pages of this website against the WCAG 2.1 standard.",
 
-  "heading9": "What we're doing to improve accessibility",
+  "heading9": "What we&apos;re doing to improve accessibility",
   "paragraph19": "This website is continually tested using accessibility software. Any new features which are introduced will also be tested internally or with the Digital Accessibility Centre (DAC)."
 }
