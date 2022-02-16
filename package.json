@@ -105,7 +105,6 @@
     "mochawesome": "^6.2.0",
     "nock": "^10.0.6",
     "nodemon": "^2.0.4",
-    "nyc": "^15.1.0",
     "pa11y": "^6.0.0",
     "phantomjs-prebuilt": "^2.1.16",
     "pre-commit": "^1.2.2",
