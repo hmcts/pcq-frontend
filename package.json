@@ -7,7 +7,8 @@
     "node": ">=14.18.1"
   },
   "scripts": {
-    "setup": "NODE_PATH=. npm run sass && npm run git-info && npm run sass-ie8",
+    "setup": "NODE_PATH=. npm run sass && npm run git-info && npm run sass-ie8 && npm run bundle",
+    "bundle": "NODE_PATH=. node node_modules/browserify/bin/cmd.js app/assets/javascripts/cookie.js -o public/javascripts/cookie_bundle.js",
     "start": "NODE_PATH=. node server.js",
     "debug": "NODE_PATH=. node inspect server.js",
     "prestart:dev": "npm run sass:watch",
@@ -44,12 +45,14 @@
     "lint"
   ],
   "dependencies": {
+    "@hmcts/cookie-manager": "^0.0.4",
     "@hmcts/nodejs-healthcheck": "^1.7.0",
     "@hmcts/nodejs-logging": "^3.0.4",
     "@hmcts/properties-volume": "^0.0.13",
     "ajv": "^4.11.8",
     "applicationinsights": "^1.8.8",
     "body-parser": "^1.19.0",
+    "browserify": "^17.0.0",
     "co": "^4.6.0",
     "config": "^3.3.3",
     "connect-redis": "^5.2.0",

@@ -117,6 +117,8 @@ class Step {
             }
         }
 
+        this.content.newCookieBanner = Boolean(ctx.featureToggles && ctx.featureToggles.ft_new_cookie_banner === 'true');
+
         return this.content;
     }
 
