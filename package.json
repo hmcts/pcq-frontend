@@ -7,7 +7,8 @@
     "node": ">=14.18.1"
   },
   "scripts": {
-    "setup": "NODE_PATH=. npm run sass && npm run git-info && npm run sass-ie8",
+    "setup": "NODE_PATH=. npm run sass && npm run git-info && npm run sass-ie8 && npm run bundle",
+    "bundle": "NODE_PATH=. node node_modules/browserify/bin/cmd.js app/assets/javascripts/cookie.js -o public/javascripts/cookie_bundle.js",
     "start": "NODE_PATH=. node server.js",
     "debug": "NODE_PATH=. node inspect server.js",
     "prestart:dev": "npm run sass:watch",
@@ -44,12 +45,14 @@
     "lint"
   ],
   "dependencies": {
+    "@hmcts/cookie-manager": "^0.0.4",
     "@hmcts/nodejs-healthcheck": "^1.7.0",
     "@hmcts/nodejs-logging": "^3.0.4",
     "@hmcts/properties-volume": "^0.0.13",
     "ajv": "^6.12.3",
     "applicationinsights": "^1.8.8",
     "body-parser": "^1.19.0",
+    "browserify": "^17.0.0",
     "co": "^4.6.0",
     "config": "^3.3.3",
     "connect-redis": "^5.2.0",
@@ -122,9 +125,8 @@
     "yarn-audit-fix": "^9.0.10"
   },
   "resolutions": {
-    "ini": "^1.3.8",
-    "minimist": "^1.2.5",
     "axios": "^0.21.2",
+<<<<<<< HEAD
     "y18n": "^3.2.2",
     "redis": "^3.1.2",
     "url-parse": "^1.5.6",
@@ -135,7 +137,10 @@
     "node-gyp": "^8.1.0",
     "path-parse": "^1.0.7",
     "tar": "^6.1.7",
+=======
+>>>>>>> b39183e2718063c6d4775ae6c7afcae0525146bd
     "ansi-regex": "^5.0.1",
+    "minimist": "^1.2.5",
     "validator": "^13.7.0",
     "json-schema": "^0.4.0"
   },

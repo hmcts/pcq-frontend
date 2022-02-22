@@ -9,6 +9,7 @@ const initSession = require('app/middleware/initSession');
 const registerIncomingService = require('app/registerIncomingService');
 const validateParams = require('app/middleware/validateParams');
 const optOut = require('app/middleware/optOut');
+const featureToggle = new (require('app/utils/FeatureToggle'))();
 
 router.use(initSession);
 router.use(registerIncomingService);
@@ -34,10 +35,10 @@ const allSteps = {
     'cy': initSteps([`${__dirname}/steps/ui`], 'cy')
 };
 
-router.use((req, res, next) => {
-    const steps = allSteps[req.session.language];
+router.use(async (req, res, next) => {
+    req.session.featureToggles.ft_new_cookie_banner = await featureToggle.checkToggle('ft_new_cookie_banner', req, res);
 
-    Object.entries(steps).forEach(([, step]) => {
+    Object.entries(allSteps[req.session.language]).forEach(([, step]) => {
         router.get(step.constructor.getUrl(), step.runner().GET(step));
         router.post(step.constructor.getUrl(), step.runner().POST(step));
     });

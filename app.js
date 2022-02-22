@@ -134,6 +134,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     app.use('/public/images', express.static(`${__dirname}/app/assets/images`, caching));
     app.use('/public/javascripts/govuk-frontend', express.static(`${__dirname}/node_modules/govuk-frontend`, caching));
     app.use('/public/javascripts', express.static(`${__dirname}/app/assets/javascripts`, caching));
+    app.use('/public/javascripts', express.static(`${__dirname}/public/javascripts`, caching));
     app.use('/public/pdf', express.static(`${__dirname}/app/assets/pdf`));
     app.use('/assets', express.static(`${__dirname}/node_modules/govuk-frontend/govuk/assets`, caching));
 

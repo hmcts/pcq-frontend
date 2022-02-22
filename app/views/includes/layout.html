@@ -29,6 +29,12 @@
 {% endblock %}
 
 {% block header %}
+    {% if content.newCookieBanner %}
+        {% block cookiebanner %}
+            {% include "includes/cookie-banner.html" %}
+        {% endblock %}
+    {% endif %}
+
     {{ govukHeader({
         homepageUrl: "#",
         containerClasses: "govuk-width-container",

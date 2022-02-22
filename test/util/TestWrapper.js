@@ -117,7 +117,7 @@ class TestWrapper {
             .send(postData)
             .expect(500)
             .then(res => {
-                this.assertContentIsPresent(res.text, 'Sorry, we&rsquo;re having technical problems');
+                this.assertContentIsPresent(res.text, 'Sorry, we’re having technical problems');
                 done();
             })
             .catch(() => done());

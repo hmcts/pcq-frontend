@@ -9,31 +9,31 @@
   "errors": {
     "dob-day": {
       "required": {
-        "summary": "You haven&rsquo;t entered the day that you were born",
+        "summary": "You haven’t entered the day that you were born",
         "message": "Enter the day you were born"
       },
       "invalid": {
-        "summary": "You haven&rsquo;t entered a valid day that you were born",
+        "summary": "You haven’t entered a valid day that you were born",
         "message": "Enter a valid day of birth"
       }
     },
     "dob-month": {
       "required": {
-        "summary": "You haven&rsquo;t entered the month that you were born",
+        "summary": "You haven’t entered the month that you were born",
         "message": "Enter the month you were born"
       },
       "invalid": {
-        "summary": "You haven&rsquo;t entered a valid month that you were born",
+        "summary": "You haven’t entered a valid month that you were born",
         "message": "Enter a valid month of birth"
       }
     },
     "dob-year": {
       "required": {
-        "summary": "You haven&rsquo;t entered the year that you were born",
+        "summary": "You haven’t entered the year that you were born",
         "message": "Enter the year you were born"
       },
       "invalid": {
-        "summary": "You haven&rsquo;t entered a valid year that you were born",
+        "summary": "You haven’t entered a valid year that you were born",
         "message": "Enter a valid year of birth"
       }
     },

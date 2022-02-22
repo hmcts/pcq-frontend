@@ -1,3 +1,9 @@
+// Hide cookie banner on invoker page.
+const cookieBanner = document.getElementById("cm-cookie-banner");
+if (cookieBanner) {
+    cookieBanner.style.display = "none";
+}
+
 // ------------ Actor Select ------------
 (function () {
     'use strict';

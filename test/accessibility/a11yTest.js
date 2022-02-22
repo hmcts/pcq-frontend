@@ -36,11 +36,11 @@ for (const step in steps) {
             if (step.name === 'StartPage') {
                 title = `${commonContent.serviceName} - ${commonContent.govuk}`
                     .replace(/&lsquo;/g, '‘')
-                    .replace(/&rsquo;/g, '’');
+                    .replace(/’/g, '’');
             } else {
                 title = `${step.content.question || step.content.title} - ${commonContent.serviceName} - ${commonContent.govuk}`
                     .replace(/&lsquo;/g, '‘')
-                    .replace(/&rsquo;/g, '’');
+                    .replace(/’/g, '’');
             }
 
             before((done) => {
