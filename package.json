@@ -126,19 +126,6 @@
   },
   "resolutions": {
     "axios": "^0.21.2",
-<<<<<<< HEAD
-    "y18n": "^3.2.2",
-    "redis": "^3.1.2",
-    "url-parse": "^1.5.6",
-    "underscore": "^1.13.0-2",
-    "hosted-git-info": "^4.0.2",
-    "trim-newlines": "^3.0.1",
-    "normalize-url": "^4.5.1",
-    "node-gyp": "^8.1.0",
-    "path-parse": "^1.0.7",
-    "tar": "^6.1.7",
-=======
->>>>>>> b39183e2718063c6d4775ae6c7afcae0525146bd
     "ansi-regex": "^5.0.1",
     "minimist": "^1.2.5",
     "validator": "^13.7.0",
