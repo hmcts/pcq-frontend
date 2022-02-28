@@ -8,7 +8,7 @@ parameters([
 ])
 ])
 
-@Library("Infrastructure")
+@Library("Infrastructure@zaptesting")
 
 def type = "nodejs"
 def product = "pcq"
