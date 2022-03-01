@@ -36,12 +36,12 @@ withNightlyPipeline(type, product, component) {
     env.TEST_URL = params.URL_TO_TEST
     env.URL_FOR_SECURITY_SCAN = params.PCQ_SERVICE_URL
     loadVaultSecrets(secrets)
-    enableMutationTest();
-    enableSlackNotifications('#pcq-builds')
-    enableFortifyScan()
+    //enableMutationTest();
+    //enableSlackNotifications('#pcq-builds')
+    //enableFortifyScan()
     enableSecurityScan()
-    enableCrossBrowserTest()
-    enableFullFunctionalTest(20)
+    //enableCrossBrowserTest()
+    //enableFullFunctionalTest(20)
 
     after('fortify-scan') {
         steps.archiveArtifacts allowEmptyArchive: true, artifacts: '**/Fortify Scan/**/*'
