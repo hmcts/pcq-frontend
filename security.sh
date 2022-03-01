@@ -19,7 +19,7 @@ zap-cli --zap-url http://0.0.0.0 -p 1001 spider ${TEST_URL}
 #chown -R $(id -u):$(id -u) activescan.html
 #chown -R $(id -u):$(id -u) activescanReport.xml
 
-cp *.html functional-output/
+#cp *.html functional-output/
 #cp activescanReport.xml functional-output/
 
 zap-cli --zap-url http://0.0.0.0 -p 1001 alerts -l Low --exit-code False
