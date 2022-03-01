@@ -1,8 +1,12 @@
 #!/bin/bash
-echo "Run ZAP scan and generate reports"
- zap-api-scan.py -t ${URL_FOR_SECURITY_SCAN}/v2/api-docs -f openapi -S -d -u ${SECURITY_RULES} -P 1001 -l FAIL --hook=zap_hooks.py -J report.json -r api-report.html
- echo "Print alerts"
- zap-cli --zap-url http://0.0.0.0 -p 1001 alerts -l Informational --exit-code False
+#set -x
+#echo "${SECURITYCONTEXT}" > /zap/security.context
+zap-x.sh -d -host 0.0.0.0 -port 1001 -config globalexcludeurl.url_list.url.regex='^https?:\/\/.*\/(?:.*ruxitagentjs.*)+$' -config api.disablekey=true -config scanner.attackOnStart=true -config view.mode=attack -config connection.dnsTtlSuccessfulQueries=-1 -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true /dev/null 2>&1 &
+i=0
+while !(curl -s http://0.0.0.0:1001) >/dev/null; do
+  i=$(((i + 1) % 4))
+  sleep .1
+done
 
 echo "ZAP has successfully started"
 zap-cli --zap-url http://0.0.0.0 -p 1001 status -t 120
@@ -18,11 +22,9 @@ chown -R $(id -u):$(id -u) activescanReport.xml
 cp *.html functional-output/
 cp activescanReport.xml functional-output/
 
-echo "Print zap.out logs:"
-cat zap.out
-
-echo "Copy artifacts for archiving"
-cp zap.out functional-output/
+zap-cli --zap-url http://0.0.0.0 -p 1001 alerts -l Low --exit-code False
+curl --fail http://0.0.0.0:1001/OTHER/core/other/jsonreport/?formMethod=GET --output report.json
+cp *.* functional-output/
 
 echo
 echo ZAP Security vulnerabilities were found that were not ignored
