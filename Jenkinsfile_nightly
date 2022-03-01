@@ -4,7 +4,7 @@ properties([
 // H allow predefined but random minute see https://en.wikipedia.org/wiki/Cron#Non-standard_characters
 pipelineTriggers([cron('H 05 * * *')]),
 parameters([
-        string(name: 'URL_TO_TEST', defaultValue: 'https://pcq.aat.platform.hmcts.net', description: 'The URL you want to run these tests against')
+        string(name: 'URL_TO_TEST', defaultValue: 'https://pcq.aat.platform.hmcts.net', description: 'The URL you want to run these tests against'),
         string(name: 'PCQ_SERVICE_URL', defaultValue: 'http://pcq-frontend-aat.service.core-compute-aat.internal', description: 'The URL of pcq service callbacks'),
         string(name: 'SECURITY_RULES', defaultValue: 'https://raw.githubusercontent.com/hmcts/security-test-rules/master/conf/security-rules.conf', description: 'The security rules to use'),
 ])
