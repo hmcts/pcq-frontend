@@ -3,10 +3,15 @@ set -x
 #echo "${SECURITYCONTEXT}" > /zap/security.context
 zap-x.sh -d -host 0.0.0.0 -port 1001 -config globalexcludeurl.url_list.url.regex='^https?:\/\/.*\/(?:.*ruxitagentjs.*)+$' -config api.disablekey=true -config scanner.attackOnStart=true -config view.mode=attack -config connection.dnsTtlSuccessfulQueries=-1 -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true /dev/null 2>&1 &
 i=0
-while !(curl -s http://0.0.0.0:1001) >/dev/null; do
+#while !(curl -s http://0.0.0.0:1001) >/dev/null; do
+  #i=$(((i + 1) % 4))
+  #sleep .1
+#done
+if !(curl -s http://0.0.0.0:1001) >/dev/null
+then
   i=$(((i + 1) % 4))
   sleep .1
-done
+fi
 
 #echo "ZAP has successfully started"
 #zap-cli --zap-url http://0.0.0.0 -p 1001 status -t 120
