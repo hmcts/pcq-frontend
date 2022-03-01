@@ -7,7 +7,8 @@ i=0
   #i=$(((i + 1) % 4))
   #sleep .1
 #done
-
+export LC_ALL=C.UTF-8
+export LANG=C.UTF-8
 echo "ZAP has successfully started"
 zap-cli --zap-url http://0.0.0.0 -p 1001 status -t 120
 zap-cli --zap-url http://0.0.0.0 -p 1001 open-url "${TEST_URL}"
