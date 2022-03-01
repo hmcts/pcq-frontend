@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -x
+set -x
 #echo "${SECURITYCONTEXT}" > /zap/security.context
 zap-x.sh -d -host 0.0.0.0 -port 1001 -config globalexcludeurl.url_list.url.regex='^https?:\/\/.*\/(?:.*ruxitagentjs.*)+$' -config api.disablekey=true -config scanner.attackOnStart=true -config view.mode=attack -config connection.dnsTtlSuccessfulQueries=-1 -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true /dev/null 2>&1 &
 i=0
