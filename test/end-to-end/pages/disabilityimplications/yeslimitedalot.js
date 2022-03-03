@@ -2,10 +2,16 @@
 
 const pageUnderTest = require('app/steps/ui/disabilityimplications/index');
 
-module.exports = function () {
+module.exports = function (lang) {
     const I = this;
     I.amOnPage(pageUnderTest.getUrl());
     I.seeCurrentUrlEquals(pageUnderTest.getUrl());
-    I.click('Yes, limited a lot');
-    I.click('Continue');
+
+    if (lang === 'en') {
+        I.click('Yes, limited a lot');
+        I.click('Continue');
+    } else {
+        I.click('Ydy yn sylweddol');
+        I.click('Parhau');
+    }
 };
