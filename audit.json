@@ -445,5 +445,6 @@
   "20012_Anti-CSRF Tokens Check_https://pcq.aat.platform.hmcts.net/cookies?analytics=on&apm=on&lng=cy_GET": "ignore",
   "20012_Anti-CSRF Tokens Check_https://pcq.aat.platform.hmcts.net/cookies?lng=cy_GET": "ignore",
   "40025_Proxy Disclosure_https://pcq.aat.platform.hmcts.net/cookies?analytics=on&apm=on&lng=cy_GET": "ignore",
-  "90027_Cookie Slack Detector_https://pcq.aat.platform.hmcts.net/cookies?analytics=on&apm=on&lng=cy_GET": "ignore"
+  "90027_Cookie Slack Detector_https://pcq.aat.platform.hmcts.net/cookies?analytics=on&apm=on&lng=cy_GET": "ignore",
+  "10096_Timestamp Disclosure - Unix_https://pcq.aat.platform.hmcts.net/public/javascripts/cookie_bundle.js_GET" : "ignore"
 }
