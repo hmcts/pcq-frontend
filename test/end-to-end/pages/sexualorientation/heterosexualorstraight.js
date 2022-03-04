@@ -7,11 +7,11 @@ module.exports = function (lang) {
     I.amOnPage(pageUnderTest.getUrl());
     I.seeCurrentUrlEquals(pageUnderTest.getUrl());
 
-    if (lang === 'en') {
-        I.click('Heterosexual or straight');
-        I.click('Continue');
-    } else {
+    if (lang === 'cy') {
         I.click('Hetrorywiol neu syth');
         I.click('Parhau');
+    } else {
+        I.click('Heterosexual or straight');
+        I.click('Continue');
     }
 };
