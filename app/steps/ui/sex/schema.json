@@ -1,6 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "sex",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "sex",
   "type": "object",
   "properties": {
     "sex": {
