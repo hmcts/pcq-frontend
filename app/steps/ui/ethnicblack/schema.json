@@ -1,6 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "ethnicGroupBlack",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "ethnicGroupBlack",
   "type": "object",
   "properties": {
     "ethnicity": {

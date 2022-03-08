@@ -1,6 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "disabilityImplicationsAreas",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "disabilityImplicationsAreas",
   "type": "object",
   "properties": {
     "disability_vision": {
