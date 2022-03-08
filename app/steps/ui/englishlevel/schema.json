@@ -1,6 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "englishLevel",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "englishLevel",
   "type": "object",
   "properties": {
     "english_language_level": {

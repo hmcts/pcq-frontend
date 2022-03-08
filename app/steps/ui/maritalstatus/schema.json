@@ -1,6 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "maritalStatus",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "maritalStatus",
   "type": "object",
   "properties": {
     "marriage": {
