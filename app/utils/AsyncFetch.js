@@ -68,6 +68,7 @@ class AsyncFetch {
             log.error(json);
         } catch (e) {
             log.error(body);
+            return e;
         }
     }
 }
