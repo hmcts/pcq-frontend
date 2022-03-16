@@ -1,12 +1,13 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "license": "MIT",
   "engines": {
     "node": ">=14.18.1"
   },
   "scripts": {
+    "preinstall": "./bin/preinstall.sh || true",
     "setup": "NODE_PATH=. npm run sass && npm run git-info && npm run sass-ie8 && npm run bundle",
     "bundle": "NODE_PATH=. node node_modules/browserify/bin/cmd.js app/assets/javascripts/cookie.js -o public/javascripts/cookie_bundle.js",
     "start": "NODE_PATH=. node server.js",
