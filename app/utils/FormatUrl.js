@@ -1,13 +1,12 @@
 'use strict';
 
-const url = require('url');
 const config = require('config');
 
 class FormatUrl {
     static format(serviceUrl, servicePath = '') {
-        const urlParts = url.parse(serviceUrl);
+        const urlParts = new URL(serviceUrl);
         const port = urlParts.port ? `:${urlParts.port}` : '';
-        let path = servicePath || urlParts.path;
+        let path = servicePath || urlParts.pathname;
         path = path !== '/' ? path : '';
         return `${urlParts.protocol}//${urlParts.hostname}${port}${path}`;
     }
