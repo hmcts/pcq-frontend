@@ -155,9 +155,9 @@ describe('Service', () => {
 
             service
                 .fetchBuffer('http://localhost/forms', {})
-                .catch(() => {
+                .catch((err) => {
                     expect(service.log.calledOnce).to.equal(true);
-                    expect(service.fetchBuffer).to.throw(Error);
+                    expect(err.message).to.contain('FetchError');
                     done();
                 });
         });

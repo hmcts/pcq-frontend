@@ -7,11 +7,11 @@ module.exports = function (lang) {
     I.amOnPage(pageUnderTest.getUrl());
     I.seeCurrentUrlEquals(pageUnderTest.getUrl());
 
-    if (lang === 'en') {
-        I.click('Yes, limited a lot');
-        I.click('Continue');
-    } else {
+    if (lang === 'cy') {
         I.click('Ydy yn sylweddol');
         I.click('Parhau');
+    } else {
+        I.click('Yes, limited a lot');
+        I.click('Continue');
     }
 };

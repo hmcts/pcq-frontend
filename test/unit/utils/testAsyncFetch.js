@@ -76,7 +76,8 @@ describe('AsyncFetch', () => {
         const testAsyncFetch = new RewiredAsyncFetch();
 
         // Test will fail if the error thrown is not caught
-        testAsyncFetch.logBody('non json');
+        const err = testAsyncFetch.logBody('non json');
+        expect(err.message).to.equal('Force error');
         revert();
     });
 });

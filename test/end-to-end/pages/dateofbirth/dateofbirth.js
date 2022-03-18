@@ -8,14 +8,14 @@ module.exports = function (lang) {
     I.amOnPage(pageUnderTest.getUrl());
     I.seeCurrentUrlEquals(pageUnderTest.getUrl());
 
-    if (lang === 'en') {
-        I.click('Enter your date of birth');
-        fillField(I);
-        I.click('Continue');
-    } else {
+    if (lang === 'cy') {
         I.click('Rhowch eich dyddiad geni');
         fillField(I);
         I.click('Parhau');
+    } else {
+        I.click('Enter your date of birth');
+        fillField(I);
+        I.click('Continue');
     }
 
 };

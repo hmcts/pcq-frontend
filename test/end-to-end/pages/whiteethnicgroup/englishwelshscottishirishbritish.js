@@ -7,11 +7,11 @@ module.exports = function (lang) {
     I.amOnPage(pageUnderTest.getUrl());
     I.seeCurrentUrlEquals(pageUnderTest.getUrl());
 
-    if (lang === 'en') {
-        I.click('English, Welsh, Scottish, Northern Irish or British');
-        I.click('Continue');
-    } else {
+    if (lang === 'cy') {
         I.click('Cymraeg/Saesneg/Albanaidd/Gwyddelig Gogledd Iwerddon/Prydeinig');
         I.click('Parhau');
+    } else {
+        I.click('English, Welsh, Scottish, Northern Irish or British');
+        I.click('Continue');
     }
 };

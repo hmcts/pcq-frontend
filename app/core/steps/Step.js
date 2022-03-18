@@ -196,10 +196,9 @@ class Step {
 
     anySoftStops(formdata, ctx) {
         const softStopsList = map(this.steps, step => step.isSoftStop(formdata, ctx));
-        const isSoftStop = reduce(softStopsList, (accumulator, nextElement) => {
+        return reduce(softStopsList, (accumulator, nextElement) => {
             return accumulator || nextElement.isSoftStop;
         }, false);
-        return isSoftStop;
     }
 
     isSoftStop() {

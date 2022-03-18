@@ -84,10 +84,7 @@ class FeatureToggle {
     }
 
     static isEnabled(featureToggles, key) {
-        if (featureToggles && featureToggles[key]) {
-            return true;
-        }
-        return false;
+        return Boolean(featureToggles && featureToggles[key]);
     }
 }
 

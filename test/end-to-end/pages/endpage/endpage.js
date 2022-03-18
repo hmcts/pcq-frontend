@@ -7,9 +7,9 @@ module.exports = function (lang) {
     I.amOnPage(pageUnderTest.getUrl());
     I.seeCurrentUrlEquals(pageUnderTest.getUrl());
 
-    if (lang === 'en') {
-        I.see('You have answered the equality questions');
-    } else {
+    if (lang === 'cy') {
         I.see('Rydych wedi ateb y cwestiynau am gydraddoldeb');
+    } else {
+        I.see('You have answered the equality questions');
     }
 };
