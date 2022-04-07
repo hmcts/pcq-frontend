@@ -4,6 +4,7 @@
 const {I} = inject();
 const TestConfigurator = new (require('test/end-to-end/helpers/TestConfigurator'))();
 const pcqId = TestConfigurator.setPcqId();
+let lang = 'en';
 Before((test) => {
     // perform your code
     test.retries(10); // retry test 10 times
@@ -11,31 +12,36 @@ Before((test) => {
 Given('I am a probate Citizen user', () => {
     //To:Do : Probate team
 });
-
 When('I invoke the PCQs task', () => {
     //To:Do : Probate team
 });
 
 Then('I am presented with the PCQ Intro page', () => {
-    I.startapply(pcqId);
+    I.startapply(pcqId, lang);
+});
+
+Then('I am presented with the PCQ Intro Welsh page', () => {
+    lang = 'cy';
+    I.startapply(pcqId, lang);
 });
 
 When('I submit all pcq questions', () => {
-    I.dateofbirth();
-    I.selectenglishorwelsh();
-    I.selectsexmale();
-    I.selectyesgendersameassex();
-    I.selecthetersexualorientation();
-    I.selectyesmaritalstatus();
-    I.selectethnicgroup();
-    I.selectenglishethnicgroup();
-    I.selectchristianreligion();
-    I.selectyesdisability();
-    I.selectyeslimitedalot();
-    I.selectdisabilityimplicationsareas();
-    I.selectyespregnant();
+    I.dateofbirth(lang);
+    I.selectenglishorwelsh(lang);
+    I.selectsexmale(lang);
+    I.selectyesgendersameassex(lang);
+    I.selecthetersexualorientation(lang);
+    I.selectyesmaritalstatus(lang);
+    I.selectethnicgroup(lang);
+    I.selectenglishethnicgroup(lang);
+    I.selectchristianreligion(lang);
+    I.selectyesdisability(lang);
+    I.selectyeslimitedalot(lang);
+    I.selectdisabilityimplicationsareas(lang);
+    I.selectyespregnant(lang);
     I.wait(3);
-    I.see('You have answered the equality questions');
+    I.endpage(lang);
+    // I.see('You have answered the equality questions');
 });
 
 Then('a record successfully created in database', () => {
