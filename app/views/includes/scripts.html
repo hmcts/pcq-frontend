@@ -1,5 +1,8 @@
 <script src="{{ globals.basePath }}/public/javascripts/govuk-frontend/govuk/all.js"></script>
 <script nonce="{{ globals.nonce }}">window.GOVUKFrontend.initAll()</script>
+{% if app.version %}}
+    <script nonce="{{ globals.nonce }}">const appVersion = '{{ app.version }}';</script>
+{% endif %}
 
 <!--[if lte IE 9]>
 <script src="{{ globals.basePath }}/public/javascripts/form-polyfill.js"></script>
