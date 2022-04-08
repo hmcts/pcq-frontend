@@ -35,6 +35,9 @@ class UIStepRunner {
                 session.back.push(step.constructor.getUrl());
             }
             const common = step.commonContent(session.language);
+            if (ctx.featureToggles && ctx.featureToggles.ft_dtrum_service_id === 'true') {
+                common.serviceId = session.form.serviceId;
+            }
             res.render(step.template, {content, fields, errors, common}, (err, html) => {
                 if (err) {
                     req.log.error(err);

@@ -64,6 +64,9 @@
 
 {% block footer %}
     {% include "includes/footer_links.html" %}
+    {% if common.serviceId %}
+        <div id="service_id" style="display: none">{{ common.serviceId }}</div>
+    {% endif %}
 {% endblock %}
 
 {% block bodyEnd %}
