@@ -1,26 +1,36 @@
-(function() {
+/**
+ * NOTE: This file must conform to the ECMAScript 2016 standard!
+ * You can use https://esprima.org/demo/validate.html to check for conformity.
+ */
+(function () {
     'use strict';
     const cookieManager = require('@hmcts/cookie-manager');
 
     const cookieBanner = document.querySelector('#cm-cookie-banner');
-    const cookieBannerDecision = cookieBanner?.querySelector('.cm-cookie-banner__decision');
-    const cookieBannerConfirmation = cookieBanner?.querySelector('.cm-cookie-banner__confirmation');
+    const cookieBannerDecision = cookieBanner ? cookieBanner.querySelector('.cm-cookie-banner__decision') : null;
+    const cookieBannerConfirmation = cookieBanner ? cookieBanner.querySelector('.cm-cookie-banner__confirmation') : null;
     const cookieBannerAccepted = document.querySelector('#cm-accepted-cookies');
     const cookieBannerRejected = document.querySelector('#cm-rejected-cookies');
 
     function cookieBannerAccept() {
-        cookieBannerAccepted.hidden = false;
-        cookieBannerRejected.hidden = true;
+        if (cookieBanner) {
+            cookieBannerAccepted.hidden = false;
+            cookieBannerRejected.hidden = true;
+        }
     }
 
     function cookieBannerReject() {
-        cookieBannerAccepted.hidden = true;
-        cookieBannerRejected.hidden = false;
+        if (cookieBanner) {
+            cookieBannerAccepted.hidden = true;
+            cookieBannerRejected.hidden = false;
+        }
     }
 
     function cookieBannerSaved() {
-        cookieBannerDecision.hidden = true;
-        cookieBannerConfirmation.hidden = false;
+        if (cookieBanner) {
+            cookieBannerDecision.hidden = true;
+            cookieBannerConfirmation.hidden = false;
+        }
     }
 
     function preferenceFormSaved() {
@@ -30,12 +40,12 @@
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
 
-// @ts-ignore
+    // @ts-ignore
     function cookiePreferencesUpdated(cookieStatus) {
         const dataLayer = window.dataLayer || [];
         const dtrum = window.dtrum;
 
-        dataLayer.push({ event: 'Cookie Preferences', cookiePreferences: cookieStatus });
+        dataLayer.push({event: 'Cookie Preferences', cookiePreferences: cookieStatus});
 
         if (dtrum !== undefined) {
             if (cookieStatus.apm === 'on') {
