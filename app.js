@@ -86,7 +86,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
                 'vcc-eu4b.8x8.com',
                 `'nonce-${uuid}'`
             ],
-            connectSrc: ['\'self\'', 'www.google-analytics.com'],
+            connectSrc: ['\'self\'', 'www.google-analytics.com', 'stats.g.doubleclick.net'],
             mediaSrc: ['\'self\''],
             frameSrc: ['vcc-eu4.8x8.com', 'vcc-eu4b.8x8.com'],
             imgSrc: [
