@@ -18,7 +18,8 @@ featureToggles:
   ft_sscs_disability_stage_1: 'sscs-disability-stage-1'
   ft_sscs_disability_stage_2: 'sscs-disability-stage-2'
   ft_new_cookie_banner: 'new-cookie-feature'
-  appwideToggles: ['ft_new_cookie_banner']
+  ft_dtrum_session_properties: 'dtrum-session-properties'
+  appwideToggles: ['ft_new_cookie_banner', 'ft_dtrum_session_properties']
 app:
   useHttps: 'false'
   port: '4000'

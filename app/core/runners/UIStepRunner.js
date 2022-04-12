@@ -35,7 +35,12 @@ class UIStepRunner {
                 session.back.push(step.constructor.getUrl());
             }
             const common = step.commonContent(session.language);
-            res.render(step.template, {content, fields, errors, common}, (err, html) => {
+            const app = {};
+            if (ctx.featureToggles && ctx.featureToggles.ft_dtrum_session_properties === 'true') {
+                app.serviceId = session.form.serviceId;
+                app.version = res.locals.releaseVersion;
+            }
+            res.render(step.template, {content, fields, errors, common, app}, (err, html) => {
                 if (err) {
                     req.log.error(err);
                     return res.status(500).render('errors/error', {common: commonContent, error: '500'});
