@@ -64,6 +64,11 @@
 
 {% block footer %}
     {% include "includes/footer_links.html" %}
+
+    <!-- dtrum session properties -->
+    {% if app.serviceId %}
+        <div id="app_version" style="display: none">{{ app.version }}</div>
+    {% endif %}
     {% if app.serviceId %}
         <div id="service_id" style="display: none">{{ app.serviceId }}</div>
     {% endif %}
