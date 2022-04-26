@@ -36,7 +36,6 @@ const allSteps = {
 };
 
 router.use(async (req, res, next) => {
-    req.session.featureToggles.ft_new_cookie_banner = await featureToggle.checkToggle('ft_new_cookie_banner', req, res);
     req.session.featureToggles.ft_dtrum_session_properties = await featureToggle.checkToggle('ft_dtrum_session_properties', req, res);
 
     Object.entries(allSteps[req.session.language]).forEach(([, step]) => {
