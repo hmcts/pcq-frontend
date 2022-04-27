@@ -30,7 +30,11 @@
 
 {% block header %}
     {% block cookiebanner %}
-        {% include "includes/cookie-banner.html" %}
+        {% if app.cookieManagerV1 %}
+            {% include "includes/cookie-banner-v1.html" %}
+        {% else %}
+            {% include "includes/cookie-banner.html" %}
+        {% endif %}
     {% endblock %}
 
     {{ govukHeader({
