@@ -36,7 +36,7 @@ const allSteps = {
 };
 
 router.use(async (req, res, next) => {
-  const toggles = await Promise.all([
+    const toggles = await Promise.all([
         featureToggle.checkToggle('ft_dtrum_session_properties', req, res),
         featureToggle.checkToggle('ft_cookie_manager_v1', req, res)
     ]);
