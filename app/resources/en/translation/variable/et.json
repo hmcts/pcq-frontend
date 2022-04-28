@@ -1,0 +1,24 @@
+{
+    "claimant": {
+      "startpage": {
+        "paragraph2": "Your answers will not affect your claim."
+      },
+      "endpage": {
+        "paragraph1": "The next steps are to check your claim details."
+      },
+      "shutterpage": {
+        "paragraph1": "We have saved your answers and will direct you back to your claim now."
+      }
+    },
+    "respondent": {
+        "startpage": {
+          "paragraph2": "Your answers will not affect your response."
+        },
+        "endpage": {
+          "paragraph1": "The next steps are to check your response details."
+        },
+        "shutterpage": {
+          "paragraph1": "We have saved your answers and will direct you back to your response now."
+        }
+      }
+}

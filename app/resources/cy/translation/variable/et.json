@@ -1,0 +1,24 @@
+{
+    "claimant": {
+      "startpage": {
+        "paragraph2": "Ni fydd eich atebion yn effeithio ar eich hawliad."
+      },
+      "endpage": {
+        "paragraph1": "Y cam nesaf yw gwirio manylion eich hawliad."
+      },
+      "shutterpage": {
+        "paragraph1": "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl at eich hawliad yn awr."
+      }
+    },
+    "respondent": {
+      "startpage": {
+        "paragraph2": "Ni fydd eich atebion yn effeithio ar eich achos."
+      },
+      "endpage": {
+        "paragraph1": "Y cam nesaf yw gwirio manylion eich achos."
+      },
+      "shutterpage": {
+        "paragraph1": "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl i'ch achos yn awr."
+      }
+    }
+  }
