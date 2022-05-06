@@ -30,6 +30,7 @@
         <li>
             {% if fields.returnUrl.value %}
                 {{ govukButton({
+                    name: 'opt-out-button',
                     text: common.dontWantToAnswer | safe,
                     classes: "govuk-button--secondary",
                     preventDoubleClick: true,
@@ -38,6 +39,10 @@
             {% endif %}
         </li>
     </ul>
+
+    {% if content.dtrumOptOut %}
+        <script src="{{ globals.basePath }}/public/javascripts/dtrum-optout.js"></script>
+    {% endif %}
 {% endblock %}
 
 {% block why_asking %}{% endblock %}
