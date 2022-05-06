@@ -34,7 +34,7 @@ describe('accessibility', () => {
                 list2probate: accessibility['list2-probate'],
                 list2sscs: accessibility['list2-sscs'],
                 list2iac: accessibility['list2-iac'],
-                list2et: accessiblitty['list2-et']
+                list2et: accessibility['list2-et']
             };
             testWrapper.testContent(done, contentData);
         });
