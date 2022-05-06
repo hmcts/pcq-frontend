@@ -4,10 +4,9 @@ const stepList = {
     StartPage: 'ApplicantLanguage',
     ApplicantLanguage: {
         otherLanguage: 'ApplicantEnglishLevel',
-        otherwise: 'ApplicantSex'
+        otherwise: 'ApplicantSexualOrientation'
     },
-    ApplicantEnglishLevel: 'ApplicantSex',
-    ApplicantSex: 'ApplicantSexualOrientation',
+    ApplicantEnglishLevel: 'ApplicantSexualOrientation',
     ApplicantSexualOrientation: 'ApplicantMaritalStatus',
     ApplicantMaritalStatus: 'ApplicantEthnicGroup',
     ApplicantEthnicGroup: {
