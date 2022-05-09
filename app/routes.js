@@ -36,9 +36,14 @@ const allSteps = {
 };
 
 router.use(async (req, res, next) => {
-    req.session.featureToggles.ft_new_cookie_banner = await featureToggle.checkToggle('ft_new_cookie_banner', req, res);
-    req.session.featureToggles.ft_dtrum_session_properties = await featureToggle.checkToggle('ft_dtrum_session_properties', req, res);
-    req.session.featureToggles.ft_dtrum_opt_out = await featureToggle.checkToggle('ft_dtrum_opt_out', req, res);
+    const toggles = await Promise.all([
+        featureToggle.checkToggle('ft_dtrum_session_properties', req, res),
+        featureToggle.checkToggle('ft_cookie_manager_v1', req, res),
+        featureToggle.checkToggle('ft_dtrum_opt_out', req, res)
+    ]);
+    req.session.featureToggles.ft_dtrum_session_properties = toggles[0];
+    req.session.featureToggles.ft_cookie_manager_v1 = toggles[1];
+    req.session.featureToggles.ft_dtrum_opt_out = toggles[2];
 
     Object.entries(allSteps[req.session.language]).forEach(([, step]) => {
         router.get(step.constructor.getUrl(), step.runner().GET(step));

@@ -4,6 +4,8 @@
  */
 (function () {
     'use strict';
+    console.log('Initialising Cookie Manager V0.4');
+
     const cookieManager = require('@hmcts/cookie-manager');
 
     const cookieBanner = document.querySelector('#cm-cookie-banner');
@@ -58,7 +60,6 @@
         }
     }
 
-    console.log('*PCQ* Initialising Cookie Manager...');
     cookieManager.init({
         'user-preference-cookie-name': 'pcq-cookie-preferences',
         'user-preference-saved-callback': cookiePreferencesUpdated,

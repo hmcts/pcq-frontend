@@ -29,11 +29,13 @@
 {% endblock %}
 
 {% block header %}
-    {% if content.newCookieBanner %}
-        {% block cookiebanner %}
+    {% block cookiebanner %}
+        {% if app.cookieManagerV1 %}
+            {% include "includes/cookie-banner-v1.html" %}
+        {% else %}
             {% include "includes/cookie-banner.html" %}
-        {% endblock %}
-    {% endif %}
+        {% endif %}
+    {% endblock %}
 
     {{ govukHeader({
         homepageUrl: "#",
