@@ -35,10 +35,15 @@ class UIStepRunner {
                 session.back.push(step.constructor.getUrl());
             }
             const common = step.commonContent(session.language);
-            const app = {};
-            if (ctx.featureToggles && ctx.featureToggles.ft_dtrum_session_properties === 'true') {
-                app.serviceId = session.form.serviceId;
-                app.version = res.locals.releaseVersion;
+            const app = {cookieManagerV1: false};
+            if (ctx.featureToggles) {
+                if (ctx.featureToggles.ft_dtrum_session_properties === 'true') {
+                    app.serviceId = session.form.serviceId;
+                    app.version = res.locals.releaseVersion;
+                }
+                if (ctx.featureToggles.ft_cookie_manager_v1 === 'true') {
+                    app.cookieManagerV1 = true;
+                }
             }
             res.render(step.template, {content, fields, errors, common, app}, (err, html) => {
                 if (err) {
