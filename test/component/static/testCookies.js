@@ -7,7 +7,7 @@ describe('cookies', () => {
     let testWrapper;
 
     beforeEach(() => {
-        testWrapper = new TestWrapper('Cookies', {ft_new_cookie_banner: true});
+        testWrapper = new TestWrapper('Cookies');
     });
 
     afterEach(() => {
