@@ -22,7 +22,7 @@ import cookieManager from '@hmcts/cookie-manager-v1';
         if(dtrum !== undefined) {
             if(preferences.apm === 'on') {
                 dtrum.enable();
-                dtrum.enableSessionReplay();
+                dtrum.enableSessionReplay(true);
             } else {
                 dtrum.disableSessionReplay();
                 dtrum.disable();
