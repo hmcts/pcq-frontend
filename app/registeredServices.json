@@ -75,12 +75,10 @@
   {
     "serviceId": "ET",
     "actors": [
-      "CLAIMANT",
-      "RESPONDENT"
+      "CLAIMANT"
     ],
     "redirectLinks": {
-      "et_claimant": "https://et-sya.aat.platform.hmcts.net/check-your-answers",
-      "et_respondent": "https://et-sya.aat.platform.hmcts.net/check-your-answers"
+      "et_claimant": "https://et-sya.aat.platform.hmcts.net/steps-to-making-your-claim"
     }
   }
 ]

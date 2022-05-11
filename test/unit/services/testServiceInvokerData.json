@@ -263,21 +263,6 @@
                             "channel" : 2,
                             "redirect" : "Make a claim to an employment tribunal"
                         }
-                    },
-                "respondent" :
-                    {
-                        "formData" :
-                        {
-                            "serviceId": "et",
-                            "actor" : "respondent",
-                            "pcqId" : "b784f767-d452-4abc-8905-946e81dfb72b",
-                            "ccdCaseId" : "95a6182c-7788-4aa5-81f3-9dc26638f6fa",
-                            "partyId" : "ET_RESPONDENT@test.gov.uk",
-                            "returnUrl" : "ET_RESPONDENT.test.gov.uk",
-                            "language" : "en",
-                            "channel" : 2,
-                            "redirect" : "Make a response to an employment tribunal"
-                        }
                     }
             }
         }

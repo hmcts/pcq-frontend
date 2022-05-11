@@ -117,8 +117,7 @@ describe('Invoker', () => {
                         'APPLICANT'
                     ],
                     'ET': [
-                        'CLAIMANT',
-                        'RESPONDENT'
+                        'CLAIMANT'
                     ],
                 }
             });
