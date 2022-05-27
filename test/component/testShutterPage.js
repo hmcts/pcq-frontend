@@ -33,7 +33,8 @@ describe('shutter-page', () => {
                         'divorce_respondent',
                         'sscs',
                         'iac',
-                        'adoption'
+                        'adoption',
+                        'et_claimant'
                     ]);
                 });
         });

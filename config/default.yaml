@@ -45,6 +45,7 @@ tokenKeys:
   sscs: 'SERVICE_TOKEN_KEY'
   iac: 'SERVICE_TOKEN_KEY'
   adoption: 'SERVICE_TOKEN_KEY'
+  et: 'SERVICE_TOKEN_KEY'
 redis:
   host: 'localhost'
   port: 6379

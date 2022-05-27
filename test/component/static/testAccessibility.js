@@ -33,7 +33,8 @@ describe('accessibility', () => {
                 list2divorce: accessibility['list2-divorce'],
                 list2probate: accessibility['list2-probate'],
                 list2sscs: accessibility['list2-sscs'],
-                list2iac: accessibility['list2-iac']
+                list2iac: accessibility['list2-iac'],
+                list2et: accessibility['list2-et']
             };
             testWrapper.testContent(done, contentData);
         });

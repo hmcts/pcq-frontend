@@ -69,7 +69,16 @@
       "APPLICANT"
     ],
     "redirectLinks": {
-      "adoption": "https://apply-for-adoption.platform.hmcts.net/review-pay-submit/check-your-answers"
+      "adoption": "https://www.adoption-web.service.gov.uk/review-pay-submit/check-your-answers"
+    }
+  },
+  {
+    "serviceId": "ET",
+    "actors": [
+      "CLAIMANT"
+    ],
+    "redirectLinks": {
+      "et_claimant": "https://et-sya.aat.platform.hmcts.net/steps-to-making-your-claim"
     }
   }
 ]

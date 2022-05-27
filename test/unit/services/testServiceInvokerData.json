@@ -244,6 +244,27 @@
                         }
                     }
                 }
+            },
+        "et" :
+            {
+            "datas" :
+            {
+                "claimant" :
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "et",
+                            "actor" : "claimant" ,
+                            "pcqId" : "09bb30d9-0c02-48d3-8787-03f4ec85f367",
+                            "ccdCaseId" : "c60198fc-7a5d-45f9-adbf-4c89ba79ec59",
+                            "partyId" : "ET_CLAIMANT@test.gov.uk",
+                            "returnUrl" : "ET_CLAIMANT.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2,
+                            "redirect" : "Make a claim to an employment tribunal"
+                        }
+                    }
             }
+        }
     }
 }
