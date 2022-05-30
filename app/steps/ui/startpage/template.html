@@ -41,7 +41,7 @@
     </ul>
 
     {% if content.dtrumOptOut %}
-        <script src="{{ globals.basePath }}/public/javascripts/dtrum-optout.js"></script>
+        <script src="{{ globals.basePath }}/public/javascripts/dtrum-optout.js?t={{ content.timestamp }}"></script>
     {% endif %}
 {% endblock %}
 
