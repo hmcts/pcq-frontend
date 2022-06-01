@@ -80,5 +80,15 @@
     "redirectLinks": {
       "et_claimant": "https://et-sya.aat.platform.hmcts.net/steps-to-making-your-claim"
     }
+  },
+  {
+    "serviceId": "ONLINE_PLEA",
+    "actors": [
+      "DEFENDANT"
+    ],
+    "redirectLinks": {
+      "online_plea": "https://onlineplea.cjscp.org.uk/onlineplea/check-your-answers.xhtml"
+      
+    }
   }
 ]
