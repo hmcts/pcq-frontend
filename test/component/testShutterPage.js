@@ -34,7 +34,8 @@ describe('shutter-page', () => {
                         'sscs',
                         'iac',
                         'adoption',
-                        'et_claimant'
+                        'et_claimant',
+                        'online_plea'
                     ]);
                 });
         });
