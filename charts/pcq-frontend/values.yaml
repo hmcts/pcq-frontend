@@ -39,7 +39,8 @@ nodejs:
 
 redis:
   architecture: standalone
-  usePassword: false
+  auth:
+    enabled: false
   master:
     persistence:
       enabled: false
