@@ -38,9 +38,7 @@ nodejs:
         - online-plea-token-key
 
 redis:
-  cluster:
-    enabled: false
-    slaveCount: 0
+  architecture: standalone
   usePassword: false
   master:
     persistence:
