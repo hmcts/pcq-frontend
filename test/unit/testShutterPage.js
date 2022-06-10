@@ -64,7 +64,8 @@ describe('ShutterPage', () => {
                     'sscs': 'https://www.gov.uk/appeal-benefit-decision/submit-appeal',
                     'iac': 'https://www.appeal-immigration-asylum-decision.service.gov.uk',
                     'adoption': 'https://www.adoption-web.service.gov.uk/review-pay-submit/check-your-answers',
-                    'et_claimant': 'https://et-sya.aat.platform.hmcts.net/steps-to-making-your-claim'
+                    'et_claimant': 'https://et-sya.aat.platform.hmcts.net/steps-to-making-your-claim',
+                    'online_plea': 'https://onlineplea.cjscp.org.uk/onlineplea/check-your-answers.xhtml'
                 }
             );
             done();

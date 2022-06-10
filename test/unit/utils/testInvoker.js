@@ -86,6 +86,10 @@ describe('Invoker', () => {
                     {
                         value: 'ET',
                         text: 'ET'
+                    },
+                    {
+                        value: 'ONLINE_PLEA',
+                        text: 'ONLINE_PLEA'
                     }
                 ],
                 actorList: {
@@ -118,6 +122,9 @@ describe('Invoker', () => {
                     ],
                     'ET': [
                         'CLAIMANT'
+                    ],
+                    'ONLINE_PLEA': [
+                        'DEFENDANT'
                     ],
                 }
             });

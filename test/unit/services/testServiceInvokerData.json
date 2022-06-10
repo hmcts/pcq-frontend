@@ -207,7 +207,7 @@
                             "redirect" : "Make a money claim"
                         }
                     },
-                "defendent" :
+                "defendant" :
                     {
                         "formData" :
                         {
@@ -262,6 +262,27 @@
                             "language" : "en",
                             "channel" : 2,
                             "redirect" : "Make a claim to an employment tribunal"
+                        }
+                    }
+            }
+        },
+        "online_plea" :
+            {
+            "datas" :
+            {
+                "defendant" :
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "online_plea",
+                            "actor" : "defendant" ,
+                            "pcqId" : "f565ce61-0edb-40e9-832a-ceb4af24f369",
+                            "ccdCaseId" : "05eb70ce-62f4-4e83-a155-aa44266470bf",
+                            "partyId" : "ONLINE_PLEA_DEFENDANT@test.gov.uk",
+                            "returnUrl" : "ONLINE_PLEA_DEFENDANT.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2,
+                            "redirect" : "Make a plea"
                         }
                     }
             }
