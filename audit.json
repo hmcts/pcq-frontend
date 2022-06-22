@@ -458,5 +458,9 @@
   "90027_Cookie Slack Detector_https://pcq.aat.platform.hmcts.net/cookies?analytics=on&apm=on&lng=cy_GET": "ignore",
   "10096_Timestamp Disclosure - Unix_https://pcq.aat.platform.hmcts.net/public/javascripts/cookie_bundle.js_GET" : "ignore",
   "10096_Timestamp Disclosure - Unix_https://pcq.aat.platform.hmcts.net/public/javascripts/cookie_bundle_v1.js_GET" : "ignore",
-  "40022_SQL Injection - PostgreSQL - Time Based_https://pcq.aat.platform.hmcts.net/offline?lng=en_GET" : "ignore"
+  "40022_SQL Injection - PostgreSQL - Time Based_https://pcq.aat.platform.hmcts.net/offline?lng=en_GET" : "ignore",
+  "40035_Hidden File Found_https://pcq.aat.platform.hmcts.net/._darcs_GET": "ignore",
+  "40035_Hidden File Found_https://pcq.aat.platform.hmcts.net/.bzr_GET": "ignore",
+  "40035_Hidden File Found_https://pcq.aat.platform.hmcts.net/.hg_GET": "ignore",
+  "40035_Hidden File Found_https://pcq.aat.platform.hmcts.net/BitKeeper_GET": "ignore"
 }
