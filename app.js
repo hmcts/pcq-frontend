@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 'use strict';
 
 /* eslint no-console: 0 no-unused-vars: 0 */
@@ -86,7 +87,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
                 'vcc-eu4b.8x8.com',
                 `'nonce-${uuid}'`
             ],
-            connectSrc: ['\'self\'', 'www.google-analytics.com'],
+            connectSrc: ['\'self\'', 'www.google-analytics.com', 'stats.g.doubleclick.net'],
             mediaSrc: ['\'self\''],
             frameSrc: ['vcc-eu4.8x8.com', 'vcc-eu4b.8x8.com'],
             imgSrc: [
@@ -204,8 +205,19 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     });
 
     if (config.app.useCSRFProtection === 'true') {
-        app.use(csrf(), (req, res, next) => {
-            res.locals.csrfToken = req.csrfToken();
+        app.use((req, res, next) => {
+            // Exclude Dynatrace Beacon POST requests from CSRF check
+            if (req.method === 'POST' && req.path.startsWith('/rb_')) {
+                next();
+            } else {
+                csrf({})(req, res, next);
+            }
+        });
+
+        app.use((req, res, next) => {
+            if (req.csrfToken) {
+                res.locals.csrfToken = req.csrfToken();
+            }
             next();
         });
     }
@@ -216,7 +228,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
 
         res.locals.govuk = commonContent.govuk;
         res.locals.serviceName = commonContent.serviceName;
-        res.locals.releaseVersion = 'v' + releaseVersion;
+        res.locals.releaseVersion = releaseVersion;
         next();
     });
 

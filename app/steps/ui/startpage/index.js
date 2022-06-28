@@ -8,6 +8,13 @@ class StartPage extends Step {
         return '/start-page';
     }
 
+    generateContent(ctx, formdata, language = 'en') {
+        const content = super.generateContent(ctx, formdata, language);
+        content.dtrumOptOut = Boolean(ctx.featureToggles && ctx.featureToggles.ft_dtrum_opt_out === 'true');
+        content.timestamp = Date.now();
+        return content;
+    }
+
     getContextData(req) {
         const ctx = super.getContextData(req);
         if (req.session.returnUrl) {

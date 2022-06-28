@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.6",
+  "version": "1.2.21",
   "license": "MIT",
   "engines": {
     "node": ">=14.18.1"
@@ -9,7 +9,7 @@
   "scripts": {
     "preinstall": "./bin/preinstall.sh || true",
     "setup": "NODE_PATH=. npm run sass && npm run git-info && npm run sass-ie8 && npm run bundle",
-    "bundle": "NODE_PATH=. node node_modules/browserify/bin/cmd.js app/assets/javascripts/cookie.js -o public/javascripts/cookie_bundle.js",
+    "bundle": "NODE_PATH=. node node_modules/browserify/bin/cmd.js app/assets/javascripts/cookie.js -o public/javascripts/cookie_bundle.js && NODE_PATH=. node node_modules/browserify/bin/cmd.js app/assets/javascripts/cookie-v1.js -p esmify -o public/javascripts/cookie_bundle_v1.js",
     "start": "NODE_PATH=. node server.js",
     "debug": "NODE_PATH=. node inspect server.js",
     "prestart:dev": "npm run sass:watch",
@@ -47,6 +47,7 @@
   ],
   "dependencies": {
     "@hmcts/cookie-manager": "^0.0.4",
+    "@hmcts/cookie-manager-v1": "npm:@hmcts/cookie-manager@^1.0.0",
     "@hmcts/nodejs-healthcheck": "^1.7.0",
     "@hmcts/nodejs-logging": "^3.0.4",
     "@hmcts/properties-volume": "^0.0.13",
@@ -102,6 +103,7 @@
     "codecov": "^4.0.0-0",
     "eslint": "^6.8.0",
     "eslint-plugin-mocha": "^6.0.0",
+    "esmify": "^2.1.1",
     "istanbul": "^1.1.0-alpha.1",
     "mocha": "^6.2.0",
     "mocha-jenkins-reporter": "^0.4.5",
@@ -126,9 +128,11 @@
     "yarn-audit-fix": "^9.0.10"
   },
   "resolutions": {
+    "async": "^3.2.2",
     "axios": "^0.21.2",
     "ansi-regex": "^5.0.1",
     "minimist": "^1.2.6",
+    "moment": "^2.29.2",
     "validator": "^13.7.0",
     "json-schema": "^0.4.0"
   },

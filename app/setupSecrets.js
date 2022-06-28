@@ -22,6 +22,8 @@ const setupSecrets = () => {
         setSecret('secrets.pcq.sscs-token-key', 'tokenKeys.sscs'); // SSCS
         setSecret('secrets.pcq.iac-token-key', 'tokenKeys.iac'); // IAC
         setSecret('secrets.pcq.adoption-token-key', 'tokenKeys.adoption'); // ADOPTION
+        setSecret('secrets.pcq.et-token-key', 'tokenKeys.et'); // ET
+        setSecret('secrets.pcq.online-plea-token-key', 'tokenKeys.online_plea'); // online_plea
     }
 };
 

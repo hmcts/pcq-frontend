@@ -82,6 +82,14 @@ describe('Invoker', () => {
                     {
                         value: 'ADOPTION',
                         text: 'ADOPTION'
+                    },
+                    {
+                        value: 'ET',
+                        text: 'ET'
+                    },
+                    {
+                        value: 'ONLINE_PLEA',
+                        text: 'ONLINE_PLEA'
                     }
                 ],
                 actorList: {
@@ -111,7 +119,13 @@ describe('Invoker', () => {
                     ],
                     'ADOPTION': [
                         'APPLICANT'
-                    ]
+                    ],
+                    'ET': [
+                        'CLAIMANT'
+                    ],
+                    'ONLINE_PLEA': [
+                        'DEFENDANT'
+                    ],
                 }
             });
             done();

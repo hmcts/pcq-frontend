@@ -285,7 +285,7 @@
                             "shutterPageTextEn" : "We have saved your answers and will direct you back to your claim now.",
                             "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl at eich hawliad yn awr."
                         },
-                    "defendent" :
+                    "defendant" :
                         {
                             "formData" :
                             {
@@ -367,6 +367,76 @@
                     }
                 }
             
+            },
+        "et" :
+            {
+                "nextStep": 
+                {
+                    "ApplicantLanguage": {
+                        "name": "ApplicantLanguage"
+                    }
+                },
+                "nextStepName" :
+                {
+                    "name": "ApplicantLanguage" 
+                },
+                "currentStep" : "StartPage",
+                "skipStepName" :
+                {
+                    "name": "ApplicantDateOfBirth"  
+                },
+                "datas" :
+                {
+                    "claimant" :
+                        {
+                           "formData" :
+                            {
+                                "serviceId": "et",
+                                "actor" : "claimant" 
+                            },
+                            "startPageTextEn" : "Your answers will not affect your claim.",
+                            "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich hawliad.",
+                            "endPageTextEn" : "The next steps are to check your claim details.",
+                            "endPageTextCy" : "Y cam nesaf yw gwirio manylion eich hawliad.",
+                            "shutterPageTextEn" : "We have saved your answers and will direct you back to your claim now.",
+                            "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl at eich hawliad yn awr."
+                        }
+                    }
+            },
+        "online_plea" :
+            {
+                "nextStep": 
+                {
+                    "ApplicantLanguage": {
+                        "name": "ApplicantLanguage"
+                    }
+                },
+                "nextStepName" :
+                {
+                    "name": "ApplicantLanguage" 
+                },
+                "currentStep" : "StartPage",
+                "skipStepName" :
+                {
+                    "name": "ApplicantDateOfBirth"  
+                },
+                "datas" :
+                {
+                    "defendant" :
+                        {
+                           "formData" :
+                            {
+                                "serviceId": "online_plea",
+                                "actor" : "defendant" 
+                            },
+                            "startPageTextEn" : "Your answers won't affect your case or be shared with anyone involved in your case.",
+                            "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich achos a ni fyddant yn cael eu rhannu ag unrhyw un sy’n rhan o’ch achos.",
+                            "endPageTextEn" : "The next steps are to check your case details.",
+                            "endPageTextCy" : "Y cam nesaf yw gwirio manylion eich achos.",
+                            "shutterPageTextEn" : "We have saved your answers and will direct you back to your case now.",
+                            "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl i'ch achos yn awr."
+                        }
+                    }
             }
 
     }
