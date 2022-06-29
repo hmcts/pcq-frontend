@@ -464,5 +464,6 @@
   "40035_Hidden File Found_https://pcq.aat.platform.hmcts.net/.hg_GET": "ignore",
   "40035_Hidden File Found_https://pcq.aat.platform.hmcts.net/BitKeeper_GET": "ignore",
   "40027_SQL Injection - MsSQL_https://pcq.aat.platform.hmcts.net/cookies?lng=en_GET": "ignore",
-  "40019_SQL Injection - MySQL_https://pcq.aat.platform.hmcts.net/cookies?analytics=on\u0026apm=on_GET": "ignore"
+  "40019_SQL Injection - MySQL_https://pcq.aat.platform.hmcts.net/cookies?analytics=on\u0026apm=on_GET": "ignore",
+  "40019_SQL Injection - MySQL_https://pcq.aat.platform.hmcts.net/cookies?lng=en_GET": "ignore"
 }
