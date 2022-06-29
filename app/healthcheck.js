@@ -5,8 +5,8 @@ const logger = require('app/components/logger')('Init');
 const os = require('os');
 const config = require('config');
 const osHostname = os.hostname();
-const gitProperties = require('git.properties');
-const gitCommitId = gitProperties.git.commit.id;
+const version = require('version');
+const gitCommitId = version.commit;
 const gitRevision = process.env.GIT_REVISION;
 
 const checks = {};

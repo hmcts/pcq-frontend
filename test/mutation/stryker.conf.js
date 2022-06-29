@@ -17,7 +17,7 @@ module.exports = {
         'app.js',
         'server.js',
         'package.json',
-        'git.properties.json',
+        'version.json',
         'app/**',
         'config/*',
         'test/**'
