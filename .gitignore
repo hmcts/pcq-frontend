@@ -28,3 +28,4 @@ smoke-output/
 /config/dev.yaml
 .stryker-tmp/
 stryker.log
+undefinedconsole.log
