@@ -5,7 +5,7 @@ const logger = require('app/components/logger')('Init');
 const os = require('os');
 const config = require('config');
 const osHostname = os.hostname();
-const version = require('version');
+const version = require('version.json');
 const gitCommitId = version.commit;
 const gitRevision = process.env.GIT_REVISION;
 

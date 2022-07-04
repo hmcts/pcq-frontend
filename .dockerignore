@@ -16,5 +16,5 @@
 !config/**
 !test
 !createVersionFile.js
-!version
+!version.json
 !.git
