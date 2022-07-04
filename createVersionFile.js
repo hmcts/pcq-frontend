@@ -30,9 +30,9 @@ function getAppVersion() {
 }
 
 function createVersionFile() {
-    const versionFilePath = `${process.env.NODE_PATH || '.'}/version.json`;
+    const versionFilePath = `${process.env.NODE_PATH || '.'}/version`;
     const fileData = {
-        version: `-${getAppVersion()}-`,
+        version: getAppVersion(),
         commit: getCommitHash(),
         date: getCommitDate(),
     };

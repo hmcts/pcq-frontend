@@ -19,7 +19,7 @@ coverage
 /test/end-to-end/output/**
 package-lock.json
 yarn-error.log
-version.json
+version
 .scannerwork/
 infrastructure/.terraform
 /mochawesome-report/
