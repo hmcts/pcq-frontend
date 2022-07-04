@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 'use strict';
 
 /* eslint no-console: 0 no-unused-vars: 0 */
@@ -204,8 +205,19 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     });
 
     if (config.app.useCSRFProtection === 'true') {
-        app.use(csrf(), (req, res, next) => {
-            res.locals.csrfToken = req.csrfToken();
+        app.use((req, res, next) => {
+            // Exclude Dynatrace Beacon POST requests from CSRF check
+            if (req.method === 'POST' && req.path.startsWith('/rb_')) {
+                next();
+            } else {
+                csrf({})(req, res, next);
+            }
+        });
+
+        app.use((req, res, next) => {
+            if (req.csrfToken) {
+                res.locals.csrfToken = req.csrfToken();
+            }
             next();
         });
     }
