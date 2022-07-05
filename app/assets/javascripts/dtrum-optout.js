@@ -27,7 +27,7 @@
             const dtrum = window.dtrum;
             if (dtrum !== undefined) {
                 let cookieStatus = getCookie('pcq-cookie-preferences');
-                cookieStatus = cookieStatus.value ? JSON.parse(cookieStatus.value) : null;
+                cookieStatus = cookieStatus?.value ? JSON.parse(cookieStatus.value) : null;
 
                 if (cookieStatus && cookieStatus.apm === 'on') {
                     dtrum.enterAction('PCQ Opt-out')
