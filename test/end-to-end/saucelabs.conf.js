@@ -54,12 +54,6 @@ const setupConfig = {
     include: {
         'I': './pages/steps.js'
     },
-    plugins: {
-        autoDelay: {
-            enabled: true,
-            delayAfter: 4000
-        }
-    },
     mocha: {
         reporterOptions: {
             'codeceptjs-cli-reporter': {
