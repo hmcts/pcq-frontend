@@ -30,12 +30,6 @@ const setupConfig = {
             browser,
             cssSelectorsEnabled: 'true',
 
-            region: 'eu',
-            sauceConnect: true,
-            services: ['sauce'],
-            user: process.env.SAUCE_USERNAME,
-            key: process.env.SAUCE_ACCESS_KEY,
-
             desiredCapabilities: {
                 'sauce:options': {
                     name: 'CodeceptJS e2e test',
@@ -45,6 +39,22 @@ const setupConfig = {
         },
         SauceLabsReportingHelper: {
             require: './helpers/SauceLabsReportingHelper.js'
+        },
+    },
+    plugins: {
+        wdio: {
+            enabled: true,
+            user: process.env.SAUCE_USERNAME,
+            key: process.env.SAUCE_ACCESS_KEY,
+            region: 'eu',
+            services: ['sauce'],
+            acceptSslCerts: true,
+        },
+        autoDelay: {
+            enabled: true
+        },
+        retryFailedStep: {
+            enabled: true,
         },
     },
     gherkin: {
