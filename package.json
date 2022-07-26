@@ -8,7 +8,7 @@
   },
   "scripts": {
     "preinstall": "./bin/preinstall.sh || true",
-    "setup": "NODE_PATH=. npm rebuild node-sass && npm run sass && npm run createVersionFile && npm run sass-ie8 && npm run bundle",
+    "setup": "NODE_PATH=. npm run sass && npm run createVersionFile && npm run sass-ie8 && npm run bundle",
     "createVersionFile": "NODE_PATH=. node createVersionFile.js",
     "bundle": "NODE_PATH=. node node_modules/browserify/bin/cmd.js app/assets/javascripts/cookie.js -o public/javascripts/cookie_bundle.js && NODE_PATH=. node node_modules/browserify/bin/cmd.js app/assets/javascripts/cookie-v1.js -p esmify -o public/javascripts/cookie_bundle_v1.js",
     "start": "NODE_PATH=. node server.js",
