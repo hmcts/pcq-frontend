@@ -475,5 +475,5 @@
   "40020_SQL Injection - Hypersonic SQL - Time Based_https://pcq.aat.platform.hmcts.net/offline?lng=en_GET": "ignore",
   "40019_SQL Injection - MySQL_https://pcq.aat.platform.hmcts.net/cookies?analytics=on&apm=on&lng=en_GET": "ignore",
   "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/assets/images/govuk-apple-touch-icon.png_GET": "ignore",
-  "90027_Cookie Slack Detector_https://pcq.aat.platform.hmcts.net/assets/images/govuk-logotype-crown.png_GET": "ignore"
+  "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/public/javascripts/form-polyfill.js_GET": "ignore"
 }
