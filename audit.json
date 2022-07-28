@@ -477,6 +477,9 @@
   "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/assets/images/govuk-apple-touch-icon.png_GET": "ignore",
   "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/public/javascripts/form-polyfill.js_GET": "ignore",
   "90027_Cookie Slack Detector_https://pcq.aat.platform.hmcts.net/assets/images/govuk-logotype-crown.png_GET": "ignore",
-  "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/public/stylesheets/application.css_GET": "ignore"
-
+  "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/public/stylesheets/application.css_GET": "ignore",
+  "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/public/javascripts/govuk-frontend/govuk/all.js_GET": "ignore",
+  "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/public/stylesheets/application-ie8.css_GET": "ignore",
+  "40025_Proxy Disclosure_https://pcq.aat.platform.hmcts.net/assets/images/govuk-logotype-crown.png_GET": "ignore"
+ 
 }
