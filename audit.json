@@ -481,6 +481,7 @@
   "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/public/javascripts/govuk-frontend/govuk/all.js_GET": "ignore",
   "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/public/stylesheets/application-ie8.css_GET": "ignore",
   "40025_Proxy Disclosure_https://pcq.aat.platform.hmcts.net/assets/images/govuk-logotype-crown.png_GET": "ignore",
-  "10096_Timestamp Disclosure - Unix_https://pcq.aat.platform.hmcts.net/assets/images/govuk-logotype-crown.png_GET": "ignore"
- 
+  "10096_Timestamp Disclosure - Unix_https://pcq.aat.platform.hmcts.net/assets/images/govuk-logotype-crown.png_GET": "ignore",
+  "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/assets/images/govuk-apple-touch-icon-180x180.png_GET": "ignore"
 }
+  
