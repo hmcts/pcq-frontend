@@ -17,11 +17,6 @@ const initStep = (filePath, language) => {
         section.pop();
     }
 
-    // Test code to verify code coverage reporting - TO BE REMOVED
-    let test = 'this';
-    test += ' is a test';
-    console.log(test);
-
     const schemaPath = filePath.replace('index.js', 'schema');
     let schema;
 

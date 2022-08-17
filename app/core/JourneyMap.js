@@ -24,6 +24,11 @@ class JourneyMap {
             nextStepName = nextStepName[this.nextOptionStep(currentStep, ctx)];
         }
 
+        // Test code to verify code coverage reporting - TO BE REMOVED
+        let test = 'this';
+        test += ' is a test';
+        console.log(test);
+
         return this.skipList ? this.skipListNextStep(nextStepName, ctx) : steps[nextStepName];
     }
 
