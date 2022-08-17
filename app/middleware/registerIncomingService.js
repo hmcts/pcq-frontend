@@ -14,7 +14,8 @@ const pcqParameters = [
     {name: 'ccdCaseId', required: false},
     {name: 'partyId', required: true},
     {name: 'returnUrl', required: true},
-    {name: 'language', required: false}
+    {name: 'language', required: false},
+    {name: 'ageCheck', required: false}
 ];
 
 const setSession = req => {
@@ -38,6 +39,7 @@ const setSession = req => {
                     session[param.name] = stringUtils.prefixHttps(value);
                     break;
                 case 'language':
+                case 'ageCheck':
                     session[param.name] = value;
                     break;
                 default:
@@ -80,8 +82,8 @@ const registerIncomingService = (req) => {
     logger.info(req.query);
     const partyId = req.query.partyId;
     if (partyId) {
-        const changedPartyId = partyId.trim().replace(/\s/g, '+');
-        req.query.partyId = changedPartyId;
+        // Ensure emails are properly encoded
+        req.query.partyId = partyId.trim().replace(/\s/g, '+');
     }
     if (verifyToken(req.query)) {
         validateParameters(req);

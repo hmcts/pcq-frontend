@@ -1,5 +1,7 @@
 'use strict';
 
+const AgeCheck = require('../utils/Constants');
+
 const stepList = {
     StartPage: 'ApplicantDateOfBirth',
     ApplicantDateOfBirth: 'ApplicantLanguage',
@@ -38,6 +40,15 @@ const stepList = {
     ApplicantPregnant: 'EndPage'
 };
 
+const ageCheckQuestions = {
+    [AgeCheck.GreaterThanEighteen]: [],
+    [AgeCheck.SixteenToEighteen]: [],
+    [AgeCheck.LessThanSixteen]: [
+        {stepName: 'ApplicantDateOfBirth'},
+        {stepName: 'ApplicantLanguage'},
+    ]
+};
+
 module.exports = () => {
-    return {stepList};
+    return {stepList, ageCheckQuestions};
 };
