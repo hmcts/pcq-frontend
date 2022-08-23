@@ -6,8 +6,6 @@ const supportedBrowsers = {
             browserVersion: '11.285',
             'sauce:options': {
                 name: 'PCQ_WIN10_IE11_11',
-                extendedDebugging: true,
-                capturePerformance: true
             }
         }
     },
@@ -18,8 +16,6 @@ const supportedBrowsers = {
             browserVersion: '18.17763',
             'sauce:options': {
                 name: 'PCQ_WIN10_EDGE_18',
-                extendedDebugging: true,
-                capturePerformance: true
             }
         }
     },
@@ -30,8 +26,7 @@ const supportedBrowsers = {
             platformName: 'Windows 10',
             'sauce:options': {
                 name: 'PCQ_WIN10_CHROME_LATEST',
-                extendedDebugging: true,
-                capturePerformance: true
+                extendedDebugging: true
             }
         },
         chrome_mac_latest: {
@@ -40,8 +35,7 @@ const supportedBrowsers = {
             platformName: 'macOS 10.13',
             'sauce:options': {
                 name: 'PCQ_MAC_CHROME_LATEST',
-                extendedDebugging: true,
-                capturePerformance: true
+                extendedDebugging: true
             }
         }
     },
@@ -52,8 +46,7 @@ const supportedBrowsers = {
             browserVersion: 'latest',
             'sauce:options': {
                 name: 'PCQ_WIN10_FIREFOX_LATEST',
-                extendedDebugging: true,
-                capturePerformance: true
+                extendedDebugging: true
             }
         },
         firefox_mac_latest: {
@@ -62,8 +55,7 @@ const supportedBrowsers = {
             browserVersion: 'latest',
             'sauce:options': {
                 name: 'PCQ_MAC_FIREFOX_LATEST',
-                extendedDebugging: true,
-                capturePerformance: true
+                extendedDebugging: true
             }
         },
     },
@@ -74,8 +66,6 @@ const supportedBrowsers = {
             platformName: 'macOS 10.13',
             'sauce:options': {
                 name: 'PCQ_MAC_SAFARI_11',
-                extendedDebugging: true,
-                capturePerformance: true
             }
         }
     }

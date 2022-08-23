@@ -30,28 +30,22 @@ const setupConfig = {
             browser,
             cssSelectorsEnabled: 'true',
 
-            desiredCapabilities: {
-                'sauce:options': {
-                    name: 'CodeceptJS e2e test',
-                    tunnelIdentifier: tunnelName,
-                }
-            }
+            user: process.env.SAUCE_USERNAME,
+            key: process.env.SAUCE_ACCESS_KEY,
+            region: 'eu',
+            sauceConnect: true,
+            services: ['sauce'],
+
+            // This line is required to ensure test name and browsers are set correctly for some reason.
+            desiredCapabilities: {'sauce:options': {}}
         },
         SauceLabsReportingHelper: {
             require: './helpers/SauceLabsReportingHelper.js'
         },
     },
     plugins: {
-        wdio: {
-            enabled: true,
-            user: process.env.SAUCE_USERNAME,
-            key: process.env.SAUCE_ACCESS_KEY,
-            region: 'eu',
-            services: ['sauce'],
-            acceptSslCerts: true,
-        },
         autoDelay: {
-            enabled: true
+            enabled: true,
         },
         retryFailedStep: {
             enabled: true,
