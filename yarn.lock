@@ -1475,6 +1475,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"app@link:./app::locator=protected-characteristics-frontend%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "app@link:./app::locator=protected-characteristics-frontend%40workspace%3A."
+  languageName: node
+  linkType: soft
+
 "append-transform@npm:^2.0.0":
   version: 2.0.0
   resolution: "append-transform@npm:2.0.0"
@@ -9497,6 +9503,7 @@ __metadata:
     "@stryker-mutator/mocha-runner": ^5.6.1
     ajv: ^6.12.6
     allure-commandline: ^2.13.0
+    app: "link:./app"
     applicationinsights: ^1.8.8
     body-parser: ^1.19.0
     browserify: ^17.0.0
@@ -9533,6 +9540,7 @@ __metadata:
     mocha-lcov-reporter: ^1.3.0
     mocha-multi: ^1.1.3
     mochawesome: ^6.2.0
+    moment: ^2.29.4
     nock: ^10.0.6
     node-emoji: ^1.10.0
     node-fetch: ^2.6.7
@@ -9556,6 +9564,7 @@ __metadata:
     sonarqube-scanner: ^2.8.1
     superagent: ^5.1.0
     supertest: ^4.0.2
+    test: "link:./test"
     traverse: ^0.6.6
     uuid: ^3.3.2
     validator: ^13.7.0
@@ -11545,6 +11554,12 @@ __metadata:
   checksum: 3b34a3d77165a2cb82b34014b3aba93b1c4637a5011807557dc2f3da826c59975a5ccad765721c4648b39817e3472789f9b0fa98fc854c5c1c7a1e632aacdc28
   languageName: node
   linkType: hard
+
+"test@link:./test::locator=protected-characteristics-frontend%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "test@link:./test::locator=protected-characteristics-frontend%40workspace%3A."
+  languageName: node
+  linkType: soft
 
 "text-hex@npm:1.0.x":
   version: 1.0.0
