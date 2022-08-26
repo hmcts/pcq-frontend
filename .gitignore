@@ -28,3 +28,11 @@ smoke-output/
 /config/dev.yaml
 .stryker-tmp/
 stryker.log
+
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
