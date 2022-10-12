@@ -7,6 +7,11 @@ const request = require('supertest');
 const config = require('config');
 
 describe('Healthcheck', () => {
+
+    afterEach(() => {
+        nock.cleanAll();
+    });
+
     describe('/health endpoint', () => {
         it('should return the correct params', (done) => {
             nock(config.services.pcqBackend.url)
@@ -33,7 +38,7 @@ describe('Healthcheck', () => {
 
         it('should return the correct params on PCQ Backend DOWN', (done) => {
             nock(config.services.pcqBackend.url)
-                .get('/health')
+                .get('/health/readiness')
                 .reply(
                     500,
                     {'status': 'DOWN'}
@@ -42,7 +47,7 @@ describe('Healthcheck', () => {
             const server = app.init();
             const agent = request.agent(server.app);
             agent.get('/health')
-                .expect(500)
+                .expect(503)
                 .end((err, res) => {
                     server.http.close();
                     if (err) {
@@ -63,7 +68,7 @@ describe('Healthcheck', () => {
     describe('/health/readiness endpoint', () => {
         it('should return the readiness status', (done) => {
             nock(config.services.pcqBackend.url)
-                .get('/health')
+                .get('/health/readiness')
                 .reply(
                     200,
                     {'status': 'UP'}
@@ -84,7 +89,7 @@ describe('Healthcheck', () => {
 
         it('should return UP status if backend is down', (done) => {
             nock(config.services.pcqBackend.url)
-                .get('/health')
+                .get('/health/readiness')
                 .reply(
                     500,
                     {'status': 'DOWN'}
