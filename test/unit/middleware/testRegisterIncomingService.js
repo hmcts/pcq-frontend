@@ -187,7 +187,7 @@ describe('registerIncomingService', () => {
                 .get('/health')
                 .reply(
                     200,
-                    {'pcq-backend': {'actualStatus': 'DOWN'}}
+                    {'pcq-backend': {'status': 'DOWN'}}
                 );
             const rewiredApp = rewire('app');
             rewiredApp.__set__('config.services.pcqBackend.enabled', 'false');

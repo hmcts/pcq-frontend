@@ -13,7 +13,6 @@ const checks = {};
 const readinessChecks = {};
 
 if (config.services.pcqBackend.enabled === 'true') {
-    const statusComment = '\'actualStatus\' is the same as \'status\'. It is there for backwards compatibility. Please disregard.';
     checks['pcq-backend'] = healthcheck.web(`${config.services.pcqBackend.url}/health/readiness`, {
         callback: (err, res) => {
             const status = err ? 'DOWN' : res.body.status || 'DOWN';
@@ -21,9 +20,7 @@ if (config.services.pcqBackend.enabled === 'true') {
                 logger.warn('pcq-backend is DOWN');
                 logger.warn(err);
             }
-            // DEPRECATED: To be removed after all services stop depending on 'actualStatus'
-            const options = {actualStatus: status, comment: statusComment};
-            return status === 'UP' ? healthcheck.up(options) : healthcheck.down(options);
+            return status === 'UP' ? healthcheck.up() : healthcheck.down();
         },
         timeout: 10000,
         deadline: 20000
