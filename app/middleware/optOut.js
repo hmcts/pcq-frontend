@@ -4,7 +4,7 @@ const config = require('config');
 const ServiceMapper = require('app/utils/ServiceMapper');
 const moment = require('moment');
 
-const clearAnswers = (req, res) => {
+const setOptOut = (req, res) => {
     const token = req.session.token;
     const correlationId = req.session.correlationId;
     const formData = ServiceMapper.map(
@@ -18,6 +18,9 @@ const clearAnswers = (req, res) => {
     // Set the opt out flag
     form.optOut = 'Y';
 
+    //set pcqAnswers to empty to call backend in anycase continue or optout
+    form.pcqAnswers = form.pcqAnswers || {};
+
     const redirect = req.session.returnUrl || '/offline';
     return formData.post(token, correlationId, form)
         .catch(err => {
@@ -30,9 +33,9 @@ const clearAnswers = (req, res) => {
 
 const optOut = (req, res) => {
     const form = req.session.form;
-    // The pcqAnswers property indicates the user has continued passed the start page and created a backend record
-    if (form.pcqAnswers && !('optOut' in form)) {
-        return clearAnswers(req, res);
+    // Now in all case we are creating a backend record either user has continued or optout.
+    if (!('optOut' in form)) {
+        return setOptOut(req, res);
     }
 
     res.redirect(req.session.returnUrl || '/offline');

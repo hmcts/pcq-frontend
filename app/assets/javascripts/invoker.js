@@ -1,3 +1,9 @@
+// Hide cookie banner on invoker page.
+const cookieBanner = document.getElementById("cm-cookie-banner");
+if (cookieBanner) {
+    cookieBanner.style.display = "none";
+}
+
 // ------------ Actor Select ------------
 (function () {
     'use strict';
@@ -96,6 +102,7 @@
         e.preventDefault();
 
         const token = document.querySelector('#token');
+        const authTag = document.querySelector('#authTag');
         const formInputs = document.getElementById('invoker-form').getElementsByTagName('input');
 
         const queries = [];
@@ -108,6 +115,7 @@
         fetch(`/invoker/genToken?${queries.join('&')}`).then((res) => {
             res.json().then((json) => {
                 token.value = json.token;
+                authTag.value = json.authTag;
             });
         });
     };

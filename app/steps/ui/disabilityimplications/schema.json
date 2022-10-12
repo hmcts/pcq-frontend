@@ -1,6 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "disabilityImplications",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "disabilityImplications",
   "type": "object",
   "properties": {
     "disability_impact": {

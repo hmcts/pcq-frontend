@@ -21,7 +21,6 @@ describe('cookies', () => {
                 googlePrivacyPolicyLink: config.links.googlePrivacyPolicy,
                 googleAnalyticsOptOutLink: config.links.googleAnalyticsOptOut
             };
-
             testWrapper.testContent(done, contentData);
         });
     });

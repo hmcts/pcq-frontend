@@ -29,6 +29,14 @@
 {% endblock %}
 
 {% block header %}
+    {% block cookiebanner %}
+        {% if app.cookieManagerV1 %}
+            {% include "includes/cookie-banner-v1.html" %}
+        {% else %}
+            {% include "includes/cookie-banner.html" %}
+        {% endif %}
+    {% endblock %}
+
     {{ govukHeader({
         homepageUrl: "#",
         containerClasses: "govuk-width-container",
@@ -58,6 +66,14 @@
 
 {% block footer %}
     {% include "includes/footer_links.html" %}
+
+    <!-- dtrum session properties -->
+    {% if app.version %}
+        <div id="app_version" style="display: none">{{ app.version }}</div>
+    {% endif %}
+    {% if app.serviceId %}
+        <div id="service_id" style="display: none">{{ app.serviceId }}</div>
+    {% endif %}
 {% endblock %}
 
 {% block bodyEnd %}

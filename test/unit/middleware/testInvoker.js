@@ -80,10 +80,10 @@ describe('Invoker', () => {
 
             genToken(req, res);
             const token = res.json.args[0][0].token;
-            expect(token).to.equal('3b74573af3cf7403d07f8f9b58e8fbfa94ee6020841b2ca867aa2a8ccc3a7c402ecd95ba6a' +
-                '8a83519d908f5915769d16e471e29f3cabb28b5b2c970c0227365d0d952adb5443c37121e601c31847cca4063fd34245e1f' +
-                'a351260956a64b496db9d32145be475847a486a08a397746b64');
-
+            expect(token).to.equal('0677614d23ea22ca9566bcc69956f5c07b488bc49c7ce16f117a12f6dea9a5' +
+                'de17e686e5bd7cee0c380516a8a351c07de75203938bec1657aa0f66706ef7' +
+                '13b9726de765801a4081d1a9488da29dc4183654eed92462ac4658a092a06a' +
+                '06a2438eea3a131c700c58');
             done();
         });
     });

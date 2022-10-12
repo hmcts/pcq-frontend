@@ -1,0 +1,46 @@
+{
+  "applicant": {
+    "startpage": {
+      "paragraph2": "Your answers will not affect your divorce application."
+    },
+    "endpage": {
+      "paragraph1": "The next steps are to check your divorce application details."
+    },
+    "shutterpage": {
+      "paragraph1": "We have saved your answers and will direct you back to your divorce application now."
+    }
+  },
+  "respondent": {
+    "startpage": {
+      "paragraph2": "Your answers will not affect your divorce application."
+    },
+    "endpage": {
+      "paragraph1": "The next steps are to check your divorce application details."
+    },
+    "shutterpage": {
+      "paragraph1": "We have saved your answers and will direct you back to your divorce application now."
+    }
+  },
+  "applicant1": {
+    "startpage": {
+      "paragraph2": "Your answers will not affect your divorce application."
+    },
+    "endpage": {
+      "paragraph1": "The next steps are to check your divorce application details."
+    },
+    "shutterpage": {
+      "paragraph1": "We have saved your answers and will direct you back to your divorce application now."
+    }
+  },
+  "applicant2": {
+    "startpage": {
+      "paragraph2": "Your answers will not affect your divorce application."
+    },
+    "endpage": {
+      "paragraph1": "The next steps are to check your divorce application details."
+    },
+    "shutterpage": {
+      "paragraph1": "We have saved your answers and will direct you back to your divorce application now."
+    }
+  }
+}

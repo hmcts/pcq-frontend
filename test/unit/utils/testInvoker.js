@@ -68,8 +68,28 @@ describe('Invoker', () => {
                         text: 'DIVORCE'
                     },
                     {
+                        value: 'NEW_DIVORCE_LAW',
+                        text: 'NEW_DIVORCE_LAW'
+                    },
+                    {
                         value: 'SSCS',
                         text: 'SSCS'
+                    },
+                    {
+                        value: 'IAC',
+                        text: 'IAC'
+                    },
+                    {
+                        value: 'ADOPTION',
+                        text: 'ADOPTION'
+                    },
+                    {
+                        value: 'ET',
+                        text: 'ET'
+                    },
+                    {
+                        value: 'ONLINE_PLEA',
+                        text: 'ONLINE_PLEA'
                     }
                 ],
                 actorList: {
@@ -85,9 +105,27 @@ describe('Invoker', () => {
                         'RESPONDENT',
                         'CORESPONDENT'
                     ],
+                    'NEW_DIVORCE_LAW': [
+                        'APPLICANT',
+                        'RESPONDENT',
+                        'APPLICANT1',
+                        'APPLICANT2'
+                    ],
                     'SSCS': [
                         'APPELLANT'
-                    ]
+                    ],
+                    'IAC': [
+                        'APPELLANT'
+                    ],
+                    'ADOPTION': [
+                        'APPLICANT'
+                    ],
+                    'ET': [
+                        'CLAIMANT'
+                    ],
+                    'ONLINE_PLEA': [
+                        'DEFENDANT'
+                    ],
                 }
             });
             done();

@@ -5,8 +5,8 @@ const rewire = require('rewire');
 const setJourney = rewire('app/middleware/setJourney');
 const defaultJourney = require('app/journeys/default');
 const probateJourney = require('app/journeys/probate');
-const testJourney = require('test/data/journeys/test');
-const cmcJourney = rewire('app/journeys/cmc');
+const toggledQuestionsJourney = require('test/data/journeys/toggledQuestions');
+const actorDefinedJourneys = rewire('test/data/journeys/actorDefinedJourneys');
 
 describe('setJourney', () => {
     it('should set req.journey with the default journey when no form session', async () => {
@@ -96,7 +96,7 @@ describe('setJourney', () => {
         };
 
         const revert = setJourney.__set__('getBaseJourney', () => {
-            return require('test/data/journeys/test');
+            return require('test/data/journeys/toggledQuestions');
         });
 
         await setJourney(req, res);
@@ -111,7 +111,7 @@ describe('setJourney', () => {
             }
         ];
 
-        const journey = Object.assign({}, testJourney());
+        const journey = Object.assign({}, toggledQuestionsJourney());
         journey.skipList = skipList;
 
         expect(req.session).to.deep.equal({
@@ -129,48 +129,60 @@ describe('setJourney', () => {
             const req = {
                 session: {
                     form: {
-                        serviceId: 'CMC',
-                        actor: 'CLAIMANT'
+                        serviceId: 'TEST',
+                        actor: 'WITHDOB'
                     }
                 }
             };
             const res = {};
 
-            const claimantJourney = cmcJourney.__get__('claimant');
+            const withDobJourney = actorDefinedJourneys.__get__('withDob');
+
+            const revert = setJourney.__set__('getBaseJourney', () => {
+                return require('test/data/journeys/actorDefinedJourneys');
+            });
 
             await setJourney(req, res);
 
             expect(req.session).to.deep.equal({
                 form: {
-                    serviceId: 'CMC',
-                    actor: 'CLAIMANT'
+                    serviceId: 'TEST',
+                    actor: 'WITHDOB'
                 },
-                journey: {stepList: claimantJourney}
+                journey: {stepList: withDobJourney}
             });
+
+            revert();
         });
 
         it('sets journey by actor - 2', async () => {
             const req = {
                 session: {
                     form: {
-                        serviceId: 'CMC',
-                        actor: 'DEFENDANT'
+                        serviceId: 'TEST',
+                        actor: 'WITHOUTDOB'
                     }
                 }
             };
             const res = {};
 
-            const defendantJourney = cmcJourney.__get__('defendant');
+            const withoutDobJourney = actorDefinedJourneys.__get__('withoutDob');
+
+            const revert = setJourney.__set__('getBaseJourney', () => {
+                return require('test/data/journeys/actorDefinedJourneys');
+            });
 
             await setJourney(req, res);
 
             expect(req.session).to.deep.equal({
                 form: {
-                    serviceId: 'CMC',
-                    actor: 'DEFENDANT'
+                    serviceId: 'TEST',
+                    actor: 'WITHOUTDOB'
                 },
-                journey: {stepList: defendantJourney}
+                journey: {stepList: withoutDobJourney}
             });
+
+            revert();
         });
     });
 });

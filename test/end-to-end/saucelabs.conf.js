@@ -8,9 +8,9 @@ const getBrowserConfig = (browserGroup) => {
     for (const candidateBrowser in supportedBrowsers[browserGroup]) {
         if (candidateBrowser) {
             const desiredCapability = supportedBrowsers[browserGroup][candidateBrowser];
-            desiredCapability.tunnelIdentifier = tunnelName;
-            desiredCapability.acceptSslCerts = true;
-            desiredCapability.tags = ['pcq-frontend'];
+            desiredCapability['sauce:options'].tunnelIdentifier = tunnelName;
+            desiredCapability['sauce:options'].acceptSslCerts = true;
+            desiredCapability['sauce:options'].tags = ['pcq-frontend'];
             browserConfig.push({
                 browser: desiredCapability.browserName,
                 desiredCapabilities: desiredCapability
@@ -25,21 +25,30 @@ const getBrowserConfig = (browserGroup) => {
 const setupConfig = {
     output: `${process.cwd()}/functional-output`,
     helpers: {
-        WebDriverIO: {
+        WebDriver: {
             url: process.env.TEST_URL || 'https://pcq.aat.platform.hmcts.net',
             browser,
             cssSelectorsEnabled: 'true',
-            host: 'ondemand.eu-central-1.saucelabs.com',
-            port: 80,
+
+            user: process.env.SAUCE_USERNAME,
+            key: process.env.SAUCE_ACCESS_KEY,
             region: 'eu',
             sauceConnect: true,
             services: ['sauce'],
-            user: process.env.SAUCE_USERNAME,
-            key: process.env.SAUCE_ACCESS_KEY,
-            desiredCapabilities: {}
+
+            // This line is required to ensure test name and browsers are set correctly for some reason.
+            desiredCapabilities: {'sauce:options': {}}
         },
         SauceLabsReportingHelper: {
             require: './helpers/SauceLabsReportingHelper.js'
+        },
+    },
+    plugins: {
+        autoDelay: {
+            enabled: true,
+        },
+        retryFailedStep: {
+            enabled: true,
         },
     },
     gherkin: {
@@ -48,12 +57,6 @@ const setupConfig = {
     },
     include: {
         'I': './pages/steps.js'
-    },
-    plugins: {
-        autoDelay: {
-            enabled: true,
-            delayAfter: 2000
-        }
     },
     mocha: {
         reporterOptions: {

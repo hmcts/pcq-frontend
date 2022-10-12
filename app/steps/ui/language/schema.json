@@ -1,6 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "language",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "language",
   "type": "object",
   "properties": {
     "language_main": {

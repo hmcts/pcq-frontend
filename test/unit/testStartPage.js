@@ -25,7 +25,7 @@ describe('StartPage', () => {
             };
 
             const ctx = StartPage.getContextData(req);
-            expect(ctx).to.deep.equal({
+            expect(ctx).to.contains({
                 sessionID: 'some session id',
                 returnUrl: 'http://some-return-url/'
             });
@@ -41,7 +41,7 @@ describe('StartPage', () => {
             };
 
             const ctx = StartPage.getContextData(req);
-            expect(ctx).to.deep.equal({
+            expect(ctx).to.contains({
                 sessionID: 'some session id'
             });
             done();

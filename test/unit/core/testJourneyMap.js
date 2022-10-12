@@ -114,7 +114,7 @@ describe('JourneyMap.js', () => {
         it('should skip a step if it is in the skip list', (done) => {
             currentStep.name = 'StartPage';
 
-            const journey = require('test/data/journeys/test')();
+            const journey = require('test/data/journeys/toggledQuestions')();
             journey.skipList = [
                 {stepName: 'ApplicantDateOfBirth'}
             ];
@@ -129,7 +129,7 @@ describe('JourneyMap.js', () => {
         it('should skip a step in the skip list and navigate to the specified next step', (done) => {
             currentStep.name = 'StartPage';
 
-            const journey = require('test/data/journeys/test')();
+            const journey = require('test/data/journeys/toggledQuestions')();
             journey.skipList = [
                 {stepName: 'ApplicantDateOfBirth', nextStepName: 'ApplicantSex'}
             ];
@@ -144,7 +144,7 @@ describe('JourneyMap.js', () => {
         it('should skip a step in the skip list with linked skip steps', (done) => {
             currentStep.name = 'StartPage';
 
-            const journey = require('test/data/journeys/test')();
+            const journey = require('test/data/journeys/toggledQuestions')();
             journey.skipList = [
                 {stepName: 'ApplicantDateOfBirth', nextStepName: 'ApplicantSex'},
                 {stepName: 'ApplicantSex'}
@@ -160,7 +160,7 @@ describe('JourneyMap.js', () => {
         it('should skip a step in the skip list with multiple linked skip steps - 1', (done) => {
             currentStep.name = 'StartPage';
 
-            const journey = require('test/data/journeys/test')();
+            const journey = require('test/data/journeys/toggledQuestions')();
             journey.skipList = [
                 {stepName: 'ApplicantDateOfBirth', nextStepName: 'ApplicantSex'},
                 {stepName: 'ApplicantSex', nextStepName: 'ApplicantSexualOrientation'}
@@ -176,7 +176,7 @@ describe('JourneyMap.js', () => {
         it('should skip a step in the skip list with multiple linked skip steps - 2', (done) => {
             currentStep.name = 'StartPage';
 
-            const journey = require('test/data/journeys/test')();
+            const journey = require('test/data/journeys/toggledQuestions')();
             journey.skipList = [
                 {stepName: 'ApplicantDateOfBirth', nextStepName: 'ApplicantSex'},
                 {stepName: 'ApplicantSex', nextStepName: 'ApplicantSexualOrientation'},

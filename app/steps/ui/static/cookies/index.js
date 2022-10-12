@@ -4,7 +4,7 @@ const Step = require('app/core/steps/Step');
 
 class Cookies extends Step {
 
-    static getUrl () {
+    static getUrl() {
         return '/cookies';
     }
 }

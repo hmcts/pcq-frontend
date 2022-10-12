@@ -15,5 +15,6 @@
 !app/**
 !config/**
 !test
-!git.properties.json
+!createVersionFile.js
+!version.json
 !.git

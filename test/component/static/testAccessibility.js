@@ -3,6 +3,7 @@
 const TestWrapper = require('test/util/TestWrapper');
 const config = require('config');
 const commonContent = require('app/resources/en/translation/common');
+const accessibility = require('app/resources/en/translation/static/accessibility');
 
 describe('accessibility', () => {
     let testWrapper;
@@ -26,9 +27,15 @@ describe('accessibility', () => {
                 wcag21Link: config.links.wcag21Link,
                 applicationFormPA15: config.links.applicationFormPA15,
                 deathReportedToCoroner: config.links.deathReportedToCoroner,
-                pcqStartApplyLink: config.links.pcqStartApplyLink
+                pcqStartApplyLink: config.links.pcqStartApplyLink,
+                paragraph8: accessibility.paragraph8,
+                list2cmc: accessibility['list2-cmc'],
+                list2divorce: accessibility['list2-divorce'],
+                list2probate: accessibility['list2-probate'],
+                list2sscs: accessibility['list2-sscs'],
+                list2iac: accessibility['list2-iac'],
+                list2et: accessibility['list2-et']
             };
-
             testWrapper.testContent(done, contentData);
         });
     });

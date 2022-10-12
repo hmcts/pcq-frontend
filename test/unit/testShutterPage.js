@@ -61,7 +61,11 @@ describe('ShutterPage', () => {
                     'cmc_defendant': 'https://www.moneyclaims.service.gov.uk/dashboard',
                     'divorce_petitioner': 'https://www.apply-divorce.service.gov.uk',
                     'divorce_respondent': 'https://www.respond-divorce.service.gov.uk',
-                    'sscs': 'https://www.gov.uk/appeal-benefit-decision/submit-appeal'
+                    'sscs': 'https://www.gov.uk/appeal-benefit-decision/submit-appeal',
+                    'iac': 'https://www.appeal-immigration-asylum-decision.service.gov.uk',
+                    'adoption': 'https://www.adoption-web.service.gov.uk/review-pay-submit/check-your-answers',
+                    'et_claimant': 'https://et-sya.aat.platform.hmcts.net/steps-to-making-your-claim',
+                    'online_plea': 'https://onlineplea.cjscp.org.uk/onlineplea/check-your-answers.xhtml'
                 }
             );
             done();

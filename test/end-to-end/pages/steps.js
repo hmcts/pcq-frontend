@@ -41,6 +41,7 @@ module.exports = () => {
         selectyesdisability: steps.disability.yes,
         selectnodisability: steps.disability.no,
         selectyeslimitedalot: steps.disabilityimplications.yeslimitedalot,
+        selectdisabilityimplicationsareas: steps.disabilityimplicationsareas.disabilityimplicationsareas,
         selectpregnantprefernottosay: steps.pregnant.prefernottosay,
         selectyespregnant: steps.pregnant.yes,
         selectnopregnant: steps.pregnant.no,

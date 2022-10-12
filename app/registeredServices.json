@@ -33,12 +33,62 @@
     }
   },
   {
+    "serviceId": "NEW_DIVORCE_LAW",
+    "actors": [
+      "APPLICANT",
+      "RESPONDENT",
+      "APPLICANT1",
+      "APPLICANT2"
+    ],
+    "redirectLinks": {
+      "divorce_petitioner": "https://www.apply-divorce.service.gov.uk",
+      "divorce_respondent": "https://www.respond-divorce.service.gov.uk"
+    }
+  },
+  {
     "serviceId": "SSCS",
     "actors": [
       "APPELLANT"
     ],
     "redirectLinks": {
       "sscs": "https://www.gov.uk/appeal-benefit-decision/submit-appeal"
+    }
+  },
+  {
+    "serviceId": "IAC",
+    "actors": [
+      "APPELLANT"
+    ],
+    "redirectLinks": {
+      "iac": "https://www.appeal-immigration-asylum-decision.service.gov.uk"
+    }
+  },
+  {
+    "serviceId": "ADOPTION",
+    "actors": [
+      "APPLICANT"
+    ],
+    "redirectLinks": {
+      "adoption": "https://www.adoption-web.service.gov.uk/review-pay-submit/check-your-answers"
+    }
+  },
+  {
+    "serviceId": "ET",
+    "actors": [
+      "CLAIMANT"
+    ],
+    "redirectLinks": {
+      "et_claimant": "https://et-sya.aat.platform.hmcts.net/steps-to-making-your-claim"
+    }
+  },
+  {
+    "serviceId": "ONLINE_PLEA",
+    "actors": [
+      "DEFENDANT"
+    ],
+    "redirectLinks": {
+      "online_plea": "https://onlineplea.cjscp.org.uk/onlineplea/check-your-answers.xhtml"
+
     }
   }
 ]

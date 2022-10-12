@@ -4,13 +4,9 @@ const healthcheck = require('@hmcts/nodejs-healthcheck');
 const logger = require('app/components/logger')('Init');
 const os = require('os');
 const config = require('config');
-const getStore = require('app/components/utils').getStore;
-const session = require('express-session');
-const sessionStore = getStore(config.redis, session);
-
 const osHostname = os.hostname();
-const gitProperties = require('git.properties');
-const gitCommitId = gitProperties.git.commit.id;
+const version = require('version.json');
+const gitCommitId = version.commit;
 const gitRevision = process.env.GIT_REVISION;
 
 const checks = {};
@@ -32,18 +28,6 @@ if (config.services.pcqBackend.enabled === 'true') {
         timeout: 10000,
         deadline: 20000
     });
-}
-
-if (sessionStore.constructor.name === 'RedisStore') {
-    const redisHealthcheck = healthcheck.raw(() => {
-        const healthy = sessionStore.client.status === 'ready';
-        if (!healthy) {
-            logger.info('redis is DOWN');
-        }
-        return healthy ? healthcheck.up() : healthcheck.down();
-    });
-    checks.redis = redisHealthcheck;
-    readinessChecks.redis = redisHealthcheck;
 }
 
 const setup = app => {

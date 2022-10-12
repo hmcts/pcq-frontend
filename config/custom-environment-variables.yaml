@@ -6,6 +6,8 @@ gitRevision: GIT_REVISION
 externalHostNameUrl: EXTERNAL_HOSTNAME_URL
 featureToggles:
   launchDarklyKey: LAUNCHDARKLY_KEY
+  launchDarklyUser:
+    key: LD_USER_KEY
 app:
   useHttps: USE_HTTPS
   port: PORT
@@ -20,7 +22,12 @@ tokenKeys:
   probate: PROBATE_TOKEN_KEY
   cmc: CMC_TOKEN_KEY
   divorce: DIVORCE_TOKEN_KEY
+  new_divorce_law: NEW_DIVORCE_LAW_TOKEN_KEY
   sscs: SSCS_TOKEN_KEY
+  iac: IAC_TOKEN_KEY
+  adoption: ADOPTION_TOKEN_KEY
+  et: ET_TOKEN_KEY
+  online_plea: ONLINE_PLEA_TOKEN_KEY
 redis:
   host: REDIS_HOST
   port: REDIS_PORT

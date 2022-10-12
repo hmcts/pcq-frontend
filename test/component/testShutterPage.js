@@ -31,7 +31,11 @@ describe('shutter-page', () => {
                         'cmc_defendant',
                         'divorce_petitioner',
                         'divorce_respondent',
-                        'sscs'
+                        'sscs',
+                        'iac',
+                        'adoption',
+                        'et_claimant',
+                        'online_plea'
                     ]);
                 });
         });

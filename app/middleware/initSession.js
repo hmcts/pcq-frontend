@@ -20,6 +20,10 @@ const initSession = (req, res, next) => {
         req.session.validParameters = false;
     }
 
+    if (!req.session.featureToggles) {
+        req.session.featureToggles = {};
+    }
+
     if (next) {
         next();
     }

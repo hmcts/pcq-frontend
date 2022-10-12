@@ -9,6 +9,7 @@ const initSession = require('app/middleware/initSession');
 const registerIncomingService = require('app/registerIncomingService');
 const validateParams = require('app/middleware/validateParams');
 const optOut = require('app/middleware/optOut');
+const featureToggle = new (require('app/utils/FeatureToggle'))();
 
 router.use(initSession);
 router.use(registerIncomingService);
@@ -29,10 +30,22 @@ router.get('/', (req, res) => {
 
 router.post('/opt-out', optOut);
 
-router.use((req, res, next) => {
-    const steps = initSteps([`${__dirname}/steps/ui`], req.session.language);
+const allSteps = {
+    'en': initSteps([`${__dirname}/steps/ui`], 'en'),
+    'cy': initSteps([`${__dirname}/steps/ui`], 'cy')
+};
 
-    Object.entries(steps).forEach(([, step]) => {
+router.use(async (req, res, next) => {
+    const toggles = await Promise.all([
+        featureToggle.checkToggle('ft_dtrum_session_properties', req, res),
+        featureToggle.checkToggle('ft_cookie_manager_v1', req, res),
+        featureToggle.checkToggle('ft_dtrum_opt_out', req, res)
+    ]);
+    req.session.featureToggles.ft_dtrum_session_properties = toggles[0];
+    req.session.featureToggles.ft_cookie_manager_v1 = toggles[1];
+    req.session.featureToggles.ft_dtrum_opt_out = toggles[2];
+
+    Object.entries(allSteps[req.session.language]).forEach(([, step]) => {
         router.get(step.constructor.getUrl(), step.runner().GET(step));
         router.post(step.constructor.getUrl(), step.runner().POST(step));
     });

@@ -55,7 +55,7 @@ describe('ApplicantDateOfBirth', () => {
                 'dob_provided': 1,
                 'dob-day': '12',
                 'dob-month': '12',
-                'dob-year': '2021'
+                'dob-year': '2099'
             };
 
             testWrapper.testErrors(done, data, 'invalid', errorsToTest);
