@@ -38,7 +38,7 @@ describe('Healthcheck', () => {
 
         it('should return the correct params on PCQ Backend DOWN', (done) => {
             nock(config.services.pcqBackend.url)
-                .get('/health')
+                .get('/health/readiness')
                 .reply(
                     500,
                     {'status': 'DOWN'}
@@ -66,7 +66,7 @@ describe('Healthcheck', () => {
     describe('/health/readiness endpoint', () => {
         it('should return the readiness status', (done) => {
             nock(config.services.pcqBackend.url)
-                .get('/health')
+                .get('/health/readiness')
                 .reply(
                     200,
                     {'status': 'UP'}
@@ -87,7 +87,7 @@ describe('Healthcheck', () => {
 
         it('should return UP status if backend is down', (done) => {
             nock(config.services.pcqBackend.url)
-                .get('/health')
+                .get('/health/readiness')
                 .reply(
                     500,
                     {'status': 'DOWN'}
