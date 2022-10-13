@@ -47,7 +47,7 @@ describe('Healthcheck', () => {
             const server = app.init();
             const agent = request.agent(server.app);
             agent.get('/health')
-                .expect(503)
+                .expect(500)
                 .end((err, res) => {
                     server.http.close();
                     if (err) {
