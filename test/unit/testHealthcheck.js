@@ -7,6 +7,11 @@ const request = require('supertest');
 const config = require('config');
 
 describe('Healthcheck', () => {
+
+    afterEach(() => {
+        nock.cleanAll();
+    });
+
     describe('/health endpoint', () => {
         it('should return the correct params', (done) => {
             nock(config.services.pcqBackend.url)
