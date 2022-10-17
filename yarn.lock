@@ -863,17 +863,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stryker-mutator/api@npm:4.0.0":
-  version: 4.0.0
-  resolution: "@stryker-mutator/api@npm:4.0.0"
-  dependencies:
-    mutation-testing-report-schema: ~1.4.0
-    surrial: ~2.0.2
-    tslib: ~2.0.0
-  checksum: 65ae6b927ed6550ce50234949c8c51ab75df64254ea6d064293ed3e7dfe668680ac88ebc9a6165d859c6eb17818f0e0605d6889c42476b2fce690e7a3d7b19d2
-  languageName: node
-  linkType: hard
-
 "@stryker-mutator/api@npm:5.6.1, @stryker-mutator/api@npm:^5.6.1":
   version: 5.6.1
   resolution: "@stryker-mutator/api@npm:5.6.1"
@@ -942,26 +931,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stryker-mutator/javascript-mutator@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@stryker-mutator/javascript-mutator@npm:4.0.0"
-  checksum: 9d7d43db95b8f6b4c669a56f37f47634784db7904ebb1f7e26d8ca27f16a0b9a0003b0b9e66acca8d1bebd20088b4b43ec4e2249225c6ad1f870f5fc03dde91c
-  languageName: node
-  linkType: hard
-
-"@stryker-mutator/mocha-framework@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@stryker-mutator/mocha-framework@npm:4.0.0"
-  dependencies:
-    "@stryker-mutator/api": 4.0.0
-    "@stryker-mutator/util": 4.0.0
-  peerDependencies:
-    "@stryker-mutator/core": 4.0.0-beta.4
-    mocha: ">= 2.3.3 < 8"
-  checksum: 69977cb10dbc1d8abf505b09da491a0879620e3a9db8c339096be7426d03d63b24c9c64b244d636e17bde6cc05f3f5eeb0f7285f235c713fc5937a659f8b9cf2
-  languageName: node
-  linkType: hard
-
 "@stryker-mutator/mocha-runner@npm:^5.6.1":
   version: 5.6.1
   resolution: "@stryker-mutator/mocha-runner@npm:5.6.1"
@@ -974,15 +943,6 @@ __metadata:
     "@stryker-mutator/core": ~5.6.0
     mocha: ">= 2.3.3 < 10"
   checksum: 07ab8f2843862ae07e3bb6e5606ee3a143abbab301b1bf21129c0a02da5fa7db03c5e1ca01581f67cd079ee7c45d7eee5c13a2bdb24f5a65412373c3a068019a
-  languageName: node
-  linkType: hard
-
-"@stryker-mutator/util@npm:4.0.0":
-  version: 4.0.0
-  resolution: "@stryker-mutator/util@npm:4.0.0"
-  dependencies:
-    lodash.flatmap: ~4.5.0
-  checksum: ccb0c1ef31c6e757d91860e1745f2e0161dcf83adbd162d1bf1d4e60d81946d61de7311f5b0a1b94f911768014221af65e3cc6821b795c2c446bff78a6f14f38
   languageName: node
   linkType: hard
 
@@ -8558,13 +8518,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mutation-testing-report-schema@npm:~1.4.0":
-  version: 1.4.3
-  resolution: "mutation-testing-report-schema@npm:1.4.3"
-  checksum: 65a72972cbbc6d31023c7e158b2d3619818638ea23bf0494fd837dab60f3500faf937bdb617532ed4327b14ac70111667940961b7a334a581b666b1984689949
-  languageName: node
-  linkType: hard
-
 "mute-stream@npm:0.0.7":
   version: 0.0.7
   resolution: "mute-stream@npm:0.0.7"
@@ -9851,8 +9804,6 @@ __metadata:
     "@hmcts/properties-volume": ^0.0.13
     "@stryker-mutator/api": ^5.6.1
     "@stryker-mutator/core": ^5.6.1
-    "@stryker-mutator/javascript-mutator": ^4.0.0
-    "@stryker-mutator/mocha-framework": ^4.0.0
     "@stryker-mutator/mocha-runner": ^5.6.1
     ajv: ^6.12.6
     allure-commandline: ^2.13.0
@@ -11762,13 +11713,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"surrial@npm:~2.0.2":
-  version: 2.0.2
-  resolution: "surrial@npm:2.0.2"
-  checksum: 1a4202214e3cd9a7cae44278c0ab1fc35203b2d55f5157396114901aeed7dc54de01ae833d92ac1953d714f3b36261ba9569dafa4ae2aa2045e4dbcbdccd7573
-  languageName: node
-  linkType: hard
-
 "synp@npm:^1.9.10":
   version: 1.9.10
   resolution: "synp@npm:1.9.10"
@@ -12117,13 +12061,6 @@ __metadata:
   version: 2.4.0
   resolution: "tslib@npm:2.4.0"
   checksum: 8c4aa6a3c5a754bf76aefc38026134180c053b7bd2f81338cb5e5ebf96fefa0f417bff221592bf801077f5bf990562f6264fecbc42cd3309b33872cb6fc3b113
-  languageName: node
-  linkType: hard
-
-"tslib@npm:~2.0.0":
-  version: 2.0.3
-  resolution: "tslib@npm:2.0.3"
-  checksum: 00fcdd1f9995c9f8eb6a4a1ad03f55bc95946321b7f55434182dddac259d4e095fedf78a84f73b6e32dd3f881d9281f09cb583123d3159ed4bdac9ad7393ef8b
   languageName: node
   linkType: hard
 
