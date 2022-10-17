@@ -35,7 +35,7 @@ class UIStepRunner {
                 session.back.push(step.constructor.getUrl());
             }
             const common = step.commonContent(session.language);
-            const app = {cookieManagerV1: false};
+            const app = {cookieManagerV1: false, gaNonceUpdate: false};
             if (ctx.featureToggles) {
                 if (ctx.featureToggles.ft_dtrum_session_properties === 'true') {
                     app.serviceId = session.form.serviceId;
@@ -43,6 +43,9 @@ class UIStepRunner {
                 }
                 if (ctx.featureToggles.ft_cookie_manager_v1 === 'true') {
                     app.cookieManagerV1 = true;
+                }
+                if (ctx.featureToggles.ft_ga_nonce_update === 'true') {
+                    app.gaNonceUpdate = true;
                 }
             }
             res.render(step.template, {content, fields, errors, common, app}, (err, html) => {
