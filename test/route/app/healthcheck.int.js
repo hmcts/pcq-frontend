@@ -1,7 +1,6 @@
 const {expect} = require('chai');
 const app = require('app');
 const request = require('supertest');
-const healthcheck = require('app/healthcheck');
 const commonContent = require('app/resources/en/translation/common');
 
 describe('healthcheck.js', () => {
@@ -17,8 +16,6 @@ describe('healthcheck.js', () => {
                 }
                 expect(res.body).to.have.property('name').and.equal(commonContent.serviceName);
                 expect(res.body).to.have.property('status').and.equal('UP');
-                expect(res.body).to.have.property('host').and.equal(healthcheck.osHostname);
-                expect(res.body).to.have.property('gitCommitId').and.equal(healthcheck.gitCommitId);
                 done();
             });
     });
