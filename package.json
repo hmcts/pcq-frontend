@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.45",
+  "version": "1.2.46",
   "license": "MIT",
   "engines": {
     "node": ">=14.18.1"
@@ -67,7 +67,7 @@
     "express-session": "^1.16.2",
     "express-urlrewrite": "^1.2.0",
     "git-rev-sync": "^3.0.2",
-    "govuk-frontend": "^3.10.2",
+    "govuk-frontend": "^4.3.1",
     "helmet": "^3.23.3",
     "https-proxy-agent": "^2.2.4",
     "i18next": "^17.0.11",
