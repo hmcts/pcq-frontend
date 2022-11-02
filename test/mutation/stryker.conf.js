@@ -17,7 +17,7 @@ module.exports = {
         '!app.js',
         '!server.js',
         '!package.json',
-        '!version.json',
+        '!version',
         '!app/**',
         '!config/*',
         '!test/**'

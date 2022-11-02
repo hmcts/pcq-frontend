@@ -4,10 +4,6 @@ const healthcheck = require('@hmcts/nodejs-healthcheck');
 const logger = require('app/components/logger')('Init');
 const os = require('os');
 const config = require('config');
-const osHostname = os.hostname();
-const version = require('../version.json');
-const gitCommitId = version.commit;
-const gitRevision = process.env.GIT_REVISION;
 
 const checks = {};
 const readinessChecks = {};
@@ -35,14 +31,10 @@ const setup = app => {
             name: config.service.name,
             host: os.hostname(),
             uptime: process.uptime(),
-            version: gitRevision,
-            gitCommitId
         }
     });
 };
 
 module.exports = {
-    setup: setup,
-    osHostname: osHostname,
-    gitCommitId: gitCommitId
+    setup: setup
 };
