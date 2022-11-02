@@ -32,10 +32,9 @@ const stepList = {
     },
     ApplicantDisabilityImplications: {
         Yes: 'ApplicantDisabilityImplicationAreas',
-        otherwise: 'ApplicantPregnant'
+        otherwise: 'EndPage'
     },
-    ApplicantDisabilityImplicationAreas: 'ApplicantPregnant',
-    ApplicantPregnant: 'EndPage'
+    ApplicantDisabilityImplicationAreas: 'EndPage'
 };
 
 module.exports = () => {
