@@ -28,7 +28,7 @@ const stepList = {
     ApplicantReligion: 'ApplicantDisability',
     ApplicantDisability: {
         Yes: 'ApplicantDisabilityImplications',
-        otherwise: 'ApplicantPregnant'
+        otherwise: 'EndPage'
     },
     ApplicantDisabilityImplications: {
         Yes: 'ApplicantDisabilityImplicationAreas',
