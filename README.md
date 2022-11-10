@@ -10,6 +10,12 @@ This is the frontend for the protected characteristics questionnaire service. Th
 <b><a href="https://github.com/hmcts/pcq-frontend">pcq-frontend</a></b> • <a href="https://github.com/hmcts/pcq-backend">pcq-backend</a> • <a href="https://github.com/hmcts/pcq-consolidation-service">pcq-consolidation-service</a> • <a href="https://github.com/hmcts/pcq-shared-infrastructure">pcq-shared-infrastructure</a> • <a href="https://github.com/hmcts/pcq-loader">pcq-loader</a>
 </p>
 
+<br>
+
+<p align="center">
+  <img src="pcq_overview.png" width="500"/>
+</p>
+
 ## Getting Started
 
 ### Prerequisites
