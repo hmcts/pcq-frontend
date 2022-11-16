@@ -1,4 +1,5 @@
 #!groovy
+import uk.gov.hmcts.contino.GithubAPI
 
 @Library("Infrastructure")
 
@@ -23,6 +24,13 @@ static LinkedHashMap<String, Object> secret(String secretName, String envVar) {
 }
 
 withPipeline(type, product, component) {
+
+  onPR {
+    def githubApi = new GithubAPI(this)
+    if (!githubApi.getLabelsbyPattern(env.BRANCH_NAME, "keep-helm")) {
+        enableCleanupOfHelmReleaseOnSuccess()
+    }
+  }
 
   after('build') {
     sh 'yarn setup'
