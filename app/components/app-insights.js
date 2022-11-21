@@ -6,7 +6,7 @@ const path = require('path');
 const fs = require('fs');
 const os = require('os');
 
-function enable() {
+function initAppInsights() {
     const instrumentationKey = config.get('appInsights.instrumentationKey');
 
     if (instrumentationKey) {
@@ -24,7 +24,7 @@ function enable() {
     }
 
     function createTempDir() {
-        const tempDir = path.join(os.tmpdir(), Sender.TEMPDIR_PREFIX + config.get('appInsights.instrumentationKey'));
+        const tempDir = path.join(os.tmpdir(), Sender.TEMPDIR_PREFIX + instrumentationKey);
 
         if (!fs.existsSync(tempDir)) {
             logger.info('Creating App Insights temp dir');
@@ -33,4 +33,4 @@ function enable() {
     }
 }
 
-module.exports = enable;
+module.exports = initAppInsights;
