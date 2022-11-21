@@ -19,7 +19,7 @@ coverage
 /test/end-to-end/output/**
 package-lock.json
 yarn-error.log
-version.json
+version
 .scannerwork/
 infrastructure/.terraform
 /mochawesome-report/
@@ -28,3 +28,12 @@ smoke-output/
 /config/dev.yaml
 .stryker-tmp/
 stryker.log
+undefinedconsole.log
+
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

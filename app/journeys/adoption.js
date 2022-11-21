@@ -28,14 +28,13 @@ const stepList = {
     ApplicantReligion: 'ApplicantDisability',
     ApplicantDisability: {
         Yes: 'ApplicantDisabilityImplications',
-        otherwise: 'ApplicantPregnant'
+        otherwise: 'EndPage'
     },
     ApplicantDisabilityImplications: {
         Yes: 'ApplicantDisabilityImplicationAreas',
-        otherwise: 'ApplicantPregnant'
+        otherwise: 'EndPage'
     },
-    ApplicantDisabilityImplicationAreas: 'ApplicantPregnant',
-    ApplicantPregnant: 'EndPage'
+    ApplicantDisabilityImplicationAreas: 'EndPage'
 };
 
 module.exports = () => {

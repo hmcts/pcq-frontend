@@ -33,6 +33,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     const port = config.app.port;
     const releaseVersion = packageJson.version;
     const useHttps = config.app.useHttps.toLowerCase();
+    const govUkFrontendPath = path.resolve(require.resolve('govuk-frontend'), '../../');
 
     if (config.appInsights.instrumentationKey) {
         appInsights.setup(config.appInsights.instrumentationKey);
@@ -48,7 +49,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     const njkEnv = nunjucks.configure([
         'app/steps',
         'app/views',
-        'node_modules/govuk-frontend/'
+        govUkFrontendPath
     ], {
         noCache: isDev,
         express: app
@@ -81,20 +82,28 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
                 '\'sha256-+6WnXIl4mbFTCARd8N3COQmT3bJJmo32N8q8ZSQAIcU=\'',
                 '\'sha256-AaA9Rn5LTFZ5vKyp3xOfFcP4YbyOjvWn2up8IKHVAKk=\'',
                 '\'sha256-G29/qSW/JHHANtFhlrZVDZW1HOkCDRc78ggbqwwIJ2g=\'',
-                'www.google-analytics.com',
-                'www.googletagmanager.com',
+                'https://www.google-analytics.com',
+                'https://*.googletagmanager.com',
                 'vcc-eu4.8x8.com',
                 'vcc-eu4b.8x8.com',
                 `'nonce-${uuid}'`
             ],
-            connectSrc: ['\'self\'', 'www.google-analytics.com', 'stats.g.doubleclick.net'],
+            connectSrc: [
+                '\'self\'',
+                'https://*.google-analytics.com',
+                'https://*.analytics.google.com',
+                'https://*.googletagmanager.com',
+                'https://*.g.doubleclick.net'
+            ],
             mediaSrc: ['\'self\''],
             frameSrc: ['vcc-eu4.8x8.com', 'vcc-eu4b.8x8.com'],
             imgSrc: [
                 '\'self\'',
                 '\'self\' data:',
-                'www.google-analytics.com',
-                'stats.g.doubleclick.net',
+                'https://*.google-analytics.com',
+                'https://*.analytics.google.com',
+                'https://*.googletagmanager.com',
+                'https://*.g.doubleclick.net',
                 'vcc-eu4.8x8.com',
                 'vcc-eu4b.8x8.com',
                 'ssl.gstatic.com',
@@ -130,17 +139,16 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     const caching = {cacheControl: true, setHeaders: (res) => res.setHeader('Cache-Control', 'max-age=604800')};
 
     // Middleware to serve static assets
-    app.use('/public/webchat', express.static(`${__dirname}/node_modules/@hmcts/ctsc-web-chat/assets`, caching));
     app.use('/public/stylesheets', express.static(`${__dirname}/public/stylesheets`, caching));
     app.use('/public/images', express.static(`${__dirname}/app/assets/images`, caching));
-    app.use('/public/javascripts/govuk-frontend', express.static(`${__dirname}/node_modules/govuk-frontend`, caching));
+    app.use('/public/javascripts/govuk-frontend', express.static(govUkFrontendPath, caching));
     app.use('/public/javascripts', express.static(`${__dirname}/app/assets/javascripts`, caching));
     app.use('/public/javascripts', express.static(`${__dirname}/public/javascripts`, caching));
     app.use('/public/pdf', express.static(`${__dirname}/app/assets/pdf`));
-    app.use('/assets', express.static(`${__dirname}/node_modules/govuk-frontend/govuk/assets`, caching));
+    app.use('/assets', express.static(`${govUkFrontendPath}/govuk/assets`, caching));
 
     // Elements refers to icon folder instead of images folder
-    app.use(favicon(path.join(__dirname, 'node_modules', 'govuk-frontend', 'govuk', 'assets', 'images', 'favicon.ico')));
+    app.use(favicon(path.join(govUkFrontendPath, 'govuk', 'assets', 'images', 'favicon.ico')));
 
     // Support for parsing data in POSTs
     app.use(bodyParser.json());

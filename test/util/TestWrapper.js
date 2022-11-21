@@ -2,8 +2,8 @@
 
 const {forEach, filter, isEmpty, set, get, cloneDeep} = require('lodash');
 const {expect, assert} = require('chai');
-const app = require('app');
-const routes = require('app/routes');
+const rewire = require('rewire');
+const app = rewire('app');
 const config = require('config');
 const request = require('supertest');
 const initSteps = require('app/core/initSteps');
@@ -16,21 +16,25 @@ class TestWrapper {
         this.pageUrl = this.pageToTest.constructor.getUrl();
 
         this.content = require(`app/resources/en/translation/${this.pageToTest.resourcePath}`);
-        routes.post('/prepare-session/:path', (req, res) => {
+
+        // Monkey patch routes to enable session prep for tests
+        this.routes = app.__get__('routes');
+
+        this.routes.post('/prepare-session/:path', (req, res) => {
             set(req.session, req.params.path, req.body);
             res.send('OK');
         });
-        routes.post('/prepare-session-field', (req, res) => {
+        this.routes.post('/prepare-session-field', (req, res) => {
             Object.assign(req.session, req.body);
             res.send('OK');
         });
-        routes.post('/prepare-session-field/:field/:value', (req, res) => {
+        this.routes.post('/prepare-session-field/:field/:value', (req, res) => {
             set(req.session, req.params.field, req.params.value);
             res.send('OK');
         });
 
         // Set the journey for each test.
-        routes.use('*', (req, res, next) => setJourney(req, res).then(() => next()));
+        this.routes.use('*', (req, res, next) => setJourney(req, res).then(() => next()));
 
         config.app.useCSRFProtection = 'false';
         this.server = app.init(false, {}, ftValue);
