@@ -1,5 +1,4 @@
 module.exports = {
-    mutator: 'javascript',
     reporters:
         [
             'clear-text',
@@ -13,17 +12,17 @@ module.exports = {
             'app/steps/ui/**/index.js',
             'app/middleware/*'
         ],
-    files: [
-        'app.js',
-        'server.js',
-        'package.json',
-        'version.json',
-        'app/**',
-        'config/*',
-        'test/**'
+    ignorePatterns: [
+        '**',
+        '!app.js',
+        '!server.js',
+        '!package.json',
+        '!version',
+        '!app/**',
+        '!config/*',
+        '!test/**'
     ],
     testRunner: 'mocha',
-    testFramework: 'mocha',
     mochaOptions: {
         spec:
             [
