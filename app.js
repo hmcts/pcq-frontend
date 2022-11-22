@@ -3,6 +3,7 @@
 
 /* eslint no-console: 0 no-unused-vars: 0 */
 
+const appInsights = require('app/components/app-insights');
 const logger = require('app/components/logger');
 const path = require('path');
 const express = require('express');
@@ -21,7 +22,6 @@ const csrf = require('csurf');
 const healthcheck = require(`${__dirname}/app/healthcheck`);
 const fs = require('fs');
 const https = require('https');
-const appInsights = require('applicationinsights');
 const uuidv4 = require('uuid/v4');
 const uuid = uuidv4();
 const sanitizeRequestBody = require('app/middleware/sanitizeRequestBody');
@@ -35,10 +35,8 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     const useHttps = config.app.useHttps.toLowerCase();
     const govUkFrontendPath = path.resolve(require.resolve('govuk-frontend'), '../../');
 
-    if (config.appInsights.instrumentationKey) {
-        appInsights.setup(config.appInsights.instrumentationKey);
-        appInsights.start();
-    }
+    // Initialise Azure Application Insights
+    appInsights();
 
     // Application settings
     app.set('view engine', 'html');
