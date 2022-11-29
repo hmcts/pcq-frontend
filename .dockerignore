@@ -6,6 +6,8 @@
 
 !docker/**
 !package.json
+!.yarn/**
+!.yarnrc.yml
 !yarn.lock
 !app
 !app.js
