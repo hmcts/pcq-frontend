@@ -73,9 +73,4 @@
   "disclaimer-item20": "death or personal injury arising from our negligence",
   "disclaimer-item21": "fraudulent misrepresentation",
   "disclaimer-item22": "any other liability which cannot be excluded or limited under applicable law",
-
-  "contactHeading": "Contact us",
-  "contactParagraph1": "Phone: {helpLineNumber}",
-  "contactParagraph2": "{helpLineHours}",
-  "contactParagraph3": "<a href=\"{callChargesLink}\" class=\"govuk-link\" target=\"_blank\" rel=\"external noopener noreferrer\" aria-label=\"Find out about call charges\">Find out about call charges</a>"
 }

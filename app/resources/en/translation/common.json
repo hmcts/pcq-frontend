@@ -51,5 +51,7 @@
   "serviceTelephoneOpeningHours": "Monday to Friday, 9:30am to 5pm",
   "helplineNumber": "0300 303 0648",
   "helplineHours": "Monday to Friday, 8:30am to 5:00pm.",
-  "serviceEmail": "contactpcq@justice.gov.uk"
+  "serviceEmail": "contactpcq@justice.gov.uk",
+  "govWelsh": "Rhestr o Wasanaethau Cymraeg",
+  "userGds": "Government Digital Service"
 }

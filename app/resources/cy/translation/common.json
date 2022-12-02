@@ -51,5 +51,7 @@
   "serviceTelephoneOpeningHours": "Dydd Llun i ddydd Gwener, 8:00am i 2:00pm",
   "helplineNumber": "0300 303 0654",
   "helplineHours": "Dydd Llun i ddydd Gwener, 8:30am tan 5.00pm",
-  "serviceEmail": "contactpcq@justice.gov.uk"
+  "serviceEmail": "contactpcq@justice.gov.uk",
+  "govWelsh": "Rhestr o Wasanaethau Cymraeg",
+  "userGds": "Gwasanaeth Digidol y Llywodraeth"
 }
