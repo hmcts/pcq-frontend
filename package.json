@@ -113,6 +113,7 @@
     "sonarqube-scanner": "^2.8.1",
     "supertest": "^4.0.2",
     "watch": "^0.13.0",
+    "webdriverio": "^7.20.5",
     "yarn-audit-fix": "^9.3.2"
   },
   "nyc": {
