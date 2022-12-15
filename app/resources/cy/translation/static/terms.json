@@ -72,10 +72,5 @@
   "disclaimerParagraph6": "Efallai y byddwn yn parhau i fod yn atebol am:",
   "disclaimer-item20": "farwolaeth neu anaf personol sy’n codi o’n hesgeuluster",
   "disclaimer-item21": "camliwio twyllodrus",
-  "disclaimer-item22": "unrhyw atebolrwydd arall na ellir ei eithrio neu ei gyfyngu dan y gyfraith berthnasol",
-
-  "contactHeading": "Cysylltu &acirc; ni",
-  "contactParagraph1": "Rhif ff&ocirc;n: {helpLineNumber}",
-  "contactParagraph2": "{helpLineHours}",
-  "contactParagraph3": "<a target=\"_blank\" rel=\"external noopener noreferrer\" href=\"{callChargesLink}\" class=\"govuk-link\">Gwybodaeth am brisiau galwadau</a>"
+  "disclaimer-item22": "unrhyw atebolrwydd arall na ellir ei eithrio neu ei gyfyngu dan y gyfraith berthnasol"
 }

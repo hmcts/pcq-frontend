@@ -48,11 +48,6 @@
             {{ unorderedList([content["disclaimer-item10"], content["disclaimer-item11"], content["disclaimer-item12"], content["disclaimer-item13"], content["disclaimer-item14"], content["disclaimer-item15"], content["disclaimer-item16"],  content["disclaimer-item17"], content["disclaimer-item18"], content["disclaimer-item19"]]) }}
             <p class="govuk-body">{{ content.disclaimerParagraph6 | safe }}</p>
             {{ unorderedList([content["disclaimer-item20"], content["disclaimer-item21"], content["disclaimer-item22"]]) }}
-
-            <h2 class="govuk-heading-m">{{ content.contactHeading | safe }}</h2>
-            <p class="govuk-body">{{ content.contactParagraph1 | replace("{helpLineNumber}", common.helpTelephoneNumber) | safe }}</p>
-            <p class="govuk-body">{{ content.contactParagraph2 | replace("{helpLineHours}", common.helpTelephoneOpeningHours) | safe }}</p>
-            <p class="govuk-body">{{ content.contactParagraph3 | replace("{callChargesLink}", globals.links.callCharges) | safe }}</p>
         </div>
     </div>
 {% endblock %}

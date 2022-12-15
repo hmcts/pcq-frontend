@@ -2,17 +2,23 @@
     {{ govukFooter({
         meta: {
             items: [{
-                href: globals.links.cookies,
-                text: common.cookies | safe
-            }, {
                 href: globals.links.privacy,
                 text: common.privacyPolicy | safe
+            }, {
+                href: globals.links.cookies,
+                text: common.cookies | safe
             }, {
                 href: globals.links.accessibility,
                 text: common.accessibility | safe
             }, {
                 href: globals.links.terms,
                 text: common.termsAndConditions | safe
+            }, {
+                href: globals.links.govWelsh,
+                text: common.govWelsh | safe
+            }, {
+                href: globals.links.userGds,
+                text: common.userGds | safe
             }]
         }
     }) }}
