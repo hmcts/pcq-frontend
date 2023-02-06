@@ -41,15 +41,15 @@ withNightlyPipeline(type, product, component) {
     enableCrossBrowserTest()
     enableFullFunctionalTest(20)
 
-    after('fortify-scan') {
+    afterAlways('fortify-scan') {
         steps.archiveArtifacts allowEmptyArchive: true, artifacts: '**/Fortify Scan/**/*'
     }
 
-    after('crossBrowserTest') {
+    afterAlways('crossBrowserTest') {
         steps.archiveArtifacts allowEmptyArchive: true, artifacts: 'functional-output/**/*'
     }
 
-    after('fullFunctionalTest') {
+    afterAlways('fullFunctionalTest') {
         publishHTML target: [
                 allowMissing : true,
                 alwaysLinkToLastBuild: true,
