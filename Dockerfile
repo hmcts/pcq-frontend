@@ -8,17 +8,14 @@ USER hmcts
 ENV WORKDIR /opt/app
 WORKDIR ${WORKDIR}
 
-COPY --chown=hmcts:hmcts .yarn ./.yarn
-COPY --chown=hmcts:hmcts bin/setup.sh ./bin/setup.sh
-COPY --chown=hmcts:hmcts package.json yarn.lock .yarnrc.yml .pnp.cjs .pnp.loader.mjs webpack.config.js ./
+COPY --chown=hmcts:hmcts . ./
 
-RUN yarn workspaces focus --all --production && yarn cache clean
+RUN yarn
 
 # ---- Build image ----
 FROM base as build
-COPY --chown=hmcts:hmcts . ./
 
-RUN yarn install --immutable && yarn setup
+RUN yarn setup
 
 # ---- Runtime image ----
 FROM base as runtime
