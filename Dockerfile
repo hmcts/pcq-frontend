@@ -13,7 +13,7 @@ COPY --chown=hmcts:hmcts . ./
 # ---- Build image ----
 FROM base as build
 
-RUN yarn && yarn setup
+RUN yarn setup
 
 # ---- Runtime image ----
 FROM base as runtime

@@ -1,6 +1,7 @@
 #!/bin/bash
 set -ex
 
+yarn install
 NODE_PATH=. node setup/copyGovukResources.js
 NODE_PATH=. npm rebuild node-sass
 NODE_PATH=. npm run sass
