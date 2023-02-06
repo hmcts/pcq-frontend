@@ -1,5 +1,5 @@
 const {expect} = require('chai');
-const app = require('app');
+const app = require('../../../app');
 const request = require('supertest');
 const commonContent = require('app/resources/en/translation/common');
 

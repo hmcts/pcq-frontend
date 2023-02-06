@@ -17,23 +17,10 @@ exports.config = {
         I: 'test/end-to-end/pages/steps.js'
     },
     mocha: {
+        reporter: 'mochawesome',
         reporterOptions: {
-            'codeceptjs-cli-reporter': {
-                stdout: '-',
-                'options': {'steps': true}
-            },
-            'mocha-junit-reporter': {
-                'stdout': '-',
-                'options': {'mochaFile': './functional-output/result.xml'}
-            },
-            mochawesome: {
-                'stdout': './functional-output/console.log',
-                'options': {
-                    'reportDir': './functional-output/mochawesome',
-                    'reportName': 'index',
-                    'inlineAssets': true
-                }
-            }
+            reportDir: './functional-output/mochawesome',
+            inline: true
         }
     },
     bootstrap: null,
