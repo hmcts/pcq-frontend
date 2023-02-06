@@ -8,12 +8,11 @@
   },
   "scripts": {
     "preinstall": "./bin/preinstall.sh || true",
-    "setup": "NODE_PATH=. npm rebuild node-sass && npm run sass && npm run createVersionFile && npm run sass-ie8 && npm run bundle",
-    "setup_sh": "./bin/setup.sh",
+    "setup": "./bin/setup.sh",
     "createVersionFile": "NODE_PATH=. node setup/createVersionFile.js",
+    "copyGovUkResources": "NODE_PATH=. node setup/copyGovukResources.js",
     "bundle": "NODE_PATH=. yarn webpack",
     "start": "NODE_PATH=. node server.js",
-    "copyGovUkResources": "NODE_PATH=. node setup/copyGovukResources.js",
     "debug": "NODE_PATH=. node inspect server.js",
     "start:dev": "npm run sass:watch && NODE_ENV=dev NODE_PATH=. nodemon -e js,json --watch 'app/' --watch 'test/' -x 'node server.js'",
     "sass:watch": "NODE_PATH=. watch 'npm run -s sass' app/assets/sass/ &",
@@ -86,7 +85,8 @@
     "test": "link:./test",
     "traverse": "^0.6.6",
     "uuid": "^3.3.2",
-    "webpack": "^5.75.0"
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   },
   "devDependencies": {
     "@babel/traverse": "^7.20.13",
