@@ -5,7 +5,14 @@
 {% from "govuk/components/button/macro.njk" import govukButton %}
 {% from "govuk/components/select/macro.njk" import govukSelect %}
 
-{% block head %}{% include "includes/head.html" %}{% endblock %}
+{% block head %}
+{% include "includes/head.html" %}
+<style>
+    .govuk-cookie-banner {
+        display: none;
+    }
+</style>
+{% endblock %}
 {% block bodyStart %}{% endblock %}
 {% block beforeContent %}{% endblock %}
 
