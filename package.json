@@ -8,7 +8,7 @@
   },
   "scripts": {
     "preinstall": "./bin/preinstall.sh || true",
-    "setup": "./bin/setup.sh",
+    "setup": "sh ./bin/setup.sh",
     "createVersionFile": "NODE_PATH=. node setup/createVersionFile.js",
     "copyGovUkResources": "NODE_PATH=. node setup/copyGovukResources.js",
     "bundle": "NODE_PATH=. yarn webpack",

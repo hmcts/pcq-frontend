@@ -14,6 +14,9 @@
 !gulpfile.js
 !tsconfig.json
 !server.js
+!webpack.config.js
+!bin/setup.sh
+!setup/**
 !app/**
 !config/**
 !test
