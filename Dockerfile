@@ -10,12 +10,10 @@ WORKDIR ${WORKDIR}
 
 COPY --chown=hmcts:hmcts . ./
 
-RUN yarn
-
 # ---- Build image ----
 FROM base as build
 
-RUN yarn setup
+RUN yarn && yarn setup
 
 # ---- Runtime image ----
 FROM base as runtime
