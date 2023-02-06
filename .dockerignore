@@ -6,7 +6,6 @@
 
 !docker/**
 !package.json
-!.yarn/**
 !.yarnrc.yml
 !yarn.lock
 !app
@@ -23,3 +22,13 @@
 !createVersionFile.js
 !version
 !.git
+
+# Yarn PnP
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+!.pnp.cjs
+!.pnp.loader.mjs
