@@ -8,10 +8,10 @@ USER hmcts
 ENV WORKDIR /opt/app
 WORKDIR ${WORKDIR}
 
-COPY --chown=hmcts:hmcts . ./
-
 # ---- Build image ----
 FROM base as build
+
+COPY --chown=hmcts:hmcts . ./
 
 RUN yarn setup
 
@@ -19,9 +19,11 @@ RUN yarn setup
 FROM base as runtime
 
 COPY --from=build ${WORKDIR}/app app/
+COPY --from=build ${WORKDIR}/.yarn .yarn/
 COPY --from=build ${WORKDIR}/config config/
 COPY --from=build ${WORKDIR}/public public/
 COPY --from=build ${WORKDIR}/server.js ${WORKDIR}/app.js ${WORKDIR}/version ./
+COPY --from=build ${WORKDIR}/package.json ${WORKDIR}/yarn.lock ${WORKDIR}/.yarnrc.yml ${WORKDIR}/.pnp.cjs ${WORKDIR}/.pnp.loader.mjs ./
 
 EXPOSE 4000
 CMD ["yarn", "start" ]
