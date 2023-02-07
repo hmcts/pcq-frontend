@@ -77,7 +77,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.3"],\
             ["nyc", "npm:15.1.0"],\
             ["pa11y", "npm:6.2.3"],\
-            ["playwright", "npm:1.27.1"],\
+            ["playwright", "npm:1.30.0"],\
             ["pre-commit", "npm:1.2.2"],\
             ["proxyquire", "npm:2.1.3"],\
             ["request", "npm:2.88.2"],\
@@ -10955,20 +10955,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["playwright", [\
-        ["npm:1.27.1", {\
-          "packageLocation": "./.yarn/unplugged/playwright-npm-1.27.1-fcfcaa14d5/node_modules/playwright/",\
+        ["npm:1.30.0", {\
+          "packageLocation": "./.yarn/unplugged/playwright-npm-1.30.0-54cd38918f/node_modules/playwright/",\
           "packageDependencies": [\
-            ["playwright", "npm:1.27.1"],\
-            ["playwright-core", "npm:1.27.1"]\
+            ["playwright", "npm:1.30.0"],\
+            ["playwright-core", "npm:1.30.0"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["playwright-core", [\
-        ["npm:1.27.1", {\
-          "packageLocation": "./.yarn/unplugged/playwright-core-npm-1.27.1-5f07cc4685/node_modules/playwright-core/",\
+        ["npm:1.30.0", {\
+          "packageLocation": "./.yarn/unplugged/playwright-core-npm-1.30.0-ed7c04af76/node_modules/playwright-core/",\
           "packageDependencies": [\
-            ["playwright-core", "npm:1.27.1"]\
+            ["playwright-core", "npm:1.30.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -11178,7 +11178,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.3"],\
             ["nyc", "npm:15.1.0"],\
             ["pa11y", "npm:6.2.3"],\
-            ["playwright", "npm:1.27.1"],\
+            ["playwright", "npm:1.30.0"],\
             ["pre-commit", "npm:1.2.2"],\
             ["proxyquire", "npm:2.1.3"],\
             ["request", "npm:2.88.2"],\
