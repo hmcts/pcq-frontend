@@ -27,24 +27,10 @@ exports.config = {
         I: 'test/end-to-end/pages/steps.js'
     },
     mocha: {
+        reporter: 'mochawesome',
         reporterOptions: {
-            'codeceptjs-cli-reporter': {
-                stdout: '-',
-                'options': {'steps': true}
-            },
-            'mocha-junit-reporter': {
-                'stdout': '-',
-                'options': {'mochaFile': './smoke-output/result.xml'}
-            },
-            mochawesome: {
-                'stdout': './smoke-output/console.log',
-                'options': {
-                    'reportDir': './smoke-output',
-                    'reportName': 'index',
-                    charts: true,
-                    'inlineAssets': true
-                }
-            }
+            reportDir: './smoke-output',
+            inline: true
         }
     },
     gherkin: {
