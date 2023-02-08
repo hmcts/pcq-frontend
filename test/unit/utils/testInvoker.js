@@ -53,6 +53,26 @@ describe('Invoker', () => {
 
     describe('content()', () => {
         it('should return the correct content', (done) => {
+            const ageCheckList = [
+                {
+                    'selected': true,
+                    'text': 'NONE',
+                    'value': null
+                },
+                {
+                    'text': '> 18',
+                    'value': 0
+                },
+                {
+                    'text': '16 - 18',
+                    'value': 1
+                },
+                {
+                    'text': '< 16',
+                    'value': 2
+                }
+            ];
+
             expect(invoker.content).to.deep.equal({
                 serviceList: [
                     {
@@ -96,6 +116,7 @@ describe('Invoker', () => {
                         text: 'SpecialTribunals_CIC'
                     }
                 ],
+                ageCheckList,
                 actorList: {
                     'PROBATE': [
                         'APPLICANT'

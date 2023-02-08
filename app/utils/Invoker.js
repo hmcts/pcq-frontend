@@ -3,6 +3,7 @@
 const uuidv4 = require('uuid/v4');
 const {generateToken} = require('app/components/encryption-token');
 const registeredServices = require('app/registeredServices');
+const AgeCheck = require('./Constants');
 
 class Invoker {
 
@@ -19,9 +20,17 @@ class Invoker {
             actorList[service.serviceId] = service.actors;
         });
 
+        const ageCheckList = [
+            {value: null, text: 'NONE', selected: true},
+            {value: AgeCheck.GreaterThanEighteen, text: '> 18'},
+            {value: AgeCheck.SixteenToEighteen, text: '16 - 18'},
+            {value: AgeCheck.LessThanSixteen, text: '< 16'},
+        ];
+
         return {
-            serviceList: serviceList,
-            actorList: actorList
+            serviceList,
+            actorList,
+            ageCheckList
         };
     }
 

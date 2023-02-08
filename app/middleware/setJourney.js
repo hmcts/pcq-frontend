@@ -9,6 +9,7 @@ const getBaseJourney = name => {
 const setJourney = async (req, res) => {
     const journeyName = req.session.form ? req.session.form.serviceId || 'DEFAULT' : 'DEFAULT';
     const actor = req.session.form ? req.session.form.actor || '' : '';
+    const ageCheck = req.session.ageCheck;
 
     try {
         const journey = getBaseJourney(journeyName)(actor.toLowerCase());
@@ -16,6 +17,32 @@ const setJourney = async (req, res) => {
         if (journey.toggledQuestions) {
             journey.skipList = await processToggledQuestions(journey.toggledQuestions, req, res);
         }
+
+        if (journey.ageCheckQuestions && ageCheck !== null && journey.ageCheckQuestions[ageCheck]) {
+            if (journey.skipList) {
+                // Add the age check skip list questions, ensuring to merge any duplicates from the toggled questions.
+                // If any merges cause confliction, then log an error and prioritise the toggle item.
+
+                const ageCheckSkipList = journey.ageCheckQuestions[ageCheck];
+
+                // Loop through each of the items in age check questions.
+                ageCheckSkipList.forEach(item => {
+                    // If the step name is already in the skip list
+                    const duplicateItem = journey.skipList.find(skippedItem => skippedItem.stepName === item.stepName);
+                    if (duplicateItem) {
+                        // If they have a next step, ensure they are the same, otherwise, log an error and prioritise the toggle.
+                        if (item.nextStepName !== duplicateItem.nextStepName) {
+                            logger(req.session.sessionId).error('ERROR Duplicated skip list item has different nextStepName. Prioritising toggled skip list item.');
+                        }
+                    } else {
+                        journey.skipList.push(item);
+                    }
+                });
+            } else {
+                journey.skipList = journey.ageCheckQuestions[ageCheck];
+            }
+        }
+
 
         req.session.journey = journey;
     } catch (err) {
