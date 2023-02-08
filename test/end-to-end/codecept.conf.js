@@ -30,27 +30,5 @@ exports.config = {
         features: 'features/probate.feature',
         steps: ['./step_definitions/probatepcqjourney.js']
     },
-    plugins: {
-        screenshotOnFail: {
-            enabled: true
-        },
-        retryFailedStep: {
-            enabled: true
-        },
-        stepByStepReport: {
-            enabled: true,
-            deleteSuccessful: true,
-            ignoreSteps: ['wait*', 'fill*', 'grab*', 'set*', 'click*', 'select*', 'am*'],
-            screenshotsForAllureReport: true
-        },
-        allure: {
-            enabled: true,
-            // enableScreenshotDiffPlugin: true,
-        },
-        autoDelay: {
-            enabled: true
-        }
-    },
-    tests: './test/*_test.js',
     name: 'pcq-frontend'
 };
