@@ -286,6 +286,42 @@
                         }
                     }
             }
+        },
+        "specialTribunals_CIC" :
+            {
+            "datas" :
+            {
+                "applicant" :
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "specialTribunals_CIC",
+                            "actor" : "applicant" ,
+                            "pcqId" : "a65d10f8-2e7c-47b4-b9bc-78dd87ef3cdc",
+                            "ccdCaseId" : "a1dc729e-09be-45bd-9e6d-6b5cd01c0f2d",
+                            "partyId" : "SpecialTribunals_CIC_APPLICANT@test.gov.uk",
+                            "returnUrl" : "SpecialTribunals_CIC_APPLICANT.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2,
+                            "redirect" : "Submit an appeal to the Special Tribunals - CIC"
+                        }
+                    },
+                "subject" :
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "specialTribunals_CIC",
+                            "actor" : "subject" ,
+                            "pcqId" : "b0aa071b-22ad-41d2-aed7-75e299c53ca4",
+                            "ccdCaseId" : "d6e1a085-68a7-488b-9a69-66aba3e238ff",
+                            "partyId" : "SpecialTribunals_CIC_SUBJECT@test.gov.uk",
+                            "returnUrl" : "SpecialTribunals_CIC_SUBJECT.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2,
+                            "redirect" : "Submit an appeal to the Special Tribunals - CIC"
+                        }
+                    }
+            }
         }
     }
 }

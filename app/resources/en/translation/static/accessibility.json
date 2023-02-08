@@ -25,6 +25,7 @@
   "list2-iac": "If you were appealing to the Immigration or Asylum service: 0300 123 1711 or email contactia@justice.gov.uk",
   "list2-et": "If you were using the Employment Tribunals service in England and Wales: 0300 123 1024 or in Scotland: 0300 790 6234",
   "list2-online_plea": "If you were using the Make a plea service : 0300 303 0656",
+  "list2-specialTribunals_CIC": "If you were using the First-tier Tribunal (Criminal Injuries Compensation) service : 0300 790 6234 or email CIC.enquiries@justice.gov.uk",
   "paragraph9": "{helpLineHours}<br><a target=\"_blank\" rel=\"external noopener noreferrer\" href=\"{callChargesLink}\" class=\"govuk-link\">Find out about call charges</a>",
   "paragraph10": "We’ll consider your request and get back to you within 10 working days.",
 

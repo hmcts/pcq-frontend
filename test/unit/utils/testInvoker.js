@@ -90,6 +90,10 @@ describe('Invoker', () => {
                     {
                         value: 'ONLINE_PLEA',
                         text: 'ONLINE_PLEA'
+                    },
+                    {
+                        value: 'SpecialTribunals_CIC',
+                        text: 'SpecialTribunals_CIC'
                     }
                 ],
                 actorList: {
@@ -125,6 +129,10 @@ describe('Invoker', () => {
                     ],
                     'ONLINE_PLEA': [
                         'DEFENDANT'
+                    ],
+                    'SpecialTribunals_CIC': [
+                        'APPLICANT',
+                        'SUBJECT'
                     ],
                 }
             });

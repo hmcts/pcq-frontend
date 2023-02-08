@@ -146,6 +146,8 @@ The following change need to made so that test will pass.
 1. Add the new service in (test/unit/util/testInvoker.js.)
 2. Add the new service redirect link in (test/unit/util/testShutterPage.js)
 3. Add the new service rediret link property name in (test/component/testShutterPage.js)
+4. Add the new service data in (test/unit/core/testServiceData.json)
+5. Add the new service invoker data in (test/unit/services/testServiceInvokerData.json)
 
 
 ## License

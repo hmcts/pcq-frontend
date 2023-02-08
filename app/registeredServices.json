@@ -90,5 +90,15 @@
       "online_plea": "https://onlineplea.cjscp.org.uk/onlineplea/check-your-answers.xhtml"
 
     }
+  },
+  {
+    "serviceId": "SpecialTribunals_CIC",
+    "actors": [
+      "APPLICANT",
+      "SUBJECT"
+    ],
+    "redirectLinks": {
+      "specialTribunals_CIC": "https://et-sya.aat.platform.hmcts.net/steps-to-making-your-claim"
+    }
   }
 ]
