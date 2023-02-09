@@ -12,7 +12,7 @@ nodejs:
     REDIS_USE_TLS: true
     REDIS_PORT: 6380
     REDIS_HOST: pcq-frontend-redis-cache-{{ .Values.global.environment }}.redis.cache.windows.net
-    PCQ_BACKEND_URL: http://pcq-backend-{{ .Values.global.environment }}.service.core-compute-{{ .Values.global.environment }}
+    PCQ_BACKEND_URL: http://pcq-backend-{{ .Values.global.environment }}.service.core-compute-{{ .Values.global.environment }}.internal
     REFORM_ENVIRONMENT: '{{ .Values.global.environment }}'
     ALLOW_CONFIG_MUTATIONS: true
   image: hmctspublic.azurecr.io/pcq/frontend:latest

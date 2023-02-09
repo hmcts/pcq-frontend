@@ -121,7 +121,7 @@ This key is shared with the invoking service.
 
 The following changes will need to be made to setup the token key in PCQ:
 
-1. [Default config](config/default.yaml): Add a new property for the service in the `tokenKeys` object. 
+1. [Default config](config/default.yaml): Add a new property for the service in the `tokenKeys` object. This property needs to be all in lowercase letter. 
 Set the value to `SERVICE_TOKEN_KEY`, this is the default key we use and will inform the logs if AKS is not being used.
 2. [Environment config](config/custom-environment-variables.yaml): Add a new property in the `tokenKeys` object with the same name as created in the default.yaml file.
 Set the value with the convention `<SERVICE_NAME>_TOKEN_KEY`.
