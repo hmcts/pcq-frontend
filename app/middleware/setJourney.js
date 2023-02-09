@@ -43,7 +43,6 @@ const setJourney = async (req, res) => {
             }
         }
 
-
         req.session.journey = journey;
     } catch (err) {
         logger(req.session.sessionId).error(err);

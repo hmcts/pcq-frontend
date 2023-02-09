@@ -82,8 +82,8 @@ const registerIncomingService = (req) => {
     logger.info(req.query);
     const partyId = req.query.partyId;
     if (partyId) {
-         // Ensure emails are properly encoded
-         req.query.partyId = partyId.trim().replace(/\s/g, '+');
+        // Ensure emails are properly encoded
+        req.query.partyId = partyId.trim().replace(/\s/g, '+');
     }
     if (verifyToken(req.query)) {
         validateParameters(req);
