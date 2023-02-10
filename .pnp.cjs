@@ -78,6 +78,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nyc", "npm:15.1.0"],\
             ["pa11y", "npm:6.2.3"],\
             ["playwright", "npm:1.30.0"],\
+            ["playwright-core", "npm:1.30.0"],\
             ["pre-commit", "npm:1.2.2"],\
             ["proxyquire", "npm:2.1.3"],\
             ["request", "npm:2.88.2"],\
@@ -11179,6 +11180,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nyc", "npm:15.1.0"],\
             ["pa11y", "npm:6.2.3"],\
             ["playwright", "npm:1.30.0"],\
+            ["playwright-core", "npm:1.30.0"],\
             ["pre-commit", "npm:1.2.2"],\
             ["proxyquire", "npm:2.1.3"],\
             ["request", "npm:2.88.2"],\
