@@ -438,7 +438,7 @@
                         }
                     }
             },
-            "specialTribunals_CIC" :
+            "specialtribunals_cic" :
             {
                 "nextStep": 
                 {
@@ -458,7 +458,7 @@
                     {
                         "formData" :
                         {
-                            "serviceId": "specialTribunals_CIC",
+                            "serviceId": "specialtribunals_cic",
                             "actor" : "applicant" 
                         },
                         "startPageTextEn" : "Your answers will not affect your application.",
@@ -472,7 +472,7 @@
                     {
                         "formData" :
                         {
-                            "serviceId": "specialTribunals_CIC",
+                            "serviceId": "specialtribunals_cic",
                             "actor" : "subject" 
                         },
                         "startPageTextEn" : "Your answers will not affect your application.",
