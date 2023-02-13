@@ -1,7 +1,5 @@
 # ---- Base image ----
 
-FROM hmctspublic.azurecr.io/base/node:16-alpine as base
-
 USER root
 RUN corepack enable
 USER hmcts
@@ -15,13 +13,13 @@ COPY --chown=hmcts:hmcts package.json yarn.lock .yarnrc.yml ./
 RUN yarn workspaces focus --all --production && yarn cache clean
 
 # ---- Build image ----
-FROM base as build
+FROM hmctspublic.azurecr.io/base/node:16-alpine as build
 COPY --chown=hmcts:hmcts . ./
 
 RUN yarn install --immutable && yarn setup
 
 # ---- Runtime image ----
-FROM base as runtime
+FROM hmctspublic.azurecr.io/base/node:16-alpine as runtime
 
 COPY --from=build ${WORKDIR}/app app/
 COPY --from=build ${WORKDIR}/config config/
