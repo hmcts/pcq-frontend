@@ -1,4 +1,5 @@
 # ---- Base image ----
+FROM hmctspublic.azurecr.io/base/node:16-alpine as base
 
 USER root
 RUN corepack enable
@@ -9,14 +10,14 @@ WORKDIR ${WORKDIR}
 
 # ---- Build image ----
 
-FROM hmctspublic.azurecr.io/base/node:16-alpine as build
+FROM base as build
 
 COPY --chown=hmcts:hmcts . ./
 
 RUN yarn setup
 
 # ---- Runtime image ----
-FROM hmctspublic.azurecr.io/base/node:16-alpine as runtime
+FROM base as runtime
 
 COPY --from=build ${WORKDIR}/app app/
 COPY --from=build ${WORKDIR}/.yarn .yarn/
