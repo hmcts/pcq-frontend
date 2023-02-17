@@ -24,6 +24,7 @@ const setupSecrets = () => {
         setSecret('secrets.pcq.adoption-token-key', 'tokenKeys.adoption'); // ADOPTION
         setSecret('secrets.pcq.et-token-key', 'tokenKeys.et'); // ET
         setSecret('secrets.pcq.online-plea-token-key', 'tokenKeys.online_plea'); // online_plea
+        setSecret('secrets.pcq.specialTribunals-cic-token-key', 'tokenKeys.specialtribunals_cic'); // Special Tribunals
     }
 };
 
