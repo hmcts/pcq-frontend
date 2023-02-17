@@ -5,8 +5,8 @@ then please follow the instructions below. Otherwise, the default journey will b
 
 ### Adding a new service journey
 
-To add a new service specific journey, start by copying the `default.json` file and renaming it to be your service id
-(`<serviceid>.json`).
+To add a new service specific journey, start by copying the `default.js` file and renaming it to be your service id
+(`<serviceid>.js`).
 
 Inside this file is an object containing an ordered list of key/value pairs which represent a step and the step that you will directed to on post. 
 Keys with an object as its value represent the various options that can be chosen in that step and the step that they will be directed to based on their choice.
