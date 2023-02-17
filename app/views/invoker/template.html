@@ -71,14 +71,6 @@
                         name: "partyId"
                     }) }}
 
-                    {{ govukInput({
-                        label: {
-                            text: "Language"
-                        },
-                        classes: "govuk-!-width-full",
-                        id: "language",
-                        name: "language"
-                    }) }}
 
                     {{ govukInput({
                         label: {
@@ -88,6 +80,30 @@
                         id: "returnUrl",
                         name: "returnUrl"
                     }) }}
+
+                    <div class="govuk-grid-row">
+                        <div class="govuk-grid-column-one-half">
+                            {{ govukInput({
+                                label: {
+                                    text: "Language"
+                                },
+                                classes: "govuk-!-width-full",
+                                id: "language",
+                                name: "language"
+                            }) }}
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                            {{ govukSelect({
+                                id: "age-check-select",
+                                name: "ageCheck",
+                                label: {
+                                    text: "Age Check"
+                                },
+                                classes: "govuk-!-width-full",
+                                items: ageCheckList
+                            }) }}
+                        </div>
+                    </div>
 
                     <div class="govuk-grid-row">
                         <div class="govuk-grid-column-one-half">

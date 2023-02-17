@@ -103,7 +103,8 @@ if (cookieBanner) {
 
         const token = document.querySelector('#token');
         const authTag = document.querySelector('#authTag');
-        const formInputs = document.getElementById('invoker-form').getElementsByTagName('input');
+        //const formInputs = document.getElementById('invoker-form').getElementsByTagName('input');
+        const formInputs = document.getElementById('invoker-form').querySelectorAll('input, select');
 
         const queries = [];
         for (const input of formInputs) {

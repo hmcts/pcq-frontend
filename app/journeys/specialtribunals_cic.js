@@ -1,5 +1,7 @@
 'use strict';
 
+const AgeCheck = require('../utils/Constants');
+
 const stepList = {
     StartPage: 'ApplicantLanguage',
     ApplicantLanguage: {
@@ -37,14 +39,15 @@ const stepList = {
     ApplicantPregnant: 'EndPage'
 };
 
-const toggledQuestions = [
-    {stepName: 'ApplicantDisability', ftKey: 'ft_sscs_disability_stage_1', nextStepName: 'ApplicantDisabilityImplicationAreas'},
-    {stepName: 'ApplicantDisabilityImplicationAreas', ftKey: 'ft_sscs_disability_stage_2'},
-];
+const ageCheckQuestions = {
+    [AgeCheck.GreaterThanEighteen]: [],
+    [AgeCheck.SixteenToEighteen]: [
+        {stepName: 'ApplicantMaritalStatus'},
+        {stepName: 'ApplicantPregnant'},
+    ],
+    [AgeCheck.LessThanSixteen]: []
+};
 
 module.exports = () => {
-    return {
-        stepList,
-        toggledQuestions,
-    };
+    return {stepList, ageCheckQuestions};
 };

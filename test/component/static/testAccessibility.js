@@ -34,7 +34,9 @@ describe('accessibility', () => {
                 list2probate: accessibility['list2-probate'],
                 list2sscs: accessibility['list2-sscs'],
                 list2iac: accessibility['list2-iac'],
-                list2et: accessibility['list2-et']
+                list2et: accessibility['list2-et'],
+                list2online_plea: accessibility['list2-online_plea'],
+                list2specialtribunals_cic: accessibility['list2-specialtribunals_cic']
             };
             testWrapper.testContent(done, contentData);
         });
