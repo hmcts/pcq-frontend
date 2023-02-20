@@ -53,6 +53,26 @@ describe('Invoker', () => {
 
     describe('content()', () => {
         it('should return the correct content', (done) => {
+            const ageCheckList = [
+                {
+                    'selected': true,
+                    'text': 'NONE',
+                    'value': null
+                },
+                {
+                    'text': '> 18',
+                    'value': 0
+                },
+                {
+                    'text': '16 - 18',
+                    'value': 1
+                },
+                {
+                    'text': '< 16',
+                    'value': 2
+                }
+            ];
+
             expect(invoker.content).to.deep.equal({
                 serviceList: [
                     {
@@ -90,8 +110,13 @@ describe('Invoker', () => {
                     {
                         value: 'ONLINE_PLEA',
                         text: 'ONLINE_PLEA'
+                    },
+                    {
+                        value: 'SpecialTribunals_CIC',
+                        text: 'SpecialTribunals_CIC'
                     }
                 ],
+                ageCheckList,
                 actorList: {
                     'PROBATE': [
                         'APPLICANT'
@@ -125,6 +150,10 @@ describe('Invoker', () => {
                     ],
                     'ONLINE_PLEA': [
                         'DEFENDANT'
+                    ],
+                    'SpecialTribunals_CIC': [
+                        'APPLICANT',
+                        'SUBJECT'
                     ],
                 }
             });

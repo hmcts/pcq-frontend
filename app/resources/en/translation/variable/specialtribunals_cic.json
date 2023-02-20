@@ -1,0 +1,24 @@
+{
+    "applicant": {
+      "startpage": {
+        "paragraph2": "Your answers will not affect your application."
+      },
+      "endpage": {
+        "paragraph1": "The next steps are to check your application details."
+      },
+      "shutterpage": {
+        "paragraph1": "We have saved your answers and will direct you back to your application now."
+      }
+    },
+    "subject": {
+        "startpage": {
+          "paragraph2": "Your answers will not affect your application."
+        },
+        "endpage": {
+          "paragraph1": "The next steps are to check your application details."
+        },
+        "shutterpage": {
+          "paragraph1": "We have saved your answers and will direct you back to your application now."
+        }
+      }
+}
