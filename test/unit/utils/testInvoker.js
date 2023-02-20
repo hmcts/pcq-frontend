@@ -115,6 +115,10 @@ describe('Invoker', () => {
                         value: 'SpecialTribunals_CIC',
                         text: 'SpecialTribunals_CIC'
                     }
+                    {
+                        value: 'JurorDigital',
+                        text: 'JurorDigital'
+                    }
                 ],
                 ageCheckList,
                 actorList: {
@@ -155,6 +159,9 @@ describe('Invoker', () => {
                         'APPLICANT',
                         'SUBJECT'
                     ],
+                    'JurorDigital': [
+                        'CITIZEN'
+                    ]
                 }
             });
             done();
