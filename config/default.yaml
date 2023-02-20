@@ -18,10 +18,9 @@ featureToggles:
   ft_sscs_disability_stage_1: 'sscs-disability-stage-1'
   ft_sscs_disability_stage_2: 'sscs-disability-stage-2'
   ft_dtrum_session_properties: 'dtrum-session-properties'
-  ft_cookie_manager_v1: 'cookie-manager-v-1'
   ft_dtrum_opt_out: 'dtrum-opt-out'
   ft_ga_nonce_update: 'ga-nonce-update'
-  appwideToggles: ['ft_dtrum_session_properties', 'ft_cookie_manager_v1', 'ft_dtrum_opt_out', 'ft_ga_nonce_update']
+  appwideToggles: ['ft_dtrum_session_properties','ft_dtrum_opt_out', 'ft_ga_nonce_update']
 app:
   useHttps: 'false'
   port: '4000'
