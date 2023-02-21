@@ -6,7 +6,6 @@
 
 !docker/**
 !package.json
-!.yarn/**
 !.yarnrc.yml
 !yarn.lock
 !app
@@ -14,9 +13,22 @@
 !gulpfile.js
 !tsconfig.json
 !server.js
+!webpack.config.js
+!bin/setup.sh
+!setup/**
 !app/**
 !config/**
 !test
 !createVersionFile.js
 !version
 !.git
+
+# Yarn PnP
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+!.pnp.cjs
+!.pnp.loader.mjs

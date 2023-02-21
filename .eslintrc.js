@@ -52,7 +52,6 @@ module.exports = {
         ],
         "consistent-return": "off",
         "consistent-this": "off",
-        "curly": "error",
         "default-case": "error",
         "dot-location": [
             "error",

@@ -59,21 +59,11 @@ const setupConfig = {
         'I': './pages/steps.js'
     },
     mocha: {
+        reporter: 'mochawesome',
         reporterOptions: {
-            'codeceptjs-cli-reporter': {
-                stdout: '-',
-                options:
-                    {steps: true}
-            },
-            'mochawesome': {
-                stdout: process.env.E2E_CROSSBROWSER_OUTPUT_DIR + 'console.log',
-                'options': {
-                    'reportDir': process.env.E2E_CROSSBROWSER_OUTPUT_DIR || './functional-output',
-                    'reportName': 'index',
-                    'reportTitle': 'Crossbrowser results',
-                    'inlineAssets': true
-                }
-            }
+            reportDir: process.env.E2E_CROSSBROWSER_OUTPUT_DIR || './functional-output',
+            reportTitle: 'Crossbrowser results',
+            inline: true
         }
     },
     multiple: {

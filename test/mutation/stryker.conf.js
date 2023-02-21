@@ -1,4 +1,6 @@
 module.exports = {
+    packageManager: 'yarn',
+    plugins: ['@stryker-mutator/mocha-runner'],
     reporters:
         [
             'clear-text',

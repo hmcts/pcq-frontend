@@ -2,7 +2,7 @@
 
 const expect = require('chai').expect;
 const nock = require('nock');
-const app = require('app');
+const app = require('../../app');
 const request = require('supertest');
 const config = require('config');
 
