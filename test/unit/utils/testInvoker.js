@@ -114,7 +114,7 @@ describe('Invoker', () => {
                     {
                         value: 'SpecialTribunals_CIC',
                         text: 'SpecialTribunals_CIC'
-                    }
+                    },
                     {
                         value: 'JurorDigital',
                         text: 'JurorDigital'
