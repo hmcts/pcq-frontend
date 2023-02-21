@@ -1,37 +1,69 @@
-<input type="hidden" id="hdnSecurityCookie" value="{{ common.SECURITY_COOKIE }}"/>
+{% from "govuk/components/cookie-banner/macro.njk" import govukCookieBanner %}
 
-<div class="global-cookie-message" id="cm-cookie-banner" hidden>
-    <div class="govuk-cookie-banner" role="region" aria-label="{{ common.cookieBannerTitle }}">
-        <div class="govuk-cookie-banner__message govuk-width-container cm-cookie-banner__decision">
-            <div class="govuk-grid-row">
-                <div class="govuk-grid-column-two-thirds">
-                    <h1 class="govuk-cookie-banner__heading govuk-heading-m">{{ common.cookieBannerTitle }}</h1>
-                    <div class="govuk-cookie-banner__content">
-                        <p class="govuk-body">{{ common.cookieBannerEssentialCookies }}</p>
-                        <p class="govuk-body">{{ common.cookieBannerAnalyticCookies }}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="govuk-button-group">
-                <button class="govuk-button" data-cm-action="accept">{{ common.cookieBannerAcceptCookies }}</button>
-                <button class="govuk-button" data-cm-action="reject">{{ common.cookieBannerRejectCookies }}</button>
-                <a class="govuk-link" href="/cookies">{{ common.cookieBannerViewCookies }}</a>
-            </div>
-        </div>
-        <div class="govuk-cookie-banner__message govuk-width-container cm-cookie-banner__confirmation" role="alert" hidden>
-            <div class="govuk-grid-row">
-                <div class="govuk-grid-column-two-thirds">
-                    <div class="govuk-cookie-banner__content">
-                        <p class="govuk-body" id="cm-accepted-cookies">{{ common.cookieBannerAcceptedCookies | safe }} {{ common.cookieBannerChangeCookies | safe }}</p>
-                        <p class="govuk-body" id="cm-rejected-cookies">{{ common.cookieBannerRejectedCookies | safe }} {{ common.cookieBannerChangeCookies | safe }}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="govuk-button-group">
-                <button class="govuk-button" data-cm-action="hide">{{ common.cookieBannerHideMessage }}</button>
-            </div>
-        </div>
-    </div>
-</div>
+{% set cookieHtml %}
+    <p class="govuk-body">{{ common.cookieBannerEssentialCookies }}</p>
+    <p class="govuk-body">{{ common.cookieBannerAnalyticCookies }}</p>
+{% endset %}
+
+{% set cookieAcceptHtml %}
+    <p class="govuk-body">{{ common.cookieBannerAcceptedCookies | safe }} {{ common.cookieBannerChangeCookies | safe }}</p>
+{% endset %}
+
+{% set cookieRejectHtml %}
+    <p class="govuk-body">{{ common.cookieBannerRejectedCookies | safe }} {{ common.cookieBannerChangeCookies | safe }}</p>
+{% endset %}
+
+{{ govukCookieBanner({
+    classes: 'cookie-banner',
+    ariaLabel: 'Cookies on Protected Characteristics Questionnaire',
+    hidden: true,
+    messages: [
+        {
+            classes: 'cookie-banner-message',
+            headingText: common.cookieBannerTitle,
+            html: cookieHtml,
+            actions: [
+            {
+                classes: 'cookie-banner-accept-button',
+                text: common.cookieBannerAcceptCookies,
+                type: "button"
+            },
+            {
+                classes: 'cookie-banner-reject-button',
+                text: common.cookieBannerRejectCookies,
+                type: "button"
+            },
+            {
+                text: common.cookieBannerViewCookies,
+                href: "/cookies"
+            }
+        ]
+        },
+        {
+            classes: 'cookie-banner-accept-message',
+            html: cookieAcceptHtml,
+            role: "alert",
+            hidden: true,
+            actions: [
+            {
+                classes: 'cookie-banner-hide-button',
+                text: common.cookieBannerHideMessage
+            }
+        ]
+        },
+        {
+            classes: 'cookie-banner-reject-message',
+            html: cookieRejectHtml,
+            role: "alert",
+            hidden: true,
+            actions: [
+            {
+                classes: 'cookie-banner-hide-button',
+                text: common.cookieBannerHideMessage
+            }
+        ]
+        }
+    ]
+}) }}
 
 <script src="{{ globals.basePath }}/public/javascripts/cookie_bundle.js"></script>

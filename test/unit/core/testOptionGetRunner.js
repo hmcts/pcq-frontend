@@ -85,39 +85,7 @@ describe('OptionGetRunner', () => {
         await runner.handleGet(step, req, res);
 
         expect(res.render.calledOnce).to.equal(true);
-        expect(res.render.args[0][1].app).to.deep.equal({version: 'testVersion', serviceId: 'test', cookieManagerV1: false, gaNonceUpdate: false});
-    });
-
-    it('Test GET - with cookie manager V1', async () => {
-        const step = steps.StartPage;
-        const req = {
-            params: ['no-redirect'],
-            session: {
-                featureToggles: {
-                    ft_cookie_manager_v1: true
-                },
-                form: {
-                    serviceId: 'test'
-                },
-                ctx: {StartPage: {}},
-                journey: journey(),
-                language: 'en',
-                back: {push: () => 0}
-            },
-            query: {source: ''},
-            sessionID: '123'
-        };
-
-        const res = {
-            render: sinon.spy(),
-            locals: {releaseVersion: 'testVersion'}
-        };
-
-        const runner = new OptionGetRunner();
-        await runner.handleGet(step, req, res);
-
-        expect(res.render.calledOnce).to.equal(true);
-        expect(res.render.args[0][1].app).to.deep.equal({cookieManagerV1: true, gaNonceUpdate: false});
+        expect(res.render.args[0][1].app).to.deep.equal({version: 'testVersion', serviceId: 'test', gaNonceUpdate: false});
     });
 
     it('Test GET - with GA Nonce Update', async () => {
@@ -149,7 +117,7 @@ describe('OptionGetRunner', () => {
         await runner.handleGet(step, req, res);
 
         expect(res.render.calledOnce).to.equal(true);
-        expect(res.render.args[0][1].app).to.deep.equal({cookieManagerV1: false, gaNonceUpdate: true});
+        expect(res.render.args[0][1].app).to.deep.equal({gaNonceUpdate: true});
     });
 
     it('Test POST', () => {
