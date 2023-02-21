@@ -107,7 +107,7 @@
       "CITIZEN"
     ],
     "redirectLinks": {
-      "jurorDigital": "https://reply-jury-summons.service.gov.uk/steps/confirm-information"
+      "jurordigital": "https://reply-jury-summons.service.gov.uk/steps/confirm-information"
     }
   }
 ]

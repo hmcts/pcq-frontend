@@ -25,7 +25,7 @@ const setupSecrets = () => {
         setSecret('secrets.pcq.et-token-key', 'tokenKeys.et'); // ET
         setSecret('secrets.pcq.online-plea-token-key', 'tokenKeys.online_plea'); // online_plea
         setSecret('secrets.pcq.specialTribunals-cic-token-key', 'tokenKeys.specialtribunals_cic'); // Special Tribunals
-        setSecret('secrets.pcq.jurorDigital-token-key', 'tokenKeys.jurorDigital'); // Juror Digital
+        setSecret('secrets.pcq.jurorDigital-token-key', 'tokenKeys.jurordigital'); // Juror Digital
     }
 };
 

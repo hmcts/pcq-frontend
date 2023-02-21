@@ -485,7 +485,7 @@
                 }
             
             },
-            "jurorDigital" :
+            "jurordigital" :
             {
                 "nextStep": 
                 {
@@ -505,7 +505,7 @@
                     {
                         "formData" :
                         {
-                            "serviceId": "jurorDigital",
+                            "serviceId": "jurordigital",
                             "actor" : "citizen" 
                         },
                         "startPageTextEn" : "Your answers won't affect your Jury Summons Reply.",

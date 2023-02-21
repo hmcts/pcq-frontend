@@ -67,7 +67,7 @@ describe('ShutterPage', () => {
                     'et_claimant': 'https://claim-employment-tribunals.service.gov.uk/check-your-answers',
                     'online_plea': 'https://onlineplea.cjscp.org.uk/onlineplea/check-your-answers.xhtml',
                     'specialtribunals_cic': 'https://et-sya.aat.platform.hmcts.net/steps-to-making-your-claim',
-                    'jurorDigital': 'https://reply-jury-summons.service.gov.uk/steps/confirm-information'
+                    'jurordigital': 'https://reply-jury-summons.service.gov.uk/steps/confirm-information'
                 }
             );
             done();
