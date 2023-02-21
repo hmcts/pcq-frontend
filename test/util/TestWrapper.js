@@ -3,7 +3,7 @@
 const {forEach, filter, isEmpty, set, get, cloneDeep} = require('lodash');
 const {expect, assert} = require('chai');
 const rewire = require('rewire');
-const app = rewire('app');
+const app = rewire('../../app');
 const config = require('config');
 const request = require('supertest');
 const initSteps = require('app/core/initSteps');

@@ -4,7 +4,7 @@ const expect = require('chai').expect;
 const sinon = require('sinon');
 const jwt = require('jsonwebtoken');
 const config = require('config');
-const app = require('app');
+const app = require('../../../app');
 const nock = require('nock');
 const rewire = require('rewire');
 const request = require('supertest');
@@ -189,7 +189,7 @@ describe('registerIncomingService', () => {
                     200,
                     {'pcq-backend': {'status': 'DOWN'}}
                 );
-            const rewiredApp = rewire('app');
+            const rewiredApp = rewire('../../../app');
             rewiredApp.__set__('config.services.pcqBackend.enabled', 'false');
             const server = rewiredApp.init();
             const agent = request.agent(server.app);

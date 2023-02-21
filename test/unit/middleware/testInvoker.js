@@ -3,7 +3,7 @@
 const expect = require('chai').expect;
 const sinon = require('sinon');
 const rewire = require('rewire');
-const app = require('app');
+const app = require('../../../app');
 const request = require('supertest');
 const invoker = rewire('app/middleware/invoker');
 
@@ -105,7 +105,7 @@ describe('Invoker', () => {
         });
 
         it('should not load in prod environment', (done) => {
-            const rewiredApp = rewire('app');
+            const rewiredApp = rewire('../../../app');
             rewiredApp.__set__('config.environment', 'prod');
             const server = rewiredApp.init(false, {});
             const agent = request.agent(server.app);

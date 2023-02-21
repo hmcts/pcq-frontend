@@ -3,48 +3,25 @@ const CONF = require('config');
 exports.config = {
     output: process.cwd() + '/smoke-output',
     helpers: {
-        Puppeteer: {
-            url: CONF.testUrl,
+        Playwright: {
+            url: CONF.testUrl || 'https://pcq.aat.platform.hmcts.net',
             show: false,
-            headless: false,
-            chrome: {
-                'ignoreHTTPSErrors': true,
-                'ignore-certificate-errors': true,
-                'defaultViewport': {
-                    'width': 1280,
-                    'height': 960
-                },
-                args: [
-                    '--no-sandbox',
-                    `--proxy-server=${process.env.E2E_PROXY_SERVER || ''}`,
-                    `--proxy-bypass-list=${process.env.E2E_PROXY_BYPASS || ''}`,
-                    '--window-size=1440,1400'
-                ]
-            }
+            browser: 'chromium',
+            waitForTimeout: true,
+            waitForAction: 350,
+            timeout: 10000,
+            waitForNavigation: 'load',
+            ignoreHTTPSErrors: true,
         }
     },
     include: {
         I: 'test/end-to-end/pages/steps.js'
     },
     mocha: {
+        reporter: 'mochawesome',
         reporterOptions: {
-            'codeceptjs-cli-reporter': {
-                stdout: '-',
-                'options': {'steps': true}
-            },
-            'mocha-junit-reporter': {
-                'stdout': '-',
-                'options': {'mochaFile': './smoke-output/result.xml'}
-            },
-            mochawesome: {
-                'stdout': './smoke-output/console.log',
-                'options': {
-                    'reportDir': './smoke-output',
-                    'reportName': 'index',
-                    charts: true,
-                    'inlineAssets': true
-                }
-            }
+            reportDir: './smoke-output',
+            inline: true
         }
     },
     gherkin: {
