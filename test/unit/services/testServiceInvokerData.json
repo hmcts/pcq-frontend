@@ -322,6 +322,27 @@
                         }
                     }
             }
+        },
+        "jurordigital" :
+            {
+            "datas" :
+            {
+                "citizen" :
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "jurordigital",
+                            "actor" : "citizen" ,
+                            "pcqId" : "b5ed33ed-7711-4c34-b529-f8a727a0773f",
+                            "ccdCaseId" : "c10debd7-638a-42fb-ba74-4bf865741ce4",
+                            "partyId" : "JurorDigital_CITIZEN@test.gov.uk",
+                            "returnUrl" : "JurorDigital_CITIZEN.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2,
+                            "redirect" : "Respond to a Jury Summons"
+                        }
+                    }
+            }
         }
     }
 }

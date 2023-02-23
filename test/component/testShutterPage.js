@@ -36,7 +36,8 @@ describe('shutter-page', () => {
                         'adoption',
                         'et_claimant',
                         'online_plea',
-                        'specialtribunals_cic'
+                        'specialtribunals_cic',
+                        'jurordigital'
                     ]);
                 });
         });

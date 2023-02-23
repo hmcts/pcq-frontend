@@ -100,5 +100,14 @@
     "redirectLinks": {
       "specialtribunals_cic": "https://et-sya.aat.platform.hmcts.net/steps-to-making-your-claim"
     }
+  },
+  {
+    "serviceId": "JurorDigital",
+    "actors": [
+      "CITIZEN"
+    ],
+    "redirectLinks": {
+      "jurordigital": "https://reply-jury-summons.service.gov.uk/steps/confirm-information"
+    }
   }
 ]

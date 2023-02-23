@@ -66,7 +66,8 @@ describe('ShutterPage', () => {
                     'adoption': 'https://www.adoption-web.service.gov.uk/review-pay-submit/check-your-answers',
                     'et_claimant': 'https://claim-employment-tribunals.service.gov.uk/check-your-answers',
                     'online_plea': 'https://onlineplea.cjscp.org.uk/onlineplea/check-your-answers.xhtml',
-                    'specialtribunals_cic': 'https://et-sya.aat.platform.hmcts.net/steps-to-making-your-claim'
+                    'specialtribunals_cic': 'https://et-sya.aat.platform.hmcts.net/steps-to-making-your-claim',
+                    'jurordigital': 'https://reply-jury-summons.service.gov.uk/steps/confirm-information'
                 }
             );
             done();
