@@ -28,8 +28,8 @@ tokenKeys:
   adoption: ADOPTION_TOKEN_KEY
   et: ET_TOKEN_KEY
   online_plea: ONLINE_PLEA_TOKEN_KEY
-  specialtribunals_cic: 'SPECIALTRIBUNALS_CIC_TOKEN_KEY'
-  jurordigital: 'JURORDIGITAL_CIC_TOKEN_KEY'
+  specialtribunals_cic: SPECIALTRIBUNALS_CIC_TOKEN_KEY
+  jurordigital: JURORDIGITAL_CIC_TOKEN_KEY
 redis:
   host: REDIS_HOST
   port: REDIS_PORT
