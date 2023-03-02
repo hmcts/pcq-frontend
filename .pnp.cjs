@@ -60,7 +60,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["govuk-frontend", "npm:4.5.0"],\
             ["helmet", "npm:3.23.3"],\
             ["https-proxy-agent", "npm:2.2.4"],\
-            ["i18next", "npm:17.3.1"],\
+            ["i18next", "npm:22.4.10"],\
             ["ioredis", "npm:4.28.5"],\
             ["js-yaml", "npm:4.1.0"],\
             ["jsonwebtoken", "npm:9.0.0"],\
@@ -929,11 +929,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@babel/runtime", [\
-        ["npm:7.18.9", {\
-          "packageLocation": "./.yarn/cache/@babel-runtime-npm-7.18.9-28ca6b5f61-36dd736bab.zip/node_modules/@babel/runtime/",\
+        ["npm:7.21.0", {\
+          "packageLocation": "./.yarn/cache/@babel-runtime-npm-7.21.0-c4ef698c89-7b33e25bfa.zip/node_modules/@babel/runtime/",\
           "packageDependencies": [\
-            ["@babel/runtime", "npm:7.18.9"],\
-            ["regenerator-runtime", "npm:0.13.9"]\
+            ["@babel/runtime", "npm:7.21.0"],\
+            ["regenerator-runtime", "npm:0.13.11"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7454,11 +7454,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["i18next", [\
-        ["npm:17.3.1", {\
-          "packageLocation": "./.yarn/cache/i18next-npm-17.3.1-0cad8f5be5-3ad4695a67.zip/node_modules/i18next/",\
+        ["npm:22.4.10", {\
+          "packageLocation": "./.yarn/cache/i18next-npm-22.4.10-f4cde4cc04-731423e3fa.zip/node_modules/i18next/",\
           "packageDependencies": [\
-            ["i18next", "npm:17.3.1"],\
-            ["@babel/runtime", "npm:7.18.9"]\
+            ["i18next", "npm:22.4.10"],\
+            ["@babel/runtime", "npm:7.21.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -11154,7 +11154,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["govuk-frontend", "npm:4.5.0"],\
             ["helmet", "npm:3.23.3"],\
             ["https-proxy-agent", "npm:2.2.4"],\
-            ["i18next", "npm:17.3.1"],\
+            ["i18next", "npm:22.4.10"],\
             ["ioredis", "npm:4.28.5"],\
             ["js-yaml", "npm:4.1.0"],\
             ["jsonwebtoken", "npm:9.0.0"],\
@@ -11640,10 +11640,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:0.13.9", {\
-          "packageLocation": "./.yarn/cache/regenerator-runtime-npm-0.13.9-6d02340eec-65ed455fe5.zip/node_modules/regenerator-runtime/",\
+        ["npm:0.13.11", {\
+          "packageLocation": "./.yarn/cache/regenerator-runtime-npm-0.13.11-90bf536060-27481628d2.zip/node_modules/regenerator-runtime/",\
           "packageDependencies": [\
-            ["regenerator-runtime", "npm:0.13.9"]\
+            ["regenerator-runtime", "npm:0.13.11"]\
           ],\
           "linkType": "HARD"\
         }]\
