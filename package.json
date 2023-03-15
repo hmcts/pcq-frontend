@@ -67,7 +67,7 @@
     "govuk-frontend": "^4.5.0",
     "helmet": "^3.23.3",
     "https-proxy-agent": "^2.2.4",
-    "i18next": "^17.0.11",
+    "i18next": "^22.4.11",
     "ioredis": "^4.27.2",
     "js-yaml": "^4.1.0",
     "jsonwebtoken": "^9.0.0",
