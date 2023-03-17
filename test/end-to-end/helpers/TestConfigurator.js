@@ -3,7 +3,7 @@
 const CONF = require('config');
 const testConfig = require('test/config');
 const uuidv4 = require('uuid/v4');
-const request = require('request');
+const fetch = require('node-fetch');
 const assert = require('chai').assert;
 
 class TestConfigurator {
@@ -12,25 +12,20 @@ class TestConfigurator {
     }
 
     getUserData(pcqid) {
-        request({
-            url: `http://pcq-backend-aat.service.core-compute-aat.internal/pcq/backend/getAnswer/${pcqid}`,
-            method: 'GET',
-            headers: {'content-type': 'application/json'},
-            // eslint-disable-next-line no-unused-vars
-        },
-        function (err, res, body) {
-            if (!res) {
-                err = new Error('node-librato-metrics: No response received!');
-            } else {
-                const userData = JSON.parse(body);
+        fetch(`http://pcq-backend-aat.service.core-compute-aat.internal/pcq/backend/getAnswer/${pcqid}`, {
+            headers: {'Content-Type': 'application/json'},
+        })
+            .then(res => res.json())
+            .then(json => {
+                const userData = json;
                 assert.equal(userData.pcqId, pcqid, 'pcqid verfication');
                 assert.equal(userData.ccdCaseId, testConfig.TestccdCaseId, 'Caseid verification');
                 assert.equal(userData.partyId, testConfig.TestpartyId.toLowerCase());
                 assert.equal(userData.serviceId, testConfig.TestserviceId.toLowerCase());
                 assert.equal(userData.actor, testConfig.Testactor.toLowerCase());
                 assert.equal(userData.versionNo, testConfig.TestVerison);
-            }
-        });
+            })
+            .catch(err => console.log(err));
     }
 
     setPcqId() {
