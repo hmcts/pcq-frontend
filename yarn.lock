@@ -1153,7 +1153,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stryker-mutator/api@npm:5.6.1, @stryker-mutator/api@npm:^5.6.1":
+"@stryker-mutator/api@npm:5.6.1":
   version: 5.6.1
   resolution: "@stryker-mutator/api@npm:5.6.1"
   dependencies:
@@ -1161,6 +1161,17 @@ __metadata:
     mutation-testing-report-schema: 1.7.8
     tslib: ~2.3.0
   checksum: 6a00cb56228b86e432adffff6fd586747a0f730b25ac6557f7a0ce92c0ba0bcbceba7aa0f7d9876d273c8b98df6f2b6a7bf4c43dffc0eee3da905724cc780400
+  languageName: node
+  linkType: hard
+
+"@stryker-mutator/api@npm:^6.4.1":
+  version: 6.4.1
+  resolution: "@stryker-mutator/api@npm:6.4.1"
+  dependencies:
+    mutation-testing-metrics: 1.7.14
+    mutation-testing-report-schema: 1.7.14
+    tslib: ~2.5.0
+  checksum: 86992b6c57f6fee04834f2916ef43b64f16ae5d57a0377caa73f143d461c323448f351b305b558cfb08ec0a9930a10a92b40167a3f2f8639818ae1f0834047a6
   languageName: node
   linkType: hard
 
@@ -8307,12 +8318,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mutation-testing-metrics@npm:1.7.14":
+  version: 1.7.14
+  resolution: "mutation-testing-metrics@npm:1.7.14"
+  dependencies:
+    mutation-testing-report-schema: 1.7.14
+  checksum: 9afebd372c9c2e0fa3fa084ca8bf5a9306b686b7f9c4d3067fa2f40df0deb71f606f6157ce0e789c3edd98e9cdf25f045331577b665e4dac97301ecfbb85dfd3
+  languageName: node
+  linkType: hard
+
 "mutation-testing-metrics@npm:1.7.8":
   version: 1.7.8
   resolution: "mutation-testing-metrics@npm:1.7.8"
   dependencies:
     mutation-testing-report-schema: 1.7.8
   checksum: d4bcd05597ef821d11105cba6945a591da038cd9cb3b99c8b858007f0a9737c9999e0332fe4225e202521643aa71a4b535644fcbfaf295a5cecc16e3df91e7c7
+  languageName: node
+  linkType: hard
+
+"mutation-testing-report-schema@npm:1.7.14":
+  version: 1.7.14
+  resolution: "mutation-testing-report-schema@npm:1.7.14"
+  checksum: df0ff1a5d6db259e6273c2d58054322cd04397ed7e8baa99f21fc94384eb17cfa026807b460089447206689ad57f252b7d0bb0be55a7eb19b9be4e4106f0073d
   languageName: node
   linkType: hard
 
@@ -9515,7 +9542,7 @@ __metadata:
     "@hmcts/nodejs-healthcheck": ^1.7.3
     "@hmcts/nodejs-logging": ^4.0.4
     "@hmcts/properties-volume": ^0.0.13
-    "@stryker-mutator/api": ^5.6.1
+    "@stryker-mutator/api": ^6.4.1
     "@stryker-mutator/core": ^5.6.1
     "@stryker-mutator/mocha-runner": ^5.6.1
     ajv: ^6.12.6
@@ -11640,7 +11667,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.5.0":
+"tslib@npm:^2.5.0, tslib@npm:~2.5.0":
   version: 2.5.0
   resolution: "tslib@npm:2.5.0"
   checksum: ae3ed5f9ce29932d049908ebfdf21b3a003a85653a9a140d614da6b767a93ef94f460e52c3d787f0e4f383546981713f165037dc2274df212ea9f8a4541004e1

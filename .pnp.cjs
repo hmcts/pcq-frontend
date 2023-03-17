@@ -34,7 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@hmcts/nodejs-healthcheck", "npm:1.8.0"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
             ["@hmcts/properties-volume", "npm:0.0.13"],\
-            ["@stryker-mutator/api", "npm:5.6.1"],\
+            ["@stryker-mutator/api", "npm:6.4.1"],\
             ["@stryker-mutator/core", "npm:5.6.1"],\
             ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.6.1"],\
             ["ajv", "npm:6.12.6"],\
@@ -1535,6 +1535,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mutation-testing-metrics", "npm:1.7.8"],\
             ["mutation-testing-report-schema", "npm:1.7.8"],\
             ["tslib", "npm:2.3.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:6.4.1", {\
+          "packageLocation": "./.yarn/cache/@stryker-mutator-api-npm-6.4.1-56269b9005-86992b6c57.zip/node_modules/@stryker-mutator/api/",\
+          "packageDependencies": [\
+            ["@stryker-mutator/api", "npm:6.4.1"],\
+            ["mutation-testing-metrics", "npm:1.7.14"],\
+            ["mutation-testing-report-schema", "npm:1.7.14"],\
+            ["tslib", "npm:2.5.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -9622,6 +9632,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["mutation-testing-metrics", [\
+        ["npm:1.7.14", {\
+          "packageLocation": "./.yarn/cache/mutation-testing-metrics-npm-1.7.14-f60fd846ca-9afebd372c.zip/node_modules/mutation-testing-metrics/",\
+          "packageDependencies": [\
+            ["mutation-testing-metrics", "npm:1.7.14"],\
+            ["mutation-testing-report-schema", "npm:1.7.14"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:1.7.8", {\
           "packageLocation": "./.yarn/cache/mutation-testing-metrics-npm-1.7.8-6b0554fb0f-d4bcd05597.zip/node_modules/mutation-testing-metrics/",\
           "packageDependencies": [\
@@ -9632,6 +9650,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["mutation-testing-report-schema", [\
+        ["npm:1.7.14", {\
+          "packageLocation": "./.yarn/cache/mutation-testing-report-schema-npm-1.7.14-d5165fb395-df0ff1a5d6.zip/node_modules/mutation-testing-report-schema/",\
+          "packageDependencies": [\
+            ["mutation-testing-report-schema", "npm:1.7.14"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:1.7.8", {\
           "packageLocation": "./.yarn/cache/mutation-testing-report-schema-npm-1.7.8-45af5f3557-6e3b3def81.zip/node_modules/mutation-testing-report-schema/",\
           "packageDependencies": [\
@@ -10956,7 +10981,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@hmcts/nodejs-healthcheck", "npm:1.8.0"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
             ["@hmcts/properties-volume", "npm:0.0.13"],\
-            ["@stryker-mutator/api", "npm:5.6.1"],\
+            ["@stryker-mutator/api", "npm:6.4.1"],\
             ["@stryker-mutator/core", "npm:5.6.1"],\
             ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.6.1"],\
             ["ajv", "npm:6.12.6"],\
