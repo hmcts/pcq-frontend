@@ -59,7 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["git-rev-sync", "npm:3.0.2"],\
             ["govuk-frontend", "npm:4.5.0"],\
             ["helmet", "npm:3.23.3"],\
-            ["https-proxy-agent", "npm:2.2.4"],\
+            ["https-proxy-agent", "npm:5.0.1"],\
             ["i18next", "npm:22.4.12"],\
             ["ioredis", "npm:4.28.5"],\
             ["js-yaml", "npm:4.1.0"],\
@@ -2382,14 +2382,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["agent-base", [\
-        ["npm:4.3.0", {\
-          "packageLocation": "./.yarn/cache/agent-base-npm-4.3.0-48c7e81d60-0c10891060.zip/node_modules/agent-base/",\
-          "packageDependencies": [\
-            ["agent-base", "npm:4.3.0"],\
-            ["es6-promisify", "npm:5.0.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:6.0.2", {\
           "packageLocation": "./.yarn/cache/agent-base-npm-6.0.2-428f325a93-f52b6872cc.zip/node_modules/agent-base/",\
           "packageDependencies": [\
@@ -4629,10 +4621,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["virtual:8bb97bed484f021974a05538f31c077871d2363ce26ebed59b11577446762350604c9011c0660ae55b141dd86d888615a377ccccd7a87c5e54ae38233a22d5a9#npm:3.2.7", {\
-          "packageLocation": "./.yarn/__virtual__/debug-virtual-f5a57aca55/0/cache/debug-npm-3.2.7-754e818c7a-b3d8c59407.zip/node_modules/debug/",\
+        ["virtual:8bdf672d54f36156a0f721b1434bbc1348d0f0fc5e805c421e22316652d3adb4ab5ec9db167a289ec9115ad44ae048edb781152c06b39311b623662569c1a6c3#npm:3.2.7", {\
+          "packageLocation": "./.yarn/__virtual__/debug-virtual-2769557a9c/0/cache/debug-npm-3.2.7-754e818c7a-b3d8c59407.zip/node_modules/debug/",\
           "packageDependencies": [\
-            ["debug", "virtual:8bb97bed484f021974a05538f31c077871d2363ce26ebed59b11577446762350604c9011c0660ae55b141dd86d888615a377ccccd7a87c5e54ae38233a22d5a9#npm:3.2.7"],\
+            ["debug", "virtual:8bdf672d54f36156a0f721b1434bbc1348d0f0fc5e805c421e22316652d3adb4ab5ec9db167a289ec9115ad44ae048edb781152c06b39311b623662569c1a6c3#npm:3.2.7"],\
             ["@types/supports-color", null],\
             ["ms", "npm:2.1.3"],\
             ["supports-color", null]\
@@ -5464,25 +5456,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/es6-error-npm-4.1.1-5e8c22b20f-ae41332a51.zip/node_modules/es6-error/",\
           "packageDependencies": [\
             ["es6-error", "npm:4.1.1"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["es6-promise", [\
-        ["npm:4.2.8", {\
-          "packageLocation": "./.yarn/cache/es6-promise-npm-4.2.8-c9f5b11f66-95614a8887.zip/node_modules/es6-promise/",\
-          "packageDependencies": [\
-            ["es6-promise", "npm:4.2.8"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["es6-promisify", [\
-        ["npm:5.0.0", {\
-          "packageLocation": "./.yarn/cache/es6-promisify-npm-5.0.0-3726550934-fbed9d7915.zip/node_modules/es6-promisify/",\
-          "packageDependencies": [\
-            ["es6-promisify", "npm:5.0.0"],\
-            ["es6-promise", "npm:4.2.8"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7414,15 +7387,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["https-proxy-agent", [\
-        ["npm:2.2.4", {\
-          "packageLocation": "./.yarn/cache/https-proxy-agent-npm-2.2.4-8bb97bed48-5fa8eab256.zip/node_modules/https-proxy-agent/",\
-          "packageDependencies": [\
-            ["https-proxy-agent", "npm:2.2.4"],\
-            ["agent-base", "npm:4.3.0"],\
-            ["debug", "virtual:8bb97bed484f021974a05538f31c077871d2363ce26ebed59b11577446762350604c9011c0660ae55b141dd86d888615a377ccccd7a87c5e54ae38233a22d5a9#npm:3.2.7"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:5.0.1", {\
           "packageLocation": "./.yarn/cache/https-proxy-agent-npm-5.0.1-42d65f358e-571fccdf38.zip/node_modules/https-proxy-agent/",\
           "packageDependencies": [\
@@ -11173,7 +11137,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["git-rev-sync", "npm:3.0.2"],\
             ["govuk-frontend", "npm:4.5.0"],\
             ["helmet", "npm:3.23.3"],\
-            ["https-proxy-agent", "npm:2.2.4"],\
+            ["https-proxy-agent", "npm:5.0.1"],\
             ["i18next", "npm:22.4.12"],\
             ["ioredis", "npm:4.28.5"],\
             ["js-yaml", "npm:4.1.0"],\
@@ -12962,7 +12926,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["superagent", "npm:3.8.3"],\
             ["component-emitter", "npm:1.3.0"],\
             ["cookiejar", "npm:2.1.4"],\
-            ["debug", "virtual:8bb97bed484f021974a05538f31c077871d2363ce26ebed59b11577446762350604c9011c0660ae55b141dd86d888615a377ccccd7a87c5e54ae38233a22d5a9#npm:3.2.7"],\
+            ["debug", "virtual:8bdf672d54f36156a0f721b1434bbc1348d0f0fc5e805c421e22316652d3adb4ab5ec9db167a289ec9115ad44ae048edb781152c06b39311b623662569c1a6c3#npm:3.2.7"],\
             ["extend", "npm:3.0.2"],\
             ["form-data", "npm:2.5.1"],\
             ["formidable", "npm:1.2.6"],\
