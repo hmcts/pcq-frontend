@@ -1164,7 +1164,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stryker-mutator/api@npm:^6.4.1":
+"@stryker-mutator/api@npm:6.4.1, @stryker-mutator/api@npm:^6.4.1":
   version: 6.4.1
   resolution: "@stryker-mutator/api@npm:6.4.1"
   dependencies:
@@ -1232,18 +1232,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stryker-mutator/mocha-runner@npm:^5.6.1":
-  version: 5.6.1
-  resolution: "@stryker-mutator/mocha-runner@npm:5.6.1"
+"@stryker-mutator/mocha-runner@npm:^6.4.1":
+  version: 6.4.1
+  resolution: "@stryker-mutator/mocha-runner@npm:6.4.1"
   dependencies:
-    "@stryker-mutator/api": 5.6.1
-    "@stryker-mutator/util": 5.6.1
-    glob: ~7.2.0
-    tslib: ~2.3.0
+    "@stryker-mutator/api": 6.4.1
+    "@stryker-mutator/util": 6.4.1
+    tslib: ~2.5.0
   peerDependencies:
-    "@stryker-mutator/core": ~5.6.0
-    mocha: ">= 2.3.3 < 10"
-  checksum: 07ab8f2843862ae07e3bb6e5606ee3a143abbab301b1bf21129c0a02da5fa7db03c5e1ca01581f67cd079ee7c45d7eee5c13a2bdb24f5a65412373c3a068019a
+    "@stryker-mutator/core": ^6.4.0
+    mocha: ">= 7.2 < 11"
+  checksum: b586d3d8a64156a537a3d7055045432bddda134760aee56c692594bb9820a860623c2b628c7a1a2bd6eff7a521930fd4d7fa0fdfbc86f67e087dcd673be8e300
   languageName: node
   linkType: hard
 
@@ -1253,6 +1252,15 @@ __metadata:
   dependencies:
     lodash.flatmap: ~4.5.0
   checksum: 7b0fef72c9b81cc15dbc1a3ce2a3a6c49d08fb325e33fa08a0306dbf1f7bac42bbedeab8098013e45ac57a1d95e35f65725cc51772bdabc6e5bb168522d060e3
+  languageName: node
+  linkType: hard
+
+"@stryker-mutator/util@npm:6.4.1":
+  version: 6.4.1
+  resolution: "@stryker-mutator/util@npm:6.4.1"
+  dependencies:
+    lodash.flatmap: ~4.5.0
+  checksum: 8c91eacf62d2f49a748cef4b5bb3d695e338d699ae28a025bdceb5355de3946365382293b7e0ade2efd07652df58e6b180399a7debfe8c00f34c34f8cf3d38bc
   languageName: node
   linkType: hard
 
@@ -9544,7 +9552,7 @@ __metadata:
     "@hmcts/properties-volume": ^0.0.13
     "@stryker-mutator/api": ^6.4.1
     "@stryker-mutator/core": ^5.6.1
-    "@stryker-mutator/mocha-runner": ^5.6.1
+    "@stryker-mutator/mocha-runner": ^6.4.1
     ajv: ^6.12.6
     app: "link:./app"
     applicationinsights: ^2.3.6
