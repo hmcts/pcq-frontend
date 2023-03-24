@@ -1158,6 +1158,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@stryker-mutator/api@npm:6.4.2":
+  version: 6.4.2
+  resolution: "@stryker-mutator/api@npm:6.4.2"
+  dependencies:
+    mutation-testing-metrics: 1.7.14
+    mutation-testing-report-schema: 1.7.14
+    tslib: ~2.5.0
+  checksum: 441ea628551143ff4aeba0172c3d0b2823b1dfe076467d5b1b2796fd49ceb5f2bce98b3f57b66ad6f9cd8ef3b5bd5c5da0e94069de6ebe9c1afa3d7fbc13296d
+  languageName: node
+  linkType: hard
+
 "@stryker-mutator/api@npm:^6.4.1":
   version: 6.4.1
   resolution: "@stryker-mutator/api@npm:6.4.1"
@@ -1226,18 +1237,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stryker-mutator/mocha-runner@npm:^5.6.1":
-  version: 5.6.1
-  resolution: "@stryker-mutator/mocha-runner@npm:5.6.1"
+"@stryker-mutator/mocha-runner@npm:^6.4.2":
+  version: 6.4.2
+  resolution: "@stryker-mutator/mocha-runner@npm:6.4.2"
   dependencies:
-    "@stryker-mutator/api": 5.6.1
-    "@stryker-mutator/util": 5.6.1
-    glob: ~7.2.0
-    tslib: ~2.3.0
+    "@stryker-mutator/api": 6.4.2
+    "@stryker-mutator/util": 6.4.2
+    tslib: ~2.5.0
   peerDependencies:
-    "@stryker-mutator/core": ~5.6.0
-    mocha: ">= 2.3.3 < 10"
-  checksum: 07ab8f2843862ae07e3bb6e5606ee3a143abbab301b1bf21129c0a02da5fa7db03c5e1ca01581f67cd079ee7c45d7eee5c13a2bdb24f5a65412373c3a068019a
+    "@stryker-mutator/core": ^6.4.0
+    mocha: ">= 7.2 < 11"
+  checksum: bab0098728c0ff83a97e209c5a32ae08574bd13f556dd00d1cd2b8b2b56d824649e86336e4296dbb8d5e6e3f2dfc9b87b523eec484dbb129a55456228a78279d
   languageName: node
   linkType: hard
 
@@ -1247,6 +1257,15 @@ __metadata:
   dependencies:
     lodash.flatmap: ~4.5.0
   checksum: 7b0fef72c9b81cc15dbc1a3ce2a3a6c49d08fb325e33fa08a0306dbf1f7bac42bbedeab8098013e45ac57a1d95e35f65725cc51772bdabc6e5bb168522d060e3
+  languageName: node
+  linkType: hard
+
+"@stryker-mutator/util@npm:6.4.2":
+  version: 6.4.2
+  resolution: "@stryker-mutator/util@npm:6.4.2"
+  dependencies:
+    lodash.flatmap: ~4.5.0
+  checksum: d5e5ca678937c2b45cc8c52551ad2ca271f4e68d47d3fc0dc8f2fabff68875763c4a245f24a1be8eb99a50dcd371bdf060d2289edbd3114f677ab50e98a627d2
   languageName: node
   linkType: hard
 
@@ -9509,7 +9528,7 @@ __metadata:
     "@hmcts/properties-volume": ^0.0.13
     "@stryker-mutator/api": ^6.4.1
     "@stryker-mutator/core": ^5.6.1
-    "@stryker-mutator/mocha-runner": ^5.6.1
+    "@stryker-mutator/mocha-runner": ^6.4.2
     ajv: ^6.12.6
     app: "link:./app"
     applicationinsights: ^2.5.0
