@@ -9564,7 +9564,7 @@ __metadata:
     test: "link:./test"
     traverse: ^0.6.6
     tslib: ^2.5.0
-    uuid: ^3.3.2
+    uuid: ^9.0.0
     watch: ^0.13.0
     webdriverio: ^7.20.5
     webpack: ^5.76.0
