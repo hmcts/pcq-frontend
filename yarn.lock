@@ -712,7 +712,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/traverse@npm:^7.16.10, @babel/traverse@npm:^7.21.0, @babel/traverse@npm:^7.21.2":
+"@babel/traverse@npm:^7.16.10, @babel/traverse@npm:^7.21.0, @babel/traverse@npm:^7.21.2, @babel/traverse@npm:^7.21.3":
   version: 7.21.3
   resolution: "@babel/traverse@npm:7.21.3"
   dependencies:
@@ -748,7 +748,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/traverse@npm:^7.20.13, @babel/traverse@npm:^7.20.7":
+"@babel/traverse@npm:^7.20.7":
   version: 7.20.13
   resolution: "@babel/traverse@npm:7.20.13"
   dependencies:
@@ -9587,7 +9587,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "protected-characteristics-frontend@workspace:."
   dependencies:
-    "@babel/traverse": ^7.20.13
+    "@babel/traverse": ^7.21.3
     "@babel/types": ^7.20.7
     "@hmcts/cookie-manager": ^1.0.0
     "@hmcts/nodejs-healthcheck": ^1.7.3
