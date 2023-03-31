@@ -69,7 +69,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mocha", "npm:10.2.0"],\
             ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
             ["moment", "npm:2.29.4"],\
-            ["nock", "npm:10.0.6"],\
+            ["nock", "npm:13.3.0"],\
             ["node-emoji", "npm:1.11.0"],\
             ["node-fetch", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.6.9"],\
             ["node-sass", "npm:7.0.1"],\
@@ -4765,19 +4765,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["deep-equal", [\
-        ["npm:1.1.1", {\
-          "packageLocation": "./.yarn/cache/deep-equal-npm-1.1.1-67ff9c29b9-f92686f2c5.zip/node_modules/deep-equal/",\
-          "packageDependencies": [\
-            ["deep-equal", "npm:1.1.1"],\
-            ["is-arguments", "npm:1.1.1"],\
-            ["is-date-object", "npm:1.0.5"],\
-            ["is-regex", "npm:1.1.4"],\
-            ["object-is", "npm:1.1.5"],\
-            ["object-keys", "npm:1.1.1"],\
-            ["regexp.prototype.flags", "npm:1.4.3"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:2.1.0", {\
           "packageLocation": "./.yarn/cache/deep-equal-npm-2.1.0-2530fbbf20-a3efc772f1.zip/node_modules/deep-equal/",\
           "packageDependencies": [\
@@ -9821,19 +9808,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["nock", [\
-        ["npm:10.0.6", {\
-          "packageLocation": "./.yarn/cache/nock-npm-10.0.6-b1e8b69e9d-42cb7b0157.zip/node_modules/nock/",\
+        ["npm:13.3.0", {\
+          "packageLocation": "./.yarn/cache/nock-npm-13.3.0-48c93e5ec9-118d04e95a.zip/node_modules/nock/",\
           "packageDependencies": [\
-            ["nock", "npm:10.0.6"],\
-            ["chai", "npm:4.3.6"],\
+            ["nock", "npm:13.3.0"],\
             ["debug", "virtual:b3b3d9c94e7ae7d3eba2d5ff53422f589f5d063e6db1635105fcab59d2da838ae8f145215a995ae6bad679ca47509115a3c0de9b8c97848c16aff23a48c12db8#npm:4.3.4"],\
-            ["deep-equal", "npm:1.1.1"],\
             ["json-stringify-safe", "npm:5.0.1"],\
             ["lodash", "npm:4.17.21"],\
-            ["mkdirp", "npm:0.5.6"],\
-            ["propagate", "npm:1.0.0"],\
-            ["qs", "npm:6.11.0"],\
-            ["semver", "npm:5.7.1"]\
+            ["propagate", "npm:2.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -11004,10 +10986,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["propagate", [\
-        ["npm:1.0.0", {\
-          "packageLocation": "./.yarn/cache/propagate-npm-1.0.0-67c6278879-f7fbff2f68.zip/node_modules/propagate/",\
+        ["npm:2.0.1", {\
+          "packageLocation": "./.yarn/cache/propagate-npm-2.0.1-2074bf76d3-c4febaee2b.zip/node_modules/propagate/",\
           "packageDependencies": [\
-            ["propagate", "npm:1.0.0"]\
+            ["propagate", "npm:2.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -11058,7 +11040,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mocha", "npm:10.2.0"],\
             ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
             ["moment", "npm:2.29.4"],\
-            ["nock", "npm:10.0.6"],\
+            ["nock", "npm:13.3.0"],\
             ["node-emoji", "npm:1.11.0"],\
             ["node-fetch", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.6.9"],\
             ["node-sass", "npm:7.0.1"],\
