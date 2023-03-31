@@ -29,7 +29,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@babel/traverse", "npm:7.21.3"],\
-            ["@babel/types", "npm:7.20.7"],\
+            ["@babel/types", "npm:7.21.3"],\
             ["@hmcts/cookie-manager", "npm:1.0.0"],\
             ["@hmcts/nodejs-healthcheck", "npm:1.8.0"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
@@ -11018,7 +11018,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["protected-characteristics-frontend", "workspace:."],\
             ["@babel/traverse", "npm:7.21.3"],\
-            ["@babel/types", "npm:7.20.7"],\
+            ["@babel/types", "npm:7.21.3"],\
             ["@hmcts/cookie-manager", "npm:1.0.0"],\
             ["@hmcts/nodejs-healthcheck", "npm:1.8.0"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
