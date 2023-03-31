@@ -9588,7 +9588,7 @@ __metadata:
   resolution: "protected-characteristics-frontend@workspace:."
   dependencies:
     "@babel/traverse": ^7.21.3
-    "@babel/types": ^7.20.7
+    "@babel/types": ^7.21.3
     "@hmcts/cookie-manager": ^1.0.0
     "@hmcts/nodejs-healthcheck": ^1.7.3
     "@hmcts/nodejs-logging": ^4.0.4
