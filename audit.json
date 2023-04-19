@@ -483,6 +483,8 @@
   "40025_Proxy Disclosure_https://pcq.aat.platform.hmcts.net/assets/images/govuk-logotype-crown.png_GET": "ignore",
   "10096_Timestamp Disclosure - Unix_https://pcq.aat.platform.hmcts.net/assets/images/govuk-logotype-crown.png_GET": "ignore",
   "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/assets/images/govuk-apple-touch-icon-180x180.png_GET": "ignore",
-  "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/assets/images/govuk-mask-icon.svg_GET": "ignore"
+  "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/assets/images/govuk-mask-icon.svg_GET": "ignore",
+  "10021_X-Content-Type-Options Header Missing_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10261230220152234.js_GET": "ignore",
+  "10027_Information Disclosure - Suspicious Comments_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10261230220152234.js_GET": "ignore"
 }
   
