@@ -54,7 +54,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["esmify", "npm:2.1.1"],\
             ["express", "npm:4.18.1"],\
             ["express-session", "npm:1.17.3"],\
-            ["express-urlrewrite", "npm:1.4.0"],\
+            ["express-urlrewrite", "npm:2.0.1"],\
             ["fs-extra", "npm:11.1.0"],\
             ["git-rev-sync", "npm:3.0.2"],\
             ["govuk-frontend", "npm:4.6.0"],\
@@ -5651,12 +5651,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["express-urlrewrite", [\
-        ["npm:1.4.0", {\
-          "packageLocation": "./.yarn/cache/express-urlrewrite-npm-1.4.0-9876c861bf-44d451804e.zip/node_modules/express-urlrewrite/",\
+        ["npm:2.0.1", {\
+          "packageLocation": "./.yarn/cache/express-urlrewrite-npm-2.0.1-98b1099210-9a67bf2141.zip/node_modules/express-urlrewrite/",\
           "packageDependencies": [\
-            ["express-urlrewrite", "npm:1.4.0"],\
+            ["express-urlrewrite", "npm:2.0.1"],\
             ["debug", "virtual:b3b3d9c94e7ae7d3eba2d5ff53422f589f5d063e6db1635105fcab59d2da838ae8f145215a995ae6bad679ca47509115a3c0de9b8c97848c16aff23a48c12db8#npm:4.3.4"],\
-            ["path-to-regexp", "npm:1.8.0"]\
+            ["path-to-regexp", "npm:6.2.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -10371,6 +10371,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["isarray", "npm:0.0.1"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:6.2.1", {\
+          "packageLocation": "./.yarn/cache/path-to-regexp-npm-6.2.1-8ebfe03654-f0227af828.zip/node_modules/path-to-regexp/",\
+          "packageDependencies": [\
+            ["path-to-regexp", "npm:6.2.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["path-type", [\
@@ -10675,7 +10682,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["esmify", "npm:2.1.1"],\
             ["express", "npm:4.18.1"],\
             ["express-session", "npm:1.17.3"],\
-            ["express-urlrewrite", "npm:1.4.0"],\
+            ["express-urlrewrite", "npm:2.0.1"],\
             ["fs-extra", "npm:11.1.0"],\
             ["git-rev-sync", "npm:3.0.2"],\
             ["govuk-frontend", "npm:4.6.0"],\
