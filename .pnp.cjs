@@ -36,7 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@hmcts/properties-volume", "npm:0.0.13"],\
             ["@stryker-mutator/api", "npm:6.4.2"],\
             ["@stryker-mutator/core", "npm:5.6.1"],\
-            ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.6.1"],\
+            ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:6.4.2"],\
             ["ajv", "npm:6.12.6"],\
             ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["applicationinsights", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.5.0"],\
@@ -1705,25 +1705,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@stryker-mutator/mocha-runner", [\
-        ["npm:5.6.1", {\
-          "packageLocation": "./.yarn/cache/@stryker-mutator-mocha-runner-npm-5.6.1-b1f31d62cf-07ab8f2843.zip/node_modules/@stryker-mutator/mocha-runner/",\
+        ["npm:6.4.2", {\
+          "packageLocation": "./.yarn/cache/@stryker-mutator-mocha-runner-npm-6.4.2-c3b09035ca-bab0098728.zip/node_modules/@stryker-mutator/mocha-runner/",\
           "packageDependencies": [\
-            ["@stryker-mutator/mocha-runner", "npm:5.6.1"]\
+            ["@stryker-mutator/mocha-runner", "npm:6.4.2"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.6.1", {\
-          "packageLocation": "./.yarn/__virtual__/@stryker-mutator-mocha-runner-virtual-9c6f9e6de8/0/cache/@stryker-mutator-mocha-runner-npm-5.6.1-b1f31d62cf-07ab8f2843.zip/node_modules/@stryker-mutator/mocha-runner/",\
+        ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:6.4.2", {\
+          "packageLocation": "./.yarn/__virtual__/@stryker-mutator-mocha-runner-virtual-ecbd294c6d/0/cache/@stryker-mutator-mocha-runner-npm-6.4.2-c3b09035ca-bab0098728.zip/node_modules/@stryker-mutator/mocha-runner/",\
           "packageDependencies": [\
-            ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.6.1"],\
-            ["@stryker-mutator/api", "npm:5.6.1"],\
+            ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:6.4.2"],\
+            ["@stryker-mutator/api", "npm:6.4.2"],\
             ["@stryker-mutator/core", "npm:5.6.1"],\
-            ["@stryker-mutator/util", "npm:5.6.1"],\
+            ["@stryker-mutator/util", "npm:6.4.2"],\
             ["@types/mocha", null],\
             ["@types/stryker-mutator__core", null],\
-            ["glob", "npm:7.2.3"],\
             ["mocha", "npm:10.2.0"],\
-            ["tslib", "npm:2.3.1"]\
+            ["tslib", "npm:2.5.0"]\
           ],\
           "packagePeers": [\
             "@stryker-mutator/core",\
@@ -1739,6 +1738,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@stryker-mutator-util-npm-5.6.1-2da286ed4a-7b0fef72c9.zip/node_modules/@stryker-mutator/util/",\
           "packageDependencies": [\
             ["@stryker-mutator/util", "npm:5.6.1"],\
+            ["lodash.flatmap", "npm:4.5.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:6.4.2", {\
+          "packageLocation": "./.yarn/cache/@stryker-mutator-util-npm-6.4.2-2fbee5eb2b-d5e5ca6789.zip/node_modules/@stryker-mutator/util/",\
+          "packageDependencies": [\
+            ["@stryker-mutator/util", "npm:6.4.2"],\
             ["lodash.flatmap", "npm:4.5.0"]\
           ],\
           "linkType": "HARD"\
@@ -10657,7 +10664,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@hmcts/properties-volume", "npm:0.0.13"],\
             ["@stryker-mutator/api", "npm:6.4.2"],\
             ["@stryker-mutator/core", "npm:5.6.1"],\
-            ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.6.1"],\
+            ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:6.4.2"],\
             ["ajv", "npm:6.12.6"],\
             ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["applicationinsights", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.5.0"],\
