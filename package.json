@@ -115,7 +115,7 @@
     "sonarqube-scanner": "^2.8.1",
     "supertest": "^4.0.2",
     "tslib": "^2.5.0",
-    "watch": "^0.13.0",
+    "watch": "^1.0.2",
     "webdriverio": "^8.6.9",
     "yarn-audit-fix": "^9.3.2"
   },
