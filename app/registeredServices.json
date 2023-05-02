@@ -94,8 +94,7 @@
   {
     "serviceId": "SpecialTribunals_CIC",
     "actors": [
-      "APPLICANT",
-      "SUBJECT"
+      "APPLICANT"
     ],
     "redirectLinks": {
       "specialtribunals_cic": "https://et-sya.aat.platform.hmcts.net/steps-to-making-your-claim"
