@@ -156,8 +156,7 @@ describe('Invoker', () => {
                         'DEFENDANT'
                     ],
                     'SpecialTribunals_CIC': [
-                        'APPLICANT',
-                        'SUBJECT'
+                        'APPLICANT'
                     ],
                     'JurorDigital': [
                         'CITIZEN'
