@@ -46,7 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["codeceptjs", "npm:3.4.1"],\
             ["codecov", "npm:4.0.0-0"],\
             ["config", "npm:3.3.8"],\
-            ["connect-redis", "npm:5.2.0"],\
+            ["connect-redis", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.0.1"],\
             ["cookie-parser", "npm:1.4.6"],\
             ["csurf", "npm:1.11.0"],\
             ["debug", "virtual:b3b3d9c94e7ae7d3eba2d5ff53422f589f5d063e6db1635105fcab59d2da838ae8f145215a995ae6bad679ca47509115a3c0de9b8c97848c16aff23a48c12db8#npm:4.3.4"],\
@@ -4171,10 +4171,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["connect-redis", [\
-        ["npm:5.2.0", {\
-          "packageLocation": "./.yarn/cache/connect-redis-npm-5.2.0-a7eb1b69e4-7ff68b342f.zip/node_modules/connect-redis/",\
+        ["npm:7.0.1", {\
+          "packageLocation": "./.yarn/cache/connect-redis-npm-7.0.1-e2c7ec85c5-99047f38e9.zip/node_modules/connect-redis/",\
           "packageDependencies": [\
-            ["connect-redis", "npm:5.2.0"]\
+            ["connect-redis", "npm:7.0.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.0.1", {\
+          "packageLocation": "./.yarn/__virtual__/connect-redis-virtual-e2b0653bf0/0/cache/connect-redis-npm-7.0.1-e2c7ec85c5-99047f38e9.zip/node_modules/connect-redis/",\
+          "packageDependencies": [\
+            ["connect-redis", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.0.1"],\
+            ["@types/express-session", null],\
+            ["express-session", "npm:1.17.3"]\
+          ],\
+          "packagePeers": [\
+            "@types/express-session",\
+            "express-session"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -10693,7 +10706,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["codeceptjs", "npm:3.4.1"],\
             ["codecov", "npm:4.0.0-0"],\
             ["config", "npm:3.3.8"],\
-            ["connect-redis", "npm:5.2.0"],\
+            ["connect-redis", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.0.1"],\
             ["cookie-parser", "npm:1.4.6"],\
             ["csurf", "npm:1.11.0"],\
             ["debug", "virtual:b3b3d9c94e7ae7d3eba2d5ff53422f589f5d063e6db1635105fcab59d2da838ae8f145215a995ae6bad679ca47509115a3c0de9b8c97848c16aff23a48c12db8#npm:4.3.4"],\
