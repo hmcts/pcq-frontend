@@ -116,7 +116,7 @@
     "supertest": "^4.0.2",
     "tslib": "^2.5.0",
     "watch": "^1.0.2",
-    "webdriverio": "^8.6.9",
+    "webdriverio": "^8.10.0",
     "yarn-audit-fix": "^9.3.2"
   },
   "nyc": {
