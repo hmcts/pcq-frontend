@@ -1,0 +1,24 @@
+{
+    "applicant": {
+      "startpage": {
+        "paragraph2": "Ni fydd eich atebion yn effeithio ar eich cais."
+      },
+      "endpage": {
+        "paragraph1": "Y cam nesaf yw gwirio manylion eich cais."
+      },
+      "shutterpage": {
+        "paragraph1": "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl at eich cais yn awr."
+      }
+    },
+    "respondent": {
+      "startpage": {
+        "paragraph2": "Ni fydd eich atebion yn effeithio ar eich ymateb."
+      },
+      "endpage": {
+        "paragraph1": "Y cam nesaf yw gwirio manylion eich ymateb."
+      },
+      "shutterpage": {
+        "paragraph1": "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio'n ôl at eich ymateb yn awr."
+      }
+    }
+}
