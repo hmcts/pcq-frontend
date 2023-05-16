@@ -108,5 +108,24 @@
     "redirectLinks": {
       "jurordigital_citizen": "https://reply-jury-summons.service.gov.uk/steps/confirm-information"
     }
+  },
+  {
+    "serviceId": "prl_ca",
+    "actors": [
+      "APPLICANT",
+      "RESPONDENT"
+    ],
+    "redirectLinks": {
+      "prl_ca": "https://reply-jury-summons.service.gov.uk/steps/confirm-information"
+    }
+  },
+  {
+    "serviceId": "prl_da",
+    "actors": [
+      "APPLICANT",
+      "RESPONDENT"
+    ],
+    "redirectLinks": {
+    }
   }
 ]

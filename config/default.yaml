@@ -49,6 +49,8 @@ tokenKeys:
   online_plea: 'SERVICE_TOKEN_KEY'
   specialtribunals_cic: 'SERVICE_TOKEN_KEY'
   jurordigital: 'SERVICE_TOKEN_KEY'
+  prl_ca: 'SERVICE_TOKEN_KEY'
+  prl_da: 'SERVICE_TOKEN_KEY'
 redis:
   host: 'localhost'
   port: 6379

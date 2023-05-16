@@ -37,7 +37,8 @@ describe('shutter-page', () => {
                         'et_claimant',
                         'online_plea',
                         'specialtribunals_cic',
-                        'jurordigital_citizen'
+                        'jurordigital_citizen',
+                        'prl_ca'
                     ]);
                 });
         });
