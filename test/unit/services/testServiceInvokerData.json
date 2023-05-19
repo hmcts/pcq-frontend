@@ -328,6 +328,79 @@
                         }
                     }
             }
+        },
+        "prl_ca" :
+        {
+            "datas" :
+            {
+                "applicant" :
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "prl_ca",
+                            "actor" : "applicant" ,
+                            "pcqId" : "d0aaf736-e457-4997-a24c-9ae72a44c87b",
+                            "ccdCaseId" : "1a588d01-5a94-4036-bf72-814d4c586385",
+                            "partyId" : "prl_ca_APPLICANT@test.gov.uk",
+                            "returnUrl" : "prl_ca_APPLICANT.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2,
+                            "redirect" : "Child arrangements and family injunctions"
+                        }
+                    },
+                    "respondent" :
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "prl_ca",
+                            "actor" : "respondent" ,
+                            "pcqId" : "112135b8-4ad7-4989-8347-26edb1d392e3",
+                            "ccdCaseId" : "9504f760-fe96-466d-b418-1bb0027344bd",
+                            "partyId" : "prl_ca_RESPONDENT@test.gov.uk",
+                            "returnUrl" : "prl_ca_RESPONDENT.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2,
+                            "redirect" : "Child arrangements and family injunctions"
+                        }
+                    }
+            }
+        },
+        "prl_da" :
+        {
+            "datas" :
+            {
+                "applicant" :
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "prl_da",
+                            "actor" : "applicant" ,
+                            "pcqId" : "7dfb7ae9-c174-463a-85d0-bd5db1c190ff",
+                            "ccdCaseId" : "97a035fa-9995-4415-ba80-c1305c3fda5a",
+                            "partyId" : "prl_da_APPLICANT@test.gov.uk",
+                            "returnUrl" : "prl_da_APPLICANT.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2,
+                            "redirect" : "Child arrangements and family injunctions"
+                        }
+                    },
+                    "respondent" :
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "prl_da",
+                            "actor" : "respondent" ,
+                            "pcqId" : "794c5eea-93c7-458b-9a41-c390f86315ec",
+                            "ccdCaseId" : "e078f105-acd7-45ae-ad7b-3b06fb0ee7ed",
+                            "partyId" : "prl_da_RESPONDENT@test.gov.uk",
+                            "returnUrl" : "prl_da_RESPONDENT.test.gov.uk",
+                            "language" : "en",
+                            "channel" : 2,
+                            "redirect" : "Child arrangements and family injunctions"
+                        }
+                    }
+            }
         }
+    
     }
 }

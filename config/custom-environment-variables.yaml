@@ -30,6 +30,8 @@ tokenKeys:
   online_plea: ONLINE_PLEA_TOKEN_KEY
   specialtribunals_cic: SPECIALTRIBUNALS_CIC_TOKEN_KEY
   jurordigital: JURORDIGITAL_TOKEN_KEY
+  prl_ca: 'PRL_CA_TOKEN_KEY'
+  prl_da: 'PRL_DA_TOKEN_KEY'
 redis:
   host: REDIS_HOST
   port: REDIS_PORT
