@@ -37,7 +37,8 @@ describe('accessibility', () => {
                 list2et: accessibility['list2-et'],
                 list2online_plea: accessibility['list2-online_plea'],
                 list2specialtribunals_cic: accessibility['list2-specialtribunals_cic'],
-                list2jurordigital: accessibility['list2-jurordigital']
+                list2jurordigital: accessibility['list2-jurordigital'],
+                list2prl_ca: accessibility['list2-prl_ca']
             };
             testWrapper.testContent(done, contentData);
         });

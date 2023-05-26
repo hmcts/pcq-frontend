@@ -118,6 +118,14 @@ describe('Invoker', () => {
                     {
                         value: 'JurorDigital',
                         text: 'JurorDigital'
+                    },
+                    {
+                        value: 'prl_ca',
+                        text: 'prl_ca'
+                    },
+                    {
+                        value: 'prl_da',
+                        text: 'prl_da'
                     }
                 ],
                 ageCheckList,
@@ -160,6 +168,14 @@ describe('Invoker', () => {
                     ],
                     'JurorDigital': [
                         'CITIZEN'
+                    ],
+                    'prl_ca': [
+                        'APPLICANT',
+                        'RESPONDENT'
+                    ],
+                    'prl_da': [
+                        'APPLICANT',
+                        'RESPONDENT'
                     ]
                 }
             });
