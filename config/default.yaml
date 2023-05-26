@@ -51,6 +51,7 @@ tokenKeys:
   jurordigital: 'SERVICE_TOKEN_KEY'
   prl_ca: 'SERVICE_TOKEN_KEY'
   prl_da: 'SERVICE_TOKEN_KEY'
+  civil-citizen-ui: 'SERVICE_TOKEN_KEY'
 redis:
   host: 'localhost'
   port: 6379

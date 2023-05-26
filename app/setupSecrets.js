@@ -28,6 +28,7 @@ const setupSecrets = () => {
         setSecret('secrets.pcq.jurordigital-token-key', 'tokenKeys.jurordigital'); // Juror Digital
         setSecret('secrets.pcq.prl-token-key', 'tokenKeys.prl_ca'); // prl_ca
         setSecret('secrets.pcq.prl-token-key', 'tokenKeys.prl_da'); // prl_da
+        setSecret('secrets.pcq.civil-citizen-ui-token-key', 'tokenKeys.civil-citizen-ui'); // civil-citizen-ui
     }
 };
 

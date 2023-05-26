@@ -32,6 +32,7 @@ tokenKeys:
   jurordigital: JURORDIGITAL_TOKEN_KEY
   prl_ca: 'PRL_CA_TOKEN_KEY'
   prl_da: 'PRL_DA_TOKEN_KEY'
+  civil-citizen-ui: 'CIVIL_CITIZEN_UI_TOKEN_KEY'
 redis:
   host: REDIS_HOST
   port: REDIS_PORT
