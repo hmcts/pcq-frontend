@@ -29,7 +29,6 @@ describe('accessibility', () => {
                 deathReportedToCoroner: config.links.deathReportedToCoroner,
                 pcqStartApplyLink: config.links.pcqStartApplyLink,
                 paragraph8: accessibility.paragraph8,
-                list2cmc: accessibility['list2-cmc'],
                 list2divorce: accessibility['list2-divorce'],
                 list2probate: accessibility['list2-probate'],
                 list2sscs: accessibility['list2-sscs'],
