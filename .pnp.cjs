@@ -29,7 +29,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@babel/traverse", "npm:7.21.3"],\
-            ["@babel/types", "npm:7.21.3"],\
+            ["@babel/types", "npm:7.22.4"],\
             ["@hmcts/cookie-manager", "npm:1.0.0"],\
             ["@hmcts/nodejs-healthcheck", "npm:1.8.0"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
@@ -598,6 +598,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/helper-string-parser", "npm:7.19.4"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:7.21.5", {\
+          "packageLocation": "./.yarn/cache/@babel-helper-string-parser-npm-7.21.5-9fa0e56f04-36c0ded452.zip/node_modules/@babel/helper-string-parser/",\
+          "packageDependencies": [\
+            ["@babel/helper-string-parser", "npm:7.21.5"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@babel/helper-validator-identifier", [\
@@ -1085,6 +1092,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@babel/types", "npm:7.21.3"],\
             ["@babel/helper-string-parser", "npm:7.19.4"],\
+            ["@babel/helper-validator-identifier", "npm:7.19.1"],\
+            ["to-fast-properties", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:7.22.4", {\
+          "packageLocation": "./.yarn/cache/@babel-types-npm-7.22.4-7dadf03e9d-ffe36bb4f4.zip/node_modules/@babel/types/",\
+          "packageDependencies": [\
+            ["@babel/types", "npm:7.22.4"],\
+            ["@babel/helper-string-parser", "npm:7.21.5"],\
             ["@babel/helper-validator-identifier", "npm:7.19.1"],\
             ["to-fast-properties", "npm:2.0.0"]\
           ],\
@@ -10665,7 +10682,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["protected-characteristics-frontend", "workspace:."],\
             ["@babel/traverse", "npm:7.21.3"],\
-            ["@babel/types", "npm:7.21.3"],\
+            ["@babel/types", "npm:7.22.4"],\
             ["@hmcts/cookie-manager", "npm:1.0.0"],\
             ["@hmcts/nodejs-healthcheck", "npm:1.8.0"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
