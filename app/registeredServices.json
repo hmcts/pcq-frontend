@@ -132,9 +132,6 @@
     "serviceId": "civil-citizen-ui",
     "actors": [
       "RESPONDENT"
-    ],
-    "redirectLinks": {
-      "civil-citizen-ui": "https://www.moneyclaims.service.gov.uk/dashboard"
-    }
+    ]
   }
 ]

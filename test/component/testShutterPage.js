@@ -38,8 +38,7 @@ describe('shutter-page', () => {
                         'online_plea',
                         'specialtribunals_cic',
                         'jurordigital_citizen',
-                        'prl_ca',
-                        'civil-citizen-ui'
+                        'prl_ca'
                     ]);
                 });
         });

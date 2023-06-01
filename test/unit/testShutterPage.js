@@ -68,8 +68,7 @@ describe('ShutterPage', () => {
                     'online_plea': 'https://onlineplea.cjscp.org.uk/onlineplea/check-your-answers.xhtml',
                     'specialtribunals_cic': 'https://et-sya.aat.platform.hmcts.net/steps-to-making-your-claim',
                     'jurordigital_citizen': 'https://reply-jury-summons.service.gov.uk/steps/confirm-information',
-                    'prl_ca': 'https://reply-jury-summons.service.gov.uk/steps/confirm-information',
-                    'civil-citizen-ui': 'https://www.moneyclaims.service.gov.uk/dashboard'
+                    'prl_ca': 'https://reply-jury-summons.service.gov.uk/steps/confirm-information'
                 }
             );
             done();
