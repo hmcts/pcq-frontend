@@ -29,7 +29,6 @@ describe('accessibility', () => {
                 deathReportedToCoroner: config.links.deathReportedToCoroner,
                 pcqStartApplyLink: config.links.pcqStartApplyLink,
                 paragraph8: accessibility.paragraph8,
-                list2cmc: accessibility['list2-cmc'],
                 list2divorce: accessibility['list2-divorce'],
                 list2probate: accessibility['list2-probate'],
                 list2sscs: accessibility['list2-sscs'],
@@ -38,7 +37,8 @@ describe('accessibility', () => {
                 list2online_plea: accessibility['list2-online_plea'],
                 list2specialtribunals_cic: accessibility['list2-specialtribunals_cic'],
                 list2jurordigital: accessibility['list2-jurordigital'],
-                list2prl_ca: accessibility['list2-prl_ca']
+                list2prl_ca: accessibility['list2-prl_ca'],
+                list2civilcitizenui: accessibility['list2-civil-citizen-ui']
             };
             testWrapper.testContent(done, contentData);
         });

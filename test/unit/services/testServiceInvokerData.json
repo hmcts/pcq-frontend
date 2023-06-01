@@ -400,7 +400,27 @@
                         }
                     }
             }
+        },
+        "civil-citizen-ui" :
+        {
+            "datas" :
+            {
+                "respondent" :
+                {
+                    "formData" :
+                    {
+                        "serviceId": "civil-citizen-ui",
+                        "actor" : "respondent" ,
+                        "pcqId" : "478cb980-fa21-11ed-be56-0242ac120002",
+                        "ccdCaseId" : "5c00d284-fa21-11ed-be56-0242ac120002",
+                        "partyId" : "CivilCitizenUi_RESPONDENT@test.gov.uk",
+                        "returnUrl" : "CivilCitizenUi_RESPONDENT@test.gov.uk",
+                        "language" : "en",
+                        "channel" : 2,
+                        "redirect" : "Make a Money Claim"
+                    }
+                }
+            }
         }
-    
     }
 }

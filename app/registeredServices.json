@@ -127,5 +127,11 @@
     ],
     "redirectLinks": {
     }
+  },
+  {
+    "serviceId": "civil-citizen-ui",
+    "actors": [
+      "RESPONDENT"
+    ]
   }
 ]

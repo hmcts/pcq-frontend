@@ -126,6 +126,10 @@ describe('Invoker', () => {
                     {
                         value: 'prl_da',
                         text: 'prl_da'
+                    },
+                    {
+                        value: 'civil-citizen-ui',
+                        text: 'civil-citizen-ui'
                     }
                 ],
                 ageCheckList,
@@ -175,6 +179,9 @@ describe('Invoker', () => {
                     ],
                     'prl_da': [
                         'APPLICANT',
+                        'RESPONDENT'
+                    ],
+                    'civil-citizen-ui': [
                         'RESPONDENT'
                     ]
                 }

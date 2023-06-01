@@ -18,7 +18,6 @@
   "paragraph6": "Os ydych angen gwybodaeth sydd ar y wefan hon mewn fformat arall megis ar ffurf PDF hygyrch, print bras, fformat hawdd ei ddarllen, neu braille:",
   "paragraph7": "Anfonwch neges e-bost i: <a href=\"mailto:HMCTSforms@justice.gov.uk\" class=\"govuk-link\">HMCTSforms@justice.gov.uk</a>",
   "paragraph8": "<strong>Llinell Gymorth: </strong>",
-  "list2-cmc": "Gwasanaeth Hawlio Arian yn y Llys Sifil: 0300 303 5174",
   "list2-divorce": "Gwasanaeth Ysgariad: 0300 303 5171",
   "list2-probate": "Gwasanaeth Profiant: 0300 303 0654",
   "list2-sscs": "Apelio i Dribiwnlys Nawdd Cymdeithasol a Chynnal Plant: 0300 303 5170",
@@ -28,6 +27,8 @@
   "list2-specialtribunals_cic": "Os oeddech yn defnyddio gwasanaeth y Tribiwnlys Haen Gyntaf (Iawndal am Niwed Troseddol): ffoniwch 0300 790 6234 neu e-bostiwch CIC.enquiries@justice.gov.uk",
   "list2-jurordigital": "Os ydych yn defnyddio’r Swyddfa Wysio Rheithgorau Ganolog: 0300 456 1024 (Saesneg), 0300 303 5173 (Cymraeg), Dydd Llun i ddydd Iau: 9am tan 5pm, Dydd Gwener: 9am tan 3pm neu e-bost: jurysummoning@justice.gov.uk",
   "list2-prl_ca": "Os oeddech yn defnyddio’r gwasanaeth trefniadau plant a gwaharddebau teulu: Anfonwch e-bost i: C100applications@justice.gov.uk.",
+  "list2-civil-citizen-ui": "Os oeddech chi’n defnyddio’r gwasanaeth gwneud Hawliad am Arian: 0300 303 5174 (Cymraeg), 0300 123 7050 (Saesneg), dydd Llun i ddydd Gwener: 8:30am - 5pm, neu e-bost: ymholiadaucymraeg@justice.gov.uk",
+
   "paragraph9": "{helpLineHours}<br><a target=\"_blank\" rel=\"external noopener noreferrer\" href=\"{callChargesLink}\" class=\"govuk-link\">Gwybodaeth am brisiau galwadau</a>",
   "paragraph10": "Byddwn yn ystyried eich cais ac yn ymateb o fewn 10 diwrnod gwaith.",
 

@@ -1,9 +1,9 @@
 {
     "services":
-    {   
+    {
         "iac" :
             {
-                "nextStep": 
+                "nextStep":
                 {
                     "ApplicantLanguage": {
                         "name": "ApplicantLanguage"
@@ -11,11 +11,11 @@
                 },
                 "nextStepName" :
                 {
-                    "name": "ApplicantLanguage"  
+                    "name": "ApplicantLanguage"
                 },
                 "skipStepName" :
                 {
-                    "name": "ApplicantDateOfBirth"  
+                    "name": "ApplicantDateOfBirth"
                 },
                 "currentStep" : "StartPage",
                 "datas" :
@@ -25,7 +25,7 @@
                         "formData" :
                         {
                             "serviceId": "iac",
-                            "actor" : "appellant" 
+                            "actor" : "appellant"
                         },
                         "startPageTextEn" : "Your answers will not affect your appeal.",
                         "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich apêl.",
@@ -38,7 +38,7 @@
             },
         "probate" :
             {
-                "nextStep": 
+                "nextStep":
                 {
                     "ApplicantDateOfBirth": {
                         "name": "ApplicantDateOfBirth"
@@ -46,7 +46,7 @@
                 },
                 "nextStepName" :
                 {
-                    "name": "ApplicantDateOfBirth" 
+                    "name": "ApplicantDateOfBirth"
                 },
                 "currentStep" : "StartPage",
                 "skipStepName" :{},
@@ -57,7 +57,7 @@
                         "formData" :
                         {
                             "serviceId": "probate",
-                            "actor" : "applicant" 
+                            "actor" : "applicant"
                         },
                         "startPageTextEn" : "Your answers will not affect your application.",
                         "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais.",
@@ -67,11 +67,11 @@
                         "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl at eich cais yn awr."
                     }
                 }
-            
+
             },
         "sscs" :
             {
-                "nextStep": 
+                "nextStep":
                 {
                     "ApplicantLanguage": {
                         "name": "ApplicantLanguage"
@@ -79,12 +79,12 @@
                 },
                 "nextStepName" :
                 {
-                    "name": "ApplicantLanguage"  
+                    "name": "ApplicantLanguage"
                 },
                 "currentStep" : "StartPage",
                 "skipStepName" :
                 {
-                    "name": "ApplicantDateOfBirth"  
+                    "name": "ApplicantDateOfBirth"
                 },
                 "datas" :
                 {
@@ -93,7 +93,7 @@
                         "formData" :
                         {
                             "serviceId": "sscs",
-                            "actor" : "appellant" 
+                            "actor" : "appellant"
                         },
                         "startPageTextEn" : "Your answers will not affect your appeal.",
                         "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich apêl.",
@@ -107,7 +107,7 @@
                         "formData" :
                         {
                             "serviceId": "sscs",
-                            "actor" : "appointee" 
+                            "actor" : "appointee"
                         },
                         "startPageTextEn" : "Your answers will not affect your appeal.",
                         "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich apêl.",
@@ -117,11 +117,11 @@
                         "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl at eich apêl yn awr."
                     }
                 }
-            
+
             },
         "divorce" :
             {
-                "nextStep": 
+                "nextStep":
                 {
                     "ApplicantDateOfBirth": {
                         "name": "ApplicantDateOfBirth"
@@ -129,7 +129,7 @@
                 },
                 "nextStepName" :
                 {
-                    "name": "ApplicantDateOfBirth" 
+                    "name": "ApplicantDateOfBirth"
                 },
                 "currentStep" : "StartPage",
                 "skipStepName" :{"name": "ApplicantMaritalStatus"},
@@ -140,7 +140,7 @@
                         "formData" :
                         {
                             "serviceId": "divorce",
-                            "actor" : "petitioner" 
+                            "actor" : "petitioner"
                         },
                         "startPageTextEn" : "Your answers will not affect your application.",
                         "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais.",
@@ -154,7 +154,7 @@
                         "formData" :
                         {
                             "serviceId": "divorce",
-                            "actor" : "respondent" 
+                            "actor" : "respondent"
                         },
                         "startPageTextEn" : "Your answers will not affect your response.",
                         "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich ymateb.",
@@ -168,7 +168,7 @@
                         "formData" :
                         {
                             "serviceId": "divorce",
-                            "actor" : "respondent" 
+                            "actor" : "respondent"
                         },
                         "startPageTextEn" : "Your answers will not affect your response.",
                         "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich ymateb.",
@@ -178,11 +178,11 @@
                         "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio'n ôl at eich ymateb yn awr."
                     }
                 }
-            
+
             },
         "new_divorce_law" :
             {
-                "nextStep": 
+                "nextStep":
                 {
                     "ApplicantDateOfBirth": {
                         "name": "ApplicantDateOfBirth"
@@ -190,7 +190,7 @@
                 },
                 "nextStepName" :
                 {
-                    "name": "ApplicantDateOfBirth" 
+                    "name": "ApplicantDateOfBirth"
                 },
                 "currentStep" : "StartPage",
                 "skipStepName" :{"name": "ApplicantMaritalStatus"},
@@ -201,7 +201,7 @@
                         "formData" :
                         {
                             "serviceId": "new_divorce_law",
-                            "actor" : "applicant" 
+                            "actor" : "applicant"
                         },
                         "startPageTextEn" : "Your answers will not affect your divorce application.",
                         "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais am ysgariad.",
@@ -215,7 +215,7 @@
                         "formData" :
                         {
                             "serviceId": "new_divorce_law",
-                            "actor" : "respondent" 
+                            "actor" : "respondent"
                         },
                         "startPageTextEn" : "Your answers will not affect your divorce application.",
                         "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais am ysgariad.",
@@ -229,7 +229,7 @@
                         "formData" :
                         {
                             "serviceId": "new_divorce_law",
-                            "actor" : "applicant1" 
+                            "actor" : "applicant1"
                         },
                         "startPageTextEn" : "Your answers will not affect your divorce application.",
                         "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais am ysgariad.",
@@ -243,7 +243,7 @@
                         "formData" :
                         {
                             "serviceId": "new_divorce_law",
-                            "actor" : "applicant2" 
+                            "actor" : "applicant2"
                         },
                         "startPageTextEn" : "Your answers will not affect your divorce application.",
                         "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais am ysgariad.",
@@ -257,7 +257,7 @@
 
         "cmc" :
             {
-                "nextStep": 
+                "nextStep":
                 {
                     "ApplicantDateOfBirth": {
                         "name": "ApplicantDateOfBirth"
@@ -265,7 +265,7 @@
                 },
                 "nextStepName" :
                 {
-                    "name": "ApplicantDateOfBirth" 
+                    "name": "ApplicantDateOfBirth"
                 },
                 "currentStep" : "StartPage",
                 "skipStepName" :{},
@@ -276,7 +276,7 @@
                            "formData" :
                             {
                                 "serviceId": "cmc",
-                                "actor" : "claimant" 
+                                "actor" : "claimant"
                             },
                             "startPageTextEn" : "Your answers will not affect your claim.",
                             "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich hawliad.",
@@ -290,7 +290,7 @@
                             "formData" :
                             {
                                 "serviceId": "cmc",
-                                "actor" : "defendant" 
+                                "actor" : "defendant"
                             },
                             "startPageTextEn" : "Your answers will not affect your case.",
                             "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich achos.",
@@ -301,10 +301,10 @@
                         }
                 }
             },
-            
+
         "default" :
             {
-                "nextStep": 
+                "nextStep":
                 {
                     "ApplicantDateOfBirth": {
                         "name": "ApplicantDateOfBirth"
@@ -312,7 +312,7 @@
                 },
                 "nextStepName" :
                 {
-                    "name": "ApplicantDateOfBirth" 
+                    "name": "ApplicantDateOfBirth"
                 },
                 "currentStep" : "StartPage",
                 "skipStepName" :{},
@@ -323,7 +323,7 @@
                         "formData" :
                         {
                             "serviceId": "default",
-                            "actor" : "applicant" 
+                            "actor" : "applicant"
                         },
                         "startPageTextEn" : "Your answers will not affect your application.",
                         "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais.",
@@ -333,11 +333,11 @@
                         "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl at eich cais yn awr."
                     }
                 }
-            
+
             },
         "adoption" :
             {
-                "nextStep": 
+                "nextStep":
                 {
                     "ApplicantDateOfBirth": {
                         "name": "ApplicantDateOfBirth"
@@ -345,7 +345,7 @@
                 },
                 "nextStepName" :
                 {
-                    "name": "ApplicantDateOfBirth" 
+                    "name": "ApplicantDateOfBirth"
                 },
                 "currentStep" : "StartPage",
                 "skipStepName" :{},
@@ -356,7 +356,7 @@
                         "formData" :
                         {
                             "serviceId": "adoption",
-                            "actor" : "applicant" 
+                            "actor" : "applicant"
                         },
                         "startPageTextEn" : "Your answers won't affect your application.",
                         "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais.",
@@ -366,11 +366,11 @@
                         "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl at eich cais yn awr."
                     }
                 }
-            
+
             },
         "et" :
             {
-                "nextStep": 
+                "nextStep":
                 {
                     "ApplicantLanguage": {
                         "name": "ApplicantLanguage"
@@ -378,12 +378,12 @@
                 },
                 "nextStepName" :
                 {
-                    "name": "ApplicantLanguage" 
+                    "name": "ApplicantLanguage"
                 },
                 "currentStep" : "StartPage",
                 "skipStepName" :
                 {
-                    "name": "ApplicantDateOfBirth"  
+                    "name": "ApplicantDateOfBirth"
                 },
                 "datas" :
                 {
@@ -392,7 +392,7 @@
                            "formData" :
                             {
                                 "serviceId": "et",
-                                "actor" : "claimant" 
+                                "actor" : "claimant"
                             },
                             "startPageTextEn" : "Your answers will not affect your claim.",
                             "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich hawliad.",
@@ -405,7 +405,7 @@
             },
         "online_plea" :
             {
-                "nextStep": 
+                "nextStep":
                 {
                     "ApplicantLanguage": {
                         "name": "ApplicantLanguage"
@@ -413,12 +413,12 @@
                 },
                 "nextStepName" :
                 {
-                    "name": "ApplicantLanguage" 
+                    "name": "ApplicantLanguage"
                 },
                 "currentStep" : "StartPage",
                 "skipStepName" :
                 {
-                    "name": "ApplicantDateOfBirth"  
+                    "name": "ApplicantDateOfBirth"
                 },
                 "datas" :
                 {
@@ -427,7 +427,7 @@
                            "formData" :
                             {
                                 "serviceId": "online_plea",
-                                "actor" : "defendant" 
+                                "actor" : "defendant"
                             },
                             "startPageTextEn" : "Your answers won't affect your case or be shared with anyone involved in your case.",
                             "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich achos a ni fyddant yn cael eu rhannu ag unrhyw un sy’n rhan o’ch achos.",
@@ -440,7 +440,7 @@
             },
             "specialtribunals_cic" :
             {
-                "nextStep": 
+                "nextStep":
                 {
                     "ApplicantLanguage": {
                         "name": "ApplicantLanguage"
@@ -448,7 +448,7 @@
                 },
                 "nextStepName" :
                 {
-                    "name": "ApplicantLanguage" 
+                    "name": "ApplicantLanguage"
                 },
                 "currentStep" : "StartPage",
                 "skipStepName" :{"name": "ApplicantDateOfBirth"},
@@ -459,7 +459,7 @@
                         "formData" :
                         {
                             "serviceId": "specialtribunals_cic",
-                            "actor" : "applicant" 
+                            "actor" : "applicant"
                         },
                         "startPageTextEn" : "Your answers will not affect your application.",
                         "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais.",
@@ -473,7 +473,7 @@
                         "formData" :
                         {
                             "serviceId": "specialtribunals_cic",
-                            "actor" : "subject" 
+                            "actor" : "subject"
                         },
                         "startPageTextEn" : "Your answers will not affect your application.",
                         "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais.",
@@ -483,11 +483,11 @@
                         "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl at eich cais yn awr."
                     }
                 }
-            
+
             },
             "jurordigital" :
             {
-                "nextStep": 
+                "nextStep":
                 {
                     "ApplicantLanguage": {
                         "name": "ApplicantLanguage"
@@ -495,7 +495,7 @@
                 },
                 "nextStepName" :
                 {
-                    "name": "ApplicantLanguage" 
+                    "name": "ApplicantLanguage"
                 },
                 "currentStep" : "StartPage",
                 "skipStepName" :{"name": "ApplicantDateOfBirth"},
@@ -506,7 +506,7 @@
                         "formData" :
                         {
                             "serviceId": "jurordigital",
-                            "actor" : "citizen" 
+                            "actor" : "citizen"
                         },
                         "startPageTextEn" : "Your answers won't affect your Jury Summons Reply.",
                         "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich Ymateb i’r Wŷs Reithgor.",
@@ -516,11 +516,11 @@
                         "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl at eich Ymateb i’r Wŷs Reithgor nawr."
                     }
                 }
-            
+
             },
             "prl_ca" :
             {
-                "nextStep": 
+                "nextStep":
                 {
                     "ApplicantLanguage": {
                         "name": "ApplicantLanguage"
@@ -528,7 +528,7 @@
                 },
                 "nextStepName" :
                 {
-                    "name": "ApplicantLanguage" 
+                    "name": "ApplicantLanguage"
                 },
                 "currentStep" : "StartPage",
                 "skipStepName" :{"name": "ApplicantDateOfBirth"},
@@ -539,7 +539,7 @@
                         "formData" :
                         {
                             "serviceId": "prl_ca",
-                            "actor" : "applicant" 
+                            "actor" : "applicant"
                         },
                         "startPageTextEn" : "Your answers won't affect your application.",
                         "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais.",
@@ -553,7 +553,7 @@
                         "formData" :
                         {
                             "serviceId": "prl_ca",
-                            "actor" : "respondent" 
+                            "actor" : "respondent"
                         },
                         "startPageTextEn" : "Your answers won't affect your response.",
                         "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich ymateb.",
@@ -563,11 +563,11 @@
                         "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio'n ôl at eich ymateb yn awr."
                     }
                 }
-            
+
             },
             "prl_da" :
             {
-                "nextStep": 
+                "nextStep":
                 {
                     "ApplicantLanguage": {
                         "name": "ApplicantLanguage"
@@ -575,7 +575,7 @@
                 },
                 "nextStepName" :
                 {
-                    "name": "ApplicantLanguage" 
+                    "name": "ApplicantLanguage"
                 },
                 "currentStep" : "StartPage",
                 "skipStepName" :{"name": "ApplicantDateOfBirth"},
@@ -586,7 +586,7 @@
                         "formData" :
                         {
                             "serviceId": "prl_da",
-                            "actor" : "applicant" 
+                            "actor" : "applicant"
                         },
                         "startPageTextEn" : "Your answers won't affect your application.",
                         "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais.",
@@ -600,7 +600,7 @@
                         "formData" :
                         {
                             "serviceId": "prl_da",
-                            "actor" : "respondent" 
+                            "actor" : "respondent"
                         },
                         "startPageTextEn" : "Your answers won't affect your response.",
                         "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich ymateb.",
@@ -610,8 +610,40 @@
                         "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio'n ôl at eich ymateb yn awr."
                     }
                 }
-            
+
+            },
+            "civil-citizen-ui" :
+            {
+            "nextStep":
+            {
+                "ApplicantLanguage": {
+                    "name": "ApplicantLanguage"
+                }
+            },
+            "nextStepName" :
+            {
+                "name": "ApplicantLanguage"
+            },
+                "currentStep" : "StartPage",
+            "skipStepName" :{"name": "ApplicantDateOfBirth"},
+            "datas" :
+            {
+                "respondent":
+                {
+                    "formData" :
+                    {
+                        "serviceId": "civil-citizen-ui",
+                        "actor" : "respondent"
+                    },
+                    "startPageTextEn" : "Your answers will not affect your case or be shared with anyone involved in your case.",
+                    "startPageTextCy" : "Ni fydd eich atebion yn effeithio eich achos ac ni fyddant yn cael eu rhannu gydag unrhyw un sy’n ymwneud â’ch achos.",
+                    "endPageTextEn" : "The next steps are to check your case details.",
+                    "endPageTextCy" : "Y cam nesaf yw gwirio manylion eich achos.",
+                    "shutterPageTextEn" : "We have saved your answers and will direct you back to your case now.",
+                    "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl i'ch achos yn awr."
+                }
             }
+        }
 
     }
 }
