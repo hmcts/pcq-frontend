@@ -76,7 +76,7 @@
     "moment": "^2.29.4",
     "node-emoji": "^1.10.0",
     "node-fetch": "^2.6.9",
-    "node-sass": "^7.0.0",
+    "node-sass": "^9.0.0",
     "nunjucks": "^3.2.4",
     "require-directory": "^2.1.1",
     "sanitizer": "^0.1.3",
