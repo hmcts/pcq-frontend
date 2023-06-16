@@ -52,9 +52,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["debug", "virtual:071d471ccd267160a6f0ec15e4cdc2874728a012db8f34521faf9e64a516aa918ee9ebab3c4c084d955ab74aaac5b8be9afb7a168813c9f210acdb7d88754ab9#npm:4.3.4"],\
             ["eslint", "npm:6.8.0"],\
             ["esmify", "npm:2.1.1"],\
-            ["express", "npm:4.18.1"],\
+            ["express", "npm:4.18.2"],\
             ["express-session", "npm:1.17.3"],\
             ["express-urlrewrite", "npm:2.0.1"],\
+            ["formidable", "npm:2.1.2"],\
             ["fs-extra", "npm:11.1.0"],\
             ["git-rev-sync", "npm:3.0.2"],\
             ["govuk-frontend", "npm:4.6.0"],\
@@ -3267,6 +3268,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["unpipe", "npm:1.0.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:1.20.1", {\
+          "packageLocation": "./.yarn/cache/body-parser-npm-1.20.1-759fd14db9-f1050dbac3.zip/node_modules/body-parser/",\
+          "packageDependencies": [\
+            ["body-parser", "npm:1.20.1"],\
+            ["bytes", "npm:3.1.2"],\
+            ["content-type", "npm:1.0.4"],\
+            ["debug", "virtual:1820eff49a3510f59844b6605d494e2deca1520fa9e3aa7cf6600a27b1172a18c035fa06a11454e24c22ee26b6472ef79ca6bf8d7f3c9067161707279e01bef3#npm:2.6.9"],\
+            ["depd", "npm:2.0.0"],\
+            ["destroy", "npm:1.2.0"],\
+            ["http-errors", "npm:2.0.0"],\
+            ["iconv-lite", "npm:0.4.24"],\
+            ["on-finished", "npm:2.4.1"],\
+            ["qs", "npm:6.11.0"],\
+            ["raw-body", "npm:2.5.1"],\
+            ["type-is", "npm:1.6.18"],\
+            ["unpipe", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["bowser", [\
@@ -5617,13 +5637,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["express", [\
-        ["npm:4.18.1", {\
-          "packageLocation": "./.yarn/cache/express-npm-4.18.1-842e583ae1-c3d44c92e4.zip/node_modules/express/",\
+        ["npm:4.18.2", {\
+          "packageLocation": "./.yarn/cache/express-npm-4.18.2-bb15ff679a-3c4b9b0768.zip/node_modules/express/",\
           "packageDependencies": [\
-            ["express", "npm:4.18.1"],\
+            ["express", "npm:4.18.2"],\
             ["accepts", "npm:1.3.8"],\
             ["array-flatten", "npm:1.1.1"],\
-            ["body-parser", "npm:1.20.0"],\
+            ["body-parser", "npm:1.20.1"],\
             ["content-disposition", "npm:0.5.4"],\
             ["content-type", "npm:1.0.4"],\
             ["cookie", "npm:0.5.0"],\
@@ -5642,7 +5662,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["parseurl", "npm:1.3.3"],\
             ["path-to-regexp", "npm:0.1.7"],\
             ["proxy-addr", "npm:2.0.7"],\
-            ["qs", "npm:6.10.3"],\
+            ["qs", "npm:6.11.0"],\
             ["range-parser", "npm:1.2.1"],\
             ["safe-buffer", "npm:5.2.1"],\
             ["send", "npm:0.18.0"],\
@@ -10434,9 +10454,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["debug", "virtual:071d471ccd267160a6f0ec15e4cdc2874728a012db8f34521faf9e64a516aa918ee9ebab3c4c084d955ab74aaac5b8be9afb7a168813c9f210acdb7d88754ab9#npm:4.3.4"],\
             ["eslint", "npm:6.8.0"],\
             ["esmify", "npm:2.1.1"],\
-            ["express", "npm:4.18.1"],\
+            ["express", "npm:4.18.2"],\
             ["express-session", "npm:1.17.3"],\
             ["express-urlrewrite", "npm:2.0.1"],\
+            ["formidable", "npm:2.1.2"],\
             ["fs-extra", "npm:11.1.0"],\
             ["git-rev-sync", "npm:3.0.2"],\
             ["govuk-frontend", "npm:4.6.0"],\
