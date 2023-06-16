@@ -9060,6 +9060,7 @@ __metadata:
     sinon: ^9.0.3
     sinon-chai: ^3.4.0
     sonarqube-scanner: ^3.0.1
+    superagent: 8
     supertest: ^6.3.3
     test: "link:./test"
     traverse: ^0.6.6
@@ -10526,7 +10527,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"superagent@npm:^8.0.5":
+"superagent@npm:8, superagent@npm:^8.0.5":
   version: 8.0.9
   resolution: "superagent@npm:8.0.9"
   dependencies:
