@@ -14,7 +14,7 @@ data "azurerm_subnet" "core_infra_redis_subnet" {
 }
 
 module "pcq-frontend-redis-cache" {
-  source   = "git@github.com:hmcts/cnp-module-redis?ref=add-redis-version-flag"
+  source   = "git@github.com:hmcts/cnp-module-redis?ref=master"
   product     = "${var.product}-${var.component}-redis-cache"
   location = var.location
   env      = var.env
