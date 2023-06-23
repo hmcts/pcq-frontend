@@ -88,7 +88,7 @@
     "webpack-cli": "^5.1.1"
   },
   "devDependencies": {
-    "@babel/traverse": "^7.21.3",
+    "@babel/traverse": "^7.22.5",
     "@babel/types": "^7.22.4",
     "@stryker-mutator/api": "^6.4.1",
     "@stryker-mutator/core": "^5.6.1",
