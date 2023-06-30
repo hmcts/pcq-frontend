@@ -50,7 +50,7 @@
     "@hmcts/cookie-manager": "^1.0.0",
     "@hmcts/nodejs-healthcheck": "^1.7.3",
     "@hmcts/nodejs-logging": "^4.0.4",
-    "@hmcts/properties-volume": "^0.0.13",
+    "@hmcts/properties-volume": "^1.0.0",
     "ajv": "^6.12.6",
     "app": "link:./app",
     "applicationinsights": "^2.7.0",

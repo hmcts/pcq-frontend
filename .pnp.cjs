@@ -33,7 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@hmcts/cookie-manager", "npm:1.0.0"],\
             ["@hmcts/nodejs-healthcheck", "npm:1.8.0"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
-            ["@hmcts/properties-volume", "npm:0.0.13"],\
+            ["@hmcts/properties-volume", "npm:1.0.0"],\
             ["@stryker-mutator/api", "npm:6.4.2"],\
             ["@stryker-mutator/core", "npm:5.6.1"],\
             ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.6.1"],\
@@ -133,6 +133,57 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@azure/core-client", [\
+        ["npm:1.7.3", {\
+          "packageLocation": "./.yarn/cache/@azure-core-client-npm-1.7.3-9ff29e28c6-155a188b75.zip/node_modules/@azure/core-client/",\
+          "packageDependencies": [\
+            ["@azure/core-client", "npm:1.7.3"],\
+            ["@azure/abort-controller", "npm:1.1.0"],\
+            ["@azure/core-auth", "npm:1.4.0"],\
+            ["@azure/core-rest-pipeline", "npm:1.11.0"],\
+            ["@azure/core-tracing", "npm:1.0.1"],\
+            ["@azure/core-util", "npm:1.2.0"],\
+            ["@azure/logger", "npm:1.0.3"],\
+            ["tslib", "npm:2.4.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@azure/core-http-compat", [\
+        ["npm:1.3.0", {\
+          "packageLocation": "./.yarn/cache/@azure-core-http-compat-npm-1.3.0-5f89920f91-26938e5834.zip/node_modules/@azure/core-http-compat/",\
+          "packageDependencies": [\
+            ["@azure/core-http-compat", "npm:1.3.0"],\
+            ["@azure/abort-controller", "npm:1.1.0"],\
+            ["@azure/core-client", "npm:1.7.3"],\
+            ["@azure/core-rest-pipeline", "npm:1.11.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@azure/core-lro", [\
+        ["npm:2.5.3", {\
+          "packageLocation": "./.yarn/cache/@azure-core-lro-npm-2.5.3-3708742b93-443ae1884a.zip/node_modules/@azure/core-lro/",\
+          "packageDependencies": [\
+            ["@azure/core-lro", "npm:2.5.3"],\
+            ["@azure/abort-controller", "npm:1.1.0"],\
+            ["@azure/core-util", "npm:1.3.2"],\
+            ["@azure/logger", "npm:1.0.3"],\
+            ["tslib", "npm:2.4.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@azure/core-paging", [\
+        ["npm:1.5.0", {\
+          "packageLocation": "./.yarn/cache/@azure-core-paging-npm-1.5.0-63e6dd76d4-156230f0fd.zip/node_modules/@azure/core-paging/",\
+          "packageDependencies": [\
+            ["@azure/core-paging", "npm:1.5.0"],\
+            ["tslib", "npm:2.4.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@azure/core-rest-pipeline", [\
         ["npm:1.10.1", {\
           "packageLocation": "./.yarn/cache/@azure-core-rest-pipeline-npm-1.10.1-6159c94ce3-d1c1650475.zip/node_modules/@azure/core-rest-pipeline/",\
@@ -148,6 +199,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["https-proxy-agent", "npm:5.0.1"],\
             ["tslib", "npm:2.4.1"],\
             ["uuid", "npm:8.3.2"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:1.11.0", {\
+          "packageLocation": "./.yarn/cache/@azure-core-rest-pipeline-npm-1.11.0-9354d5ae6b-e65b03022b.zip/node_modules/@azure/core-rest-pipeline/",\
+          "packageDependencies": [\
+            ["@azure/core-rest-pipeline", "npm:1.11.0"],\
+            ["@azure/abort-controller", "npm:1.1.0"],\
+            ["@azure/core-auth", "npm:1.4.0"],\
+            ["@azure/core-tracing", "npm:1.0.1"],\
+            ["@azure/core-util", "npm:1.3.2"],\
+            ["@azure/logger", "npm:1.0.3"],\
+            ["form-data", "npm:4.0.0"],\
+            ["http-proxy-agent", "npm:5.0.0"],\
+            ["https-proxy-agent", "npm:5.0.1"],\
+            ["tslib", "npm:2.4.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -171,6 +238,60 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tslib", "npm:2.4.1"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:1.3.2", {\
+          "packageLocation": "./.yarn/cache/@azure-core-util-npm-1.3.2-a28e819d81-c26053a209.zip/node_modules/@azure/core-util/",\
+          "packageDependencies": [\
+            ["@azure/core-util", "npm:1.3.2"],\
+            ["@azure/abort-controller", "npm:1.1.0"],\
+            ["tslib", "npm:2.4.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@azure/identity", [\
+        ["npm:3.2.3", {\
+          "packageLocation": "./.yarn/cache/@azure-identity-npm-3.2.3-f2d71d4ea2-8f74831a35.zip/node_modules/@azure/identity/",\
+          "packageDependencies": [\
+            ["@azure/identity", "npm:3.2.3"],\
+            ["@azure/abort-controller", "npm:1.1.0"],\
+            ["@azure/core-auth", "npm:1.4.0"],\
+            ["@azure/core-client", "npm:1.7.3"],\
+            ["@azure/core-rest-pipeline", "npm:1.11.0"],\
+            ["@azure/core-tracing", "npm:1.0.1"],\
+            ["@azure/core-util", "npm:1.2.0"],\
+            ["@azure/logger", "npm:1.0.3"],\
+            ["@azure/msal-browser", "npm:2.37.1"],\
+            ["@azure/msal-common", "npm:13.1.0"],\
+            ["@azure/msal-node", "npm:1.17.3"],\
+            ["events", "npm:3.3.0"],\
+            ["jws", "npm:4.0.0"],\
+            ["open", "npm:8.4.2"],\
+            ["stoppable", "npm:1.1.0"],\
+            ["tslib", "npm:2.4.1"],\
+            ["uuid", "npm:8.3.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@azure/keyvault-secrets", [\
+        ["npm:4.7.0", {\
+          "packageLocation": "./.yarn/cache/@azure-keyvault-secrets-npm-4.7.0-a5e8780c58-915bfbbc7a.zip/node_modules/@azure/keyvault-secrets/",\
+          "packageDependencies": [\
+            ["@azure/keyvault-secrets", "npm:4.7.0"],\
+            ["@azure/abort-controller", "npm:1.1.0"],\
+            ["@azure/core-auth", "npm:1.4.0"],\
+            ["@azure/core-client", "npm:1.7.3"],\
+            ["@azure/core-http-compat", "npm:1.3.0"],\
+            ["@azure/core-lro", "npm:2.5.3"],\
+            ["@azure/core-paging", "npm:1.5.0"],\
+            ["@azure/core-rest-pipeline", "npm:1.11.0"],\
+            ["@azure/core-tracing", "npm:1.0.1"],\
+            ["@azure/core-util", "npm:1.2.0"],\
+            ["@azure/logger", "npm:1.0.3"],\
+            ["tslib", "npm:2.4.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@azure/logger", [\
@@ -179,6 +300,37 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@azure/logger", "npm:1.0.3"],\
             ["tslib", "npm:2.4.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@azure/msal-browser", [\
+        ["npm:2.37.1", {\
+          "packageLocation": "./.yarn/cache/@azure-msal-browser-npm-2.37.1-dacfc22172-920b892bcd.zip/node_modules/@azure/msal-browser/",\
+          "packageDependencies": [\
+            ["@azure/msal-browser", "npm:2.37.1"],\
+            ["@azure/msal-common", "npm:13.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@azure/msal-common", [\
+        ["npm:13.1.0", {\
+          "packageLocation": "./.yarn/cache/@azure-msal-common-npm-13.1.0-a51b119736-db21145f82.zip/node_modules/@azure/msal-common/",\
+          "packageDependencies": [\
+            ["@azure/msal-common", "npm:13.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@azure/msal-node", [\
+        ["npm:1.17.3", {\
+          "packageLocation": "./.yarn/cache/@azure-msal-node-npm-1.17.3-84d38ad11d-6afc815116.zip/node_modules/@azure/msal-node/",\
+          "packageDependencies": [\
+            ["@azure/msal-node", "npm:1.17.3"],\
+            ["@azure/msal-common", "npm:13.1.0"],\
+            ["jsonwebtoken", "npm:9.0.0"],\
+            ["uuid", "npm:8.3.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1373,16 +1525,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@hmcts/nodejs-logging", [\
-        ["npm:3.0.4", {\
-          "packageLocation": "./.yarn/cache/@hmcts-nodejs-logging-npm-3.0.4-9fe4c1404e-d690f06f3c.zip/node_modules/@hmcts/nodejs-logging/",\
-          "packageDependencies": [\
-            ["@hmcts/nodejs-logging", "npm:3.0.4"],\
-            ["moment", "npm:2.29.4"],\
-            ["on-finished", "npm:2.4.1"],\
-            ["winston", "npm:2.4.6"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:4.0.4", {\
           "packageLocation": "./.yarn/cache/@hmcts-nodejs-logging-npm-4.0.4-b42d915546-4a21f0beb0.zip/node_modules/@hmcts/nodejs-logging/",\
           "packageDependencies": [\
@@ -1395,13 +1537,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@hmcts/properties-volume", [\
-        ["npm:0.0.13", {\
-          "packageLocation": "./.yarn/cache/@hmcts-properties-volume-npm-0.0.13-9d532806a8-7046728d3b.zip/node_modules/@hmcts/properties-volume/",\
+        ["npm:1.0.0", {\
+          "packageLocation": "./.yarn/cache/@hmcts-properties-volume-npm-1.0.0-3e35ec67de-e1d9f9c9d3.zip/node_modules/@hmcts/properties-volume/",\
           "packageDependencies": [\
-            ["@hmcts/properties-volume", "npm:0.0.13"],\
-            ["@hmcts/nodejs-logging", "npm:3.0.4"],\
-            ["lodash", "npm:4.17.21"],\
-            ["path", "npm:0.12.7"]\
+            ["@hmcts/properties-volume", "npm:1.0.0"],\
+            ["@azure/identity", "npm:3.2.3"],\
+            ["@azure/keyvault-secrets", "npm:4.7.0"],\
+            ["@hmcts/nodejs-logging", "npm:4.0.4"],\
+            ["js-yaml", "npm:4.1.0"],\
+            ["lodash", "npm:4.17.21"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5016,6 +5160,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["define-lazy-prop", [\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/define-lazy-prop-npm-2.0.0-bba0cd91a7-0115fdb065.zip/node_modules/define-lazy-prop/",\
+          "packageDependencies": [\
+            ["define-lazy-prop", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["define-properties", [\
         ["npm:1.1.4", {\
           "packageLocation": "./.yarn/cache/define-properties-npm-1.1.4-85ee575655-ce0aef3f9e.zip/node_modules/define-properties/",\
@@ -7431,13 +7584,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["inherits", [\
-        ["npm:2.0.3", {\
-          "packageLocation": "./.yarn/cache/inherits-npm-2.0.3-401e64b080-78cb8d7d85.zip/node_modules/inherits/",\
-          "packageDependencies": [\
-            ["inherits", "npm:2.0.3"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:2.0.4", {\
           "packageLocation": "./.yarn/cache/inherits-npm-2.0.4-c66b3957a0-4a48a73384.zip/node_modules/inherits/",\
           "packageDependencies": [\
@@ -8340,6 +8486,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["safe-buffer", "npm:5.2.1"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/jwa-npm-2.0.0-52a7c3f1ca-8f00b71ad5.zip/node_modules/jwa/",\
+          "packageDependencies": [\
+            ["jwa", "npm:2.0.0"],\
+            ["buffer-equal-constant-time", "npm:1.0.1"],\
+            ["ecdsa-sig-formatter", "npm:1.0.11"],\
+            ["safe-buffer", "npm:5.2.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["jws", [\
@@ -8348,6 +8504,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["jws", "npm:3.2.2"],\
             ["jwa", "npm:1.4.1"],\
+            ["safe-buffer", "npm:5.2.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/jws-npm-4.0.0-2a24fd53b9-d68d07aa6d.zip/node_modules/jws/",\
+          "packageDependencies": [\
+            ["jws", "npm:4.0.0"],\
+            ["jwa", "npm:2.0.0"],\
             ["safe-buffer", "npm:5.2.1"]\
           ],\
           "linkType": "HARD"\
@@ -10134,6 +10299,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["open", [\
+        ["npm:8.4.2", {\
+          "packageLocation": "./.yarn/unplugged/open-npm-8.4.2-1f763e8b75/node_modules/open/",\
+          "packageDependencies": [\
+            ["open", "npm:8.4.2"],\
+            ["define-lazy-prop", "npm:2.0.0"],\
+            ["is-docker", "npm:2.2.1"],\
+            ["is-wsl", "npm:2.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["opener", [\
         ["npm:1.5.2", {\
           "packageLocation": "./.yarn/cache/opener-npm-1.5.2-7a1aa69f14-33b620c0d5.zip/node_modules/opener/",\
@@ -10447,17 +10624,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["path", [\
-        ["npm:0.12.7", {\
-          "packageLocation": "./.yarn/cache/path-npm-0.12.7-bddabe2e86-5dedb71e78.zip/node_modules/path/",\
-          "packageDependencies": [\
-            ["path", "npm:0.12.7"],\
-            ["process", "npm:0.11.10"],\
-            ["util", "npm:0.10.4"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["path-exists", [\
         ["npm:4.0.0", {\
           "packageLocation": "./.yarn/cache/path-exists-npm-4.0.0-e9e4f63eb0-505807199d.zip/node_modules/path-exists/",\
@@ -10705,15 +10871,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["process", [\
-        ["npm:0.11.10", {\
-          "packageLocation": "./.yarn/cache/process-npm-0.11.10-aeb3b641ae-bfcce49814.zip/node_modules/process/",\
-          "packageDependencies": [\
-            ["process", "npm:0.11.10"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["process-nextick-args", [\
         ["npm:2.0.1", {\
           "packageLocation": "./.yarn/cache/process-nextick-args-npm-2.0.1-b8d7971609-1d38588e52.zip/node_modules/process-nextick-args/",\
@@ -10815,7 +10972,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@hmcts/cookie-manager", "npm:1.0.0"],\
             ["@hmcts/nodejs-healthcheck", "npm:1.8.0"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
-            ["@hmcts/properties-volume", "npm:0.0.13"],\
+            ["@hmcts/properties-volume", "npm:1.0.0"],\
             ["@stryker-mutator/api", "npm:6.4.2"],\
             ["@stryker-mutator/core", "npm:5.6.1"],\
             ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.6.1"],\
@@ -12354,6 +12511,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["stoppable", [\
+        ["npm:1.1.0", {\
+          "packageLocation": "./.yarn/cache/stoppable-npm-1.1.0-23cdcad1a6-63104fcbde.zip/node_modules/stoppable/",\
+          "packageDependencies": [\
+            ["stoppable", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["streamroller", [\
         ["npm:3.1.5", {\
           "packageLocation": "./.yarn/cache/streamroller-npm-3.1.5-2fe0f7e85a-c1df5612b7.zip/node_modules/streamroller/",\
@@ -13386,16 +13552,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/url-to-options-npm-1.0.1-7eb319b3c8-20e59f4578.zip/node_modules/url-to-options/",\
           "packageDependencies": [\
             ["url-to-options", "npm:1.0.1"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["util", [\
-        ["npm:0.10.4", {\
-          "packageLocation": "./.yarn/cache/util-npm-0.10.4-7c577db41a-913f9a90d0.zip/node_modules/util/",\
-          "packageDependencies": [\
-            ["util", "npm:0.10.4"],\
-            ["inherits", "npm:2.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
