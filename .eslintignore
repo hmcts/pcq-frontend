@@ -3,3 +3,4 @@ public/*
 app/assets/javascripts/*.js
 coverage
 /functional-output/*
+.eslintrc.js
