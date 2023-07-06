@@ -70,7 +70,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
             ["moment", "npm:2.29.4"],\
             ["nock", "npm:13.3.0"],\
-            ["node-emoji", "npm:1.11.0"],\
+            ["node-emoji", "npm:2.1.0"],\
             ["node-fetch", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.6.9"],\
             ["node-sass", "npm:9.0.0"],\
             ["nodemon", "npm:2.0.19"],\
@@ -2069,6 +2069,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@sindresorhus/is", [\
+        ["npm:3.1.2", {\
+          "packageLocation": "./.yarn/cache/@sindresorhus-is-npm-3.1.2-bcdc8ac1e4-6b68b2c0bc.zip/node_modules/@sindresorhus/is/",\
+          "packageDependencies": [\
+            ["@sindresorhus/is", "npm:3.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:5.3.0", {\
           "packageLocation": "./.yarn/cache/@sindresorhus-is-npm-5.3.0-9deec66459-b31cebabcd.zip/node_modules/@sindresorhus/is/",\
           "packageDependencies": [\
@@ -4142,6 +4149,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["char-regex", [\
+        ["npm:1.0.2", {\
+          "packageLocation": "./.yarn/cache/char-regex-npm-1.0.2-ecade5f97f-b563e4b603.zip/node_modules/char-regex/",\
+          "packageDependencies": [\
+            ["char-regex", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["chardet", [\
         ["npm:0.7.0", {\
           "packageLocation": "./.yarn/cache/chardet-npm-0.7.0-27933dd6c7-6fd5da1f5d.zip/node_modules/chardet/",\
@@ -5606,6 +5622,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/emoji-regex-npm-9.2.2-e6fac8d058-8487182da7.zip/node_modules/emoji-regex/",\
           "packageDependencies": [\
             ["emoji-regex", "npm:9.2.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["emojilib", [\
+        ["npm:2.4.0", {\
+          "packageLocation": "./.yarn/cache/emojilib-npm-2.4.0-52421bcae3-ea241c342a.zip/node_modules/emojilib/",\
+          "packageDependencies": [\
+            ["emojilib", "npm:2.4.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -9898,11 +9923,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["node-emoji", [\
-        ["npm:1.11.0", {\
-          "packageLocation": "./.yarn/cache/node-emoji-npm-1.11.0-dd2f09050c-e8c856c04a.zip/node_modules/node-emoji/",\
+        ["npm:2.1.0", {\
+          "packageLocation": "./.yarn/cache/node-emoji-npm-2.1.0-584305f94f-6c16d63996.zip/node_modules/node-emoji/",\
           "packageDependencies": [\
-            ["node-emoji", "npm:1.11.0"],\
-            ["lodash", "npm:4.17.21"]\
+            ["node-emoji", "npm:2.1.0"],\
+            ["@sindresorhus/is", "npm:3.1.2"],\
+            ["char-regex", "npm:1.0.2"],\
+            ["emojilib", "npm:2.4.0"],\
+            ["skin-tone", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -11055,7 +11083,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
             ["moment", "npm:2.29.4"],\
             ["nock", "npm:13.3.0"],\
-            ["node-emoji", "npm:1.11.0"],\
+            ["node-emoji", "npm:2.1.0"],\
             ["node-fetch", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.6.9"],\
             ["node-sass", "npm:9.0.0"],\
             ["nodemon", "npm:2.0.19"],\
@@ -12222,6 +12250,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@types/sinon",\
             "chai",\
             "sinon"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["skin-tone", [\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/skin-tone-npm-2.0.0-43a2069845-19de157586.zip/node_modules/skin-tone/",\
+          "packageDependencies": [\
+            ["skin-tone", "npm:2.0.0"],\
+            ["unicode-emoji-modifier-base", "npm:1.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -13393,6 +13431,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/underscore-npm-1.13.4-9195880774-6b04f66cd4.zip/node_modules/underscore/",\
           "packageDependencies": [\
             ["underscore", "npm:1.13.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["unicode-emoji-modifier-base", [\
+        ["npm:1.0.0", {\
+          "packageLocation": "./.yarn/cache/unicode-emoji-modifier-base-npm-1.0.0-ef42b85868-6e1521d35f.zip/node_modules/unicode-emoji-modifier-base/",\
+          "packageDependencies": [\
+            ["unicode-emoji-modifier-base", "npm:1.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
