@@ -60,7 +60,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["govuk-frontend", "npm:4.6.0"],\
             ["helmet", "npm:3.23.3"],\
             ["https-proxy-agent", "npm:5.0.1"],\
-            ["i18next", "npm:22.4.12"],\
+            ["i18next", "npm:23.2.7"],\
             ["ioredis", "npm:4.28.5"],\
             ["js-yaml", "npm:4.1.0"],\
             ["jsonwebtoken", "npm:9.0.0"],\
@@ -1232,10 +1232,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@babel/runtime", [\
-        ["npm:7.21.0", {\
-          "packageLocation": "./.yarn/cache/@babel-runtime-npm-7.21.0-c4ef698c89-7b33e25bfa.zip/node_modules/@babel/runtime/",\
+        ["npm:7.22.6", {\
+          "packageLocation": "./.yarn/cache/@babel-runtime-npm-7.22.6-493f6b7ad0-e585338287.zip/node_modules/@babel/runtime/",\
           "packageDependencies": [\
-            ["@babel/runtime", "npm:7.21.0"],\
+            ["@babel/runtime", "npm:7.22.6"],\
             ["regenerator-runtime", "npm:0.13.11"]\
           ],\
           "linkType": "HARD"\
@@ -7557,11 +7557,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["i18next", [\
-        ["npm:22.4.12", {\
-          "packageLocation": "./.yarn/cache/i18next-npm-22.4.12-45852c253d-78e8c74f86.zip/node_modules/i18next/",\
+        ["npm:23.2.7", {\
+          "packageLocation": "./.yarn/cache/i18next-npm-23.2.7-2d05f42ac6-b5fdf0d7a8.zip/node_modules/i18next/",\
           "packageDependencies": [\
-            ["i18next", "npm:22.4.12"],\
-            ["@babel/runtime", "npm:7.21.0"]\
+            ["i18next", "npm:23.2.7"],\
+            ["@babel/runtime", "npm:7.22.6"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -11073,7 +11073,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["govuk-frontend", "npm:4.6.0"],\
             ["helmet", "npm:3.23.3"],\
             ["https-proxy-agent", "npm:5.0.1"],\
-            ["i18next", "npm:22.4.12"],\
+            ["i18next", "npm:23.2.7"],\
             ["ioredis", "npm:4.28.5"],\
             ["js-yaml", "npm:4.1.0"],\
             ["jsonwebtoken", "npm:9.0.0"],\
