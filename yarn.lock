@@ -1721,14 +1721,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stryker-mutator/api@npm:^6.4.1":
-  version: 6.4.2
-  resolution: "@stryker-mutator/api@npm:6.4.2"
+"@stryker-mutator/api@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "@stryker-mutator/api@npm:7.1.0"
   dependencies:
-    mutation-testing-metrics: 1.7.14
-    mutation-testing-report-schema: 1.7.14
+    mutation-testing-metrics: 2.0.1
+    mutation-testing-report-schema: 2.0.1
     tslib: ~2.5.0
-  checksum: 441ea628551143ff4aeba0172c3d0b2823b1dfe076467d5b1b2796fd49ceb5f2bce98b3f57b66ad6f9cd8ef3b5bd5c5da0e94069de6ebe9c1afa3d7fbc13296d
+    typed-inject: ~4.0.0
+  checksum: 7328601365c3d9c9e19a04cc39f23d571fe33911feb6daee173f004ea33bcf38f05096b0debdee70492b2761b388ba4d4a9eafc6f6e5a90a3a8e8ddc48fdff40
   languageName: node
   linkType: hard
 
@@ -8411,15 +8412,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mutation-testing-metrics@npm:1.7.14":
-  version: 1.7.14
-  resolution: "mutation-testing-metrics@npm:1.7.14"
-  dependencies:
-    mutation-testing-report-schema: 1.7.14
-  checksum: 9afebd372c9c2e0fa3fa084ca8bf5a9306b686b7f9c4d3067fa2f40df0deb71f606f6157ce0e789c3edd98e9cdf25f045331577b665e4dac97301ecfbb85dfd3
-  languageName: node
-  linkType: hard
-
 "mutation-testing-metrics@npm:1.7.8":
   version: 1.7.8
   resolution: "mutation-testing-metrics@npm:1.7.8"
@@ -8429,10 +8421,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mutation-testing-report-schema@npm:1.7.14":
-  version: 1.7.14
-  resolution: "mutation-testing-report-schema@npm:1.7.14"
-  checksum: df0ff1a5d6db259e6273c2d58054322cd04397ed7e8baa99f21fc94384eb17cfa026807b460089447206689ad57f252b7d0bb0be55a7eb19b9be4e4106f0073d
+"mutation-testing-metrics@npm:2.0.1":
+  version: 2.0.1
+  resolution: "mutation-testing-metrics@npm:2.0.1"
+  dependencies:
+    mutation-testing-report-schema: 2.0.1
+  checksum: 57feb4d38b7511d78d9ff1afce14e9aeaab55b22712c05b972aba3d5b80f487c6e24cc06a89d53a482d9638e85714ed5593ba228255f80f876c4f61af0b8d384
   languageName: node
   linkType: hard
 
@@ -8440,6 +8434,13 @@ __metadata:
   version: 1.7.8
   resolution: "mutation-testing-report-schema@npm:1.7.8"
   checksum: 6e3b3def81983ecf4f9c9a8e93e5c8b4af75ebde204a4312566bc9f49da27435aa75921e4246b356a5d95c0ebf619d0f79bea739ce40c487390e91a7c102754b
+  languageName: node
+  linkType: hard
+
+"mutation-testing-report-schema@npm:2.0.1":
+  version: 2.0.1
+  resolution: "mutation-testing-report-schema@npm:2.0.1"
+  checksum: 957e293fdf581ce8a388f3a8a2d3107ca864f4d385e6b20898ea6b3ada40b2ce98ca4e6893c4bb551d3f4b544a6dbf7d6000e2d1f10c9cff8fa7b2c4640fe506
   languageName: node
   linkType: hard
 
@@ -9562,7 +9563,7 @@ __metadata:
     "@hmcts/nodejs-healthcheck": ^1.7.3
     "@hmcts/nodejs-logging": ^4.0.4
     "@hmcts/properties-volume": ^1.0.0
-    "@stryker-mutator/api": ^6.4.1
+    "@stryker-mutator/api": ^7.1.0
     "@stryker-mutator/core": ^5.6.1
     "@stryker-mutator/mocha-runner": ^5.6.1
     ajv: ^6.12.6
@@ -11677,6 +11678,13 @@ __metadata:
   version: 3.0.1
   resolution: "typed-inject@npm:3.0.1"
   checksum: a400797a42951bc46a38873e9be40fe90fdba6ae3362e2d4da4972c4ec48e962ff167bc5f090ca42dc20bb3f6063cd07a80426df520c64dc9e94d1e89ff4779e
+  languageName: node
+  linkType: hard
+
+"typed-inject@npm:~4.0.0":
+  version: 4.0.0
+  resolution: "typed-inject@npm:4.0.0"
+  checksum: 2181b4f50e77dfa42752a645057c85a2e20eaaad639e3ea059fde9596baf8bbc51bb6c2913b040b9103752480045eff1e7f09b10b6dc187b6525b5acccac4971
   languageName: node
   linkType: hard
 
