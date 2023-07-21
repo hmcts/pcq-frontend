@@ -90,7 +90,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["supertest", "npm:6.3.3"],\
             ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["traverse", "npm:0.6.6"],\
-            ["tslib", "npm:2.5.0"],\
+            ["tslib", "npm:2.6.0"],\
             ["uuid", "npm:3.4.0"],\
             ["watch", "npm:1.0.2"],\
             ["webdriverio", "npm:8.13.4"],\
@@ -11103,7 +11103,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["supertest", "npm:6.3.3"],\
             ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["traverse", "npm:0.6.6"],\
-            ["tslib", "npm:2.5.0"],\
+            ["tslib", "npm:2.6.0"],\
             ["uuid", "npm:3.4.0"],\
             ["watch", "npm:1.0.2"],\
             ["webdriverio", "npm:8.13.4"],\
@@ -13241,6 +13241,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/tslib-npm-2.5.0-bb364efebd-ae3ed5f9ce.zip/node_modules/tslib/",\
           "packageDependencies": [\
             ["tslib", "npm:2.5.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.6.0", {\
+          "packageLocation": "./.yarn/cache/tslib-npm-2.6.0-4d336a6824-c01066038f.zip/node_modules/tslib/",\
+          "packageDependencies": [\
+            ["tslib", "npm:2.6.0"]\
           ],\
           "linkType": "HARD"\
         }]\

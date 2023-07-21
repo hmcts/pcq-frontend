@@ -114,7 +114,7 @@
     "sinon-chai": "^3.4.0",
     "sonarqube-scanner": "^2.8.1",
     "supertest": "^6.3.3",
-    "tslib": "^2.5.0",
+    "tslib": "^2.6.0",
     "watch": "^1.0.2",
     "webdriverio": "^8.13.4",
     "yarn-audit-fix": "^9.3.2"
