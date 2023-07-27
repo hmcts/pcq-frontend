@@ -34,7 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@hmcts/nodejs-healthcheck", "npm:1.8.0"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
             ["@hmcts/properties-volume", "npm:1.0.0"],\
-            ["@stryker-mutator/api", "npm:6.4.2"],\
+            ["@stryker-mutator/api", "npm:7.1.1"],\
             ["@stryker-mutator/core", "npm:5.6.1"],\
             ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.6.1"],\
             ["ajv", "npm:6.12.6"],\
@@ -2161,13 +2161,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:6.4.2", {\
-          "packageLocation": "./.yarn/cache/@stryker-mutator-api-npm-6.4.2-db0603b93a-441ea62855.zip/node_modules/@stryker-mutator/api/",\
+        ["npm:7.1.1", {\
+          "packageLocation": "./.yarn/cache/@stryker-mutator-api-npm-7.1.1-67b20ea347-e70dea1da2.zip/node_modules/@stryker-mutator/api/",\
           "packageDependencies": [\
-            ["@stryker-mutator/api", "npm:6.4.2"],\
-            ["mutation-testing-metrics", "npm:1.7.14"],\
-            ["mutation-testing-report-schema", "npm:1.7.14"],\
-            ["tslib", "npm:2.5.0"]\
+            ["@stryker-mutator/api", "npm:7.1.1"],\
+            ["mutation-testing-metrics", "npm:2.0.1"],\
+            ["mutation-testing-report-schema", "npm:2.0.1"],\
+            ["tslib", "npm:2.6.1"],\
+            ["typed-inject", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -9778,14 +9779,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["mutation-testing-metrics", [\
-        ["npm:1.7.14", {\
-          "packageLocation": "./.yarn/cache/mutation-testing-metrics-npm-1.7.14-f60fd846ca-9afebd372c.zip/node_modules/mutation-testing-metrics/",\
-          "packageDependencies": [\
-            ["mutation-testing-metrics", "npm:1.7.14"],\
-            ["mutation-testing-report-schema", "npm:1.7.14"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:1.7.8", {\
           "packageLocation": "./.yarn/cache/mutation-testing-metrics-npm-1.7.8-6b0554fb0f-d4bcd05597.zip/node_modules/mutation-testing-metrics/",\
           "packageDependencies": [\
@@ -9793,20 +9786,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mutation-testing-report-schema", "npm:1.7.8"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.0.1", {\
+          "packageLocation": "./.yarn/cache/mutation-testing-metrics-npm-2.0.1-79c7cccae6-57feb4d38b.zip/node_modules/mutation-testing-metrics/",\
+          "packageDependencies": [\
+            ["mutation-testing-metrics", "npm:2.0.1"],\
+            ["mutation-testing-report-schema", "npm:2.0.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["mutation-testing-report-schema", [\
-        ["npm:1.7.14", {\
-          "packageLocation": "./.yarn/cache/mutation-testing-report-schema-npm-1.7.14-d5165fb395-df0ff1a5d6.zip/node_modules/mutation-testing-report-schema/",\
-          "packageDependencies": [\
-            ["mutation-testing-report-schema", "npm:1.7.14"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:1.7.8", {\
           "packageLocation": "./.yarn/cache/mutation-testing-report-schema-npm-1.7.8-45af5f3557-6e3b3def81.zip/node_modules/mutation-testing-report-schema/",\
           "packageDependencies": [\
             ["mutation-testing-report-schema", "npm:1.7.8"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.0.1", {\
+          "packageLocation": "./.yarn/cache/mutation-testing-report-schema-npm-2.0.1-80f87addc5-957e293fdf.zip/node_modules/mutation-testing-report-schema/",\
+          "packageDependencies": [\
+            ["mutation-testing-report-schema", "npm:2.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -11047,7 +11048,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@hmcts/nodejs-healthcheck", "npm:1.8.0"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
             ["@hmcts/properties-volume", "npm:1.0.0"],\
-            ["@stryker-mutator/api", "npm:6.4.2"],\
+            ["@stryker-mutator/api", "npm:7.1.1"],\
             ["@stryker-mutator/core", "npm:5.6.1"],\
             ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.6.1"],\
             ["ajv", "npm:6.12.6"],\
@@ -13228,17 +13229,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:2.5.0", {\
-          "packageLocation": "./.yarn/cache/tslib-npm-2.5.0-bb364efebd-ae3ed5f9ce.zip/node_modules/tslib/",\
-          "packageDependencies": [\
-            ["tslib", "npm:2.5.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:2.6.0", {\
           "packageLocation": "./.yarn/cache/tslib-npm-2.6.0-4d336a6824-c01066038f.zip/node_modules/tslib/",\
           "packageDependencies": [\
             ["tslib", "npm:2.6.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.6.1", {\
+          "packageLocation": "./.yarn/cache/tslib-npm-2.6.1-de28eba753-b0d176d176.zip/node_modules/tslib/",\
+          "packageDependencies": [\
+            ["tslib", "npm:2.6.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -13350,6 +13351,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/typed-inject-npm-3.0.1-e51ce1df0d-a400797a42.zip/node_modules/typed-inject/",\
           "packageDependencies": [\
             ["typed-inject", "npm:3.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/typed-inject-npm-4.0.0-cda063a2ff-2181b4f50e.zip/node_modules/typed-inject/",\
+          "packageDependencies": [\
+            ["typed-inject", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
