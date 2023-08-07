@@ -6435,12 +6435,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:^23.2.7":
-  version: 23.2.7
-  resolution: "i18next@npm:23.2.7"
+"i18next@npm:^23.4.1":
+  version: 23.4.1
+  resolution: "i18next@npm:23.4.1"
   dependencies:
     "@babel/runtime": ^7.22.5
-  checksum: b5fdf0d7a8bda38fde39b5968fe637ccc22e7d2157f729008b4d34fb8474df93d82bcbdfabe51bf1286176669409aad3fe68b0934cadeb9f9b95f45ddf74fc79
+  checksum: d9283d3de5e4ea2e55f61bd8ada98b5aef1b7db35a69c8ccf193367c5cbee6f795a67c5cd8a7af511e56c12b021b91d97253863b6c2336726925d20518fb02cc
   languageName: node
   linkType: hard
 
@@ -9586,7 +9586,7 @@ __metadata:
     govuk-frontend: ^4.7.0
     helmet: ^3.23.3
     https-proxy-agent: ^5.0.1
-    i18next: ^23.2.7
+    i18next: ^23.4.1
     ioredis: ^5.3.2
     js-yaml: ^4.1.0
     jsonwebtoken: ^9.0.0
