@@ -1728,6 +1728,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@stryker-mutator/api@npm:7.1.1":
+  version: 7.1.1
+  resolution: "@stryker-mutator/api@npm:7.1.1"
+  dependencies:
+    mutation-testing-metrics: 2.0.1
+    mutation-testing-report-schema: 2.0.1
+    tslib: ~2.6.0
+    typed-inject: ~4.0.0
+  checksum: e70dea1da208455ca3e663add141fb0d3b3cf89300ffa686c9502bdf02f3b95bd0e835d9bbaa9975fe6ba9f4545f62968324a16e2161bb3d18fa8dea51cdb1e7
+  languageName: node
+  linkType: hard
+
 "@stryker-mutator/api@npm:^6.4.1":
   version: 6.4.2
   resolution: "@stryker-mutator/api@npm:6.4.2"
@@ -1796,18 +1808,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stryker-mutator/mocha-runner@npm:^5.6.1":
-  version: 5.6.1
-  resolution: "@stryker-mutator/mocha-runner@npm:5.6.1"
+"@stryker-mutator/mocha-runner@npm:^7.1.1":
+  version: 7.1.1
+  resolution: "@stryker-mutator/mocha-runner@npm:7.1.1"
   dependencies:
-    "@stryker-mutator/api": 5.6.1
-    "@stryker-mutator/util": 5.6.1
-    glob: ~7.2.0
-    tslib: ~2.3.0
+    "@stryker-mutator/api": 7.1.1
+    "@stryker-mutator/util": 7.1.1
+    tslib: ~2.6.0
   peerDependencies:
-    "@stryker-mutator/core": ~5.6.0
-    mocha: ">= 2.3.3 < 10"
-  checksum: 07ab8f2843862ae07e3bb6e5606ee3a143abbab301b1bf21129c0a02da5fa7db03c5e1ca01581f67cd079ee7c45d7eee5c13a2bdb24f5a65412373c3a068019a
+    "@stryker-mutator/core": ~7.1.0
+    mocha: ">= 7.2 < 11"
+  checksum: bd4f31a9e718dbe76dedad195777d37bf2ed83eb463cd50accfc39feaa4f2b90f18551934a67865c256f7fe81c371a799232e62871c8520c58ed6a5a852dc59c
   languageName: node
   linkType: hard
 
@@ -1817,6 +1828,15 @@ __metadata:
   dependencies:
     lodash.flatmap: ~4.5.0
   checksum: 7b0fef72c9b81cc15dbc1a3ce2a3a6c49d08fb325e33fa08a0306dbf1f7bac42bbedeab8098013e45ac57a1d95e35f65725cc51772bdabc6e5bb168522d060e3
+  languageName: node
+  linkType: hard
+
+"@stryker-mutator/util@npm:7.1.1":
+  version: 7.1.1
+  resolution: "@stryker-mutator/util@npm:7.1.1"
+  dependencies:
+    lodash.flatmap: ~4.5.0
+  checksum: ba2ddccef949c3dc49e776afa66c65f368b1022c5fc8cdd2df1593c93f1fca14597395c0608d85448e227e36238d33184ef14767531dc4c6ed19f0fde37589f6
   languageName: node
   linkType: hard
 
@@ -8434,6 +8454,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mutation-testing-metrics@npm:2.0.1":
+  version: 2.0.1
+  resolution: "mutation-testing-metrics@npm:2.0.1"
+  dependencies:
+    mutation-testing-report-schema: 2.0.1
+  checksum: 57feb4d38b7511d78d9ff1afce14e9aeaab55b22712c05b972aba3d5b80f487c6e24cc06a89d53a482d9638e85714ed5593ba228255f80f876c4f61af0b8d384
+  languageName: node
+  linkType: hard
+
 "mutation-testing-report-schema@npm:1.7.14":
   version: 1.7.14
   resolution: "mutation-testing-report-schema@npm:1.7.14"
@@ -8445,6 +8474,13 @@ __metadata:
   version: 1.7.8
   resolution: "mutation-testing-report-schema@npm:1.7.8"
   checksum: 6e3b3def81983ecf4f9c9a8e93e5c8b4af75ebde204a4312566bc9f49da27435aa75921e4246b356a5d95c0ebf619d0f79bea739ce40c487390e91a7c102754b
+  languageName: node
+  linkType: hard
+
+"mutation-testing-report-schema@npm:2.0.1":
+  version: 2.0.1
+  resolution: "mutation-testing-report-schema@npm:2.0.1"
+  checksum: 957e293fdf581ce8a388f3a8a2d3107ca864f4d385e6b20898ea6b3ada40b2ce98ca4e6893c4bb551d3f4b544a6dbf7d6000e2d1f10c9cff8fa7b2c4640fe506
   languageName: node
   linkType: hard
 
@@ -9562,7 +9598,7 @@ __metadata:
     "@hmcts/properties-volume": ^1.0.0
     "@stryker-mutator/api": ^6.4.1
     "@stryker-mutator/core": ^5.6.1
-    "@stryker-mutator/mocha-runner": ^5.6.1
+    "@stryker-mutator/mocha-runner": ^7.1.1
     ajv: ^6.12.6
     app: "link:./app"
     applicationinsights: ^2.7.0
@@ -11580,6 +11616,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tslib@npm:~2.6.0":
+  version: 2.6.1
+  resolution: "tslib@npm:2.6.1"
+  checksum: b0d176d176487905b66ae4d5856647df50e37beea7571c53b8d10ba9222c074b81f1410fb91da13debaf2cbc970663609068bdebafa844ea9d69b146527c38fe
+  languageName: node
+  linkType: hard
+
 "tsscmp@npm:1.0.6":
   version: 1.0.6
   resolution: "tsscmp@npm:1.0.6"
@@ -11675,6 +11718,13 @@ __metadata:
   version: 3.0.1
   resolution: "typed-inject@npm:3.0.1"
   checksum: a400797a42951bc46a38873e9be40fe90fdba6ae3362e2d4da4972c4ec48e962ff167bc5f090ca42dc20bb3f6063cd07a80426df520c64dc9e94d1e89ff4779e
+  languageName: node
+  linkType: hard
+
+"typed-inject@npm:~4.0.0":
+  version: 4.0.0
+  resolution: "typed-inject@npm:4.0.0"
+  checksum: 2181b4f50e77dfa42752a645057c85a2e20eaaad639e3ea059fde9596baf8bbc51bb6c2913b040b9103752480045eff1e7f09b10b6dc187b6525b5acccac4971
   languageName: node
   linkType: hard
 
