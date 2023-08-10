@@ -117,7 +117,7 @@
     "tslib": "^2.6.0",
     "watch": "^1.0.2",
     "webdriverio": "^8.13.4",
-    "yarn-audit-fix": "^9.3.2"
+    "yarn-audit-fix": "^10.0.0"
   },
   "resolutions": {
     "@opentelemetry/instrumentation": "^0.41.2"
