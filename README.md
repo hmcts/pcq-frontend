@@ -114,7 +114,7 @@ Add `content["list2-<service-name>"]` to the 2 unordered lists.
 If there are questions you want to be excluded from the questionnaire because they are irrelevant (such as asking someone if they are married when coming from the divorce app), 
 please see the [Journey README](app/journeys/README.md) for creating a service specific journey.
 
-### Token key
+### Token key 
 
 A new token key will need to be added in order to generate the token that authenticates the invoking service with PCQ.
 This key is shared with the invoking service.
