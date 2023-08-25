@@ -59,7 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["git-rev-sync", "npm:3.0.2"],\
             ["govuk-frontend", "npm:4.7.0"],\
             ["helmet", "npm:3.23.3"],\
-            ["https-proxy-agent", "npm:5.0.1"],\
+            ["https-proxy-agent", "npm:7.0.1"],\
             ["i18next", "npm:23.4.1"],\
             ["ioredis", "npm:5.3.2"],\
             ["js-yaml", "npm:4.1.0"],\
@@ -11433,7 +11433,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["git-rev-sync", "npm:3.0.2"],\
             ["govuk-frontend", "npm:4.7.0"],\
             ["helmet", "npm:3.23.3"],\
-            ["https-proxy-agent", "npm:5.0.1"],\
+            ["https-proxy-agent", "npm:7.0.1"],\
             ["i18next", "npm:23.4.1"],\
             ["ioredis", "npm:5.3.2"],\
             ["js-yaml", "npm:4.1.0"],\
