@@ -31,7 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/traverse", "npm:7.22.15"],\
             ["@babel/types", "npm:7.22.15"],\
             ["@hmcts/cookie-manager", "npm:1.0.0"],\
-            ["@hmcts/nodejs-healthcheck", "npm:1.8.0"],\
+            ["@hmcts/nodejs-healthcheck", "npm:1.8.3"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
             ["@hmcts/properties-volume", "npm:1.0.0"],\
             ["@stryker-mutator/api", "npm:6.4.2"],\
@@ -1496,10 +1496,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@hmcts/nodejs-healthcheck", [\
-        ["npm:1.8.0", {\
-          "packageLocation": "./.yarn/cache/@hmcts-nodejs-healthcheck-npm-1.8.0-e21336666f-8412f6a36b.zip/node_modules/@hmcts/nodejs-healthcheck/",\
+        ["npm:1.8.3", {\
+          "packageLocation": "./.yarn/cache/@hmcts-nodejs-healthcheck-npm-1.8.3-0b01c623ac-76f87a5a67.zip/node_modules/@hmcts/nodejs-healthcheck/",\
           "packageDependencies": [\
-            ["@hmcts/nodejs-healthcheck", "npm:1.8.0"],\
+            ["@hmcts/nodejs-healthcheck", "npm:1.8.3"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
             ["js-yaml", "npm:3.14.1"],\
             ["superagent", "npm:7.1.6"]\
@@ -10839,7 +10839,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/traverse", "npm:7.22.15"],\
             ["@babel/types", "npm:7.22.15"],\
             ["@hmcts/cookie-manager", "npm:1.0.0"],\
-            ["@hmcts/nodejs-healthcheck", "npm:1.8.0"],\
+            ["@hmcts/nodejs-healthcheck", "npm:1.8.3"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
             ["@hmcts/properties-volume", "npm:1.0.0"],\
             ["@stryker-mutator/api", "npm:6.4.2"],\
