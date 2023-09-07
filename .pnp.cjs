@@ -41,7 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["applicationinsights", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.7.0"],\
             ["body-parser", "npm:1.20.2"],\
-            ["chai", "npm:4.3.6"],\
+            ["chai", "npm:4.3.8"],\
             ["co", "npm:4.6.0"],\
             ["codeceptjs", "npm:3.5.4"],\
             ["codecov", "npm:4.0.0-0"],\
@@ -4035,13 +4035,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["chai", [\
-        ["npm:4.3.6", {\
-          "packageLocation": "./.yarn/cache/chai-npm-4.3.6-dba90e4b0b-acff93fd53.zip/node_modules/chai/",\
+        ["npm:4.3.8", {\
+          "packageLocation": "./.yarn/cache/chai-npm-4.3.8-d7c5b7ef2d-29e0984ed1.zip/node_modules/chai/",\
           "packageDependencies": [\
-            ["chai", "npm:4.3.6"],\
+            ["chai", "npm:4.3.8"],\
             ["assertion-error", "npm:1.1.0"],\
             ["check-error", "npm:1.0.2"],\
-            ["deep-eql", "npm:3.0.1"],\
+            ["deep-eql", "npm:4.1.3"],\
             ["get-func-name", "npm:2.0.0"],\
             ["loupe", "npm:2.3.4"],\
             ["pathval", "npm:1.1.1"],\
@@ -4063,7 +4063,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["chai-deep-match", "virtual:04e9fb14f74dda4d05535b62fc500042ac697bce03fd9d7267c217d880c1fc2434308e65bf169af0443436a038b86a53c99ca463e141e779f6e180afc99be687#npm:1.2.1"],\
             ["@types/chai", null],\
-            ["chai", "npm:4.3.6"],\
+            ["chai", "npm:4.3.8"],\
             ["deep-keys", "npm:0.5.0"],\
             ["lodash", "npm:4.17.21"],\
             ["lodash-pickdeep", "npm:1.0.2"]\
@@ -4430,7 +4430,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["acorn", "npm:8.10.0"],\
             ["arrify", "npm:2.0.1"],\
             ["axios", "npm:1.3.5"],\
-            ["chai", "npm:4.3.6"],\
+            ["chai", "npm:4.3.8"],\
             ["chai-deep-match", "virtual:04e9fb14f74dda4d05535b62fc500042ac697bce03fd9d7267c217d880c1fc2434308e65bf169af0443436a038b86a53c99ca463e141e779f6e180afc99be687#npm:1.2.1"],\
             ["chalk", "npm:4.1.2"],\
             ["commander", "npm:11.0.0"],\
@@ -5115,10 +5115,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["deep-eql", [\
-        ["npm:3.0.1", {\
-          "packageLocation": "./.yarn/cache/deep-eql-npm-3.0.1-9a66c09c65-4f4c9fb79e.zip/node_modules/deep-eql/",\
+        ["npm:4.1.3", {\
+          "packageLocation": "./.yarn/cache/deep-eql-npm-4.1.3-020a64f862-7f6d30cb41.zip/node_modules/deep-eql/",\
           "packageDependencies": [\
-            ["deep-eql", "npm:3.0.1"],\
+            ["deep-eql", "npm:4.1.3"],\
             ["type-detect", "npm:4.0.8"]\
           ],\
           "linkType": "HARD"\
@@ -10875,7 +10875,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["applicationinsights", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.7.0"],\
             ["body-parser", "npm:1.20.2"],\
-            ["chai", "npm:4.3.6"],\
+            ["chai", "npm:4.3.8"],\
             ["co", "npm:4.6.0"],\
             ["codeceptjs", "npm:3.5.4"],\
             ["codecov", "npm:4.0.0-0"],\
@@ -12097,7 +12097,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
             ["@types/chai", null],\
             ["@types/sinon", null],\
-            ["chai", "npm:4.3.6"],\
+            ["chai", "npm:4.3.8"],\
             ["sinon", "npm:15.2.0"]\
           ],\
           "packagePeers": [\
