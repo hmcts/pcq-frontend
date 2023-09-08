@@ -64,7 +64,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ioredis", "npm:5.3.2"],\
             ["js-yaml", "npm:4.1.0"],\
             ["jsonwebtoken", "npm:9.0.0"],\
-            ["launchdarkly-node-server-sdk", "npm:7.0.1"],\
+            ["launchdarkly-node-server-sdk", "npm:7.0.3"],\
             ["lodash", "npm:4.17.21"],\
             ["mocha", "npm:10.2.0"],\
             ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
@@ -8525,15 +8525,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["launchdarkly-node-server-sdk", [\
-        ["npm:7.0.1", {\
-          "packageLocation": "./.yarn/cache/launchdarkly-node-server-sdk-npm-7.0.1-43953b3c0e-83a24c6157.zip/node_modules/launchdarkly-node-server-sdk/",\
+        ["npm:7.0.3", {\
+          "packageLocation": "./.yarn/cache/launchdarkly-node-server-sdk-npm-7.0.3-68750c7918-d21b91ea88.zip/node_modules/launchdarkly-node-server-sdk/",\
           "packageDependencies": [\
-            ["launchdarkly-node-server-sdk", "npm:7.0.1"],\
+            ["launchdarkly-node-server-sdk", "npm:7.0.3"],\
             ["async", "npm:3.2.4"],\
             ["launchdarkly-eventsource", "npm:1.4.4"],\
             ["lru-cache", "npm:6.0.0"],\
             ["node-cache", "npm:5.1.2"],\
-            ["semver", "npm:7.3.8"],\
+            ["semver", "npm:7.5.4"],\
             ["tunnel", "npm:0.0.6"],\
             ["uuid", "npm:8.3.2"]\
           ],\
@@ -10858,7 +10858,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ioredis", "npm:5.3.2"],\
             ["js-yaml", "npm:4.1.0"],\
             ["jsonwebtoken", "npm:9.0.0"],\
-            ["launchdarkly-node-server-sdk", "npm:7.0.1"],\
+            ["launchdarkly-node-server-sdk", "npm:7.0.3"],\
             ["lodash", "npm:4.17.21"],\
             ["mocha", "npm:10.2.0"],\
             ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
