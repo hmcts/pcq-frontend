@@ -528,6 +528,10 @@
   "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/cookies?lng=%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E_GET": "ignore",
   "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/offline?lng=%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E_GET": "ignore",
   "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/privacy-policy?lng=%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E_GET": "ignore",
-  "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/terms-conditions?lng=%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E_GET": "ignore"
+  "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/terms-conditions?lng=%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E_GET": "ignore",
+  "10035_Strict-Transport-Security Header Not Set_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10273230728040645.js_GET": "ignore",
+  "10021_X-Content-Type-Options Header Missing_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10273230728040645.js_GET": "ignore",
+  "10027_Information Disclosure - Suspicious Comments_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10273230728040645.js_GET": "ignore"
+  
 }
   
