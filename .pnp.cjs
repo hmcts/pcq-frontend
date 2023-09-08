@@ -55,7 +55,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["express", "npm:4.18.1"],\
             ["express-session", "npm:1.17.3"],\
             ["express-urlrewrite", "npm:2.0.1"],\
-            ["fs-extra", "npm:11.1.0"],\
+            ["fs-extra", "npm:11.1.1"],\
             ["git-rev-sync", "npm:3.0.2"],\
             ["govuk-frontend", "npm:4.7.0"],\
             ["helmet", "npm:3.23.3"],\
@@ -6561,10 +6561,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:11.1.0", {\
-          "packageLocation": "./.yarn/cache/fs-extra-npm-11.1.0-2cd157426f-5ca476103f.zip/node_modules/fs-extra/",\
+        ["npm:11.1.1", {\
+          "packageLocation": "./.yarn/cache/fs-extra-npm-11.1.1-ca44602180-fb883c6824.zip/node_modules/fs-extra/",\
           "packageDependencies": [\
-            ["fs-extra", "npm:11.1.0"],\
+            ["fs-extra", "npm:11.1.1"],\
             ["graceful-fs", "npm:4.2.10"],\
             ["jsonfile", "npm:6.1.0"],\
             ["universalify", "npm:2.0.0"]\
@@ -10889,7 +10889,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["express", "npm:4.18.1"],\
             ["express-session", "npm:1.17.3"],\
             ["express-urlrewrite", "npm:2.0.1"],\
-            ["fs-extra", "npm:11.1.0"],\
+            ["fs-extra", "npm:11.1.1"],\
             ["git-rev-sync", "npm:3.0.2"],\
             ["govuk-frontend", "npm:4.7.0"],\
             ["helmet", "npm:3.23.3"],\
