@@ -89,7 +89,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sonarqube-scanner", "npm:3.1.0"],\
             ["supertest", "npm:6.3.3"],\
             ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
-            ["traverse", "npm:0.6.6"],\
+            ["traverse", "npm:0.6.7"],\
             ["tslib", "npm:2.6.2"],\
             ["uuid", "npm:3.4.0"],\
             ["watch", "npm:1.0.2"],\
@@ -10883,7 +10883,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sonarqube-scanner", "npm:3.1.0"],\
             ["supertest", "npm:6.3.3"],\
             ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
-            ["traverse", "npm:0.6.6"],\
+            ["traverse", "npm:0.6.7"],\
             ["tslib", "npm:2.6.2"],\
             ["uuid", "npm:3.4.0"],\
             ["watch", "npm:1.0.2"],\
@@ -12910,10 +12910,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:0.6.6", {\
-          "packageLocation": "./.yarn/cache/traverse-npm-0.6.6-584cfa4b5f-e2afa72f11.zip/node_modules/traverse/",\
+        ["npm:0.6.7", {\
+          "packageLocation": "./.yarn/cache/traverse-npm-0.6.7-542f9ebd45-21018085ab.zip/node_modules/traverse/",\
           "packageDependencies": [\
-            ["traverse", "npm:0.6.6"]\
+            ["traverse", "npm:0.6.7"]\
           ],\
           "linkType": "HARD"\
         }]\
