@@ -25,13 +25,6 @@ static LinkedHashMap<String, Object> secret(String secretName, String envVar) {
 
 withPipeline(type, product, component) {
 
-  onPR {
-    def githubApi = new GithubAPI(this)
-    if (!githubApi.getLabelsbyPattern(env.BRANCH_NAME, "keep-helm")) {
-        enableCleanupOfHelmReleaseOnSuccess()
-    }
-  }
-
   afterAlways('build') {
     sh 'yarn setup'
   }
