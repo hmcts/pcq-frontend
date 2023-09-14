@@ -641,6 +641,20 @@
                     "endPageTextCy" : "Y cam nesaf yw gwirio manylion eich achos.",
                     "shutterPageTextEn" : "We have saved your answers and will direct you back to your case now.",
                     "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl i'ch achos yn awr."
+                },
+                "applicant":
+                {
+                    "formData" :
+                    {
+                        "serviceId": "civil-citizen-ui",
+                        "actor" : "applicant"
+                    },
+                    "startPageTextEn" : "Your answers will not affect your case or be shared with anyone involved in your case.",
+                    "startPageTextCy" : "Ni fydd eich atebion yn effeithio eich achos ac ni fyddant yn cael eu rhannu gydag unrhyw un sy’n ymwneud â’ch achos.",
+                    "endPageTextEn" : "The next steps are to check your case details.",
+                    "endPageTextCy" : "Y cam nesaf yw gwirio manylion eich achos.",
+                    "shutterPageTextEn" : "We have saved your answers and will direct you back to your case now.",
+                    "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl i'ch achos yn awr."
                 }
             }
         }
