@@ -8,6 +8,17 @@
     },
     "shutterpage": {
       "paragraph1": "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl i'ch achos yn awr."
+    },
+    "applicant": {
+      "startpage": {
+        "paragraph2": "Ni fydd eich atebion yn effeithio eich achos ac ni fyddant yn cael eu rhannu gydag unrhyw un sy’n ymwneud â’ch achos."
+      },
+      "endpage": {
+        "paragraph1": "Y cam nesaf yw gwirio manylion eich achos."
+      },
+      "shutterpage": {
+        "paragraph1": "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl i'ch achos yn awr."
+      }
     }
   }
 }

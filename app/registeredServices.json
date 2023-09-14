@@ -131,7 +131,8 @@
   {
     "serviceId": "civil-citizen-ui",
     "actors": [
-      "RESPONDENT"
+      "RESPONDENT",
+      "APPLICANT"
     ]
   }
 ]

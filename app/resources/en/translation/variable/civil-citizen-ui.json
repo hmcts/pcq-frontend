@@ -9,5 +9,16 @@
     "shutterpage": {
       "paragraph1": "We have saved your answers and will direct you back to your case now."
     }
+  },
+  "applicant": {
+    "startpage": {
+      "paragraph2": "Your answers will not affect your case or be shared with anyone involved in your case."
+    },
+    "endpage": {
+      "paragraph1": "The next steps are to check your case details."
+    },
+    "shutterpage": {
+      "paragraph1": "We have saved your answers and will direct you back to your case now."
+    }
   }
 }
