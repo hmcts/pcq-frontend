@@ -426,10 +426,10 @@
                     {
                         "serviceId": "civil-citizen-ui",
                         "actor" : "applicant" ,
-                        "pcqId" : "478cb980-fa21-11ed-be56-0242ac120002",
-                        "ccdCaseId" : "5c00d284-fa21-11ed-be56-0242ac120002",
-                        "partyId" : "CivilCitizenUi_APPLICANT@test.gov.uk",
-                        "returnUrl" : "CivilCitizenUi_APPLICANT@test.gov.uk",
+                        "pcqId" : "78f32018-0827-416b-aeeb-e3fff0a0a328",
+                        "ccdCaseId" : "f5531e36-af47-48bc-9575-b1d78c4ed304",
+                        "partyId" : "civil-citizen-ui_APPLICANT@test.gov.uk",
+                        "returnUrl" : "civil-citizen-ui_APPLICANT.test.gov.uk",
                         "language" : "en",
                         "channel" : 2,
                         "redirect" : "Make a Money Claim"
