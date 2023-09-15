@@ -536,7 +536,7 @@
   "10049_Non-Storable Content_https://pcq.aat.platform.hmcts.net/terms-conditions_GET": "ignore",
   "10049_Storable and Cacheable Content_https://pcq.aat.platform.hmcts.net/assets/images/favicon.ico_GET": "ignore",
   "10049_Storable and Cacheable Content_https://pcq.aat.platform.hmcts.net/assets/images/govuk-mask-icon.svg_GET": "ignore",
-  "0049_Non-Storable Content_https://pcq.aat.platform.hmcts.net/offline?lng=cy_GET": "ignore",
+  "10049_Non-Storable Content_https://pcq.aat.platform.hmcts.net/offline?lng=cy_GET": "ignore",
   "10049_Non-Storable Content_https://pcq.aat.platform.hmcts.net/robots.txt_GET": "ignore",
   "10049_Storable and Cacheable Content_https://pcq.aat.platform.hmcts.net/assets/images/govuk-apple-touch-icon-167x167.png_GET": "ignore",
   "10049_Storable and Cacheable Content_https://pcq.aat.platform.hmcts.net/assets/images/govuk-apple-touch-icon-180x180.png_GET": "ignore"
