@@ -28,7 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["@babel/traverse", "npm:7.22.19"],\
+            ["@babel/traverse", "npm:7.22.20"],\
             ["@babel/types", "npm:7.22.19"],\
             ["@hmcts/cookie-manager", "npm:1.0.0"],\
             ["@hmcts/nodejs-healthcheck", "npm:1.8.3"],\
@@ -49,7 +49,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["connect-redis", "npm:5.2.0"],\
             ["cookie-parser", "npm:1.4.6"],\
             ["csurf", "npm:1.11.0"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["eslint", "npm:8.48.0"],\
             ["esmify", "npm:2.1.1"],\
             ["express", "npm:4.18.1"],\
@@ -423,10 +423,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/helpers", "npm:7.21.0"],\
             ["@babel/parser", "npm:7.21.3"],\
             ["@babel/template", "npm:7.20.7"],\
-            ["@babel/traverse", "npm:7.22.19"],\
+            ["@babel/traverse", "npm:7.22.20"],\
             ["@babel/types", "npm:7.22.19"],\
             ["convert-source-map", "npm:1.8.0"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["gensync", "npm:1.0.0-beta.2"],\
             ["json5", "npm:2.2.3"],\
             ["semver", "npm:6.3.0"],\
@@ -446,10 +446,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/helpers", "npm:7.18.9"],\
             ["@babel/parser", "npm:7.18.9"],\
             ["@babel/template", "npm:7.18.6"],\
-            ["@babel/traverse", "npm:7.22.19"],\
+            ["@babel/traverse", "npm:7.22.20"],\
             ["@babel/types", "npm:7.22.19"],\
             ["convert-source-map", "npm:1.8.0"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["gensync", "npm:1.0.0-beta.2"],\
             ["json5", "npm:2.2.1"],\
             ["semver", "npm:6.3.0"]\
@@ -600,10 +600,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:7.22.5", {\
-          "packageLocation": "./.yarn/cache/@babel-helper-environment-visitor-npm-7.22.5-7bc52eec61-248532077d.zip/node_modules/@babel/helper-environment-visitor/",\
+        ["npm:7.22.20", {\
+          "packageLocation": "./.yarn/cache/@babel-helper-environment-visitor-npm-7.22.20-260909e014-d80ee98ff6.zip/node_modules/@babel/helper-environment-visitor/",\
           "packageDependencies": [\
-            ["@babel/helper-environment-visitor", "npm:7.22.5"]\
+            ["@babel/helper-environment-visitor", "npm:7.22.20"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -677,7 +677,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/helper-split-export-declaration", "npm:7.18.6"],\
             ["@babel/helper-validator-identifier", "npm:7.18.6"],\
             ["@babel/template", "npm:7.18.6"],\
-            ["@babel/traverse", "npm:7.22.19"],\
+            ["@babel/traverse", "npm:7.22.20"],\
             ["@babel/types", "npm:7.22.19"]\
           ],\
           "linkType": "HARD"\
@@ -692,7 +692,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/helper-split-export-declaration", "npm:7.18.6"],\
             ["@babel/helper-validator-identifier", "npm:7.19.1"],\
             ["@babel/template", "npm:7.20.7"],\
-            ["@babel/traverse", "npm:7.22.19"],\
+            ["@babel/traverse", "npm:7.22.20"],\
             ["@babel/types", "npm:7.22.19"]\
           ],\
           "linkType": "HARD"\
@@ -733,7 +733,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/helper-member-expression-to-functions", "npm:7.20.7"],\
             ["@babel/helper-optimise-call-expression", "npm:7.18.6"],\
             ["@babel/template", "npm:7.20.7"],\
-            ["@babel/traverse", "npm:7.22.19"],\
+            ["@babel/traverse", "npm:7.22.20"],\
             ["@babel/types", "npm:7.22.19"]\
           ],\
           "linkType": "HARD"\
@@ -846,7 +846,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@babel/helpers", "npm:7.18.9"],\
             ["@babel/template", "npm:7.18.6"],\
-            ["@babel/traverse", "npm:7.22.19"],\
+            ["@babel/traverse", "npm:7.22.20"],\
             ["@babel/types", "npm:7.22.19"]\
           ],\
           "linkType": "HARD"\
@@ -856,7 +856,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@babel/helpers", "npm:7.21.0"],\
             ["@babel/template", "npm:7.20.7"],\
-            ["@babel/traverse", "npm:7.22.19"],\
+            ["@babel/traverse", "npm:7.22.20"],\
             ["@babel/types", "npm:7.22.19"]\
           ],\
           "linkType": "HARD"\
@@ -1262,19 +1262,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@babel/traverse", [\
-        ["npm:7.22.19", {\
-          "packageLocation": "./.yarn/cache/@babel-traverse-npm-7.22.19-9a451072b1-119154fdff.zip/node_modules/@babel/traverse/",\
+        ["npm:7.22.20", {\
+          "packageLocation": "./.yarn/cache/@babel-traverse-npm-7.22.20-72cf4b87a1-97da9afa7f.zip/node_modules/@babel/traverse/",\
           "packageDependencies": [\
-            ["@babel/traverse", "npm:7.22.19"],\
+            ["@babel/traverse", "npm:7.22.20"],\
             ["@babel/code-frame", "npm:7.22.13"],\
             ["@babel/generator", "npm:7.22.15"],\
-            ["@babel/helper-environment-visitor", "npm:7.22.5"],\
+            ["@babel/helper-environment-visitor", "npm:7.22.20"],\
             ["@babel/helper-function-name", "npm:7.22.5"],\
             ["@babel/helper-hoist-variables", "npm:7.22.5"],\
             ["@babel/helper-split-export-declaration", "npm:7.22.6"],\
             ["@babel/parser", "npm:7.22.16"],\
             ["@babel/types", "npm:7.22.19"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["globals", "npm:11.12.0"]\
           ],\
           "linkType": "HARD"\
@@ -1430,7 +1430,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@eslint/eslintrc", "npm:2.1.2"],\
             ["ajv", "npm:6.12.6"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["espree", "npm:9.6.0"],\
             ["globals", "npm:13.20.0"],\
             ["ignore", "npm:5.2.0"],\
@@ -1539,7 +1539,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@humanwhocodes/config-array", "npm:0.11.10"],\
             ["@humanwhocodes/object-schema", "npm:1.2.1"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["minimatch", "npm:3.1.2"]\
           ],\
           "linkType": "HARD"\
@@ -1937,7 +1937,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@puppeteer-browsers-npm-1.7.0-203cb4f44b-0a2aecc72f.zip/node_modules/@puppeteer/browsers/",\
           "packageDependencies": [\
             ["@puppeteer/browsers", "npm:1.7.0"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["extract-zip", "npm:2.0.1"],\
             ["progress", "npm:2.0.3"],\
             ["proxy-agent", "npm:6.3.0"],\
@@ -1952,7 +1952,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@puppeteer/browsers", "virtual:44dfd99b33c311daa4cd2cb36698b24997bd6ba7690b70f5d38386163946948e4af3c55c1a3635660ef87406ead2b1726e9f121c9ad5d425b10002a360cd61c3#npm:1.4.6"],\
             ["@types/typescript", null],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["extract-zip", "npm:2.0.1"],\
             ["progress", "npm:2.0.3"],\
             ["proxy-agent", "npm:6.3.0"],\
@@ -2916,7 +2916,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/agent-base-npm-6.0.2-428f325a93-f52b6872cc.zip/node_modules/agent-base/",\
           "packageDependencies": [\
             ["agent-base", "npm:6.0.2"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"]\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -2924,7 +2924,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/agent-base-npm-7.1.0-4b12ba5111-f7828f9914.zip/node_modules/agent-base/",\
           "packageDependencies": [\
             ["agent-base", "npm:7.1.0"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"]\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2934,7 +2934,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/agentkeepalive-npm-4.2.1-b86a9fb343-39cb49ed8c.zip/node_modules/agentkeepalive/",\
           "packageDependencies": [\
             ["agentkeepalive", "npm:4.2.1"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["depd", "npm:1.1.2"],\
             ["humanize-ms", "npm:1.2.1"]\
           ],\
@@ -5024,13 +5024,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["virtual:87db25c7c5e6b25bbc12571091cdabc648b79d427ab445d1714ccfdcdfb3265c9de6561ca760cc3de470037cbedf3af4be56ba3b684b3a1c01d4c9c2fd55a741#npm:4.3.4", {\
-          "packageLocation": "./.yarn/__virtual__/debug-virtual-762d08cbe9/0/cache/debug-npm-4.3.4-4513954577-3dbad3f94e.zip/node_modules/debug/",\
+        ["virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4", {\
+          "packageLocation": "./.yarn/__virtual__/debug-virtual-ec98ca3017/0/cache/debug-npm-4.3.4-4513954577-3dbad3f94e.zip/node_modules/debug/",\
           "packageDependencies": [\
-            ["debug", "virtual:87db25c7c5e6b25bbc12571091cdabc648b79d427ab445d1714ccfdcdfb3265c9de6561ca760cc3de470037cbedf3af4be56ba3b684b3a1c01d4c9c2fd55a741#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["@types/supports-color", null],\
             ["ms", "npm:2.1.2"],\
-            ["supports-color", "npm:8.1.1"]\
+            ["supports-color", null]\
           ],\
           "packagePeers": [\
             "@types/supports-color",\
@@ -5038,13 +5038,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4", {\
-          "packageLocation": "./.yarn/__virtual__/debug-virtual-96e0d7443f/0/cache/debug-npm-4.3.4-4513954577-3dbad3f94e.zip/node_modules/debug/",\
+        ["virtual:87db25c7c5e6b25bbc12571091cdabc648b79d427ab445d1714ccfdcdfb3265c9de6561ca760cc3de470037cbedf3af4be56ba3b684b3a1c01d4c9c2fd55a741#npm:4.3.4", {\
+          "packageLocation": "./.yarn/__virtual__/debug-virtual-762d08cbe9/0/cache/debug-npm-4.3.4-4513954577-3dbad3f94e.zip/node_modules/debug/",\
           "packageDependencies": [\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:87db25c7c5e6b25bbc12571091cdabc648b79d427ab445d1714ccfdcdfb3265c9de6561ca760cc3de470037cbedf3af4be56ba3b684b3a1c01d4c9c2fd55a741#npm:4.3.4"],\
             ["@types/supports-color", null],\
             ["ms", "npm:2.1.2"],\
-            ["supports-color", null]\
+            ["supports-color", "npm:8.1.1"]\
           ],\
           "packagePeers": [\
             "@types/supports-color",\
@@ -5741,7 +5741,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ajv", "npm:6.12.6"],\
             ["chalk", "npm:4.1.2"],\
             ["cross-spawn", "npm:7.0.3"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["doctrine", "npm:3.0.0"],\
             ["escape-string-regexp", "npm:4.0.0"],\
             ["eslint-scope", "npm:7.2.2"],\
@@ -5785,7 +5785,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ajv", "npm:6.12.6"],\
             ["chalk", "npm:4.1.2"],\
             ["cross-spawn", "npm:7.0.3"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["doctrine", "npm:3.0.0"],\
             ["escape-string-regexp", "npm:4.0.0"],\
             ["eslint-scope", "npm:7.2.2"],\
@@ -6055,7 +6055,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/express-urlrewrite-npm-2.0.1-98b1099210-9a67bf2141.zip/node_modules/express-urlrewrite/",\
           "packageDependencies": [\
             ["express-urlrewrite", "npm:2.0.1"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["path-to-regexp", "npm:6.2.1"]\
           ],\
           "linkType": "HARD"\
@@ -6089,7 +6089,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["extract-zip", "npm:2.0.1"],\
             ["@types/yauzl", "npm:2.10.0"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["get-stream", "npm:5.2.0"],\
             ["yauzl", "npm:2.10.0"]\
           ],\
@@ -6785,7 +6785,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["get-uri", "npm:6.0.1"],\
             ["basic-ftp", "npm:5.0.3"],\
             ["data-uri-to-buffer", "npm:5.0.1"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["fs-extra", "npm:8.1.0"]\
           ],\
           "linkType": "HARD"\
@@ -7368,7 +7368,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["http-proxy-agent", "npm:4.0.1"],\
             ["@tootallnate/once", "npm:1.1.2"],\
             ["agent-base", "npm:6.0.2"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"]\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -7378,7 +7378,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["http-proxy-agent", "npm:5.0.0"],\
             ["@tootallnate/once", "npm:2.0.0"],\
             ["agent-base", "npm:6.0.2"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"]\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -7387,7 +7387,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["http-proxy-agent", "npm:7.0.0"],\
             ["agent-base", "npm:7.1.0"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"]\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7409,7 +7409,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["https-proxy-agent", "npm:5.0.1"],\
             ["agent-base", "npm:6.0.2"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"]\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -7418,7 +7418,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["https-proxy-agent", "npm:7.0.1"],\
             ["agent-base", "npm:7.1.0"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"]\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7674,7 +7674,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ioredis", "npm:5.3.2"],\
             ["@ioredis/commands", "npm:1.2.0"],\
             ["cluster-key-slot", "npm:1.1.0"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["denque", "npm:2.1.0"],\
             ["lodash.defaults", "npm:4.2.0"],\
             ["lodash.isarguments", "npm:3.1.0"],\
@@ -8199,7 +8199,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/istanbul-lib-source-maps-npm-4.0.1-af0f859df7-21ad3df45d.zip/node_modules/istanbul-lib-source-maps/",\
           "packageDependencies": [\
             ["istanbul-lib-source-maps", "npm:4.0.1"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["istanbul-lib-coverage", "npm:3.2.0"],\
             ["source-map", "npm:0.6.1"]\
           ],\
@@ -8804,7 +8804,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["log4js", "npm:6.4.7"],\
             ["date-format", "npm:4.0.14"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["flatted", "npm:3.2.7"],\
             ["rfdc", "npm:1.3.0"],\
             ["streamroller", "npm:3.1.5"]\
@@ -9699,7 +9699,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/nock-npm-13.3.3-37a69da40c-e3e4f0fb77.zip/node_modules/nock/",\
           "packageDependencies": [\
             ["nock", "npm:13.3.3"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["json-stringify-safe", "npm:5.0.1"],\
             ["lodash", "npm:4.17.21"],\
             ["propagate", "npm:2.0.1"]\
@@ -10435,7 +10435,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pac-proxy-agent", "npm:7.0.0"],\
             ["@tootallnate/quickjs-emscripten", "npm:0.23.0"],\
             ["agent-base", "npm:7.1.0"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["get-uri", "npm:6.0.1"],\
             ["http-proxy-agent", "npm:7.0.0"],\
             ["https-proxy-agent", "npm:7.0.1"],\
@@ -10822,7 +10822,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["protected-characteristics-frontend", "workspace:."],\
-            ["@babel/traverse", "npm:7.22.19"],\
+            ["@babel/traverse", "npm:7.22.20"],\
             ["@babel/types", "npm:7.22.19"],\
             ["@hmcts/cookie-manager", "npm:1.0.0"],\
             ["@hmcts/nodejs-healthcheck", "npm:1.8.3"],\
@@ -10843,7 +10843,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["connect-redis", "npm:5.2.0"],\
             ["cookie-parser", "npm:1.4.6"],\
             ["csurf", "npm:1.11.0"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["eslint", "npm:8.48.0"],\
             ["esmify", "npm:2.1.1"],\
             ["express", "npm:4.18.1"],\
@@ -10921,7 +10921,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["proxy-agent", "npm:6.3.0"],\
             ["agent-base", "npm:7.1.0"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["http-proxy-agent", "npm:7.0.0"],\
             ["https-proxy-agent", "npm:7.0.1"],\
             ["lru-cache", "npm:7.18.3"],\
@@ -10996,7 +10996,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/unplugged/puppeteer-npm-9.1.1-e9a012ddd7/node_modules/puppeteer/",\
           "packageDependencies": [\
             ["puppeteer", "npm:9.1.1"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["devtools-protocol", "npm:0.0.869402"],\
             ["extract-zip", "npm:2.0.1"],\
             ["https-proxy-agent", "npm:5.0.1"],\
@@ -11028,7 +11028,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/typescript", null],\
             ["chromium-bidi", "virtual:44dfd99b33c311daa4cd2cb36698b24997bd6ba7690b70f5d38386163946948e4af3c55c1a3635660ef87406ead2b1726e9f121c9ad5d425b10002a360cd61c3#npm:0.4.16"],\
             ["cross-fetch", "npm:4.0.0"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["devtools-protocol", "npm:0.0.1147663"],\
             ["typescript", null],\
             ["ws", "virtual:719c0dda9891b0026e6452d350b81bda23b4a0c76e4b2386ba204362f89a0382f1cf0263fe5ab60c7209f4774d090fdd374b97637759192bf32a7953d83b49f1#npm:8.13.0"]\
@@ -11424,7 +11424,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/require-in-the-middle-npm-7.2.0-80b6fc7498-5ed219d12a.zip/node_modules/require-in-the-middle/",\
           "packageDependencies": [\
             ["require-in-the-middle", "npm:7.2.0"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["module-details-from-path", "npm:1.0.3"],\
             ["resolve", "patch:resolve@npm%3A1.22.3#~builtin<compat/resolve>::version=1.22.3&hash=c3c19d"]\
           ],\
@@ -12132,7 +12132,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["socks-proxy-agent", "npm:6.2.1"],\
             ["agent-base", "npm:6.0.2"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["socks", "npm:2.7.0"]\
           ],\
           "linkType": "HARD"\
@@ -12142,7 +12142,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["socks-proxy-agent", "npm:7.0.0"],\
             ["agent-base", "npm:6.0.2"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["socks", "npm:2.7.0"]\
           ],\
           "linkType": "HARD"\
@@ -12152,7 +12152,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["socks-proxy-agent", "npm:8.0.1"],\
             ["agent-base", "npm:7.1.0"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["socks", "npm:2.7.1"]\
           ],\
           "linkType": "HARD"\
@@ -12385,7 +12385,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["streamroller", "npm:3.1.5"],\
             ["date-format", "npm:4.0.14"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["fs-extra", "npm:8.1.0"]\
           ],\
           "linkType": "HARD"\
@@ -12537,7 +12537,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["superagent", "npm:7.1.6"],\
             ["component-emitter", "npm:1.3.0"],\
             ["cookiejar", "npm:2.1.4"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["fast-safe-stringify", "npm:2.1.1"],\
             ["form-data", "npm:4.0.0"],\
             ["formidable", "npm:2.0.1"],\
@@ -12555,7 +12555,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["superagent", "npm:8.0.9"],\
             ["component-emitter", "npm:1.3.0"],\
             ["cookiejar", "npm:2.1.4"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"],\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"],\
             ["fast-safe-stringify", "npm:2.1.1"],\
             ["form-data", "npm:4.0.0"],\
             ["formidable", "npm:2.1.2"],\
@@ -13440,7 +13440,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["wait-port", "npm:1.0.4"],\
             ["chalk", "npm:4.1.2"],\
             ["commander", "npm:9.4.0"],\
-            ["debug", "virtual:9a451072b16f90f964df1193d8c9b0efb8cda1641e56ad43c207449c3775d82fadfedce7bf33dd5a08a86e409e3e63b24771e01112b61e846d710a2870ca84d9#npm:4.3.4"]\
+            ["debug", "virtual:72cf4b87a119309db526d8a999aabadaaefa571c6f516a993f7ea2866552916d3e380a275156714cfdc270f48325b11cffeb3a050bfc46a315e4a93d48b1293d#npm:4.3.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -15666,7 +15666,7 @@ const DEFAULT_COMPRESSION_LEVEL = `mixed`;
 function toUnixTimestamp(time) {
   if (typeof time === `string` && String(+time) === time)
     return +time;
-  if (Number.isFinite(time)) {
+  if (typeof time === `number` && Number.isFinite(time)) {
     if (time < 0) {
       return Date.now() / 1e3;
     } else {
@@ -15818,6 +15818,10 @@ class ZipFS extends BasePortableFakeFS {
     this.prepareClose();
     if (!this.lzSource)
       throw new Error(`ZipFS was not created from a Buffer`);
+    if (this.entries.size === 0) {
+      this.discardAndClose();
+      return makeEmptyArchive();
+    }
     try {
       this.libzip.source.keep(this.lzSource);
       if (this.libzip.close(this.zip) === -1)
@@ -16244,7 +16248,7 @@ class ZipFS extends BasePortableFakeFS {
       resolvedP = ppath.resolve(parentP, ppath.basename(resolvedP));
       if (!resolveLastComponent || this.symlinkCount === 0)
         break;
-      const index = this.libzip.name.locate(this.zip, resolvedP.slice(1));
+      const index = this.libzip.name.locate(this.zip, resolvedP.slice(1), 0);
       if (index === -1)
         break;
       if (this.isSymbolicLink(index)) {
@@ -16269,7 +16273,7 @@ class ZipFS extends BasePortableFakeFS {
   allocateUnattachedSource(content) {
     const error = this.libzip.struct.errorS();
     const { buffer, byteLength } = this.allocateBuffer(content);
-    const source = this.libzip.source.fromUnattachedBuffer(buffer, byteLength, 0, true, error);
+    const source = this.libzip.source.fromUnattachedBuffer(buffer, byteLength, 0, 1, error);
     if (source === 0) {
       this.libzip.free(error);
       throw this.makeLibzipError(error);
@@ -16278,7 +16282,7 @@ class ZipFS extends BasePortableFakeFS {
   }
   allocateSource(content) {
     const { buffer, byteLength } = this.allocateBuffer(content);
-    const source = this.libzip.source.fromBuffer(this.zip, buffer, byteLength, 0, true);
+    const source = this.libzip.source.fromBuffer(this.zip, buffer, byteLength, 0, 1);
     if (source === 0) {
       this.libzip.free(buffer);
       throw this.makeLibzipError(this.libzip.getError(this.zip));
@@ -22712,7 +22716,7 @@ const makeInterface = (libzip) => ({
     locate: libzip.cwrap(`zip_name_locate`, `number`, [`number`, `string`, `number`])
   },
   source: {
-    fromUnattachedBuffer: libzip.cwrap(`zip_source_buffer_create`, `number`, [`number`, `number`, `number`, `number`]),
+    fromUnattachedBuffer: libzip.cwrap(`zip_source_buffer_create`, `number`, [`number`, ...number64, `number`, `number`]),
     fromBuffer: libzip.cwrap(`zip_source_buffer`, `number`, [`number`, `number`, ...number64, `number`]),
     free: libzip.cwrap(`zip_source_free`, null, [`number`]),
     keep: libzip.cwrap(`zip_source_keep`, null, [`number`]),
@@ -22799,7 +22803,7 @@ function getPathForDisplay(p) {
 }
 
 const [major, minor] = process.versions.node.split(`.`).map((value) => parseInt(value, 10));
-const WATCH_MODE_MESSAGE_USES_ARRAYS = major > 19 || major === 19 && minor >= 2;
+const WATCH_MODE_MESSAGE_USES_ARRAYS = major > 19 || major === 19 && minor >= 2 || major === 18 && minor >= 13;
 
 const builtinModules = new Set(require$$0.Module.builtinModules || Object.keys(process.binding(`natives`)));
 const isBuiltinModule = (request) => request.startsWith(`node:`) || builtinModules.has(request);
@@ -22849,7 +22853,6 @@ function reportRequiredFilesToWatchMode(files) {
 }
 
 function applyPatch(pnpapi, opts) {
-  const defaultCache = {};
   let enableNativeHooks = true;
   process.versions.pnp = String(pnpapi.VERSIONS.std);
   const moduleExports = require$$0__default.default;
@@ -22869,62 +22872,13 @@ function applyPatch(pnpapi, opts) {
   }
   const originalModuleLoad = require$$0.Module._load;
   require$$0.Module._load = function(request, parent, isMain) {
-    if (!enableNativeHooks)
-      return originalModuleLoad.call(require$$0.Module, request, parent, isMain);
-    if (isBuiltinModule(request)) {
-      try {
-        enableNativeHooks = false;
-        return originalModuleLoad.call(require$$0.Module, request, parent, isMain);
-      } finally {
-        enableNativeHooks = true;
+    if (request === `pnpapi`) {
+      const parentApiPath = opts.manager.getApiPathFromParent(parent);
+      if (parentApiPath) {
+        return opts.manager.getApiEntry(parentApiPath, true).instance;
       }
     }
-    const parentApiPath = opts.manager.getApiPathFromParent(parent);
-    const parentApi = parentApiPath !== null ? opts.manager.getApiEntry(parentApiPath, true).instance : null;
-    if (parentApi === null)
-      return originalModuleLoad(request, parent, isMain);
-    if (request === `pnpapi`)
-      return parentApi;
-    const modulePath = require$$0.Module._resolveFilename(request, parent, isMain);
-    const isOwnedByRuntime = parentApi !== null ? parentApi.findPackageLocator(modulePath) !== null : false;
-    const moduleApiPath = isOwnedByRuntime ? parentApiPath : opts.manager.findApiPathFor(npath.dirname(modulePath));
-    const entry = moduleApiPath !== null ? opts.manager.getApiEntry(moduleApiPath) : { instance: null, cache: defaultCache };
-    const cacheEntry = entry.cache[modulePath];
-    if (cacheEntry) {
-      if (cacheEntry.loaded === false && cacheEntry.isLoading !== true) {
-        try {
-          cacheEntry.isLoading = true;
-          if (isMain) {
-            process.mainModule = cacheEntry;
-            cacheEntry.id = `.`;
-          }
-          cacheEntry.load(modulePath);
-        } finally {
-          cacheEntry.isLoading = false;
-        }
-      }
-      return cacheEntry.exports;
-    }
-    const module = new require$$0.Module(modulePath, parent != null ? parent : void 0);
-    module.pnpApiPath = moduleApiPath;
-    reportRequiredFilesToWatchMode([modulePath]);
-    entry.cache[modulePath] = module;
-    if (isMain) {
-      process.mainModule = module;
-      module.id = `.`;
-    }
-    let hasThrown = true;
-    try {
-      module.isLoading = true;
-      module.load(modulePath);
-      hasThrown = false;
-    } finally {
-      module.isLoading = false;
-      if (hasThrown) {
-        delete require$$0.Module._cache[modulePath];
-      }
-    }
-    return module.exports;
+    return originalModuleLoad.call(require$$0.Module, request, parent, isMain);
   };
   function getIssuerSpecsFromPaths(paths) {
     return paths.map((path) => ({
@@ -22992,7 +22946,7 @@ function applyPatch(pnpapi, opts) {
       const parentDirectory = (parent == null ? void 0 : parent.filename) != null ? npath.dirname(parent.filename) : null;
       const absoluteRequest = npath.isAbsolute(request) ? request : parentDirectory !== null ? npath.resolve(parentDirectory, request) : null;
       if (absoluteRequest !== null) {
-        const apiPath = parentDirectory === npath.dirname(absoluteRequest) && (parent == null ? void 0 : parent.pnpApiPath) ? parent.pnpApiPath : opts.manager.findApiPathFor(absoluteRequest);
+        const apiPath = parent && parentDirectory === npath.dirname(absoluteRequest) ? opts.manager.getApiPathFromParent(parent) : opts.manager.findApiPathFor(absoluteRequest);
         if (apiPath !== null) {
           issuerSpecs.unshift({
             apiPath,
@@ -23151,118 +23105,6 @@ function hydrateRuntimeState(data, { basePath }) {
   };
 }
 
-/**
- * @param {object} exports
- * @param {Set<string>} keys
- */
-function loop(exports, keys) {
-	if (typeof exports === 'string') {
-		return exports;
-	}
-
-	if (exports) {
-		let idx, tmp;
-		if (Array.isArray(exports)) {
-			for (idx=0; idx < exports.length; idx++) {
-				if (tmp = loop(exports[idx], keys)) return tmp;
-			}
-		} else {
-			for (idx in exports) {
-				if (keys.has(idx)) {
-					return loop(exports[idx], keys);
-				}
-			}
-		}
-	}
-}
-
-/**
- * @param {string} name The package name
- * @param {string} entry The target entry, eg "."
- * @param {number} [condition] Unmatched condition?
- */
-function bail(name, entry, condition) {
-	throw new Error(
-		condition
-		? `No known conditions for "${entry}" entry in "${name}" package`
-		: `Missing "${entry}" export in "${name}" package`
-	);
-}
-
-/**
- * @param {string} name the package name
- * @param {string} entry the target path/import
- */
-function toName(name, entry) {
-	return entry === name ? '.'
-		: entry[0] === '.' ? entry
-		: entry.replace(new RegExp('^' + name + '\/'), './');
-}
-
-/**
- * @param {object} pkg package.json contents
- * @param {string} [entry] entry name or import path
- * @param {object} [options]
- * @param {boolean} [options.browser]
- * @param {boolean} [options.require]
- * @param {string[]} [options.conditions]
- * @param {boolean} [options.unsafe]
- */
-function resolve(pkg, entry='.', options={}) {
-	let { name, exports } = pkg;
-
-	if (exports) {
-		let { browser, require, unsafe, conditions=[] } = options;
-
-		let target = toName(name, entry);
-		if (target[0] !== '.') target = './' + target;
-
-		if (typeof exports === 'string') {
-			return target === '.' ? exports : bail(name, target);
-		}
-
-		let allows = new Set(['default', ...conditions]);
-		unsafe || allows.add(require ? 'require' : 'import');
-		unsafe || allows.add(browser ? 'browser' : 'node');
-
-		let key, tmp, isSingle=false;
-
-		for (key in exports) {
-			isSingle = key[0] !== '.';
-			break;
-		}
-
-		if (isSingle) {
-			return target === '.'
-				? loop(exports, allows) || bail(name, target, 1)
-				: bail(name, target);
-		}
-
-		if (tmp = exports[target]) {
-			return loop(tmp, allows) || bail(name, target, 1);
-		}
-
-		for (key in exports) {
-			tmp = key[key.length - 1];
-			if (tmp === '/' && target.startsWith(key)) {
-				return (tmp = loop(exports[key], allows))
-					? (tmp + target.substring(key.length))
-					: bail(name, target, 1);
-			}
-			if (tmp === '*' && target.startsWith(key.slice(0, -1))) {
-				// do not trigger if no *content* to inject
-				if (target.substring(key.length - 1).length > 0) {
-					return (tmp = loop(exports[key], allows))
-						? tmp.replace('*', target.substring(key.length - 1))
-						: bail(name, target, 1);
-				}
-			}
-		}
-
-		return bail(name, target);
-	}
-}
-
 const ArrayIsArray = Array.isArray;
 const JSONStringify = JSON.stringify;
 const ObjectGetOwnPropertyNames = Object.getOwnPropertyNames;
@@ -23320,6 +23162,15 @@ const ERR_INVALID_PACKAGE_CONFIG = createErrorType(
   `ERR_INVALID_PACKAGE_CONFIG`,
   (path, base, message) => {
     return `Invalid package config ${path}${base ? ` while importing ${base}` : ``}${message ? `. ${message}` : ``}`;
+  },
+  Error
+);
+const ERR_PACKAGE_PATH_NOT_EXPORTED = createErrorType(
+  "ERR_PACKAGE_PATH_NOT_EXPORTED",
+  (pkgPath, subpath, base = void 0) => {
+    if (subpath === ".")
+      return `No "exports" main defined in ${pkgPath}package.json${base ? ` imported from ${base}` : ""}`;
+    return `Package subpath '${subpath}' is not defined by "exports" in ${pkgPath}package.json${base ? ` imported from ${base}` : ""}`;
   },
   Error
 );
@@ -23642,12 +23493,121 @@ function patternKeyCompare(a, b) {
     return 1;
   return 0;
 }
-function packageImportsResolve({
-  name,
+function isConditionalExportsMainSugar(exports, packageJSONUrl, base) {
+  if (typeof exports === "string" || ArrayIsArray(exports))
+    return true;
+  if (typeof exports !== "object" || exports === null)
+    return false;
+  const keys = ObjectGetOwnPropertyNames(exports);
+  let isConditionalSugar = false;
+  let i = 0;
+  for (let j = 0; j < keys.length; j++) {
+    const key = keys[j];
+    const curIsConditionalSugar = key === "" || key[0] !== ".";
+    if (i++ === 0) {
+      isConditionalSugar = curIsConditionalSugar;
+    } else if (isConditionalSugar !== curIsConditionalSugar) {
+      throw new ERR_INVALID_PACKAGE_CONFIG(
+        url.fileURLToPath(packageJSONUrl),
+        base,
+        `"exports" cannot contain some keys starting with '.' and some not. The exports object must either be an object of package subpath keys or an object of main entry condition name keys only.`
+      );
+    }
+  }
+  return isConditionalSugar;
+}
+function throwExportsNotFound(subpath, packageJSONUrl, base) {
+  throw new ERR_PACKAGE_PATH_NOT_EXPORTED(
+    url.fileURLToPath(new URL(".", packageJSONUrl)),
+    subpath,
+    base && url.fileURLToPath(base)
+  );
+}
+const emittedPackageWarnings = /* @__PURE__ */ new Set();
+function emitTrailingSlashPatternDeprecation(match, pjsonUrl, base) {
+  const pjsonPath = url.fileURLToPath(pjsonUrl);
+  if (emittedPackageWarnings.has(pjsonPath + "|" + match))
+    return;
+  emittedPackageWarnings.add(pjsonPath + "|" + match);
+  process.emitWarning(
+    `Use of deprecated trailing slash pattern mapping "${match}" in the "exports" field module resolution of the package at ${pjsonPath}${base ? ` imported from ${url.fileURLToPath(base)}` : ""}. Mapping specifiers ending in "/" is no longer supported.`,
+    "DeprecationWarning",
+    "DEP0155"
+  );
+}
+function packageExportsResolve({
+  packageJSONUrl,
+  packageSubpath,
+  exports,
   base,
-  conditions,
-  readFileSyncFn
+  conditions
 }) {
+  if (isConditionalExportsMainSugar(exports, packageJSONUrl, base))
+    exports = { ".": exports };
+  if (ObjectPrototypeHasOwnProperty(exports, packageSubpath) && !StringPrototypeIncludes(packageSubpath, "*") && !StringPrototypeEndsWith(packageSubpath, "/")) {
+    const target = exports[packageSubpath];
+    const resolveResult = resolvePackageTarget(
+      packageJSONUrl,
+      target,
+      "",
+      packageSubpath,
+      base,
+      false,
+      false,
+      conditions
+    );
+    if (resolveResult == null) {
+      throwExportsNotFound(packageSubpath, packageJSONUrl, base);
+    }
+    return resolveResult;
+  }
+  let bestMatch = "";
+  let bestMatchSubpath;
+  const keys = ObjectGetOwnPropertyNames(exports);
+  for (let i = 0; i < keys.length; i++) {
+    const key = keys[i];
+    const patternIndex = StringPrototypeIndexOf(key, "*");
+    if (patternIndex !== -1 && StringPrototypeStartsWith(
+      packageSubpath,
+      StringPrototypeSlice(key, 0, patternIndex)
+    )) {
+      if (StringPrototypeEndsWith(packageSubpath, "/"))
+        emitTrailingSlashPatternDeprecation(
+          packageSubpath,
+          packageJSONUrl,
+          base
+        );
+      const patternTrailer = StringPrototypeSlice(key, patternIndex + 1);
+      if (packageSubpath.length >= key.length && StringPrototypeEndsWith(packageSubpath, patternTrailer) && patternKeyCompare(bestMatch, key) === 1 && StringPrototypeLastIndexOf(key, "*") === patternIndex) {
+        bestMatch = key;
+        bestMatchSubpath = StringPrototypeSlice(
+          packageSubpath,
+          patternIndex,
+          packageSubpath.length - patternTrailer.length
+        );
+      }
+    }
+  }
+  if (bestMatch) {
+    const target = exports[bestMatch];
+    const resolveResult = resolvePackageTarget(
+      packageJSONUrl,
+      target,
+      bestMatchSubpath,
+      bestMatch,
+      base,
+      true,
+      false,
+      conditions
+    );
+    if (resolveResult == null) {
+      throwExportsNotFound(packageSubpath, packageJSONUrl, base);
+    }
+    return resolveResult;
+  }
+  throwExportsNotFound(packageSubpath, packageJSONUrl, base);
+}
+function packageImportsResolve({ name, base, conditions, readFileSyncFn }) {
   if (name === "#" || StringPrototypeStartsWith(name, "#/") || StringPrototypeEndsWith(name, "/")) {
     const reason = "is not a valid internal imports specifier name";
     throw new ERR_INVALID_MODULE_SPECIFIER(name, reason, url.fileURLToPath(base));
@@ -23714,6 +23674,291 @@ function packageImportsResolve({
     }
   }
   throwImportNotDefined(name, packageJSONUrl, base);
+}
+
+const flagSymbol = Symbol('arg flag');
+
+class ArgError extends Error {
+	constructor(msg, code) {
+		super(msg);
+		this.name = 'ArgError';
+		this.code = code;
+
+		Object.setPrototypeOf(this, ArgError.prototype);
+	}
+}
+
+function arg(
+	opts,
+	{
+		argv = process.argv.slice(2),
+		permissive = false,
+		stopAtPositional = false
+	} = {}
+) {
+	if (!opts) {
+		throw new ArgError(
+			'argument specification object is required',
+			'ARG_CONFIG_NO_SPEC'
+		);
+	}
+
+	const result = { _: [] };
+
+	const aliases = {};
+	const handlers = {};
+
+	for (const key of Object.keys(opts)) {
+		if (!key) {
+			throw new ArgError(
+				'argument key cannot be an empty string',
+				'ARG_CONFIG_EMPTY_KEY'
+			);
+		}
+
+		if (key[0] !== '-') {
+			throw new ArgError(
+				`argument key must start with '-' but found: '${key}'`,
+				'ARG_CONFIG_NONOPT_KEY'
+			);
+		}
+
+		if (key.length === 1) {
+			throw new ArgError(
+				`argument key must have a name; singular '-' keys are not allowed: ${key}`,
+				'ARG_CONFIG_NONAME_KEY'
+			);
+		}
+
+		if (typeof opts[key] === 'string') {
+			aliases[key] = opts[key];
+			continue;
+		}
+
+		let type = opts[key];
+		let isFlag = false;
+
+		if (
+			Array.isArray(type) &&
+			type.length === 1 &&
+			typeof type[0] === 'function'
+		) {
+			const [fn] = type;
+			type = (value, name, prev = []) => {
+				prev.push(fn(value, name, prev[prev.length - 1]));
+				return prev;
+			};
+			isFlag = fn === Boolean || fn[flagSymbol] === true;
+		} else if (typeof type === 'function') {
+			isFlag = type === Boolean || type[flagSymbol] === true;
+		} else {
+			throw new ArgError(
+				`type missing or not a function or valid array type: ${key}`,
+				'ARG_CONFIG_VAD_TYPE'
+			);
+		}
+
+		if (key[1] !== '-' && key.length > 2) {
+			throw new ArgError(
+				`short argument keys (with a single hyphen) must have only one character: ${key}`,
+				'ARG_CONFIG_SHORTOPT_TOOLONG'
+			);
+		}
+
+		handlers[key] = [type, isFlag];
+	}
+
+	for (let i = 0, len = argv.length; i < len; i++) {
+		const wholeArg = argv[i];
+
+		if (stopAtPositional && result._.length > 0) {
+			result._ = result._.concat(argv.slice(i));
+			break;
+		}
+
+		if (wholeArg === '--') {
+			result._ = result._.concat(argv.slice(i + 1));
+			break;
+		}
+
+		if (wholeArg.length > 1 && wholeArg[0] === '-') {
+			/* eslint-disable operator-linebreak */
+			const separatedArguments =
+				wholeArg[1] === '-' || wholeArg.length === 2
+					? [wholeArg]
+					: wholeArg
+							.slice(1)
+							.split('')
+							.map((a) => `-${a}`);
+			/* eslint-enable operator-linebreak */
+
+			for (let j = 0; j < separatedArguments.length; j++) {
+				const arg = separatedArguments[j];
+				const [originalArgName, argStr] =
+					arg[1] === '-' ? arg.split(/=(.*)/, 2) : [arg, undefined];
+
+				let argName = originalArgName;
+				while (argName in aliases) {
+					argName = aliases[argName];
+				}
+
+				if (!(argName in handlers)) {
+					if (permissive) {
+						result._.push(arg);
+						continue;
+					} else {
+						throw new ArgError(
+							`unknown or unexpected option: ${originalArgName}`,
+							'ARG_UNKNOWN_OPTION'
+						);
+					}
+				}
+
+				const [type, isFlag] = handlers[argName];
+
+				if (!isFlag && j + 1 < separatedArguments.length) {
+					throw new ArgError(
+						`option requires argument (but was followed by another short argument): ${originalArgName}`,
+						'ARG_MISSING_REQUIRED_SHORTARG'
+					);
+				}
+
+				if (isFlag) {
+					result[argName] = type(true, argName, result[argName]);
+				} else if (argStr === undefined) {
+					if (
+						argv.length < i + 2 ||
+						(argv[i + 1].length > 1 &&
+							argv[i + 1][0] === '-' &&
+							!(
+								argv[i + 1].match(/^-?\d*(\.(?=\d))?\d*$/) &&
+								(type === Number ||
+									// eslint-disable-next-line no-undef
+									(typeof BigInt !== 'undefined' && type === BigInt))
+							))
+					) {
+						const extended =
+							originalArgName === argName ? '' : ` (alias for ${argName})`;
+						throw new ArgError(
+							`option requires argument: ${originalArgName}${extended}`,
+							'ARG_MISSING_REQUIRED_LONGARG'
+						);
+					}
+
+					result[argName] = type(argv[i + 1], argName, result[argName]);
+					++i;
+				} else {
+					result[argName] = type(argStr, argName, result[argName]);
+				}
+			}
+		} else {
+			result._.push(wholeArg);
+		}
+	}
+
+	return result;
+}
+
+arg.flag = (fn) => {
+	fn[flagSymbol] = true;
+	return fn;
+};
+
+// Utility types
+arg.COUNT = arg.flag((v, name, existingCount) => (existingCount || 0) + 1);
+
+// Expose error class
+arg.ArgError = ArgError;
+
+var arg_1 = arg;
+
+/**
+  @license
+  The MIT License (MIT)
+
+  Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+*/
+function getOptionValue(opt) {
+  parseOptions();
+  return options[opt];
+}
+let options;
+function parseOptions() {
+  if (!options) {
+    options = {
+      "--conditions": [],
+      ...parseArgv(getNodeOptionsEnvArgv()),
+      ...parseArgv(process.execArgv)
+    };
+  }
+}
+function parseArgv(argv) {
+  return arg_1(
+    {
+      "--conditions": [String],
+      "-C": "--conditions"
+    },
+    {
+      argv,
+      permissive: true
+    }
+  );
+}
+function getNodeOptionsEnvArgv() {
+  const errors = [];
+  const envArgv = ParseNodeOptionsEnvVar(process.env.NODE_OPTIONS || "", errors);
+  if (errors.length !== 0) ;
+  return envArgv;
+}
+function ParseNodeOptionsEnvVar(node_options, errors) {
+  const env_argv = [];
+  let is_in_string = false;
+  let will_start_new_arg = true;
+  for (let index = 0; index < node_options.length; ++index) {
+    let c = node_options[index];
+    if (c === "\\" && is_in_string) {
+      if (index + 1 === node_options.length) {
+        errors.push("invalid value for NODE_OPTIONS (invalid escape)\n");
+        return env_argv;
+      } else {
+        c = node_options[++index];
+      }
+    } else if (c === " " && !is_in_string) {
+      will_start_new_arg = true;
+      continue;
+    } else if (c === '"') {
+      is_in_string = !is_in_string;
+      continue;
+    }
+    if (will_start_new_arg) {
+      env_argv.push(c);
+      will_start_new_arg = false;
+    } else {
+      env_argv[env_argv.length - 1] += c;
+    }
+  }
+  if (is_in_string) {
+    errors.push("invalid value for NODE_OPTIONS (unterminated string)\n");
+  }
+  return env_argv;
 }
 
 function makeApi(runtimeState, opts) {
@@ -23829,8 +24074,12 @@ function makeApi(runtimeState, opts) {
         return true;
     return false;
   }
-  const defaultExportsConditions = /* @__PURE__ */ new Set([`default`, `node`, `require`]);
-  function applyNodeExportsResolution(unqualifiedPath, conditions = defaultExportsConditions) {
+  const defaultExportsConditions = /* @__PURE__ */ new Set([
+    `node`,
+    `require`,
+    ...getOptionValue(`--conditions`)
+  ]);
+  function applyNodeExportsResolution(unqualifiedPath, conditions = defaultExportsConditions, issuer) {
     const locator = findPackageLocator(ppath.join(unqualifiedPath, `internal.js`), {
       resolveIgnored: true,
       includeDiscardFromLookup: true
@@ -23846,6 +24095,8 @@ function makeApi(runtimeState, opts) {
     if (!opts.fakeFs.existsSync(manifestPath))
       return null;
     const pkgJson = JSON.parse(opts.fakeFs.readFileSync(manifestPath, `utf8`));
+    if (pkgJson.exports == null)
+      return null;
     let subpath = ppath.contains(packageLocation, unqualifiedPath);
     if (subpath === null) {
       throw makeError(
@@ -23853,25 +24104,25 @@ function makeApi(runtimeState, opts) {
         `unqualifiedPath doesn't contain the packageLocation (this is probably an internal error)`
       );
     }
-    if (!isRelativeRegexp.test(subpath))
+    if (subpath !== `.` && !isRelativeRegexp.test(subpath))
       subpath = `./${subpath}`;
-    let resolvedExport;
     try {
-      resolvedExport = resolve(pkgJson, ppath.normalize(subpath), {
-        conditions,
-        unsafe: true
+      const resolvedExport = packageExportsResolve({
+        packageJSONUrl: url.pathToFileURL(npath.fromPortablePath(manifestPath)),
+        packageSubpath: subpath,
+        exports: pkgJson.exports,
+        base: issuer ? url.pathToFileURL(npath.fromPortablePath(issuer)) : null,
+        conditions
       });
+      return npath.toPortablePath(url.fileURLToPath(resolvedExport));
     } catch (error) {
       throw makeError(
         ErrorCode.EXPORTS_RESOLUTION_FAILED,
         error.message,
         { unqualifiedPath: getPathForDisplay(unqualifiedPath), locator, pkgJson, subpath: getPathForDisplay(subpath), conditions },
-        `ERR_PACKAGE_PATH_NOT_EXPORTED`
+        error.code
       );
     }
-    if (typeof resolvedExport === `string`)
-      return ppath.join(packageLocation, resolvedExport);
-    return null;
   }
   function applyNodeExtensionResolution(unqualifiedPath, candidates, { extensions }) {
     let stat;
@@ -24248,10 +24499,10 @@ Required by: ${issuerLocator.name}@${issuerLocator.reference} (via ${issuerForDi
     }
     return ppath.normalize(unqualifiedPath);
   }
-  function resolveUnqualifiedExport(request, unqualifiedPath, conditions = defaultExportsConditions) {
+  function resolveUnqualifiedExport(request, unqualifiedPath, conditions = defaultExportsConditions, issuer) {
     if (isStrictRegExp.test(request))
       return unqualifiedPath;
-    const unqualifiedExportPath = applyNodeExportsResolution(unqualifiedPath, conditions);
+    const unqualifiedExportPath = applyNodeExportsResolution(unqualifiedPath, conditions, issuer);
     if (unqualifiedExportPath) {
       return ppath.normalize(unqualifiedExportPath);
     } else {
@@ -24319,7 +24570,7 @@ ${candidates.map((candidate) => `Not found: ${getPathForDisplay(candidate)}
       conditions: (_a = opts2.conditions) != null ? _a : defaultExportsConditions,
       readFileSyncFn: tryReadFile
     });
-    if (resolved instanceof URL) {
+    if (resolved instanceof url.URL) {
       return resolveUnqualified(npath.toPortablePath(url.fileURLToPath(resolved)), { extensions: opts2.extensions });
     } else {
       if (resolved.startsWith(`#`))
@@ -24338,7 +24589,7 @@ ${candidates.map((candidate) => `Not found: ${getPathForDisplay(candidate)}
       if (unqualifiedPath === null)
         return null;
       const isIssuerIgnored = () => issuer !== null ? isPathIgnored(issuer) : false;
-      const remappedPath = (!considerBuiltins || !isBuiltinModule(request)) && !isIssuerIgnored() ? resolveUnqualifiedExport(request, unqualifiedPath, conditions) : unqualifiedPath;
+      const remappedPath = (!considerBuiltins || !isBuiltinModule(request)) && !isIssuerIgnored() ? resolveUnqualifiedExport(request, unqualifiedPath, conditions, issuer) : unqualifiedPath;
       return resolveUnqualified(remappedPath, { extensions });
     } catch (error) {
       if (Object.prototype.hasOwnProperty.call(error, `pnpCode`))
@@ -24416,7 +24667,6 @@ function makeManager(pnpapi, opts) {
   const initialApiStats = opts.fakeFs.statSync(npath.toPortablePath(initialApiPath));
   const apiMetadata = /* @__PURE__ */ new Map([
     [initialApiPath, {
-      cache: require$$0.Module._cache,
       instance: pnpapi,
       stats: initialApiStats,
       lastRefreshCheck: Date.now()
@@ -24448,7 +24698,6 @@ function makeManager(pnpapi, opts) {
       }
     } else {
       apiMetadata.set(pnpApiPath, apiEntry = {
-        cache: {},
         instance: loadApiInstance(pnpApiPath),
         stats: opts.fakeFs.statSync(pnpApiPath),
         lastRefreshCheck: Date.now()
@@ -24518,19 +24767,16 @@ ${controlSegment}
     } while (curr !== PortablePath.root);
     return addToCacheAndReturn(start, curr, null);
   }
+  const moduleToApiPathCache = /* @__PURE__ */ new WeakMap();
   function getApiPathFromParent(parent) {
     if (parent == null)
       return initialApiPath;
-    if (typeof parent.pnpApiPath === `undefined`) {
-      if (parent.filename !== null) {
-        return parent.pnpApiPath = findApiPathFor(parent.filename);
-      } else {
-        return initialApiPath;
-      }
-    }
-    if (parent.pnpApiPath !== null)
-      return parent.pnpApiPath;
-    return null;
+    let apiPath = moduleToApiPathCache.get(parent);
+    if (typeof apiPath !== `undefined`)
+      return apiPath;
+    apiPath = parent.filename ? findApiPathFor(parent.filename) : null;
+    moduleToApiPathCache.set(parent, apiPath);
+    return apiPath;
   }
   return {
     getApiPathFromParent,
