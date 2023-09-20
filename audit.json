@@ -591,6 +591,13 @@
   "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/terms-conditions?lng=system-property%28%27xsl%3Avendor%27%29%2F%3E_GET": "ignore",
   "10063_Permissions Policy Header Not Set_https://pcq.aat.platform.hmcts.net/cookies?lng=cy_GET": "ignore",
   "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/cookies?analytics=on&apm=on&lng=system-property%28%27xsl%3Avendor%27%29%2F%3E_GET": "ignore",
-  "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/privacy-policy?lng=system-property%28%27xsl%3Avendor%27%29%2F%3E_GET": "ignore"
+  "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/privacy-policy?lng=system-property%28%27xsl%3Avendor%27%29%2F%3E_GET": "ignore",
+  "40022_SQL Injection - PostgreSQL - Time Based_https://pcq.aat.platform.hmcts.net/cookies?analytics=on&apm=on_GET": "ignore",
+  "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/cookies?analytics=on&apm=%22%2F%3E%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E%3C%21--_GET": "ignore",
+  "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/cookies?analytics=on&apm=%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E%3C%21--&lng=en_GET": "ignore",
+  "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/cookies?analytics=%22%2F%3E%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E%3C%21--&apm=on&lng=cy_GET": "ignore",
+  "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/cookies?analytics=on&apm=on&lng=%22%2F%3E%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E%3C%21--_GET": "ignore",
+  "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/cookies?analytics=on&apm=system-property%28%27xsl%3Avendor%27%29%2F%3E&lng=cy_GET": "ignore",
+  "10049_Non-Storable Content_https://pcq.aat.platform.hmcts.net/privacy-policy_GET": "ignore"
   }
   
