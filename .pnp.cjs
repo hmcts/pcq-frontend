@@ -91,7 +91,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["traverse", "npm:0.6.7"],\
             ["tslib", "npm:2.6.2"],\
-            ["uuid", "npm:3.4.0"],\
+            ["uuid", "npm:9.0.1"],\
             ["watch", "npm:1.0.2"],\
             ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.16.12"],\
             ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.88.2"],\
@@ -10775,7 +10775,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["traverse", "npm:0.6.7"],\
             ["tslib", "npm:2.6.2"],\
-            ["uuid", "npm:3.4.0"],\
+            ["uuid", "npm:9.0.1"],\
             ["watch", "npm:1.0.2"],\
             ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.16.12"],\
             ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.88.2"],\
@@ -13281,13 +13281,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["uuid", [\
-        ["npm:3.4.0", {\
-          "packageLocation": "./.yarn/cache/uuid-npm-3.4.0-4fd8ef88ad-58de2feed6.zip/node_modules/uuid/",\
-          "packageDependencies": [\
-            ["uuid", "npm:3.4.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:8.3.2", {\
           "packageLocation": "./.yarn/cache/uuid-npm-8.3.2-eca0baba53-5575a8a75c.zip/node_modules/uuid/",\
           "packageDependencies": [\
