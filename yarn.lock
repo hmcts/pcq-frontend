@@ -8337,7 +8337,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^2.6.1, node-fetch@npm:^2.6.12, node-fetch@npm:^2.6.9":
+"node-fetch@npm:^2.6.1, node-fetch@npm:^2.6.12":
   version: 2.7.0
   resolution: "node-fetch@npm:2.7.0"
   dependencies:
@@ -8351,7 +8351,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^3.3.1, node-fetch@npm:^3.3.2":
+"node-fetch@npm:^3.0.0, node-fetch@npm:^3.3.1, node-fetch@npm:^3.3.2":
   version: 3.3.2
   resolution: "node-fetch@npm:3.3.2"
   dependencies:
@@ -9313,7 +9313,7 @@ __metadata:
     moment: ^2.29.4
     nock: ^13.3.0
     node-emoji: ^2.1.0
-    node-fetch: ^2.6.9
+    node-fetch: ^3.0.0
     node-sass: ^9.0.0
     nodemon: ^2.0.4
     nunjucks: ^3.2.4
