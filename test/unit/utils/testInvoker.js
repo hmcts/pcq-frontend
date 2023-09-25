@@ -182,7 +182,8 @@ describe('Invoker', () => {
                         'RESPONDENT'
                     ],
                     'civil-citizen-ui': [
-                        'RESPONDENT'
+                        'RESPONDENT',
+                        'APPLICANT'
                     ]
                 }
             });

@@ -419,6 +419,21 @@
                         "channel" : 2,
                         "redirect" : "Make a Money Claim"
                     }
+                },
+                "applicant" :
+                {
+                    "formData" :
+                    {
+                        "serviceId": "civil-citizen-ui",
+                        "actor" : "applicant" ,
+                        "pcqId" : "78f32018-0827-416b-aeeb-e3fff0a0a328",
+                        "ccdCaseId" : "f5531e36-af47-48bc-9575-b1d78c4ed304",
+                        "partyId" : "civil-citizen-ui_APPLICANT@test.gov.uk",
+                        "returnUrl" : "civil-citizen-ui_APPLICANT.test.gov.uk",
+                        "language" : "en",
+                        "channel" : 2,
+                        "redirect" : "Make a Money Claim"
+                    }
                 }
             }
         }
