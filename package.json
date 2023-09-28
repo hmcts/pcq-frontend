@@ -83,7 +83,7 @@
     "serve-favicon": "^2.5.0",
     "test": "link:./test",
     "traverse": "^0.6.6",
-    "uuid": "^3.3.2",
+    "uuid": "^9.0.0",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.1"
   },
