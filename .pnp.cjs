@@ -36,7 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@hmcts/properties-volume", "npm:1.0.0"],\
             ["@stryker-mutator/api", "npm:6.4.2"],\
             ["@stryker-mutator/core", "npm:5.6.1"],\
-            ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.6.1"],\
+            ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.2.0"],\
             ["ajv", "npm:6.12.6"],\
             ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["applicationinsights", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.7.0"],\
@@ -2031,6 +2031,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tslib", "npm:2.5.3"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:7.2.0", {\
+          "packageLocation": "./.yarn/cache/@stryker-mutator-api-npm-7.2.0-f9de6db1c0-a5bbc9c431.zip/node_modules/@stryker-mutator/api/",\
+          "packageDependencies": [\
+            ["@stryker-mutator/api", "npm:7.2.0"],\
+            ["mutation-testing-metrics", "npm:2.0.3"],\
+            ["mutation-testing-report-schema", "npm:2.0.3"],\
+            ["tslib", "npm:2.6.2"],\
+            ["typed-inject", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@stryker-mutator/core", [\
@@ -2091,25 +2102,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@stryker-mutator/mocha-runner", [\
-        ["npm:5.6.1", {\
-          "packageLocation": "./.yarn/cache/@stryker-mutator-mocha-runner-npm-5.6.1-b1f31d62cf-07ab8f2843.zip/node_modules/@stryker-mutator/mocha-runner/",\
+        ["npm:7.2.0", {\
+          "packageLocation": "./.yarn/cache/@stryker-mutator-mocha-runner-npm-7.2.0-ddf82a8497-e9831bda21.zip/node_modules/@stryker-mutator/mocha-runner/",\
           "packageDependencies": [\
-            ["@stryker-mutator/mocha-runner", "npm:5.6.1"]\
+            ["@stryker-mutator/mocha-runner", "npm:7.2.0"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.6.1", {\
-          "packageLocation": "./.yarn/__virtual__/@stryker-mutator-mocha-runner-virtual-9c6f9e6de8/0/cache/@stryker-mutator-mocha-runner-npm-5.6.1-b1f31d62cf-07ab8f2843.zip/node_modules/@stryker-mutator/mocha-runner/",\
+        ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.2.0", {\
+          "packageLocation": "./.yarn/__virtual__/@stryker-mutator-mocha-runner-virtual-f85403ba64/0/cache/@stryker-mutator-mocha-runner-npm-7.2.0-ddf82a8497-e9831bda21.zip/node_modules/@stryker-mutator/mocha-runner/",\
           "packageDependencies": [\
-            ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.6.1"],\
-            ["@stryker-mutator/api", "npm:5.6.1"],\
+            ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.2.0"],\
+            ["@stryker-mutator/api", "npm:7.2.0"],\
             ["@stryker-mutator/core", "npm:5.6.1"],\
-            ["@stryker-mutator/util", "npm:5.6.1"],\
+            ["@stryker-mutator/util", "npm:7.2.0"],\
             ["@types/mocha", null],\
             ["@types/stryker-mutator__core", null],\
-            ["glob", "npm:7.2.3"],\
             ["mocha", "npm:10.2.0"],\
-            ["tslib", "npm:2.3.1"]\
+            ["tslib", "npm:2.6.2"]\
           ],\
           "packagePeers": [\
             "@stryker-mutator/core",\
@@ -2125,6 +2135,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@stryker-mutator-util-npm-5.6.1-2da286ed4a-7b0fef72c9.zip/node_modules/@stryker-mutator/util/",\
           "packageDependencies": [\
             ["@stryker-mutator/util", "npm:5.6.1"],\
+            ["lodash.flatmap", "npm:4.5.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:7.2.0", {\
+          "packageLocation": "./.yarn/cache/@stryker-mutator-util-npm-7.2.0-f2275a6795-662f74738c.zip/node_modules/@stryker-mutator/util/",\
+          "packageDependencies": [\
+            ["@stryker-mutator/util", "npm:7.2.0"],\
             ["lodash.flatmap", "npm:4.5.0"]\
           ],\
           "linkType": "HARD"\
@@ -9501,6 +9519,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mutation-testing-report-schema", "npm:1.7.8"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.0.3", {\
+          "packageLocation": "./.yarn/cache/mutation-testing-metrics-npm-2.0.3-e79997bec2-4372061fc5.zip/node_modules/mutation-testing-metrics/",\
+          "packageDependencies": [\
+            ["mutation-testing-metrics", "npm:2.0.3"],\
+            ["mutation-testing-report-schema", "npm:2.0.3"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["mutation-testing-report-schema", [\
@@ -9515,6 +9541,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/mutation-testing-report-schema-npm-1.7.8-45af5f3557-6e3b3def81.zip/node_modules/mutation-testing-report-schema/",\
           "packageDependencies": [\
             ["mutation-testing-report-schema", "npm:1.7.8"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.0.3", {\
+          "packageLocation": "./.yarn/cache/mutation-testing-report-schema-npm-2.0.3-2d87e2a150-a38bf1e6ed.zip/node_modules/mutation-testing-report-schema/",\
+          "packageDependencies": [\
+            ["mutation-testing-report-schema", "npm:2.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -10728,7 +10761,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@hmcts/properties-volume", "npm:1.0.0"],\
             ["@stryker-mutator/api", "npm:6.4.2"],\
             ["@stryker-mutator/core", "npm:5.6.1"],\
-            ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.6.1"],\
+            ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.2.0"],\
             ["ajv", "npm:6.12.6"],\
             ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["applicationinsights", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.7.0"],\
@@ -13009,6 +13042,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/typed-inject-npm-3.0.1-e51ce1df0d-a400797a42.zip/node_modules/typed-inject/",\
           "packageDependencies": [\
             ["typed-inject", "npm:3.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/typed-inject-npm-4.0.0-cda063a2ff-2181b4f50e.zip/node_modules/typed-inject/",\
+          "packageDependencies": [\
+            ["typed-inject", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
