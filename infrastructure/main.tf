@@ -3,30 +3,33 @@ provider "azurerm" {
 }
 
 locals {
-  aseName = "core-compute-${var.env}"
+  aseName   = "core-compute-${var.env}"
   vaultName = "${var.product}-${var.env}"
 }
 
 data "azurerm_subnet" "core_infra_redis_subnet" {
   name                 = "core-infra-subnet-1-${var.env}"
   virtual_network_name = "core-infra-vnet-${var.env}"
-  resource_group_name = "core-infra-${var.env}"
+  resource_group_name  = "core-infra-${var.env}"
 }
 
 module "pcq-frontend-redis-cache" {
-  source   = "git@github.com:hmcts/cnp-module-redis?ref=master"
-  product     = "${var.product}-${var.component}-redis-cache"
-  location = var.location
-  env      = var.env
-  private_endpoint_enabled = true
-  redis_version = "6"
-  business_area = "cft"
+  source                        = "git@github.com:hmcts/cnp-module-redis?ref=master"
+  product                       = "${var.product}-${var.component}-redis-cache"
+  location                      = var.location
+  env                           = var.env
+  private_endpoint_enabled      = true
+  redis_version                 = "6"
+  business_area                 = "cft"
   public_network_access_enabled = false
-  common_tags  = var.common_tags
+  common_tags                   = var.common_tags
+  sku_name                      = var.sku_name
+  family                        = var.family
+  capacity                      = var.capacity
 }
 
 data "azurerm_key_vault" "key_vault" {
-  name = local.vaultName
+  name                = local.vaultName
   resource_group_name = local.vaultName
 }
 
