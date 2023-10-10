@@ -3,7 +3,7 @@
     - multi-page navigation including conditional routing and looping through sub-flows 
     - capturing and validating user data
     - managing content (externalisation and internationalisation)
-- the framework provides a consistent approach of handling common tasks such as navigation and data validation
+- the framework provides a consistent approach of handling common tasks such as navigation and data validation 
 
 ## Basic Structure
 - a parent Step class defines the basic structure of a step (content, schema, template) – `Step.js`
