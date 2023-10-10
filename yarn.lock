@@ -1064,10 +1064,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:8.50.0":
-  version: 8.50.0
-  resolution: "@eslint/js@npm:8.50.0"
-  checksum: 302478f2acaaa7228729ec6a04f56641590185e1d8cd1c836a6db8a6b8009f80a57349341be9fbb9aa1721a7a569d1be3ffc598a33300d22816f11832095386c
+"@eslint/js@npm:8.51.0":
+  version: 8.51.0
+  resolution: "@eslint/js@npm:8.51.0"
+  checksum: 0228bf1e1e0414843e56d9ff362a2a72d579c078f93174666f29315690e9e30a8633ad72c923297f7fd7182381b5a476805ff04dac8debe638953eb1ded3ac73
   languageName: node
   linkType: hard
 
@@ -1858,19 +1858,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wdio/config@npm:8.16.22":
-  version: 8.16.22
-  resolution: "@wdio/config@npm:8.16.22"
+"@wdio/config@npm:8.17.0":
+  version: 8.17.0
+  resolution: "@wdio/config@npm:8.17.0"
   dependencies:
     "@wdio/logger": 8.16.17
-    "@wdio/types": 8.16.22
-    "@wdio/utils": 8.16.22
+    "@wdio/types": 8.17.0
+    "@wdio/utils": 8.17.0
     decamelize: ^6.0.0
     deepmerge-ts: ^5.0.0
     glob: ^10.2.2
     import-meta-resolve: ^3.0.0
     read-pkg-up: ^10.0.0
-  checksum: abf22b2aeff51a3e69c811d0fdbdeea93f873d8fd51cd84813f2cb0c6e88d24c3aae915409cc2d412014486bda6e8312074d9487503bdfb77bf8619a553efa12
+  checksum: 07c8eda7e82d33aa55a379c768dfaeff2864a0fca64d8dd5f5c7131c808612b0e19ec04ebbe6bb4e591fcd214da6e517928762441a98a2283202159443ec704c
   languageName: node
   linkType: hard
 
@@ -1914,22 +1914,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wdio/types@npm:8.16.22":
-  version: 8.16.22
-  resolution: "@wdio/types@npm:8.16.22"
+"@wdio/types@npm:8.17.0":
+  version: 8.17.0
+  resolution: "@wdio/types@npm:8.17.0"
   dependencies:
     "@types/node": ^20.1.0
-  checksum: 7d1e497d074470fa2b3d071fd91b2a7783bf46ceb96af6223f4c568b24f525a19f72b6f764342d78b369f45dece0d159706dfd5841d8a98de780ae7c185a1554
+  checksum: af2ac372b26dde4ded963753544e2637febcd2086e3afe2ef4269b48105682d32810c2f8a9834bbc963714e47ffba16ff1c917995cea65dafd0eb9fe0f202f8b
   languageName: node
   linkType: hard
 
-"@wdio/utils@npm:8.16.22":
-  version: 8.16.22
-  resolution: "@wdio/utils@npm:8.16.22"
+"@wdio/utils@npm:8.17.0":
+  version: 8.17.0
+  resolution: "@wdio/utils@npm:8.17.0"
   dependencies:
     "@puppeteer/browsers": ^1.6.0
     "@wdio/logger": 8.16.17
-    "@wdio/types": 8.16.22
+    "@wdio/types": 8.17.0
     decamelize: ^6.0.0
     deepmerge-ts: ^5.1.0
     edgedriver: ^5.3.5
@@ -1941,7 +1941,7 @@ __metadata:
     safaridriver: ^0.1.0
     split2: ^4.2.0
     wait-port: ^1.0.4
-  checksum: a6a1f5cf8f001371732a00710747614ae422196e4a04fde2c1cfb3ac49c84c007362e5325c903eb4f6d4052155cccbc13a98774c41fbc000b2d4418ba6a51bc5
+  checksum: 59d325b74471ee61d9338e00cdeee92ea135fb3376e80343024db8bc3c62d6647d9439e22cf9cd786c8b9ff3377c2e0b6eb967edfdb62ca3b9b5f681ad1e2065
   languageName: node
   linkType: hard
 
@@ -4322,10 +4322,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"devtools-protocol@npm:^0.0.1203626":
-  version: 0.0.1203626
-  resolution: "devtools-protocol@npm:0.0.1203626"
-  checksum: 7bbcb1e637cf9c957aeae11284d2c4cd5fb45c0324839c9074b046889982a53f5cfca190f404aa9468523113714909db126b70a04baf1ec59f9905945a4b5975
+"devtools-protocol@npm:^0.0.1206220":
+  version: 0.0.1206220
+  resolution: "devtools-protocol@npm:0.0.1206220"
+  checksum: 3f6b2c4d115df4ef93fefc2a1eab7dd9da7d24eeb8a5d80bbc1351b558db62c730d785adb26e15c509a28be9ca5a6a3510b118c62f01ed2d8f9aef8d16fdb47e
   languageName: node
   linkType: hard
 
@@ -4735,13 +4735,13 @@ __metadata:
   linkType: hard
 
 "eslint@npm:^8.47.0, eslint@npm:^8.48.0":
-  version: 8.50.0
-  resolution: "eslint@npm:8.50.0"
+  version: 8.51.0
+  resolution: "eslint@npm:8.51.0"
   dependencies:
     "@eslint-community/eslint-utils": ^4.2.0
     "@eslint-community/regexpp": ^4.6.1
     "@eslint/eslintrc": ^2.1.2
-    "@eslint/js": 8.50.0
+    "@eslint/js": 8.51.0
     "@humanwhocodes/config-array": ^0.11.11
     "@humanwhocodes/module-importer": ^1.0.1
     "@nodelib/fs.walk": ^1.2.8
@@ -4777,7 +4777,7 @@ __metadata:
     text-table: ^0.2.0
   bin:
     eslint: bin/eslint.js
-  checksum: 9ebfe5615dc84700000d218e32ddfdcfc227ca600f65f18e5541ec34f8902a00356a9a8804d9468fd6c8637a5ef6a3897291dad91ba6579d5b32ffeae5e31768
+  checksum: 214fa5d1fcb67af1b8992ce9584ccd85e1aa7a482f8b8ea5b96edc28fa838a18a3b69456db45fc1ed3ef95f1e9efa9714f737292dc681e572d471d02fda9649c
   languageName: node
   linkType: hard
 
@@ -11726,41 +11726,41 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webdriver@npm:8.16.22":
-  version: 8.16.22
-  resolution: "webdriver@npm:8.16.22"
+"webdriver@npm:8.17.0":
+  version: 8.17.0
+  resolution: "webdriver@npm:8.17.0"
   dependencies:
     "@types/node": ^20.1.0
     "@types/ws": ^8.5.3
-    "@wdio/config": 8.16.22
+    "@wdio/config": 8.17.0
     "@wdio/logger": 8.16.17
     "@wdio/protocols": 8.16.5
-    "@wdio/types": 8.16.22
-    "@wdio/utils": 8.16.22
+    "@wdio/types": 8.17.0
+    "@wdio/utils": 8.17.0
     deepmerge-ts: ^5.1.0
     got: ^ 12.6.1
     ky: ^0.33.0
     ws: ^8.8.0
-  checksum: dae98ffea3078bd693c3f317e4de77df67b38d892b230ceef110ee47ffda192763e733f6c4770e0b66321c5727e4cea8ed8cb4ecbfe75e5836dcb75e10766353
+  checksum: d4273383866cc55909b323972355cb27e0700509c36be7f318d4728065248279007e22bfbaf33a4e04adf24676c67aff5440e6abbab8f552ea9357e110d6c1fb
   languageName: node
   linkType: hard
 
 "webdriverio@npm:^8.16.5":
-  version: 8.16.22
-  resolution: "webdriverio@npm:8.16.22"
+  version: 8.17.0
+  resolution: "webdriverio@npm:8.17.0"
   dependencies:
     "@types/node": ^20.1.0
-    "@wdio/config": 8.16.22
+    "@wdio/config": 8.17.0
     "@wdio/logger": 8.16.17
     "@wdio/protocols": 8.16.5
     "@wdio/repl": 8.10.1
-    "@wdio/types": 8.16.22
-    "@wdio/utils": 8.16.22
+    "@wdio/types": 8.17.0
+    "@wdio/utils": 8.17.0
     archiver: ^6.0.0
     aria-query: ^5.0.0
     css-shorthand-properties: ^1.1.1
     css-value: ^0.0.1
-    devtools-protocol: ^0.0.1203626
+    devtools-protocol: ^0.0.1206220
     grapheme-splitter: ^1.0.2
     import-meta-resolve: ^3.0.0
     is-plain-obj: ^4.1.0
@@ -11772,13 +11772,13 @@ __metadata:
     resq: ^1.9.1
     rgb2hex: 0.2.5
     serialize-error: ^11.0.1
-    webdriver: 8.16.22
+    webdriver: 8.17.0
   peerDependencies:
     devtools: ^8.14.0
   peerDependenciesMeta:
     devtools:
       optional: true
-  checksum: e24a45b3cc63aeb985b28d7df1c612b8fdd53bd8101babceed42b02715e2fb914007ac1b17f437d7c5f73de2dded5dcd5e7f19340461f1c79e0c9afbd3182265
+  checksum: be6b6346f31efa4ec190c0ba9a0d9f9c6dd78664a1f8e3d48048007bee44dda4d311390f8b0d5c3fa26a5d2b0f8a43b74ab43e464e0c36f13684241d72c0ae4d
   languageName: node
   linkType: hard
 
