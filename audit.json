@@ -616,6 +616,11 @@
   "10095_Backup File Disclosure_https://pcq.aat.platform.hmcts.net/Copy%20(2)%20of%20ruxitagentjs_ICA27NQVfhqrux_10273230920145353.js_GET": "ignore",
   "10095_Backup File Disclosure_https://pcq.aat.platform.hmcts.net/Copy%20(3)%20of%20ruxitagentjs_ICA27NQVfhqrux_10273230920145353.js_GET": "ignore",
   "40025_Proxy Disclosure_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10273230920145353.js_GET": "ignore",
-  "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10273230920145353.js_GET": "ignore"
+  "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10273230920145353.js_GET": "ignore",
+  "10063_Permissions Policy Header Not Set_https://pcq.aat.platform.hmcts.net/privacy-policy?lng=en_GET": "ignore",
+  "10035_Strict-Transport-Security Header Not Set_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10275230919171419.js_GET": "ignore",
+  "10021_X-Content-Type-Options Header Missing_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10275230919171419.js_GET": "ignore",
+  "10027_Information Disclosure - Suspicious Comments_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10275230919171419.js_GET": "ignore"
+  
 }
   
