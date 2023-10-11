@@ -69,7 +69,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mocha", "npm:10.2.0"],\
             ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
             ["moment", "npm:2.29.4"],\
-            ["nock", "npm:13.3.3"],\
+            ["nock", "npm:13.3.4"],\
             ["node-emoji", "npm:2.1.0"],\
             ["node-fetch", "virtual:e9a012ddd7ebe6b0d904a8e9e9e271777511d8af9971ae287e96e5357c7b52a59e5a63e98d7f598f6fb8a8262ff489ac06679e7ed6a72b001718547ba802c4cf#npm:2.7.0"],\
             ["node-sass", "npm:9.0.0"],\
@@ -9644,10 +9644,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["nock", [\
-        ["npm:13.3.3", {\
-          "packageLocation": "./.yarn/cache/nock-npm-13.3.3-37a69da40c-e3e4f0fb77.zip/node_modules/nock/",\
+        ["npm:13.3.4", {\
+          "packageLocation": "./.yarn/cache/nock-npm-13.3.4-02e3dc139c-34ba5fdc02.zip/node_modules/nock/",\
           "packageDependencies": [\
-            ["nock", "npm:13.3.3"],\
+            ["nock", "npm:13.3.4"],\
             ["debug", "virtual:16705129e75b4a8ecb1575778b0b7d7e2324fc834996e7b229b464b5c6a93026cc0e8ecf6df047d7dcec2ac22bad90b18627294ccbc38e08141bbb631a924b43#npm:4.3.4"],\
             ["json-stringify-safe", "npm:5.0.1"],\
             ["lodash", "npm:4.17.21"],\
@@ -10770,7 +10770,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mocha", "npm:10.2.0"],\
             ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
             ["moment", "npm:2.29.4"],\
-            ["nock", "npm:13.3.3"],\
+            ["nock", "npm:13.3.4"],\
             ["node-emoji", "npm:2.1.0"],\
             ["node-fetch", "virtual:e9a012ddd7ebe6b0d904a8e9e9e271777511d8af9971ae287e96e5357c7b52a59e5a63e98d7f598f6fb8a8262ff489ac06679e7ed6a72b001718547ba802c4cf#npm:2.7.0"],\
             ["node-sass", "npm:9.0.0"],\
