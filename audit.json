@@ -579,6 +579,8 @@
   "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/cookies?analytics=on&apm=%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E&lng=cy_GET": "ignore",
   "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/cookies?analytics=on&apm=%22%2F%3E%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E%3C%21--&lng=en_GET": "ignore",
   "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/cookies?analytics=system-property%28%27xsl%3Avendor%27%29%2F%3E&apm=on_GET": "ignore",
+  "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/cookies?analytics=on&apm=%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E%3C%21--&lng=cy_GET": "ignore",
+  "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/cookies?analytics=system-property%28%27xsl%3Avendor%27%29%2F%3E&apm=on&lng=cy_GET": "ignore",
   "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/cookies?analytics=system-property%28%27xsl%3Avendor%27%29%2F%3E&apm=on&lng=en_GET": "ignore",
   "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/terms-conditions?lng=%22%2F%3E%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E%3C%21--_GET": "ignore",
   "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/cookies?analytics=%22%2F%3E%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E%3C%21--&apm=on_GET": "ignore",
