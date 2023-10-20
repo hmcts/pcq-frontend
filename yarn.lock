@@ -1575,7 +1575,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stryker-mutator/api@npm:^7.3.0":
+"@stryker-mutator/api@npm:7.3.0, @stryker-mutator/api@npm:^7.3.0":
   version: 7.3.0
   resolution: "@stryker-mutator/api@npm:7.3.0"
   dependencies:
@@ -1644,18 +1644,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stryker-mutator/mocha-runner@npm:^5.6.1":
-  version: 5.6.1
-  resolution: "@stryker-mutator/mocha-runner@npm:5.6.1"
+"@stryker-mutator/mocha-runner@npm:^7.3.0":
+  version: 7.3.0
+  resolution: "@stryker-mutator/mocha-runner@npm:7.3.0"
   dependencies:
-    "@stryker-mutator/api": 5.6.1
-    "@stryker-mutator/util": 5.6.1
-    glob: ~7.2.0
-    tslib: ~2.3.0
+    "@stryker-mutator/api": 7.3.0
+    "@stryker-mutator/util": 7.3.0
+    tslib: ~2.6.0
   peerDependencies:
-    "@stryker-mutator/core": ~5.6.0
-    mocha: ">= 2.3.3 < 10"
-  checksum: 07ab8f2843862ae07e3bb6e5606ee3a143abbab301b1bf21129c0a02da5fa7db03c5e1ca01581f67cd079ee7c45d7eee5c13a2bdb24f5a65412373c3a068019a
+    "@stryker-mutator/core": ~7.3.0
+    mocha: ">= 7.2 < 11"
+  checksum: a4b4e04fba99cb631771a35fc00194459ec0ef1ea25820e17fde7103e850ffd130c28e3c24499886c26acb1d830c240b515368441385b9fcd08eda31ed706c51
   languageName: node
   linkType: hard
 
@@ -1665,6 +1664,13 @@ __metadata:
   dependencies:
     lodash.flatmap: ~4.5.0
   checksum: 7b0fef72c9b81cc15dbc1a3ce2a3a6c49d08fb325e33fa08a0306dbf1f7bac42bbedeab8098013e45ac57a1d95e35f65725cc51772bdabc6e5bb168522d060e3
+  languageName: node
+  linkType: hard
+
+"@stryker-mutator/util@npm:7.3.0":
+  version: 7.3.0
+  resolution: "@stryker-mutator/util@npm:7.3.0"
+  checksum: fa2e01636c19d00175eb307fbde262475565af38c810a0dcf33e4a7a3fc5294b5a1276d4d338a359f432cbd56bbc610aa7983c10bc2faaee3268d71b59cffb2d
   languageName: node
   linkType: hard
 
@@ -9295,7 +9301,7 @@ __metadata:
     "@hmcts/properties-volume": ^1.0.0
     "@stryker-mutator/api": ^7.3.0
     "@stryker-mutator/core": ^5.6.1
-    "@stryker-mutator/mocha-runner": ^5.6.1
+    "@stryker-mutator/mocha-runner": ^7.3.0
     ajv: ^6.12.6
     app: "link:./app"
     applicationinsights: ^2.7.0
