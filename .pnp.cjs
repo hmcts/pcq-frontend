@@ -77,7 +77,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
             ["nyc", "npm:15.1.0"],\
             ["pa11y", "npm:6.2.3"],\
-            ["playwright", "npm:1.37.1"],\
+            ["playwright", "npm:1.39.0"],\
             ["pre-commit", "npm:1.2.2"],\
             ["proxyquire", "npm:2.1.3"],\
             ["require-directory", "npm:2.1.1"],\
@@ -10593,20 +10593,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["playwright", [\
-        ["npm:1.37.1", {\
-          "packageLocation": "./.yarn/unplugged/playwright-npm-1.37.1-5e4bf191e0/node_modules/playwright/",\
+        ["npm:1.39.0", {\
+          "packageLocation": "./.yarn/cache/playwright-npm-1.39.0-0e46dd748d-96d8ca5aa2.zip/node_modules/playwright/",\
           "packageDependencies": [\
-            ["playwright", "npm:1.37.1"],\
-            ["playwright-core", "npm:1.37.1"]\
+            ["playwright", "npm:1.39.0"],\
+            ["fsevents", "patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"],\
+            ["playwright-core", "npm:1.39.0"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["playwright-core", [\
-        ["npm:1.37.1", {\
-          "packageLocation": "./.yarn/unplugged/playwright-core-npm-1.37.1-2c4000290a/node_modules/playwright-core/",\
+        ["npm:1.39.0", {\
+          "packageLocation": "./.yarn/unplugged/playwright-core-npm-1.39.0-71d19aa951/node_modules/playwright-core/",\
           "packageDependencies": [\
-            ["playwright-core", "npm:1.37.1"]\
+            ["playwright-core", "npm:1.39.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -10777,7 +10778,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
             ["nyc", "npm:15.1.0"],\
             ["pa11y", "npm:6.2.3"],\
-            ["playwright", "npm:1.37.1"],\
+            ["playwright", "npm:1.39.0"],\
             ["pre-commit", "npm:1.2.2"],\
             ["proxyquire", "npm:2.1.3"],\
             ["require-directory", "npm:2.1.1"],\
