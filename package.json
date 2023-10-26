@@ -90,9 +90,9 @@
   "devDependencies": {
     "@babel/traverse": "^7.22.5",
     "@babel/types": "^7.22.4",
-    "@stryker-mutator/api": "^7.3.0",
-    "@stryker-mutator/core": "^7.3.0",
-    "@stryker-mutator/mocha-runner": "^7.3.0",
+    "@stryker-mutator/api": "^6.4.2",
+    "@stryker-mutator/core": "^6.4.2",
+    "@stryker-mutator/mocha-runner": "^6.4.2",
     "chai": "^4.2.0",
     "codeceptjs": "^3.5.4",
     "codecov": "^4.0.0-0",
