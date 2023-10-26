@@ -635,6 +635,7 @@
   "40025_Proxy Disclosure_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10275230919171419.js_GET": "ignore",
   "10048_Remote Code Execution - Shell Shock_https://pcq.aat.platform.hmcts.net/cookies?analytics=%28%29+%7B+%3A%3B%7D%3B+%2Fbin%2Fsleep+15&apm=on_GET": "ignore",
   "10048_Remote Code Execution - Shell Shock_https://pcq.aat.platform.hmcts.net/cookies?analytics=on&apm=%28%29+%7B+%3A%3B%7D%3B+%2Fbin%2Fsleep+15&lng=cy_GET": "ignore",
-  "10048_Remote Code Execution - Shell Shock_https://pcq.aat.platform.hmcts.net/privacy-policy?lng=%28%29+%7B+%3A%3B%7D%3B+%2Fbin%2Fsleep+15_GET": "ignore"
+  "10048_Remote Code Execution - Shell Shock_https://pcq.aat.platform.hmcts.net/privacy-policy?lng=%28%29+%7B+%3A%3B%7D%3B+%2Fbin%2Fsleep+15_GET": "ignore",
+  "40027_SQL Injection - MsSQL_https://pcq.aat.platform.hmcts.net/privacy-policy?lng=en_GET": "ignore"
 }
   
