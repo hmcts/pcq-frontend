@@ -632,6 +632,9 @@
   "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10273230920145353.js_GET": "ignore",
   "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/assets/images/govuk-apple-touch-icon-152x152.png_GET": "ignore",
   "40019_SQL Injection - MySQL_https://pcq.aat.platform.hmcts.net/privacy-policy?lng=en_GET": "ignore",
-  "40025_Proxy Disclosure_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10275230919171419.js_GET": "ignore"
+  "40025_Proxy Disclosure_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10275230919171419.js_GET": "ignore",
+  "10048_Remote Code Execution - Shell Shock_https://pcq.aat.platform.hmcts.net/cookies?analytics=%28%29+%7B+%3A%3B%7D%3B+%2Fbin%2Fsleep+15&apm=on_GET": "ignore",
+  "10048_Remote Code Execution - Shell Shock_https://pcq.aat.platform.hmcts.net/cookies?analytics=on&apm=%28%29+%7B+%3A%3B%7D%3B+%2Fbin%2Fsleep+15&lng=cy_GET": "ignore",
+  "10048_Remote Code Execution - Shell Shock_https://pcq.aat.platform.hmcts.net/privacy-policy?lng=%28%29+%7B+%3A%3B%7D%3B+%2Fbin%2Fsleep+15_GET": "ignore"
 }
   
