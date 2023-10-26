@@ -1,17 +1,18 @@
 'use strict';
 
+
 const expect = require('chai').expect;
 const rewire = require('rewire');
 const JourneyMap = rewire('app/core/JourneyMap');
 const initSteps = require('app/core/initSteps');
 const steps = initSteps([`${__dirname}/../../../app/steps/ui`]);
-const serviceData = require('test/unit/core/testServiceData.json');
 const StartPage = steps.StartPage;
 const EndPage = steps.EndPage;
 const ShutterPage = steps.ShutterPage;
 //requiring path and fs modules
 const path = require('path');
 const fs = require('fs');
+var serviceData = JSON.parse(fs.readFileSync('test/unit/core/testServiceData.json').toString());
 //joining path of directory
 const directoryPath = path.join(`${__dirname}/../../../app`, 'journeys');
 
