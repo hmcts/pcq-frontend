@@ -84,7 +84,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rewire", "npm:7.0.0"],\
             ["sanitizer", "npm:0.1.3"],\
             ["serve-favicon", "npm:2.5.0"],\
-            ["sinon", "npm:17.0.0"],\
+            ["sinon", "npm:17.0.1"],\
             ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
             ["sonarqube-scanner", "npm:3.1.0"],\
             ["supertest", "npm:6.3.3"],\
@@ -10767,7 +10767,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rewire", "npm:7.0.0"],\
             ["sanitizer", "npm:0.1.3"],\
             ["serve-favicon", "npm:2.5.0"],\
-            ["sinon", "npm:17.0.0"],\
+            ["sinon", "npm:17.0.1"],\
             ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
             ["sonarqube-scanner", "npm:3.1.0"],\
             ["supertest", "npm:6.3.3"],\
@@ -11916,10 +11916,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["sinon", [\
-        ["npm:17.0.0", {\
-          "packageLocation": "./.yarn/cache/sinon-npm-17.0.0-01cd39f2f5-f7b5dee767.zip/node_modules/sinon/",\
+        ["npm:17.0.1", {\
+          "packageLocation": "./.yarn/cache/sinon-npm-17.0.1-997c13081d-a807c2997d.zip/node_modules/sinon/",\
           "packageDependencies": [\
-            ["sinon", "npm:17.0.0"],\
+            ["sinon", "npm:17.0.1"],\
             ["@sinonjs/commons", "npm:3.0.0"],\
             ["@sinonjs/fake-timers", "npm:11.2.2"],\
             ["@sinonjs/samsam", "npm:8.0.0"],\
@@ -11945,7 +11945,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chai", null],\
             ["@types/sinon", null],\
             ["chai", "npm:4.3.10"],\
-            ["sinon", "npm:17.0.0"]\
+            ["sinon", "npm:17.0.1"]\
           ],\
           "packagePeers": [\
             "@types/chai",\
