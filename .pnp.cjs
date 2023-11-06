@@ -96,7 +96,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.21.0"],\
             ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.89.0"],\
             ["webpack-cli", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.1.4"],\
-            ["yarn-audit-fix", "npm:10.0.3"]\
+            ["yarn-audit-fix", "npm:10.0.4"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -6281,6 +6281,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["find-up-simple", [\
+        ["npm:1.0.0", {\
+          "packageLocation": "./.yarn/cache/find-up-simple-npm-1.0.0-81eb875be8-91c3d51c11.zip/node_modules/find-up-simple/",\
+          "packageDependencies": [\
+            ["find-up-simple", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["flat", [\
         ["npm:5.0.2", {\
           "packageLocation": "./.yarn/cache/flat-npm-5.0.2-12748102a5-12a1536ac7.zip/node_modules/flat/",\
@@ -10569,6 +10578,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["find-up", "npm:6.3.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:8.0.0", {\
+          "packageLocation": "./.yarn/cache/pkg-dir-npm-8.0.0-8f25c25dc7-e589abebd1.zip/node_modules/pkg-dir/",\
+          "packageDependencies": [\
+            ["pkg-dir", "npm:8.0.0"],\
+            ["find-up-simple", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["playwright", [\
@@ -10775,7 +10792,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.21.0"],\
             ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.89.0"],\
             ["webpack-cli", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.1.4"],\
-            ["yarn-audit-fix", "npm:10.0.3"]\
+            ["yarn-audit-fix", "npm:10.0.4"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -14004,10 +14021,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["yarn-audit-fix", [\
-        ["npm:10.0.3", {\
-          "packageLocation": "./.yarn/cache/yarn-audit-fix-npm-10.0.3-36474fa699-2c701f5ec1.zip/node_modules/yarn-audit-fix/",\
+        ["npm:10.0.4", {\
+          "packageLocation": "./.yarn/cache/yarn-audit-fix-npm-10.0.4-a3b304ed56-dabfa10291.zip/node_modules/yarn-audit-fix/",\
           "packageDependencies": [\
-            ["yarn-audit-fix", "npm:10.0.3"],\
+            ["yarn-audit-fix", "npm:10.0.4"],\
             ["@types/find-cache-dir", "npm:3.2.1"],\
             ["@types/fs-extra", "npm:11.0.3"],\
             ["@types/lodash-es", "npm:4.17.10"],\
@@ -14022,7 +14039,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fs-extra", "npm:11.1.1"],\
             ["js-yaml", "npm:4.1.0"],\
             ["lodash-es", "npm:4.17.21"],\
-            ["pkg-dir", "npm:7.0.0"],\
+            ["pkg-dir", "npm:8.0.0"],\
             ["semver", "npm:7.5.4"],\
             ["synp", "npm:1.9.10"]\
           ],\
