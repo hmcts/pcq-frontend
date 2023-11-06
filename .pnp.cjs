@@ -86,7 +86,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["serve-favicon", "npm:2.5.0"],\
             ["sinon", "npm:17.0.1"],\
             ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-            ["sonarqube-scanner", "npm:3.1.0"],\
+            ["sonarqube-scanner", "npm:3.2.0"],\
             ["supertest", "npm:6.3.3"],\
             ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["traverse", "npm:0.6.7"],\
@@ -8166,6 +8166,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["jest-sonar-reporter", [\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/jest-sonar-reporter-npm-2.0.0-fc25caa9d6-a79d87f0db.zip/node_modules/jest-sonar-reporter/",\
+          "packageDependencies": [\
+            ["jest-sonar-reporter", "npm:2.0.0"],\
+            ["xml", "npm:1.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["jest-worker", [\
         ["npm:27.5.1", {\
           "packageLocation": "./.yarn/cache/jest-worker-npm-27.5.1-1c110b5894-98cd68b696.zip/node_modules/jest-worker/",\
@@ -10782,7 +10792,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["serve-favicon", "npm:2.5.0"],\
             ["sinon", "npm:17.0.1"],\
             ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-            ["sonarqube-scanner", "npm:3.1.0"],\
+            ["sonarqube-scanner", "npm:3.2.0"],\
             ["supertest", "npm:6.3.3"],\
             ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["traverse", "npm:0.6.7"],\
@@ -12050,13 +12060,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["sonarqube-scanner", [\
-        ["npm:3.1.0", {\
-          "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-3.1.0-81cc1a9f0f-973e6f7f6b.zip/node_modules/sonarqube-scanner/",\
+        ["npm:3.2.0", {\
+          "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-3.2.0-1980db5bbd-7f1a2364f3.zip/node_modules/sonarqube-scanner/",\
           "packageDependencies": [\
-            ["sonarqube-scanner", "npm:3.1.0"],\
+            ["sonarqube-scanner", "npm:3.2.0"],\
             ["adm-zip", "npm:0.5.10"],\
             ["fancy-log", "npm:2.0.0"],\
             ["https-proxy-agent", "npm:7.0.1"],\
+            ["jest-sonar-reporter", "npm:2.0.0"],\
             ["mkdirp", "npm:3.0.1"],\
             ["node-downloader-helper", "npm:2.1.9"],\
             ["progress", "npm:2.0.3"],\
@@ -13845,6 +13856,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/x-xss-protection-npm-1.3.0-b21b288d58-acfce146b7.zip/node_modules/x-xss-protection/",\
           "packageDependencies": [\
             ["x-xss-protection", "npm:1.3.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["xml", [\
+        ["npm:1.0.1", {\
+          "packageLocation": "./.yarn/cache/xml-npm-1.0.1-f50a7aeb8e-11b5545ef3.zip/node_modules/xml/",\
+          "packageDependencies": [\
+            ["xml", "npm:1.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
