@@ -118,8 +118,8 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
             ],
             frameAncestors: ['\'self\'']
         },
-        browserSniff: true,
-        setAllHeaders: true
+        browserSniff: false,
+        setAllHeaders: false
     }));
 
     // Http public key pinning
