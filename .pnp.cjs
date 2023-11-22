@@ -96,7 +96,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.23.0"],\
             ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.89.0"],\
             ["webpack-cli", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.1.4"],\
-            ["yarn-audit-fix", "npm:10.0.4"]\
+            ["yarn-audit-fix", "npm:10.0.5"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -6389,6 +6389,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["path-exists", "npm:5.0.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:7.0.0", {\
+          "packageLocation": "./.yarn/cache/find-up-npm-7.0.0-2283627385-e1c63860f9.zip/node_modules/find-up/",\
+          "packageDependencies": [\
+            ["find-up", "npm:7.0.0"],\
+            ["locate-path", "npm:7.2.0"],\
+            ["path-exists", "npm:5.0.0"],\
+            ["unicorn-magic", "npm:0.1.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["find-up-simple", [\
@@ -8668,6 +8678,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["p-locate", "npm:6.0.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:7.2.0", {\
+          "packageLocation": "./.yarn/cache/locate-path-npm-7.2.0-0e1169e19b-c1b653bdf2.zip/node_modules/locate-path/",\
+          "packageDependencies": [\
+            ["locate-path", "npm:7.2.0"],\
+            ["p-locate", "npm:6.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["lodash", [\
@@ -10884,7 +10902,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.23.0"],\
             ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.89.0"],\
             ["webpack-cli", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.1.4"],\
-            ["yarn-audit-fix", "npm:10.0.4"]\
+            ["yarn-audit-fix", "npm:10.0.5"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -13161,6 +13179,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["unicorn-magic", [\
+        ["npm:0.1.0", {\
+          "packageLocation": "./.yarn/cache/unicorn-magic-npm-0.1.0-12d4f6ff8b-48c5882ca3.zip/node_modules/unicorn-magic/",\
+          "packageDependencies": [\
+            ["unicorn-magic", "npm:0.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["unique-filename", [\
         ["npm:1.1.1", {\
           "packageLocation": "./.yarn/cache/unique-filename-npm-1.1.1-c885c5095b-cf4998c922.zip/node_modules/unique-filename/",\
@@ -14097,10 +14124,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["yarn-audit-fix", [\
-        ["npm:10.0.4", {\
-          "packageLocation": "./.yarn/cache/yarn-audit-fix-npm-10.0.4-a3b304ed56-dabfa10291.zip/node_modules/yarn-audit-fix/",\
+        ["npm:10.0.5", {\
+          "packageLocation": "./.yarn/cache/yarn-audit-fix-npm-10.0.5-8e2b198f1d-ed47d1708f.zip/node_modules/yarn-audit-fix/",\
           "packageDependencies": [\
-            ["yarn-audit-fix", "npm:10.0.4"],\
+            ["yarn-audit-fix", "npm:10.0.5"],\
             ["@types/find-cache-dir", "npm:3.2.1"],\
             ["@types/fs-extra", "npm:11.0.3"],\
             ["@types/lodash-es", "npm:4.17.10"],\
@@ -14111,7 +14138,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["commander", "npm:10.0.1"],\
             ["fast-glob", "npm:3.3.1"],\
             ["find-cache-dir", "npm:5.0.0"],\
-            ["find-up", "npm:6.3.0"],\
+            ["find-up", "npm:7.0.0"],\
             ["fs-extra", "npm:11.1.1"],\
             ["js-yaml", "npm:4.1.0"],\
             ["lodash-es", "npm:4.17.21"],\
