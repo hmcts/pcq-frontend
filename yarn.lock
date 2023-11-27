@@ -1841,18 +1841,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wdio/config@npm:8.23.1":
-  version: 8.23.1
-  resolution: "@wdio/config@npm:8.23.1"
+"@wdio/config@npm:8.24.2":
+  version: 8.24.2
+  resolution: "@wdio/config@npm:8.24.2"
   dependencies:
     "@wdio/logger": 8.16.17
-    "@wdio/types": 8.23.1
-    "@wdio/utils": 8.23.1
+    "@wdio/types": 8.24.2
+    "@wdio/utils": 8.24.2
     decamelize: ^6.0.0
     deepmerge-ts: ^5.0.0
     glob: ^10.2.2
     import-meta-resolve: ^3.0.0
-  checksum: fa60b6c2b7b2b1327e2b8aaaddc40b9e1bbc6aa6c2147656c3b2a64728dacd35685fb3b9e2f4ecc425ad8ac918f6d31da2f180996b09b9501628fee42850a055
+  checksum: e66f6dae27fc3e50c52c821e1e49cfe3803fce82c1837e3840966bf634641c161c19ce1517b4ee2f0e82098d4e4fecc6941d5185f2f29bcd31aea17bd9e19e2f
   languageName: node
   linkType: hard
 
@@ -1896,22 +1896,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wdio/types@npm:8.23.1":
-  version: 8.23.1
-  resolution: "@wdio/types@npm:8.23.1"
+"@wdio/types@npm:8.24.2":
+  version: 8.24.2
+  resolution: "@wdio/types@npm:8.24.2"
   dependencies:
     "@types/node": ^20.1.0
-  checksum: 88184fca3c30a9da2da2dc786ca0613ccd3111016b958c9ccb884e38653eae906ca8ad2bbf3aade6b250839374537d63cdb76fb16687e043e307a93bd87e8dc0
+  checksum: 960805b77cbe9914e8c06ae48bb8caff67a602b7adcbfcfb55c5d00b73f0999aaaf0ed9d0a9c9590d2e7ab0d11277ff5f83cf6af2471b7a177046854f9864982
   languageName: node
   linkType: hard
 
-"@wdio/utils@npm:8.23.1":
-  version: 8.23.1
-  resolution: "@wdio/utils@npm:8.23.1"
+"@wdio/utils@npm:8.24.2":
+  version: 8.24.2
+  resolution: "@wdio/utils@npm:8.24.2"
   dependencies:
     "@puppeteer/browsers": ^1.6.0
     "@wdio/logger": 8.16.17
-    "@wdio/types": 8.23.1
+    "@wdio/types": 8.24.2
     decamelize: ^6.0.0
     deepmerge-ts: ^5.1.0
     edgedriver: ^5.3.5
@@ -1923,7 +1923,7 @@ __metadata:
     safaridriver: ^0.1.0
     split2: ^4.2.0
     wait-port: ^1.0.4
-  checksum: cfe9f97d7f3b0e863fdfe819bdb2b47876dcc4ced22a36195f7cd6ad837ae03963b7182e632258466faa986b50e20462098846e767cce03bee4c73a9da1614e7
+  checksum: 2d83353ee5a550e92fb7192cfd1e5e983ebe2756750ea39a5f51e6d63379bb01d52fb5a6431de8ffa30f4dea1b762ff8df4df70ac70d090e577fc86e7fab8652
   languageName: node
   linkType: hard
 
@@ -11671,36 +11671,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webdriver@npm:8.23.1":
-  version: 8.23.1
-  resolution: "webdriver@npm:8.23.1"
+"webdriver@npm:8.24.2":
+  version: 8.24.2
+  resolution: "webdriver@npm:8.24.2"
   dependencies:
     "@types/node": ^20.1.0
     "@types/ws": ^8.5.3
-    "@wdio/config": 8.23.1
+    "@wdio/config": 8.24.2
     "@wdio/logger": 8.16.17
     "@wdio/protocols": 8.23.0
-    "@wdio/types": 8.23.1
-    "@wdio/utils": 8.23.1
+    "@wdio/types": 8.24.2
+    "@wdio/utils": 8.24.2
     deepmerge-ts: ^5.1.0
     got: ^ 12.6.1
     ky: ^0.33.0
     ws: ^8.8.0
-  checksum: 30253ffc11bc40e9a4da53508cada2aac2e18cecbe2948199d411d3dac8e1af58b98482817b3f01338f10f51ec36b3092a104a0df48848b7c95c2c1a0a1fd564
+  checksum: b1dff6a59e3ad2e6690a10af169ffb4c8d74d3469100a62b96b3cffd9bb0f5724dd4b1b50443d74ef45287343310ecd9e916be8cae45277f0b86dbb1a1abc576
   languageName: node
   linkType: hard
 
 "webdriverio@npm:^8.21.0":
-  version: 8.23.5
-  resolution: "webdriverio@npm:8.23.5"
+  version: 8.24.2
+  resolution: "webdriverio@npm:8.24.2"
   dependencies:
     "@types/node": ^20.1.0
-    "@wdio/config": 8.23.1
+    "@wdio/config": 8.24.2
     "@wdio/logger": 8.16.17
     "@wdio/protocols": 8.23.0
     "@wdio/repl": 8.23.1
-    "@wdio/types": 8.23.1
-    "@wdio/utils": 8.23.1
+    "@wdio/types": 8.24.2
+    "@wdio/utils": 8.24.2
     archiver: ^6.0.0
     aria-query: ^5.0.0
     css-shorthand-properties: ^1.1.1
@@ -11717,13 +11717,13 @@ __metadata:
     resq: ^1.9.1
     rgb2hex: 0.2.5
     serialize-error: ^11.0.1
-    webdriver: 8.23.1
+    webdriver: 8.24.2
   peerDependencies:
     devtools: ^8.14.0
   peerDependenciesMeta:
     devtools:
       optional: true
-  checksum: e8b757b2d803e16ea1eba877b81a2ab83aac8aa9a580026986d36e2be91aceb734eb034351507cd277486845059e3b78dc36288804abdb47c86158f8d851a534
+  checksum: 440f35fe81cc6e3d98b165208e68a33da04eb216be069d76164413900ebe62334e77c8d9e27071a7449d23fbf52a690474a8590a9481626652a83f32bda56868
   languageName: node
   linkType: hard
 
