@@ -597,5 +597,7 @@
   "10095_Backup File Disclosure_https://pcq.aat.platform.hmcts.net/Copy%20of%20ruxitagentjs_ICA27NQVfhqrux_10279231130031246.js_GET": "ignore",
   "90027_Cookie Slack Detector_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10279231130031246.js_GET": "ignore",
   "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10279231130031246.js_GET": "ignore",
-  "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/cookies?analytics=%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E%3C%21--&apm=on&lng=cy_GET": "ignore"
+  "90017_XSLT Injection_https://pcq.aat.platform.hmcts.net/cookies?analytics=%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E%3C%21--&apm=on&lng=cy_GET": "ignore",
+  "40025_Proxy Disclosure_https://pcq.aat.platform.hmcts.net/assets/images/govuk-icon-mask.svg_GET": "ignore",
+  "10096_Timestamp Disclosure - Unix_https://pcq.aat.platform.hmcts.net/assets/images/govuk-icon-180.png_GET": "ignore"
 }
