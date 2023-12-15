@@ -5,6 +5,8 @@ nodejs:
     REDIS_USE_TLS: false
   image: ${IMAGE_NAME}
   ingressHost: ${SERVICE_FQDN}
+  startupProbe:
+    initialDelaySeconds: 15
 
 redis:
   enabled: true
