@@ -60,7 +60,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["govuk-frontend", "npm:4.7.0"],\
             ["helmet", "npm:3.23.3"],\
             ["https-proxy-agent", "npm:5.0.1"],\
-            ["i18next", "npm:23.7.9"],\
+            ["i18next", "npm:23.7.11"],\
             ["ioredis", "npm:5.3.2"],\
             ["js-yaml", "npm:4.1.0"],\
             ["jsonwebtoken", "npm:9.0.0"],\
@@ -7426,10 +7426,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["i18next", [\
-        ["npm:23.7.9", {\
-          "packageLocation": "./.yarn/cache/i18next-npm-23.7.9-b1bb8dc36c-632fcfa995.zip/node_modules/i18next/",\
+        ["npm:23.7.11", {\
+          "packageLocation": "./.yarn/cache/i18next-npm-23.7.11-50aa9e4b7e-50aeaa279f.zip/node_modules/i18next/",\
           "packageDependencies": [\
-            ["i18next", "npm:23.7.9"],\
+            ["i18next", "npm:23.7.11"],\
             ["@babel/runtime", "npm:7.23.2"]\
           ],\
           "linkType": "HARD"\
@@ -10744,7 +10744,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["govuk-frontend", "npm:4.7.0"],\
             ["helmet", "npm:3.23.3"],\
             ["https-proxy-agent", "npm:5.0.1"],\
-            ["i18next", "npm:23.7.9"],\
+            ["i18next", "npm:23.7.11"],\
             ["ioredis", "npm:5.3.2"],\
             ["js-yaml", "npm:4.1.0"],\
             ["jsonwebtoken", "npm:9.0.0"],\
