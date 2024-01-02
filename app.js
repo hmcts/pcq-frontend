@@ -286,13 +286,13 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     } else {
         http = app.listen(port, () => {
             console.log(`Application started: http://localhost:${port}${config.app.basePath}`);
-            console.log(`Environment: $(config.nodeEnvironment)`);
         });
     }
 
     // PCQ Invoker
     if (config.environment !== 'prod') {
         invoker.addTo(app);
+        logger.info(`Environment ${config.nodeEnvironment}`);
     }
 
     app.all('*', (req, res) => {
