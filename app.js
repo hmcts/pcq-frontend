@@ -292,7 +292,6 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     // PCQ Invoker
     if (config.environment !== 'prod') {
         invoker.addTo(app);
-        logger.info(`Environment ${config.nodeEnvironment}`);
     }
 
     app.all('*', (req, res) => {
