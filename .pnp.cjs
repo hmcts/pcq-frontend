@@ -68,7 +68,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.21"],\
             ["mocha", "npm:10.2.0"],\
             ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
-            ["moment", "npm:2.29.4"],\
+            ["moment", "npm:2.30.1"],\
             ["nock", "npm:13.4.0"],\
             ["node-emoji", "npm:2.1.3"],\
             ["node-fetch", "virtual:e9a012ddd7ebe6b0d904a8e9e9e271777511d8af9971ae287e96e5357c7b52a59e5a63e98d7f598f6fb8a8262ff489ac06679e7ed6a72b001718547ba802c4cf#npm:2.7.0"],\
@@ -1445,7 +1445,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@hmcts-nodejs-logging-npm-4.0.4-b42d915546-4a21f0beb0.zip/node_modules/@hmcts/nodejs-logging/",\
           "packageDependencies": [\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
-            ["moment", "npm:2.29.4"],\
+            ["moment", "npm:2.30.1"],\
             ["on-finished", "npm:2.4.1"],\
             ["winston", "npm:2.4.6"]\
           ],\
@@ -9477,10 +9477,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["moment", [\
-        ["npm:2.29.4", {\
-          "packageLocation": "./.yarn/cache/moment-npm-2.29.4-902943305d-0ec3f9c2bc.zip/node_modules/moment/",\
+        ["npm:2.30.1", {\
+          "packageLocation": "./.yarn/cache/moment-npm-2.30.1-1c51a5c631-859236bab1.zip/node_modules/moment/",\
           "packageDependencies": [\
-            ["moment", "npm:2.29.4"]\
+            ["moment", "npm:2.30.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -10752,7 +10752,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.21"],\
             ["mocha", "npm:10.2.0"],\
             ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
-            ["moment", "npm:2.29.4"],\
+            ["moment", "npm:2.30.1"],\
             ["nock", "npm:13.4.0"],\
             ["node-emoji", "npm:2.1.3"],\
             ["node-fetch", "virtual:e9a012ddd7ebe6b0d904a8e9e9e271777511d8af9971ae287e96e5357c7b52a59e5a63e98d7f598f6fb8a8262ff489ac06679e7ed6a72b001718547ba802c4cf#npm:2.7.0"],\
