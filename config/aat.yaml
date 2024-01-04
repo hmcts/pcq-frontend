@@ -1,4 +1,0 @@
-# empty file to prevent:
-# WARNING: NODE_ENV value of 'aat' did not match any deployment config file names
-environment: 'aat'
-NODE_ENV: 'aat'
