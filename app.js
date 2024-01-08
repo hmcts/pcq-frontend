@@ -80,7 +80,6 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
                 '\'sha256-+6WnXIl4mbFTCARd8N3COQmT3bJJmo32N8q8ZSQAIcU=\'',
                 '\'sha256-AaA9Rn5LTFZ5vKyp3xOfFcP4YbyOjvWn2up8IKHVAKk=\'',
                 '\'sha256-G29/qSW/JHHANtFhlrZVDZW1HOkCDRc78ggbqwwIJ2g=\'',
-                '\'sha256-5DJCzljK4smL3Mwbyrd6G/oGCgOFZyBApVEphsOhCEQ=\'',
                 'https://www.google-analytics.com',
                 'https://*.googletagmanager.com',
                 'https://*.dynatrace.com',
