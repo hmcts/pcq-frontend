@@ -57,7 +57,7 @@ Run the application local server:
 $ yarn start
 ```
 
-Open [https://localhost:4000](https://localhost:4000) in a browser 
+Open [https://localhost:4000](https://localhost:4000) in a browser
 
 ## Developing
 
