@@ -84,7 +84,6 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
                 'https://www.google-analytics.com',
                 'https://*.googletagmanager.com',
                 'https://*.dynatrace.com',
-                'https://js-cdn.dynatrace.com',
                 'vcc-eu4.8x8.com',
                 'vcc-eu4b.8x8.com',
                 `'nonce-${uuid}'`
@@ -95,7 +94,6 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
                 'https://*.analytics.google.com',
                 'https://*.googletagmanager.com',
                 'https://*.dynatrace.com',
-                'https://js-cdn.dynatrace.com',
                 'https://*.g.doubleclick.net'
             ],
             mediaSrc: ['\'self\''],
@@ -107,7 +105,6 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
                 'https://*.analytics.google.com',
                 'https://*.googletagmanager.com',
                 'https://*.dynatrace.com',
-                'https://js-cdn.dynatrace.com',
                 'https://*.g.doubleclick.net',
                 'vcc-eu4.8x8.com',
                 'vcc-eu4b.8x8.com',
