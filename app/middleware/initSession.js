@@ -4,6 +4,7 @@ const config = require('config');
 const uuidv4 = require('uuid/v4');
 
 const initSession = (req, res, next) => {
+
     if (!req.session.correlationId) {
         req.session.correlationId = uuidv4();
     }
