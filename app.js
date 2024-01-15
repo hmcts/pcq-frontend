@@ -18,6 +18,7 @@ const config = require('config');
 const utils = require(`${__dirname}/app/components/utils`);
 const packageJson = require(`${__dirname}/package`);
 const helmet = require('helmet');
+const noCache = require('nocache');
 const csrf = require('csurf');
 const healthcheck = require(`${__dirname}/app/healthcheck`);
 const fs = require('fs');
@@ -117,15 +118,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
                 'fonts.googleapis.com'
             ],
             frameAncestors: ['\'self\'']
-        },
-        browserSniff: false,
-        setAllHeaders: false
-    }));
-
-    // Http public key pinning
-    app.use(helmet.hpkp({
-        maxAge: 900,
-        sha256s: ['AbCdEf123=', 'XyzABC123=']
+        }
     }));
 
     // Referrer policy for helmet
@@ -133,7 +126,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         policy: 'origin'
     }));
 
-    app.use(helmet.noCache());
+    app.use(noCache());
 
     app.use(helmet.xssFilter({setOnOldIE: true}));
 
