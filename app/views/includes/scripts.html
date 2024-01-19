@@ -1,6 +1,6 @@
 <script src="{{ globals.basePath }}/public/javascripts/govuk-frontend/govuk/all.js"></script>
 <script nonce="{{ globals.nonce }}">window.GOVUKFrontend.initAll()</script>
-{% if !((settings.env == 'prod') and (settings.env == 'production')) %}
+{% if ((settings.env != 'prod') or (settings.env != 'production')) %}
     <script src="https://js-cdn.dynatrace.com/jstag/17177a07246/bf24054dsx/27a3075f1661d271_complete.js"></script> 
 {% endif %}
 <!--[if lte IE 9]>
