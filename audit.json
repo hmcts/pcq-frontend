@@ -133,6 +133,7 @@
   "90027_Cookie Slack Detector_https://pcq.aat.platform.hmcts.net/terms-conditions?lng=cy_GET": "ignore",
   "90027_Cookie Slack Detector_https://pcq.aat.platform.hmcts.net/privacy-policy?lng=en_GET": "ignore",
   "90027_Cookie Slack Detector_https://pcq.aat.platform.hmcts.net/terms-conditions?lng=en_GET": "ignore",
+  "90027_Cookie Slack Detector_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10281231207105659.js_GET": "ignore",
   "90033_Loosely Scoped Cookie_https://pcq.aat.platform.hmcts.net/_GET": "ignore",
   "90033_Loosely Scoped Cookie_https://pcq.aat.platform.hmcts.net/robots.txt_GET": "ignore",
   "90033_Loosely Scoped Cookie_https://pcq.aat.platform.hmcts.net/offline_GET": "ignore",
@@ -413,6 +414,7 @@
   "10027_Information Disclosure - Suspicious Comments_https://pcq.aat.platform.hmcts.net/public/javascripts/cookie_bundle.js_GET" : "ignore",
   "10027_Information Disclosure - Suspicious Comments_https://pcq.aat.platform.hmcts.net/public/javascripts/cookie_bundle_v1.js_GET" : "ignore",
   "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10277231024135831.js_GET": "ignore",
+  "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10281231207105659.js_GET": "ignore",
   "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/assets/images/govuk-apple-touch-icon-167x167.png_GET": "ignore",
   "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/assets/images/govuk-icon-180.png_GET": "ignore",
   "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/assets/images/govuk-logotype-crown.png_GET": "ignore",
@@ -605,5 +607,9 @@
   "40025_Proxy Disclosure_https://pcq.aat.platform.hmcts.net/assets/images/govuk-icon-mask.svg_GET": "ignore",
   "10096_Timestamp Disclosure - Unix_https://pcq.aat.platform.hmcts.net/assets/images/govuk-icon-180.png_GET": "ignore",
   "40021_SQL Injection - Oracle - Time Based_https://pcq.aat.platform.hmcts.net/accessibility-statement?lng=cy_GET": "ignore",
-  "10095_Backup File Disclosure_https://pcq.aat.platform.hmcts.net/Copy%20(3)%20of%20ruxitagentjs_ICA27NQVfhqrux_10279231130031246.js_GET": "ignore"
+  "10095_Backup File Disclosure_https://pcq.aat.platform.hmcts.net/Copy%20(3)%20of%20ruxitagentjs_ICA27NQVfhqrux_10279231130031246.js_GET": "ignore",
+  "10017_Cross-Domain JavaScript Source File Inclusion_https://pcq.aat.platform.hmcts.net/privacy-policy?lng=cy_GET": "ignore",
+  "10017_Cross-Domain JavaScript Source File Inclusion_https://pcq.aat.platform.hmcts.net/terms-conditions_GET": "ignore",
+  "10017_Cross-Domain JavaScript Source File Inclusion_https://pcq.aat.platform.hmcts.net/terms-conditions?lng=cy_GET": "ignore"
+  
 }
