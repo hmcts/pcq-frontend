@@ -276,6 +276,7 @@
   "10035_Strict-Transport-Security Header Not Set_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10279231130031246.js_GET": "ignore",
   "10035_Strict-Transport-Security Header Not Set_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10275230919171419.js_GET": "ignore",
   "10035_Strict-Transport-Security Header Not Set_https://pcq.aat.platform.hmcts.net/cookies_GET": "ignore",
+  "10035_Strict-Transport-Security Header Not Set_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10281231207105659.js_GET": "ignore",
   "10031_User Controllable HTML Element Attribute (Potential XSS)_https://pcq.aat.platform.hmcts.net/offline?lng=en_GET": "ignore",
   "10031_User Controllable HTML Element Attribute (Potential XSS)_https://pcq.aat.platform.hmcts.net/accessibility-statement?lng=en_GET": "ignore",
   "10031_User Controllable HTML Element Attribute (Potential XSS)_https://pcq.aat.platform.hmcts.net/privacy-policy?lng=en_GET": "ignore",
@@ -471,6 +472,8 @@
   "10027_Information Disclosure - Suspicious Comments_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10269230615181503.js_GET": "ignore",
   "10021_X-Content-Type-Options Header Missing_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10269230629181806.js_GET": "ignore",
   "10027_Information Disclosure - Suspicious Comments_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10269230629181806.js_GET": "ignore",
+  "10021_X-Content-Type-Options Header Missing_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10281231207105659.js_GET": "ignore",
+  "10027_Information Disclosure - Suspicious Comments_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10281231207105659.js_GET": "ignore",
   "90020_Remote OS Command Injection_https://pcq.aat.platform.hmcts.net/cookies?analytics=on\u0026apm=on%26timeout+%2FT+15_GET": "ignore",
   "10104_User Agent Fuzzer_https://pcq.aat.platform.hmcts.net/ruxitagentjs_ICA27NQVfhqrux_10271230629152232.js_GET": "ignore",
   "10112_Session Management Response Identified_https://pcq.aat.platform.hmcts.net_GET": "ignore",
@@ -610,6 +613,10 @@
   "10095_Backup File Disclosure_https://pcq.aat.platform.hmcts.net/Copy%20(3)%20of%20ruxitagentjs_ICA27NQVfhqrux_10279231130031246.js_GET": "ignore",
   "10017_Cross-Domain JavaScript Source File Inclusion_https://pcq.aat.platform.hmcts.net/privacy-policy?lng=cy_GET": "ignore",
   "10017_Cross-Domain JavaScript Source File Inclusion_https://pcq.aat.platform.hmcts.net/terms-conditions_GET": "ignore",
-  "10017_Cross-Domain JavaScript Source File Inclusion_https://pcq.aat.platform.hmcts.net/terms-conditions?lng=cy_GET": "ignore"
+  "10017_Cross-Domain JavaScript Source File Inclusion_https://pcq.aat.platform.hmcts.net/terms-conditions?lng=cy_GET": "ignore",
+  "10017_Cross-Domain JavaScript Source File Inclusion_https://pcq.aat.platform.hmcts.net/privacy-policy_GET": "ignore",
+  "10017_Cross-Domain JavaScript Source File Inclusion_https://pcq.aat.platform.hmcts.net/privacy-policy?lng=en_GET": "ignore",
+  "10017_Cross-Domain JavaScript Source File Inclusion_https://pcq.aat.platform.hmcts.net/terms-conditions?lng=en_GET": "ignore"
   
 }
+
