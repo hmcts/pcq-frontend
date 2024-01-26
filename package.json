@@ -120,7 +120,7 @@
     "yarn-audit-fix": "^10.0.3"
   },
   "resolutions": {
-    "@opentelemetry/instrumentation": "^0.47.0"
+    "@opentelemetry/instrumentation": "^0.48.0"
   },
   "nyc": {
     "report-dir": "functional-output/coverage",
