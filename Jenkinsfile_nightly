@@ -1,12 +1,13 @@
 #!groovy
 
 properties([
-// H allow predefined but random minute see https://en.wikipedia.org/wiki/Cron#Non-standard_characters
-//PCQ-1536 (Stop running Nightly builds on weekends). Original schedule was 'H 05 * * *'
-pipelineTriggers([cron('H 8 * * 1-5')]),
-parameters([
-        string(name: 'URL_TO_TEST', defaultValue: 'https://pcq.aat.platform.hmcts.net', description: 'The URL you want to run these tests against')
-])
+  // H allow predefined but random minute see https://en.wikipedia.org/wiki/Cron#Non-standard_characters
+  //PCQ-1536 (Stop running Nightly builds on weekends). Original schedule was 'H 05 * * *'
+  pipelineTriggers([cron('H 8 * * 1-5')]),
+  parameters([
+    string(name: 'URL_TO_TEST', defaultValue: 'https://pcq.aat.platform.hmcts.net', description: 'The URL you want to run these tests against'),
+    string(name: 'ZAP_URL_EXCLUSIONS', defaultValue: "-config globalexcludeurl.url_list.url(1).regex='.*ruxitagentjs_.*'")
+  ])
 ])
 
 @Library("Infrastructure")
@@ -14,6 +15,8 @@ parameters([
 def type = "nodejs"
 def product = "pcq"
 def component = "frontend"
+
+def urlExclusions = params.ZAP_URL_EXCLUSIONS
 
 def secrets = [
   'pcq-${env}': [
@@ -37,7 +40,9 @@ withNightlyPipeline(type, product, component) {
     enableMutationTest();
     enableSlackNotifications('#pcq-builds')
     enableFortifyScan()
-    enableSecurityScan()
+    enableSecurityScan(
+      urlExclusions: urlExclusions
+    )
     enableCrossBrowserTest()
     enableFullFunctionalTest(20)
 
