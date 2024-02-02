@@ -5,7 +5,7 @@
   "properties": {
     "language_main": {
       "type": [ "integer", "null" ],
-      "enum": [ 0, 1, 2, null ]
+      "enum": [ 0, 2, 3, 4, null ]
     },
     "language_other": {
       "type": [ "string", "null" ],

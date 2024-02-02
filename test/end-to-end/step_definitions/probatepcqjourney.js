@@ -27,7 +27,7 @@ Then('I am presented with the PCQ Intro Welsh page', () => {
 
 When('I submit all pcq questions', () => {
     I.dateofbirth(lang);
-    I.selectenglishorwelsh(lang);
+    I.selectenglish(lang);
     I.selectsexmale(lang);
     I.selectyesgendersameassex(lang);
     I.selecthetersexualorientation(lang);

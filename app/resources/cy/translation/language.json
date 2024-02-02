@@ -1,6 +1,7 @@
 {
   "question": "Beth yw eich iaith gyntaf?",
-  "optionEnglishWelsh": "Cymraeg neu Saesneg",
+  "optionEnglish": "Saesneg",
+  "optionWelsh": "Cymraeg",
   "optionOther": "Arall",
   "optionOtherDetails": "Nodwch eich prif iaith (yn cynnwys Iaith Arwyddion Prydain)",
 

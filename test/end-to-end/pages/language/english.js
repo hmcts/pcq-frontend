@@ -8,10 +8,10 @@ module.exports = function (lang) {
     I.seeCurrentUrlEquals(pageUnderTest.getUrl());
 
     if (lang === 'cy') {
-        I.click('Cymraeg neu Saesneg');
+        I.click('Saesneg');
         I.click('Parhau');
     } else {
-        I.click('English or Welsh');
+        I.click('English');
         I.click('Continue');
     }
 };
