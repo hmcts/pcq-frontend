@@ -2110,6 +2110,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@wdio/protocols@npm:8.29.7":
+  version: 8.29.7
+  resolution: "@wdio/protocols@npm:8.29.7"
+  checksum: bf7b3570039a990d668891ceb387160f563dc4e52fcc09951061000a59612a7f54ade66bb36db710ea78ad403f1f1903a3b3e84b85e6a0e1fb4c7a092c8dac3e
+  languageName: node
+  linkType: hard
+
 "@wdio/repl@npm:8.24.12":
   version: 8.24.12
   resolution: "@wdio/repl@npm:8.24.12"
@@ -12687,33 +12694,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webdriver@npm:8.29.3":
-  version: 8.29.3
-  resolution: "webdriver@npm:8.29.3"
+"webdriver@npm:8.29.7":
+  version: 8.29.7
+  resolution: "webdriver@npm:8.29.7"
   dependencies:
     "@types/node": ^20.1.0
     "@types/ws": ^8.5.3
     "@wdio/config": 8.29.3
     "@wdio/logger": 8.28.0
-    "@wdio/protocols": 8.24.12
+    "@wdio/protocols": 8.29.7
     "@wdio/types": 8.29.1
     "@wdio/utils": 8.29.3
     deepmerge-ts: ^5.1.0
     got: ^12.6.1
     ky: ^0.33.0
     ws: ^8.8.0
-  checksum: d6609a08bf75b7083fe0c5395804849aa96f851f3f79d1cdfa8baa2136b1a7c1efc7e5ecfc18c191e7ecb3888950d9907fb3405f1e77ac035503f8aff42df611
+  checksum: 7074c481429d2a1c8af70fe74b48e45dd7927f120cee9d7c44d5bc19a934f2e366263c6637e8581e044c3ce2ad65cc1973eb665ee7a3f95ef41205654238bfa1
   languageName: node
   linkType: hard
 
 "webdriverio@npm:^8.21.0":
-  version: 8.29.3
-  resolution: "webdriverio@npm:8.29.3"
+  version: 8.29.7
+  resolution: "webdriverio@npm:8.29.7"
   dependencies:
     "@types/node": ^20.1.0
     "@wdio/config": 8.29.3
     "@wdio/logger": 8.28.0
-    "@wdio/protocols": 8.24.12
+    "@wdio/protocols": 8.29.7
     "@wdio/repl": 8.24.12
     "@wdio/types": 8.29.1
     "@wdio/utils": 8.29.3
@@ -12733,13 +12740,13 @@ __metadata:
     resq: ^1.9.1
     rgb2hex: 0.2.5
     serialize-error: ^11.0.1
-    webdriver: 8.29.3
+    webdriver: 8.29.7
   peerDependencies:
     devtools: ^8.14.0
   peerDependenciesMeta:
     devtools:
       optional: true
-  checksum: e311304566c9fd4a5e8f5717e3dbc9e44869d66a23f9164985680a67efad1a1cf3527397b0f0fffe4a1d93ed0934193a27772691cae460ea0b5d33228c49dbb8
+  checksum: 45d49a8c8a9836d5400d233ddd930518071007b5de696e3868ebb41eaee27a6ce9c7097e5708488b9c775b80f67d171f49916602e5474b3ba83db830f7f0a16e
   languageName: node
   linkType: hard
 
