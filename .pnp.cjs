@@ -31,7 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/traverse", "npm:7.23.9"],\
             ["@babel/types", "npm:7.23.9"],\
             ["@hmcts/cookie-manager", "npm:1.0.0"],\
-            ["@hmcts/nodejs-healthcheck", "npm:1.8.3"],\
+            ["@hmcts/nodejs-healthcheck", "npm:1.8.4"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
             ["@hmcts/properties-volume", "npm:1.1.0"],\
             ["@stryker-mutator/api", "npm:7.3.0"],\
@@ -1549,13 +1549,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@hmcts/nodejs-healthcheck", [\
-        ["npm:1.8.3", {\
-          "packageLocation": "./.yarn/cache/@hmcts-nodejs-healthcheck-npm-1.8.3-0b01c623ac-76f87a5a67.zip/node_modules/@hmcts/nodejs-healthcheck/",\
+        ["npm:1.8.4", {\
+          "packageLocation": "./.yarn/cache/@hmcts-nodejs-healthcheck-npm-1.8.4-1a9c485eb9-8b2a6d1745.zip/node_modules/@hmcts/nodejs-healthcheck/",\
           "packageDependencies": [\
-            ["@hmcts/nodejs-healthcheck", "npm:1.8.3"],\
+            ["@hmcts/nodejs-healthcheck", "npm:1.8.4"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
             ["js-yaml", "npm:3.14.1"],\
-            ["superagent", "npm:7.1.6"]\
+            ["superagent", "npm:8.1.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5873,15 +5873,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["dezalgo", [\
-        ["npm:1.0.3", {\
-          "packageLocation": "./.yarn/cache/dezalgo-npm-1.0.3-e2bc978ebd-8b26238db9.zip/node_modules/dezalgo/",\
-          "packageDependencies": [\
-            ["dezalgo", "npm:1.0.3"],\
-            ["asap", "npm:2.0.6"],\
-            ["wrappy", "npm:1.0.2"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:1.0.4", {\
           "packageLocation": "./.yarn/cache/dezalgo-npm-1.0.4-ae3b673c98-895389c6ae.zip/node_modules/dezalgo/",\
           "packageDependencies": [\
@@ -7097,17 +7088,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["formidable", [\
-        ["npm:2.0.1", {\
-          "packageLocation": "./.yarn/cache/formidable-npm-2.0.1-b18227215c-b35445444e.zip/node_modules/formidable/",\
-          "packageDependencies": [\
-            ["formidable", "npm:2.0.1"],\
-            ["dezalgo", "npm:1.0.3"],\
-            ["hexoid", "npm:1.0.0"],\
-            ["once", "npm:1.4.0"],\
-            ["qs", "npm:6.9.3"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:2.1.2", {\
           "packageLocation": "./.yarn/cache/formidable-npm-2.1.2-40ba18d67f-81c8e5d89f.zip/node_modules/formidable/",\
           "packageDependencies": [\
@@ -11781,7 +11761,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/traverse", "npm:7.23.9"],\
             ["@babel/types", "npm:7.23.9"],\
             ["@hmcts/cookie-manager", "npm:1.0.0"],\
-            ["@hmcts/nodejs-healthcheck", "npm:1.8.3"],\
+            ["@hmcts/nodejs-healthcheck", "npm:1.8.4"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
             ["@hmcts/properties-volume", "npm:1.1.0"],\
             ["@stryker-mutator/api", "npm:7.3.0"],\
@@ -12035,13 +12015,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["qs", "npm:6.11.2"],\
             ["side-channel", "npm:1.0.4"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:6.9.3", {\
-          "packageLocation": "./.yarn/cache/qs-npm-6.9.3-d8c69297f4-89cd1b5e52.zip/node_modules/qs/",\
-          "packageDependencies": [\
-            ["qs", "npm:6.9.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -13574,24 +13547,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["superagent", [\
-        ["npm:7.1.6", {\
-          "packageLocation": "./.yarn/cache/superagent-npm-7.1.6-8f8391ba79-b733168360.zip/node_modules/superagent/",\
-          "packageDependencies": [\
-            ["superagent", "npm:7.1.6"],\
-            ["component-emitter", "npm:1.3.0"],\
-            ["cookiejar", "npm:2.1.4"],\
-            ["debug", "virtual:5506c369f7d205cc727e8f2875616dc0244b99710d92b1bad22ac883508e7a91e51874d9b6c2a625bec078bdd53505d75f79e9c1a0dce52df9bea20420686aaf#npm:4.3.4"],\
-            ["fast-safe-stringify", "npm:2.1.1"],\
-            ["form-data", "npm:4.0.0"],\
-            ["formidable", "npm:2.0.1"],\
-            ["methods", "npm:1.1.2"],\
-            ["mime", "npm:2.6.0"],\
-            ["qs", "npm:6.11.0"],\
-            ["readable-stream", "npm:3.6.0"],\
-            ["semver", "npm:7.3.7"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:8.1.2", {\
           "packageLocation": "./.yarn/cache/superagent-npm-8.1.2-44190e1fe9-f3601c5cca.zip/node_modules/superagent/",\
           "packageDependencies": [\
