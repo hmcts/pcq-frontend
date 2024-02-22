@@ -93,7 +93,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tslib", "npm:2.6.2"],\
             ["uuid", "npm:3.4.0"],\
             ["watch", "npm:1.0.2"],\
-            ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.32.2"],\
+            ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.32.3"],\
             ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.90.2"],\
             ["webpack-cli", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.1.4"],\
             ["yarn-audit-fix", "npm:10.0.7"]\
@@ -2606,13 +2606,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:8.32.2", {\
-          "packageLocation": "./.yarn/cache/@wdio-config-npm-8.32.2-8f2f0d15ea-5cd2e05449.zip/node_modules/@wdio/config/",\
+        ["npm:8.32.3", {\
+          "packageLocation": "./.yarn/cache/@wdio-config-npm-8.32.3-33aa798e2a-ff3ed91d82.zip/node_modules/@wdio/config/",\
           "packageDependencies": [\
-            ["@wdio/config", "npm:8.32.2"],\
+            ["@wdio/config", "npm:8.32.3"],\
             ["@wdio/logger", "npm:8.28.0"],\
             ["@wdio/types", "npm:8.32.2"],\
-            ["@wdio/utils", "npm:8.32.2"],\
+            ["@wdio/utils", "npm:8.32.3"],\
             ["decamelize", "npm:6.0.0"],\
             ["deepmerge-ts", "npm:5.0.0"],\
             ["glob", "npm:10.2.6"],\
@@ -2710,10 +2710,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:8.32.2", {\
-          "packageLocation": "./.yarn/cache/@wdio-utils-npm-8.32.2-2e2470cc17-a8c918e419.zip/node_modules/@wdio/utils/",\
+        ["npm:8.32.3", {\
+          "packageLocation": "./.yarn/cache/@wdio-utils-npm-8.32.3-57c1fcd548-874fa3d194.zip/node_modules/@wdio/utils/",\
           "packageDependencies": [\
-            ["@wdio/utils", "npm:8.32.2"],\
+            ["@wdio/utils", "npm:8.32.3"],\
             ["@puppeteer/browsers", "npm:1.7.0"],\
             ["@wdio/logger", "npm:8.28.0"],\
             ["@wdio/types", "npm:8.32.2"],\
@@ -5912,10 +5912,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:0.0.1261483", {\
-          "packageLocation": "./.yarn/cache/devtools-protocol-npm-0.0.1261483-3f87d4679a-7b7497d1f1.zip/node_modules/devtools-protocol/",\
+        ["npm:0.0.1262051", {\
+          "packageLocation": "./.yarn/cache/devtools-protocol-npm-0.0.1262051-6544bfc742-beaad00059.zip/node_modules/devtools-protocol/",\
           "packageDependencies": [\
-            ["devtools-protocol", "npm:0.0.1261483"]\
+            ["devtools-protocol", "npm:0.0.1262051"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -11885,7 +11885,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tslib", "npm:2.6.2"],\
             ["uuid", "npm:3.4.0"],\
             ["watch", "npm:1.0.2"],\
-            ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.32.2"],\
+            ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.32.3"],\
             ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.90.2"],\
             ["webpack-cli", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.1.4"],\
             ["yarn-audit-fix", "npm:10.0.7"]\
@@ -14652,17 +14652,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["webdriver", [\
-        ["npm:8.32.2", {\
-          "packageLocation": "./.yarn/cache/webdriver-npm-8.32.2-11ac05ffd1-bf0e35e842.zip/node_modules/webdriver/",\
+        ["npm:8.32.3", {\
+          "packageLocation": "./.yarn/cache/webdriver-npm-8.32.3-1cbad13b91-f50325361e.zip/node_modules/webdriver/",\
           "packageDependencies": [\
-            ["webdriver", "npm:8.32.2"],\
+            ["webdriver", "npm:8.32.3"],\
             ["@types/node", "npm:20.2.5"],\
             ["@types/ws", "npm:8.5.4"],\
-            ["@wdio/config", "npm:8.32.2"],\
+            ["@wdio/config", "npm:8.32.3"],\
             ["@wdio/logger", "npm:8.28.0"],\
             ["@wdio/protocols", "npm:8.32.0"],\
             ["@wdio/types", "npm:8.32.2"],\
-            ["@wdio/utils", "npm:8.32.2"],\
+            ["@wdio/utils", "npm:8.32.3"],\
             ["deepmerge-ts", "npm:5.1.0"],\
             ["got", "npm:12.6.1"],\
             ["ky", "npm:0.33.3"],\
@@ -14672,31 +14672,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["webdriverio", [\
-        ["npm:8.32.2", {\
-          "packageLocation": "./.yarn/cache/webdriverio-npm-8.32.2-3eeb5e9814-4d74af97a1.zip/node_modules/webdriverio/",\
+        ["npm:8.32.3", {\
+          "packageLocation": "./.yarn/cache/webdriverio-npm-8.32.3-91bd63c1d9-8964c0c8a0.zip/node_modules/webdriverio/",\
           "packageDependencies": [\
-            ["webdriverio", "npm:8.32.2"]\
+            ["webdriverio", "npm:8.32.3"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.32.2", {\
-          "packageLocation": "./.yarn/__virtual__/webdriverio-virtual-3edf1da674/0/cache/webdriverio-npm-8.32.2-3eeb5e9814-4d74af97a1.zip/node_modules/webdriverio/",\
+        ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.32.3", {\
+          "packageLocation": "./.yarn/__virtual__/webdriverio-virtual-970b61bf1e/0/cache/webdriverio-npm-8.32.3-91bd63c1d9-8964c0c8a0.zip/node_modules/webdriverio/",\
           "packageDependencies": [\
-            ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.32.2"],\
+            ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.32.3"],\
             ["@types/devtools", null],\
             ["@types/node", "npm:20.2.5"],\
-            ["@wdio/config", "npm:8.32.2"],\
+            ["@wdio/config", "npm:8.32.3"],\
             ["@wdio/logger", "npm:8.28.0"],\
             ["@wdio/protocols", "npm:8.32.0"],\
             ["@wdio/repl", "npm:8.24.12"],\
             ["@wdio/types", "npm:8.32.2"],\
-            ["@wdio/utils", "npm:8.32.2"],\
+            ["@wdio/utils", "npm:8.32.3"],\
             ["archiver", "npm:6.0.1"],\
             ["aria-query", "npm:5.1.3"],\
             ["css-shorthand-properties", "npm:1.1.1"],\
             ["css-value", "npm:0.0.1"],\
             ["devtools", null],\
-            ["devtools-protocol", "npm:0.0.1261483"],\
+            ["devtools-protocol", "npm:0.0.1262051"],\
             ["grapheme-splitter", "npm:1.0.4"],\
             ["import-meta-resolve", "npm:4.0.0"],\
             ["is-plain-obj", "npm:4.1.0"],\
@@ -14708,7 +14708,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["resq", "npm:1.10.2"],\
             ["rgb2hex", "npm:0.2.5"],\
             ["serialize-error", "npm:11.0.1"],\
-            ["webdriver", "npm:8.32.2"]\
+            ["webdriver", "npm:8.32.3"]\
           ],\
           "packagePeers": [\
             "@types/devtools",\
