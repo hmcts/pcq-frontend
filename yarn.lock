@@ -7963,18 +7963,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"launchdarkly-node-server-sdk@npm:^7.0.1":
-  version: 7.0.1
-  resolution: "launchdarkly-node-server-sdk@npm:7.0.1"
+"launchdarkly-node-server-sdk@npm:^7.0.3":
+  version: 7.0.3
+  resolution: "launchdarkly-node-server-sdk@npm:7.0.3"
   dependencies:
     async: ^3.2.4
     launchdarkly-eventsource: 1.4.4
     lru-cache: ^6.0.0
     node-cache: ^5.1.0
-    semver: ^7.3.0
+    semver: ^7.5.4
     tunnel: 0.0.6
     uuid: ^8.3.2
-  checksum: 83a24c6157088c19dbe31c7e3369a852a9cc24336778790f173869a0a3f29ed74e6babe9f31e7672ef6a374b5f7880c3c4dc6d9d1eefbf67239d15747491ea2e
+  checksum: d21b91ea8880d2845fc16f80f3df39780e471471fc5cbe791ae0251a3dc1da03e0b4cf2a706241db972c98e75e968971b0b1a7cfb9882c82cef10dccb8ddf400
   languageName: node
   linkType: hard
 
@@ -10311,7 +10311,7 @@ __metadata:
     ioredis: ^5.3.2
     js-yaml: ^4.1.0
     jsonwebtoken: ^9.0.0
-    launchdarkly-node-server-sdk: ^7.0.1
+    launchdarkly-node-server-sdk: ^7.0.3
     lodash: ^4.17.21
     mocha: ^10.2.0
     mochawesome: ^7.1.3
@@ -11215,17 +11215,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.0, semver@npm:^7.3.8":
-  version: 7.3.8
-  resolution: "semver@npm:7.3.8"
-  dependencies:
-    lru-cache: ^6.0.0
-  bin:
-    semver: bin/semver.js
-  checksum: ba9c7cbbf2b7884696523450a61fee1a09930d888b7a8d7579025ad93d459b2d1949ee5bbfeb188b2be5f4ac163544c5e98491ad6152df34154feebc2cc337c1
-  languageName: node
-  linkType: hard
-
 "semver@npm:^7.3.4, semver@npm:^7.3.5":
   version: 7.3.7
   resolution: "semver@npm:7.3.7"
@@ -11234,6 +11223,17 @@ __metadata:
   bin:
     semver: bin/semver.js
   checksum: 2fa3e877568cd6ce769c75c211beaed1f9fce80b28338cadd9d0b6c40f2e2862bafd62c19a6cff42f3d54292b7c623277bcab8816a2b5521cf15210d43e75232
+  languageName: node
+  linkType: hard
+
+"semver@npm:^7.3.8":
+  version: 7.3.8
+  resolution: "semver@npm:7.3.8"
+  dependencies:
+    lru-cache: ^6.0.0
+  bin:
+    semver: bin/semver.js
+  checksum: ba9c7cbbf2b7884696523450a61fee1a09930d888b7a8d7579025ad93d459b2d1949ee5bbfeb188b2be5f4ac163544c5e98491ad6152df34154feebc2cc337c1
   languageName: node
   linkType: hard
 
