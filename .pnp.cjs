@@ -63,7 +63,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["i18next", "npm:23.10.0"],\
             ["ioredis", "npm:5.3.2"],\
             ["js-yaml", "npm:4.1.0"],\
-            ["jsonwebtoken", "npm:9.0.0"],\
+            ["jsonwebtoken", "npm:9.0.2"],\
             ["launchdarkly-node-server-sdk", "npm:7.0.3"],\
             ["lodash", "npm:4.17.21"],\
             ["mocha", "npm:10.3.0"],\
@@ -9176,6 +9176,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semver", "npm:7.3.8"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:9.0.2", {\
+          "packageLocation": "./.yarn/cache/jsonwebtoken-npm-9.0.2-42c6b14d02-fc739a6a8b.zip/node_modules/jsonwebtoken/",\
+          "packageDependencies": [\
+            ["jsonwebtoken", "npm:9.0.2"],\
+            ["jws", "npm:3.2.2"],\
+            ["lodash.includes", "npm:4.3.0"],\
+            ["lodash.isboolean", "npm:3.0.3"],\
+            ["lodash.isinteger", "npm:4.0.4"],\
+            ["lodash.isnumber", "npm:3.0.3"],\
+            ["lodash.isplainobject", "npm:4.0.6"],\
+            ["lodash.isstring", "npm:4.0.1"],\
+            ["lodash.once", "npm:4.1.1"],\
+            ["ms", "npm:2.1.3"],\
+            ["semver", "npm:7.5.4"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["just-extend", [\
@@ -9521,11 +9538,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["lodash.includes", [\
+        ["npm:4.3.0", {\
+          "packageLocation": "./.yarn/cache/lodash.includes-npm-4.3.0-3a2f6fa22c-71092c1305.zip/node_modules/lodash.includes/",\
+          "packageDependencies": [\
+            ["lodash.includes", "npm:4.3.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["lodash.isarguments", [\
         ["npm:3.1.0", {\
           "packageLocation": "./.yarn/cache/lodash.isarguments-npm-3.1.0-9e74d350b8-ae1526f3eb.zip/node_modules/lodash.isarguments/",\
           "packageDependencies": [\
             ["lodash.isarguments", "npm:3.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lodash.isboolean", [\
+        ["npm:3.0.3", {\
+          "packageLocation": "./.yarn/cache/lodash.isboolean-npm-3.0.3-b575b41488-b70068b4a8.zip/node_modules/lodash.isboolean/",\
+          "packageDependencies": [\
+            ["lodash.isboolean", "npm:3.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -9548,11 +9583,38 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["lodash.isinteger", [\
+        ["npm:4.0.4", {\
+          "packageLocation": "./.yarn/cache/lodash.isinteger-npm-4.0.4-42add9f4e1-6034821b3f.zip/node_modules/lodash.isinteger/",\
+          "packageDependencies": [\
+            ["lodash.isinteger", "npm:4.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lodash.isnumber", [\
+        ["npm:3.0.3", {\
+          "packageLocation": "./.yarn/cache/lodash.isnumber-npm-3.0.3-b3bb5f7347-913784275b.zip/node_modules/lodash.isnumber/",\
+          "packageDependencies": [\
+            ["lodash.isnumber", "npm:3.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["lodash.isobject", [\
         ["npm:3.0.2", {\
           "packageLocation": "./.yarn/cache/lodash.isobject-npm-3.0.2-ec19461220-6c1667cbc4.zip/node_modules/lodash.isobject/",\
           "packageDependencies": [\
             ["lodash.isobject", "npm:3.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lodash.isplainobject", [\
+        ["npm:4.0.6", {\
+          "packageLocation": "./.yarn/cache/lodash.isplainobject-npm-4.0.6-d73937742f-29c6351f28.zip/node_modules/lodash.isplainobject/",\
+          "packageDependencies": [\
+            ["lodash.isplainobject", "npm:4.0.6"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -9580,6 +9642,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/lodash.mergewith-npm-4.6.2-7d2d4201ec-a6db2a9339.zip/node_modules/lodash.mergewith/",\
           "packageDependencies": [\
             ["lodash.mergewith", "npm:4.6.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lodash.once", [\
+        ["npm:4.1.1", {\
+          "packageLocation": "./.yarn/cache/lodash.once-npm-4.1.1-d8ba329ead-d768fa9f9b.zip/node_modules/lodash.once/",\
+          "packageDependencies": [\
+            ["lodash.once", "npm:4.1.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -11855,7 +11926,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["i18next", "npm:23.10.0"],\
             ["ioredis", "npm:5.3.2"],\
             ["js-yaml", "npm:4.1.0"],\
-            ["jsonwebtoken", "npm:9.0.0"],\
+            ["jsonwebtoken", "npm:9.0.2"],\
             ["launchdarkly-node-server-sdk", "npm:7.0.3"],\
             ["lodash", "npm:4.17.21"],\
             ["mocha", "npm:10.3.0"],\
