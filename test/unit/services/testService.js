@@ -183,7 +183,7 @@ describe('Service', () => {
                 timeout: 10000,
                 body: JSON.stringify(data),
                 headers: new fetch.Headers(headers),
-                agent: new HttpsProxyAgent(proxy)
+                agent: proxy ? new HttpsProxyAgent(proxy, null) : null
             });
             done();
         });

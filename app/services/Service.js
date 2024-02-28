@@ -74,7 +74,7 @@ class Service {
             timeout: 10000,
             body: JSON.stringify(data),
             headers: new fetch.Headers(headers),
-            agent: proxy ? new HttpsProxyAgent(proxy.url) : null
+            agent: proxy ? new HttpsProxyAgent(proxy,null) : null
         };
     }
 
