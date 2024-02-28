@@ -85,7 +85,7 @@ const fetchOptions = (data, method, headers, proxy) => {
         timeout: config.utils.api.timeout,
         body: method === 'POST' ? JSON.stringify(data) : null,
         headers: new fetch.Headers(headers),
-        agent: proxy ? new HttpsProxyAgent(proxy) : null
+        agent: proxy ? new HttpsProxyAgent(proxy.url) : null
     };
 };
 

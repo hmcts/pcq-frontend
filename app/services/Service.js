@@ -1,7 +1,7 @@
 'use strict';
 
 const fetch = require('node-fetch');
-import * as HttpsProxyAgent from 'https-proxy-agent';
+const HttpsProxyAgent = require('https-proxy-agent');
 const logger = require('app/components/logger');
 const config = require('config');
 const formatUrl = require('app/utils/FormatUrl');
@@ -74,7 +74,7 @@ class Service {
             timeout: 10000,
             body: JSON.stringify(data),
             headers: new fetch.Headers(headers),
-            agent: proxy ? new HttpsProxyAgent(proxy) : null
+            agent: proxy ? new HttpsProxyAgent(proxy.url) : null
         };
     }
 
