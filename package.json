@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.132",
+  "version": "1.2.133",
   "license": "MIT",
   "engines": {
     "node": ">=14.18.1"
@@ -70,7 +70,7 @@
     "i18next": "^23.5.1",
     "ioredis": "^5.3.2",
     "js-yaml": "^4.1.0",
-    "jsonwebtoken": "^9.0.0",
+    "jsonwebtoken": "^9.0.2",
     "launchdarkly-node-server-sdk": "^7.0.3",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
