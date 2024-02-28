@@ -59,7 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["git-rev-sync", "npm:3.0.2"],\
             ["govuk-frontend", "npm:4.8.0"],\
             ["helmet", "npm:3.23.3"],\
-            ["https-proxy-agent", "npm:5.0.1"],\
+            ["https-proxy-agent", "npm:7.0.4"],\
             ["i18next", "npm:23.10.0"],\
             ["ioredis", "npm:5.3.2"],\
             ["js-yaml", "npm:4.1.0"],\
@@ -8131,6 +8131,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["debug", "virtual:5506c369f7d205cc727e8f2875616dc0244b99710d92b1bad22ac883508e7a91e51874d9b6c2a625bec078bdd53505d75f79e9c1a0dce52df9bea20420686aaf#npm:4.3.4"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:7.0.4", {\
+          "packageLocation": "./.yarn/cache/https-proxy-agent-npm-7.0.4-a51e13f5dc-daaab857a9.zip/node_modules/https-proxy-agent/",\
+          "packageDependencies": [\
+            ["https-proxy-agent", "npm:7.0.4"],\
+            ["agent-base", "npm:7.1.0"],\
+            ["debug", "virtual:5506c369f7d205cc727e8f2875616dc0244b99710d92b1bad22ac883508e7a91e51874d9b6c2a625bec078bdd53505d75f79e9c1a0dce52df9bea20420686aaf#npm:4.3.4"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["human-signals", [\
@@ -11922,7 +11931,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["git-rev-sync", "npm:3.0.2"],\
             ["govuk-frontend", "npm:4.8.0"],\
             ["helmet", "npm:3.23.3"],\
-            ["https-proxy-agent", "npm:5.0.1"],\
+            ["https-proxy-agent", "npm:7.0.4"],\
             ["i18next", "npm:23.10.0"],\
             ["ioredis", "npm:5.3.2"],\
             ["js-yaml", "npm:4.1.0"],\
