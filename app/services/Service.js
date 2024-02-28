@@ -1,7 +1,7 @@
 'use strict';
 
 const fetch = require('node-fetch');
-const HttpsProxyAgent = require('https-proxy-agent');
+import * as  HttpsProxyAgent  from 'https-proxy-agent';
 const logger = require('app/components/logger');
 const config = require('config');
 const formatUrl = require('app/utils/FormatUrl');
