@@ -843,12 +843,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/parser@npm:^7.23.9":
-  version: 7.23.9
-  resolution: "@babel/parser@npm:7.23.9"
+"@babel/parser@npm:^7.24.0":
+  version: 7.24.0
+  resolution: "@babel/parser@npm:7.24.0"
   bin:
     parser: ./bin/babel-parser.js
-  checksum: e7cd4960ac8671774e13803349da88d512f9292d7baa952173260d3e8f15620a28a3701f14f709d769209022f9e7b79965256b8be204fc550cfe783cdcabe7c7
+  checksum: 4a6afec49487a212e7a27345b0c090b56905efb62c0b3a1499b0a57a5b3bf43d9d1e99e31b137080eacc24dee659a29699740d0a6289999117c0d8c5a04bd68f
   languageName: node
   linkType: hard
 
@@ -1026,8 +1026,8 @@ __metadata:
   linkType: hard
 
 "@babel/traverse@npm:^7.16.10, @babel/traverse@npm:^7.18.9, @babel/traverse@npm:^7.22.5, @babel/traverse@npm:^7.23.2, @babel/traverse@npm:^7.23.7":
-  version: 7.23.9
-  resolution: "@babel/traverse@npm:7.23.9"
+  version: 7.24.0
+  resolution: "@babel/traverse@npm:7.24.0"
   dependencies:
     "@babel/code-frame": ^7.23.5
     "@babel/generator": ^7.23.6
@@ -1035,22 +1035,22 @@ __metadata:
     "@babel/helper-function-name": ^7.23.0
     "@babel/helper-hoist-variables": ^7.22.5
     "@babel/helper-split-export-declaration": ^7.22.6
-    "@babel/parser": ^7.23.9
-    "@babel/types": ^7.23.9
+    "@babel/parser": ^7.24.0
+    "@babel/types": ^7.24.0
     debug: ^4.3.1
     globals: ^11.1.0
-  checksum: a932f7aa850e158c00c97aad22f639d48c72805c687290f6a73e30c5c4957c07f5d28310c9bf59648e2980fe6c9d16adeb2ff92a9ca0f97fa75739c1328fc6c3
+  checksum: 790cf14a6452575ceef767285bad0dd96d14b3640ed4e6a4ddb5b592e4e66020424bac21e4a4b965ac0d2fe9ed504fe3644748b1922fb8ac37c681cb435c3995
   languageName: node
   linkType: hard
 
-"@babel/types@npm:^7.16.8, @babel/types@npm:^7.18.6, @babel/types@npm:^7.18.9, @babel/types@npm:^7.22.15, @babel/types@npm:^7.22.4, @babel/types@npm:^7.22.5, @babel/types@npm:^7.23.0, @babel/types@npm:^7.23.6, @babel/types@npm:^7.23.9, @babel/types@npm:^7.8.3":
-  version: 7.23.9
-  resolution: "@babel/types@npm:7.23.9"
+"@babel/types@npm:^7.16.8, @babel/types@npm:^7.18.6, @babel/types@npm:^7.18.9, @babel/types@npm:^7.22.15, @babel/types@npm:^7.22.4, @babel/types@npm:^7.22.5, @babel/types@npm:^7.23.0, @babel/types@npm:^7.23.6, @babel/types@npm:^7.24.0, @babel/types@npm:^7.8.3":
+  version: 7.24.0
+  resolution: "@babel/types@npm:7.24.0"
   dependencies:
     "@babel/helper-string-parser": ^7.23.4
     "@babel/helper-validator-identifier": ^7.22.20
     to-fast-properties: ^2.0.0
-  checksum: 0a9b008e9bfc89beb8c185e620fa0f8ed6c771f1e1b2e01e1596870969096fec7793898a1d64a035176abf1dd13e2668ee30bf699f2d92c210a8128f4b151e65
+  checksum: 4b574a37d490f621470ff36a5afaac6deca5546edcb9b5e316d39acbb20998e9c2be42f3fc0bf2b55906fc49ff2a5a6a097e8f5a726ee3f708a0b0ca93aed807
   languageName: node
   linkType: hard
 
@@ -1524,9 +1524,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/instrumentation@npm:^0.48.0":
-  version: 0.48.0
-  resolution: "@opentelemetry/instrumentation@npm:0.48.0"
+"@opentelemetry/instrumentation@npm:^0.49.0":
+  version: 0.49.0
+  resolution: "@opentelemetry/instrumentation@npm:0.49.0"
   dependencies:
     "@types/shimmer": ^1.0.2
     import-in-the-middle: 1.7.1
@@ -1535,7 +1535,8 @@ __metadata:
     shimmer: ^1.2.1
   peerDependencies:
     "@opentelemetry/api": ^1.3.0
-  checksum: abd663f5a30941af2cf24a257add0d9166919f870874fe2daa390cdd5b06d5617f5cc2ac9b3b8f61016f78051f52ef2432d27da213125d59f4f961d678402f26
+    "@opentelemetry/api-logs": ^0.46.0
+  checksum: de79cdc012cfe63574f9590bce479df0a8721f5eb269c3371cd9b12761a1f33dae46d4aef495732b736c3139a97cb8145f472038321212ff2bd4fc736700a780
   languageName: node
   linkType: hard
 
@@ -6088,7 +6089,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@npm:~2.3.2":
+"fsevents@npm:2.3.2, fsevents@npm:~2.3.2":
   version: 2.3.2
   resolution: "fsevents@npm:2.3.2"
   dependencies:
@@ -6098,7 +6099,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
+"fsevents@patch:fsevents@2.3.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
   resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
   dependencies:
@@ -10190,23 +10191,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright-core@npm:1.37.1":
-  version: 1.37.1
-  resolution: "playwright-core@npm:1.37.1"
+"playwright-core@npm:1.42.0":
+  version: 1.42.0
+  resolution: "playwright-core@npm:1.42.0"
   bin:
     playwright-core: cli.js
-  checksum: 69f818da2230057584140d5b3af7778a4f4a822b5b18d133abfc5d259128becb943c343a2ddf6b0635277a69f28983e83e2bc3fce23595ececb1e410475b6368
+  checksum: f4b9578b285d6673e9f23040087b5bc008e3183553a5dc0304ddc9ab57445f3645dbb6b28af96a3b8535fc339262ad9cb858f5d75e46f6132a1bc707aeff9c5e
   languageName: node
   linkType: hard
 
-"playwright@npm:1.37.1":
-  version: 1.37.1
-  resolution: "playwright@npm:1.37.1"
+"playwright@npm:1.42.0":
+  version: 1.42.0
+  resolution: "playwright@npm:1.42.0"
   dependencies:
-    playwright-core: 1.37.1
+    fsevents: 2.3.2
+    playwright-core: 1.42.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
   bin:
     playwright: cli.js
-  checksum: 99406ef3e15b83a659cb23ef1d92d9935789aad430580d1e0371087dfdf266891483c6f97cfa06bf5f49f081eacd44245d05d20714f98531edef4cc317044d6b
+  checksum: 879903e52fa83afb1e387ee725f19e4fecceeea37d6b92405722551e746c184938da3187a4b2be3de1d8b7dafe1f32ec7ddeb324a44275c955d26c70d36a3b65
   languageName: node
   linkType: hard
 
@@ -10384,7 +10389,7 @@ __metadata:
     nunjucks: ^3.2.4
     nyc: ^15.1.0
     pa11y: ^7.0.0
-    playwright: 1.37.1
+    playwright: 1.42.0
     pre-commit: ^1.2.2
     proxyquire: ^2.1.3
     require-directory: ^2.1.1
