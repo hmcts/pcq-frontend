@@ -7797,6 +7797,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"json5@npm:2.2.2":
+  version: 2.2.2
+  resolution: "json5@npm:2.2.2"
+  bin:
+    json5: lib/cli.js
+  checksum: 9a878d66b72157b073cf0017f3e5d93ec209fa5943abcb38d37a54b208917c166bd473c26a24695e67a016ce65759aeb89946592991f8f9174fb96c8e2492683
+  languageName: node
+  linkType: hard
+
 "json5@npm:^2.1.2, json5@npm:^2.2.3":
   version: 2.2.3
   resolution: "json5@npm:2.2.3"
@@ -10370,6 +10379,7 @@ __metadata:
     i18next: ^23.5.1
     ioredis: ^5.3.2
     js-yaml: ^4.1.0
+    json5: 2.2.2
     jsonwebtoken: ^9.0.2
     launchdarkly-node-server-sdk: ^7.0.3
     lodash: ^4.17.21

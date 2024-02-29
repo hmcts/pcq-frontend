@@ -63,6 +63,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["i18next", "npm:23.10.0"],\
             ["ioredis", "npm:5.3.2"],\
             ["js-yaml", "npm:4.1.0"],\
+            ["json5", "npm:2.2.2"],\
             ["jsonwebtoken", "npm:9.0.2"],\
             ["launchdarkly-node-server-sdk", "npm:7.0.3"],\
             ["lodash", "npm:4.17.21"],\
@@ -9117,6 +9118,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
+        ["npm:2.2.2", {\
+          "packageLocation": "./.yarn/cache/json5-npm-2.2.2-b047c53fcb-9a878d66b7.zip/node_modules/json5/",\
+          "packageDependencies": [\
+            ["json5", "npm:2.2.2"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:2.2.3", {\
           "packageLocation": "./.yarn/cache/json5-npm-2.2.3-9962c55073-2a7436a933.zip/node_modules/json5/",\
           "packageDependencies": [\
@@ -11926,6 +11934,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["i18next", "npm:23.10.0"],\
             ["ioredis", "npm:5.3.2"],\
             ["js-yaml", "npm:4.1.0"],\
+            ["json5", "npm:2.2.2"],\
             ["jsonwebtoken", "npm:9.0.2"],\
             ["launchdarkly-node-server-sdk", "npm:7.0.3"],\
             ["lodash", "npm:4.17.21"],\
