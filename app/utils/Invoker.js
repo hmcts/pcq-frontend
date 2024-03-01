@@ -1,6 +1,6 @@
 'use strict';
 
-const { v4: uuidv4 } = require('uuid');
+const {v4: uuidv4} = require('uuid');
 const {generateToken} = require('app/components/encryption-token');
 const registeredServices = require('app/registeredServices');
 const AgeCheck = require('./Constants');
