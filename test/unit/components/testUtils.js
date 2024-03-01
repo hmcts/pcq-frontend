@@ -3,7 +3,6 @@
 const expect = require('chai').expect;
 const utils = require('app/components/utils');
 const sinon = require('sinon');
-const session = require('express-session');
 
 describe('api-utils', () => {
 
@@ -49,11 +48,10 @@ describe('api-utils', () => {
                 host: 'localhost',
                 port: '6379'
             };
-            const redisStore = utils.getStore(redisConfig, session);
+            const redisStore = utils.getStore(redisConfig);
             const redisStoreName = redisStore.constructor.name;
 
             // End and destroy before expect in case of error. These will hang the tests if not run.
-            redisStore.client.end();
             redisStore.destroy();
 
             expect(redisStoreName).to.equal('RedisStore');
@@ -63,7 +61,7 @@ describe('api-utils', () => {
             const redisConfig = {
                 enabled: 'false'
             };
-            const memoryStore = utils.getStore(redisConfig, session);
+            const memoryStore = utils.getStore(redisConfig);
             expect(memoryStore.constructor.name).to.equal('MemoryStore');
         });
     });
