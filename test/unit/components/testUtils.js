@@ -52,7 +52,7 @@ describe('api-utils', () => {
             const redisStoreName = redisStore.constructor.name;
 
             // End and destroy before expect in case of error. These will hang the tests if not run.
-            redisStore.end();
+            redisStore.client.quit();
             redisStore.destroy();
 
             expect(redisStoreName).to.equal('RedisStore');
