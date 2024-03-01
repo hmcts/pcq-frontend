@@ -1,7 +1,7 @@
 'use strict';
 
 const config = require('config');
-const uuidv4 = require('uuid/v4');
+const { v4: uuidv4 } = require('uuid');
 
 const initSession = (req, res, next) => {
     if (!req.session.correlationId) {
