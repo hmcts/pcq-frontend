@@ -1,4 +1,5 @@
 'use strict';
+import RedisStore from 'connect-redis';
 
 exports.forceHttps = function (req, res, next) {
     if (req.headers['x-forwarded-proto'] !== 'https') {
@@ -8,10 +9,9 @@ exports.forceHttps = function (req, res, next) {
     next();
 };
 
-exports.getStore = (redisConfig, session) => {
+exports.getStore = (redisConfig) => {
     if (redisConfig.enabled === 'true') {
         const Redis = require('ioredis');
-        const RedisStore = require('connect-redis')(session);
         const tlsOptions = {
             password: redisConfig.password,
             tls: true
