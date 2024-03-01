@@ -11,7 +11,7 @@ exports.forceHttps = function (req, res, next) {
 exports.getStore = (redisConfig) => {
     if (redisConfig.enabled === 'true') {
         const Redis = require('ioredis');
-        const RedisStore = require('connect-redis');
+        const RedisStore = require('connect-redis').default;
         const tlsOptions = {
             password: redisConfig.password,
             tls: true
