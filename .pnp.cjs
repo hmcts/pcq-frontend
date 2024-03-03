@@ -71,7 +71,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["moment", "npm:2.30.1"],\
             ["nock", "npm:13.5.4"],\
             ["node-emoji", "npm:2.1.3"],\
-            ["node-fetch", "virtual:cdb982d44661592ebbafe07217ec5667306fff17f8dbc22b1882f154f5441ce269c7f262b8dec39e8a578c85f617449d9637bdc205e5c7921787c7268959c215#npm:2.7.0"],\
+            ["node-fetch", "npm:3.3.2"],\
             ["node-sass", "npm:9.0.0"],\
             ["nodemon", "npm:2.0.22"],\
             ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
@@ -91,7 +91,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["traverse", "npm:0.6.8"],\
             ["tslib", "npm:2.6.2"],\
-            ["uuid", "npm:3.4.0"],\
+            ["uuid", "npm:9.0.1"],\
             ["watch", "npm:1.0.2"],\
             ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.32.3"],\
             ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.90.3"],\
@@ -11934,7 +11934,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["moment", "npm:2.30.1"],\
             ["nock", "npm:13.5.4"],\
             ["node-emoji", "npm:2.1.3"],\
-            ["node-fetch", "virtual:cdb982d44661592ebbafe07217ec5667306fff17f8dbc22b1882f154f5441ce269c7f262b8dec39e8a578c85f617449d9637bdc205e5c7921787c7268959c215#npm:2.7.0"],\
+            ["node-fetch", "npm:3.3.2"],\
             ["node-sass", "npm:9.0.0"],\
             ["nodemon", "npm:2.0.22"],\
             ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
@@ -11954,7 +11954,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["traverse", "npm:0.6.8"],\
             ["tslib", "npm:2.6.2"],\
-            ["uuid", "npm:3.4.0"],\
+            ["uuid", "npm:9.0.1"],\
             ["watch", "npm:1.0.2"],\
             ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.32.3"],\
             ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.90.3"],\

@@ -9273,7 +9273,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^2.6.11, node-fetch@npm:^2.6.12, node-fetch@npm:^2.6.9":
+"node-fetch@npm:^2.6.11, node-fetch@npm:^2.6.12":
   version: 2.7.0
   resolution: "node-fetch@npm:2.7.0"
   dependencies:
@@ -10379,7 +10379,7 @@ __metadata:
     moment: ^2.29.4
     nock: ^13.3.0
     node-emoji: ^2.1.0
-    node-fetch: ^2.6.9
+    node-fetch: ^3.3.2
     node-sass: ^9.0.0
     nodemon: ^2.0.4
     nunjucks: ^3.2.4
@@ -10399,7 +10399,7 @@ __metadata:
     test: "link:./test"
     traverse: ^0.6.6
     tslib: ^2.6.0
-    uuid: ^3.3.2
+    uuid: ^9.0.1
     watch: ^1.0.2
     webdriverio: ^8.21.0
     webpack: ^5.88.1
@@ -12770,7 +12770,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uuid@npm:9.0, uuid@npm:9.0.1, uuid@npm:^9.0.0":
+"uuid@npm:9.0, uuid@npm:9.0.1, uuid@npm:^9.0.0, uuid@npm:^9.0.1":
   version: 9.0.1
   resolution: "uuid@npm:9.0.1"
   bin:
@@ -12788,7 +12788,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uuid@npm:^3.0.1, uuid@npm:^3.3.2":
+"uuid@npm:^3.0.1":
   version: 3.4.0
   resolution: "uuid@npm:3.4.0"
   bin:
