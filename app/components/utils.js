@@ -14,7 +14,8 @@ exports.getStore = (redisConfig) => {
         const RedisStore = require('connect-redis').default;
         const tlsOptions = {
             password: redisConfig.password,
-            tls: true
+            tls: true,
+            rejectUnauthorized: false
         };
         const redisOptions = redisConfig.useTLS === 'true' ? tlsOptions : {};
         const client = new Redis(redisConfig.port, redisConfig.host, redisOptions);
