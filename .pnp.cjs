@@ -64,7 +64,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ioredis", "npm:5.3.2"],\
             ["js-yaml", "npm:4.1.0"],\
             ["jsonwebtoken", "npm:9.0.2"],\
-            ["launchdarkly-node-server-sdk", "npm:7.0.3"],\
+            ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
             ["lodash", "npm:4.17.21"],\
             ["mocha", "npm:10.3.0"],\
             ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
@@ -9294,10 +9294,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["launchdarkly-node-server-sdk", [\
-        ["npm:7.0.3", {\
-          "packageLocation": "./.yarn/cache/launchdarkly-node-server-sdk-npm-7.0.3-68750c7918-d21b91ea88.zip/node_modules/launchdarkly-node-server-sdk/",\
+        ["npm:7.0.4", {\
+          "packageLocation": "./.yarn/cache/launchdarkly-node-server-sdk-npm-7.0.4-11c0166550-d201e12c13.zip/node_modules/launchdarkly-node-server-sdk/",\
           "packageDependencies": [\
-            ["launchdarkly-node-server-sdk", "npm:7.0.3"],\
+            ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
             ["async", "npm:3.2.4"],\
             ["launchdarkly-eventsource", "npm:1.4.4"],\
             ["lru-cache", "npm:6.0.0"],\
@@ -11920,7 +11920,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ioredis", "npm:5.3.2"],\
             ["js-yaml", "npm:4.1.0"],\
             ["jsonwebtoken", "npm:9.0.2"],\
-            ["launchdarkly-node-server-sdk", "npm:7.0.3"],\
+            ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
             ["lodash", "npm:4.17.21"],\
             ["mocha", "npm:10.3.0"],\
             ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
