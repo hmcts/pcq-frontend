@@ -37,7 +37,6 @@ const generateErrors = (errs, ctx, formdata, errorPath, language = 'en') => {
                 param = e.params.missingProperty;
                 return FieldError(param, 'required', errorPath, ctx, language);
             }
-            //[, param] = e.dataPath.split('.');
             [, param] = e.instancePath.split('/');
 
             param = stripBrackets(param, e);
