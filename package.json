@@ -52,6 +52,7 @@
     "@hmcts/nodejs-logging": "^4.0.4",
     "@hmcts/properties-volume": "^1.0.0",
     "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
     "app": "link:./app",
     "applicationinsights": "^2.9.4",
     "body-parser": "^1.19.0",
