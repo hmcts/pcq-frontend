@@ -7,7 +7,7 @@ const Step = require('app/core/steps/Step');
 const generateErrors = require('app/components/error').generateErrors;
 
 const validator = new Ajv({allErrors: true});
-addFormats(validator, ['date-time']);
+addFormats(validator);
 validator.addMetaSchema(require('ajv/lib/refs/json-schema-draft-06.json'));
 
 class ValidationStep extends Step {
