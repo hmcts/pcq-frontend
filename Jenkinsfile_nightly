@@ -46,6 +46,10 @@ withNightlyPipeline(type, product, component) {
     enableCrossBrowserTest()
     enableFullFunctionalTest(20)
 
+    before('fullFunctionalTest') {
+      sh 'yarn playwright install'
+    }
+
     afterAlways('build') {
       sh 'yarn setup'
     }
