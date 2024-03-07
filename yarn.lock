@@ -3997,7 +3997,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"codeceptjs@npm:^3.5.4":
+"codeceptjs@npm:^3.5.14":
   version: 3.5.14
   resolution: "codeceptjs@npm:3.5.14"
   dependencies:
@@ -10335,7 +10335,7 @@ __metadata:
     body-parser: ^1.19.0
     chai: ^4.2.0
     co: ^4.6.0
-    codeceptjs: ^3.5.4
+    codeceptjs: ^3.5.14
     codecov: ^4.0.0-0
     config: ^3.3.11
     connect-redis: ^5.2.0
