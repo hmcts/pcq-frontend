@@ -37,7 +37,15 @@ describe('ApplicantLanguage', () => {
 
         it(`test it redirects to applicant sex page: ${expectedNextUrlForApplicantSex}`, (done) => {
             const data = {
-                language_main: 1
+                language_main: 3
+            };
+
+            testWrapper.testRedirect(done, data, expectedNextUrlForApplicantSex);
+        });
+
+        it(`test it redirects to applicant sex page: ${expectedNextUrlForApplicantSex}`, (done) => {
+            const data = {
+                language_main: 4
             };
 
             testWrapper.testRedirect(done, data, expectedNextUrlForApplicantSex);

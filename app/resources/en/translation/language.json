@@ -1,6 +1,7 @@
 {
   "question": "What is your main language?",
-  "optionEnglishWelsh": "English or Welsh",
+  "optionEnglish": "English",
+  "optionWelsh": "Welsh",
   "optionOther": "Other",
   "optionOtherDetails": "Enter your main language (including British Sign Language)",
 

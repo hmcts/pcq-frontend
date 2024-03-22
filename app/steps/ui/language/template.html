@@ -29,9 +29,14 @@
         errorMessage: { text: fields.language_main.errorMessage.message | safe } if fields.language_main.errorMessage,
         items: [
             {
-                value: '1',
-                text: content["optionEnglishWelsh"] | safe,
-                checked: true if fields.language_main.value == '1'
+            value: '4',
+            text: content["optionEnglish"] | safe,
+            checked: true if fields.language_main.value == '4'
+            },
+            {
+                value: '3',
+                text: content["optionWelsh"] | safe,
+                checked: true if fields.language_main.value == '3'
             },
             {
                 value: '2',
