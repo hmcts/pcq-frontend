@@ -11,6 +11,6 @@ dependencies:
     version: 3.0.3
     repository: 'https://hmctspublic.azurecr.io/helm/v1/repo/'
   - name: redis
-    version: 18.19.4
+    version: 19.0.1
     repository: 'https://charts.bitnami.com/bitnami'
     condition: redis.enabled
