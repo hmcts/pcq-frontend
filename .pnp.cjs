@@ -52,7 +52,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["debug", "virtual:8b235322a8a24e48c015315ac31d9a45375a931d446b3d9b05b3960f64165451979d09fb0441934c12e21122cff6f3cbc821971e2170239ee8406b043c8fdde4#npm:4.3.4"],\
             ["eslint", "npm:8.57.0"],\
             ["esmify", "npm:2.1.1"],\
-            ["express", "npm:4.19.1"],\
+            ["express", "npm:4.19.2"],\
             ["express-session", "npm:1.18.0"],\
             ["express-urlrewrite", "npm:2.0.1"],\
             ["fs-extra", "npm:11.2.0"],\
@@ -6792,10 +6792,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["express", [\
-        ["npm:4.19.1", {\
-          "packageLocation": "./.yarn/cache/express-npm-4.19.1-d5e6949ba4-c693d64e83.zip/node_modules/express/",\
+        ["npm:4.19.2", {\
+          "packageLocation": "./.yarn/cache/express-npm-4.19.2-f81334a22a-212dbd6c2c.zip/node_modules/express/",\
           "packageDependencies": [\
-            ["express", "npm:4.19.1"],\
+            ["express", "npm:4.19.2"],\
             ["accepts", "npm:1.3.8"],\
             ["array-flatten", "npm:1.1.1"],\
             ["body-parser", "npm:1.20.2"],\
@@ -12105,7 +12105,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["debug", "virtual:8b235322a8a24e48c015315ac31d9a45375a931d446b3d9b05b3960f64165451979d09fb0441934c12e21122cff6f3cbc821971e2170239ee8406b043c8fdde4#npm:4.3.4"],\
             ["eslint", "npm:8.57.0"],\
             ["esmify", "npm:2.1.1"],\
-            ["express", "npm:4.19.1"],\
+            ["express", "npm:4.19.2"],\
             ["express-session", "npm:1.18.0"],\
             ["express-urlrewrite", "npm:2.0.1"],\
             ["fs-extra", "npm:11.2.0"],\

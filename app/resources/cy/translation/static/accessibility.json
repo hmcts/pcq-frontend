@@ -45,11 +45,14 @@
   "paragraph14": "Mae GLlTEM wedi ymrwymo i sicrhau bod ei wefannau yn hygyrch, a hynny yn unol &acirc; Rheoliadau Hygyrchedd Cyrff y Sector Cyhoeddus (Gwefannau a Rhaglenni Symudol) (Rhif 2) 2018.",
   "paragraph15": "Mae’r wefan hon yn cydymffurfio’n llwyr &acirc; <a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Canllawiau Hygyrchedd Cynnwys Gwe fersiwn 2.1</a> safon AA.",
 
-  "heading8": "Paratoi&#39;r datganiad hygyrchedd hwn",
-  "paragraph16": "Cafodd y datganiad hwn ei baratoi ar yr 28ain o Fai 2020. Cafodd ei ddiweddaru diwethaf ar yr 28ain o Fai 2020.",
-  "paragraph17": "Cafodd y wefan hon ei phrofi diwethaf ar y 15fed o Fai. Cynhaliwyd y prawf gan Digital Accessibility Centre Ltd.",
-  "paragraph18": "Profwyd pob tudalen o&#39;r wefan hon yn erbyn safon WCAG 2.1.",
+  "heading8": "Statws Cydymffurfiaeth",
+  "paragraph16": "Mae’r wefan hon yn cydymffurfio’n llwyr &acirc; <a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Canllawiau Hygyrchedd Cynnwys Gwe fersiwn 2.1</a> safon AA.",
+  
+  "heading9": "Paratoi&#39;r datganiad hygyrchedd hwn",
+  "paragraph17": "Cafodd y datganiad hwn ei baratoi ar yr 28ain o Fai 2020. Cafodd ei adolygu ddiwethaf ar yr 8fed o Ionawr 2024.",
+  "paragraph18": "Cafodd y wefan ei phrofi ddiwethaf ar y 30ain o Fai 2023. Cynhaliwyd y prawf gan Digital Accessibility Centre.",
+  "paragraph19": "Profwyd pob tudalen o&#39;r wefan hon yn erbyn safon WCAG 2.1.",
 
-  "heading9": "Beth rydym yn ei wneud i wella hygyrchedd?",
-  "paragraph19": "Mae’r wefan yn cael ei phrofi’n barhaus gan ddefnyddio meddalwedd hygyrchedd. Bydd unrhyw nodweddion newydd a gyflwynir hefyd yn cael eu profi’n fewnol neu gan y Digital Accessibility Centre (DAC)."
+  "heading10": "Beth rydym yn ei wneud i wella hygyrchedd?",
+  "paragraph20": "Mae’r wefan yn cael ei phrofi’n barhaus gan ddefnyddio meddalwedd hygyrchedd. Bydd unrhyw nodweddion newydd a gyflwynir hefyd yn cael eu profi’n fewnol neu gan y Digital Accessibility Centre (DAC)."
 }
