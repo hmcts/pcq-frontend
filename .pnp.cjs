@@ -76,7 +76,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nodemon", "npm:3.1.0"],\
             ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
             ["nyc", "npm:15.1.0"],\
-            ["pa11y", "npm:7.0.0"],\
+            ["pa11y", "npm:8.0.0"],\
             ["playwright", "npm:1.42.1"],\
             ["pre-commit", "npm:1.2.2"],\
             ["proxyquire", "npm:2.1.3"],\
@@ -3733,10 +3733,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["axe-core", [\
-        ["npm:4.8.3", {\
-          "packageLocation": "./.yarn/cache/axe-core-npm-4.8.3-86a2521a93-f546c74d1f.zip/node_modules/axe-core/",\
+        ["npm:4.8.4", {\
+          "packageLocation": "./.yarn/cache/axe-core-npm-4.8.4-27f3e5418e-644da2fec1.zip/node_modules/axe-core/",\
           "packageDependencies": [\
-            ["axe-core", "npm:4.8.3"]\
+            ["axe-core", "npm:4.8.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5204,6 +5204,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
+        ["npm:12.0.0", {\
+          "packageLocation": "./.yarn/cache/commander-npm-12.0.0-6d673541cb-bce9e243dc.zip/node_modules/commander/",\
+          "packageDependencies": [\
+            ["commander", "npm:12.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:2.20.3", {\
           "packageLocation": "./.yarn/cache/commander-npm-2.20.3-d8dcbaa39b-ab8c07884e.zip/node_modules/commander/",\
           "packageDependencies": [\
@@ -6401,6 +6408,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/envinfo-npm-7.11.0-5631444898-c45a7d2040.zip/node_modules/envinfo/",\
           "packageDependencies": [\
             ["envinfo", "npm:7.11.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:7.11.1", {\
+          "packageLocation": "./.yarn/cache/envinfo-npm-7.11.1-4d6b740881-f3d38ab6bc.zip/node_modules/envinfo/",\
+          "packageDependencies": [\
+            ["envinfo", "npm:7.11.1"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -11519,15 +11533,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["p-timeout", [\
-        ["npm:4.1.0", {\
-          "packageLocation": "./.yarn/cache/p-timeout-npm-4.1.0-d6c6e20c58-321fec524c.zip/node_modules/p-timeout/",\
-          "packageDependencies": [\
-            ["p-timeout", "npm:4.1.0"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["p-try", [\
         ["npm:2.2.0", {\
           "packageLocation": "./.yarn/cache/p-try-npm-2.2.0-e0390dbaf8-f8a8e9a769.zip/node_modules/p-try/",\
@@ -11538,21 +11543,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["pa11y", [\
-        ["npm:7.0.0", {\
-          "packageLocation": "./.yarn/cache/pa11y-npm-7.0.0-bcaf156327-c96f0bd390.zip/node_modules/pa11y/",\
+        ["npm:8.0.0", {\
+          "packageLocation": "./.yarn/cache/pa11y-npm-8.0.0-5516e74ddf-8554b013b5.zip/node_modules/pa11y/",\
           "packageDependencies": [\
-            ["pa11y", "npm:7.0.0"],\
-            ["axe-core", "npm:4.8.3"],\
+            ["pa11y", "npm:8.0.0"],\
+            ["axe-core", "npm:4.8.4"],\
             ["bfj", "npm:8.0.0"],\
-            ["commander", "npm:11.1.0"],\
-            ["envinfo", "npm:7.11.0"],\
+            ["commander", "npm:12.0.0"],\
+            ["envinfo", "npm:7.11.1"],\
             ["html_codesniffer", "npm:2.5.1"],\
             ["kleur", "npm:4.1.5"],\
             ["mustache", "npm:4.2.0"],\
             ["node.extend", "npm:2.0.3"],\
-            ["p-timeout", "npm:4.1.0"],\
             ["puppeteer", "npm:22.6.1"],\
-            ["semver", "npm:7.5.4"]\
+            ["semver", "npm:7.6.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -12129,7 +12133,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nodemon", "npm:3.1.0"],\
             ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
             ["nyc", "npm:15.1.0"],\
-            ["pa11y", "npm:7.0.0"],\
+            ["pa11y", "npm:8.0.0"],\
             ["playwright", "npm:1.42.1"],\
             ["pre-commit", "npm:1.2.2"],\
             ["proxyquire", "npm:2.1.3"],\
