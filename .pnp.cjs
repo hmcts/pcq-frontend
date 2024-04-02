@@ -86,7 +86,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["serve-favicon", "npm:2.5.0"],\
             ["sinon", "npm:17.0.1"],\
             ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-            ["sonarqube-scanner", "npm:3.3.0"],\
+            ["sonarqube-scanner", "npm:3.4.0"],\
             ["supertest", "npm:6.3.4"],\
             ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["traverse", "npm:0.6.8"],\
@@ -12139,7 +12139,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["serve-favicon", "npm:2.5.0"],\
             ["sinon", "npm:17.0.1"],\
             ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-            ["sonarqube-scanner", "npm:3.3.0"],\
+            ["sonarqube-scanner", "npm:3.4.0"],\
             ["supertest", "npm:6.3.4"],\
             ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["traverse", "npm:0.6.8"],\
@@ -13476,10 +13476,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["sonarqube-scanner", [\
-        ["npm:3.3.0", {\
-          "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-3.3.0-5e75d74355-7960bc1efe.zip/node_modules/sonarqube-scanner/",\
+        ["npm:3.4.0", {\
+          "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-3.4.0-50f08c20a3-a2e1b4710a.zip/node_modules/sonarqube-scanner/",\
           "packageDependencies": [\
-            ["sonarqube-scanner", "npm:3.3.0"],\
+            ["sonarqube-scanner", "npm:3.4.0"],\
             ["adm-zip", "npm:0.5.10"],\
             ["fancy-log", "npm:2.0.0"],\
             ["https-proxy-agent", "npm:7.0.1"],\
