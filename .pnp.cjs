@@ -66,7 +66,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jsonwebtoken", "npm:9.0.2"],\
             ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
             ["lodash", "npm:4.17.21"],\
-            ["mocha", "npm:10.3.0"],\
+            ["mocha", "npm:10.4.0"],\
             ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
             ["moment", "npm:2.30.1"],\
             ["nock", "npm:13.5.4"],\
@@ -86,7 +86,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["serve-favicon", "npm:2.5.0"],\
             ["sinon", "npm:17.0.1"],\
             ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-            ["sonarqube-scanner", "npm:3.3.0"],\
+            ["sonarqube-scanner", "npm:3.4.0"],\
             ["supertest", "npm:6.3.4"],\
             ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["traverse", "npm:0.6.8"],\
@@ -2413,7 +2413,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/mocha", null],\
             ["@types/stryker-mutator__core", null],\
             ["glob", "npm:7.2.3"],\
-            ["mocha", "npm:10.3.0"],\
+            ["mocha", "npm:10.4.0"],\
             ["tslib", "npm:2.3.1"]\
           ],\
           "packagePeers": [\
@@ -10503,10 +10503,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:10.3.0", {\
-          "packageLocation": "./.yarn/cache/mocha-npm-10.3.0-2a85896b70-b5e95b9c27.zip/node_modules/mocha/",\
+        ["npm:10.4.0", {\
+          "packageLocation": "./.yarn/cache/mocha-npm-10.4.0-9c45b5940e-090771d6d4.zip/node_modules/mocha/",\
           "packageDependencies": [\
-            ["mocha", "npm:10.3.0"],\
+            ["mocha", "npm:10.4.0"],\
             ["ansi-colors", "npm:4.1.1"],\
             ["browser-stdout", "npm:1.3.1"],\
             ["chokidar", "npm:3.5.3"],\
@@ -10551,7 +10551,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash.isfunction", "npm:3.0.9"],\
             ["lodash.isobject", "npm:3.0.2"],\
             ["lodash.isstring", "npm:4.0.1"],\
-            ["mocha", "npm:10.3.0"],\
+            ["mocha", "npm:10.4.0"],\
             ["mochawesome-report-generator", "npm:6.2.0"],\
             ["strip-ansi", "npm:6.0.1"],\
             ["uuid", "npm:8.3.2"]\
@@ -12119,7 +12119,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jsonwebtoken", "npm:9.0.2"],\
             ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
             ["lodash", "npm:4.17.21"],\
-            ["mocha", "npm:10.3.0"],\
+            ["mocha", "npm:10.4.0"],\
             ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
             ["moment", "npm:2.30.1"],\
             ["nock", "npm:13.5.4"],\
@@ -12139,7 +12139,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["serve-favicon", "npm:2.5.0"],\
             ["sinon", "npm:17.0.1"],\
             ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-            ["sonarqube-scanner", "npm:3.3.0"],\
+            ["sonarqube-scanner", "npm:3.4.0"],\
             ["supertest", "npm:6.3.4"],\
             ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["traverse", "npm:0.6.8"],\
@@ -13476,10 +13476,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["sonarqube-scanner", [\
-        ["npm:3.3.0", {\
-          "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-3.3.0-5e75d74355-7960bc1efe.zip/node_modules/sonarqube-scanner/",\
+        ["npm:3.4.0", {\
+          "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-3.4.0-50f08c20a3-a2e1b4710a.zip/node_modules/sonarqube-scanner/",\
           "packageDependencies": [\
-            ["sonarqube-scanner", "npm:3.3.0"],\
+            ["sonarqube-scanner", "npm:3.4.0"],\
             ["adm-zip", "npm:0.5.10"],\
             ["fancy-log", "npm:2.0.0"],\
             ["https-proxy-agent", "npm:7.0.1"],\
