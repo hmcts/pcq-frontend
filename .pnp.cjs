@@ -54,7 +54,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["esmify", "npm:2.1.1"],\
             ["express", "npm:4.19.2"],\
             ["express-session", "npm:1.18.0"],\
-            ["express-urlrewrite", "npm:2.0.1"],\
+            ["express-urlrewrite", "npm:2.0.2"],\
             ["fs-extra", "npm:11.2.0"],\
             ["git-rev-sync", "npm:3.0.2"],\
             ["govuk-frontend", "npm:4.8.0"],\
@@ -7063,12 +7063,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["express-urlrewrite", [\
-        ["npm:2.0.1", {\
-          "packageLocation": "./.yarn/cache/express-urlrewrite-npm-2.0.1-98b1099210-9a67bf2141.zip/node_modules/express-urlrewrite/",\
+        ["npm:2.0.2", {\
+          "packageLocation": "./.yarn/cache/express-urlrewrite-npm-2.0.2-cb3e53cc89-3c0851f6e6.zip/node_modules/express-urlrewrite/",\
           "packageDependencies": [\
-            ["express-urlrewrite", "npm:2.0.1"],\
+            ["express-urlrewrite", "npm:2.0.2"],\
             ["debug", "virtual:8b235322a8a24e48c015315ac31d9a45375a931d446b3d9b05b3960f64165451979d09fb0441934c12e21122cff6f3cbc821971e2170239ee8406b043c8fdde4#npm:4.3.4"],\
-            ["path-to-regexp", "npm:6.2.1"]\
+            ["path-to-regexp", "npm:6.2.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -12202,10 +12202,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:6.2.1", {\
-          "packageLocation": "./.yarn/cache/path-to-regexp-npm-6.2.1-8ebfe03654-f0227af828.zip/node_modules/path-to-regexp/",\
+        ["npm:6.2.2", {\
+          "packageLocation": "./.yarn/cache/path-to-regexp-npm-6.2.2-0bf7f6805c-b7b0005c36.zip/node_modules/path-to-regexp/",\
           "packageDependencies": [\
-            ["path-to-regexp", "npm:6.2.1"]\
+            ["path-to-regexp", "npm:6.2.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -12512,7 +12512,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["esmify", "npm:2.1.1"],\
             ["express", "npm:4.19.2"],\
             ["express-session", "npm:1.18.0"],\
-            ["express-urlrewrite", "npm:2.0.1"],\
+            ["express-urlrewrite", "npm:2.0.2"],\
             ["fs-extra", "npm:11.2.0"],\
             ["git-rev-sync", "npm:3.0.2"],\
             ["govuk-frontend", "npm:4.8.0"],\
