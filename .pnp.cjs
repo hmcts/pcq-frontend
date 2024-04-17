@@ -61,7 +61,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["helmet", "npm:3.23.3"],\
             ["https-proxy-agent", "npm:5.0.1"],\
             ["i18next", "npm:23.11.2"],\
-            ["ioredis", "npm:5.3.2"],\
+            ["ioredis", "npm:5.4.1"],\
             ["js-yaml", "npm:4.1.0"],\
             ["jsonwebtoken", "npm:9.0.2"],\
             ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
@@ -8851,10 +8851,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["ioredis", [\
-        ["npm:5.3.2", {\
-          "packageLocation": "./.yarn/cache/ioredis-npm-5.3.2-58471071b1-9a23559133.zip/node_modules/ioredis/",\
+        ["npm:5.4.1", {\
+          "packageLocation": "./.yarn/cache/ioredis-npm-5.4.1-c96e18ae67-92210294f7.zip/node_modules/ioredis/",\
           "packageDependencies": [\
-            ["ioredis", "npm:5.3.2"],\
+            ["ioredis", "npm:5.4.1"],\
             ["@ioredis/commands", "npm:1.2.0"],\
             ["cluster-key-slot", "npm:1.1.0"],\
             ["debug", "virtual:8b235322a8a24e48c015315ac31d9a45375a931d446b3d9b05b3960f64165451979d09fb0441934c12e21122cff6f3cbc821971e2170239ee8406b043c8fdde4#npm:4.3.4"],\
@@ -12519,7 +12519,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["helmet", "npm:3.23.3"],\
             ["https-proxy-agent", "npm:5.0.1"],\
             ["i18next", "npm:23.11.2"],\
-            ["ioredis", "npm:5.3.2"],\
+            ["ioredis", "npm:5.4.1"],\
             ["js-yaml", "npm:4.1.0"],\
             ["jsonwebtoken", "npm:9.0.2"],\
             ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
