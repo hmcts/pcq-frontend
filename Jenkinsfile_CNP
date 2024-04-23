@@ -30,11 +30,11 @@ withPipeline(type, product, component) {
   }
 
   before('smoketest:preview') {
-    sh 'yarn playwright install'
+    sh 'rm -rf /home/jenkinsssh/.cache/ms-playwright && yarn install && yarn playwright install'
   }
 
   before('smoketest:aat') {
-    sh 'yarn playwright install'
+    sh 'rm -rf /home/jenkinsssh/.cache/ms-playwright && yarn install && yarn playwright install'
   }
 
   enableAksStagingDeployment()

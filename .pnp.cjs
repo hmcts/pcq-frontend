@@ -2481,7 +2481,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@types/fs-extra", "npm:11.0.3"],\
             ["@types/jsonfile", "npm:6.1.3"],\
-            ["@types/node", "npm:18.6.1"]\
+            ["@types/node", "npm:20.12.7"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2509,7 +2509,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-jsonfile-npm-6.1.3-117c75e92e-3f2d0060a5.zip/node_modules/@types/jsonfile/",\
           "packageDependencies": [\
             ["@types/jsonfile", "npm:6.1.3"],\
-            ["@types/node", "npm:18.6.1"]\
+            ["@types/node", "npm:20.12.7"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2543,17 +2543,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/node", [\
-        ["npm:18.6.1", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-18.6.1-9231d14b7c-06331f68bc.zip/node_modules/@types/node/",\
+        ["npm:20.12.7", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-20.12.7-3bb3d3303d-7cc979f7e2.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:18.6.1"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:20.2.5", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-20.2.5-0014d2d9ce-38ce7c7e9d.zip/node_modules/@types/node/",\
-          "packageDependencies": [\
-            ["@types/node", "npm:20.2.5"]\
+            ["@types/node", "npm:20.12.7"],\
+            ["undici-types", "npm:5.26.5"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2615,7 +2609,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-ws-npm-8.5.4-c0237574ef-fefbad20d2.zip/node_modules/@types/ws/",\
           "packageDependencies": [\
             ["@types/ws", "npm:8.5.4"],\
-            ["@types/node", "npm:18.6.1"]\
+            ["@types/node", "npm:20.12.7"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2634,7 +2628,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-yauzl-npm-2.10.0-7b242343cb-55d27ae5d3.zip/node_modules/@types/yauzl/",\
           "packageDependencies": [\
             ["@types/yauzl", "npm:2.10.0"],\
-            ["@types/node", "npm:18.6.1"]\
+            ["@types/node", "npm:20.12.7"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2723,7 +2717,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@wdio-repl-npm-8.24.12-c838ca0ad8-4deb2bc7b5.zip/node_modules/@wdio/repl/",\
           "packageDependencies": [\
             ["@wdio/repl", "npm:8.24.12"],\
-            ["@types/node", "npm:20.2.5"]\
+            ["@types/node", "npm:20.12.7"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2733,7 +2727,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@wdio-types-npm-8.29.1-aeaf1e8b95-cb1ff31650.zip/node_modules/@wdio/types/",\
           "packageDependencies": [\
             ["@wdio/types", "npm:8.29.1"],\
-            ["@types/node", "npm:20.2.5"]\
+            ["@types/node", "npm:20.12.7"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -2741,7 +2735,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@wdio-types-npm-8.36.1-c98bc5765e-ebf1aa5407.zip/node_modules/@wdio/types/",\
           "packageDependencies": [\
             ["@wdio/types", "npm:8.36.1"],\
-            ["@types/node", "npm:20.2.5"]\
+            ["@types/node", "npm:20.12.7"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4757,7 +4751,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/chrome-launcher-npm-1.1.0-0ef7a69f46-55db70ada9.zip/node_modules/chrome-launcher/",\
           "packageDependencies": [\
             ["chrome-launcher", "npm:1.1.0"],\
-            ["@types/node", "npm:18.6.1"],\
+            ["@types/node", "npm:20.12.7"],\
             ["escape-string-regexp", "npm:4.0.0"],\
             ["is-wsl", "npm:2.2.0"],\
             ["lighthouse-logger", "npm:2.0.1"]\
@@ -6036,7 +6030,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/devtools-npm-8.29.1-1f6a8eddec-b347302c65.zip/node_modules/devtools/",\
           "packageDependencies": [\
             ["devtools", "npm:8.29.1"],\
-            ["@types/node", "npm:20.2.5"],\
+            ["@types/node", "npm:20.12.7"],\
             ["@wdio/config", "npm:8.29.1"],\
             ["@wdio/logger", "npm:8.28.0"],\
             ["@wdio/protocols", "npm:8.24.12"],\
@@ -9364,7 +9358,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/jest-worker-npm-27.5.1-1c110b5894-98cd68b696.zip/node_modules/jest-worker/",\
           "packageDependencies": [\
             ["jest-worker", "npm:27.5.1"],\
-            ["@types/node", "npm:18.6.1"],\
+            ["@types/node", "npm:20.12.7"],\
             ["merge-stream", "npm:2.0.0"],\
             ["supports-color", "npm:8.1.1"]\
           ],\
@@ -15011,6 +15005,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["undici-types", [\
+        ["npm:5.26.5", {\
+          "packageLocation": "./.yarn/cache/undici-types-npm-5.26.5-de4f7c7bb9-3192ef6f3f.zip/node_modules/undici-types/",\
+          "packageDependencies": [\
+            ["undici-types", "npm:5.26.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["unicode-emoji-modifier-base", [\
         ["npm:1.0.0", {\
           "packageLocation": "./.yarn/cache/unicode-emoji-modifier-base-npm-1.0.0-ef42b85868-6e1521d35f.zip/node_modules/unicode-emoji-modifier-base/",\
@@ -15333,7 +15336,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/webdriver-npm-8.36.1-9323854e2c-2395222100.zip/node_modules/webdriver/",\
           "packageDependencies": [\
             ["webdriver", "npm:8.36.1"],\
-            ["@types/node", "npm:20.2.5"],\
+            ["@types/node", "npm:20.12.7"],\
             ["@types/ws", "npm:8.5.4"],\
             ["@wdio/config", "npm:8.36.1"],\
             ["@wdio/logger", "npm:8.28.0"],\
@@ -15361,7 +15364,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.36.1"],\
             ["@types/devtools", null],\
-            ["@types/node", "npm:20.2.5"],\
+            ["@types/node", "npm:20.12.7"],\
             ["@wdio/config", "npm:8.36.1"],\
             ["@wdio/logger", "npm:8.28.0"],\
             ["@wdio/protocols", "npm:8.32.0"],\
