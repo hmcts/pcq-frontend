@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.149",
+  "version": "1.2.150",
   "license": "MIT",
   "engines": {
     "node": ">=14.18.1"
@@ -120,9 +120,7 @@
     "yarn-audit-fix": "^10.0.3"
   },
   "resolutions": {
-    "@opentelemetry/instrumentation": "^0.50.0",
-    "puppeteer": "^22.0.0",
-    "tar": "^6.2.1"
+    "formidable": "^3.2.4"
   },
   "nyc": {
     "report-dir": "functional-output/coverage",
