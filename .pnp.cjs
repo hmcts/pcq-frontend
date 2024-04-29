@@ -86,7 +86,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["serve-favicon", "npm:2.5.0"],\
             ["sinon", "npm:17.0.1"],\
             ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-            ["sonarqube-scanner", "npm:3.4.0"],\
+            ["sonarqube-scanner", "npm:3.5.0"],\
             ["supertest", "npm:6.3.4"],\
             ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["traverse", "npm:0.6.9"],\
@@ -3205,10 +3205,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["adm-zip", [\
-        ["npm:0.5.10", {\
-          "packageLocation": "./.yarn/cache/adm-zip-npm-0.5.10-17a872f2fd-07ed91cf64.zip/node_modules/adm-zip/",\
+        ["npm:0.5.12", {\
+          "packageLocation": "./.yarn/cache/adm-zip-npm-0.5.12-c8d76a4373-299bd727c5.zip/node_modules/adm-zip/",\
           "packageDependencies": [\
-            ["adm-zip", "npm:0.5.10"]\
+            ["adm-zip", "npm:0.5.12"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8451,6 +8451,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["debug", "virtual:8b235322a8a24e48c015315ac31d9a45375a931d446b3d9b05b3960f64165451979d09fb0441934c12e21122cff6f3cbc821971e2170239ee8406b043c8fdde4#npm:4.3.4"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:7.0.4", {\
+          "packageLocation": "./.yarn/cache/https-proxy-agent-npm-7.0.4-a51e13f5dc-daaab857a9.zip/node_modules/https-proxy-agent/",\
+          "packageDependencies": [\
+            ["https-proxy-agent", "npm:7.0.4"],\
+            ["agent-base", "npm:7.1.0"],\
+            ["debug", "virtual:8b235322a8a24e48c015315ac31d9a45375a931d446b3d9b05b3960f64165451979d09fb0441934c12e21122cff6f3cbc821971e2170239ee8406b043c8fdde4#npm:4.3.4"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["human-signals", [\
@@ -12390,7 +12399,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["serve-favicon", "npm:2.5.0"],\
             ["sinon", "npm:17.0.1"],\
             ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-            ["sonarqube-scanner", "npm:3.4.0"],\
+            ["sonarqube-scanner", "npm:3.5.0"],\
             ["supertest", "npm:6.3.4"],\
             ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["traverse", "npm:0.6.9"],\
@@ -13553,15 +13562,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["shell-quote", [\
-        ["npm:1.8.1", {\
-          "packageLocation": "./.yarn/cache/shell-quote-npm-1.8.1-fcccf06093-5f01201f4e.zip/node_modules/shell-quote/",\
-          "packageDependencies": [\
-            ["shell-quote", "npm:1.8.1"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["shell-utils", [\
         ["npm:1.0.10", {\
           "packageLocation": "./.yarn/cache/shell-utils-npm-1.0.10-bbb06d4a19-537e8ab199.zip/node_modules/shell-utils/",\
@@ -13753,18 +13753,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["sonarqube-scanner", [\
-        ["npm:3.4.0", {\
-          "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-3.4.0-50f08c20a3-a2e1b4710a.zip/node_modules/sonarqube-scanner/",\
+        ["npm:3.5.0", {\
+          "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-3.5.0-7975915765-2a8317ce6b.zip/node_modules/sonarqube-scanner/",\
           "packageDependencies": [\
-            ["sonarqube-scanner", "npm:3.4.0"],\
-            ["adm-zip", "npm:0.5.10"],\
+            ["sonarqube-scanner", "npm:3.5.0"],\
+            ["adm-zip", "npm:0.5.12"],\
             ["fancy-log", "npm:2.0.0"],\
-            ["https-proxy-agent", "npm:7.0.1"],\
+            ["https-proxy-agent", "npm:7.0.4"],\
             ["jest-sonar-reporter", "npm:2.0.0"],\
             ["mkdirp", "npm:3.0.1"],\
             ["node-downloader-helper", "npm:2.1.9"],\
             ["progress", "npm:2.0.3"],\
-            ["shell-quote", "npm:1.8.1"],\
             ["slugify", "npm:1.6.6"]\
           ],\
           "linkType": "HARD"\
