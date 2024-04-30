@@ -87,7 +87,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sinon", "npm:17.0.1"],\
             ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
             ["sonarqube-scanner", "npm:3.5.0"],\
-            ["supertest", "npm:6.3.4"],\
+            ["supertest", "npm:7.0.0"],\
             ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["traverse", "npm:0.6.9"],\
             ["tslib", "npm:2.6.2"],\
@@ -12415,7 +12415,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sinon", "npm:17.0.1"],\
             ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
             ["sonarqube-scanner", "npm:3.5.0"],\
-            ["supertest", "npm:6.3.4"],\
+            ["supertest", "npm:7.0.0"],\
             ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["traverse", "npm:0.6.9"],\
             ["tslib", "npm:2.6.2"],\
@@ -14207,23 +14207,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["superagent", [\
-        ["npm:8.1.2", {\
-          "packageLocation": "./.yarn/cache/superagent-npm-8.1.2-44190e1fe9-f3601c5cca.zip/node_modules/superagent/",\
-          "packageDependencies": [\
-            ["superagent", "npm:8.1.2"],\
-            ["component-emitter", "npm:1.3.0"],\
-            ["cookiejar", "npm:2.1.4"],\
-            ["debug", "virtual:d9a5f00bfc11d56fd0d391c83d70ceade45ea6b20139b488c916c2225b2c904e8c8722786b03dfb6d06fef38f31a649a4fbdf210a93be455090758ff610f2afb#npm:4.3.4"],\
-            ["fast-safe-stringify", "npm:2.1.1"],\
-            ["form-data", "npm:4.0.0"],\
-            ["formidable", "npm:3.5.1"],\
-            ["methods", "npm:1.1.2"],\
-            ["mime", "npm:2.6.0"],\
-            ["qs", "npm:6.11.2"],\
-            ["semver", "npm:7.5.4"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:9.0.1", {\
           "packageLocation": "./.yarn/cache/superagent-npm-9.0.1-de90d6ad61-c332ef5609.zip/node_modules/superagent/",\
           "packageDependencies": [\
@@ -14240,15 +14223,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semver", "npm:7.5.4"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:9.0.2", {\
+          "packageLocation": "./.yarn/cache/superagent-npm-9.0.2-9e8cceb765-f471461b21.zip/node_modules/superagent/",\
+          "packageDependencies": [\
+            ["superagent", "npm:9.0.2"],\
+            ["component-emitter", "npm:1.3.0"],\
+            ["cookiejar", "npm:2.1.4"],\
+            ["debug", "virtual:d9a5f00bfc11d56fd0d391c83d70ceade45ea6b20139b488c916c2225b2c904e8c8722786b03dfb6d06fef38f31a649a4fbdf210a93be455090758ff610f2afb#npm:4.3.4"],\
+            ["fast-safe-stringify", "npm:2.1.1"],\
+            ["form-data", "npm:4.0.0"],\
+            ["formidable", "npm:3.5.1"],\
+            ["methods", "npm:1.1.2"],\
+            ["mime", "npm:2.6.0"],\
+            ["qs", "npm:6.11.2"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["supertest", [\
-        ["npm:6.3.4", {\
-          "packageLocation": "./.yarn/cache/supertest-npm-6.3.4-ddb2a7be36-875c6fa794.zip/node_modules/supertest/",\
+        ["npm:7.0.0", {\
+          "packageLocation": "./.yarn/cache/supertest-npm-7.0.0-8060c32e4d-974743aa51.zip/node_modules/supertest/",\
           "packageDependencies": [\
-            ["supertest", "npm:6.3.4"],\
+            ["supertest", "npm:7.0.0"],\
             ["methods", "npm:1.1.2"],\
-            ["superagent", "npm:8.1.2"]\
+            ["superagent", "npm:9.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
