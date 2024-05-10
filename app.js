@@ -137,16 +137,25 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
 
     app.use(helmet.xssFilter({setOnOldIE: true}));
 
-    const caching = {cacheControl: true, setHeaders: (res) => res.setHeader('Cache-Control', 'max-age=604800')};
+    app.use((req, res, next) => {
+        res.removeHeader('Accept-Ranges');
+        next();
+    });
+
+    const staticOptions = {
+        cacheControl: true,
+        setHeaders: (res) => res.setHeader('Cache-Control', 'max-age=604800'),
+        acceptRanges: false,
+    };
 
     // Middleware to serve static assets
-    app.use('/public/stylesheets', express.static(`${__dirname}/public/stylesheets`, caching));
-    app.use('/public/images', express.static(`${__dirname}/app/assets/images`, caching));
-    app.use('/public/javascripts/govuk-frontend', express.static(govUkFrontendPath, caching));
-    app.use('/public/javascripts', express.static(`${__dirname}/app/assets/javascripts`, caching));
-    app.use('/public/javascripts', express.static(`${__dirname}/public/javascripts`, caching));
+    app.use('/public/stylesheets', express.static(`${__dirname}/public/stylesheets`, staticOptions));
+    app.use('/public/images', express.static(`${__dirname}/app/assets/images`, staticOptions));
+    app.use('/public/javascripts/govuk-frontend', express.static(govUkFrontendPath, staticOptions));
+    app.use('/public/javascripts', express.static(`${__dirname}/app/assets/javascripts`, staticOptions));
+    app.use('/public/javascripts', express.static(`${__dirname}/public/javascripts`, staticOptions));
     app.use('/public/pdf', express.static(`${__dirname}/app/assets/pdf`));
-    app.use('/assets', express.static(`${govUkFrontendPath}/govuk/assets`, caching));
+    app.use('/assets', express.static(`${govUkFrontendPath}/govuk/assets`, staticOptions));
 
     // Elements refers to icon folder instead of images folder
     app.use(favicon(path.join(govUkFrontendPath, 'govuk', 'assets', 'images', 'favicon.ico')));
