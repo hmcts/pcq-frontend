@@ -5,6 +5,7 @@
 
 const appInsights = require('app/components/app-insights');
 const logger = require('app/components/logger');
+const compression = require('compression');
 const path = require('path');
 const express = require('express');
 const rewrite = require('express-urlrewrite');
@@ -63,6 +64,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     };
     njkEnv.addGlobal('globals', globals);
 
+    app.use(compression());
     app.use(rewrite(`${globals.basePath}/public/*`, '/public/$1'));
 
     app.enable('trust proxy');

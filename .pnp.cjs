@@ -45,6 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["co", "npm:4.6.0"],\
             ["codeceptjs", "npm:3.5.14"],\
             ["codecov", "npm:4.0.0-0"],\
+            ["compression", "npm:1.7.4"],\
             ["config", "npm:3.3.11"],\
             ["connect-redis", "npm:5.2.0"],\
             ["cookie-parser", "npm:1.4.6"],\
@@ -4243,6 +4244,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["bytes", [\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/bytes-npm-3.0.0-19be09472d-a2b386dd81.zip/node_modules/bytes/",\
+          "packageDependencies": [\
+            ["bytes", "npm:3.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:3.1.2", {\
           "packageLocation": "./.yarn/cache/bytes-npm-3.1.2-28b8643004-e4bcd3948d.zip/node_modules/bytes/",\
           "packageDependencies": [\
@@ -5228,6 +5236,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["crc32-stream", "npm:6.0.0"],\
             ["normalize-path", "npm:3.0.0"],\
             ["readable-stream", "npm:4.5.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["compressible", [\
+        ["npm:2.0.18", {\
+          "packageLocation": "./.yarn/cache/compressible-npm-2.0.18-ee5ab04d88-58321a85b3.zip/node_modules/compressible/",\
+          "packageDependencies": [\
+            ["compressible", "npm:2.0.18"],\
+            ["mime-db", "npm:1.52.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["compression", [\
+        ["npm:1.7.4", {\
+          "packageLocation": "./.yarn/cache/compression-npm-1.7.4-e0cd6afa69-35c0f2eb1f.zip/node_modules/compression/",\
+          "packageDependencies": [\
+            ["compression", "npm:1.7.4"],\
+            ["accepts", "npm:1.3.8"],\
+            ["bytes", "npm:3.0.0"],\
+            ["compressible", "npm:2.0.18"],\
+            ["debug", "virtual:44738662cf800ff2863ba9baeabb817b24a959a14f86e20a31680e5dc79a4a738f7ceb7dca32753d579fae475aa061dffad8228a3391f3a9546b122f077e29a5#npm:2.6.9"],\
+            ["on-headers", "npm:1.0.2"],\
+            ["safe-buffer", "npm:5.1.2"],\
+            ["vary", "npm:1.1.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -12365,6 +12399,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["co", "npm:4.6.0"],\
             ["codeceptjs", "npm:3.5.14"],\
             ["codecov", "npm:4.0.0-0"],\
+            ["compression", "npm:1.7.4"],\
             ["config", "npm:3.3.11"],\
             ["connect-redis", "npm:5.2.0"],\
             ["cookie-parser", "npm:1.4.6"],\
