@@ -37,3 +37,5 @@ undefinedconsole.log
 !.yarn/versions
 
 .pnp.cjs
+
+node_modules/

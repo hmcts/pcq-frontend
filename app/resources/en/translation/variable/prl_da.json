@@ -1,7 +1,7 @@
 {
     "applicant": {
       "startpage": {
-        "paragraph2": "Your answers won't affect your application."
+        "paragraph2": "Your answers won't affect your application.<br/><br/>They won't be shared with anyone involved in your case."
       },
       "endpage": {
         "paragraph1": "The next steps are to check your application details."
@@ -12,7 +12,7 @@
     },
     "respondent": {
         "startpage": {
-          "paragraph2": "Your answers won't affect your response."
+          "paragraph2": "Your answers won't affect your response.<br/><br/>They won't be shared with anyone involved in your case."
         },
         "endpage": {
           "paragraph1": "The next steps are to check your response details."

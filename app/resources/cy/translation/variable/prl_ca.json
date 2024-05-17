@@ -1,7 +1,7 @@
 {
     "applicant": {
       "startpage": {
-        "paragraph2": "Ni fydd eich atebion yn effeithio ar eich cais."
+        "paragraph2": "Ni fydd eich atebion yn effeithio ar eich cais.<br/><br/>Ni fyddant yn cael eu rhannu ag unrhyw un sy’n ymwneud â’ch achos."
       },
       "endpage": {
         "paragraph1": "Y cam nesaf yw gwirio manylion eich cais."
@@ -12,7 +12,7 @@
     },
     "respondent": {
       "startpage": {
-        "paragraph2": "Ni fydd eich atebion yn effeithio ar eich ymateb."
+        "paragraph2": "Ni fydd eich atebion yn effeithio ar eich ymateb.<br/><br/>Ni fyddant yn cael eu rhannu ag unrhyw un sy’n ymwneud â’ch achos."
       },
       "endpage": {
         "paragraph1": "Y cam nesaf yw gwirio manylion eich ymateb."
