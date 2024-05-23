@@ -97,6 +97,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
                 'https://*.dynatrace.com',
                 'https://*.g.doubleclick.net'
             ],
+            workerSrc: ['\'self\'', 'blob:'],
             mediaSrc: ['\'self\''],
             frameSrc: ['vcc-eu4.8x8.com', 'vcc-eu4b.8x8.com'],
             imgSrc: [
