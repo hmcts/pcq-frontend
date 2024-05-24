@@ -2,6 +2,8 @@
 <script nonce="{{ globals.nonce }}">window.GOVUKFrontend.initAll()</script>
 {% if ((settings.env != 'prod') and (settings.env != 'production')) %}
     <script src="https://js-cdn.dynatrace.com/jstag/17177a07246/bf24054dsx/c498e800b72e8c9d_complete.js"></script>
+{% else %}
+    <script type="text/javascript" src="https://js-cdn.dynatrace.com/jstag/17177a07246/bf00910jpo/7c8bb3b7321550af_complete.js" crossorigin="anonymous"></script>
 {% endif %}
 <!--[if lte IE 9]>
 <script src="{{ globals.basePath }}/public/javascripts/form-polyfill.js"></script>
