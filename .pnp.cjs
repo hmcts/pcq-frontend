@@ -74,7 +74,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["node-emoji", "npm:2.1.3"],\
             ["node-fetch", "virtual:cdb982d44661592ebbafe07217ec5667306fff17f8dbc22b1882f154f5441ce269c7f262b8dec39e8a578c85f617449d9637bdc205e5c7921787c7268959c215#npm:2.7.0"],\
             ["node-sass", "npm:9.0.0"],\
-            ["nodemon", "npm:3.1.0"],\
+            ["nodemon", "npm:3.1.1"],\
             ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
             ["nyc", "npm:15.1.0"],\
             ["pa11y", "npm:7.0.0"],\
@@ -5751,20 +5751,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:30a475e1a60ca3492fbe4f271713b207b025cbbade4fb3a8423d74bab1331da5ac300d87e0b35da19afbe2e0b8f2d04eda4276cc9e964012b9cc8ea8acb6874a#npm:4.3.4", {\
-          "packageLocation": "./.yarn/__virtual__/debug-virtual-677631df64/0/cache/debug-npm-4.3.4-4513954577-3dbad3f94e.zip/node_modules/debug/",\
-          "packageDependencies": [\
-            ["debug", "virtual:30a475e1a60ca3492fbe4f271713b207b025cbbade4fb3a8423d74bab1331da5ac300d87e0b35da19afbe2e0b8f2d04eda4276cc9e964012b9cc8ea8acb6874a#npm:4.3.4"],\
-            ["@types/supports-color", null],\
-            ["ms", "npm:2.1.2"],\
-            ["supports-color", "npm:5.5.0"]\
-          ],\
-          "packagePeers": [\
-            "@types/supports-color",\
-            "supports-color"\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["virtual:44738662cf800ff2863ba9baeabb817b24a959a14f86e20a31680e5dc79a4a738f7ceb7dca32753d579fae475aa061dffad8228a3391f3a9546b122f077e29a5#npm:2.6.9", {\
           "packageLocation": "./.yarn/__virtual__/debug-virtual-fad9a3537e/0/cache/debug-npm-2.6.9-7d4cb597dc-d2f51589ca.zip/node_modules/debug/",\
           "packageDependencies": [\
@@ -5800,6 +5786,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/supports-color", null],\
             ["ms", "npm:2.1.2"],\
             ["supports-color", null]\
+          ],\
+          "packagePeers": [\
+            "@types/supports-color",\
+            "supports-color"\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["virtual:f99724f84fddb2e93226de7fa788c781c9e79c7d19ca04efdd577de22e6446d084bf84a48e4e364741a3f55e030361e19abe9c130cab00dab47f4d0052fdc06b#npm:4.3.4", {\
+          "packageLocation": "./.yarn/__virtual__/debug-virtual-df4ab6115c/0/cache/debug-npm-4.3.4-4513954577-3dbad3f94e.zip/node_modules/debug/",\
+          "packageDependencies": [\
+            ["debug", "virtual:f99724f84fddb2e93226de7fa788c781c9e79c7d19ca04efdd577de22e6446d084bf84a48e4e364741a3f55e030361e19abe9c130cab00dab47f4d0052fdc06b#npm:4.3.4"],\
+            ["@types/supports-color", null],\
+            ["ms", "npm:2.1.2"],\
+            ["supports-color", "npm:5.5.0"]\
           ],\
           "packagePeers": [\
             "@types/supports-color",\
@@ -11359,12 +11359,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["nodemon", [\
-        ["npm:3.1.0", {\
-          "packageLocation": "./.yarn/unplugged/nodemon-npm-3.1.0-30a475e1a6/node_modules/nodemon/",\
+        ["npm:3.1.1", {\
+          "packageLocation": "./.yarn/unplugged/nodemon-npm-3.1.1-f99724f84f/node_modules/nodemon/",\
           "packageDependencies": [\
-            ["nodemon", "npm:3.1.0"],\
+            ["nodemon", "npm:3.1.1"],\
             ["chokidar", "npm:3.5.3"],\
-            ["debug", "virtual:30a475e1a60ca3492fbe4f271713b207b025cbbade4fb3a8423d74bab1331da5ac300d87e0b35da19afbe2e0b8f2d04eda4276cc9e964012b9cc8ea8acb6874a#npm:4.3.4"],\
+            ["debug", "virtual:f99724f84fddb2e93226de7fa788c781c9e79c7d19ca04efdd577de22e6446d084bf84a48e4e364741a3f55e030361e19abe9c130cab00dab47f4d0052fdc06b#npm:4.3.4"],\
             ["ignore-by-default", "npm:1.0.1"],\
             ["minimatch", "npm:3.1.2"],\
             ["pstree.remy", "npm:1.1.8"],\
@@ -12454,7 +12454,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["node-emoji", "npm:2.1.3"],\
             ["node-fetch", "virtual:cdb982d44661592ebbafe07217ec5667306fff17f8dbc22b1882f154f5441ce269c7f262b8dec39e8a578c85f617449d9637bdc205e5c7921787c7268959c215#npm:2.7.0"],\
             ["node-sass", "npm:9.0.0"],\
-            ["nodemon", "npm:3.1.0"],\
+            ["nodemon", "npm:3.1.1"],\
             ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
             ["nyc", "npm:15.1.0"],\
             ["pa11y", "npm:7.0.0"],\
