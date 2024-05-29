@@ -17,6 +17,7 @@ def product = "pcq"
 def component = "frontend"
 
 def urlExclusions = params.ZAP_URL_EXCLUSIONS
+def yarnBuilder = new uk.gov.hmcts.contino.YarnBuilder(this)
 
 def secrets = [
   'pcq-${env}': [
@@ -44,7 +45,7 @@ withNightlyPipeline(type, product, component) {
     enableFullFunctionalTest(20)
 
     before('fullFunctionalTest') {
-      sh 'yarn playwright install'
+      yarnBuilder.yarn("playwright install")
     }
 
     afterAlways('build') {
