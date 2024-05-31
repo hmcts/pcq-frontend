@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.162",
+  "version": "1.2.163",
   "license": "MIT",
   "engines": {
     "node": ">=14.18.1"
@@ -121,7 +121,8 @@
     "yarn-audit-fix": "^10.0.3"
   },
   "resolutions": {
-    "formidable": "^3.2.4"
+    "formidable": "^3.2.4",
+    "json5": "2.2.3"
   },
   "nyc": {
     "report-dir": "functional-output/coverage",
