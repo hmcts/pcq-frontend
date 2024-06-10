@@ -32,7 +32,7 @@ class FeatureToggle {
         const sessionId = req.session ? req.session.id : 'Init';
 
         const ftValue = res.locals ? res.locals.launchDarkly.ftValue : null;
-        const defaultValue = ftValue && ftValue[featureToggleKey] ? ftValue[featureToggleKey] : false;
+        const defaultValue = Boolean(ftValue?.[featureToggleKey]);
 
         return new Promise((resolve, reject) => {
             this.launchDarkly.variation(toggleKey, ldUser, defaultValue, (err, enabled) => {
@@ -84,7 +84,7 @@ class FeatureToggle {
     }
 
     static isEnabled(featureToggles, key) {
-        return Boolean(featureToggles && featureToggles[key]);
+        return Boolean(featureToggles?.[key]);
     }
 }
 
