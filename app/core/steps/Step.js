@@ -100,12 +100,12 @@ class Step {
         if (!this.content) {
             throw new ReferenceError(`Step ${this.name} has no content.json in its resource folder`);
         }
-        const contentCtx = Object.assign({}, formdata, ctx, this.commonProps);
+        const contentCtx = {...formdata, ...ctx, ...this.commonProps};
         this.i18next.changeLanguage(language);
 
         this.content = mapValues(this.content, (value, key) => this.i18next.t(`${this.resourcePath.replace(/\//g, '.')}.${key}`, contentCtx));
 
-        if (formdata && formdata.serviceId && formdata.actor) {
+        if (formdata?.serviceId && formdata.actor) {
             let variableContent;
             try {
                 variableContent = require(`app/resources/${language}/translation/variable/${formdata.serviceId}`)[formdata.actor];
