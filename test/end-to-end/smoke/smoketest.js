@@ -4,7 +4,6 @@ const {generateToken} = require('app/components/encryption-token');
 const {v4: uuidv4} = require('uuid');
 const CONF = require('config');
 /* eslint-disable no-undef */
-// eslint-disable-next-line no-unused-vars
 console.log(`Running tests against URL: ${CONF.testUrl}`);
 
 const {I} = inject();

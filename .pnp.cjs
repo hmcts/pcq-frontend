@@ -30,6 +30,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@babel/traverse", "npm:7.24.7"],\
             ["@babel/types", "npm:7.24.7"],\
+            ["@eslint/js", "npm:9.4.0"],\
             ["@hmcts/cookie-manager", "npm:1.0.0"],\
             ["@hmcts/nodejs-healthcheck", "npm:1.8.5"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
@@ -58,6 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["express-urlrewrite", "npm:2.0.2"],\
             ["fs-extra", "npm:11.2.0"],\
             ["git-rev-sync", "npm:3.0.2"],\
+            ["globals", "npm:15.4.0"],\
             ["govuk-frontend", "npm:4.8.0"],\
             ["helmet", "npm:3.23.3"],\
             ["https-proxy-agent", "npm:5.0.1"],\
@@ -8479,6 +8481,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
+        ["npm:15.4.0", {\
+          "packageLocation": "./.yarn/cache/globals-npm-15.4.0-8699ef41e1-9f9b229613.zip/node_modules/globals/",\
+          "packageDependencies": [\
+            ["globals", "npm:15.4.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:9.18.0", {\
           "packageLocation": "./.yarn/cache/globals-npm-9.18.0-129a7197fd-e9c066aecf.zip/node_modules/globals/",\
           "packageDependencies": [\
@@ -12921,6 +12930,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["protected-characteristics-frontend", "workspace:."],\
             ["@babel/traverse", "npm:7.24.7"],\
             ["@babel/types", "npm:7.24.7"],\
+            ["@eslint/js", "npm:9.4.0"],\
             ["@hmcts/cookie-manager", "npm:1.0.0"],\
             ["@hmcts/nodejs-healthcheck", "npm:1.8.5"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
@@ -12949,6 +12959,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["express-urlrewrite", "npm:2.0.2"],\
             ["fs-extra", "npm:11.2.0"],\
             ["git-rev-sync", "npm:3.0.2"],\
+            ["globals", "npm:15.4.0"],\
             ["govuk-frontend", "npm:4.8.0"],\
             ["helmet", "npm:3.23.3"],\
             ["https-proxy-agent", "npm:5.0.1"],\

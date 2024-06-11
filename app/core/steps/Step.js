@@ -109,7 +109,7 @@ class Step {
             let variableContent;
             try {
                 variableContent = require(`app/resources/${language}/translation/variable/${formdata.serviceId}`)[formdata.actor];
-            } catch (e) {
+            } catch {
                 logger().info(`Step ${this.name} has no variable-text.json file in its resource folder for service ${formdata.serviceId}`);
             }
             if (variableContent) {

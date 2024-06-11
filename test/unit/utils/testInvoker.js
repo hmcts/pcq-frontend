@@ -3,7 +3,6 @@
 const expect = require('chai').expect;
 const Invoker = require('app/utils/Invoker');
 
-/* eslint-disable no-unused-expressions */
 describe('Invoker', () => {
     let invoker;
 

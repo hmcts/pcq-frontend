@@ -1,4 +1,3 @@
-/* eslint-disable max-lines */
 'use strict';
 
 /* eslint no-console: 0 no-unused-vars: 0 */
