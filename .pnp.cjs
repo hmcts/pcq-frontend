@@ -311,7 +311,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@azure/core-util", "npm:1.2.0"],\
             ["@azure/logger", "npm:1.0.3"],\
             ["@azure/msal-browser", "npm:3.4.0"],\
-            ["@azure/msal-node", "npm:2.4.0"],\
+            ["@azure/msal-node", "npm:2.9.2"],\
             ["events", "npm:3.3.0"],\
             ["jws", "npm:4.0.0"],\
             ["open", "npm:8.4.2"],\
@@ -362,6 +362,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@azure/msal-common", [\
+        ["npm:14.12.0", {\
+          "packageLocation": "./.yarn/cache/@azure-msal-common-npm-14.12.0-b3576c04b2-9a987b7b9b.zip/node_modules/@azure/msal-common/",\
+          "packageDependencies": [\
+            ["@azure/msal-common", "npm:14.12.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:14.3.0", {\
           "packageLocation": "./.yarn/cache/@azure-msal-common-npm-14.3.0-8f9c112b6f-6cc03cfb58.zip/node_modules/@azure/msal-common/",\
           "packageDependencies": [\
@@ -371,11 +378,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@azure/msal-node", [\
-        ["npm:2.4.0", {\
-          "packageLocation": "./.yarn/cache/@azure-msal-node-npm-2.4.0-7abf632eb5-e5e8da8217.zip/node_modules/@azure/msal-node/",\
+        ["npm:2.9.2", {\
+          "packageLocation": "./.yarn/cache/@azure-msal-node-npm-2.9.2-ad4f2bdff1-a2b51d4085.zip/node_modules/@azure/msal-node/",\
           "packageDependencies": [\
-            ["@azure/msal-node", "npm:2.4.0"],\
-            ["@azure/msal-common", "npm:14.3.0"],\
+            ["@azure/msal-node", "npm:2.9.2"],\
+            ["@azure/msal-common", "npm:14.12.0"],\
             ["jsonwebtoken", "npm:9.0.0"],\
             ["uuid", "npm:8.3.2"]\
           ],\
