@@ -22,7 +22,7 @@ const initStep = (filePath, language) => {
 
     try {
         schema = require(schemaPath);
-    } catch (e) {
+    } catch {
         schema = {};
     }
 

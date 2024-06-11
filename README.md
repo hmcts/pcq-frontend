@@ -65,7 +65,7 @@ Open [https://localhost:4000](https://localhost:4000) in a browser
 
 `eslint` is a pre-commit requirement which is automatically run. This can be run manually using with `$ yarn lint`.
 
-We have a number of rules relating to code style that can be found in [.eslintrc.js](.eslintrc.js).
+We have a number of rules relating to code style that can be found in [eslint.config.mjs](eslint.config.mjs).
 
 ### Config
 

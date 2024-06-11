@@ -1,6 +1,5 @@
 const supportedBrowsers = require('../crossbrowser/supportedBrowsers.js');
 
-// eslint-disable-next-line no-unused-vars
 const browser = process.env.SAUCELABS_BROWSER;
 const tunnelName = process.env.TUNNEL_IDENTIFIER || 'reformtunnel';
 const getBrowserConfig = (browserGroup) => {

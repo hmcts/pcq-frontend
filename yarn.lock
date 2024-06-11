@@ -1376,7 +1376,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.4.0":
+"@eslint/js@npm:9.4.0, @eslint/js@npm:^9.4.0":
   version: 9.4.0
   resolution: "@eslint/js@npm:9.4.0"
   checksum: 6df52c9d743cb20382ac7794cc96c52179d6eacaa15d1b36c15a325edab87982a1066f48cabb6d6468e70615add8bc0a781e1139875e81a80917614dd3c17b32
@@ -6043,7 +6043,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^9.0.0":
+"eslint@npm:^9.4.0":
   version: 9.4.0
   resolution: "eslint@npm:9.4.0"
   dependencies:
@@ -7267,6 +7267,13 @@ __metadata:
   version: 14.0.0
   resolution: "globals@npm:14.0.0"
   checksum: 534b8216736a5425737f59f6e6a5c7f386254560c9f41d24a9227d60ee3ad4a9e82c5b85def0e212e9d92162f83a92544be4c7fd4c902cb913736c10e08237ac
+  languageName: node
+  linkType: hard
+
+"globals@npm:^15.4.0":
+  version: 15.4.0
+  resolution: "globals@npm:15.4.0"
+  checksum: 9f9b229613df6a3e78fd75527b3a5dc069c891edf68b4e38f063abcb70c4c5bc27c991d7dd0f302a084cb831d293b0e0b05dc97899676f7598d8581fe8763a21
   languageName: node
   linkType: hard
 
@@ -11303,6 +11310,7 @@ __metadata:
   dependencies:
     "@babel/traverse": ^7.22.5
     "@babel/types": ^7.22.4
+    "@eslint/js": ^9.4.0
     "@hmcts/cookie-manager": ^1.0.0
     "@hmcts/nodejs-healthcheck": ^1.7.3
     "@hmcts/nodejs-logging": ^4.0.4
@@ -11324,13 +11332,14 @@ __metadata:
     cookie-parser: ^1.4.4
     csurf: ^1.10.0
     debug: ^4.3.4
-    eslint: ^9.0.0
+    eslint: ^9.4.0
     esmify: ^2.1.1
     express: ^4.19.2
     express-session: ^1.16.2
     express-urlrewrite: ^2.0.1
     fs-extra: ^11.1.0
     git-rev-sync: ^3.0.2
+    globals: ^15.4.0
     govuk-frontend: ^4.7.0
     helmet: ^3.23.3
     https-proxy-agent: ^5.0.1

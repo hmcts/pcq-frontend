@@ -18,7 +18,6 @@ module.exports = function(pcqId, lang) {
     };
     params.token = generateToken(params).token;
 
-    // eslint-disable-next-line no-unused-vars
     I.amOnPage(serviceEndpointUrl(params));
 
     if (lang === 'cy') {

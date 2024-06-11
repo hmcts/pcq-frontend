@@ -10,7 +10,6 @@ describe('LaunchDarkly', () => {
     it('should create a new launchdarkly instance', (done) => {
         const ld = new LaunchDarkly({offline: true}, true).getInstance();
 
-        // eslint-disable-next-line no-unused-expressions
         expect(ld.client).to.not.be.undefined;
         done();
     });
@@ -19,7 +18,6 @@ describe('LaunchDarkly', () => {
         const ld = new LaunchDarkly({offline: true});
         let instance = ld.getInstance();
 
-        // eslint-disable-next-line no-unused-expressions
         expect(instance).to.not.be.undefined;
 
         ld.close();
