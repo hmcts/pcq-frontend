@@ -68,7 +68,7 @@ describe('ShutterPage', () => {
                     'online_plea': 'https://onlineplea.cjscp.org.uk/onlineplea/check-your-answers.xhtml',
                     'specialtribunals_cic': 'https://www.special-tribunals.service.gov.uk/check-your-answers',
                     'jurordigital_citizen': 'https://reply-jury-summons.service.gov.uk/steps/confirm-information',
-                    'prl_ca': 'https://reply-jury-summons.service.gov.uk/steps/confirm-information'
+                    'prl_ca': 'https://www.apply-to-court-about-child-arrangements-c100.service.gov.uk'
                 }
             );
             done();
