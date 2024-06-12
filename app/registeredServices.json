@@ -120,15 +120,6 @@
     }
   },
   {
-    "serviceId": "prl_da",
-    "actors": [
-      "APPLICANT",
-      "RESPONDENT"
-    ],
-    "redirectLinks": {
-    }
-  },
-  {
     "serviceId": "civil-citizen-ui",
     "actors": [
       "RESPONDENT",

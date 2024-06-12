@@ -123,10 +123,6 @@ describe('Invoker', () => {
                         text: 'prl_ca'
                     },
                     {
-                        value: 'prl_da',
-                        text: 'prl_da'
-                    },
-                    {
                         value: 'civil-citizen-ui',
                         text: 'civil-citizen-ui'
                     }
@@ -173,10 +169,6 @@ describe('Invoker', () => {
                         'CITIZEN'
                     ],
                     'prl_ca': [
-                        'APPLICANT',
-                        'RESPONDENT'
-                    ],
-                    'prl_da': [
                         'APPLICANT',
                         'RESPONDENT'
                     ],
