@@ -20,7 +20,7 @@ describe('api-utils', () => {
             utils.forceHttps(req, res, next);
 
             expect(res.redirect.calledOnce).to.equal(true);
-            expect(res.redirect.args[0][1]).to.equal('https://localhost/test');
+            expect(res.redirect.args[0][1].href).to.equal('https://localhost/test');
             expect(next.notCalled).to.equal(true);
         });
 
@@ -37,6 +37,22 @@ describe('api-utils', () => {
 
             expect(next.calledOnce).to.equal(true);
             expect(res.redirect.notCalled).to.equal(true);
+        });
+
+        it('redirects to offline if url not valid', () => {
+            const req = {
+                headers: {'x-forwarded-proto': 'http'},
+                url: '[/]test',
+                get: () => 'localhost'
+            };
+            const res = {redirect: sinon.spy()};
+            const next = sinon.spy();
+
+            utils.forceHttps(req, res, next);
+
+            expect(res.redirect.calledOnce).to.equal(true);
+            expect(res.redirect.args[0][1].href).to.equal('https://localhost/offline');
+            expect(next.notCalled).to.equal(true);
         });
     });
 
