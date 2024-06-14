@@ -34,7 +34,7 @@ describe('optOut', () => {
             res = {redirect: sinon.spy()};
         });
 
-        it('should redirect to the given return URL', (done) => {
+        it('should redirect to the given return URL', () => {
             nock('http://localhost:4550')
                 .post('/pcq/backend/submitAnswers')
                 .reply(
@@ -46,13 +46,29 @@ describe('optOut', () => {
 
             optOut(req, res).then(() => {
                 expect(res.redirect.calledOnce).to.equal(true);
-                expect(res.redirect.args[0][0]).to.equal('http://test.com');
+                expect(res.redirect.args[0][0].href).to.equal('http://test.com');
                 nock.cleanAll();
-                done();
             });
         });
 
-        it('should redirect to the given return URL when backend is down', (done) => {
+        it('should redirect to offline if URL not valid', () => {
+            nock('http://localhost:4550')
+                .post('/pcq/backend/submitAnswers')
+                .reply(
+                    200,
+                    {status: ':thumbs_up:'}
+                );
+
+            req.session.returnUrl = 'http:/[/]test.com';
+
+            optOut(req, res).then(() => {
+                expect(res.redirect.calledOnce).to.equal(true);
+                expect(res.redirect.args[0][0].href).to.equal('/offline');
+                nock.cleanAll();
+            });
+        });
+
+        it('should redirect to the given return URL when backend is down', () => {
             nock('http://localhost:4550')
                 .post('/pcq/backend/submitAnswers')
                 .reply(
@@ -63,13 +79,12 @@ describe('optOut', () => {
 
             optOut(req, res).then(() => {
                 expect(res.redirect.calledOnce).to.equal(true);
-                expect(res.redirect.args[0][0]).to.equal('http://test.com');
+                expect(res.redirect.args[0][0].href).to.equal('http://test.com');
                 nock.cleanAll();
-                done();
             });
         });
 
-        it('should set the optOut flag and retain the session', (done) => {
+        it('should set the optOut flag and retain the session', () => {
             const pcqAnswers = JSON.parse(JSON.stringify(req.session.form.pcqAnswers));
             const ctx = JSON.parse(JSON.stringify(req.session.ctx));
 
@@ -87,7 +102,6 @@ describe('optOut', () => {
                 expect(req.session.form).to.have.property('optOut');
                 expect(req.session.form.pcqAnswers).to.deep.equal(pcqAnswers);
                 expect(req.session.ctx).to.deep.equal(ctx);
-                done();
             });
         });
     });
@@ -111,7 +125,7 @@ describe('optOut', () => {
             res = {redirect: sinon.spy()};
         });
 
-        it('should set the optOut flag in database and create record', (done) => {
+        it('should set the optOut flag in database and create record', () => {
             const ctx = JSON.parse(JSON.stringify(req.session.ctx));
 
             nock('http://localhost:4550')
@@ -126,7 +140,6 @@ describe('optOut', () => {
                 expect(req.session.form.pcqAnswers).to.deep.equal({});
                 expect(req.session.ctx).to.deep.equal(ctx);
                 nock.cleanAll();
-                done();
             });
 
         });
