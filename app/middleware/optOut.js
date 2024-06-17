@@ -21,13 +21,12 @@ const setOptOut = (req, res) => {
     //set pcqAnswers to empty to call backend in anycase continue or optout
     form.pcqAnswers = form.pcqAnswers || {};
 
-    const redirect = req.session.returnUrl || '/offline';
     return formData.post(token, correlationId, form)
         .catch(err => {
             req.log.error(err);
         })
         .finally(() => {
-            res.redirect(redirect);
+            res.redirect(validUrl(req))
         });
 };
 
@@ -37,8 +36,20 @@ const optOut = (req, res) => {
     if (!('optOut' in form)) {
         return setOptOut(req, res);
     }
+    res.redirect(validUrl(req));
+    
+};
 
-    res.redirect(req.session.returnUrl || '/offline');
+const validUrl = (req) => {
+    const redirect = req.session.returnUrl || '/offline';
+    let givenUrl ;
+    try {
+        givenUrl = new URL (redirect);
+    } catch (error) {
+        req.log.error(error);
+        givenUrl = '/offline';
+    }
+    return givenUrl;
 };
 
 module.exports = optOut;
