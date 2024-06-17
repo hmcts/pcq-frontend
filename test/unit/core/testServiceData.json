@@ -565,53 +565,6 @@
                 }
 
             },
-            "prl_da" :
-            {
-                "nextStep":
-                {
-                    "ApplicantLanguage": {
-                        "name": "ApplicantLanguage"
-                    }
-                },
-                "nextStepName" :
-                {
-                    "name": "ApplicantLanguage"
-                },
-                "currentStep" : "StartPage",
-                "skipStepName" :{"name": "ApplicantDateOfBirth"},
-                "datas" :
-                {
-                    "applicant":
-                    {
-                        "formData" :
-                        {
-                            "serviceId": "prl_da",
-                            "actor" : "applicant"
-                        },
-                        "startPageTextEn" : "Your answers won't affect your application.<br/><br/>They won't be shared with anyone involved in your case.",
-                        "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich cais.<br/><br/>Ni fyddant yn cael eu rhannu ag unrhyw un sy’n ymwneud â’ch achos.",
-                        "endPageTextEn" : "The next steps are to check your application details.",
-                        "endPageTextCy" : "Y cam nesaf yw gwirio manylion eich cais.",
-                        "shutterPageTextEn" : "We have saved your answers and will direct you back to your application now.",
-                        "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl at eich cais yn awr."
-                    },
-                    "respondent":
-                    {
-                        "formData" :
-                        {
-                            "serviceId": "prl_da",
-                            "actor" : "respondent"
-                        },
-                        "startPageTextEn" : "Your answers won't affect your response.<br/><br/>They won't be shared with anyone involved in your case.",
-                        "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich ymateb.<br/><br/>Ni fyddant yn cael eu rhannu ag unrhyw un sy’n ymwneud â’ch achos.",
-                        "endPageTextEn" : "The next steps are to check your response details.",
-                        "endPageTextCy" : "Y cam nesaf yw gwirio manylion eich ymateb.",
-                        "shutterPageTextEn" : "We have saved your answers and will direct you back to your response now.",
-                        "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio'n ôl at eich ymateb yn awr."
-                    }
-                }
-
-            },
             "civil-citizen-ui" :
             {
             "nextStep":
