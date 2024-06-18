@@ -1,5 +1,8 @@
-<script src="{{ globals.basePath }}/public/javascripts/govuk-frontend/govuk/all.js"></script>
-<script nonce="{{ globals.nonce }}">window.GOVUKFrontend.initAll()</script>
+<script type="module" src="{{ globals.basePath }}/public/govuk/govuk-frontend.min.js"></script>
+<script nonce="{{ globals.nonce }}" type="module">
+    import { initAll } from '{{ globals.basePath }}/public/govuk/govuk-frontend.min.js'
+    initAll()
+</script>
 {% if ((settings.env != 'prod') and (settings.env != 'production')) %}
     <script src="https://js-cdn.dynatrace.com/jstag/17177a07246/bf24054dsx/c498e800b72e8c9d_complete.js"></script>
 {% else %}
