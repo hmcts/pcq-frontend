@@ -8497,10 +8497,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:15.5.0", {\
-          "packageLocation": "./.yarn/cache/globals-npm-15.5.0-a6163b3978-a4cf8401ec.zip/node_modules/globals/",\
+        ["npm:15.6.0", {\
+          "packageLocation": "./.yarn/cache/globals-npm-15.6.0-a30a5795de-5e69c1f767.zip/node_modules/globals/",\
           "packageDependencies": [\
-            ["globals", "npm:15.5.0"]\
+            ["globals", "npm:15.6.0"]\
           ],\
           "linkType": "HARD"\
         }],\
