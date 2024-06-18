@@ -59,7 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["express-urlrewrite", "npm:2.0.2"],\
             ["fs-extra", "npm:11.2.0"],\
             ["git-rev-sync", "npm:3.0.2"],\
-            ["globals", "npm:15.5.0"],\
+            ["globals", "npm:15.6.0"],\
             ["govuk-frontend", "npm:4.8.0"],\
             ["helmet", "npm:3.23.3"],\
             ["https-proxy-agent", "npm:5.0.1"],\
@@ -12975,7 +12975,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["express-urlrewrite", "npm:2.0.2"],\
             ["fs-extra", "npm:11.2.0"],\
             ["git-rev-sync", "npm:3.0.2"],\
-            ["globals", "npm:15.5.0"],\
+            ["globals", "npm:15.6.0"],\
             ["govuk-frontend", "npm:4.8.0"],\
             ["helmet", "npm:3.23.3"],\
             ["https-proxy-agent", "npm:5.0.1"],\
