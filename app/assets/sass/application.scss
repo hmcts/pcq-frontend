@@ -1,7 +1,7 @@
 $path: "/public/images/";
 
 // Import GOV.UK Frontend
-@import "public/govuk/all";
+@import "public/govuk/govuk-frontend.min";
 @import "public/govuk/settings/all";
 @import "public/govuk/core/all";
 @import "public/govuk/objects/all";
