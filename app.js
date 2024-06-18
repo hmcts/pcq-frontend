@@ -33,7 +33,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     const port = config.app.port;
     const releaseVersion = packageJson.version;
     const useHttps = config.app.useHttps.toLowerCase();
-    const govUkFrontendPath = path.resolve(require.resolve('govuk-frontend/dist'), '../../');
+    const govUkFrontendPath = path.resolve(require.resolve('govuk-frontend'), '../../');
 
     // Initialise Azure Application Insights
     appInsights();
