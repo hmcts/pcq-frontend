@@ -1,8 +1,12 @@
-<script type="module" src="{{ globals.basePath }}/public/javascripts/govuk-frontend/govuk/govuk-frontend.min.js"></script>
-<script nonce="{{ globals.nonce }}" type="module">
-    import { initAll } from '{{ globals.basePath }}/public/javascripts/govuk-frontend/govuk/govuk-frontend.min.js'
-    initAll()
-</script>
+
+<body class="govuk-template__body">
+    <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
+    <script type="module" src="{{ globals.basePath }}/public/javascripts/govuk-frontend/govuk/govuk-frontend.min.js"></script>
+    <script nonce="{{ globals.nonce }}" type="module">
+        import { initAll } from '{{ globals.basePath }}/public/javascripts/govuk-frontend/govuk/govuk-frontend.min.js'
+        initAll()
+    </script>
+</body>
 {% if ((settings.env != 'prod') and (settings.env != 'production')) %}
     <script src="https://js-cdn.dynatrace.com/jstag/17177a07246/bf24054dsx/c498e800b72e8c9d_complete.js"></script>
 {% else %}
