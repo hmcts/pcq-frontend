@@ -1,11 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-<<<<<<< HEAD
   "version": "1.2.171",
-=======
-  "version": "1.2.170",
->>>>>>> 85a8983d800c3b27b997f413d30df51ea19b3fe9
   "license": "MIT",
   "engines": {
     "node": ">=14.18.1"
