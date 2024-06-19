@@ -78,7 +78,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
             fontSrc: ['\'self\' data:', 'fonts.gstatic.com'],
             scriptSrc: [
                 '\'self\'',
-                '\'sha256-+6WnXIl4mbFTCARd8N3COQmT3bJJmo32N8q8ZSQAIcU=\'',
+                '\'sha256-GUQ5ad8JK5KmEWmROf3LZd9ge94daqNvd8xy9YS1iDw=\'',
                 '\'sha256-AaA9Rn5LTFZ5vKyp3xOfFcP4YbyOjvWn2up8IKHVAKk=\'',
                 '\'sha256-G29/qSW/JHHANtFhlrZVDZW1HOkCDRc78ggbqwwIJ2g=\'',
                 'https://www.google-analytics.com',

@@ -1,16 +1,12 @@
-<body class="govuk-template__body">
-    <script nonce="{{ globals.nonce }}">document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
-    <script nonce="{{ globals.nonce }}" type="module" src="{{ globals.basePath }}/public/javascripts/govuk-frontend/govuk/govuk-frontend.min.js"></script>
-    <script nonce="{{ globals.nonce }}" type="module">
-        import { initAll } from '{{ globals.basePath }}/public/javascripts/govuk-frontend/govuk/govuk-frontend.min.js'
-        initAll()
-    </script>
-</body>
+<script nonce="{{ globals.nonce }}">document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
+<script type="module" src="{{ globals.basePath }}/public/javascripts/govuk-frontend/govuk/govuk-frontend.min.js"></script>
+<script nonce="{{ globals.nonce }}" type="module">
+    import { initAll } from '{{ globals.basePath }}/public/javascripts/govuk-frontend/govuk/govuk-frontend.min.js'
+    initAll()
+</script>
+
 {% if ((settings.env != 'prod') and (settings.env != 'production')) %}
-    <script nonce="{{ globals.nonce }}" src="https://js-cdn.dynatrace.com/jstag/17177a07246/bf24054dsx/c498e800b72e8c9d_complete.js"></script>
+    <script src="https://js-cdn.dynatrace.com/jstag/17177a07246/bf24054dsx/c498e800b72e8c9d_complete.js"></script>
 {% else %}
-    <script nonce="{{ globals.nonce }}" type="text/javascript" src="https://js-cdn.dynatrace.com/jstag/17177a07246/bf00910jpo/7c8bb3b7321550af_complete.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://js-cdn.dynatrace.com/jstag/17177a07246/bf00910jpo/7c8bb3b7321550af_complete.js" crossorigin="anonymous"></script>
 {% endif %}
-<!--[if lte IE 9]>
-<script src="{{ globals.basePath }}/public/javascripts/form-polyfill.js"></script>
-<![endif]-->
