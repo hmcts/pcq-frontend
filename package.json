@@ -65,11 +65,7 @@
     "express-session": "^1.16.2",
     "express-urlrewrite": "^2.0.1",
     "git-rev-sync": "^3.0.2",
-<<<<<<< HEAD
     "govuk-frontend": "^5.4.0",
-=======
-    "govuk-frontend": "^5.0.0",
->>>>>>> 85a8983d800c3b27b997f413d30df51ea19b3fe9
     "helmet": "^3.23.3",
     "https-proxy-agent": "^5.0.1",
     "i18next": "^23.5.1",
