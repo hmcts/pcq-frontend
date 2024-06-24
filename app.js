@@ -36,7 +36,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     const govUkFrontendPath = path.resolve(require.resolve('govuk-frontend'), '../../');
 
     // Initialise Azure Application Insights
-    appInsights();
+    appInsights.initAppInsights;
 
     // Application settings
     app.set('view engine', 'html');

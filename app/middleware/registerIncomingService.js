@@ -5,6 +5,8 @@ const auth = require('app/components/auth');
 const stringUtils = require('../components/string-utils');
 const registeredServices = require('app/registeredServices');
 const {verifyToken} = require('app/components/encryption-token');
+const appInsights = require('app/components/app-insights');
+const config = require('config');
 
 // This excludes the token as this is handled separately
 const pcqParameters = [
@@ -67,6 +69,10 @@ const validateParameters = req => {
         logger.error(`Service ${req.query.serviceId} is not registered with PCQ`);
     } else {
         logger.info('Parameters verified successfully.');
+        const instrumentationKey = config.get('appInsights.instrumentationKey');
+        if(instrumentationKey){
+            appInsights.trackTrace({message: 'Entering PCQ Journey', properties: {['ServiceId']:req.query.serviceId}});
+        }
         req.session.validParameters = true;
         // Create the JWT Token after the required parameters have been set.
         auth.createToken(req, req.session.form.partyId);
