@@ -9,10 +9,9 @@ const fs = require('fs');
 const os = require('os');
 
 let client ;
+const instrumentationKey = config.get('appInsights.instrumentationKey');
 
 exports.initAppInsights = function initAppInsights() {
-    const instrumentationKey = config.get('appInsights.instrumentationKey');
-
     if (instrumentationKey) {
         createTempDir();
 
@@ -41,7 +40,7 @@ exports.initAppInsights = function initAppInsights() {
 }
 
 exports.trackTrace = function trackTrace(message,properties){
-    if(client){
+    if(instrumentationKey && client){
         client.trackTrace({message: message,properties: properties});
     }
 }
