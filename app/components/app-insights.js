@@ -25,7 +25,7 @@ exports.initAppInsights = function initAppInsights() {
 
         client = appInsights.defaultClient;
         client.context.tags[appInsights.defaultClient.context.keys.cloudRole] = 'pcq-frontend';
-        client.trackTrace({message: 'App insights activated'});
+        client.trackTrace({message: 'App insights activated on Preview'});
     } else {
         client = null;
     }
