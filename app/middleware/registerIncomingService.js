@@ -6,7 +6,6 @@ const stringUtils = require('../components/string-utils');
 const registeredServices = require('app/registeredServices');
 const {verifyToken} = require('app/components/encryption-token');
 const appInsights = require('app/components/app-insights');
-const config = require('config');
 
 // This excludes the token as this is handled separately
 const pcqParameters = [
