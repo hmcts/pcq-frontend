@@ -3,6 +3,7 @@
 const config = require('config');
 const ServiceMapper = require('app/utils/ServiceMapper');
 const moment = require('moment');
+const appInsights = require('app/components/app-insights');
 
 const setOptOut = (req, res) => {
     const token = req.session.token;
@@ -36,6 +37,7 @@ const optOut = (req, res) => {
     if (!('optOut' in form)) {
         return setOptOut(req, res);
     }
+    appInsights.trackTrace({message: 'Opting out PCQ Journey', properties: {['ServiceId']:req.session.form.serviceId}});
     res.redirect(validUrl(req));
     
 };
