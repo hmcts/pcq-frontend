@@ -1,3 +1,5 @@
+'use strict';
+
 const appInsights = require('applicationinsights');
 const Sender = require('applicationinsights/out/Library/Sender');
 const logger = require('app/components/logger')('Init');
@@ -6,9 +8,10 @@ const path = require('path');
 const fs = require('fs');
 const os = require('os');
 
-function initAppInsights() {
-    const instrumentationKey = config.get('appInsights.instrumentationKey');
+let client ;
+const instrumentationKey = config.get('appInsights.instrumentationKey');
 
+exports.initAppInsights = function initAppInsights() {
     if (instrumentationKey) {
         createTempDir();
 
@@ -19,8 +22,11 @@ function initAppInsights() {
             .setAutoCollectConsole(true, true)
             .start();
 
-        appInsights.defaultClient.context.tags[appInsights.defaultClient.context.keys.cloudRole] = 'pcq-frontend';
-        appInsights.defaultClient.trackTrace({message: 'App insights activated'});
+        client = appInsights.defaultClient;
+        client.context.tags[appInsights.defaultClient.context.keys.cloudRole] = 'pcq-frontend';
+        client.trackTrace({message: 'App insights activated'});
+    } else {
+        client = null;
     }
 
     function createTempDir() {
@@ -33,4 +39,8 @@ function initAppInsights() {
     }
 }
 
-module.exports = initAppInsights;
+exports.trackTrace = function trackTrace(message,properties){
+    if(instrumentationKey && client){
+        client.trackTrace({message: message,properties: properties});
+    }
+}
