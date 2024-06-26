@@ -33,11 +33,11 @@ const setOptOut = (req, res) => {
 
 const optOut = (req, res) => {
     const form = req.session.form;
+    appInsights.trackTrace({message: 'Opting out PCQ Journey', properties: {['ServiceId']:req.session.form.serviceId}});
     // Now in all case we are creating a backend record either user has continued or optout.
     if (!('optOut' in form)) {
         return setOptOut(req, res);
     }
-    appInsights.trackTrace({message: 'Opting out PCQ Journey', properties: {['ServiceId']:req.session.form.serviceId}});
     res.redirect(validUrl(req));
     
 };
