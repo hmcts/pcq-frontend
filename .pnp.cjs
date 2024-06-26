@@ -47,7 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["codeceptjs", "npm:3.5.14"],\
             ["codecov", "npm:4.0.0-0"],\
             ["compression", "npm:1.7.4"],\
-            ["config", "npm:3.3.11"],\
+            ["config", "npm:3.3.12"],\
             ["connect-redis", "npm:5.2.0"],\
             ["cookie-parser", "npm:1.4.6"],\
             ["csurf", "npm:1.11.0"],\
@@ -5653,10 +5653,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["config", [\
-        ["npm:3.3.11", {\
-          "packageLocation": "./.yarn/cache/config-npm-3.3.11-a270a6a709-84d783978c.zip/node_modules/config/",\
+        ["npm:3.3.12", {\
+          "packageLocation": "./.yarn/cache/config-npm-3.3.12-ad44bb207f-db1b7718ff.zip/node_modules/config/",\
           "packageDependencies": [\
-            ["config", "npm:3.3.11"],\
+            ["config", "npm:3.3.12"],\
             ["json5", "npm:2.2.3"]\
           ],\
           "linkType": "HARD"\
@@ -12978,7 +12978,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["codeceptjs", "npm:3.5.14"],\
             ["codecov", "npm:4.0.0-0"],\
             ["compression", "npm:1.7.4"],\
-            ["config", "npm:3.3.11"],\
+            ["config", "npm:3.3.12"],\
             ["connect-redis", "npm:5.2.0"],\
             ["cookie-parser", "npm:1.4.6"],\
             ["csurf", "npm:1.11.0"],\
