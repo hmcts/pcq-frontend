@@ -39,8 +39,8 @@ exports.initAppInsights = function initAppInsights() {
     }
 }
 
-exports.trackTrace = function trackTrace(message,properties){
+exports.trackTrace = function trackTrace(trace){
     if(instrumentationKey && client){
-        client.trackTrace({message: message,properties: properties});
+        client.trackTrace(trace);
     }
 }
