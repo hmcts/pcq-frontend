@@ -69,7 +69,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jsonwebtoken", "npm:9.0.2"],\
             ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
             ["lodash", "npm:4.17.21"],\
-            ["mocha", "npm:10.5.1"],\
+            ["mocha", "npm:10.5.2"],\
             ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
             ["moment", "npm:2.30.1"],\
             ["nock", "npm:13.5.4"],\
@@ -2614,7 +2614,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/mocha", null],\
             ["@types/stryker-mutator__core", null],\
             ["glob", "npm:7.2.3"],\
-            ["mocha", "npm:10.5.1"],\
+            ["mocha", "npm:10.5.2"],\
             ["tslib", "npm:2.3.1"]\
           ],\
           "packagePeers": [\
@@ -11363,10 +11363,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:10.5.1", {\
-          "packageLocation": "./.yarn/cache/mocha-npm-10.5.1-8ada492894-2d1974a236.zip/node_modules/mocha/",\
+        ["npm:10.5.2", {\
+          "packageLocation": "./.yarn/cache/mocha-npm-10.5.2-63497c2187-46925790a9.zip/node_modules/mocha/",\
           "packageDependencies": [\
-            ["mocha", "npm:10.5.1"],\
+            ["mocha", "npm:10.5.2"],\
             ["ansi-colors", "npm:4.1.1"],\
             ["browser-stdout", "npm:1.3.1"],\
             ["chokidar", "npm:3.6.0"],\
@@ -11411,7 +11411,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash.isfunction", "npm:3.0.9"],\
             ["lodash.isobject", "npm:3.0.2"],\
             ["lodash.isstring", "npm:4.0.1"],\
-            ["mocha", "npm:10.5.1"],\
+            ["mocha", "npm:10.5.2"],\
             ["mochawesome-report-generator", "npm:6.2.0"],\
             ["strip-ansi", "npm:6.0.1"],\
             ["uuid", "npm:8.3.2"]\
@@ -13000,7 +13000,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jsonwebtoken", "npm:9.0.2"],\
             ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
             ["lodash", "npm:4.17.21"],\
-            ["mocha", "npm:10.5.1"],\
+            ["mocha", "npm:10.5.2"],\
             ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
             ["moment", "npm:2.30.1"],\
             ["nock", "npm:13.5.4"],\
