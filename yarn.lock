@@ -9903,11 +9903,7 @@ __metadata:
   bin:
     _mocha: bin/_mocha
     mocha: bin/mocha.js
-<<<<<<< HEAD
-  checksum: 46925790a9d2a4049b974ac9be3af5a7004473d4e8edbb1fd119c87a2e6ff8b4f764f46dcdbfb5d03b9bd4b6f641d9277c5cfdbed7b9a2867eca72c99f41dd02
-=======
   checksum: 090771d6d42a65a934c7ed448d524bcc663836351af9f0678578caa69943b01a9535a73192d24fd625b3fdb5979cce5834dfe65e3e1ee982444d65e19975b81c
->>>>>>> parent of 93a4fe6 (Update dependency mocha to v10.5.1)
   languageName: node
   linkType: hard
 
