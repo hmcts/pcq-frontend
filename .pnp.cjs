@@ -69,7 +69,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jsonwebtoken", "npm:9.0.2"],\
             ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
             ["lodash", "npm:4.17.21"],\
-            ["mocha", "npm:10.5.2"],\
+            ["mocha", "npm:10.4.0"],\
             ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
             ["moment", "npm:2.30.1"],\
             ["nock", "npm:13.5.4"],\
@@ -2614,7 +2614,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/mocha", null],\
             ["@types/stryker-mutator__core", null],\
             ["glob", "npm:7.2.3"],\
-            ["mocha", "npm:10.5.2"],\
+            ["mocha", "npm:10.4.0"],\
             ["tslib", "npm:2.3.1"]\
           ],\
           "packagePeers": [\
@@ -5060,21 +5060,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/chokidar-npm-3.5.3-c5f9b0a56a-b49fcde401.zip/node_modules/chokidar/",\
           "packageDependencies": [\
             ["chokidar", "npm:3.5.3"],\
-            ["anymatch", "npm:3.1.2"],\
-            ["braces", "npm:3.0.3"],\
-            ["fsevents", "patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"],\
-            ["glob-parent", "npm:5.1.2"],\
-            ["is-binary-path", "npm:2.1.0"],\
-            ["is-glob", "npm:4.0.3"],\
-            ["normalize-path", "npm:3.0.0"],\
-            ["readdirp", "npm:3.6.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:3.6.0", {\
-          "packageLocation": "./.yarn/cache/chokidar-npm-3.6.0-3c413a828f-d2f29f4997.zip/node_modules/chokidar/",\
-          "packageDependencies": [\
-            ["chokidar", "npm:3.6.0"],\
             ["anymatch", "npm:3.1.2"],\
             ["braces", "npm:3.0.3"],\
             ["fsevents", "patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"],\
@@ -11363,13 +11348,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:10.5.2", {\
-          "packageLocation": "./.yarn/cache/mocha-npm-10.5.2-63497c2187-46925790a9.zip/node_modules/mocha/",\
+        ["npm:10.4.0", {\
+          "packageLocation": "./.yarn/cache/mocha-npm-10.4.0-9c45b5940e-090771d6d4.zip/node_modules/mocha/",\
           "packageDependencies": [\
-            ["mocha", "npm:10.5.2"],\
+            ["mocha", "npm:10.4.0"],\
             ["ansi-colors", "npm:4.1.1"],\
             ["browser-stdout", "npm:1.3.1"],\
-            ["chokidar", "npm:3.6.0"],\
+            ["chokidar", "npm:3.5.3"],\
             ["debug", "virtual:87db25c7c5e6b25bbc12571091cdabc648b79d427ab445d1714ccfdcdfb3265c9de6561ca760cc3de470037cbedf3af4be56ba3b684b3a1c01d4c9c2fd55a741#npm:4.3.4"],\
             ["diff", "npm:5.0.0"],\
             ["escape-string-regexp", "npm:4.0.0"],\
@@ -11411,7 +11396,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash.isfunction", "npm:3.0.9"],\
             ["lodash.isobject", "npm:3.0.2"],\
             ["lodash.isstring", "npm:4.0.1"],\
-            ["mocha", "npm:10.5.2"],\
+            ["mocha", "npm:10.4.0"],\
             ["mochawesome-report-generator", "npm:6.2.0"],\
             ["strip-ansi", "npm:6.0.1"],\
             ["uuid", "npm:8.3.2"]\
@@ -13000,7 +12985,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jsonwebtoken", "npm:9.0.2"],\
             ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
             ["lodash", "npm:4.17.21"],\
-            ["mocha", "npm:10.5.2"],\
+            ["mocha", "npm:10.4.0"],\
             ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
             ["moment", "npm:2.30.1"],\
             ["nock", "npm:13.5.4"],\
