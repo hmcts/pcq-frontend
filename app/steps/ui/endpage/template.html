@@ -22,7 +22,7 @@
         {% if fields.returnUrl.value %}
             {{ govukButton({
                 text: common.continueToNextSteps | safe,
-                href: fields.returnUrl.value
+                href: "/return-to-service"
             }) }}
         {% endif %}
     </div>
