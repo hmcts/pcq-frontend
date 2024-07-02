@@ -4,6 +4,7 @@ const config = require('config');
 const ServiceMapper = require('app/utils/ServiceMapper');
 const moment = require('moment');
 const appInsights = require('app/components/app-insights');
+const validateUrl = require('app/middleware/validateUrl');
 
 const setOptOut = (req, res) => {
     const token = req.session.token;
@@ -27,7 +28,7 @@ const setOptOut = (req, res) => {
             req.log.error(err);
         })
         .finally(() => {
-            res.redirect(validUrl(req))
+            res.redirect(validateUrl(req));
         });
 };
 
@@ -38,20 +39,8 @@ const optOut = (req, res) => {
     if (!('optOut' in form)) {
         return setOptOut(req, res);
     }
-    res.redirect(validUrl(req));
+    res.redirect(validateUrl(req));
     
-};
-
-const validUrl = (req) => {
-    const redirect = req.session.returnUrl || '/offline';
-    let givenUrl ;
-    try {
-        givenUrl = new URL (redirect);
-    } catch (error) {
-        req.log.error(error);
-        givenUrl = '/offline';
-    }
-    return givenUrl;
 };
 
 module.exports = optOut;

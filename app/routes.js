@@ -9,6 +9,7 @@ const initSession = require('app/middleware/initSession');
 const registerIncomingService = require('app/registerIncomingService');
 const validateParams = require('app/middleware/validateParams');
 const optOut = require('app/middleware/optOut');
+const returnToService = require('app/middleware/returnToService');
 const featureToggle = new (require('app/utils/FeatureToggle'))();
 
 router.use(initSession);
@@ -29,6 +30,8 @@ router.get('/', (req, res) => {
 });
 
 router.post('/opt-out', optOut);
+
+router.get('/return-to-service', returnToService);
 
 const allSteps = {
     'en': initSteps([`${__dirname}/steps/ui`], 'en'),

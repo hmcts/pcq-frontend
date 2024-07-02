@@ -37,10 +37,10 @@ exports.initAppInsights = function initAppInsights() {
             fs.mkdirSync(tempDir);
         }
     }
-}
+};
 
 exports.trackTrace = function trackTrace(trace){
     if(instrumentationKey && client){
         client.trackTrace(trace);
     }
-}
+};
