@@ -2,7 +2,7 @@
 
 const validateUrl = (req) => {
     const redirect = req.session.returnUrl || '/offline';
-    let givenUrl ;
+    let givenUrl;
     try {
         givenUrl = new URL (redirect);
     } catch (error) {
