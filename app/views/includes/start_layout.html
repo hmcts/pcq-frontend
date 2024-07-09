@@ -1,0 +1,77 @@
+{% extends "govuk/template.njk" %}
+
+{% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
+{% from "govuk/components/header/macro.njk" import govukHeader %}
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+{% from "govuk/components/footer/macro.njk" import govukFooter %}
+
+{% set htmlLang = fields.language.value %}
+
+{% block pageTitle %}
+    {% if title == undefined %}
+        {% if content.question == undefined %}
+            {% set title = content.title %}
+        {% else %}
+            {% set title = content.question %}
+        {% endif %}
+    {% endif %}
+
+    {% if errors %}{{ common.error }}: {% endif %}{{ title | safe }}{% if title and serviceName %} - {% endif %}{% if serviceName %}{{ serviceName }}{% endif %}{% if govuk %} - {{ govuk }}{% endif %}
+{% endblock %}
+
+{% block head %}
+    {% include "includes/tag_manager.html" %}
+    {% include "includes/head.html" %}
+{% endblock %}
+
+{% block bodyStart %}
+    {% include "includes/tag_manager_nojs.html" %}
+{% endblock %}
+
+{% block header %}
+    {% block cookiebanner %}
+        {% include "includes/cookie-banner.html" %}
+    {% endblock %}
+
+    {{ govukHeader({
+        homepageUrl: "#",
+        containerClasses: "govuk-width-container",
+        serviceName: serviceName | safe,
+        serviceUrl: (globals.basePath if globals.basePath) + "/"
+    }) }}
+{% endblock %}
+
+{% block beforeContent %}
+    {{ govukPhaseBanner({
+        tag: {
+            text: common.phase | safe
+        },
+        html: (common.feedback + common.languageToggle) | replace("{smartSurveyFeedbackUrl}", globals.links.survey) | replace("{currentPageUrl}", pageUrl) | safe
+    }) }}
+
+    {{ govukBackLink({
+        text: common.back | safe,
+        href: "/start-page-back-service",
+        attributes: {
+            "id": "back-button"
+        }
+    }) }}
+
+    <script src="{{ globals.basePath }}/public/javascripts/back-button.js"></script>
+{% endblock %}
+
+{% block footer %}
+    {% include "includes/footer_links.html" %}
+
+    <!-- dtrum session properties -->
+    {% if app.version %}
+        <div id="app_version" style="display: none">{{ app.version }}</div>
+    {% endif %}
+    {% if app.serviceId %}
+        <div id="service_id" style="display: none">{{ app.serviceId }}</div>
+    {% endif %}
+{% endblock %}
+
+{% block bodyEnd %}
+    {% include "includes/scripts.html" %}
+{% endblock %}
