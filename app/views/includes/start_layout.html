@@ -51,13 +51,13 @@
 
     {{ govukBackLink({
         text: common.back | safe,
-        href: "/start-page-back-service",
+        href: "#",
         attributes: {
-            "id": "back-button"
+            "id": "start-back-button"
         }
     }) }}
 
-    <script src="{{ globals.basePath }}/public/javascripts/back-button.js"></script>
+    <script src="{{ globals.basePath }}/public/javascripts/start-back-button.js"></script>
 {% endblock %}
 
 {% block footer %}
