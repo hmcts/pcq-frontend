@@ -10,6 +10,7 @@ const registerIncomingService = require('app/registerIncomingService');
 const validateParams = require('app/middleware/validateParams');
 const optOut = require('app/middleware/optOut');
 const returnToService = require('app/middleware/returnToService');
+const startPageBackService = require('app/middleware/startPageBackService');
 const featureToggle = new (require('app/utils/FeatureToggle'))();
 
 router.use(initSession);
@@ -32,6 +33,8 @@ router.get('/', (req, res) => {
 router.post('/opt-out', optOut);
 
 router.get('/return-to-service', returnToService);
+
+router.get('/start-page-back-service', startPageBackService);
 
 const allSteps = {
     'en': initSteps([`${__dirname}/steps/ui`], 'en'),
