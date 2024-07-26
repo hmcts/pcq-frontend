@@ -34,7 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@hmcts/cookie-manager", "npm:1.0.0"],\
             ["@hmcts/nodejs-healthcheck", "npm:1.8.5"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
-            ["@hmcts/properties-volume", "npm:1.1.0"],\
+            ["@hmcts/properties-volume", "npm:1.2.0"],\
             ["@stryker-mutator/api", "npm:7.3.0"],\
             ["@stryker-mutator/core", "npm:5.6.1"],\
             ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.6.1"],\
@@ -150,6 +150,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tslib", "npm:2.6.3"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.1.2", {\
+          "packageLocation": "./.yarn/cache/@azure-abort-controller-npm-2.1.2-a36d73ebb9-22176c04ea.zip/node_modules/@azure/abort-controller/",\
+          "packageDependencies": [\
+            ["@azure/abort-controller", "npm:2.1.2"],\
+            ["tslib", "npm:2.6.3"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@azure/core-auth", [\
@@ -183,6 +191,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@azure/core-rest-pipeline", "npm:1.11.0"],\
             ["@azure/core-tracing", "npm:1.0.1"],\
             ["@azure/core-util", "npm:1.2.0"],\
+            ["@azure/logger", "npm:1.0.3"],\
+            ["tslib", "npm:2.6.3"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:1.9.2", {\
+          "packageLocation": "./.yarn/cache/@azure-core-client-npm-1.9.2-1ef0857920-961b829dfd.zip/node_modules/@azure/core-client/",\
+          "packageDependencies": [\
+            ["@azure/core-client", "npm:1.9.2"],\
+            ["@azure/abort-controller", "npm:2.1.2"],\
+            ["@azure/core-auth", "npm:1.4.0"],\
+            ["@azure/core-rest-pipeline", "npm:1.11.0"],\
+            ["@azure/core-tracing", "npm:1.0.1"],\
+            ["@azure/core-util", "npm:1.9.1"],\
             ["@azure/logger", "npm:1.0.3"],\
             ["tslib", "npm:2.6.3"]\
           ],\
@@ -296,22 +318,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tslib", "npm:2.6.3"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:1.9.1", {\
+          "packageLocation": "./.yarn/cache/@azure-core-util-npm-1.9.1-2bcbbcecde-6b6a11c717.zip/node_modules/@azure/core-util/",\
+          "packageDependencies": [\
+            ["@azure/core-util", "npm:1.9.1"],\
+            ["@azure/abort-controller", "npm:2.1.2"],\
+            ["tslib", "npm:2.6.3"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@azure/identity", [\
-        ["npm:4.0.0-beta.1", {\
-          "packageLocation": "./.yarn/cache/@azure-identity-npm-4.0.0-beta.1-69c0de418f-6fbdbbe43a.zip/node_modules/@azure/identity/",\
+        ["npm:4.4.0", {\
+          "packageLocation": "./.yarn/cache/@azure-identity-npm-4.4.0-80dd1242a4-d3aecb92e4.zip/node_modules/@azure/identity/",\
           "packageDependencies": [\
-            ["@azure/identity", "npm:4.0.0-beta.1"],\
+            ["@azure/identity", "npm:4.4.0"],\
             ["@azure/abort-controller", "npm:1.1.0"],\
             ["@azure/core-auth", "npm:1.5.0"],\
-            ["@azure/core-client", "npm:1.7.3"],\
+            ["@azure/core-client", "npm:1.9.2"],\
             ["@azure/core-rest-pipeline", "npm:1.11.0"],\
             ["@azure/core-tracing", "npm:1.0.1"],\
-            ["@azure/core-util", "npm:1.2.0"],\
+            ["@azure/core-util", "npm:1.3.2"],\
             ["@azure/logger", "npm:1.0.3"],\
-            ["@azure/msal-browser", "npm:3.4.0"],\
-            ["@azure/msal-node", "npm:2.9.2"],\
+            ["@azure/msal-browser", "npm:3.20.0"],\
+            ["@azure/msal-node", "npm:2.12.0"],\
             ["events", "npm:3.3.0"],\
             ["jws", "npm:4.0.0"],\
             ["open", "npm:8.4.2"],\
@@ -352,37 +383,30 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@azure/msal-browser", [\
-        ["npm:3.4.0", {\
-          "packageLocation": "./.yarn/cache/@azure-msal-browser-npm-3.4.0-96e9030053-c1a4727660.zip/node_modules/@azure/msal-browser/",\
+        ["npm:3.20.0", {\
+          "packageLocation": "./.yarn/cache/@azure-msal-browser-npm-3.20.0-b06c83e8d6-237a041bbe.zip/node_modules/@azure/msal-browser/",\
           "packageDependencies": [\
-            ["@azure/msal-browser", "npm:3.4.0"],\
-            ["@azure/msal-common", "npm:14.3.0"]\
+            ["@azure/msal-browser", "npm:3.20.0"],\
+            ["@azure/msal-common", "npm:14.14.0"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["@azure/msal-common", [\
-        ["npm:14.12.0", {\
-          "packageLocation": "./.yarn/cache/@azure-msal-common-npm-14.12.0-b3576c04b2-9a987b7b9b.zip/node_modules/@azure/msal-common/",\
+        ["npm:14.14.0", {\
+          "packageLocation": "./.yarn/cache/@azure-msal-common-npm-14.14.0-e59c10cc3d-c77f51bddd.zip/node_modules/@azure/msal-common/",\
           "packageDependencies": [\
-            ["@azure/msal-common", "npm:14.12.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:14.3.0", {\
-          "packageLocation": "./.yarn/cache/@azure-msal-common-npm-14.3.0-8f9c112b6f-6cc03cfb58.zip/node_modules/@azure/msal-common/",\
-          "packageDependencies": [\
-            ["@azure/msal-common", "npm:14.3.0"]\
+            ["@azure/msal-common", "npm:14.14.0"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["@azure/msal-node", [\
-        ["npm:2.9.2", {\
-          "packageLocation": "./.yarn/cache/@azure-msal-node-npm-2.9.2-ad4f2bdff1-a2b51d4085.zip/node_modules/@azure/msal-node/",\
+        ["npm:2.12.0", {\
+          "packageLocation": "./.yarn/cache/@azure-msal-node-npm-2.12.0-7ffe6b920c-ad02d84ff0.zip/node_modules/@azure/msal-node/",\
           "packageDependencies": [\
-            ["@azure/msal-node", "npm:2.9.2"],\
-            ["@azure/msal-common", "npm:14.12.0"],\
+            ["@azure/msal-node", "npm:2.12.0"],\
+            ["@azure/msal-common", "npm:14.14.0"],\
             ["jsonwebtoken", "npm:9.0.0"],\
             ["uuid", "npm:8.3.2"]\
           ],\
@@ -1859,11 +1883,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@hmcts/properties-volume", [\
-        ["npm:1.1.0", {\
-          "packageLocation": "./.yarn/cache/@hmcts-properties-volume-npm-1.1.0-8ae26f1ed8-7091f3e852.zip/node_modules/@hmcts/properties-volume/",\
+        ["npm:1.2.0", {\
+          "packageLocation": "./.yarn/cache/@hmcts-properties-volume-npm-1.2.0-3245eeab8f-b64cc191d7.zip/node_modules/@hmcts/properties-volume/",\
           "packageDependencies": [\
-            ["@hmcts/properties-volume", "npm:1.1.0"],\
-            ["@azure/identity", "npm:4.0.0-beta.1"],\
+            ["@hmcts/properties-volume", "npm:1.2.0"],\
+            ["@azure/identity", "npm:4.4.0"],\
             ["@azure/keyvault-secrets", "npm:4.7.0"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
             ["js-yaml", "npm:4.1.0"],\
@@ -13006,7 +13030,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@hmcts/cookie-manager", "npm:1.0.0"],\
             ["@hmcts/nodejs-healthcheck", "npm:1.8.5"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
-            ["@hmcts/properties-volume", "npm:1.1.0"],\
+            ["@hmcts/properties-volume", "npm:1.2.0"],\
             ["@stryker-mutator/api", "npm:7.3.0"],\
             ["@stryker-mutator/core", "npm:5.6.1"],\
             ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.6.1"],\
