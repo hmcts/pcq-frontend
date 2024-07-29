@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.179",
+  "version": "1.2.180",
   "license": "MIT",
   "engines": {
     "node": ">=14.18.1"
@@ -134,5 +134,5 @@
       "text"
     ]
   },
-  "packageManager": "yarn@3.8.3"
+  "packageManager": "yarn@4.3.1"
 }
