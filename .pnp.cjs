@@ -59,7 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["express-urlrewrite", "npm:2.0.2"],\
             ["fs-extra", "npm:11.2.0"],\
             ["git-rev-sync", "npm:3.0.2"],\
-            ["globals", "npm:15.8.0"],\
+            ["globals", "npm:15.9.0"],\
             ["govuk-frontend", "npm:5.4.1"],\
             ["helmet", "npm:3.23.3"],\
             ["https-proxy-agent", "npm:5.0.1"],\
@@ -8594,10 +8594,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:15.8.0", {\
-          "packageLocation": "./.yarn/cache/globals-npm-15.8.0-170a64f008-92d0522c47.zip/node_modules/globals/",\
+        ["npm:15.9.0", {\
+          "packageLocation": "./.yarn/cache/globals-npm-15.9.0-52af85f5e6-32c4470ffc.zip/node_modules/globals/",\
           "packageDependencies": [\
-            ["globals", "npm:15.8.0"]\
+            ["globals", "npm:15.9.0"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -13072,7 +13072,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["express-urlrewrite", "npm:2.0.2"],\
             ["fs-extra", "npm:11.2.0"],\
             ["git-rev-sync", "npm:3.0.2"],\
-            ["globals", "npm:15.8.0"],\
+            ["globals", "npm:15.9.0"],\
             ["govuk-frontend", "npm:5.4.1"],\
             ["helmet", "npm:3.23.3"],\
             ["https-proxy-agent", "npm:5.0.1"],\
