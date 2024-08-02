@@ -38,6 +38,7 @@ export default [
       '.pnp.cjs',
       '.pnp.loader.mjs',
       '.stryker-tmp',
+      '.yarn/*'
     ],
   },
 ];
