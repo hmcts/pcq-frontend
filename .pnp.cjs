@@ -89,7 +89,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["serve-favicon", "npm:2.5.0"],\
             ["sinon", "npm:18.0.0"],\
             ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-            ["sonarqube-scanner", "npm:4.0.1"],\
+            ["sonarqube-scanner", "npm:4.2.0"],\
             ["supertest", "npm:7.0.0"],\
             ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["traverse", "npm:0.6.9"],\
@@ -13036,6 +13036,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["properties-file", [\
+        ["npm:3.5.4", {\
+          "packageLocation": "./.yarn/cache/properties-file-npm-3.5.4-588e4bb38c-b87485eee2.zip/node_modules/properties-file/",\
+          "packageDependencies": [\
+            ["properties-file", "npm:3.5.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["protected-characteristics-frontend", [\
         ["workspace:.", {\
           "packageLocation": "./",\
@@ -13102,7 +13111,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["serve-favicon", "npm:2.5.0"],\
             ["sinon", "npm:18.0.0"],\
             ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-            ["sonarqube-scanner", "npm:4.0.1"],\
+            ["sonarqube-scanner", "npm:4.2.0"],\
             ["supertest", "npm:7.0.0"],\
             ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
             ["traverse", "npm:0.6.9"],\
@@ -14501,10 +14510,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["sonarqube-scanner", [\
-        ["npm:4.0.1", {\
-          "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-4.0.1-4fe5970a6b-3dfd85f27c.zip/node_modules/sonarqube-scanner/",\
+        ["npm:4.2.0", {\
+          "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-4.2.0-620af8125b-610fa683ae.zip/node_modules/sonarqube-scanner/",\
           "packageDependencies": [\
-            ["sonarqube-scanner", "npm:4.0.1"],\
+            ["sonarqube-scanner", "npm:4.2.0"],\
             ["adm-zip", "npm:0.5.12"],\
             ["axios", "npm:1.6.8"],\
             ["commander", "npm:12.0.0"],\
@@ -14512,6 +14521,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hpagent", "npm:1.2.0"],\
             ["jest-sonar-reporter", "npm:2.0.0"],\
             ["node-forge", "npm:1.3.1"],\
+            ["properties-file", "npm:3.5.4"],\
             ["proxy-from-env", "npm:1.1.0"],\
             ["semver", "npm:7.6.0"],\
             ["slugify", "npm:1.6.6"],\
