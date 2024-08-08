@@ -24,7 +24,7 @@ module.exports = {
         '!config/*',
         '!test/**',
         '*.html',
-        '*,json'
+        '*.json'
     ],
     testRunner: 'mocha',
     mochaOptions: {
