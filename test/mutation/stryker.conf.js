@@ -23,7 +23,8 @@ module.exports = {
         '!app/**',
         '!config/*',
         '!test/**',
-        '*.html'
+        '*.html',
+        '*,json'
     ],
     testRunner: 'mocha',
     mochaOptions: {
