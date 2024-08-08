@@ -2,13 +2,12 @@
     'use strict';
 
     const backButton = document.querySelector('#back-button');
-    const back = function (e) {
+    const back = async function (e) {
         e.preventDefault();
         const form = document.forms[0];
         if(form && form['action'] && form['action'].includes('start-page')){
-            fetch('/start-page-back-service');
+            await fetch('/start-page-back-service');
         }
-        
         window.history.back();
     };
 
