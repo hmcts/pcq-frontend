@@ -7,7 +7,7 @@ module.exports = {
             'progress',
             'html'
         ],
-    htmlReporter: {baseDir: 'functional-output/mutation-assets'},
+    htmlReporter: {fileName: 'functional-output/mutation-assets/index.html'},
     coverageAnalysis: 'perTest',
     mutate:
         [
@@ -22,7 +22,8 @@ module.exports = {
         '!version',
         '!app/**',
         '!config/*',
-        '!test/**'
+        '!test/**',
+        '!*.html'
     ],
     testRunner: 'mocha',
     mochaOptions: {
