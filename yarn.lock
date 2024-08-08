@@ -1041,6 +1041,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/plugin-proposal-explicit-resource-management@npm:^7.24.7":
+  version: 7.24.7
+  resolution: "@babel/plugin-proposal-explicit-resource-management@npm:7.24.7"
+  dependencies:
+    "@babel/helper-plugin-utils": "npm:^7.24.7"
+    "@babel/plugin-syntax-explicit-resource-management": "npm:^7.24.7"
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 10/0e84ada02b528839ac1f21ba856be22bd8766907055c09c1955990dbeed9f22f35c0174a0baf7938ecd1749056b863ffbc2865708ec70843b21ab9a6d18ce46f
+  languageName: node
+  linkType: hard
+
 "@babel/plugin-syntax-async-generators@npm:^7.2.0":
   version: 7.8.4
   resolution: "@babel/plugin-syntax-async-generators@npm:7.8.4"
@@ -1071,6 +1083,17 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: 10/ce307af83cf433d4ec42932329fad25fa73138ab39c7436882ea28742e1c0066626d224e0ad2988724c82644e41601cef607b36194f695cb78a1fcdc959637bd
+  languageName: node
+  linkType: hard
+
+"@babel/plugin-syntax-explicit-resource-management@npm:^7.24.7":
+  version: 7.24.7
+  resolution: "@babel/plugin-syntax-explicit-resource-management@npm:7.24.7"
+  dependencies:
+    "@babel/helper-plugin-utils": "npm:^7.24.7"
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 10/07a0ea1c2f7d334e346af70f64cb9b36a593710047a35fa85564766e1698ed37405f9dd64574eb6f0edb18e134f0026df38393fb499028aa21a872e7d107ab9d
   languageName: node
   linkType: hard
 
@@ -2213,26 +2236,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stryker-mutator/api@npm:8.3.0, @stryker-mutator/api@npm:^8.3.0":
-  version: 8.3.0
-  resolution: "@stryker-mutator/api@npm:8.3.0"
+"@stryker-mutator/api@npm:8.4.0, @stryker-mutator/api@npm:^8.3.0":
+  version: 8.4.0
+  resolution: "@stryker-mutator/api@npm:8.4.0"
   dependencies:
     mutation-testing-metrics: "npm:3.1.1"
     mutation-testing-report-schema: "npm:3.1.1"
     tslib: "npm:~2.6.3"
     typed-inject: "npm:~4.0.0"
-  checksum: 10/ac89ad78c05929aa667d04193935157f0bf889274eb42ad01cc4a95d9f2cde185226ba8b900d36dd929edaad3c49401c7e62f806a90c0503bb4b8ce3ae27c4a2
+  checksum: 10/4917626b08ff17dbecdea76190197e261806203ca8de3189e09c34ca970e2c1dc9bd12d13174a3de7d0059573748d4ccc0fa256f159a96139f7f996a9e59752b
   languageName: node
   linkType: hard
 
 "@stryker-mutator/core@npm:^8.3.0":
-  version: 8.3.0
-  resolution: "@stryker-mutator/core@npm:8.3.0"
+  version: 8.4.0
+  resolution: "@stryker-mutator/core@npm:8.4.0"
   dependencies:
     "@inquirer/prompts": "npm:^5.3.6"
-    "@stryker-mutator/api": "npm:8.3.0"
-    "@stryker-mutator/instrumenter": "npm:8.3.0"
-    "@stryker-mutator/util": "npm:8.3.0"
+    "@stryker-mutator/api": "npm:8.4.0"
+    "@stryker-mutator/instrumenter": "npm:8.4.0"
+    "@stryker-mutator/util": "npm:8.4.0"
     ajv: "npm:~8.17.1"
     chalk: "npm:~5.3.0"
     commander: "npm:~12.1.0"
@@ -2241,10 +2264,9 @@ __metadata:
     execa: "npm:~9.3.0"
     file-url: "npm:~4.0.0"
     get-port: "npm:~7.1.0"
-    glob: "npm:~11.0.0"
     lodash.groupby: "npm:~4.6.0"
     log4js: "npm:~6.9.1"
-    minimatch: "npm:~10.0.1"
+    minimatch: "npm:~9.0.5"
     mutation-testing-elements: "npm:3.1.1"
     mutation-testing-metrics: "npm:3.1.1"
     mutation-testing-report-schema: "npm:3.1.1"
@@ -2259,46 +2281,47 @@ __metadata:
     typed-rest-client: "npm:~2.0.2"
   bin:
     stryker: ./bin/stryker.js
-  checksum: 10/2ce72651132a384bbf8801eca36f6d9d84bb019c52100b7619afc9f5cb691d7430dd146ef508c3a30c51b827024b92546c9e26de01bb2821fba18150424a99a5
+  checksum: 10/33cbe9d5dd84c88369b70a0d900ca656a4e994d618c0538e588e9f3c192d8d809360717e7f8f276fcb873b16b207a0e5297e4e40c9bb87e8043aea1e3155ae9f
   languageName: node
   linkType: hard
 
-"@stryker-mutator/instrumenter@npm:8.3.0":
-  version: 8.3.0
-  resolution: "@stryker-mutator/instrumenter@npm:8.3.0"
+"@stryker-mutator/instrumenter@npm:8.4.0":
+  version: 8.4.0
+  resolution: "@stryker-mutator/instrumenter@npm:8.4.0"
   dependencies:
     "@babel/core": "npm:~7.25.2"
     "@babel/generator": "npm:~7.25.0"
     "@babel/parser": "npm:~7.25.0"
     "@babel/plugin-proposal-decorators": "npm:~7.24.7"
+    "@babel/plugin-proposal-explicit-resource-management": "npm:^7.24.7"
     "@babel/preset-typescript": "npm:~7.24.7"
-    "@stryker-mutator/api": "npm:8.3.0"
-    "@stryker-mutator/util": "npm:8.3.0"
+    "@stryker-mutator/api": "npm:8.4.0"
+    "@stryker-mutator/util": "npm:8.4.0"
     angular-html-parser: "npm:~6.0.2"
     semver: "npm:~7.6.3"
     weapon-regex: "npm:~1.3.2"
-  checksum: 10/434b689e4d532efa316701b94b4b3f12b11f1f94a855829a3e78c456e73ea70fc0e595ea6079c83eacb8a2cfa1f98d2373ba64ee44a2e5001f90a60d8551a104
+  checksum: 10/e066f6c65eecdb65e2421555d96db1a099bb09147f303488ec1cbdedc07dbac427d09a428c901e124ed205a0d9142ccae10d7f0b38294847e62a3f673ef2063a
   languageName: node
   linkType: hard
 
 "@stryker-mutator/mocha-runner@npm:^8.3.0":
-  version: 8.3.0
-  resolution: "@stryker-mutator/mocha-runner@npm:8.3.0"
+  version: 8.4.0
+  resolution: "@stryker-mutator/mocha-runner@npm:8.4.0"
   dependencies:
-    "@stryker-mutator/api": "npm:8.3.0"
-    "@stryker-mutator/util": "npm:8.3.0"
+    "@stryker-mutator/api": "npm:8.4.0"
+    "@stryker-mutator/util": "npm:8.4.0"
     tslib: "npm:~2.6.3"
   peerDependencies:
-    "@stryker-mutator/core": ~8.3.0
+    "@stryker-mutator/core": ~8.4.0
     mocha: ">= 7.2 < 11"
-  checksum: 10/b5baa2305f937a44a20231673c5ec3a02c48739ebb3dcfbb1d42eee64e7884a64223ce82045342df4c1d904c13c9b8f194009b7e026bcc28533847aef578f3f8
+  checksum: 10/a4ca8f53fd160c249efd1157aec1f727ebc902a5de3eea89ce3dc1dd34d0eee6733063f5909742cc693ebae20c8bdc58e508e8f7883b53d44aeddb919e5497f3
   languageName: node
   linkType: hard
 
-"@stryker-mutator/util@npm:8.3.0":
-  version: 8.3.0
-  resolution: "@stryker-mutator/util@npm:8.3.0"
-  checksum: 10/1652c02155bab381ff76001e133c6f6867a635219e2e0024f8c931384de40ec6cbd6634a98a17f8722e9924dc808b169afe475e6ab143cf8af01bacc095abfe5
+"@stryker-mutator/util@npm:8.4.0":
+  version: 8.4.0
+  resolution: "@stryker-mutator/util@npm:8.4.0"
+  checksum: 10/761a9f5e9700c0e013c75db7c1b34274b3a87bed5efc7c279d22af88109d1ee1c03c3c95a64217970174d6cf43f7517481427fcbdc17b44e9070afc5ba399171
   languageName: node
   linkType: hard
 
@@ -7542,22 +7565,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:~11.0.0":
-  version: 11.0.0
-  resolution: "glob@npm:11.0.0"
-  dependencies:
-    foreground-child: "npm:^3.1.0"
-    jackspeak: "npm:^4.0.1"
-    minimatch: "npm:^10.0.0"
-    minipass: "npm:^7.1.2"
-    package-json-from-dist: "npm:^1.0.0"
-    path-scurry: "npm:^2.0.0"
-  bin:
-    glob: dist/esm/bin.mjs
-  checksum: 10/e66939201d11ae30fe97e3364ac2be5c59d6c9bfce18ac633edfad473eb6b46a7553f6f73658f67caaf6cccc1df1ae336298a45e9021fa5695fd78754cc1603e
-  languageName: node
-  linkType: hard
-
 "glob@npm:~7.1.1":
   version: 7.1.7
   resolution: "glob@npm:7.1.7"
@@ -8875,19 +8882,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jackspeak@npm:^4.0.1":
-  version: 4.0.1
-  resolution: "jackspeak@npm:4.0.1"
-  dependencies:
-    "@isaacs/cliui": "npm:^8.0.2"
-    "@pkgjs/parseargs": "npm:^0.11.0"
-  dependenciesMeta:
-    "@pkgjs/parseargs":
-      optional: true
-  checksum: 10/b20dc0df0dbb2903e4d540ae68308ec7d1dd60944b130e867e218c98b5d77481d65ea734b6c81c812d481500076e8b3fdfccfb38fc81cb1acf165e853da3e26c
-  languageName: node
-  linkType: hard
-
 "jest-sonar-reporter@npm:2.0.0":
   version: 2.0.0
   resolution: "jest-sonar-reporter@npm:2.0.0"
@@ -9631,13 +9625,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lru-cache@npm:^11.0.0":
-  version: 11.0.0
-  resolution: "lru-cache@npm:11.0.0"
-  checksum: 10/41f36fbff8b6f199cce3e9cb2b625714f97a535dfd7f16d0988c2627f9ed4c38b6dc8f9ea7fdba19262a7c917ba41c89cad15ca3e3791fc9a2068af472b5bc8d
-  languageName: node
-  linkType: hard
-
 "lru-cache@npm:^4.0.1":
   version: 4.1.5
   resolution: "lru-cache@npm:4.1.5"
@@ -9963,15 +9950,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^10.0.0, minimatch@npm:~10.0.1":
-  version: 10.0.1
-  resolution: "minimatch@npm:10.0.1"
-  dependencies:
-    brace-expansion: "npm:^2.0.1"
-  checksum: 10/082e7ccbc090d5f8c4e4e029255d5a1d1e3af37bda837da2b8b0085b1503a1210c91ac90d9ebfe741d8a5f286ece820a1abb4f61dc1f82ce602a055d461d93f3
-  languageName: node
-  linkType: hard
-
 "minimatch@npm:^5.0.1":
   version: 5.1.0
   resolution: "minimatch@npm:5.1.0"
@@ -9996,6 +9974,15 @@ __metadata:
   dependencies:
     brace-expansion: "npm:^1.1.7"
   checksum: 10/6df5373cb1ea79020beb6887ff5576c58cfabcfd32c5a65c2cf58f326e4ee8eae84f129e5fa50b8a4347fa1d1e583f931285c9fb3040d984bdfb5109ef6607ec
+  languageName: node
+  linkType: hard
+
+"minimatch@npm:~9.0.5":
+  version: 9.0.5
+  resolution: "minimatch@npm:9.0.5"
+  dependencies:
+    brace-expansion: "npm:^2.0.1"
+  checksum: 10/dd6a8927b063aca6d910b119e1f2df6d2ce7d36eab91de83167dd136bb85e1ebff97b0d3de1cb08bd1f7e018ca170b4962479fefab5b2a69e2ae12cb2edc8348
   languageName: node
   linkType: hard
 
@@ -10126,13 +10113,6 @@ __metadata:
   version: 7.0.4
   resolution: "minipass@npm:7.0.4"
   checksum: 10/e864bd02ceb5e0707696d58f7ce3a0b89233f0d686ef0d447a66db705c0846a8dc6f34865cd85256c1472ff623665f616b90b8ff58058b2ad996c5de747d2d18
-  languageName: node
-  linkType: hard
-
-"minipass@npm:^7.1.2":
-  version: 7.1.2
-  resolution: "minipass@npm:7.1.2"
-  checksum: 10/c25f0ee8196d8e6036661104bacd743785b2599a21de5c516b32b3fa2b83113ac89a2358465bc04956baab37ffb956ae43be679b2262bf7be15fce467ccd7950
   languageName: node
   linkType: hard
 
@@ -11226,13 +11206,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"package-json-from-dist@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "package-json-from-dist@npm:1.0.0"
-  checksum: 10/ac706ec856a5a03f5261e4e48fa974f24feb044d51f84f8332e2af0af04fbdbdd5bbbfb9cbbe354190409bc8307c83a9e38c6672c3c8855f709afb0006a009ea
-  languageName: node
-  linkType: hard
-
 "pactum-matchers@npm:^1.1.6":
   version: 1.1.6
   resolution: "pactum-matchers@npm:1.1.6"
@@ -11406,16 +11379,6 @@ __metadata:
     lru-cache: "npm:^9.1.1"
     minipass: "npm:^5.0.0 || ^6.0.2"
   checksum: 10/b3d05922e26f36999a9a92a79f4c0b0437ea075896cad1a4c7d3f54ae26c1a5ef022627b87b2561bbd82e6f67500f26bb82eadc63549155bd8cc6b0d030e9b76
-  languageName: node
-  linkType: hard
-
-"path-scurry@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "path-scurry@npm:2.0.0"
-  dependencies:
-    lru-cache: "npm:^11.0.0"
-    minipass: "npm:^7.1.2"
-  checksum: 10/285ae0c2d6c34ae91dc1d5378ede21981c9a2f6de1ea9ca5a88b5a270ce9763b83dbadc7a324d512211d8d36b0c540427d3d0817030849d97a60fa840a2c59ec
   languageName: node
   linkType: hard
 
