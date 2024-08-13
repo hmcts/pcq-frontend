@@ -9,6 +9,7 @@ const os = require('os');
 
 let client ;
 const instrumentationKey = config.get('appInsights.instrumentationKey');
+const connectionString = config.get('appInsights.connectionString');
 const TEMPDIR_PREFIX = 'appInsights-node';
 
 exports.initAppInsights = function initAppInsights() {
@@ -17,7 +18,7 @@ exports.initAppInsights = function initAppInsights() {
 
         logger.info('Starting App Insights');
 
-        appInsights.setup(instrumentationKey)
+        appInsights.setup(connectionString)
             .setSendLiveMetrics(true)
             .setAutoCollectConsole(true, true)
             .start();
