@@ -2,6 +2,7 @@
 
 const appInsights = require('applicationinsights');
 //const Sender = require('applicationinsights/out/Library/Sender');
+const Sender = require('applicationinsights/channels/Sender');
 const logger = require('app/components/logger')('Init');
 const config = require('config');
 const path = require('path');
@@ -10,10 +11,11 @@ const os = require('os');
 
 let client ;
 const instrumentationKey = config.get('appInsights.instrumentationKey');
+const TEMPDIR_PREFIX = 'appInsights-node';
 
 exports.initAppInsights = function initAppInsights() {
     if (instrumentationKey) {
-        //createTempDir();
+        createTempDir();
 
         logger.info('Starting App Insights');
 
@@ -28,14 +30,14 @@ exports.initAppInsights = function initAppInsights() {
         client = null;
     }
 
-    /* function createTempDir() {
-        const tempDir = path.join(os.tmpdir(), Sender.TEMPDIR_PREFIX + instrumentationKey);
+    function createTempDir() {
+        const tempDir = path.join(os.tmpdir(), TEMPDIR_PREFIX + instrumentationKey);
 
         if (!fs.existsSync(tempDir)) {
             logger.info('Creating App Insights temp dir');
             fs.mkdirSync(tempDir);
         }
-    } */
+    }
 };
 
 exports.trackTrace = function trackTrace(trace){
