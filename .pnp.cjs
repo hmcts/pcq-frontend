@@ -59,10 +59,10 @@ const RAW_RUNTIME_STATE =
           ["fs-extra", "npm:11.2.0"],\
           ["git-rev-sync", "npm:3.0.2"],\
           ["globals", "npm:15.8.0"],\
-          ["govuk-frontend", "npm:5.4.1"],\
+          ["govuk-frontend", "npm:5.5.0"],\
           ["helmet", "npm:3.23.3"],\
           ["https-proxy-agent", "npm:5.0.1"],\
-          ["i18next", "npm:23.12.2"],\
+          ["i18next", "npm:23.12.3"],\
           ["ioredis", "npm:5.4.1"],\
           ["js-yaml", "npm:4.1.0"],\
           ["jsonwebtoken", "npm:9.0.2"],\
@@ -9599,10 +9599,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["govuk-frontend", [\
-      ["npm:5.4.1", {\
-        "packageLocation": "./.yarn/cache/govuk-frontend-npm-5.4.1-b4c21995b5-7876182c3c.zip/node_modules/govuk-frontend/",\
+      ["npm:5.5.0", {\
+        "packageLocation": "./.yarn/cache/govuk-frontend-npm-5.5.0-1f089cb652-1552831e99.zip/node_modules/govuk-frontend/",\
         "packageDependencies": [\
-          ["govuk-frontend", "npm:5.4.1"]\
+          ["govuk-frontend", "npm:5.5.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -10095,10 +10095,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["i18next", [\
-      ["npm:23.12.2", {\
-        "packageLocation": "./.yarn/cache/i18next-npm-23.12.2-ec24459ee0-d7a743c54b.zip/node_modules/i18next/",\
+      ["npm:23.12.3", {\
+        "packageLocation": "./.yarn/cache/i18next-npm-23.12.3-e9fa18a5c9-f89fc19a3f.zip/node_modules/i18next/",\
         "packageDependencies": [\
-          ["i18next", "npm:23.12.2"],\
+          ["i18next", "npm:23.12.3"],\
           ["@babel/runtime", "npm:7.23.2"]\
         ],\
         "linkType": "HARD"\
@@ -14207,10 +14207,10 @@ const RAW_RUNTIME_STATE =
           ["fs-extra", "npm:11.2.0"],\
           ["git-rev-sync", "npm:3.0.2"],\
           ["globals", "npm:15.8.0"],\
-          ["govuk-frontend", "npm:5.4.1"],\
+          ["govuk-frontend", "npm:5.5.0"],\
           ["helmet", "npm:3.23.3"],\
           ["https-proxy-agent", "npm:5.0.1"],\
-          ["i18next", "npm:23.12.2"],\
+          ["i18next", "npm:23.12.3"],\
           ["ioredis", "npm:5.4.1"],\
           ["js-yaml", "npm:4.1.0"],\
           ["jsonwebtoken", "npm:9.0.2"],\
