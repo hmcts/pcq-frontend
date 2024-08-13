@@ -1,8 +1,6 @@
 'use strict';
 
 const appInsights = require('applicationinsights');
-//const Sender = require('applicationinsights/out/Library/Sender');
-const Sender = require('applicationinsights/channels/Sender');
 const logger = require('app/components/logger')('Init');
 const config = require('config');
 const path = require('path');
