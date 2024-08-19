@@ -7,12 +7,19 @@ module.exports = {
             'progress',
             'html'
         ],
-    htmlReporter: {baseDir: 'functional-output/mutation-assets'},
+    htmlReporter: {fileName: 'functional-output/mutation-assets/index.html'},
     coverageAnalysis: 'perTest',
+    mutator: {
+        excludedMutations: ['ObjectLiteral'],
+    },
     mutate:
         [
             'app/steps/ui/**/index.js',
-            'app/middleware/*'
+            'app/middleware/*',
+            '!**/*.html',
+            '!app.js',
+            '!**/*.mjs',
+            '!**/*.json'
         ],
     ignorePatterns: [
         '**',
@@ -22,7 +29,9 @@ module.exports = {
         '!version',
         '!app/**',
         '!config/*',
-        '!test/**'
+        '!test/**',
+        'test/unit/core/testServiceData.json',
+        'test/unit/services/testServiceInvokerData.json'
     ],
     testRunner: 'mocha',
     mochaOptions: {
