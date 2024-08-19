@@ -2081,7 +2081,7 @@ const RAW_RUNTIME_STATE =
           ["@inquirer/figures", "npm:1.0.5"],\
           ["@inquirer/type", "npm:1.5.2"],\
           ["@types/mute-stream", "npm:0.0.4"],\
-          ["@types/node", "npm:22.3.0"],\
+          ["@types/node", "npm:22.4.1"],\
           ["@types/wrap-ansi", "npm:3.0.0"],\
           ["ansi-escapes", "npm:4.3.2"],\
           ["cli-spinners", "npm:2.9.2"],\
@@ -3993,6 +3993,14 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/node", "npm:22.3.0"],\
           ["undici-types", "npm:6.18.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:22.4.1", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-22.4.1-553ffaf0e5-cce9221aea.zip/node_modules/@types/node/",\
+        "packageDependencies": [\
+          ["@types/node", "npm:22.4.1"],\
+          ["undici-types", "npm:6.19.6"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -17384,6 +17392,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/undici-types-npm-6.18.2-29c349a925-5c863f3cc6.zip/node_modules/undici-types/",\
         "packageDependencies": [\
           ["undici-types", "npm:6.18.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:6.19.6", {\
+        "packageLocation": "./.yarn/cache/undici-types-npm-6.19.6-9d9ccfb00d-0ea9bc2576.zip/node_modules/undici-types/",\
+        "packageDependencies": [\
+          ["undici-types", "npm:6.19.6"]\
         ],\
         "linkType": "HARD"\
       }]\
