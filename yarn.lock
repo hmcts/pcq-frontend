@@ -12397,6 +12397,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"properties-file@npm:3.5.4":
+  version: 3.5.4
+  resolution: "properties-file@npm:3.5.4"
+  checksum: 10/6b6e99521972a4bf03bb939b5437be13edbcb17794c1019b0b705088362c0a9f919699135edf183743dea7037268a9d3721a4b44af545b2b8c5fec7401142486
+  languageName: node
+  linkType: hard
+
 "protected-characteristics-frontend@workspace:.":
   version: 0.0.0-use.local
   resolution: "protected-characteristics-frontend@workspace:."
@@ -13777,8 +13784,8 @@ __metadata:
   linkType: hard
 
 "sonarqube-scanner@npm:^4.0.0":
-  version: 4.0.1
-  resolution: "sonarqube-scanner@npm:4.0.1"
+  version: 4.2.1
+  resolution: "sonarqube-scanner@npm:4.2.1"
   dependencies:
     adm-zip: "npm:0.5.12"
     axios: "npm:1.6.8"
@@ -13787,13 +13794,14 @@ __metadata:
     hpagent: "npm:1.2.0"
     jest-sonar-reporter: "npm:2.0.0"
     node-forge: "npm:^1.3.1"
+    properties-file: "npm:3.5.4"
     proxy-from-env: "npm:^1.1.0"
     semver: "npm:7.6.0"
     slugify: "npm:1.6.6"
     tar-stream: "npm:3.1.7"
   bin:
     sonar-scanner: bin/sonar-scanner
-  checksum: 10/335a080f95bf099796ffdcbcb4358be8423181884cf0db2896d957d56edf11569feec4eeb5d3c9fa7d843f73fe27b8ec5b49beb1a7e9a7831ec495957b6ccf06
+  checksum: 10/7fb00d34b9485088f60e4210a9da9eca15b06198202b61890cd5088d18d882c043f40713b1c2858aecf010ff57461bea082de4eb5e71db659e769b71f3cf5bc2
   languageName: node
   linkType: hard
 
