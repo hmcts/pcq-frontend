@@ -71,7 +71,7 @@ const RAW_RUNTIME_STATE =
           ["mocha", "npm:10.7.3"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
           ["moment", "npm:2.30.1"],\
-          ["nock", "npm:13.5.4"],\
+          ["nock", "npm:13.5.5"],\
           ["node-emoji", "npm:2.1.3"],\
           ["node-fetch", "virtual:cdb982d44661592ebbafe07217ec5667306fff17f8dbc22b1882f154f5441ce269c7f262b8dec39e8a578c85f617449d9637bdc205e5c7921787c7268959c215#npm:2.7.0"],\
           ["node-sass", "npm:9.0.0"],\
@@ -13122,10 +13122,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["nock", [\
-      ["npm:13.5.4", {\
-        "packageLocation": "./.yarn/cache/nock-npm-13.5.4-2c4f77b249-75bad391ba.zip/node_modules/nock/",\
+      ["npm:13.5.5", {\
+        "packageLocation": "./.yarn/cache/nock-npm-13.5.5-ccb57f0a2f-c19d7bf965.zip/node_modules/nock/",\
         "packageDependencies": [\
-          ["nock", "npm:13.5.4"],\
+          ["nock", "npm:13.5.5"],\
           ["debug", "virtual:69c3455e973f914a9da079b465f412398aa9db4de6c967c5de9b7df9f75964a40ef9a5e9756b59c737917bf508a15667d830fc1be46cb0566180c490a2062629#npm:4.3.6"],\
           ["json-stringify-safe", "npm:5.0.1"],\
           ["propagate", "npm:2.0.1"]\
@@ -14572,7 +14572,7 @@ const RAW_RUNTIME_STATE =
           ["mocha", "npm:10.7.3"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
           ["moment", "npm:2.30.1"],\
-          ["nock", "npm:13.5.4"],\
+          ["nock", "npm:13.5.5"],\
           ["node-emoji", "npm:2.1.3"],\
           ["node-fetch", "virtual:cdb982d44661592ebbafe07217ec5667306fff17f8dbc22b1882f154f5441ce269c7f262b8dec39e8a578c85f617449d9637bdc205e5c7921787c7268959c215#npm:2.7.0"],\
           ["node-sass", "npm:9.0.0"],\
