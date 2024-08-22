@@ -98,7 +98,7 @@ const RAW_RUNTIME_STATE =
           ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.0.7"],\
           ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.93.0"],\
           ["webpack-cli", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.1.4"],\
-          ["yarn-audit-fix", "npm:10.0.8"]\
+          ["yarn-audit-fix", "npm:10.0.9"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -14529,7 +14529,7 @@ const RAW_RUNTIME_STATE =
           ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.0.7"],\
           ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.93.0"],\
           ["webpack-cli", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.1.4"],\
-          ["yarn-audit-fix", "npm:10.0.8"]\
+          ["yarn-audit-fix", "npm:10.0.9"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -18370,17 +18370,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["yarn-audit-fix", [\
-      ["npm:10.0.8", {\
-        "packageLocation": "./.yarn/cache/yarn-audit-fix-npm-10.0.8-a660e34908-81db308ef6.zip/node_modules/yarn-audit-fix/",\
+      ["npm:10.0.9", {\
+        "packageLocation": "./.yarn/cache/yarn-audit-fix-npm-10.0.9-2279d8b6fe-57942d2aee.zip/node_modules/yarn-audit-fix/",\
         "packageDependencies": [\
-          ["yarn-audit-fix", "npm:10.0.8"],\
+          ["yarn-audit-fix", "npm:10.0.9"],\
           ["@types/fs-extra", "npm:11.0.4"],\
           ["@types/lodash-es", "npm:4.17.12"],\
           ["@types/semver", "npm:7.5.8"],\
           ["@types/yarnpkg__lockfile", "npm:1.1.9"],\
           ["@yarnpkg/lockfile", "npm:1.1.0"],\
           ["chalk", "npm:5.3.0"],\
-          ["commander", "npm:11.1.0"],\
+          ["commander", "npm:12.1.0"],\
           ["fast-glob", "npm:3.3.2"],\
           ["fs-extra", "npm:11.2.0"],\
           ["js-yaml", "npm:4.1.0"],\
