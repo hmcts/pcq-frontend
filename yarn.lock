@@ -5489,7 +5489,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:11.1.0, commander@npm:^11.0.0":
+"commander@npm:11.1.0":
   version: 11.1.0
   resolution: "commander@npm:11.1.0"
   checksum: 10/66bd2d8a0547f6cb1d34022efb25f348e433b0e04ad76a65279b1b09da108f59a4d3001ca539c60a7a46ea38bcf399fc17d91adad76a8cf43845d8dcbaf5cda1
@@ -5507,6 +5507,13 @@ __metadata:
   version: 10.0.1
   resolution: "commander@npm:10.0.1"
   checksum: 10/8799faa84a30da985802e661cc9856adfaee324d4b138413013ef7f087e8d7924b144c30a1f1405475f0909f467665cd9e1ce13270a2f41b141dab0b7a58f3fb
+  languageName: node
+  linkType: hard
+
+"commander@npm:^12.0.0, commander@npm:~12.1.0":
+  version: 12.1.0
+  resolution: "commander@npm:12.1.0"
+  checksum: 10/cdaeb672d979816853a4eed7f1310a9319e8b976172485c2a6b437ed0db0a389a44cfb222bfbde772781efa9f215bdd1b936f80d6b249485b465c6cb906e1f93
   languageName: node
   linkType: hard
 
@@ -5535,13 +5542,6 @@ __metadata:
   version: 9.4.0
   resolution: "commander@npm:9.4.0"
   checksum: 10/9b9af6b5c93287e18f00f92bb366220e72e2b9cb267c132c5e02639b2aded3db942433823ce6e786ef3f817bf35984ec83f41911ed68676068ba910aa7322e69
-  languageName: node
-  linkType: hard
-
-"commander@npm:~12.1.0":
-  version: 12.1.0
-  resolution: "commander@npm:12.1.0"
-  checksum: 10/cdaeb672d979816853a4eed7f1310a9319e8b976172485c2a6b437ed0db0a389a44cfb222bfbde772781efa9f215bdd1b936f80d6b249485b465c6cb906e1f93
   languageName: node
   linkType: hard
 
@@ -15991,8 +15991,8 @@ __metadata:
   linkType: hard
 
 "yarn-audit-fix@npm:^10.0.3":
-  version: 10.0.8
-  resolution: "yarn-audit-fix@npm:10.0.8"
+  version: 10.0.9
+  resolution: "yarn-audit-fix@npm:10.0.9"
   dependencies:
     "@types/fs-extra": "npm:^11.0.4"
     "@types/lodash-es": "npm:^4.17.12"
@@ -16000,7 +16000,7 @@ __metadata:
     "@types/yarnpkg__lockfile": "npm:^1.1.9"
     "@yarnpkg/lockfile": "npm:^1.1.0"
     chalk: "npm:^5.3.0"
-    commander: "npm:^11.0.0"
+    commander: "npm:^12.0.0"
     fast-glob: "npm:^3.3.2"
     fs-extra: "npm:^11.2.0"
     js-yaml: "npm:^4.1.0"
@@ -16009,7 +16009,7 @@ __metadata:
     synp: "npm:^1.9.13"
   bin:
     yarn-audit-fix: target/esm/cli.mjs
-  checksum: 10/81db308ef667ca8f4a7d13fa403c3936744b7af1a0f7bb71da645b3c4e5a739007068e376248756f2a7d77bfa6acb4f7053d49bd7a5848fc03c07deba8ffa11f
+  checksum: 10/57942d2aee89038353044f9d5f2547d98f8c73118d85bc70adfe5908fb4f964496cb3b4e1e95e46c31109594ec295ae0d7591171f65c0dd8cde56223570a96b5
   languageName: node
   linkType: hard
 
