@@ -95,7 +95,7 @@ const RAW_RUNTIME_STATE =
           ["tslib", "npm:2.6.3"],\
           ["uuid", "npm:10.0.0"],\
           ["watch", "npm:1.0.2"],\
-          ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.0.6"],\
+          ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.0.7"],\
           ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.93.0"],\
           ["webpack-cli", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.1.4"],\
           ["yarn-audit-fix", "npm:10.0.8"]\
@@ -14526,7 +14526,7 @@ const RAW_RUNTIME_STATE =
           ["tslib", "npm:2.6.3"],\
           ["uuid", "npm:10.0.0"],\
           ["watch", "npm:1.0.2"],\
-          ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.0.6"],\
+          ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.0.7"],\
           ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.93.0"],\
           ["webpack-cli", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.1.4"],\
           ["yarn-audit-fix", "npm:10.0.8"]\
@@ -17631,10 +17631,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["webdriver", [\
-      ["npm:9.0.6", {\
-        "packageLocation": "./.yarn/cache/webdriver-npm-9.0.6-c9e9397dfb-bebdab67b6.zip/node_modules/webdriver/",\
+      ["npm:9.0.7", {\
+        "packageLocation": "./.yarn/cache/webdriver-npm-9.0.7-90c030cb02-e0a19f4689.zip/node_modules/webdriver/",\
         "packageDependencies": [\
-          ["webdriver", "npm:9.0.6"],\
+          ["webdriver", "npm:9.0.7"],\
           ["@types/node", "npm:20.12.7"],\
           ["@types/ws", "npm:8.5.4"],\
           ["@wdio/config", "npm:9.0.6"],\
@@ -17649,17 +17649,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["webdriverio", [\
-      ["npm:9.0.6", {\
-        "packageLocation": "./.yarn/cache/webdriverio-npm-9.0.6-7df9c078ac-d3a72b8526.zip/node_modules/webdriverio/",\
+      ["npm:9.0.7", {\
+        "packageLocation": "./.yarn/cache/webdriverio-npm-9.0.7-6aaaa67a1d-84693139c1.zip/node_modules/webdriverio/",\
         "packageDependencies": [\
-          ["webdriverio", "npm:9.0.6"]\
+          ["webdriverio", "npm:9.0.7"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.0.6", {\
-        "packageLocation": "./.yarn/__virtual__/webdriverio-virtual-c5dc844940/0/cache/webdriverio-npm-9.0.6-7df9c078ac-d3a72b8526.zip/node_modules/webdriverio/",\
+      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.0.7", {\
+        "packageLocation": "./.yarn/__virtual__/webdriverio-virtual-d0c7ad2df0/0/cache/webdriverio-npm-9.0.7-6aaaa67a1d-84693139c1.zip/node_modules/webdriverio/",\
         "packageDependencies": [\
-          ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.0.6"],\
+          ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.0.7"],\
           ["@types/node", "npm:20.16.1"],\
           ["@types/puppeteer-core", null],\
           ["@types/sinonjs__fake-timers", "npm:8.1.5"],\
@@ -17688,7 +17688,7 @@ const RAW_RUNTIME_STATE =
           ["rgb2hex", "npm:0.2.5"],\
           ["serialize-error", "npm:11.0.3"],\
           ["urlpattern-polyfill", "npm:10.0.0"],\
-          ["webdriver", "npm:9.0.6"]\
+          ["webdriver", "npm:9.0.7"]\
         ],\
         "packagePeers": [\
           "@types/puppeteer-core",\
