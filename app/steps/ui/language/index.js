@@ -2,6 +2,7 @@
 
 const MultiPartValidationStep = require('app/core/steps/MultiPartValidationStep');
 const ApplicantEnglishLevel = require('app/steps/ui/englishlevel/index');
+const appInsights = require('app/components/app-insights');
 
 class ApplicantLanguage extends MultiPartValidationStep {
 
@@ -38,6 +39,11 @@ class ApplicantLanguage extends MultiPartValidationStep {
                 {key: 'language_main', value: 2, choice: 'otherLanguage'}
             ]
         };
+    }
+
+    handleGet(ctx,session) {
+        appInsights.trackTrace({message: 'User on language page', properties: {['ServiceId']:session.serviceId}});      
+        return super.handleGet(ctx);
     }
 }
 

@@ -4,6 +4,7 @@ const DateStep = require('app/core/steps/DateStep');
 const FieldError = require('app/components/error');
 const config = require('config');
 const moment = require('moment');
+const appInsights = require('app/components/app-insights');
 
 class ApplicantDateOfBirth extends DateStep {
 
@@ -76,6 +77,11 @@ class ApplicantDateOfBirth extends DateStep {
 
     ignoreFieldsOnPost() {
         return ['dob-day', 'dob-month', 'dob-year', 'dob-formattedDate'];
+    }
+
+    handleGet(ctx,session) {
+        appInsights.trackTrace({message: 'User on date-of-birth page', properties: {['ServiceId']:session.serviceId}});      
+        return super.handleGet(ctx);
     }
 
 }
