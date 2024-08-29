@@ -95,7 +95,7 @@ const RAW_RUNTIME_STATE =
           ["tslib", "npm:2.7.0"],\
           ["uuid", "npm:10.0.0"],\
           ["watch", "npm:1.0.2"],\
-          ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.40.3"],\
+          ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.40.5"],\
           ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.94.0"],\
           ["webpack-cli", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.1.4"],\
           ["yarn-audit-fix", "npm:10.0.9"]\
@@ -7822,10 +7822,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:0.0.1340018", {\
-        "packageLocation": "./.yarn/cache/devtools-protocol-npm-0.0.1340018-4f3c8d528d-678a4eed3a.zip/node_modules/devtools-protocol/",\
+      ["npm:0.0.1342118", {\
+        "packageLocation": "./.yarn/cache/devtools-protocol-npm-0.0.1342118-a7958661b6-3a6dbff74d.zip/node_modules/devtools-protocol/",\
         "packageDependencies": [\
-          ["devtools-protocol", "npm:0.0.1340018"]\
+          ["devtools-protocol", "npm:0.0.1342118"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -14520,7 +14520,7 @@ const RAW_RUNTIME_STATE =
           ["tslib", "npm:2.7.0"],\
           ["uuid", "npm:10.0.0"],\
           ["watch", "npm:1.0.2"],\
-          ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.40.3"],\
+          ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.40.5"],\
           ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.94.0"],\
           ["webpack-cli", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.1.4"],\
           ["yarn-audit-fix", "npm:10.0.9"]\
@@ -17671,17 +17671,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["webdriverio", [\
-      ["npm:8.40.3", {\
-        "packageLocation": "./.yarn/cache/webdriverio-npm-8.40.3-a4b6bd3df0-0ac827d5d4.zip/node_modules/webdriverio/",\
+      ["npm:8.40.5", {\
+        "packageLocation": "./.yarn/cache/webdriverio-npm-8.40.5-7e90e2cf33-44885457e2.zip/node_modules/webdriverio/",\
         "packageDependencies": [\
-          ["webdriverio", "npm:8.40.3"]\
+          ["webdriverio", "npm:8.40.5"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.40.3", {\
-        "packageLocation": "./.yarn/__virtual__/webdriverio-virtual-aae38466a7/0/cache/webdriverio-npm-8.40.3-a4b6bd3df0-0ac827d5d4.zip/node_modules/webdriverio/",\
+      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.40.5", {\
+        "packageLocation": "./.yarn/__virtual__/webdriverio-virtual-85ff75a341/0/cache/webdriverio-npm-8.40.5-7e90e2cf33-44885457e2.zip/node_modules/webdriverio/",\
         "packageDependencies": [\
-          ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.40.3"],\
+          ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.40.5"],\
           ["@types/devtools", null],\
           ["@types/node", "npm:22.5.0"],\
           ["@wdio/config", "npm:8.40.3"],\
@@ -17695,7 +17695,7 @@ const RAW_RUNTIME_STATE =
           ["css-shorthand-properties", "npm:1.1.1"],\
           ["css-value", "npm:0.0.1"],\
           ["devtools", null],\
-          ["devtools-protocol", "npm:0.0.1340018"],\
+          ["devtools-protocol", "npm:0.0.1342118"],\
           ["grapheme-splitter", "npm:1.0.4"],\
           ["import-meta-resolve", "npm:4.0.0"],\
           ["is-plain-obj", "npm:4.1.0"],\
