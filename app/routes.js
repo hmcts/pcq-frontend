@@ -11,6 +11,7 @@ const validateParams = require('app/middleware/validateParams');
 const optOut = require('app/middleware/optOut');
 const returnToService = require('app/middleware/returnToService');
 const startPageBackService = require('app/middleware/startPageBackService');
+const continueToQuestions = require('app/middleware/continueToQuestions');
 const featureToggle = new (require('app/utils/FeatureToggle'))();
 
 router.use(initSession);
@@ -36,6 +37,8 @@ router.get('/return-to-service', returnToService);
 
 router.get('/start-page-back-service', startPageBackService);
 
+router.get('/continue-to-questions', continueToQuestions);
+
 const allSteps = {
     'en': initSteps([`${__dirname}/steps/ui`], 'en'),
     'cy': initSteps([`${__dirname}/steps/ui`], 'cy')
@@ -53,7 +56,7 @@ router.use(async (req, res, next) => {
 
     Object.entries(allSteps[req.session.language]).forEach(([, step]) => {
         router.get(step.constructor.getUrl(), step.runner().GET(step));
-        router.post(step.constructor.getUrl(), step.runner().POST(step));
+        router.post(step.constructor.getUrl(), continueToQuestions, step.runner().POST(step));
     });
 
     res.locals.session = req.session;
