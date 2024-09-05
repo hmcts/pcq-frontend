@@ -88,7 +88,7 @@ const RAW_RUNTIME_STATE =
           ["serve-favicon", "npm:2.5.0"],\
           ["sinon", "npm:18.0.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-          ["sonarqube-scanner", "npm:4.2.1"],\
+          ["sonarqube-scanner", "npm:4.2.2"],\
           ["supertest", "npm:7.0.0"],\
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.9"],\
@@ -5320,10 +5320,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:1.6.8", {\
-        "packageLocation": "./.yarn/cache/axios-npm-1.6.8-85cf1e7152-3f9a79eaf1.zip/node_modules/axios/",\
+      ["npm:1.7.7", {\
+        "packageLocation": "./.yarn/cache/axios-npm-1.7.7-cfbedc233d-7f875ea13b.zip/node_modules/axios/",\
         "packageDependencies": [\
-          ["axios", "npm:1.6.8"],\
+          ["axios", "npm:1.7.7"],\
           ["follow-redirects", "virtual:d7b9974d1bba76881cc57a280a16dd4914416a6fc4923c2efbb6328057412974da1e719cef1530b7a62b97d85d828f7e1d49b5f6de3b5b0854d49902ec87827c#npm:1.15.6"],\
           ["form-data", "npm:4.0.0"],\
           ["proxy-from-env", "npm:1.1.0"]\
@@ -14513,7 +14513,7 @@ const RAW_RUNTIME_STATE =
           ["serve-favicon", "npm:2.5.0"],\
           ["sinon", "npm:18.0.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-          ["sonarqube-scanner", "npm:4.2.1"],\
+          ["sonarqube-scanner", "npm:4.2.2"],\
           ["supertest", "npm:7.0.0"],\
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.9"],\
@@ -15959,12 +15959,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sonarqube-scanner", [\
-      ["npm:4.2.1", {\
-        "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-4.2.1-15a834a153-7fb00d34b9.zip/node_modules/sonarqube-scanner/",\
+      ["npm:4.2.2", {\
+        "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-4.2.2-ed6609bc26-b362f07e6f.zip/node_modules/sonarqube-scanner/",\
         "packageDependencies": [\
-          ["sonarqube-scanner", "npm:4.2.1"],\
+          ["sonarqube-scanner", "npm:4.2.2"],\
           ["adm-zip", "npm:0.5.12"],\
-          ["axios", "npm:1.6.8"],\
+          ["axios", "npm:1.7.7"],\
           ["commander", "npm:12.0.0"],\
           ["fs-extra", "npm:11.2.0"],\
           ["hpagent", "npm:1.2.0"],\
