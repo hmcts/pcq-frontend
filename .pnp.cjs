@@ -91,7 +91,7 @@ const RAW_RUNTIME_STATE =
           ["sonarqube-scanner", "npm:4.2.2"],\
           ["supertest", "npm:7.0.0"],\
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
-          ["traverse", "npm:0.6.9"],\
+          ["traverse", "npm:0.6.10"],\
           ["tslib", "npm:2.7.0"],\
           ["uuid", "npm:10.0.0"],\
           ["watch", "npm:1.0.2"],\
@@ -14540,7 +14540,7 @@ const RAW_RUNTIME_STATE =
           ["sonarqube-scanner", "npm:4.2.2"],\
           ["supertest", "npm:7.0.0"],\
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
-          ["traverse", "npm:0.6.9"],\
+          ["traverse", "npm:0.6.10"],\
           ["tslib", "npm:2.7.0"],\
           ["uuid", "npm:10.0.0"],\
           ["watch", "npm:1.0.2"],\
@@ -16899,10 +16899,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:0.6.9", {\
-        "packageLocation": "./.yarn/cache/traverse-npm-0.6.9-1eef6e6615-7f42c2fa34.zip/node_modules/traverse/",\
+      ["npm:0.6.10", {\
+        "packageLocation": "./.yarn/cache/traverse-npm-0.6.10-6337c0e7f0-557fed11f1.zip/node_modules/traverse/",\
         "packageDependencies": [\
-          ["traverse", "npm:0.6.9"],\
+          ["traverse", "npm:0.6.10"],\
           ["gopd", "npm:1.0.1"],\
           ["typedarray.prototype.slice", "npm:1.0.3"],\
           ["which-typed-array", "npm:1.1.15"]\
