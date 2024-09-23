@@ -12612,6 +12612,7 @@ __metadata:
     test: "link:./test"
     traverse: "npm:^0.6.6"
     tslib: "npm:^2.6.0"
+    undici: "npm:^6.19.8"
     uuid: "npm:^10.0.0"
     watch: "npm:^1.0.2"
     webdriverio: "npm:^8.21.0"
@@ -15206,6 +15207,13 @@ __metadata:
   dependencies:
     "@fastify/busboy": "npm:^2.0.0"
   checksum: 10/a666a9f5ac4270c659fafc33d78b6b5039a0adbae3e28f934774c85dcc66ea91da907896f12b414bd6f578508b44d5dc206fa636afa0e49a4e1c9e99831ff065
+  languageName: node
+  linkType: hard
+
+"undici@npm:^6.19.8":
+  version: 6.19.8
+  resolution: "undici@npm:6.19.8"
+  checksum: 10/19ae4ba38b029a664d99fd330935ef59136cf99edb04ed821042f27b5a9e84777265fb744c8a7abc83f2059afb019446c69a4ebef07bbc0ed6b2de8d67ef4090
   languageName: node
   linkType: hard
 
