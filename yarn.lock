@@ -2799,12 +2799,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sinonjs/fake-timers@npm:13.0.1, @sinonjs/fake-timers@npm:^13.0.1":
+"@sinonjs/fake-timers@npm:^13.0.1":
   version: 13.0.1
   resolution: "@sinonjs/fake-timers@npm:13.0.1"
   dependencies:
     "@sinonjs/commons": "npm:^3.0.1"
   checksum: 10/fcb93349c52baead353336ce86442df14e3ee918162a0df1e88692c1fa9aec67b94094b0152bb95adcf8dc834eb20557e9a7e425c959fdee5b8cc67d17afcd67
+  languageName: node
+  linkType: hard
+
+"@sinonjs/fake-timers@npm:^13.0.2":
+  version: 13.0.2
+  resolution: "@sinonjs/fake-timers@npm:13.0.2"
+  dependencies:
+    "@sinonjs/commons": "npm:^3.0.1"
+  checksum: 10/77cca5c548e2529931908c48ac375f162ee901bc52110197b4c470b2535c6c571f9ecd4fa12157f4d2ae174c5391f03940fb563a681a691fb44204a0ef3ded35
   languageName: node
   linkType: hard
 
@@ -13726,16 +13735,16 @@ __metadata:
   linkType: hard
 
 "sinon@npm:^19.0.0":
-  version: 19.0.1
-  resolution: "sinon@npm:19.0.1"
+  version: 19.0.2
+  resolution: "sinon@npm:19.0.2"
   dependencies:
     "@sinonjs/commons": "npm:^3.0.1"
-    "@sinonjs/fake-timers": "npm:13.0.1"
+    "@sinonjs/fake-timers": "npm:^13.0.2"
     "@sinonjs/samsam": "npm:^8.0.1"
     diff: "npm:^7.0.0"
     nise: "npm:^6.1.1"
     supports-color: "npm:^7.2.0"
-  checksum: 10/e16637c6cbcbfc3930ab1fb2135320b9ea3dbb7da5803ec80b895ad711087a272b33b2fbc0ae164f1a290619ae1bb7610d05587b3c53f6618085326a00158692
+  checksum: 10/0be47968e9352269d0bdd26cdae7ae4e67d94fa007e8417d1e66ac95ba8537214edc770aff01b0f5a6f07588a1f7d3c947fff9366d799db85d3a4c405b875460
   languageName: node
   linkType: hard
 
