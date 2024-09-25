@@ -77,7 +77,7 @@ const RAW_RUNTIME_STATE =
           ["node-sass", "npm:9.0.0"],\
           ["nodemon", "npm:3.1.7"],\
           ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
-          ["nyc", "npm:17.0.0"],\
+          ["nyc", "npm:17.1.0"],\
           ["pa11y", "npm:8.0.0"],\
           ["playwright", "npm:1.47.2"],\
           ["pre-commit", "npm:1.2.2"],\
@@ -16965,10 +16965,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["nyc", [\
-      ["npm:17.0.0", {\
-        "packageLocation": "./.yarn/cache/nyc-npm-17.0.0-fd2bf80446-b20627f487.zip/node_modules/nyc/",\
+      ["npm:17.1.0", {\
+        "packageLocation": "./.yarn/cache/nyc-npm-17.1.0-57ad2114c5-08ce3aeac3.zip/node_modules/nyc/",\
         "packageDependencies": [\
-          ["nyc", "npm:17.0.0"],\
+          ["nyc", "npm:17.1.0"],\
           ["@istanbuljs/load-nyc-config", "npm:1.1.0"],\
           ["@istanbuljs/schema", "npm:0.1.3"],\
           ["caching-transform", "npm:4.0.0"],\
@@ -16976,7 +16976,7 @@ const RAW_RUNTIME_STATE =
           ["decamelize", "npm:1.2.0"],\
           ["find-cache-dir", "npm:3.3.2"],\
           ["find-up", "npm:4.1.0"],\
-          ["foreground-child", "npm:2.0.0"],\
+          ["foreground-child", "npm:3.3.0"],\
           ["get-package-type", "npm:0.1.0"],\
           ["glob", "npm:7.2.3"],\
           ["istanbul-lib-coverage", "npm:3.2.0"],\
@@ -18184,7 +18184,7 @@ const RAW_RUNTIME_STATE =
           ["node-sass", "npm:9.0.0"],\
           ["nodemon", "npm:3.1.7"],\
           ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
-          ["nyc", "npm:17.0.0"],\
+          ["nyc", "npm:17.1.0"],\
           ["pa11y", "npm:8.0.0"],\
           ["playwright", "npm:1.47.2"],\
           ["pre-commit", "npm:1.2.2"],\
