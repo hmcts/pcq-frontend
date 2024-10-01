@@ -120,7 +120,11 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
                 'tagmanager.google.com',
                 'fonts.googleapis.com'
             ],
-            frameAncestors: ['\'self\'']
+            frameAncestors: ['\'self\''],
+            formAction: [
+                '\'self\'',
+                '\'http://www.adoption-web.service.gov.uk/review-pay-submit/check-your-answers\''
+            ],
         },
         browserSniff: false,
         setAllHeaders: false
