@@ -10264,10 +10264,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"helmet@npm:^6.0.0":
-  version: 6.2.0
-  resolution: "helmet@npm:6.2.0"
-  checksum: 10/f112fcd0d8494e6c8ad10e9307e182f1be9c9c4917a3f9a3718c13ae120d4c4e1f251e735297d6a9266e068dcc0463ab101c8d7f2b809c0ceabcef4681f81a2a
+"helmet@npm:^7.0.0":
+  version: 7.2.0
+  resolution: "helmet@npm:7.2.0"
+  checksum: 10/37419351755a66f48af0f7c1f25b8e55ceaf2087efb1309ab29d6f664ea72f3a6fecbbcc0c9231e45b9e2f7079d3403eb35040463a45293c876e776d0574b538
   languageName: node
   linkType: hard
 
@@ -15000,7 +15000,7 @@ __metadata:
     git-rev-sync: "npm:^3.0.2"
     globals: "npm:^15.4.0"
     govuk-frontend: "npm:^5.4.0"
-    helmet: "npm:^6.0.0"
+    helmet: "npm:^7.0.0"
     hpkp: "npm:^2.0.3"
     https-proxy-agent: "npm:^5.0.1"
     i18next: "npm:^23.5.1"
