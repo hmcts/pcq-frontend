@@ -123,7 +123,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
             frameAncestors: ['\'self\''],
             formAction: [
                 '\'self\'',
-                '\'http://www.adoption-web.service.gov.uk/review-pay-submit/check-your-answers\''
+                '\'www.google.com\''
             ],
         },
         browserSniff: false,
