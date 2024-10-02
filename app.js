@@ -123,7 +123,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
             frameAncestors: ['\'self\''],
             formAction: [
                 '\'self\'',
-                '\'www.google.com\''
+                '\'https://pcq-frontend-pr-1234.preview.platform.hmcts.net/opt-out\''
             ],
         },
         browserSniff: false,
