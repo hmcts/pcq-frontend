@@ -60,7 +60,7 @@ const RAW_RUNTIME_STATE =
           ["git-rev-sync", "npm:3.0.2"],\
           ["globals", "npm:15.10.0"],\
           ["govuk-frontend", "npm:5.6.0"],\
-          ["helmet", "npm:8.0.0"],\
+          ["helmet", "npm:4.6.0"],\
           ["hpkp", "npm:2.0.3"],\
           ["https-proxy-agent", "npm:5.0.1"],\
           ["i18next", "npm:23.15.1"],\
@@ -12858,10 +12858,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["helmet", [\
-      ["npm:8.0.0", {\
-        "packageLocation": "./.yarn/cache/helmet-npm-8.0.0-ba86ece81a-cf30579d1d.zip/node_modules/helmet/",\
+      ["npm:4.6.0", {\
+        "packageLocation": "./.yarn/cache/helmet-npm-4.6.0-f244fd965c-47129c540d.zip/node_modules/helmet/",\
         "packageDependencies": [\
-          ["helmet", "npm:8.0.0"]\
+          ["helmet", "npm:4.6.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -18056,7 +18056,7 @@ const RAW_RUNTIME_STATE =
           ["git-rev-sync", "npm:3.0.2"],\
           ["globals", "npm:15.10.0"],\
           ["govuk-frontend", "npm:5.6.0"],\
-          ["helmet", "npm:8.0.0"],\
+          ["helmet", "npm:4.6.0"],\
           ["hpkp", "npm:2.0.3"],\
           ["https-proxy-agent", "npm:5.0.1"],\
           ["i18next", "npm:23.15.1"],\
