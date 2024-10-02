@@ -120,10 +120,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
                 'tagmanager.google.com',
                 'fonts.googleapis.com'
             ],
-            frameAncestors: ['\'self\''],
-            formAction: [
-                '\'none\''
-            ],
+            frameAncestors: ['\'self\'']
         },
         browserSniff: false,
         setAllHeaders: false
