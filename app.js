@@ -123,7 +123,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
             frameAncestors: ['\'self\''],
             formAction: [
                 '\'self\'',
-                '\'/opt-out\''
+                '/opt-out'
             ],
         },
         browserSniff: false,
