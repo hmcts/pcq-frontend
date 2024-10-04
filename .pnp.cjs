@@ -55,7 +55,7 @@ const RAW_RUNTIME_STATE =
           ["esmify", "npm:2.1.1"],\
           ["express", "npm:4.21.0"],\
           ["express-session", "npm:1.18.0"],\
-          ["express-urlrewrite", "npm:2.0.2"],\
+          ["express-urlrewrite", "npm:2.0.3"],\
           ["fs-extra", "npm:11.2.0"],\
           ["git-rev-sync", "npm:3.0.2"],\
           ["globals", "npm:15.10.0"],\
@@ -11616,12 +11616,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["express-urlrewrite", [\
-      ["npm:2.0.2", {\
-        "packageLocation": "./.yarn/cache/express-urlrewrite-npm-2.0.2-cb3e53cc89-3c0851f6e6.zip/node_modules/express-urlrewrite/",\
+      ["npm:2.0.3", {\
+        "packageLocation": "./.yarn/cache/express-urlrewrite-npm-2.0.3-267712e7c9-23fdf23f21.zip/node_modules/express-urlrewrite/",\
         "packageDependencies": [\
-          ["express-urlrewrite", "npm:2.0.2"],\
+          ["express-urlrewrite", "npm:2.0.3"],\
           ["debug", "virtual:0ca7b771fbda7ed3d254c2e1e404506aa1480055c4a8b31a28affad41d2151a687d8a05486480858e0838a72b5e8d0e6f885471f47f57eb9072df7e81b13c034#npm:4.3.7"],\
-          ["path-to-regexp", "npm:6.2.2"]\
+          ["path-to-regexp", "npm:6.3.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -17692,10 +17692,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:6.2.2", {\
-        "packageLocation": "./.yarn/cache/path-to-regexp-npm-6.2.2-0bf7f6805c-f7d11c1a9e.zip/node_modules/path-to-regexp/",\
+      ["npm:6.3.0", {\
+        "packageLocation": "./.yarn/cache/path-to-regexp-npm-6.3.0-ee2cdde576-6822f686f0.zip/node_modules/path-to-regexp/",\
         "packageDependencies": [\
-          ["path-to-regexp", "npm:6.2.2"]\
+          ["path-to-regexp", "npm:6.3.0"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -18218,7 +18218,7 @@ const RAW_RUNTIME_STATE =
           ["esmify", "npm:2.1.1"],\
           ["express", "npm:4.21.0"],\
           ["express-session", "npm:1.18.0"],\
-          ["express-urlrewrite", "npm:2.0.2"],\
+          ["express-urlrewrite", "npm:2.0.3"],\
           ["fs-extra", "npm:11.2.0"],\
           ["git-rev-sync", "npm:3.0.2"],\
           ["globals", "npm:15.10.0"],\
