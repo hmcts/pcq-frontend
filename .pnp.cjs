@@ -53,7 +53,7 @@ const RAW_RUNTIME_STATE =
           ["debug", "virtual:0ca7b771fbda7ed3d254c2e1e404506aa1480055c4a8b31a28affad41d2151a687d8a05486480858e0838a72b5e8d0e6f885471f47f57eb9072df7e81b13c034#npm:4.3.7"],\
           ["eslint", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.12.0"],\
           ["esmify", "npm:2.1.1"],\
-          ["express", "npm:4.21.0"],\
+          ["express", "npm:4.21.1"],\
           ["express-session", "npm:1.18.0"],\
           ["express-urlrewrite", "npm:2.0.3"],\
           ["fs-extra", "npm:11.2.0"],\
@@ -11577,10 +11577,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["express", [\
-      ["npm:4.21.0", {\
-        "packageLocation": "./.yarn/cache/express-npm-4.21.0-377d90d8f4-3b1ee5bc5b.zip/node_modules/express/",\
+      ["npm:4.21.1", {\
+        "packageLocation": "./.yarn/cache/express-npm-4.21.1-f1cd48000b-5d4a36dd03.zip/node_modules/express/",\
         "packageDependencies": [\
-          ["express", "npm:4.21.0"],\
+          ["express", "npm:4.21.1"],\
           ["accepts", "npm:1.3.8"],\
           ["array-flatten", "npm:1.1.1"],\
           ["body-parser", "npm:1.20.3"],\
@@ -18234,7 +18234,7 @@ const RAW_RUNTIME_STATE =
           ["debug", "virtual:0ca7b771fbda7ed3d254c2e1e404506aa1480055c4a8b31a28affad41d2151a687d8a05486480858e0838a72b5e8d0e6f885471f47f57eb9072df7e81b13c034#npm:4.3.7"],\
           ["eslint", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.12.0"],\
           ["esmify", "npm:2.1.1"],\
-          ["express", "npm:4.21.0"],\
+          ["express", "npm:4.21.1"],\
           ["express-session", "npm:1.18.0"],\
           ["express-urlrewrite", "npm:2.0.3"],\
           ["fs-extra", "npm:11.2.0"],\
