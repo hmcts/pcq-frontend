@@ -11605,7 +11605,7 @@ const RAW_RUNTIME_STATE =
           ["qs", "npm:6.13.0"],\
           ["range-parser", "npm:1.2.1"],\
           ["safe-buffer", "npm:5.2.1"],\
-          ["send", "npm:0.19.0"],\
+          ["send", "npm:0.19.1"],\
           ["serve-static", "npm:1.16.2"],\
           ["setprototypeof", "npm:1.2.0"],\
           ["statuses", "npm:2.0.1"],\
@@ -19591,14 +19591,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["send", [\
-      ["npm:0.19.0", {\
-        "packageLocation": "./.yarn/cache/send-npm-0.19.0-4297594770-1f6064dea0.zip/node_modules/send/",\
+      ["npm:0.19.1", {\
+        "packageLocation": "./.yarn/cache/send-npm-0.19.1-1eb054913b-360bf50a83.zip/node_modules/send/",\
         "packageDependencies": [\
-          ["send", "npm:0.19.0"],\
+          ["send", "npm:0.19.1"],\
           ["debug", "virtual:c7b184cd14c02e3ce555ab1875e60cf5033c617e17d82c4c02ea822101d3c817f48bf25a766b4d4335742dc5c9c14c2e88a57ed955a56c4ad0613899f82f5618#npm:2.6.9"],\
           ["depd", "npm:2.0.0"],\
           ["destroy", "npm:1.2.0"],\
-          ["encodeurl", "npm:1.0.2"],\
+          ["encodeurl", "npm:2.0.0"],\
           ["escape-html", "npm:1.0.3"],\
           ["etag", "npm:1.8.1"],\
           ["fresh", "npm:0.5.2"],\
@@ -19677,7 +19677,7 @@ const RAW_RUNTIME_STATE =
           ["encodeurl", "npm:2.0.0"],\
           ["escape-html", "npm:1.0.3"],\
           ["parseurl", "npm:1.3.3"],\
-          ["send", "npm:0.19.0"]\
+          ["send", "npm:0.19.1"]\
         ],\
         "linkType": "HARD"\
       }]\
