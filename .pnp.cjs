@@ -58,7 +58,7 @@ const RAW_RUNTIME_STATE =
           ["express-urlrewrite", "npm:2.0.3"],\
           ["fs-extra", "npm:11.2.0"],\
           ["git-rev-sync", "npm:3.0.2"],\
-          ["globals", "npm:15.10.0"],\
+          ["globals", "npm:15.11.0"],\
           ["govuk-frontend", "npm:5.6.0"],\
           ["helmet", "npm:3.23.3"],\
           ["https-proxy-agent", "npm:5.0.1"],\
@@ -12711,10 +12711,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:15.10.0", {\
-        "packageLocation": "./.yarn/cache/globals-npm-15.10.0-1d91c6469c-d649208c62.zip/node_modules/globals/",\
+      ["npm:15.11.0", {\
+        "packageLocation": "./.yarn/cache/globals-npm-15.11.0-336de1c0c2-14009ef190.zip/node_modules/globals/",\
         "packageDependencies": [\
-          ["globals", "npm:15.10.0"]\
+          ["globals", "npm:15.11.0"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -18239,7 +18239,7 @@ const RAW_RUNTIME_STATE =
           ["express-urlrewrite", "npm:2.0.3"],\
           ["fs-extra", "npm:11.2.0"],\
           ["git-rev-sync", "npm:3.0.2"],\
-          ["globals", "npm:15.10.0"],\
+          ["globals", "npm:15.11.0"],\
           ["govuk-frontend", "npm:5.6.0"],\
           ["helmet", "npm:3.23.3"],\
           ["https-proxy-agent", "npm:5.0.1"],\
