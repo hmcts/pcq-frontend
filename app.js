@@ -145,26 +145,14 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         next();
     });
 
-    const features = [
-        'accelerometer', 'ambientLightSensor', 'autoplay', 'battery', 'camera', 'displayCapture',
-        'documentDomain', 'documentWrite', 'encryptedMedia', 'executionWhileNotRendered',
-        'executionWhileOutOfViewport', 'fontDisplayLateSwap', 'fullscreen', 'geolocation',
-        'gyroscope', 'layoutAnimations', 'legacyImageFormats', 'loadingFrameDefaultEager',
-        'magnetometer', 'microphone', 'midi', 'navigationOverride', 'notifications', 'oversizedImages',
-        'payment', 'pictureInPicture', 'publickeyCredentials', 'syncScript', 'syncXhr', 'unoptimizedImages',
-        'unoptimizedLosslessImages', 'unoptimizedLossyImages', 'unsizedMedia', 'usb', 'verticalScroll',
-        'vibrate', 'vr', 'wakeLock', 'xr'
-    ];
-    
-    const permissionsPolicyConfig = {
-        features: {}
-    };
-    
-    features.forEach(feature => {
-        permissionsPolicyConfig.features[feature] = [];
-    });
-    
-    app.use(permissionsPolicy(permissionsPolicyConfig));
+   app.use(permissionsPolicy({
+            features: {
+            camera: [], 
+            microphone: [], 
+            geolocation: []
+            },
+        })
+    );
 
     const staticOptions = {
         cacheControl: true,
