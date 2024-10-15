@@ -27,6 +27,7 @@ const uuid = uuidv4();
 const sanitizeRequestBody = require('app/middleware/sanitizeRequestBody');
 const isEmpty = require('lodash').isEmpty;
 const invoker = require('app/middleware/invoker');
+const permissionsPolicy = require("permissions-policy");
 
 exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     const app = express();
@@ -143,6 +144,27 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         res.removeHeader('Accept-Ranges');
         next();
     });
+
+    const features = [
+        'accelerometer', 'ambientLightSensor', 'autoplay', 'battery', 'camera', 'displayCapture',
+        'documentDomain', 'documentWrite', 'encryptedMedia', 'executionWhileNotRendered',
+        'executionWhileOutOfViewport', 'fontDisplayLateSwap', 'fullscreen', 'geolocation',
+        'gyroscope', 'layoutAnimations', 'legacyImageFormats', 'loadingFrameDefaultEager',
+        'magnetometer', 'microphone', 'midi', 'navigationOverride', 'notifications', 'oversizedImages',
+        'payment', 'pictureInPicture', 'publickeyCredentials', 'syncScript', 'syncXhr', 'unoptimizedImages',
+        'unoptimizedLosslessImages', 'unoptimizedLossyImages', 'unsizedMedia', 'usb', 'verticalScroll',
+        'vibrate', 'vr', 'wakeLock', 'xr'
+    ];
+    
+    const permissionsPolicyConfig = {
+        features: {}
+    };
+    
+    features.forEach(feature => {
+        permissionsPolicyConfig.features[feature] = [];
+    });
+    
+    app.use(permissionsPolicy(permissionsPolicyConfig));
 
     const staticOptions = {
         cacheControl: true,
