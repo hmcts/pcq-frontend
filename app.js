@@ -27,7 +27,7 @@ const uuid = uuidv4();
 const sanitizeRequestBody = require('app/middleware/sanitizeRequestBody');
 const isEmpty = require('lodash').isEmpty;
 const invoker = require('app/middleware/invoker');
-const permissionsPolicy = require("permissions-policy");
+const permissionsPolicy = require('permissions-policy');
 
 exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     const app = express();
