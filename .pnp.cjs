@@ -93,7 +93,7 @@ const RAW_RUNTIME_STATE =
           ["supertest", "npm:7.0.0"],\
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.10"],\
-          ["tslib", "npm:2.7.0"],\
+          ["tslib", "npm:2.8.0"],\
           ["undici", "npm:6.19.8"],\
           ["uuid", "npm:10.0.0"],\
           ["watch", "npm:1.0.2"],\
@@ -148,7 +148,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@azure-abort-controller-npm-1.1.0-5b4e309629-1efe8735cf.zip/node_modules/@azure/abort-controller/",\
         "packageDependencies": [\
           ["@azure/abort-controller", "npm:1.1.0"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -156,7 +156,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@azure-abort-controller-npm-2.1.2-a36d73ebb9-484e34a812.zip/node_modules/@azure/abort-controller/",\
         "packageDependencies": [\
           ["@azure/abort-controller", "npm:2.1.2"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -167,7 +167,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@azure/core-auth", "npm:1.4.0"],\
           ["@azure/abort-controller", "npm:1.1.0"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -177,7 +177,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/core-auth", "npm:1.5.0"],\
           ["@azure/abort-controller", "npm:1.1.0"],\
           ["@azure/core-util", "npm:1.6.1"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -193,7 +193,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/core-tracing", "npm:1.0.1"],\
           ["@azure/core-util", "npm:1.2.0"],\
           ["@azure/logger", "npm:1.0.3"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -207,7 +207,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/core-tracing", "npm:1.0.1"],\
           ["@azure/core-util", "npm:1.9.1"],\
           ["@azure/logger", "npm:1.0.3"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -232,7 +232,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/abort-controller", "npm:1.1.0"],\
           ["@azure/core-util", "npm:1.3.2"],\
           ["@azure/logger", "npm:1.0.3"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -242,7 +242,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@azure-core-paging-npm-1.5.0-63e6dd76d4-b02bbd7b3b.zip/node_modules/@azure/core-paging/",\
         "packageDependencies": [\
           ["@azure/core-paging", "npm:1.5.0"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -260,7 +260,7 @@ const RAW_RUNTIME_STATE =
           ["form-data", "npm:4.0.0"],\
           ["http-proxy-agent", "npm:5.0.0"],\
           ["https-proxy-agent", "npm:5.0.1"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -275,7 +275,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/logger", "npm:1.0.3"],\
           ["http-proxy-agent", "npm:7.0.0"],\
           ["https-proxy-agent", "npm:7.0.1"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -285,7 +285,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@azure-core-tracing-npm-1.0.1-6bbb5dfe25-13305f936d.zip/node_modules/@azure/core-tracing/",\
         "packageDependencies": [\
           ["@azure/core-tracing", "npm:1.0.1"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -296,7 +296,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@azure/core-util", "npm:1.2.0"],\
           ["@azure/abort-controller", "npm:1.1.0"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -305,7 +305,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@azure/core-util", "npm:1.3.2"],\
           ["@azure/abort-controller", "npm:1.1.0"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -314,7 +314,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@azure/core-util", "npm:1.6.1"],\
           ["@azure/abort-controller", "npm:1.1.0"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -323,7 +323,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@azure/core-util", "npm:1.9.1"],\
           ["@azure/abort-controller", "npm:2.1.2"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -332,7 +332,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@azure/core-util", "npm:1.9.2"],\
           ["@azure/abort-controller", "npm:2.1.2"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -377,7 +377,7 @@ const RAW_RUNTIME_STATE =
           ["jws", "npm:4.0.0"],\
           ["open", "npm:8.4.2"],\
           ["stoppable", "npm:1.1.0"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -397,7 +397,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/core-tracing", "npm:1.0.1"],\
           ["@azure/core-util", "npm:1.2.0"],\
           ["@azure/logger", "npm:1.0.3"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -407,7 +407,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@azure-logger-npm-1.0.3-0ce7dd5b3a-35115b374a.zip/node_modules/@azure/logger/",\
         "packageDependencies": [\
           ["@azure/logger", "npm:1.0.3"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -445,7 +445,7 @@ const RAW_RUNTIME_STATE =
           ["@opentelemetry/sdk-trace-node", "virtual:125651b5c9305e2b91f5bbf2eef7d44cd699ad35851706c9bd27aace2a31321b09b8667f9a9d406c227ecac88c77294149d21d1650c1d70c5cbef1966b96c0d0#npm:1.26.0"],\
           ["@opentelemetry/semantic-conventions", "npm:1.27.0"],\
           ["@opentelemetry/winston-transport", "npm:0.6.0"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -466,7 +466,7 @@ const RAW_RUNTIME_STATE =
           ["@opentelemetry/sdk-metrics", "virtual:ea84a75694f780d1ffad24861d21f66d2cb789d1a3b2411495bc86b4ecd2c2feb74c256f9ae0d9d71185433d23eff1801a358d810a8f64e6b220e256d68c04a8#npm:1.26.0"],\
           ["@opentelemetry/sdk-trace-base", "virtual:ea84a75694f780d1ffad24861d21f66d2cb789d1a3b2411495bc86b4ecd2c2feb74c256f9ae0d9d71185433d23eff1801a358d810a8f64e6b220e256d68c04a8#npm:1.26.0"],\
           ["@opentelemetry/semantic-conventions", "npm:1.27.0"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -512,7 +512,7 @@ const RAW_RUNTIME_STATE =
           ["@opentelemetry/api", "npm:1.4.1"],\
           ["@opentelemetry/core", "virtual:1dd4d8bebf496333420f554162cb425b1049ae4ffca452c6e271586e19d5735fa9d18d8cc868fbc93d522aac322641bf9b128ea8b19b63c447aa9c92921151d3#npm:1.18.1"],\
           ["@opentelemetry/instrumentation", "virtual:1dd4d8bebf496333420f554162cb425b1049ae4ffca452c6e271586e19d5735fa9d18d8cc868fbc93d522aac322641bf9b128ea8b19b63c447aa9c92921151d3#npm:0.41.2"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7331,7 +7331,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/angular-html-parser-npm-6.0.2-c6e2d72b3f-7ecfe37f4b.zip/node_modules/angular-html-parser/",\
         "packageDependencies": [\
           ["angular-html-parser", "npm:6.0.2"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7737,7 +7737,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/ast-types-npm-0.13.4-69f7e68df8-c55b375b9a.zip/node_modules/ast-types/",\
         "packageDependencies": [\
           ["ast-types", "npm:0.13.4"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -7745,7 +7745,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/ast-types-npm-0.15.2-a09d26e72b-81680bd582.zip/node_modules/ast-types/",\
         "packageDependencies": [\
           ["ast-types", "npm:0.15.2"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8656,7 +8656,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["camel-case", "npm:4.1.2"],\
           ["pascal-case", "npm:3.1.2"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -10673,7 +10673,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["dot-case", "npm:3.0.4"],\
           ["no-case", "npm:3.0.4"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -14263,7 +14263,7 @@ const RAW_RUNTIME_STATE =
           ["lodash.merge", "npm:4.6.2"],\
           ["node-ipc", "npm:9.2.1"],\
           ["strip-ansi", "npm:6.0.1"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "packagePeers": [\
           "@jest/environment",\
@@ -15391,7 +15391,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/lower-case-npm-2.0.2-151055f1c2-83a0a5f159.zip/node_modules/lower-case/",\
         "packageDependencies": [\
           ["lower-case", "npm:2.0.2"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -16617,7 +16617,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["no-case", "npm:3.0.4"],\
           ["lower-case", "npm:2.0.2"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -17536,7 +17536,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["param-case", "npm:3.0.4"],\
           ["dot-case", "npm:3.0.4"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -17627,7 +17627,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["pascal-case", "npm:3.1.2"],\
           ["no-case", "npm:3.0.4"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -18274,7 +18274,7 @@ const RAW_RUNTIME_STATE =
           ["supertest", "npm:7.0.0"],\
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.10"],\
-          ["tslib", "npm:2.7.0"],\
+          ["tslib", "npm:2.8.0"],\
           ["undici", "npm:6.19.8"],\
           ["uuid", "npm:10.0.0"],\
           ["watch", "npm:1.0.2"],\
@@ -18890,7 +18890,7 @@ const RAW_RUNTIME_STATE =
           ["ast-types", "npm:0.15.2"],\
           ["esprima", "npm:4.0.1"],\
           ["source-map", "npm:0.6.1"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -19369,7 +19369,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/rxjs-npm-7.8.1-41c443a75b-b10cac1a52.zip/node_modules/rxjs/",\
         "packageDependencies": [\
           ["rxjs", "npm:7.8.1"],\
-          ["tslib", "npm:2.7.0"]\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -21118,6 +21118,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/tslib-npm-2.7.0-21668f5c21-9a5b47ddac.zip/node_modules/tslib/",\
         "packageDependencies": [\
           ["tslib", "npm:2.7.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:2.8.0", {\
+        "packageLocation": "./.yarn/cache/tslib-npm-2.8.0-6ce3ffdd05-1bc7c43937.zip/node_modules/tslib/",\
+        "packageDependencies": [\
+          ["tslib", "npm:2.8.0"]\
         ],\
         "linkType": "HARD"\
       }]\
