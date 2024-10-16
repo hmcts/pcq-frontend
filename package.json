@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.193",
+  "version": "1.2.194",
   "license": "MIT",
   "engines": {
     "node": ">=14.18.1"
@@ -85,7 +85,7 @@
     "test": "link:./test",
     "traverse": "^0.6.6",
     "uuid": "^10.0.0",
-    "webpack": "^5.88.1",
+    "webpack": "^5.95.0",
     "webpack-cli": "^5.1.1"
   },
   "devDependencies": {
