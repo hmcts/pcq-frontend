@@ -62,7 +62,7 @@ const RAW_RUNTIME_STATE =
           ["govuk-frontend", "npm:5.7.1"],\
           ["helmet", "npm:3.23.3"],\
           ["https-proxy-agent", "npm:5.0.1"],\
-          ["i18next", "npm:23.15.2"],\
+          ["i18next", "npm:23.16.0"],\
           ["ioredis", "npm:5.4.1"],\
           ["js-yaml", "npm:4.1.0"],\
           ["jsonwebtoken", "npm:9.0.2"],\
@@ -13350,10 +13350,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["i18next", [\
-      ["npm:23.15.2", {\
-        "packageLocation": "./.yarn/cache/i18next-npm-23.15.2-e70a80c8a9-ed14a290ba.zip/node_modules/i18next/",\
+      ["npm:23.16.0", {\
+        "packageLocation": "./.yarn/cache/i18next-npm-23.16.0-4613074e25-5efe08a5fc.zip/node_modules/i18next/",\
         "packageDependencies": [\
-          ["i18next", "npm:23.15.2"],\
+          ["i18next", "npm:23.16.0"],\
           ["@babel/runtime", "npm:7.23.2"]\
         ],\
         "linkType": "HARD"\
@@ -18243,7 +18243,7 @@ const RAW_RUNTIME_STATE =
           ["govuk-frontend", "npm:5.7.1"],\
           ["helmet", "npm:3.23.3"],\
           ["https-proxy-agent", "npm:5.0.1"],\
-          ["i18next", "npm:23.15.2"],\
+          ["i18next", "npm:23.16.0"],\
           ["ioredis", "npm:5.4.1"],\
           ["js-yaml", "npm:4.1.0"],\
           ["jsonwebtoken", "npm:9.0.2"],\
