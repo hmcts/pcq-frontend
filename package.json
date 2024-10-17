@@ -129,7 +129,8 @@
     "json5": "2.2.3",
     "send": "0.19.1",
     "cookie": "1.0.1",
-    "merge": "2.1.1"
+    "merge": "2.1.1",
+    "ws": "8.18.0"
   },
   "nyc": {
     "report-dir": "functional-output/coverage",
