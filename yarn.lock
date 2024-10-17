@@ -12800,10 +12800,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"merge@npm:^1.2.0":
-  version: 1.2.1
-  resolution: "merge@npm:1.2.1"
-  checksum: 10/2298c4fdcf64561f320b92338681f7ffcafafb579a6e294066ae3e7bd10ae25df363903d2f028072733b9f79a1f75d2b999aef98ad5d73de13641da39cda0913
+"merge@npm:2.1.1":
+  version: 2.1.1
+  resolution: "merge@npm:2.1.1"
+  checksum: 10/1875521a8e429ba8d82c6d24bf3f229b4b64a348873c41a1245851b422c0caa7fbeb958118c24fbfcbb71e416a29924b3b1c4518911529db175f49eb5bcb5e62
   languageName: node
   linkType: hard
 

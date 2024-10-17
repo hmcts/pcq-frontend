@@ -128,7 +128,8 @@
     "formidable": "^3.2.4",
     "json5": "2.2.3",
     "send": "0.19.1",
-    "cookie": "1.0.1"
+    "cookie": "1.0.1",
+    "merge": "2.1.1"
   },
   "nyc": {
     "report-dir": "functional-output/coverage",
