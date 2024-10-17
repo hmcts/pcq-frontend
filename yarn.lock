@@ -14728,6 +14728,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"permissions-policy@npm:^0.6.0":
+  version: 0.6.0
+  resolution: "permissions-policy@npm:0.6.0"
+  checksum: 10/0ce02b7edf2d0586224730a4e334532ba903468ab3526525c48a6c8b44d2e5d9941d26fdafdf9cd10dba2849accef87d1ae9b795dc0ef3cf26ef1c6b7ac69fa7
+  languageName: node
+  linkType: hard
+
 "pg-int8@npm:1.0.1":
   version: 1.0.1
   resolution: "pg-int8@npm:1.0.1"
@@ -15179,6 +15186,7 @@ __metadata:
     nunjucks: "npm:^3.2.4"
     nyc: "npm:^17.0.0"
     pa11y: "npm:^8.0.0"
+    permissions-policy: "npm:^0.6.0"
     playwright: "npm:^1.43.1"
     pre-commit: "npm:^1.2.2"
     proxyquire: "npm:^2.1.3"

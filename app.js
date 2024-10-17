@@ -27,6 +27,7 @@ const uuid = uuidv4();
 const sanitizeRequestBody = require('app/middleware/sanitizeRequestBody');
 const isEmpty = require('lodash').isEmpty;
 const invoker = require('app/middleware/invoker');
+const permissionsPolicy = require('permissions-policy');
 
 exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     const app = express();
@@ -143,6 +144,15 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         res.removeHeader('Accept-Ranges');
         next();
     });
+
+   app.use(permissionsPolicy({
+            features: {
+            camera: [], 
+            microphone: [], 
+            geolocation: []
+            },
+        })
+    );
 
     const staticOptions = {
         cacheControl: true,
