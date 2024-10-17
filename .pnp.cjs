@@ -11596,7 +11596,7 @@ const RAW_RUNTIME_STATE =
           ["qs", "npm:6.13.0"],\
           ["range-parser", "npm:1.2.1"],\
           ["safe-buffer", "npm:5.2.1"],\
-          ["send", "npm:0.19.1"],\
+          ["send", "npm:1.1.0"],\
           ["serve-static", "npm:1.16.2"],\
           ["setprototypeof", "npm:1.2.0"],\
           ["statuses", "npm:2.0.1"],\
@@ -15922,13 +15922,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["mime", [\
-      ["npm:1.6.0", {\
-        "packageLocation": "./.yarn/cache/mime-npm-1.6.0-60ae95038a-b7d98bb1e0.zip/node_modules/mime/",\
-        "packageDependencies": [\
-          ["mime", "npm:1.6.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:2.6.0", {\
         "packageLocation": "./.yarn/cache/mime-npm-2.6.0-88b89d8de0-7da117808b.zip/node_modules/mime/",\
         "packageDependencies": [\
@@ -19582,19 +19575,18 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["send", [\
-      ["npm:0.19.1", {\
-        "packageLocation": "./.yarn/cache/send-npm-0.19.1-1eb054913b-360bf50a83.zip/node_modules/send/",\
+      ["npm:1.1.0", {\
+        "packageLocation": "./.yarn/cache/send-npm-1.1.0-53a3619b38-5040d4d1e5.zip/node_modules/send/",\
         "packageDependencies": [\
-          ["send", "npm:0.19.1"],\
-          ["debug", "virtual:c7b184cd14c02e3ce555ab1875e60cf5033c617e17d82c4c02ea822101d3c817f48bf25a766b4d4335742dc5c9c14c2e88a57ed955a56c4ad0613899f82f5618#npm:2.6.9"],\
-          ["depd", "npm:2.0.0"],\
+          ["send", "npm:1.1.0"],\
+          ["debug", "virtual:0ca7b771fbda7ed3d254c2e1e404506aa1480055c4a8b31a28affad41d2151a687d8a05486480858e0838a72b5e8d0e6f885471f47f57eb9072df7e81b13c034#npm:4.3.7"],\
           ["destroy", "npm:1.2.0"],\
           ["encodeurl", "npm:2.0.0"],\
           ["escape-html", "npm:1.0.3"],\
           ["etag", "npm:1.8.1"],\
           ["fresh", "npm:0.5.2"],\
           ["http-errors", "npm:2.0.0"],\
-          ["mime", "npm:1.6.0"],\
+          ["mime-types", "npm:2.1.35"],\
           ["ms", "npm:2.1.3"],\
           ["on-finished", "npm:2.4.1"],\
           ["range-parser", "npm:1.2.1"],\
@@ -19668,7 +19660,7 @@ const RAW_RUNTIME_STATE =
           ["encodeurl", "npm:2.0.0"],\
           ["escape-html", "npm:1.0.3"],\
           ["parseurl", "npm:1.3.3"],\
-          ["send", "npm:0.19.1"]\
+          ["send", "npm:1.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
