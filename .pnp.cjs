@@ -79,6 +79,7 @@ const RAW_RUNTIME_STATE =
           ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
           ["nyc", "npm:17.1.0"],\
           ["pa11y", "npm:8.0.0"],\
+          ["permissions-policy", "npm:0.6.0"],\
           ["playwright", "npm:1.48.1"],\
           ["pre-commit", "npm:1.2.2"],\
           ["proxyquire", "npm:2.1.3"],\
@@ -17741,6 +17742,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["permissions-policy", [\
+      ["npm:0.6.0", {\
+        "packageLocation": "./.yarn/cache/permissions-policy-npm-0.6.0-9292de154b-0ce02b7edf.zip/node_modules/permissions-policy/",\
+        "packageDependencies": [\
+          ["permissions-policy", "npm:0.6.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["pg-int8", [\
       ["npm:1.0.1", {\
         "packageLocation": "./.yarn/cache/pg-int8-npm-1.0.1-5cd67f3e22-a1e3a05a69.zip/node_modules/pg-int8/",\
@@ -18251,6 +18261,7 @@ const RAW_RUNTIME_STATE =
           ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
           ["nyc", "npm:17.1.0"],\
           ["pa11y", "npm:8.0.0"],\
+          ["permissions-policy", "npm:0.6.0"],\
           ["playwright", "npm:1.48.1"],\
           ["pre-commit", "npm:1.2.2"],\
           ["proxyquire", "npm:2.1.3"],\
