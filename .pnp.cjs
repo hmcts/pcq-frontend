@@ -11507,7 +11507,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/exec-sh-npm-0.2.2-b2b857ac69-f0e2bdc9fd.zip/node_modules/exec-sh/",\
         "packageDependencies": [\
           ["exec-sh", "npm:0.2.2"],\
-          ["merge", "npm:1.2.1"]\
+          ["merge", "npm:2.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -15620,10 +15620,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["merge", [\
-      ["npm:1.2.1", {\
-        "packageLocation": "./.yarn/cache/merge-npm-1.2.1-852b934216-2298c4fdcf.zip/node_modules/merge/",\
+      ["npm:2.1.1", {\
+        "packageLocation": "./.yarn/cache/merge-npm-2.1.1-90e7307c49-1875521a8e.zip/node_modules/merge/",\
         "packageDependencies": [\
-          ["merge", "npm:1.2.1"]\
+          ["merge", "npm:2.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
