@@ -18,7 +18,7 @@ const config = require('config');
 const utils = require(`${__dirname}/app/components/utils`);
 const packageJson = require(`${__dirname}/package`);
 const helmet = require('helmet');
-const csrf = require('csurf');
+const {csrfSync, csrfSyncOptions} = require('csrf-sync');
 const healthcheck = require(`${__dirname}/app/healthcheck`);
 const fs = require('fs');
 const https = require('https');
@@ -224,23 +224,32 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         next();
     });
 
-    if (config.app.useCSRFProtection === 'true') {
-        app.use((req, res, next) => {
-            // Exclude Dynatrace Beacon POST requests from CSRF check
-            if (req.method === 'POST' && req.path.startsWith('/rb_')) {
-                next();
-            } else {
-                csrf({})(req, res, next);
-            }
-        });
+    const csrfOptions = csrfSync({
+        getTokenFromRequest: (req) => {
+          return req.body._csrf;
+        }, // Used to retrieve the token submitted by the user in a form
+      });
 
-        app.use((req, res, next) => {
-            if (req.csrfToken) {
-                res.locals.csrfToken = req.csrfToken();
-            }
-            next();
-        });
-    }
+    const {
+        csrfSynchronisedProtection,
+        generateToken,
+    } = csrfSync(csrfOptions);
+
+    app.use(csrfSynchronisedProtection);
+
+    app.get('/csrf-token', (req, res) => {
+        const csrfToken = generateToken(req);
+        res.json({ csrfToken });
+    });
+
+    app.use((req, res, next) => {
+        const csrfToken = generateToken(req);
+        res.locals.csrfToken = csrfToken;
+        next();
+    });
+  
+    
+
 
     // Add variables that are available in all views
     app.use(function (req, res, next) {
