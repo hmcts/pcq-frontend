@@ -245,7 +245,16 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         generateToken,
     } = csrfSync(csrfOptions);
 
-    app.use(csrfSynchronisedProtection);
+    if (config.app.useCSRFProtection === 'true') {
+        app.use((req, res, next) => {
+            // Exclude Dynatrace Beacon POST requests from CSRF check
+            if (req.method === 'POST' && req.path.startsWith('/rb_')) {
+                next();
+            } else {
+                csrfSynchronisedProtection(req, res, next);
+            }
+        });
+    }
 
     app.get('/csrf-token', (req, res) => {
         const csrfToken = generateToken(req);
