@@ -65,6 +65,7 @@ const RAW_RUNTIME_STATE =
           ["helmet", "npm:3.23.3"],\
           ["https-proxy-agent", "npm:5.0.1"],\
           ["i18next", "npm:23.16.2"],\
+          ["immutable", "npm:4.3.7"],\
           ["ioredis", "npm:5.4.1"],\
           ["js-yaml", "npm:4.1.0"],\
           ["jsonwebtoken", "npm:9.0.2"],\
@@ -18044,6 +18045,7 @@ const RAW_RUNTIME_STATE =
           ["helmet", "npm:3.23.3"],\
           ["https-proxy-agent", "npm:5.0.1"],\
           ["i18next", "npm:23.16.2"],\
+          ["immutable", "npm:4.3.7"],\
           ["ioredis", "npm:5.4.1"],\
           ["js-yaml", "npm:4.1.0"],\
           ["jsonwebtoken", "npm:9.0.2"],\
