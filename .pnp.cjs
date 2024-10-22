@@ -42,6 +42,7 @@ const RAW_RUNTIME_STATE =
           ["applicationinsights", "npm:3.3.0"],\
           ["body-parser", "npm:1.20.3"],\
           ["chai", "npm:4.5.0"],\
+          ["chokidar", "npm:4.0.1"],\
           ["co", "npm:4.6.0"],\
           ["codeceptjs", "npm:3.6.7"],\
           ["codecov", "npm:4.0.0-0"],\
@@ -16815,7 +16816,7 @@ const RAW_RUNTIME_STATE =
           ["@types/chokidar", null],\
           ["a-sync-waterfall", "npm:1.0.1"],\
           ["asap", "npm:2.0.6"],\
-          ["chokidar", null],\
+          ["chokidar", "npm:4.0.1"],\
           ["commander", "npm:5.1.0"]\
         ],\
         "packagePeers": [\
@@ -18019,6 +18020,7 @@ const RAW_RUNTIME_STATE =
           ["applicationinsights", "npm:3.3.0"],\
           ["body-parser", "npm:1.20.3"],\
           ["chai", "npm:4.5.0"],\
+          ["chokidar", "npm:4.0.1"],\
           ["co", "npm:4.6.0"],\
           ["codeceptjs", "npm:3.6.7"],\
           ["codecov", "npm:4.0.0-0"],\

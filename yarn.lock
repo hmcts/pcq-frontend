@@ -6852,7 +6852,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:^4.0.0":
+"chokidar@npm:^4.0.0, chokidar@npm:^4.0.1":
   version: 4.0.1
   resolution: "chokidar@npm:4.0.1"
   dependencies:
@@ -14958,6 +14958,7 @@ __metadata:
     applicationinsights: "npm:^3.2.1"
     body-parser: "npm:^1.20.3"
     chai: "npm:^4.2.0"
+    chokidar: "npm:^4.0.1"
     co: "npm:^4.6.0"
     codeceptjs: "npm:^3.6.6"
     codecov: "npm:^4.0.0-0"
