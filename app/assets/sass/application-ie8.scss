@@ -1,45 +1,45 @@
 $path: "/public/images/";
 
 // Import GOV.UK Frontend
-@import "public/govuk/all";
-@import "public/govuk/settings/all";
-@import "public/govuk/core/all";
-@import "public/govuk/objects/all";
-@import "public/govuk/components/back-link/back-link";
-@import "public/govuk/components/button/button";
-@import "public/govuk/components/checkboxes/checkboxes";
-@import "public/govuk/components/date-input/date-input";
-@import "public/govuk/components/details/details";
-@import "public/govuk/components/error-message/error-message";
-@import "public/govuk/components/error-summary/error-summary";
-@import "public/govuk/components/fieldset/fieldset";
-@import "public/govuk/components/footer/footer";
-@import "public/govuk/components/header/header";
-@import "public/govuk/components/hint/hint";
-@import "public/govuk/components/input/input";
-@import "public/govuk/components/inset-text/inset-text";
-@import "public/govuk/components/panel/panel";
-@import "public/govuk/components/phase-banner/phase-banner";
-@import "public/govuk/components/radios/radios";
-@import "public/govuk/components/select/select";
-@import "public/govuk/components/skip-link/skip-link";
-@import "public/govuk/components/summary-list/summary-list";
-@import "public/govuk/components/table/table";
-@import "public/govuk/components/tag/tag";
-@import "public/govuk/components/textarea/textarea";
-@import "public/govuk/components/warning-text/warning-text";
-@import "public/govuk/utilities/all";
-@import "public/govuk/overrides/all";
+@use "public/govuk/all";
+@use "public/govuk/settings/all";
+@use "public/govuk/core/all";
+@use "public/govuk/objects/all";
+@use "public/govuk/components/back-link/back-link";
+@use "public/govuk/components/button/button";
+@use "public/govuk/components/checkboxes/checkboxes";
+@use "public/govuk/components/date-input/date-input";
+@use "public/govuk/components/details/details";
+@use "public/govuk/components/error-message/error-message";
+@use "public/govuk/components/error-summary/error-summary";
+@use "public/govuk/components/fieldset/fieldset";
+@use "public/govuk/components/footer/footer";
+@use "public/govuk/components/header/header";
+@use "public/govuk/components/hint/hint";
+@use "public/govuk/components/input/input";
+@use "public/govuk/components/inset-text/inset-text";
+@use "public/govuk/components/panel/panel";
+@use "public/govuk/components/phase-banner/phase-banner";
+@use "public/govuk/components/radios/radios";
+@use "public/govuk/components/select/select";
+@use "public/govuk/components/skip-link/skip-link";
+@use "public/govuk/components/summary-list/summary-list";
+@use "public/govuk/components/table/table";
+@use "public/govuk/components/tag/tag";
+@use "public/govuk/components/textarea/textarea";
+@use "public/govuk/components/warning-text/warning-text";
+@use "public/govuk/utilities/all";
+@use "public/govuk/overrides/all";
 
-@import "patterns/cookie-bar";
-@import "patterns/phase-banner";
-@import "patterns/header";
-@import "patterns/panel";
+@use "patterns/cookie-bar";
+@use "patterns/phase-banner";
+@use "patterns/header";
+@use "patterns/panel";
 
-@import "patterns/task-list";
-@import "patterns/check-your-answers";
+@use "patterns/task-list";
+@use "patterns/check-your-answers";
 
-@import "application-common.scss";
+@use "application-common.scss";
 
 .multiple-choice input {
   filter: none;
