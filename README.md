@@ -114,6 +114,8 @@ Add `content["list2-<service-name>"]` to the 2 unordered lists.
 If there are questions you want to be excluded from the questionnaire because they are irrelevant (such as asking someone if they are married when coming from the divorce app), 
 please see the [Journey README](app/journeys/README.md) for creating a service specific journey.
 
+Add the production service returnURL domain to whitelist in [string-utils.js] (app/components)
+
 ### Token key 
 
 A new token key will need to be added in order to generate the token that authenticates the invoking service with PCQ.
@@ -148,6 +150,7 @@ The following change need to made so that test will pass.
 3. Add the new service rediret link property name in (test/component/testShutterPage.js)
 4. Add the new service data in (test/unit/core/testServiceData.json)
 5. Add the new service invoker data in (test/unit/services/testServiceInvokerData.json)
+
 
 
 ## License
