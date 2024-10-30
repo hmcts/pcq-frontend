@@ -71,7 +71,7 @@ const RAW_RUNTIME_STATE =
           ["jsonwebtoken", "npm:9.0.2"],\
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
           ["lodash", "npm:4.17.21"],\
-          ["mocha", "npm:10.7.3"],\
+          ["mocha", "npm:10.8.1"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
           ["moment", "npm:2.30.1"],\
           ["nock", "npm:13.5.5"],\
@@ -7364,7 +7364,7 @@ const RAW_RUNTIME_STATE =
           ["@stryker-mutator/util", "npm:8.6.0"],\
           ["@types/mocha", null],\
           ["@types/stryker-mutator__core", null],\
-          ["mocha", "npm:10.7.3"],\
+          ["mocha", "npm:10.8.1"],\
           ["tslib", "npm:2.7.0"]\
         ],\
         "packagePeers": [\
@@ -17732,6 +17732,33 @@ const RAW_RUNTIME_STATE =
           ["yargs-unparser", "npm:2.0.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:10.8.1", {\
+        "packageLocation": "./.yarn/cache/mocha-npm-10.8.1-379396c939-e1b93c98fb.zip/node_modules/mocha/",\
+        "packageDependencies": [\
+          ["mocha", "npm:10.8.1"],\
+          ["ansi-colors", "npm:4.1.3"],\
+          ["browser-stdout", "npm:1.3.1"],\
+          ["chokidar", "npm:3.6.0"],\
+          ["debug", "virtual:245750f15c7a67617f34421f66e3ed44fd56cf1525bfb8ff08c5fe937c01fb60677e769626c4a3d77742f81c7255c3af4da81de7d2bb3d349242cd92efc96986#npm:4.3.7"],\
+          ["diff", "npm:5.2.0"],\
+          ["escape-string-regexp", "npm:4.0.0"],\
+          ["find-up", "npm:5.0.0"],\
+          ["glob", "npm:8.1.0"],\
+          ["he", "npm:1.2.0"],\
+          ["js-yaml", "npm:4.1.0"],\
+          ["log-symbols", "npm:4.1.0"],\
+          ["minimatch", "npm:5.1.6"],\
+          ["ms", "npm:2.1.3"],\
+          ["serialize-javascript", "npm:6.0.2"],\
+          ["strip-json-comments", "npm:3.1.1"],\
+          ["supports-color", "npm:8.1.1"],\
+          ["workerpool", "npm:6.5.1"],\
+          ["yargs", "npm:16.2.0"],\
+          ["yargs-parser", "npm:20.2.9"],\
+          ["yargs-unparser", "npm:2.0.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["mochawesome", [\
@@ -17754,7 +17781,7 @@ const RAW_RUNTIME_STATE =
           ["lodash.isfunction", "npm:3.0.9"],\
           ["lodash.isobject", "npm:3.0.2"],\
           ["lodash.isstring", "npm:4.0.1"],\
-          ["mocha", "npm:10.7.3"],\
+          ["mocha", "npm:10.8.1"],\
           ["mochawesome-report-generator", "npm:6.2.0"],\
           ["strip-ansi", "npm:6.0.1"],\
           ["uuid", "npm:8.3.2"]\
@@ -19660,7 +19687,7 @@ const RAW_RUNTIME_STATE =
           ["jsonwebtoken", "npm:9.0.2"],\
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
           ["lodash", "npm:4.17.21"],\
-          ["mocha", "npm:10.7.3"],\
+          ["mocha", "npm:10.8.1"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
           ["moment", "npm:2.30.1"],\
           ["nock", "npm:13.5.5"],\
