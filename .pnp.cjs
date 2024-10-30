@@ -104,7 +104,7 @@ const RAW_RUNTIME_STATE =
           ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.40.6"],\
           ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.95.0"],\
           ["webpack-cli", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.1.4"],\
-          ["yarn-audit-fix", "npm:10.0.9"]\
+          ["yarn-audit-fix", "npm:10.1.0"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -19720,7 +19720,7 @@ const RAW_RUNTIME_STATE =
           ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.40.6"],\
           ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.95.0"],\
           ["webpack-cli", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.1.4"],\
-          ["yarn-audit-fix", "npm:10.0.9"]\
+          ["yarn-audit-fix", "npm:10.1.0"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -23800,10 +23800,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["yarn-audit-fix", [\
-      ["npm:10.0.9", {\
-        "packageLocation": "./.yarn/cache/yarn-audit-fix-npm-10.0.9-2279d8b6fe-57942d2aee.zip/node_modules/yarn-audit-fix/",\
+      ["npm:10.1.0", {\
+        "packageLocation": "./.yarn/cache/yarn-audit-fix-npm-10.1.0-fa286a366d-d09105ec10.zip/node_modules/yarn-audit-fix/",\
         "packageDependencies": [\
-          ["yarn-audit-fix", "npm:10.0.9"],\
+          ["yarn-audit-fix", "npm:10.1.0"],\
           ["@types/fs-extra", "npm:11.0.4"],\
           ["@types/lodash-es", "npm:4.17.12"],\
           ["@types/semver", "npm:7.5.8"],\

@@ -19738,8 +19738,8 @@ __metadata:
   linkType: hard
 
 "yarn-audit-fix@npm:^10.0.3":
-  version: 10.0.9
-  resolution: "yarn-audit-fix@npm:10.0.9"
+  version: 10.1.0
+  resolution: "yarn-audit-fix@npm:10.1.0"
   dependencies:
     "@types/fs-extra": "npm:^11.0.4"
     "@types/lodash-es": "npm:^4.17.12"
@@ -19747,7 +19747,7 @@ __metadata:
     "@types/yarnpkg__lockfile": "npm:^1.1.9"
     "@yarnpkg/lockfile": "npm:^1.1.0"
     chalk: "npm:^5.3.0"
-    commander: "npm:^12.0.0"
+    commander: "npm:^12.1.0"
     fast-glob: "npm:^3.3.2"
     fs-extra: "npm:^11.2.0"
     js-yaml: "npm:^4.1.0"
@@ -19756,7 +19756,7 @@ __metadata:
     synp: "npm:^1.9.13"
   bin:
     yarn-audit-fix: target/esm/cli.mjs
-  checksum: 10/57942d2aee89038353044f9d5f2547d98f8c73118d85bc70adfe5908fb4f964496cb3b4e1e95e46c31109594ec295ae0d7591171f65c0dd8cde56223570a96b5
+  checksum: 10/d09105ec10445e8a527c37ef2f737bf82a3c328669cab90c87a7f8277dcc8657e57a152d1627d49ec3c7fab1dc34b770cff8835aa36dc4b7df5267e6ada85dbb
   languageName: node
   linkType: hard
 
