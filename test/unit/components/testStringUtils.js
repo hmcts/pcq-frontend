@@ -205,6 +205,12 @@ describe('prefixHttps', () => {
         expect(result).to.equal('https://www.appeal-immigration-asylum-decision.service.gov.uk/about-appeal');
     });
 
+    it('should add prefix to string for a aat URL for IAC', () => {
+        const url = 'immigration-appeal.aat.platform.hmcts.net/about-appeal';
+        const result = prefixHttps(url);
+        expect(result).to.equal('https://immigration-appeal.aat.platform.hmcts.net/about-appeal');
+    });
+
     it('should add prefix to string for a whitelist URL for ADOPTION', () => {
         const url = 'apply-to-adopt-a-child-placed-in-your-care.service.gov.uk/review-pay-submit/check-your-answers';
         const result = prefixHttps(url);
