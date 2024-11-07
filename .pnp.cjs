@@ -66,6 +66,7 @@ const RAW_RUNTIME_STATE =
           ["https-proxy-agent", "npm:5.0.1"],\
           ["i18next", "npm:23.16.4"],\
           ["immutable", "npm:4.3.7"],\
+          ["import-in-the-middle", "npm:1.11.2"],\
           ["ioredis", "npm:5.4.1"],\
           ["js-yaml", "npm:4.1.0"],\
           ["jsonwebtoken", "npm:9.0.2"],\
@@ -14758,6 +14759,17 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
+      ["npm:1.11.2", {\
+        "packageLocation": "./.yarn/cache/import-in-the-middle-npm-1.11.2-bd0de6f92a-ebd1aaba44.zip/node_modules/import-in-the-middle/",\
+        "packageDependencies": [\
+          ["import-in-the-middle", "npm:1.11.2"],\
+          ["acorn", "npm:8.10.0"],\
+          ["acorn-import-attributes", "virtual:fed4f986dede90d9a1b19de7a0871137aa0472baf7cce47c70fd3995df219c691ab36c8e7f2fafcbcfcd455e18e7124a7e160cb73bbf299c905eac254438dcec#npm:1.9.5"],\
+          ["cjs-module-lexer", "npm:1.2.3"],\
+          ["module-details-from-path", "npm:1.0.3"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:1.4.2", {\
         "packageLocation": "./.yarn/cache/import-in-the-middle-npm-1.4.2-0d6260c99a-fe853b5f4f.zip/node_modules/import-in-the-middle/",\
         "packageDependencies": [\
@@ -19687,6 +19699,7 @@ const RAW_RUNTIME_STATE =
           ["https-proxy-agent", "npm:5.0.1"],\
           ["i18next", "npm:23.16.4"],\
           ["immutable", "npm:4.3.7"],\
+          ["import-in-the-middle", "npm:1.11.2"],\
           ["ioredis", "npm:5.4.1"],\
           ["js-yaml", "npm:4.1.0"],\
           ["jsonwebtoken", "npm:9.0.2"],\
