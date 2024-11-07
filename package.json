@@ -134,7 +134,8 @@
     "send": "0.19.1",
     "cookie": "1.0.1",
     "merge": "2.1.1",
-    "ws": "8.18.0"
+    "ws": "8.18.0",
+    "import-in-the-middle": "1.11.2"
   },
   "nyc": {
     "report-dir": "functional-output/coverage",
