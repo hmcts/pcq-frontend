@@ -64,7 +64,7 @@ const RAW_RUNTIME_STATE =
           ["govuk-frontend", "npm:5.7.1"],\
           ["helmet", "npm:3.23.3"],\
           ["https-proxy-agent", "npm:5.0.1"],\
-          ["i18next", "npm:23.16.4"],\
+          ["i18next", "npm:23.16.5"],\
           ["immutable", "npm:4.3.7"],\
           ["ioredis", "npm:5.4.1"],\
           ["js-yaml", "npm:4.1.0"],\
@@ -74,7 +74,7 @@ const RAW_RUNTIME_STATE =
           ["mocha", "npm:10.8.1"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
           ["moment", "npm:2.30.1"],\
-          ["nock", "npm:13.5.5"],\
+          ["nock", "npm:13.5.6"],\
           ["node-emoji", "npm:2.1.3"],\
           ["node-fetch", "virtual:30941e4951ac6d1287fb12c26a7afed794bbb9f0089d7db177d8be4b10361b145255aafe174851a9123e126cbf4a09fd871b52100910a73274b5273a96c43f9a#npm:2.7.0"],\
           ["nodemon", "npm:3.1.7"],\
@@ -89,7 +89,7 @@ const RAW_RUNTIME_STATE =
           ["require-directory", "npm:2.1.1"],\
           ["rewire", "npm:7.0.0"],\
           ["sanitizer", "npm:0.1.3"],\
-          ["sass", "npm:1.80.6"],\
+          ["sass", "npm:1.80.7"],\
           ["serve-favicon", "npm:2.5.0"],\
           ["sinon", "npm:19.0.2"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
@@ -98,7 +98,7 @@ const RAW_RUNTIME_STATE =
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.10"],\
           ["tslib", "npm:2.8.1"],\
-          ["undici", "npm:6.20.1"],\
+          ["undici", "npm:6.21.0"],\
           ["uuid", "npm:10.0.0"],\
           ["watch", "npm:1.0.2"],\
           ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.40.6"],\
@@ -14622,10 +14622,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["i18next", [\
-      ["npm:23.16.4", {\
-        "packageLocation": "./.yarn/cache/i18next-npm-23.16.4-645bef26f8-a3aa6189aa.zip/node_modules/i18next/",\
+      ["npm:23.16.5", {\
+        "packageLocation": "./.yarn/cache/i18next-npm-23.16.5-65447bf557-842b6d35d6.zip/node_modules/i18next/",\
         "packageDependencies": [\
-          ["i18next", "npm:23.16.4"],\
+          ["i18next", "npm:23.16.5"],\
           ["@babel/runtime", "npm:7.23.2"]\
         ],\
         "linkType": "HARD"\
@@ -14700,6 +14700,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/immutable-npm-4.3.7-a76ac3621b-37d963c505.zip/node_modules/immutable/",\
         "packageDependencies": [\
           ["immutable", "npm:4.3.7"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:5.0.2", {\
+        "packageLocation": "./.yarn/cache/immutable-npm-5.0.2-d7d3c3ff6b-89b1117c61.zip/node_modules/immutable/",\
+        "packageDependencies": [\
+          ["immutable", "npm:5.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -18076,10 +18083,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["nock", [\
-      ["npm:13.5.5", {\
-        "packageLocation": "./.yarn/cache/nock-npm-13.5.5-ccb57f0a2f-c19d7bf965.zip/node_modules/nock/",\
+      ["npm:13.5.6", {\
+        "packageLocation": "./.yarn/cache/nock-npm-13.5.6-6fbafbb636-a57c265b75.zip/node_modules/nock/",\
         "packageDependencies": [\
-          ["nock", "npm:13.5.5"],\
+          ["nock", "npm:13.5.6"],\
           ["debug", "virtual:6230e12b1d7dee1735a865cef131ea49c043e7f202fd08b14ceb90686e406b76a07840fc9510f1069465ad9695242b42830fc7fea7b01648a261463b7848122f#npm:4.3.7"],\
           ["json-stringify-safe", "npm:5.0.1"],\
           ["propagate", "npm:2.0.1"]\
@@ -19652,7 +19659,7 @@ const RAW_RUNTIME_STATE =
           ["govuk-frontend", "npm:5.7.1"],\
           ["helmet", "npm:3.23.3"],\
           ["https-proxy-agent", "npm:5.0.1"],\
-          ["i18next", "npm:23.16.4"],\
+          ["i18next", "npm:23.16.5"],\
           ["immutable", "npm:4.3.7"],\
           ["ioredis", "npm:5.4.1"],\
           ["js-yaml", "npm:4.1.0"],\
@@ -19662,7 +19669,7 @@ const RAW_RUNTIME_STATE =
           ["mocha", "npm:10.8.1"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
           ["moment", "npm:2.30.1"],\
-          ["nock", "npm:13.5.5"],\
+          ["nock", "npm:13.5.6"],\
           ["node-emoji", "npm:2.1.3"],\
           ["node-fetch", "virtual:30941e4951ac6d1287fb12c26a7afed794bbb9f0089d7db177d8be4b10361b145255aafe174851a9123e126cbf4a09fd871b52100910a73274b5273a96c43f9a#npm:2.7.0"],\
           ["nodemon", "npm:3.1.7"],\
@@ -19677,7 +19684,7 @@ const RAW_RUNTIME_STATE =
           ["require-directory", "npm:2.1.1"],\
           ["rewire", "npm:7.0.0"],\
           ["sanitizer", "npm:0.1.3"],\
-          ["sass", "npm:1.80.6"],\
+          ["sass", "npm:1.80.7"],\
           ["serve-favicon", "npm:2.5.0"],\
           ["sinon", "npm:19.0.2"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
@@ -19686,7 +19693,7 @@ const RAW_RUNTIME_STATE =
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.10"],\
           ["tslib", "npm:2.8.1"],\
-          ["undici", "npm:6.20.1"],\
+          ["undici", "npm:6.21.0"],\
           ["uuid", "npm:10.0.0"],\
           ["watch", "npm:1.0.2"],\
           ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.40.6"],\
@@ -20873,13 +20880,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sass", [\
-      ["npm:1.80.6", {\
-        "packageLocation": "./.yarn/cache/sass-npm-1.80.6-30d57f2c14-a01996fa06.zip/node_modules/sass/",\
+      ["npm:1.80.7", {\
+        "packageLocation": "./.yarn/cache/sass-npm-1.80.7-f3e7fc66fb-617966d361.zip/node_modules/sass/",\
         "packageDependencies": [\
-          ["sass", "npm:1.80.6"],\
+          ["sass", "npm:1.80.7"],\
           ["@parcel/watcher", "npm:2.5.0"],\
           ["chokidar", "npm:4.0.1"],\
-          ["immutable", "npm:4.3.7"],\
+          ["immutable", "npm:5.0.2"],\
           ["source-map-js", "npm:1.2.1"]\
         ],\
         "linkType": "HARD"\
@@ -22711,10 +22718,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:6.20.1", {\
-        "packageLocation": "./.yarn/cache/undici-npm-6.20.1-d65a390548-68604b5375.zip/node_modules/undici/",\
+      ["npm:6.21.0", {\
+        "packageLocation": "./.yarn/cache/undici-npm-6.21.0-518681128e-c8ff80dcad.zip/node_modules/undici/",\
         "packageDependencies": [\
-          ["undici", "npm:6.20.1"]\
+          ["undici", "npm:6.21.0"]\
         ],\
         "linkType": "HARD"\
       }]\
