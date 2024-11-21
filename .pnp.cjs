@@ -9515,7 +9515,7 @@ const RAW_RUNTIME_STATE =
           ["bash-glob", "npm:2.0.0"],\
           ["bash-path", "npm:1.0.3"],\
           ["component-emitter", "npm:1.3.0"],\
-          ["cross-spawn", "npm:5.1.0"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["each-parallel-async", "npm:1.0.0"],\
           ["extend-shallow", "npm:2.0.1"],\
           ["is-extglob", "npm:2.1.1"],\
@@ -10347,7 +10347,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/child-process-promise-npm-2.2.1-152d4a9872-fb72dda7ee.zip/node_modules/child-process-promise/",\
         "packageDependencies": [\
           ["child-process-promise", "npm:2.2.1"],\
-          ["cross-spawn", "npm:4.0.2"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["node-version", "npm:1.2.0"],\
           ["promise-polyfill", "npm:6.1.0"]\
         ],\
@@ -10709,7 +10709,7 @@ const RAW_RUNTIME_STATE =
           ["chai-string", "virtual:08aa0d6350bdc3a5e31278e22afadb05be51f918559f88b53354dfd2a276bece4ce718cdc3686f257fe8c5b59321356af134e69e662e983ed85c989a0e25b7c7#npm:1.5.0"],\
           ["chalk", "npm:4.1.2"],\
           ["commander", "npm:11.1.0"],\
-          ["cross-spawn", "npm:7.0.3"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["css-to-xpath", "npm:0.1.0"],\
           ["csstoxpath", "npm:1.6.0"],\
           ["devtools", "npm:8.40.2"],\
@@ -11243,29 +11243,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["cross-spawn", [\
-      ["npm:4.0.2", {\
-        "packageLocation": "./.yarn/cache/cross-spawn-npm-4.0.2-3c23494e5b-7a384580d0.zip/node_modules/cross-spawn/",\
+      ["npm:7.0.6", {\
+        "packageLocation": "./.yarn/cache/cross-spawn-npm-7.0.6-264bddf921-0d52657d7a.zip/node_modules/cross-spawn/",\
         "packageDependencies": [\
-          ["cross-spawn", "npm:4.0.2"],\
-          ["lru-cache", "npm:4.1.5"],\
-          ["which", "npm:1.3.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:5.1.0", {\
-        "packageLocation": "./.yarn/cache/cross-spawn-npm-5.1.0-a3e220603e-726939c995.zip/node_modules/cross-spawn/",\
-        "packageDependencies": [\
-          ["cross-spawn", "npm:5.1.0"],\
-          ["lru-cache", "npm:4.1.5"],\
-          ["shebang-command", "npm:1.2.0"],\
-          ["which", "npm:1.3.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:7.0.3", {\
-        "packageLocation": "./.yarn/cache/cross-spawn-npm-7.0.3-e4ff3e65b3-e1a13869d2.zip/node_modules/cross-spawn/",\
-        "packageDependencies": [\
-          ["cross-spawn", "npm:7.0.3"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["path-key", "npm:3.1.1"],\
           ["shebang-command", "npm:2.0.0"],\
           ["which", "npm:2.0.2"]\
@@ -12580,7 +12561,7 @@ const RAW_RUNTIME_STATE =
           ["@ungap/structured-clone", "npm:1.2.0"],\
           ["ajv", "npm:6.12.6"],\
           ["chalk", "npm:4.1.2"],\
-          ["cross-spawn", "npm:7.0.3"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["debug", "virtual:6230e12b1d7dee1735a865cef131ea49c043e7f202fd08b14ceb90686e406b76a07840fc9510f1069465ad9695242b42830fc7fea7b01648a261463b7848122f#npm:4.3.7"],\
           ["doctrine", "npm:3.0.0"],\
           ["escape-string-regexp", "npm:4.0.0"],\
@@ -12637,7 +12618,7 @@ const RAW_RUNTIME_STATE =
           ["@types/json-schema", "npm:7.0.15"],\
           ["ajv", "npm:6.12.6"],\
           ["chalk", "npm:4.1.2"],\
-          ["cross-spawn", "npm:7.0.3"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["debug", "virtual:6230e12b1d7dee1735a865cef131ea49c043e7f202fd08b14ceb90686e406b76a07840fc9510f1069465ad9695242b42830fc7fea7b01648a261463b7848122f#npm:4.3.7"],\
           ["escape-string-regexp", "npm:4.0.0"],\
           ["eslint-scope", "npm:8.2.0"],\
@@ -12899,7 +12880,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/execa-npm-5.1.1-191347acf5-8ada91f2d7.zip/node_modules/execa/",\
         "packageDependencies": [\
           ["execa", "npm:5.1.1"],\
-          ["cross-spawn", "npm:7.0.3"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["get-stream", "npm:6.0.1"],\
           ["human-signals", "npm:2.1.0"],\
           ["is-stream", "npm:2.0.1"],\
@@ -12916,7 +12897,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["execa", "npm:9.4.0"],\
           ["@sindresorhus/merge-streams", "npm:4.0.0"],\
-          ["cross-spawn", "npm:7.0.3"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["figures", "npm:6.1.0"],\
           ["get-stream", "npm:9.0.1"],\
           ["human-signals", "npm:8.0.0"],\
@@ -13501,7 +13482,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/foreground-child-npm-2.0.0-80c976b61e-f36574ad8e.zip/node_modules/foreground-child/",\
         "packageDependencies": [\
           ["foreground-child", "npm:2.0.0"],\
-          ["cross-spawn", "npm:7.0.3"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["signal-exit", "npm:3.0.7"]\
         ],\
         "linkType": "HARD"\
@@ -13510,7 +13491,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/foreground-child-npm-3.1.1-77e78ed774-087edd4485.zip/node_modules/foreground-child/",\
         "packageDependencies": [\
           ["foreground-child", "npm:3.1.1"],\
-          ["cross-spawn", "npm:7.0.3"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["signal-exit", "npm:4.0.2"]\
         ],\
         "linkType": "HARD"\
@@ -13519,7 +13500,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/foreground-child-npm-3.3.0-b8be745271-e3a60480f3.zip/node_modules/foreground-child/",\
         "packageDependencies": [\
           ["foreground-child", "npm:3.3.0"],\
-          ["cross-spawn", "npm:7.0.3"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["signal-exit", "npm:4.0.2"]\
         ],\
         "linkType": "HARD"\
@@ -15457,7 +15438,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["istanbul-lib-processinfo", "npm:2.0.3"],\
           ["archy", "npm:1.0.0"],\
-          ["cross-spawn", "npm:7.0.3"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["istanbul-lib-coverage", "npm:3.2.0"],\
           ["p-map", "npm:3.0.0"],\
           ["rimraf", "npm:3.0.2"],\
@@ -16737,15 +16718,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/lru-cache-npm-10.1.0-f3d3a0f0ab-207278d6fa.zip/node_modules/lru-cache/",\
         "packageDependencies": [\
           ["lru-cache", "npm:10.1.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:4.1.5", {\
-        "packageLocation": "./.yarn/cache/lru-cache-npm-4.1.5-ede304cc43-9ec7d73f11.zip/node_modules/lru-cache/",\
-        "packageDependencies": [\
-          ["lru-cache", "npm:4.1.5"],\
-          ["pseudomap", "npm:1.0.2"],\
-          ["yallist", "npm:2.1.2"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -19434,7 +19406,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/unplugged/pre-commit-npm-1.2.2-f30af83877/node_modules/pre-commit/",\
         "packageDependencies": [\
           ["pre-commit", "npm:1.2.2"],\
-          ["cross-spawn", "npm:5.1.0"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["spawn-sync", "npm:1.0.15"],\
           ["which", "npm:1.2.14"]\
         ],\
@@ -19833,15 +19805,6 @@ const RAW_RUNTIME_STATE =
           ["fill-keys", "npm:1.0.2"],\
           ["module-not-found-error", "npm:1.0.1"],\
           ["resolve", "patch:resolve@npm%3A1.22.1#optional!builtin<compat/resolve>::version=1.22.1&hash=c3c19d"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["pseudomap", [\
-      ["npm:1.0.2", {\
-        "packageLocation": "./.yarn/cache/pseudomap-npm-1.0.2-0d0e40fee0-856c0aae0f.zip/node_modules/pseudomap/",\
-        "packageDependencies": [\
-          ["pseudomap", "npm:1.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -21163,14 +21126,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["shebang-command", [\
-      ["npm:1.2.0", {\
-        "packageLocation": "./.yarn/cache/shebang-command-npm-1.2.0-8990ba5d1d-9eed175030.zip/node_modules/shebang-command/",\
-        "packageDependencies": [\
-          ["shebang-command", "npm:1.2.0"],\
-          ["shebang-regex", "npm:1.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:2.0.0", {\
         "packageLocation": "./.yarn/cache/shebang-command-npm-2.0.0-eb2b01921d-6b52fe8727.zip/node_modules/shebang-command/",\
         "packageDependencies": [\
@@ -21181,13 +21136,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["shebang-regex", [\
-      ["npm:1.0.0", {\
-        "packageLocation": "./.yarn/cache/shebang-regex-npm-1.0.0-c3612b74e9-404c5a752c.zip/node_modules/shebang-regex/",\
-        "packageDependencies": [\
-          ["shebang-regex", "npm:1.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:3.0.0", {\
         "packageLocation": "./.yarn/cache/shebang-regex-npm-3.0.0-899a0cd65e-1a2bcae50d.zip/node_modules/shebang-regex/",\
         "packageDependencies": [\
@@ -23299,7 +23247,7 @@ const RAW_RUNTIME_STATE =
           ["@webpack-cli/serve", "virtual:22e2a0c3f26a771bb9dec5e769cdd57e79bb7363fe75dc31e506ebcd3ca68fc12c48d4ca785f36c438b7216a2cb6c58e4bec805b4dfb185c2c0be0a1eb323fcf#npm:2.0.5"],\
           ["colorette", "npm:2.0.19"],\
           ["commander", "npm:10.0.1"],\
-          ["cross-spawn", "npm:7.0.3"],\
+          ["cross-spawn", "npm:7.0.6"],\
           ["envinfo", "npm:7.8.1"],\
           ["fastest-levenshtein", "npm:1.0.16"],\
           ["import-local", "npm:3.1.0"],\
@@ -23650,13 +23598,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["yallist", [\
-      ["npm:2.1.2", {\
-        "packageLocation": "./.yarn/cache/yallist-npm-2.1.2-2e38c366a3-75fc7bee48.zip/node_modules/yallist/",\
-        "packageDependencies": [\
-          ["yallist", "npm:2.1.2"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:3.1.1", {\
         "packageLocation": "./.yarn/cache/yallist-npm-3.1.1-a568a556b4-9af0a4329c.zip/node_modules/yallist/",\
         "packageDependencies": [\
