@@ -364,7 +364,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@azure-functions-npm-4.5.1-f1f73c2dbb-da07ccc518.zip/node_modules/@azure/functions/",\
         "packageDependencies": [\
           ["@azure/functions", "npm:4.5.1"],\
-          ["cookie", "npm:1.0.1"],\
+          ["cookie", "npm:1.0.2"],\
           ["long", "npm:4.0.0"],\
           ["undici", "npm:5.28.4"]\
         ],\
@@ -11103,10 +11103,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["cookie", [\
-      ["npm:1.0.1", {\
-        "packageLocation": "./.yarn/cache/cookie-npm-1.0.1-833b8795e1-4b24d4fad5.zip/node_modules/cookie/",\
+      ["npm:1.0.2", {\
+        "packageLocation": "./.yarn/cache/cookie-npm-1.0.2-7a4273d897-f5817cdc84.zip/node_modules/cookie/",\
         "packageDependencies": [\
-          ["cookie", "npm:1.0.1"]\
+          ["cookie", "npm:1.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -11116,7 +11116,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/cookie-parser-npm-1.4.7-970a70a2fd-243fa13f21.zip/node_modules/cookie-parser/",\
         "packageDependencies": [\
           ["cookie-parser", "npm:1.4.7"],\
-          ["cookie", "npm:1.0.1"],\
+          ["cookie", "npm:1.0.2"],\
           ["cookie-signature", "npm:1.0.6"]\
         ],\
         "linkType": "HARD"\
@@ -12939,7 +12939,7 @@ const RAW_RUNTIME_STATE =
           ["body-parser", "npm:1.20.3"],\
           ["content-disposition", "npm:0.5.4"],\
           ["content-type", "npm:1.0.4"],\
-          ["cookie", "npm:1.0.1"],\
+          ["cookie", "npm:1.0.2"],\
           ["cookie-signature", "npm:1.0.6"],\
           ["debug", "virtual:c7b184cd14c02e3ce555ab1875e60cf5033c617e17d82c4c02ea822101d3c817f48bf25a766b4d4335742dc5c9c14c2e88a57ed955a56c4ad0613899f82f5618#npm:2.6.9"],\
           ["depd", "npm:2.0.0"],\
@@ -12974,7 +12974,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/express-session-npm-1.18.1-b1aa040a8f-fec407d20e.zip/node_modules/express-session/",\
         "packageDependencies": [\
           ["express-session", "npm:1.18.1"],\
-          ["cookie", "npm:1.0.1"],\
+          ["cookie", "npm:1.0.2"],\
           ["cookie-signature", "npm:1.0.7"],\
           ["debug", "virtual:c7b184cd14c02e3ce555ab1875e60cf5033c617e17d82c4c02ea822101d3c817f48bf25a766b4d4335742dc5c9c14c2e88a57ed955a56c4ad0613899f82f5618#npm:2.6.9"],\
           ["depd", "npm:2.0.0"],\
@@ -26432,7 +26432,7 @@ class MountFS extends BasePortableFakeFS {
         if (this.notMount.has(filePath))
           continue;
         try {
-          if (this.typeCheck !== null && (this.baseFs.lstatSync(filePath).mode & fs.constants.S_IFMT) !== this.typeCheck) {
+          if (this.typeCheck !== null && (this.baseFs.statSync(filePath).mode & fs.constants.S_IFMT) !== this.typeCheck) {
             this.notMount.add(filePath);
             continue;
           }
