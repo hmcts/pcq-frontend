@@ -114,7 +114,7 @@ Add `content["list2-<service-name>"]` to the 2 unordered lists.
 If there are questions you want to be excluded from the questionnaire because they are irrelevant (such as asking someone if they are married when coming from the divorce app), 
 please see the [Journey README](app/journeys/README.md) for creating a service specific journey.
 
-Add the production service returnURL domain to whitelist in [string-utils.js] (app/components)
+Check if service returnURL on production and other envirnments are  whitelisted in [string-utils.js] (app/components)
 
 ### Token key 
 
