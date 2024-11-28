@@ -192,13 +192,6 @@ describe('prefixHttps', () => {
         expect(result).to.equal('https://benefit-appeal.aat.platform.hmcts.net/benefit-type');
     });
 
-    it('should add prefix to string for a aat URL for SSCS 2', () => {
-        const url = 'www.appeal-benefit-decision.service.gov.uk/benefit-type';
-        const result = prefixHttps(url);
-        expect(result).to.equal('https://www.appeal-benefit-decision.service.gov.uk/benefit-type');
-    });
-
-
     it('should add prefix to string for a whitelist URL for IAC', () => {
         const url = 'www.appeal-immigration-asylum-decision.service.gov.uk/about-appeal';
         const result = prefixHttps(url);
@@ -240,6 +233,18 @@ describe('prefixHttps', () => {
         const url = 'onlineplea.cjscp.org.uk/onlineplea/check-your-answers.xhtml';
         const result = prefixHttps(url);
         expect(result).to.equal('https://onlineplea.cjscp.org.uk/onlineplea/check-your-answers.xhtml');
+    });
+
+    it('should return same url for pre production URL for ONLINE_PLEA', () => {
+        const url = 'https://onlineplea.prp.cjscp.org.uk/onlineplea/start.xhtml';
+        const result = prefixHttps(url);
+        expect(result).to.equal('https://onlineplea.prp.cjscp.org.uk/onlineplea/start.xhtml');
+    });
+
+    it('should return same url for dev URL for ONLINE_PLEA', () => {
+        const url = 'https://onlineplea.sit.cjscp.org.uk/onlineplea/start.xhtml?locale=en';
+        const result = prefixHttps(url);
+        expect(result).to.equal('https://onlineplea.sit.cjscp.org.uk/onlineplea/start.xhtml?locale=en');
     });
 
     it('should add prefix to string for a whitelist URL for SpecialTribunals_CIC', () => {
