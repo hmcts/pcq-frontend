@@ -306,11 +306,5 @@ describe('prefixHttps', () => {
         const result = prefixHttps(url);
         expect(result).to.equal('https://www.apply-to-court-about-child-arrangements-c100.service.gov.uk/respondent/pcq/equality/c7-response');
     });
-
-
-
-
-
-
-
+    
 });
