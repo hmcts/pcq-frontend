@@ -95,10 +95,11 @@ describe('VerifyToken', () => {
             actor: 'APPLICANT',
             pcqId: '12345',
             partyId: 'test@test.com',
-            returnUrl: 'test.com',
-            token: '05ae10bf33f9b7dbc1f5e5e3636565ed974cf7e1ed14315dbd2890d6884a70d0a51c9042769cf1804052fb367d5a8db' +
-                '7d1214e43fad2d70eba7bf9ccb3780db76471bdfcc20c3840efde9f4d325a5f6fb02075357b7e7bafae2517426a126d004' +
-                '1a5e3ecd000d74a5baa2967b0c958de'
+            returnUrl: 'REGISTERED_APPLICANT.test.gov.uk',
+            token: '05ae10bf33f9b7dbc1f5e5e3636565ed974cf7e1ed14315dbd2890d6884a70d0a51c9042769c'+
+                'f1804052fb367d5a8db7d1214e43fad2d70eba7bf9ccb3780db76471bdfcc20c3840efde9f4d325'+
+                'a5f6fb02075357b7e7bafae2517426a126d009cd94e49c85aae58ec6e438b4d9632cf72045d82ca12'+
+                'c1e1fadb522fd3fab85e7546af19962364d34105a1329c9a60ee'
         };
 
         expect(verifyTokenRewired.verifyToken(reqQuery)).to.equal(true);

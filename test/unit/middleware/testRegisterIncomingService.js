@@ -12,7 +12,7 @@ const {setSession, registerIncomingService} = require('app/middleware/registerIn
 
 describe('registerIncomingService', () => {
     describe('middleware', () => {
-        it('should assign valid incoming query params to the session and redirect to the start page', () => {
+        it('should assign valid incoming query params to the session and redirect to the start page with returnUrl empty', () => {
             const req = {
                 query: {
                     serviceId: 'CMC',
@@ -27,7 +27,7 @@ describe('registerIncomingService', () => {
                         'e06eee027383c3b2cfe5fb0258033e72bd8cc82334d69d2ac2d11208cd825b52b1a9b7769f8aafaa15b9c4d9e433' +
                         'cb3f49f5b29047a22f48005c37dd9a4e9cba5c11ac95b8b42197c3928a9afd475f5141ed7cd8d56b848b464ea191' +
                         'af59df6d85156dc63f20baf0bf6dfe064984b6cc98486f362940ee262b48a13086913999fa18116f7270f5e509a3' +
-                        '4b515304f0aeff45e75f23b60cb0053d03b9ed96116815f055855065fcb4dd73ffab1db137e6d30013f'
+                        '4b515304f0aeff45e75f23b60cb0053d03b9ed96116815f055855065fcb4dd73ffab1db137e6d30013f'               
                 },
                 session: {
                     form: {}
@@ -38,7 +38,7 @@ describe('registerIncomingService', () => {
             registerIncomingService(req);
 
             expect(req.session).to.deep.equal({
-                returnUrl: 'https://invoking-service-return-url/',
+                returnUrl: '',
                 language: 'en',
                 form: {
                     serviceId: 'cmc',
@@ -46,6 +46,49 @@ describe('registerIncomingService', () => {
                     pcqId: '78e69022-2468-4370-a88e-bea2a80fa51f',
                     ccdCaseId: 1234567890123456,
                     partyId: 'applicant@email.com',
+                    channel: 2
+                },
+                token: req.session.token,
+                validParameters: true
+            });
+        });
+
+        it('should assign valid incoming query params to the session and redirect to the start page with correct returnUrl', () => {
+            const req = {
+                query: {
+                    serviceId:'CMC',
+                    actor:'CLAIMANT',
+                    ccdCaseId:'9aaff0bc-a544-48e1-ae43-dae0044a20dd',
+                    pcqId:'fda99051-cbbe-4765-905c-e70905841d38',
+                    partyId:'CMC_CLAIMANT@test.gov.uk',
+                    returnUrl:'CMC_CLAIMANT.test.gov.uk',
+                    language:'en',
+                    channel: 2,
+                    token: '3b74573af3cf7403d07f8f9b58e8fbfae5b41a389469858da85f94caf089a4ddc2b21e1e9980e048'+
+                            '8b83af38d89e170388aadba3bfda51c887c0c9753fca431e452da02561fa302fb75fd41cc7887d8b6'+
+                            '66f09a746a38375ad1aff3cedb3173cb8f557fbbaa5d3a2f726d263695f89703e31a8b8ddb02e1c76'+
+                            '3286b597cb564c47836ebb502eff1c0b72a1ba82d2e6af73abb9df683f820ed5570ea09a3423cc848d'+
+                            '7c0400e6f49fc9bb2ab19f3f7e56047d758f23bac0c64bbdf94d09755e791e9978461b434d3f4305498'+
+                            '94871d9d24459fbd80989a15ca9d07fa3990840f28137b47bb2ea35686f9057fd6690dc6799d798eb74'+
+                            'ad1312ef42b512bf6807e0'
+                },
+                session: {
+                    form: {}
+                }
+            };
+
+            setSession(req);
+            registerIncomingService(req);
+
+            expect(req.session).to.deep.equal({
+                returnUrl: 'https://CMC_CLAIMANT.test.gov.uk',
+                language: 'en',
+                form: {
+                    serviceId: 'cmc',
+                    actor: 'claimant',
+                    pcqId: 'fda99051-cbbe-4765-905c-e70905841d38',
+                    ccdCaseId: '9aaff0bc-a544-48e1-ae43-dae0044a20dd',
+                    partyId: 'CMC_CLAIMANT@test.gov.uk',
                     channel: 2
                 },
                 token: req.session.token,
