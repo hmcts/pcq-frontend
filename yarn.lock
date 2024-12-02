@@ -6296,13 +6296,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"arr-union@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "arr-union@npm:3.1.0"
-  checksum: 10/b5b0408c6eb7591143c394f3be082fee690ddd21f0fdde0a0a01106799e847f67fcae1b7e56b0a0c173290e29c6aca9562e82b300708a268bc8f88f3d6613cb9
-  languageName: node
-  linkType: hard
-
 "array-buffer-byte-length@npm:^1.0.1":
   version: 1.0.1
   resolution: "array-buffer-byte-length@npm:1.0.1"
@@ -6741,31 +6734,6 @@ __metadata:
   version: 1.5.1
   resolution: "base64-js@npm:1.5.1"
   checksum: 10/669632eb3745404c2f822a18fc3a0122d2f9a7a13f7fb8b5823ee19d1d2ff9ee5b52c53367176ea4ad093c332fd5ab4bd0ebae5a8e27917a4105a4cfc86b1005
-  languageName: node
-  linkType: hard
-
-"bash-glob@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "bash-glob@npm:2.0.0"
-  dependencies:
-    bash-path: "npm:^1.0.1"
-    component-emitter: "npm:^1.2.1"
-    cross-spawn: "npm:^5.1.0"
-    each-parallel-async: "npm:^1.0.0"
-    extend-shallow: "npm:^2.0.1"
-    is-extglob: "npm:^2.1.1"
-    is-glob: "npm:^4.0.0"
-  checksum: 10/8918231a996cb46d2d975af28e0a6471d6041896103311292a99f74082baaa406391f567b78db8c289517b2e1f3d5ab40cf1096cc45e33238c81fd04c28efc71
-  languageName: node
-  linkType: hard
-
-"bash-path@npm:^1.0.1":
-  version: 1.0.3
-  resolution: "bash-path@npm:1.0.3"
-  dependencies:
-    arr-union: "npm:^3.1.0"
-    is-windows: "npm:^1.0.1"
-  checksum: 10/ed273905a206da2a357de2848e82957ea9466910e9be2f6d630d0ef50343b80b620aec76c1f5c593d3103f1c310225ac7c158f2fd0745e9ef34d4dc0fd8979fd
   languageName: node
   linkType: hard
 
@@ -8001,7 +7969,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"component-emitter@npm:^1.2.1, component-emitter@npm:^1.3.0":
+"component-emitter@npm:^1.3.0":
   version: 1.3.0
   resolution: "component-emitter@npm:1.3.0"
   checksum: 10/dfc1ec2e7aa2486346c068f8d764e3eefe2e1ca0b24f57506cd93b2ae3d67829a7ebd7cc16e2bf51368fac2f45f78fcff231718e40b1975647e4a86be65e1d05
@@ -8910,13 +8878,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"each-parallel-async@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "each-parallel-async@npm:1.0.0"
-  checksum: 10/bed0b01b3fc3d8303ba064d0b4dd8237852284e334a32d7c75366e7880c29b8b40d52ca171aeced18a7a61dc5e8aaf5e0b485cff6abe26d1429738abae78a4e7
-  languageName: node
-  linkType: hard
-
 "eastasianwidth@npm:^0.2.0":
   version: 0.2.0
   resolution: "eastasianwidth@npm:0.2.0"
@@ -9134,10 +9095,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eol@npm:^0.9.1":
-  version: 0.9.1
-  resolution: "eol@npm:0.9.1"
-  checksum: 10/9d3fd93bb2bb5c69c7fe8dfb97b62213ed95857a2e90f5db3110415993e8a989d87fb011755ce22fdb92ca36fbe4e111b395a6f4ce00b9b51d3f00f19c2acf52
+"eol@npm:^0.10.0":
+  version: 0.10.0
+  resolution: "eol@npm:0.10.0"
+  checksum: 10/ea19bbf630b871e8344b33a6eb8bff6f0acd133d126ba3c52b16fb4ec197fa7d3690a532bf9e3c1bc53a454f0cd966fec07bbaea8a000bca89eb4117f2e9026d
   languageName: node
   linkType: hard
 
@@ -9810,15 +9771,6 @@ __metadata:
     utils-merge: "npm:1.0.1"
     vary: "npm:~1.1.2"
   checksum: 10/5d4a36dd03c1d1cce93172e9b185b5cd13a978d29ee03adc51cd278be7b4a514ae2b63e2fdaec0c00fdc95c6cfb396d9dd1da147917ffd337d6cd0778e08c9bc
-  languageName: node
-  linkType: hard
-
-"extend-shallow@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "extend-shallow@npm:2.0.1"
-  dependencies:
-    is-extendable: "npm:^0.1.0"
-  checksum: 10/8fb58d9d7a511f4baf78d383e637bd7d2e80843bd9cd0853649108ea835208fb614da502a553acc30208e1325240bb7cc4a68473021612496bb89725483656d8
   languageName: node
   linkType: hard
 
@@ -11732,13 +11684,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-extendable@npm:^0.1.0":
-  version: 0.1.1
-  resolution: "is-extendable@npm:0.1.1"
-  checksum: 10/3875571d20a7563772ecc7a5f36cb03167e9be31ad259041b4a8f73f33f885441f778cee1f1fe0085eb4bc71679b9d8c923690003a36a6a5fdf8023e6e3f0672
-  languageName: node
-  linkType: hard
-
 "is-extglob@npm:^2.1.1":
   version: 2.1.1
   resolution: "is-extglob@npm:2.1.1"
@@ -11933,7 +11878,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-windows@npm:^1.0.1, is-windows@npm:^1.0.2":
+"is-windows@npm:^1.0.2":
   version: 1.0.2
   resolution: "is-windows@npm:1.0.2"
   checksum: 10/438b7e52656fe3b9b293b180defb4e448088e7023a523ec21a91a80b9ff8cdb3377ddb5b6e60f7c7de4fa8b63ab56e121b6705fe081b3cf1b828b0a380009ad7
@@ -17177,7 +17122,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.0.0, semver@npm:^7.1.3, semver@npm:^7.5.2, semver@npm:^7.6.0, semver@npm:^7.6.3, semver@npm:~7.6.3":
+"semver@npm:^7.0.0, semver@npm:^7.1.3, semver@npm:^7.5.2, semver@npm:^7.6.3, semver@npm:~7.6.3":
   version: 7.6.3
   resolution: "semver@npm:7.6.3"
   bin:
@@ -18071,22 +18016,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"synp@npm:^1.9.13":
-  version: 1.9.13
-  resolution: "synp@npm:1.9.13"
+"synp@npm:^1.9.14":
+  version: 1.9.14
+  resolution: "synp@npm:1.9.14"
   dependencies:
     "@yarnpkg/lockfile": "npm:^1.1.0"
-    bash-glob: "npm:^2.0.0"
     colors: "npm:1.4.0"
     commander: "npm:^7.2.0"
-    eol: "npm:^0.9.1"
+    eol: "npm:^0.10.0"
+    fast-glob: "npm:^3.3.2"
     lodash: "npm:4.17.21"
     nmtree: "npm:^1.0.6"
-    semver: "npm:^7.6.0"
+    semver: "npm:^7.6.3"
     sort-object-keys: "npm:^1.1.3"
   bin:
     synp: cli/synp.js
-  checksum: 10/4959e3cd649ae38e9a3bcf1dadf4c4aa06f87505353dcd7502fc76fa7e68b0f4220aa93297f7b04795c71720a5473b0498b1c8eafcb969deb18f34fd2a27b897
+  checksum: 10/a8af89f2615135505da5ff7dff023968d622d673a1e2ea695613450886de7d96fb6ba254f86cc53c97e603fded9e49194f414d43bb62520905cc6608b62c2d01
   languageName: node
   linkType: hard
 
@@ -19705,8 +19650,8 @@ __metadata:
   linkType: hard
 
 "yarn-audit-fix@npm:^10.0.3":
-  version: 10.1.0
-  resolution: "yarn-audit-fix@npm:10.1.0"
+  version: 10.1.1
+  resolution: "yarn-audit-fix@npm:10.1.1"
   dependencies:
     "@types/fs-extra": "npm:^11.0.4"
     "@types/lodash-es": "npm:^4.17.12"
@@ -19720,10 +19665,10 @@ __metadata:
     js-yaml: "npm:^4.1.0"
     lodash-es: "npm:^4.17.21"
     semver: "npm:^7.6.3"
-    synp: "npm:^1.9.13"
+    synp: "npm:^1.9.14"
   bin:
     yarn-audit-fix: target/esm/cli.mjs
-  checksum: 10/d09105ec10445e8a527c37ef2f737bf82a3c328669cab90c87a7f8277dcc8657e57a152d1627d49ec3c7fab1dc34b770cff8835aa36dc4b7df5267e6ada85dbb
+  checksum: 10/d000237955ee11ce346d32ff356b69302c4a14b5fd0966828d205b3eeca9e0afa9cb9ece0ec18c0c15157a7831ec792646e832ada98b87a93d69f71ce373c388
   languageName: node
   linkType: hard
 
