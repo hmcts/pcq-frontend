@@ -35,12 +35,6 @@ describe('prefixHttps', () => {
         expect(result).to.equal('https://localhost:3000');
     });
 
-    it('should not modify a URL that starts with http://localhost', () => {
-        const url = 'http://localhost:3000';
-        const result = prefixHttps(url);
-        expect(result).to.equal('http://localhost:3000');
-    });
-
     it('should trim and remove spaces from the URL', () => {
         const url = '  probate_applicant.test.gov.uk  ';
         const result = prefixHttps(url);
@@ -306,5 +300,23 @@ describe('prefixHttps', () => {
         const result = prefixHttps(url);
         expect(result).to.equal('https://www.apply-to-court-about-child-arrangements-c100.service.gov.uk/respondent/pcq/equality/c7-response');
     });
-    
+
+    it('should add prefix and return same url if it contains platform.hmcts.net', () => {
+        const url = 'www.myfakeSite/platform.hmcts.net';
+        const result = prefixHttps(url);
+        expect(result).to.equal('https://www.myfakeSite/platform.hmcts.net');
+    });
+
+    it('should return blank url if it contains hmcts.net', () => {
+        const url = 'www.myfakeSite/hmcts.net';
+        const result = prefixHttps(url);
+        expect(result).to.equal('');
+    });
+
+    it('should return blank url if it any random url', () => {
+        const url = 'www.myfakeSite/random.org.uk';
+        const result = prefixHttps(url);
+        expect(result).to.equal('');
+    });
+
 });
