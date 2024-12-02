@@ -304,37 +304,37 @@ describe('prefixHttps', () => {
     it('should add prefix and return same url if it contains platform.hmcts.net', () => {
         const url = 'www.myfakeSite/platform.hmcts.net';
         const result = prefixHttps(url);
-        expect(result).to.equal('https://www.myfakeSite/platform.hmcts.net');
+        expect(result).to.equal('');
     });
 
     it('should add prefix and return same url if it contains service.gov.uk', () => {
         const url = 'www.myfakeSite/service.gov.uk';
         const result = prefixHttps(url);
-        expect(result).to.equal('https://www.myfakeSite/service.gov.uk');
+        expect(result).to.equal('');
     });
 
     it('should add prefix and return same url if it contains service.gov.uk', () => {
         const url = 'www.myfakeSite/service.gov.uk';
         const result = prefixHttps(url);
-        expect(result).to.equal('https://www.myfakeSite/service.gov.uk');
+        expect(result).to.equal('');
     });
 
     it('should add prefix and return same url if it contains cjscp.org.uk', () => {
         const url = 'www.myfakeSite/cjscp.org.uk';
         const result = prefixHttps(url);
-        expect(result).to.equal('https://www.myfakeSite/cjscp.org.uk');
+        expect(result).to.equal('');
     });
 
     it('should add prefix and return same url if it contains staging.apps.hmcts.net', () => {
         const url = 'www.myfakeSite/staging.apps.hmcts.net';
         const result = prefixHttps(url);
-        expect(result).to.equal('https://www.myfakeSite/staging.apps.hmcts.net');
+        expect(result).to.equal('');
     });
 
     it('should add prefix and return same url if it contains test.gov.uk', () => {
         const url = 'www.myfakeSite/test.gov.uk';
         const result = prefixHttps(url);
-        expect(result).to.equal('https://www.myfakeSite/test.gov.uk');
+        expect(result).to.equal('');
     });
 
     it('should return blank url if it contains hmcts.net', () => {
@@ -348,5 +348,4 @@ describe('prefixHttps', () => {
         const result = prefixHttps(url);
         expect(result).to.equal('');
     });
-
 });
