@@ -8,13 +8,6 @@ const prefixHttps = (url = '') => {
     if(!isUrlWhitelisted(url)){
         url = '';
     }
-    /*if(!(url.includes('service.gov.uk') || url.includes('cjscp.org.uk')
-        || url.includes('platform.hmcts.net') 
-        || url.includes('staging.apps.hmcts.net')
-        || url.endsWith('test.gov.uk') 
-        || url.startsWith('https://localhost') || url.startsWith('http://localhost'))){
-        url ='';
-    }*/
     return url;
 };
 
