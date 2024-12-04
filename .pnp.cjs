@@ -75,7 +75,7 @@ const RAW_RUNTIME_STATE =
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
           ["moment", "npm:2.30.1"],\
           ["nock", "npm:13.5.6"],\
-          ["node-emoji", "npm:2.1.3"],\
+          ["node-emoji", "npm:2.2.0"],\
           ["node-fetch", "virtual:30941e4951ac6d1287fb12c26a7afed794bbb9f0089d7db177d8be4b10361b145255aafe174851a9123e126cbf4a09fd871b52100910a73274b5273a96c43f9a#npm:2.7.0"],\
           ["nodemon", "npm:3.1.7"],\
           ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
@@ -18074,10 +18074,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["node-emoji", [\
-      ["npm:2.1.3", {\
-        "packageLocation": "./.yarn/cache/node-emoji-npm-2.1.3-eb6ecb442b-e9cff16f55.zip/node_modules/node-emoji/",\
+      ["npm:2.2.0", {\
+        "packageLocation": "./.yarn/cache/node-emoji-npm-2.2.0-4302837175-2548668f5c.zip/node_modules/node-emoji/",\
         "packageDependencies": [\
-          ["node-emoji", "npm:2.1.3"],\
+          ["node-emoji", "npm:2.2.0"],\
           ["@sindresorhus/is", "npm:4.6.0"],\
           ["char-regex", "npm:1.0.2"],\
           ["emojilib", "npm:2.4.0"],\
@@ -19601,7 +19601,7 @@ const RAW_RUNTIME_STATE =
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
           ["moment", "npm:2.30.1"],\
           ["nock", "npm:13.5.6"],\
-          ["node-emoji", "npm:2.1.3"],\
+          ["node-emoji", "npm:2.2.0"],\
           ["node-fetch", "virtual:30941e4951ac6d1287fb12c26a7afed794bbb9f0089d7db177d8be4b10361b145255aafe174851a9123e126cbf4a09fd871b52100910a73274b5273a96c43f9a#npm:2.7.0"],\
           ["nodemon", "npm:3.1.7"],\
           ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
