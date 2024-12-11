@@ -95,7 +95,7 @@
     "@parcel/watcher": "^2.4.1",
     "@stryker-mutator/api": "^8.5.0",
     "@stryker-mutator/core": "^8.5.0",
-    "@stryker-mutator/mocha-runner": "8.6.0",
+    "@stryker-mutator/mocha-runner": "8.7.1",
     "chai": "^4.2.0",
     "chokidar": "^4.0.1",
     "codeceptjs": "^3.6.6",

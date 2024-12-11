@@ -4962,26 +4962,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stryker-mutator/api@npm:8.6.0, @stryker-mutator/api@npm:^8.5.0":
-  version: 8.6.0
-  resolution: "@stryker-mutator/api@npm:8.6.0"
+"@stryker-mutator/api@npm:8.7.1, @stryker-mutator/api@npm:^8.5.0":
+  version: 8.7.1
+  resolution: "@stryker-mutator/api@npm:8.7.1"
   dependencies:
     mutation-testing-metrics: "npm:3.3.0"
     mutation-testing-report-schema: "npm:3.3.0"
     tslib: "npm:~2.7.0"
     typed-inject: "npm:~4.0.0"
-  checksum: 10/eba141677cc98b8c4383d1c4d826c6c9299f4c0e82c3af75fec7fe5c9f217b6b8130a78123b2207a4e67a9ba4e06cc7f946590d8902632caf14c65c92dc4549a
+  checksum: 10/f04d481a19c1face7b76740b143c6f4bf0e560765fad7fb9d6986babae4172fbc94184101254081ece610bd964472727ee1e8903840b2de5c79724a0e747d6a3
   languageName: node
   linkType: hard
 
 "@stryker-mutator/core@npm:^8.5.0":
-  version: 8.6.0
-  resolution: "@stryker-mutator/core@npm:8.6.0"
+  version: 8.7.1
+  resolution: "@stryker-mutator/core@npm:8.7.1"
   dependencies:
     "@inquirer/prompts": "npm:^6.0.0"
-    "@stryker-mutator/api": "npm:8.6.0"
-    "@stryker-mutator/instrumenter": "npm:8.6.0"
-    "@stryker-mutator/util": "npm:8.6.0"
+    "@stryker-mutator/api": "npm:8.7.1"
+    "@stryker-mutator/instrumenter": "npm:8.7.1"
+    "@stryker-mutator/util": "npm:8.7.1"
     ajv: "npm:~8.17.1"
     chalk: "npm:~5.3.0"
     commander: "npm:~12.1.0"
@@ -4989,11 +4989,9 @@ __metadata:
     emoji-regex: "npm:~10.4.0"
     execa: "npm:~9.4.0"
     file-url: "npm:~4.0.0"
-    get-port: "npm:~7.1.0"
     lodash.groupby: "npm:~4.6.0"
-    log4js: "npm:~6.9.1"
     minimatch: "npm:~9.0.5"
-    mutation-testing-elements: "npm:3.3.0"
+    mutation-testing-elements: "npm:3.4.0"
     mutation-testing-metrics: "npm:3.3.0"
     mutation-testing-report-schema: "npm:3.3.0"
     npm-run-path: "npm:~6.0.0"
@@ -5007,13 +5005,13 @@ __metadata:
     typed-rest-client: "npm:~2.1.0"
   bin:
     stryker: ./bin/stryker.js
-  checksum: 10/017f7481ad40fa608b6020c25105d2bc732fc10ecafd81a03764131551b88957b20501c6cf43244089dbdc01b58c126dcbc021420acc55c3bf0bc85799786b4b
+  checksum: 10/7b3bd828e1ac0e8e949f8f47ccdb04a7541f6525a3ac2cdddc869b962426616fae4d590b1ddae66dd38e63cbb8f0047af7731a8d403a1dd44878030f3207a8a3
   languageName: node
   linkType: hard
 
-"@stryker-mutator/instrumenter@npm:8.6.0":
-  version: 8.6.0
-  resolution: "@stryker-mutator/instrumenter@npm:8.6.0"
+"@stryker-mutator/instrumenter@npm:8.7.1":
+  version: 8.7.1
+  resolution: "@stryker-mutator/instrumenter@npm:8.7.1"
   dependencies:
     "@babel/core": "npm:~7.25.2"
     "@babel/generator": "npm:~7.25.0"
@@ -5021,33 +5019,33 @@ __metadata:
     "@babel/plugin-proposal-decorators": "npm:~7.24.7"
     "@babel/plugin-proposal-explicit-resource-management": "npm:^7.24.7"
     "@babel/preset-typescript": "npm:~7.24.7"
-    "@stryker-mutator/api": "npm:8.6.0"
-    "@stryker-mutator/util": "npm:8.6.0"
+    "@stryker-mutator/api": "npm:8.7.1"
+    "@stryker-mutator/util": "npm:8.7.1"
     angular-html-parser: "npm:~6.0.2"
     semver: "npm:~7.6.3"
     weapon-regex: "npm:~1.3.2"
-  checksum: 10/bd3e03925a3634c616f2260cdc246c9899b45a37e7bb7644d5954991d63604b3302ef1516c486d9856cf28c906e5bf842a24174af0ab07ca651412ee7978cb19
+  checksum: 10/13b3d18e74a181d18ec5cd74cd0663e801e86032b69ad5c0a9479309b19ecfbd665718327165f769f72e4980947e25f4d16c1c9274076489681ed1226c98922e
   languageName: node
   linkType: hard
 
-"@stryker-mutator/mocha-runner@npm:8.6.0":
-  version: 8.6.0
-  resolution: "@stryker-mutator/mocha-runner@npm:8.6.0"
+"@stryker-mutator/mocha-runner@npm:8.7.1":
+  version: 8.7.1
+  resolution: "@stryker-mutator/mocha-runner@npm:8.7.1"
   dependencies:
-    "@stryker-mutator/api": "npm:8.6.0"
-    "@stryker-mutator/util": "npm:8.6.0"
+    "@stryker-mutator/api": "npm:8.7.1"
+    "@stryker-mutator/util": "npm:8.7.1"
     tslib: "npm:~2.7.0"
   peerDependencies:
-    "@stryker-mutator/core": ~8.6.0
-    mocha: ">= 7.2 < 11"
-  checksum: 10/06042718791a2a007e8acc222f21525d67e8e5412b96a1ff639f0dbd959096ad47a779d53cb0a608f8cc3d05a2f0f0ed15e77f0c3e7e24042022dfa457b9668b
+    "@stryker-mutator/core": ~8.7.0
+    mocha: ">= 7.2 < 12"
+  checksum: 10/1275fced38a7f98dcd07d8e93043c7f4e5ac10205eb668ed36965541e6ee72ab3ab30c50a1cc84a88c4852e34d9ebc9555086eb5ed8ca8da70399e5018868e31
   languageName: node
   linkType: hard
 
-"@stryker-mutator/util@npm:8.6.0":
-  version: 8.6.0
-  resolution: "@stryker-mutator/util@npm:8.6.0"
-  checksum: 10/5520a75b3b59af3ec9cca889b2b133eb40da9a2be6362118713f198827fc586b787c7fe3ed4d497bb6f6605ba1b9ef178e72e0182e1101f941d8bb1617663e2c
+"@stryker-mutator/util@npm:8.7.1":
+  version: 8.7.1
+  resolution: "@stryker-mutator/util@npm:8.7.1"
+  checksum: 10/e06a61a0bedea99bf44355a2f7859fe8b92eee4f3e693a789443e9b30b9fcf197a277439bedb7ca5f8c3447462cb34d3a422593be2ef2fed14be396ee91c6066
   languageName: node
   linkType: hard
 
@@ -8301,13 +8299,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"date-format@npm:^4.0.14":
-  version: 4.0.14
-  resolution: "date-format@npm:4.0.14"
-  checksum: 10/6b07fd1df247439c53b71244e3468b93e6dfebb5d409b9328dd7b7e9ed0d2e875018e20fb1a95ae6b677dea708ec06aaa5058a7a5faa1a7f649338aabf04991a
-  languageName: node
-  linkType: hard
-
 "dateformat@npm:^4.5.1":
   version: 4.6.3
   resolution: "dateformat@npm:4.6.3"
@@ -10049,7 +10040,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flatted@npm:^3.2.7, flatted@npm:^3.2.9":
+"flatted@npm:^3.2.9":
   version: 3.3.1
   resolution: "flatted@npm:3.3.1"
   checksum: 10/7b8376061d5be6e0d3658bbab8bde587647f68797cf6bfeae9dea0e5137d9f27547ab92aaff3512dd9d1299086a6d61be98e9d48a56d17531b634f77faadbc49
@@ -10427,13 +10418,6 @@ __metadata:
   version: 7.0.0
   resolution: "get-port@npm:7.0.0"
   checksum: 10/e9087f62d086bbb70f20c0a208e7cac552679c1426e29e0607eb1b8907a5cc4509337d5971b7f635385cd2a773a14cd21b7d9c3254a2eb5ebeaf5f8fde19fb07
-  languageName: node
-  linkType: hard
-
-"get-port@npm:~7.1.0":
-  version: 7.1.0
-  resolution: "get-port@npm:7.1.0"
-  checksum: 10/f4d23b43026124007663a899578cc87ff37bfcf645c5c72651e9810ebafc759857784e409fb8e0ada9b90e5c5db089b0ae2f5f6b49fba1ce2e0aff86094ab17d
   languageName: node
   linkType: hard
 
@@ -12906,19 +12890,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"log4js@npm:~6.9.1":
-  version: 6.9.1
-  resolution: "log4js@npm:6.9.1"
-  dependencies:
-    date-format: "npm:^4.0.14"
-    debug: "npm:^4.3.4"
-    flatted: "npm:^3.2.7"
-    rfdc: "npm:^1.3.0"
-    streamroller: "npm:^3.1.5"
-  checksum: 10/421fb9c1e5a8859a810a40c9ee01fb8e4dfc2fed838049946e67c0064d197bdf76ca43b8fc45df50c5d709e6fc4f218d314f189a0feb8be0c48bdae80cb0934c
-  languageName: node
-  linkType: hard
-
 "logform@npm:^2.6.1":
   version: 2.6.1
   resolution: "logform@npm:2.6.1"
@@ -14150,10 +14121,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mutation-testing-elements@npm:3.3.0":
-  version: 3.3.0
-  resolution: "mutation-testing-elements@npm:3.3.0"
-  checksum: 10/d53ebc0de8034d427fd431f21d885db726ad0393349ce608c6a8c9be359a50d73c0b2bafbfbfedb497856faa3b013e9b7ae49150a54553a021d9966f9a153ece
+"mutation-testing-elements@npm:3.4.0":
+  version: 3.4.0
+  resolution: "mutation-testing-elements@npm:3.4.0"
+  checksum: 10/a68843bbff9b2544a6b8029693443cd3ae0bc084db54ca7eff893152bdad14c42e0401bb431120c5305b67a073c0a55eb6a5f099eca034be9420a35e466745a7
   languageName: node
   linkType: hard
 
@@ -15649,7 +15620,7 @@ __metadata:
     "@parcel/watcher": "npm:^2.4.1"
     "@stryker-mutator/api": "npm:^8.5.0"
     "@stryker-mutator/core": "npm:^8.5.0"
-    "@stryker-mutator/mocha-runner": "npm:8.6.0"
+    "@stryker-mutator/mocha-runner": "npm:8.7.1"
     ajv: "npm:^6.12.6"
     app: "link:./app"
     applicationinsights: "npm:^3.2.1"
@@ -16648,13 +16619,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rfdc@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "rfdc@npm:1.3.0"
-  checksum: 10/76dedd9700cdf132947fde7ce1a8838c9cbb7f3e8f9188af0aaf97194cce745f42094dd2cf547426934cc83252ee2c0e432b2e0222a4415ab0db32de82665c69
-  languageName: node
-  linkType: hard
-
 "rgb2hex@npm:0.2.5":
   version: 0.2.5
   resolution: "rgb2hex@npm:0.2.5"
@@ -17502,17 +17466,6 @@ __metadata:
   dependencies:
     stream-chain: "npm:^2.2.5"
   checksum: 10/a1cc448dd71267e1e44bfae4a2b0590690213c97dd6d273cc93e345aa2442b0f959e7a3da6cfa5386a6718e0f8afee0774be5b13126a6e79943499fbc4479f6c
-  languageName: node
-  linkType: hard
-
-"streamroller@npm:^3.1.5":
-  version: 3.1.5
-  resolution: "streamroller@npm:3.1.5"
-  dependencies:
-    date-format: "npm:^4.0.14"
-    debug: "npm:^4.3.4"
-    fs-extra: "npm:^8.1.0"
-  checksum: 10/2e4fe61ab91d24e6a9add67418ca9b8e19bc49f4037e1f8b7ae2e480a1d7750423f470d111d138d921a538ae4777c4eb15b00f9cc2a0d4fd72829687889b0c63
   languageName: node
   linkType: hard
 
