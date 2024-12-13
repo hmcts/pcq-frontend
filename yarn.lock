@@ -7677,8 +7677,8 @@ __metadata:
   linkType: hard
 
 "codeceptjs@npm:^3.6.6":
-  version: 3.6.9
-  resolution: "codeceptjs@npm:3.6.9"
+  version: 3.6.10
+  resolution: "codeceptjs@npm:3.6.10"
   dependencies:
     "@codeceptjs/configure": "npm:1.0.1"
     "@codeceptjs/detox-helper": "npm:1.1.2"
@@ -7731,7 +7731,7 @@ __metadata:
       optional: true
   bin:
     codeceptjs: bin/codecept.js
-  checksum: 10/7cb0bcbf61ed28d52d02db24e32dd8ed4fd4651d61f0790d622483249d3d3b1ef3323b01cbbc7213e37fd2da7c05ab31fe49f26164f20b5644e46dce03f5b33f
+  checksum: 10/ade36f7148c95777b905d9f29544d522a5881976364b19810763f89889879d03327226c0d88ddd1f0f22324d36eb2cf3fef76764c76576fc6701dfcc900e5628
   languageName: node
   linkType: hard
 
