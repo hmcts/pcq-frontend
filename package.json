@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.199",
+  "version": "1.2.202",
   "license": "MIT",
   "engines": {
     "node": ">=14.18.1"
@@ -95,7 +95,7 @@
     "@parcel/watcher": "^2.4.1",
     "@stryker-mutator/api": "^8.5.0",
     "@stryker-mutator/core": "^8.5.0",
-    "@stryker-mutator/mocha-runner": "8.6.0",
+    "@stryker-mutator/mocha-runner": "8.7.1",
     "chai": "^4.2.0",
     "chokidar": "^4.0.1",
     "codeceptjs": "^3.6.6",
@@ -132,10 +132,11 @@
     "formidable": "^3.2.4",
     "json5": "2.2.3",
     "send": "0.19.1",
-    "cookie": "1.0.1",
+    "cookie": "1.0.2",
     "merge": "2.1.1",
     "ws": "8.18.0",
-    "import-in-the-middle": "1.11.2"
+    "import-in-the-middle": "1.11.3",
+    "cross-spawn": "7.0.6"
   },
   "nyc": {
     "report-dir": "functional-output/coverage",
@@ -145,5 +146,5 @@
       "text"
     ]
   },
-  "packageManager": "yarn@4.5.1"
+  "packageManager": "yarn@4.5.3"
 }

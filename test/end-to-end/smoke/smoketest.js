@@ -14,7 +14,7 @@ const params = {
     pcqId: uuidv4(),
     ccdCaseId: '1234567890123456',
     partyId: 'test@gmail.com',
-    returnUrl: 'dummy-return-url',
+    returnUrl: 'dummy.test.gov.uk',
     language: 'en'
 };
 params.token = generateToken(params).token;
