@@ -99,7 +99,7 @@ const RAW_RUNTIME_STATE =
           ["traverse", "npm:0.6.10"],\
           ["tslib", "npm:2.8.1"],\
           ["undici", "npm:6.21.0"],\
-          ["uuid", "npm:10.0.0"],\
+          ["uuid", "npm:11.0.3"],\
           ["watch", "npm:1.0.2"],\
           ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.40.6"],\
           ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.97.1"],\
@@ -19353,7 +19353,7 @@ const RAW_RUNTIME_STATE =
           ["traverse", "npm:0.6.10"],\
           ["tslib", "npm:2.8.1"],\
           ["undici", "npm:6.21.0"],\
-          ["uuid", "npm:10.0.0"],\
+          ["uuid", "npm:11.0.3"],\
           ["watch", "npm:1.0.2"],\
           ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.40.6"],\
           ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.97.1"],\
