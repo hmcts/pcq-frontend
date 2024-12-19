@@ -43,7 +43,7 @@ const RAW_RUNTIME_STATE =
           ["applicationinsights", "npm:3.4.0"],\
           ["body-parser", "npm:1.20.3"],\
           ["chai", "npm:4.5.0"],\
-          ["chokidar", "npm:4.0.2"],\
+          ["chokidar", "npm:4.0.3"],\
           ["co", "npm:4.6.0"],\
           ["codeceptjs", "npm:3.6.10"],\
           ["codecov", "npm:4.0.0-0"],\
@@ -10267,10 +10267,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:4.0.2", {\
-        "packageLocation": "./.yarn/cache/chokidar-npm-4.0.2-e68742458f-fc25d20d72.zip/node_modules/chokidar/",\
+      ["npm:4.0.3", {\
+        "packageLocation": "./.yarn/cache/chokidar-npm-4.0.3-962354fbb4-bf2a575ea5.zip/node_modules/chokidar/",\
         "packageDependencies": [\
-          ["chokidar", "npm:4.0.2"],\
+          ["chokidar", "npm:4.0.3"],\
           ["readdirp", "npm:4.0.2"]\
         ],\
         "linkType": "HARD"\
@@ -18133,7 +18133,7 @@ const RAW_RUNTIME_STATE =
           ["@types/chokidar", null],\
           ["a-sync-waterfall", "npm:1.0.1"],\
           ["asap", "npm:2.0.6"],\
-          ["chokidar", "npm:4.0.2"],\
+          ["chokidar", "npm:4.0.3"],\
           ["commander", "npm:5.1.0"]\
         ],\
         "packagePeers": [\
@@ -19284,7 +19284,7 @@ const RAW_RUNTIME_STATE =
           ["applicationinsights", "npm:3.4.0"],\
           ["body-parser", "npm:1.20.3"],\
           ["chai", "npm:4.5.0"],\
-          ["chokidar", "npm:4.0.2"],\
+          ["chokidar", "npm:4.0.3"],\
           ["co", "npm:4.6.0"],\
           ["codeceptjs", "npm:3.6.10"],\
           ["codecov", "npm:4.0.0-0"],\
@@ -20506,7 +20506,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["sass", "npm:1.83.0"],\
           ["@parcel/watcher", "npm:2.5.0"],\
-          ["chokidar", "npm:4.0.2"],\
+          ["chokidar", "npm:4.0.3"],\
           ["immutable", "npm:5.0.2"],\
           ["source-map-js", "npm:1.2.1"]\
         ],\
