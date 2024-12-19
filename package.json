@@ -58,7 +58,7 @@
     "co": "^4.6.0",
     "compression": "^1.7.4",
     "config": "^3.3.11",
-    "connect-redis": "^5.2.0",
+    "connect-redis": "^8.0.0",
     "cookie-parser": "^1.4.4",
     "csrf-sync": "^4.0.3",
     "express": "^4.20.0",
