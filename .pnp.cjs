@@ -66,7 +66,7 @@ const RAW_RUNTIME_STATE =
           ["https-proxy-agent", "npm:5.0.1"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:24.1.2"],\
           ["immutable", "npm:5.0.3"],\
-          ["ioredis", "npm:5.4.1"],\
+          ["ioredis", "npm:5.4.2"],\
           ["js-yaml", "npm:4.1.0"],\
           ["jsonwebtoken", "npm:9.0.2"],\
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
@@ -14698,10 +14698,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["ioredis", [\
-      ["npm:5.4.1", {\
-        "packageLocation": "./.yarn/cache/ioredis-npm-5.4.1-c96e18ae67-9043b812ac.zip/node_modules/ioredis/",\
+      ["npm:5.4.2", {\
+        "packageLocation": "./.yarn/cache/ioredis-npm-5.4.2-d393ad1d4d-1ba306dfb5.zip/node_modules/ioredis/",\
         "packageDependencies": [\
-          ["ioredis", "npm:5.4.1"],\
+          ["ioredis", "npm:5.4.2"],\
           ["@ioredis/commands", "npm:1.2.0"],\
           ["cluster-key-slot", "npm:1.1.0"],\
           ["debug", "virtual:18316b804e39e10c446c63495ce5eaa5ce989a46612e0ee0ee02c6d34327f1b5350aa9b949cce807abb977452110218e0d6c765fde606fe792cfc6107391696c#npm:4.4.0"],\
@@ -19293,7 +19293,7 @@ const RAW_RUNTIME_STATE =
           ["https-proxy-agent", "npm:5.0.1"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:24.1.2"],\
           ["immutable", "npm:5.0.3"],\
-          ["ioredis", "npm:5.4.1"],\
+          ["ioredis", "npm:5.4.2"],\
           ["js-yaml", "npm:4.1.0"],\
           ["jsonwebtoken", "npm:9.0.2"],\
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
