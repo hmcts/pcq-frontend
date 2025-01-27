@@ -86,7 +86,7 @@
     "traverse": "^0.6.6",
     "uuid": "^11.0.0",
     "webpack": "^5.95.0",
-    "webpack-cli": "^5.1.1"
+    "webpack-cli": "^6.0.0"
   },
   "devDependencies": {
     "@babel/traverse": "^7.22.5",
