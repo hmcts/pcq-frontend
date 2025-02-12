@@ -99,7 +99,7 @@ const RAW_RUNTIME_STATE =
           ["traverse", "npm:0.6.11"],\
           ["tslib", "npm:2.8.1"],\
           ["undici", "npm:6.21.1"],\
-          ["uuid", "npm:11.0.3"],\
+          ["uuid", "npm:11.0.5"],\
           ["watch", "npm:1.0.2"],\
           ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.40.6"],\
           ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.97.1"],\
@@ -10681,7 +10681,7 @@ const RAW_RUNTIME_STATE =
           ["promise-retry", "npm:1.1.1"],\
           ["resq", "npm:1.11.0"],\
           ["sprintf-js", "npm:1.1.1"],\
-          ["uuid", "npm:11.0.3"]\
+          ["uuid", "npm:11.0.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -19846,7 +19846,7 @@ const RAW_RUNTIME_STATE =
           ["traverse", "npm:0.6.11"],\
           ["tslib", "npm:2.8.1"],\
           ["undici", "npm:6.21.1"],\
-          ["uuid", "npm:11.0.3"],\
+          ["uuid", "npm:11.0.5"],\
           ["watch", "npm:1.0.2"],\
           ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.40.6"],\
           ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.97.1"],\
@@ -23288,10 +23288,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:11.0.3", {\
-        "packageLocation": "./.yarn/cache/uuid-npm-11.0.3-abcb5b16c0-2513855631.zip/node_modules/uuid/",\
+      ["npm:11.0.5", {\
+        "packageLocation": "./.yarn/cache/uuid-npm-11.0.5-685b7c1023-0594ecdff3.zip/node_modules/uuid/",\
         "packageDependencies": [\
-          ["uuid", "npm:11.0.3"]\
+          ["uuid", "npm:11.0.5"]\
         ],\
         "linkType": "HARD"\
       }],\
