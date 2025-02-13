@@ -47,7 +47,7 @@ const RAW_RUNTIME_STATE =
           ["co", "npm:4.6.0"],\
           ["codeceptjs", "npm:3.6.10"],\
           ["codecov", "npm:4.0.0-0"],\
-          ["compression", "npm:1.7.5"],\
+          ["compression", "npm:1.8.0"],\
           ["config", "npm:3.3.12"],\
           ["connect-redis", "npm:5.2.0"],\
           ["cookie-parser", "npm:1.4.7"],\
@@ -6675,7 +6675,7 @@ const RAW_RUNTIME_STATE =
           ["@react-native-community/cli-server-api", "npm:12.3.7"],\
           ["@react-native-community/cli-debugger-ui", "npm:12.3.7"],\
           ["@react-native-community/cli-tools", "npm:12.3.7"],\
-          ["compression", "npm:1.7.5"],\
+          ["compression", "npm:1.8.0"],\
           ["connect", "npm:3.7.0"],\
           ["errorhandler", "npm:1.5.1"],\
           ["nocache", "npm:3.0.4"],\
@@ -10983,10 +10983,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["compression", [\
-      ["npm:1.7.5", {\
-        "packageLocation": "./.yarn/cache/compression-npm-1.7.5-346039c027-c69cf6da15.zip/node_modules/compression/",\
+      ["npm:1.8.0", {\
+        "packageLocation": "./.yarn/cache/compression-npm-1.8.0-5088616544-ca213b9bd0.zip/node_modules/compression/",\
         "packageDependencies": [\
-          ["compression", "npm:1.7.5"],\
+          ["compression", "npm:1.8.0"],\
           ["bytes", "npm:3.1.2"],\
           ["compressible", "npm:2.0.18"],\
           ["debug", "virtual:c7b184cd14c02e3ce555ab1875e60cf5033c617e17d82c4c02ea822101d3c817f48bf25a766b4d4335742dc5c9c14c2e88a57ed955a56c4ad0613899f82f5618#npm:2.6.9"],\
@@ -19902,7 +19902,7 @@ const RAW_RUNTIME_STATE =
           ["co", "npm:4.6.0"],\
           ["codeceptjs", "npm:3.6.10"],\
           ["codecov", "npm:4.0.0-0"],\
-          ["compression", "npm:1.7.5"],\
+          ["compression", "npm:1.8.0"],\
           ["config", "npm:3.3.12"],\
           ["connect-redis", "npm:5.2.0"],\
           ["cookie-parser", "npm:1.4.7"],\
