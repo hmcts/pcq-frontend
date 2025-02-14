@@ -11070,15 +11070,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"import-in-the-middle@npm:1.12.0":
-  version: 1.12.0
-  resolution: "import-in-the-middle@npm:1.12.0"
+"import-in-the-middle@npm:1.13.0":
+  version: 1.13.0
+  resolution: "import-in-the-middle@npm:1.13.0"
   dependencies:
-    acorn: "npm:^8.8.2"
+    acorn: "npm:^8.14.0"
     acorn-import-attributes: "npm:^1.9.5"
     cjs-module-lexer: "npm:^1.2.2"
     module-details-from-path: "npm:^1.0.3"
-  checksum: 10/73f3f0ad8c3fceb90bcf308e84609290fe912af32a4be12fce2bf1fde28a0cb12d7219e15e8fe9e8d7ceafcb115a49a66566c2fd973d0a08e33437b00dfce3f9
+  checksum: 10/bf51e7845b8cc2808b254ad5404ea505893854f1e2d1e51f4b54df29f0b1c1ab5adbc99b3c18ec206c69b19ca648cc819cb59bd37e030033c1610134d20cf60c
   languageName: node
   linkType: hard
 
