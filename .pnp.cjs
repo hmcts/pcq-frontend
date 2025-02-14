@@ -58,7 +58,7 @@ const RAW_RUNTIME_STATE =
           ["express", "npm:4.21.2"],\
           ["express-session", "npm:1.18.1"],\
           ["express-urlrewrite", "npm:2.0.3"],\
-          ["fs-extra", "npm:11.2.0"],\
+          ["fs-extra", "npm:11.3.0"],\
           ["git-rev-sync", "npm:3.0.2"],\
           ["globals", "npm:15.15.0"],\
           ["govuk-frontend", "npm:5.7.1"],\
@@ -10797,7 +10797,7 @@ const RAW_RUNTIME_STATE =
           ["detox-copilot", "npm:0.0.27"],\
           ["execa", "npm:5.1.1"],\
           ["find-up", "npm:5.0.0"],\
-          ["fs-extra", "npm:11.2.0"],\
+          ["fs-extra", "npm:11.3.0"],\
           ["funpermaproxy", "npm:1.1.0"],\
           ["glob", "npm:8.1.0"],\
           ["ini", "npm:1.3.8"],\
@@ -18642,7 +18642,7 @@ const RAW_RUNTIME_STATE =
           ["express", "npm:4.21.2"],\
           ["express-session", "npm:1.18.1"],\
           ["express-urlrewrite", "npm:2.0.3"],\
-          ["fs-extra", "npm:11.2.0"],\
+          ["fs-extra", "npm:11.3.0"],\
           ["git-rev-sync", "npm:3.0.2"],\
           ["globals", "npm:15.15.0"],\
           ["govuk-frontend", "npm:5.7.1"],\
@@ -22844,7 +22844,7 @@ const RAW_RUNTIME_STATE =
           ["chalk", "npm:5.3.0"],\
           ["commander", "npm:12.1.0"],\
           ["fast-glob", "npm:3.3.2"],\
-          ["fs-extra", "npm:11.2.0"],\
+          ["fs-extra", "npm:11.3.0"],\
           ["js-yaml", "npm:4.1.0"],\
           ["lodash-es", "npm:4.17.21"],\
           ["semver", "npm:7.6.3"],\
