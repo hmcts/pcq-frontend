@@ -125,7 +125,7 @@
     "tslib": "^2.6.0",
     "undici": "^6.19.8",
     "watch": "^1.0.2",
-    "webdriverio": "^8.21.0",
+    "webdriverio": "8.40.6",
     "yarn-audit-fix": "^10.0.3"
   },
   "resolutions": {
