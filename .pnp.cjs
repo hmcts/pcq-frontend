@@ -93,7 +93,7 @@ const RAW_RUNTIME_STATE =
           ["serve-favicon", "npm:2.5.0"],\
           ["sinon", "npm:19.0.2"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-          ["sonarqube-scanner", "npm:4.2.6"],\
+          ["sonarqube-scanner", "npm:4.2.7"],\
           ["supertest", "npm:7.0.0"],\
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.11"],\
@@ -16509,16 +16509,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["jest-sonar-reporter", [\
-      ["npm:2.0.0", {\
-        "packageLocation": "./.yarn/cache/jest-sonar-reporter-npm-2.0.0-fc25caa9d6-cf9fdc3b0b.zip/node_modules/jest-sonar-reporter/",\
-        "packageDependencies": [\
-          ["jest-sonar-reporter", "npm:2.0.0"],\
-          ["xml", "npm:1.0.1"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["jest-util", [\
       ["npm:29.7.0", {\
         "packageLocation": "./.yarn/cache/jest-util-npm-29.7.0-ff1d59714b-30d58af696.zip/node_modules/jest-util/",\
@@ -20487,7 +20477,7 @@ const RAW_RUNTIME_STATE =
           ["serve-favicon", "npm:2.5.0"],\
           ["sinon", "npm:19.0.2"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-          ["sonarqube-scanner", "npm:4.2.6"],\
+          ["sonarqube-scanner", "npm:4.2.7"],\
           ["supertest", "npm:7.0.0"],\
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.11"],\
@@ -22282,16 +22272,15 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sonarqube-scanner", [\
-      ["npm:4.2.6", {\
-        "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-4.2.6-a9531ca4b6-d8831a4cdd.zip/node_modules/sonarqube-scanner/",\
+      ["npm:4.2.7", {\
+        "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-4.2.7-35323b5655-bfb09664f9.zip/node_modules/sonarqube-scanner/",\
         "packageDependencies": [\
-          ["sonarqube-scanner", "npm:4.2.6"],\
+          ["sonarqube-scanner", "npm:4.2.7"],\
           ["adm-zip", "npm:0.5.12"],\
           ["axios", "npm:1.7.7"],\
           ["commander", "npm:12.0.0"],\
           ["fs-extra", "npm:11.2.0"],\
           ["hpagent", "npm:1.2.0"],\
-          ["jest-sonar-reporter", "npm:2.0.0"],\
           ["node-forge", "npm:1.3.1"],\
           ["properties-file", "npm:3.5.4"],\
           ["proxy-from-env", "npm:1.1.0"],\
@@ -24607,15 +24596,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/x-xss-protection-npm-1.3.0-b21b288d58-8fc5ea8d70.zip/node_modules/x-xss-protection/",\
         "packageDependencies": [\
           ["x-xss-protection", "npm:1.3.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["xml", [\
-      ["npm:1.0.1", {\
-        "packageLocation": "./.yarn/cache/xml-npm-1.0.1-f50a7aeb8e-6c4c31a130.zip/node_modules/xml/",\
-        "packageDependencies": [\
-          ["xml", "npm:1.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
