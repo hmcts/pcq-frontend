@@ -12663,15 +12663,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-sonar-reporter@npm:2.0.0":
-  version: 2.0.0
-  resolution: "jest-sonar-reporter@npm:2.0.0"
-  dependencies:
-    xml: "npm:^1.0.1"
-  checksum: 10/cf9fdc3b0b2cc904f5a4cc12acc9f489ee5483269d8cfae45b56aa9db735b87d80fb6d3cb338b5ca36c79f683b48384b250d500e8f1c84fcd14925f2d740a82b
-  languageName: node
-  linkType: hard
-
 "jest-util@npm:^29.7.0":
   version: 29.7.0
   resolution: "jest-util@npm:29.7.0"
@@ -18017,15 +18008,14 @@ __metadata:
   linkType: hard
 
 "sonarqube-scanner@npm:^4.0.0":
-  version: 4.2.6
-  resolution: "sonarqube-scanner@npm:4.2.6"
+  version: 4.2.7
+  resolution: "sonarqube-scanner@npm:4.2.7"
   dependencies:
     adm-zip: "npm:0.5.12"
     axios: "npm:1.7.7"
     commander: "npm:12.0.0"
     fs-extra: "npm:11.2.0"
     hpagent: "npm:1.2.0"
-    jest-sonar-reporter: "npm:2.0.0"
     node-forge: "npm:^1.3.1"
     properties-file: "npm:3.5.4"
     proxy-from-env: "npm:^1.1.0"
@@ -18033,8 +18023,9 @@ __metadata:
     slugify: "npm:1.6.6"
     tar-stream: "npm:3.1.7"
   bin:
-    sonar-scanner: bin/sonar-scanner
-  checksum: 10/d8831a4cdde5ba69e705a81e5aa3309972849caea3a51e65bda60084981f4ff65517669059eddc19255f2c4cbaa2f5a5aed3a5cbedd39bbe9bbd0e536b46f335
+    sonar: bin/sonar-scanner.js
+    sonar-scanner: bin/sonar-scanner.js
+  checksum: 10/bfb09664f9823f7c49a94349632da83dad384443748d2599c3c81ad9ab1d3ec713d2e6c4039d68b2e522cf233e25f178953bc68a1cc8ed23c8bdae7da7f863d0
   languageName: node
   linkType: hard
 
@@ -20129,13 +20120,6 @@ __metadata:
   version: 1.3.0
   resolution: "x-xss-protection@npm:1.3.0"
   checksum: 10/8fc5ea8d7043e4cf03056dc07a145dcb6d7173bdce4528719db9bbbfe89421010ec6946b283139f068a842e9abc408b0dd9be5b0c3681b824e2b1849b2b848b4
-  languageName: node
-  linkType: hard
-
-"xml@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "xml@npm:1.0.1"
-  checksum: 10/6c4c31a1308e45732e5ac6b50edbca0e8f7abe5cb5de10215d8e3c688819fe7c7706e056f6fb59b1a23fdf1000c2d7a8bba0a89e94aa1796cd2376d9a5ba401e
   languageName: node
   linkType: hard
 
