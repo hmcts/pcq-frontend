@@ -74,7 +74,7 @@ const RAW_RUNTIME_STATE =
           ["mocha", "npm:10.8.2"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
           ["moment", "npm:2.30.1"],\
-          ["nock", "npm:13.5.6"],\
+          ["nock", "npm:14.0.1"],\
           ["node-emoji", "npm:2.2.0"],\
           ["node-fetch", "virtual:30941e4951ac6d1287fb12c26a7afed794bbb9f0089d7db177d8be4b10361b145255aafe174851a9123e126cbf4a09fd871b52100910a73274b5273a96c43f9a#npm:2.7.0"],\
           ["nodemon", "npm:3.1.9"],\
@@ -5447,6 +5447,21 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@mswjs/interceptors", [\
+      ["npm:0.37.6", {\
+        "packageLocation": "./.yarn/cache/@mswjs-interceptors-npm-0.37.6-dd542ff9fe-bc1541ba3b.zip/node_modules/@mswjs/interceptors/",\
+        "packageDependencies": [\
+          ["@mswjs/interceptors", "npm:0.37.6"],\
+          ["@open-draft/deferred-promise", "npm:2.2.0"],\
+          ["@open-draft/logger", "npm:0.3.0"],\
+          ["@open-draft/until", "npm:2.1.0"],\
+          ["is-node-process", "npm:1.2.0"],\
+          ["outvariant", "npm:1.4.3"],\
+          ["strict-event-emitter", "npm:0.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@nodelib/fs.scandir", [\
       ["npm:2.1.5", {\
         "packageLocation": "./.yarn/cache/@nodelib-fs.scandir-npm-2.1.5-89c67370dd-6ab2a9b8a1.zip/node_modules/@nodelib/fs.scandir/",\
@@ -5505,6 +5520,35 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@one-ini-wasm-npm-0.1.1-cee8120e33-673c11518d.zip/node_modules/@one-ini/wasm/",\
         "packageDependencies": [\
           ["@one-ini/wasm", "npm:0.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@open-draft/deferred-promise", [\
+      ["npm:2.2.0", {\
+        "packageLocation": "./.yarn/cache/@open-draft-deferred-promise-npm-2.2.0-adf396dc9f-bc3bb1668a.zip/node_modules/@open-draft/deferred-promise/",\
+        "packageDependencies": [\
+          ["@open-draft/deferred-promise", "npm:2.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@open-draft/logger", [\
+      ["npm:0.3.0", {\
+        "packageLocation": "./.yarn/cache/@open-draft-logger-npm-0.3.0-12b03e55aa-7a280f170b.zip/node_modules/@open-draft/logger/",\
+        "packageDependencies": [\
+          ["@open-draft/logger", "npm:0.3.0"],\
+          ["is-node-process", "npm:1.2.0"],\
+          ["outvariant", "npm:1.4.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@open-draft/until", [\
+      ["npm:2.1.0", {\
+        "packageLocation": "./.yarn/cache/@open-draft-until-npm-2.1.0-e27da33c52-622be42950.zip/node_modules/@open-draft/until/",\
+        "packageDependencies": [\
+          ["@open-draft/until", "npm:2.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -15888,6 +15932,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["is-node-process", [\
+      ["npm:1.2.0", {\
+        "packageLocation": "./.yarn/cache/is-node-process-npm-1.2.0-34f2abe8e1-930765cdc6.zip/node_modules/is-node-process/",\
+        "packageDependencies": [\
+          ["is-node-process", "npm:1.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["is-number", [\
       ["npm:7.0.0", {\
         "packageLocation": "./.yarn/cache/is-number-npm-7.0.0-060086935c-6a6c3383f6.zip/node_modules/is-number/",\
@@ -18883,11 +18936,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["nock", [\
-      ["npm:13.5.6", {\
-        "packageLocation": "./.yarn/cache/nock-npm-13.5.6-6fbafbb636-a57c265b75.zip/node_modules/nock/",\
+      ["npm:14.0.1", {\
+        "packageLocation": "./.yarn/cache/nock-npm-14.0.1-8eff65b77d-5498352f9b.zip/node_modules/nock/",\
         "packageDependencies": [\
-          ["nock", "npm:13.5.6"],\
-          ["debug", "virtual:5dc40fea712494f06495996e8631fe3d962d9b85eec49908b9f35dc6ec9523d9b63e829ac878a2fa2414a0d111083466b19302a37186a46f0da9795af68d1f4c#npm:4.4.0"],\
+          ["nock", "npm:14.0.1"],\
+          ["@mswjs/interceptors", "npm:0.37.6"],\
           ["json-stringify-safe", "npm:5.0.1"],\
           ["propagate", "npm:2.0.1"]\
         ],\
@@ -19540,6 +19593,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/os-tmpdir-npm-1.0.2-e305b0689b-5666560f7b.zip/node_modules/os-tmpdir/",\
         "packageDependencies": [\
           ["os-tmpdir", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["outvariant", [\
+      ["npm:1.4.3", {\
+        "packageLocation": "./.yarn/cache/outvariant-npm-1.4.3-192f951f81-3a75827458.zip/node_modules/outvariant/",\
+        "packageDependencies": [\
+          ["outvariant", "npm:1.4.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -20450,7 +20512,7 @@ const RAW_RUNTIME_STATE =
           ["mocha", "npm:10.8.2"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
           ["moment", "npm:2.30.1"],\
-          ["nock", "npm:13.5.6"],\
+          ["nock", "npm:14.0.1"],\
           ["node-emoji", "npm:2.2.0"],\
           ["node-fetch", "virtual:30941e4951ac6d1287fb12c26a7afed794bbb9f0089d7db177d8be4b10361b145255aafe174851a9123e126cbf4a09fd871b52100910a73274b5273a96c43f9a#npm:2.7.0"],\
           ["nodemon", "npm:3.1.9"],\
@@ -22521,6 +22583,15 @@ const RAW_RUNTIME_STATE =
           ["fast-fifo", "npm:1.3.2"],\
           ["queue-tick", "npm:1.0.1"],\
           ["text-decoder", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["strict-event-emitter", [\
+      ["npm:0.5.1", {\
+        "packageLocation": "./.yarn/cache/strict-event-emitter-npm-0.5.1-8414bf36b3-25c84d88be.zip/node_modules/strict-event-emitter/",\
+        "packageDependencies": [\
+          ["strict-event-emitter", "npm:0.5.1"]\
         ],\
         "linkType": "HARD"\
       }]\
