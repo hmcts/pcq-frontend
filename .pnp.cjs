@@ -6028,7 +6028,7 @@ const RAW_RUNTIME_STATE =
           ["@opentelemetry/api-logs", "npm:0.53.0"],\
           ["@types/opentelemetry__api", null],\
           ["@types/shimmer", "npm:1.2.0"],\
-          ["import-in-the-middle", "npm:1.13.0"],\
+          ["import-in-the-middle", "npm:1.13.1"],\
           ["require-in-the-middle", "npm:7.2.0"],\
           ["semver", "npm:7.6.3"],\
           ["shimmer", "npm:1.2.1"]\
@@ -6046,7 +6046,7 @@ const RAW_RUNTIME_STATE =
           ["@opentelemetry/api", "npm:1.4.1"],\
           ["@types/opentelemetry__api", null],\
           ["@types/shimmer", "npm:1.0.2"],\
-          ["import-in-the-middle", "npm:1.13.0"],\
+          ["import-in-the-middle", "npm:1.13.1"],\
           ["require-in-the-middle", "npm:7.2.0"],\
           ["semver", "npm:7.6.0"],\
           ["shimmer", "npm:1.2.1"]\
@@ -6065,7 +6065,7 @@ const RAW_RUNTIME_STATE =
           ["@opentelemetry/api-logs", "npm:0.57.2"],\
           ["@types/opentelemetry__api", null],\
           ["@types/shimmer", "npm:1.2.0"],\
-          ["import-in-the-middle", "npm:1.13.0"],\
+          ["import-in-the-middle", "npm:1.13.1"],\
           ["require-in-the-middle", "npm:7.2.0"],\
           ["semver", "npm:7.6.3"],\
           ["shimmer", "npm:1.2.1"]\
@@ -8789,10 +8789,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:923c4ecf3f14f4531a29494464f2d5917b9460aa7f2a81df340135a0ed33d66b740f59c176537f933733cec3638c5be02f2eca69a4e5d89c7a6c43f00f001a1b#npm:1.9.5", {\
-        "packageLocation": "./.yarn/__virtual__/acorn-import-attributes-virtual-85386b0305/0/cache/acorn-import-attributes-npm-1.9.5-d1e666eb35-8bfbfbb6e2.zip/node_modules/acorn-import-attributes/",\
+      ["virtual:b934f2b9d8bf258faa11e55baf2de4075f3a88d38c1bea1fa500a9f63da5e228a6b2ce66328c1a65d37c724e9bf55c62660442a66cd7f965eb569ece2e86f1c6#npm:1.9.5", {\
+        "packageLocation": "./.yarn/__virtual__/acorn-import-attributes-virtual-747dcd1f09/0/cache/acorn-import-attributes-npm-1.9.5-d1e666eb35-8bfbfbb6e2.zip/node_modules/acorn-import-attributes/",\
         "packageDependencies": [\
-          ["acorn-import-attributes", "virtual:923c4ecf3f14f4531a29494464f2d5917b9460aa7f2a81df340135a0ed33d66b740f59c176537f933733cec3638c5be02f2eca69a4e5d89c7a6c43f00f001a1b#npm:1.9.5"],\
+          ["acorn-import-attributes", "virtual:b934f2b9d8bf258faa11e55baf2de4075f3a88d38c1bea1fa500a9f63da5e228a6b2ce66328c1a65d37c724e9bf55c62660442a66cd7f965eb569ece2e86f1c6#npm:1.9.5"],\
           ["@types/acorn", null],\
           ["acorn", "npm:8.14.0"]\
         ],\
@@ -15428,12 +15428,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["import-in-the-middle", [\
-      ["npm:1.13.0", {\
-        "packageLocation": "./.yarn/cache/import-in-the-middle-npm-1.13.0-923c4ecf3f-bf51e7845b.zip/node_modules/import-in-the-middle/",\
+      ["npm:1.13.1", {\
+        "packageLocation": "./.yarn/cache/import-in-the-middle-npm-1.13.1-b934f2b9d8-fea083fb2d.zip/node_modules/import-in-the-middle/",\
         "packageDependencies": [\
-          ["import-in-the-middle", "npm:1.13.0"],\
+          ["import-in-the-middle", "npm:1.13.1"],\
           ["acorn", "npm:8.14.0"],\
-          ["acorn-import-attributes", "virtual:923c4ecf3f14f4531a29494464f2d5917b9460aa7f2a81df340135a0ed33d66b740f59c176537f933733cec3638c5be02f2eca69a4e5d89c7a6c43f00f001a1b#npm:1.9.5"],\
+          ["acorn-import-attributes", "virtual:b934f2b9d8bf258faa11e55baf2de4075f3a88d38c1bea1fa500a9f63da5e228a6b2ce66328c1a65d37c724e9bf55c62660442a66cd7f965eb569ece2e86f1c6#npm:1.9.5"],\
           ["cjs-module-lexer", "npm:1.2.3"],\
           ["module-details-from-path", "npm:1.0.3"]\
         ],\
