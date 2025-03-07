@@ -82,7 +82,7 @@ const RAW_RUNTIME_STATE =
           ["nyc", "npm:17.1.0"],\
           ["pa11y", "npm:8.0.0"],\
           ["permissions-policy", "npm:0.6.0"],\
-          ["playwright", "npm:1.50.1"],\
+          ["playwright", "npm:1.51.0"],\
           ["pre-commit", "npm:1.2.2"],\
           ["proxyquire", "npm:2.1.3"],\
           ["react-native", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:0.78.0"],\
@@ -20172,21 +20172,21 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["playwright", [\
-      ["npm:1.50.1", {\
-        "packageLocation": "./.yarn/cache/playwright-npm-1.50.1-eb600fd9db-a3687614ac.zip/node_modules/playwright/",\
+      ["npm:1.51.0", {\
+        "packageLocation": "./.yarn/cache/playwright-npm-1.51.0-0433fef7b0-350f9e1cf8.zip/node_modules/playwright/",\
         "packageDependencies": [\
-          ["playwright", "npm:1.50.1"],\
+          ["playwright", "npm:1.51.0"],\
           ["fsevents", "patch:fsevents@npm%3A2.3.2#optional!builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"],\
-          ["playwright-core", "npm:1.50.1"]\
+          ["playwright-core", "npm:1.51.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["playwright-core", [\
-      ["npm:1.50.1", {\
-        "packageLocation": "./.yarn/cache/playwright-core-npm-1.50.1-be16b4e251-9a310b8a66.zip/node_modules/playwright-core/",\
+      ["npm:1.51.0", {\
+        "packageLocation": "./.yarn/cache/playwright-core-npm-1.51.0-cc9435f4f7-2e2bb4e962.zip/node_modules/playwright-core/",\
         "packageDependencies": [\
-          ["playwright-core", "npm:1.50.1"]\
+          ["playwright-core", "npm:1.51.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -20547,7 +20547,7 @@ const RAW_RUNTIME_STATE =
           ["nyc", "npm:17.1.0"],\
           ["pa11y", "npm:8.0.0"],\
           ["permissions-policy", "npm:0.6.0"],\
-          ["playwright", "npm:1.50.1"],\
+          ["playwright", "npm:1.51.0"],\
           ["pre-commit", "npm:1.2.2"],\
           ["proxyquire", "npm:2.1.3"],\
           ["react-native", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:0.78.0"],\
