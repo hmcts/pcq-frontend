@@ -5450,9 +5450,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wdio/config@npm:8.41.0":
-  version: 8.41.0
-  resolution: "@wdio/config@npm:8.41.0"
+"@wdio/config@npm:8.43.0":
+  version: 8.43.0
+  resolution: "@wdio/config@npm:8.43.0"
   dependencies:
     "@wdio/logger": "npm:8.38.0"
     "@wdio/types": "npm:8.41.0"
@@ -5461,7 +5461,7 @@ __metadata:
     deepmerge-ts: "npm:^5.0.0"
     glob: "npm:^10.2.2"
     import-meta-resolve: "npm:^4.0.0"
-  checksum: 10/deb586356e62fec6375beee5541196429af177c2df1acf6a8cfe7a68fbcbd403af0afa0dc7da080eff10d8836d591a4862b7cbad1269d1752fef5f64b1737e54
+  checksum: 10/10ef6fbfc52054a2d3a7ebdcd3ebf5002a5018afa313b60e61546de2505800423346110de266561423fcee4c05dac2fc6b93e436f74193800443cb922c79cc62
   languageName: node
   linkType: hard
 
@@ -19764,13 +19764,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webdriver@npm:8.42.0":
-  version: 8.42.0
-  resolution: "webdriver@npm:8.42.0"
+"webdriver@npm:8.43.0":
+  version: 8.43.0
+  resolution: "webdriver@npm:8.43.0"
   dependencies:
     "@types/node": "npm:^22.2.0"
     "@types/ws": "npm:^8.5.3"
-    "@wdio/config": "npm:8.41.0"
+    "@wdio/config": "npm:8.43.0"
     "@wdio/logger": "npm:8.38.0"
     "@wdio/protocols": "npm:8.40.3"
     "@wdio/types": "npm:8.41.0"
@@ -19779,16 +19779,16 @@ __metadata:
     got: "npm:^12.6.1"
     ky: "npm:^0.33.0"
     ws: "npm:^8.8.0"
-  checksum: 10/268d6d453b23e4240fd0f0b1f8088658786d06e55d7b5bd4feffc948ecd3e6c24b49d70873d2d461ce659c563a439f7988e340de2839dfa7b5ec63b73a8e8846
+  checksum: 10/9221f0f48cb98542fde44a411bf1e15545230e42d0d81de3db5025ecee4664419bbe4e3061b5448267a61e35eac4c025eeb3deba4c0d34f46a12f58dc7e50913
   languageName: node
   linkType: hard
 
 "webdriverio@npm:^8.21.0":
-  version: 8.42.0
-  resolution: "webdriverio@npm:8.42.0"
+  version: 8.43.0
+  resolution: "webdriverio@npm:8.43.0"
   dependencies:
     "@types/node": "npm:^22.2.0"
-    "@wdio/config": "npm:8.41.0"
+    "@wdio/config": "npm:8.43.0"
     "@wdio/logger": "npm:8.38.0"
     "@wdio/protocols": "npm:8.40.3"
     "@wdio/repl": "npm:8.40.3"
@@ -19811,13 +19811,13 @@ __metadata:
     resq: "npm:^1.9.1"
     rgb2hex: "npm:0.2.5"
     serialize-error: "npm:^11.0.1"
-    webdriver: "npm:8.42.0"
+    webdriver: "npm:8.43.0"
   peerDependencies:
     devtools: ^8.14.0
   peerDependenciesMeta:
     devtools:
       optional: true
-  checksum: 10/3e5ed49f4bd1af477ebd79350c091367a016955ba973b97a6094895ab1f04bba29e5825f5117d78f1ed2f261f898b8414e870df55cd8b2821cca15a9c662c0c4
+  checksum: 10/f4c981d4b26207d93546a67fdbe938d70cfd9f74b0bb7d95cc6386b8bfe58dfec0c7c48bd863618fb9db12a6a97aa6ec0787bfa56883e7f2b1d1df309ed8875a
   languageName: node
   linkType: hard
 
