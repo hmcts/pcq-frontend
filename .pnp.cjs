@@ -91,7 +91,7 @@ const RAW_RUNTIME_STATE =
           ["sanitizer", "npm:0.1.3"],\
           ["sass", "npm:1.85.1"],\
           ["serve-favicon", "npm:2.5.0"],\
-          ["sinon", "npm:19.0.2"],\
+          ["sinon", "npm:19.0.4"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
           ["sonarqube-scanner", "npm:4.2.8"],\
           ["supertest", "npm:7.0.0"],\
@@ -7771,10 +7771,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:13.0.2", {\
-        "packageLocation": "./.yarn/cache/@sinonjs-fake-timers-npm-13.0.2-6d212b1963-77cca5c548.zip/node_modules/@sinonjs/fake-timers/",\
+      ["npm:13.0.5", {\
+        "packageLocation": "./.yarn/cache/@sinonjs-fake-timers-npm-13.0.5-b25ae4bd2b-11ee417968.zip/node_modules/@sinonjs/fake-timers/",\
         "packageDependencies": [\
-          ["@sinonjs/fake-timers", "npm:13.0.2"],\
+          ["@sinonjs/fake-timers", "npm:13.0.5"],\
           ["@sinonjs/commons", "npm:3.0.1"]\
         ],\
         "linkType": "HARD"\
@@ -20651,7 +20651,7 @@ const RAW_RUNTIME_STATE =
           ["sanitizer", "npm:0.1.3"],\
           ["sass", "npm:1.85.1"],\
           ["serve-favicon", "npm:2.5.0"],\
-          ["sinon", "npm:19.0.2"],\
+          ["sinon", "npm:19.0.4"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
           ["sonarqube-scanner", "npm:4.2.8"],\
           ["supertest", "npm:7.0.0"],\
@@ -22312,12 +22312,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sinon", [\
-      ["npm:19.0.2", {\
-        "packageLocation": "./.yarn/cache/sinon-npm-19.0.2-594b36f1b3-0be47968e9.zip/node_modules/sinon/",\
+      ["npm:19.0.4", {\
+        "packageLocation": "./.yarn/cache/sinon-npm-19.0.4-af7157f9fe-c38e4de00b.zip/node_modules/sinon/",\
         "packageDependencies": [\
-          ["sinon", "npm:19.0.2"],\
+          ["sinon", "npm:19.0.4"],\
           ["@sinonjs/commons", "npm:3.0.1"],\
-          ["@sinonjs/fake-timers", "npm:13.0.2"],\
+          ["@sinonjs/fake-timers", "npm:13.0.5"],\
           ["@sinonjs/samsam", "npm:8.0.2"],\
           ["diff", "npm:7.0.0"],\
           ["nise", "npm:6.1.1"],\
@@ -22341,7 +22341,7 @@ const RAW_RUNTIME_STATE =
           ["@types/chai", null],\
           ["@types/sinon", null],\
           ["chai", "npm:4.5.0"],\
-          ["sinon", "npm:19.0.2"]\
+          ["sinon", "npm:19.0.4"]\
         ],\
         "packagePeers": [\
           "@types/chai",\
