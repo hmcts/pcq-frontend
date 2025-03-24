@@ -51,7 +51,7 @@ const RAW_RUNTIME_STATE =
           ["config", "npm:3.3.12"],\
           ["connect-redis", "npm:5.2.0"],\
           ["cookie-parser", "npm:1.4.7"],\
-          ["csrf-sync", "npm:4.0.3"],\
+          ["csrf-sync", "npm:4.1.0"],\
           ["debug", "virtual:bdeb9ff2c27652ab0b48e2b4b7da3b19c234e296477c492f7e86e093d9623a8d5d6d542fa002289eee5daadea58324c140cd734b64ffb6d3abf38cb16b56e15c#npm:4.4.0"],\
           ["eslint", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.22.0"],\
           ["esmify", "npm:2.1.1"],\
@@ -11796,10 +11796,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["csrf-sync", [\
-      ["npm:4.0.3", {\
-        "packageLocation": "./.yarn/cache/csrf-sync-npm-4.0.3-c43c3ffa82-5ebcd28849.zip/node_modules/csrf-sync/",\
+      ["npm:4.1.0", {\
+        "packageLocation": "./.yarn/cache/csrf-sync-npm-4.1.0-268464e8ff-51ac4adade.zip/node_modules/csrf-sync/",\
         "packageDependencies": [\
-          ["csrf-sync", "npm:4.0.3"],\
+          ["csrf-sync", "npm:4.1.0"],\
           ["http-errors", "npm:2.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -20611,7 +20611,7 @@ const RAW_RUNTIME_STATE =
           ["config", "npm:3.3.12"],\
           ["connect-redis", "npm:5.2.0"],\
           ["cookie-parser", "npm:1.4.7"],\
-          ["csrf-sync", "npm:4.0.3"],\
+          ["csrf-sync", "npm:4.1.0"],\
           ["debug", "virtual:bdeb9ff2c27652ab0b48e2b4b7da3b19c234e296477c492f7e86e093d9623a8d5d6d542fa002289eee5daadea58324c140cd734b64ffb6d3abf38cb16b56e15c#npm:4.4.0"],\
           ["eslint", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.22.0"],\
           ["esmify", "npm:2.1.1"],\
