@@ -8380,11 +8380,11 @@ __metadata:
   linkType: hard
 
 "csrf-sync@npm:^4.0.3":
-  version: 4.0.3
-  resolution: "csrf-sync@npm:4.0.3"
+  version: 4.1.0
+  resolution: "csrf-sync@npm:4.1.0"
   dependencies:
     http-errors: "npm:^2.0.0"
-  checksum: 10/5ebcd288498fe99e2937e3cabebc9758e1c98d952afcaed4c3df34749bf8dca420c4fc2160a3e2b2d6dff8000b09dd7f47e45deb119e82fc6374ebb639850093
+  checksum: 10/51ac4adadeb34b1f77f07e0b2e799d9314ba88025e8f0de8e4e96caac9c6a4fec412e7f738e3c36401e8c084830802c2a7a8cd2e083e28adf81565ca75a62fe1
   languageName: node
   linkType: hard
 
