@@ -93,7 +93,7 @@ const RAW_RUNTIME_STATE =
           ["serve-favicon", "npm:2.5.0"],\
           ["sinon", "npm:19.0.5"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-          ["sonarqube-scanner", "npm:4.2.8"],\
+          ["sonarqube-scanner", "npm:4.3.0"],\
           ["supertest", "npm:7.1.0"],\
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.11"],\
@@ -9535,6 +9535,16 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/axios-npm-1.7.7-cfbedc233d-7f875ea13b.zip/node_modules/axios/",\
         "packageDependencies": [\
           ["axios", "npm:1.7.7"],\
+          ["follow-redirects", "virtual:cfbedc233d4c16068d815547ad303dec1092fdb3b8bb4ec9ab9c56bdd55b4e87650c7a525a88805756f4d2819c03abfd96a9983cfa927fedf995d1b8b879db38#npm:1.15.6"],\
+          ["form-data", "npm:4.0.0"],\
+          ["proxy-from-env", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:1.8.2", {\
+        "packageLocation": "./.yarn/cache/axios-npm-1.8.2-55671cda10-d432875812.zip/node_modules/axios/",\
+        "packageDependencies": [\
+          ["axios", "npm:1.8.2"],\
           ["follow-redirects", "virtual:cfbedc233d4c16068d815547ad303dec1092fdb3b8bb4ec9ab9c56bdd55b4e87650c7a525a88805756f4d2819c03abfd96a9983cfa927fedf995d1b8b879db38#npm:1.15.6"],\
           ["form-data", "npm:4.0.0"],\
           ["proxy-from-env", "npm:1.1.0"]\
@@ -20663,7 +20673,7 @@ const RAW_RUNTIME_STATE =
           ["serve-favicon", "npm:2.5.0"],\
           ["sinon", "npm:19.0.5"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-          ["sonarqube-scanner", "npm:4.2.8"],\
+          ["sonarqube-scanner", "npm:4.3.0"],\
           ["supertest", "npm:7.1.0"],\
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.11"],\
@@ -22473,12 +22483,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sonarqube-scanner", [\
-      ["npm:4.2.8", {\
-        "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-4.2.8-1ccb0c5109-f706fcf861.zip/node_modules/sonarqube-scanner/",\
+      ["npm:4.3.0", {\
+        "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-4.3.0-7ea9958171-a6448c5b9a.zip/node_modules/sonarqube-scanner/",\
         "packageDependencies": [\
-          ["sonarqube-scanner", "npm:4.2.8"],\
+          ["sonarqube-scanner", "npm:4.3.0"],\
           ["adm-zip", "npm:0.5.12"],\
-          ["axios", "npm:1.7.7"],\
+          ["axios", "npm:1.8.2"],\
           ["commander", "npm:12.0.0"],\
           ["fs-extra", "npm:11.2.0"],\
           ["hpagent", "npm:1.2.0"],\
