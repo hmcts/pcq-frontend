@@ -98,7 +98,7 @@ const RAW_RUNTIME_STATE =
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.11"],\
           ["tslib", "npm:2.8.1"],\
-          ["undici", "npm:7.5.0"],\
+          ["undici", "npm:7.6.0"],\
           ["uuid", "npm:11.1.0"],\
           ["watch", "npm:1.0.2"],\
           ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.43.0"],\
@@ -405,7 +405,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/functions", "npm:4.6.1"],\
           ["cookie", "npm:1.0.2"],\
           ["long", "npm:4.0.0"],\
-          ["undici", "npm:5.28.5"]\
+          ["undici", "npm:5.29.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -20900,7 +20900,7 @@ const RAW_RUNTIME_STATE =
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.11"],\
           ["tslib", "npm:2.8.1"],\
-          ["undici", "npm:7.5.0"],\
+          ["undici", "npm:7.6.0"],\
           ["uuid", "npm:11.1.0"],\
           ["watch", "npm:1.0.2"],\
           ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.43.0"],\
@@ -24171,18 +24171,18 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["undici", [\
-      ["npm:5.28.5", {\
-        "packageLocation": "./.yarn/cache/undici-npm-5.28.5-52b9d359fd-459cd84ab7.zip/node_modules/undici/",\
+      ["npm:5.29.0", {\
+        "packageLocation": "./.yarn/cache/undici-npm-5.29.0-caeb96c8ee-0ceca8924a.zip/node_modules/undici/",\
         "packageDependencies": [\
-          ["undici", "npm:5.28.5"],\
+          ["undici", "npm:5.29.0"],\
           ["@fastify/busboy", "npm:2.1.1"]\
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:7.5.0", {\
-        "packageLocation": "./.yarn/cache/undici-npm-7.5.0-0533c07a70-66b84d69f7.zip/node_modules/undici/",\
+      ["npm:7.6.0", {\
+        "packageLocation": "./.yarn/cache/undici-npm-7.6.0-4784f37247-b3d245ad86.zip/node_modules/undici/",\
         "packageDependencies": [\
-          ["undici", "npm:7.5.0"]\
+          ["undici", "npm:7.6.0"]\
         ],\
         "linkType": "HARD"\
       }]\
