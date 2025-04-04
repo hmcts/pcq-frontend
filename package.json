@@ -54,7 +54,7 @@
     "ajv": "^6.12.6",
     "app": "link:./app",
     "applicationinsights": "^3.2.1",
-    "body-parser": "^1.20.3",
+    "body-parser": "^2.0.0",
     "co": "^4.6.0",
     "compression": "^1.7.4",
     "config": "^3.3.11",
