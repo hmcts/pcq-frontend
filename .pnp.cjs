@@ -67,7 +67,7 @@ const RAW_RUNTIME_STATE =
           ["https-proxy-agent", "npm:5.0.1"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:24.2.3"],\
           ["immutable", "npm:5.1.1"],\
-          ["ioredis", "npm:5.6.0"],\
+          ["ioredis", "npm:5.6.1"],\
           ["js-yaml", "npm:4.1.0"],\
           ["jsonwebtoken", "npm:9.0.2"],\
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
@@ -14643,14 +14643,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["ioredis", [\
-      ["npm:5.6.0", {\
-        "packageLocation": "./.yarn/cache/ioredis-npm-5.6.0-2140ad9baf-4f63672299.zip/node_modules/ioredis/",\
+      ["npm:5.6.1", {\
+        "packageLocation": "./.yarn/cache/ioredis-npm-5.6.1-d69383b35a-632186e21f.zip/node_modules/ioredis/",\
         "packageDependencies": [\
           ["@ioredis/commands", "npm:1.2.0"],\
           ["cluster-key-slot", "npm:1.1.0"],\
           ["debug", "virtual:e376c6d25689d1413f13b759a5649fe969efab30320e886cab81ece2b6daf8c4c74f642faff7228a9a286b4b82bc7bac5773e45f1085910307cd111b19a8cd17#npm:4.4.0"],\
           ["denque", "npm:2.1.0"],\
-          ["ioredis", "npm:5.6.0"],\
+          ["ioredis", "npm:5.6.1"],\
           ["lodash.defaults", "npm:4.2.0"],\
           ["lodash.isarguments", "npm:3.1.0"],\
           ["redis-errors", "npm:1.2.0"],\
@@ -19630,7 +19630,7 @@ const RAW_RUNTIME_STATE =
           ["https-proxy-agent", "npm:5.0.1"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:24.2.3"],\
           ["immutable", "npm:5.1.1"],\
-          ["ioredis", "npm:5.6.0"],\
+          ["ioredis", "npm:5.6.1"],\
           ["js-yaml", "npm:4.1.0"],\
           ["jsonwebtoken", "npm:9.0.2"],\
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
@@ -28343,14 +28343,9 @@ class LibZipImpl {
   libzip;
   lzSource;
   zip;
-  /**
-   * A cache of indices mapped to file sources.
-   * Populated by `setFileSource` calls.
-   * Required for supporting read after write.
-   */
-  fileSources = /* @__PURE__ */ new Map();
   listings;
   symlinkCount;
+  filesShouldBeCached = true;
   constructor(opts) {
     const buffer = `buffer` in opts ? opts.buffer : opts.baseFs.readFileSync(opts.path);
     this.libzip = getInstance();
@@ -28421,7 +28416,6 @@ class LibZipImpl {
           throw this.makeLibzipError(this.libzip.getError(this.zip));
         }
       }
-      this.fileSources.set(newIndex, buffer);
       return newIndex;
     } catch (error) {
       this.libzip.source.free(lzSource);
@@ -28452,9 +28446,6 @@ class LibZipImpl {
     return this.libzip.name.locate(this.zip, name, 0);
   }
   getFileSource(index) {
-    const cachedFileSource = this.fileSources.get(index);
-    if (typeof cachedFileSource !== `undefined`)
-      return { data: cachedFileSource, compressionMethod: 0 };
     const stat = this.libzip.struct.statS();
     const rc = this.libzip.statIndex(this.zip, index, 0, 0, stat);
     if (rc === -1)
@@ -28485,7 +28476,6 @@ class LibZipImpl {
     }
   }
   deleteEntry(index) {
-    this.fileSources.delete(index);
     const rc = this.libzip.delete(this.zip, index);
     if (rc === -1) {
       throw this.makeLibzipError(this.libzip.getError(this.zip));
@@ -28620,6 +28610,12 @@ class ZipFS extends BasePortableFakeFS {
   zipImpl;
   listings = /* @__PURE__ */ new Map();
   entries = /* @__PURE__ */ new Map();
+  /**
+   * A cache of indices mapped to file sources.
+   * Populated by `setFileSource` calls.
+   * Required for supporting read after write.
+   */
+  fileSources = /* @__PURE__ */ new Map();
   symlinkCount;
   fds = /* @__PURE__ */ new Map();
   nextFd = 0;
@@ -29045,6 +29041,7 @@ class ZipFS extends BasePortableFakeFS {
     this.entries.delete(p);
     if (typeof entry === `undefined`)
       return;
+    this.fileSources.delete(entry);
     if (this.isSymbolicLink(entry)) {
       this.symlinkCount--;
     }
@@ -29105,6 +29102,7 @@ class ZipFS extends BasePortableFakeFS {
       compression = [method, this.level];
     }
     const newIndex = this.zipImpl.setFileSource(target, compression, buffer);
+    this.fileSources.set(newIndex, buffer);
     return newIndex;
   }
   isSymbolicLink(index) {
@@ -29117,8 +29115,13 @@ class ZipFS extends BasePortableFakeFS {
     return (attributes & fs.constants.S_IFMT) === fs.constants.S_IFLNK;
   }
   getFileSource(index, opts = { asyncDecompress: false }) {
+    const cachedFileSource = this.fileSources.get(index);
+    if (typeof cachedFileSource !== `undefined`)
+      return cachedFileSource;
     const { data, compressionMethod } = this.zipImpl.getFileSource(index);
     if (compressionMethod === STORE) {
+      if (this.zipImpl.filesShouldBeCached)
+        this.fileSources.set(index, data);
       return data;
     } else if (compressionMethod === DEFLATE) {
       if (opts.asyncDecompress) {
@@ -29127,12 +29130,17 @@ class ZipFS extends BasePortableFakeFS {
             if (error) {
               reject(error);
             } else {
+              if (this.zipImpl.filesShouldBeCached)
+                this.fileSources.set(index, result);
               resolve(result);
             }
           });
         });
       } else {
-        return zlib__default.default.inflateRawSync(data);
+        const decompressedData = zlib__default.default.inflateRawSync(data);
+        if (this.zipImpl.filesShouldBeCached)
+          this.fileSources.set(index, decompressedData);
+        return decompressedData;
       }
     } else {
       throw new Error(`Unsupported compression method: ${compressionMethod}`);
@@ -29597,6 +29605,7 @@ class JsZipImpl {
   fd;
   baseFs;
   entries;
+  filesShouldBeCached = false;
   constructor(opts) {
     if (`buffer` in opts)
       throw new Error(`Buffer based zip archives are not supported`);
@@ -29604,7 +29613,13 @@ class JsZipImpl {
       throw new Error(`Writable zip archives are not supported`);
     this.baseFs = opts.baseFs;
     this.fd = this.baseFs.openSync(opts.path, `r`);
-    this.entries = JsZipImpl.readZipSync(this.fd, this.baseFs, opts.size);
+    try {
+      this.entries = JsZipImpl.readZipSync(this.fd, this.baseFs, opts.size);
+    } catch (error) {
+      this.baseFs.closeSync(this.fd);
+      this.fd = `closed`;
+      throw error;
+    }
   }
   static readZipSync(fd, baseFs, fileSize) {
     if (fileSize < noCommentCDSize)
@@ -29732,6 +29747,8 @@ class JsZipImpl {
     return -1;
   }
   getFileSource(index) {
+    if (this.fd === `closed`)
+      throw new Error(`ZIP file is closed`);
     const entry = this.entries[index];
     const localHeaderBuf = Buffer.alloc(30);
     this.baseFs.readSync(
@@ -29749,6 +29766,10 @@ class JsZipImpl {
     return { data: buffer, compressionMethod: entry.compressionMethod };
   }
   discard() {
+    if (this.fd !== `closed`) {
+      this.baseFs.closeSync(this.fd);
+      this.fd = `closed`;
+    }
   }
   addDirectory(path) {
     throw new Error(`Not implemented`);
