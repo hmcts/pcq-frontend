@@ -5252,10 +5252,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wdio/protocols@npm:8.40.3":
-  version: 8.40.3
-  resolution: "@wdio/protocols@npm:8.40.3"
-  checksum: 10/ea5898a6181498c38cfff9bde4df87f63162762d9b393a7a9ec75347da472fe09ba023df79eeac70478d31e7ae28e2a7c23dddb2cb02df766d0836491843247c
+"@wdio/protocols@npm:8.44.0":
+  version: 8.44.0
+  resolution: "@wdio/protocols@npm:8.44.0"
+  checksum: 10/7ab912faeba07bd97d68c7311c72d539f5979bd84f94c8fb20509c540c0d488c91c708066405a77a772ffb03c22672380e10d33db2d78399a39ca818bfe81def
   languageName: node
   linkType: hard
 
@@ -19690,33 +19690,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webdriver@npm:8.43.0":
-  version: 8.43.0
-  resolution: "webdriver@npm:8.43.0"
+"webdriver@npm:8.44.0":
+  version: 8.44.0
+  resolution: "webdriver@npm:8.44.0"
   dependencies:
     "@types/node": "npm:^22.2.0"
     "@types/ws": "npm:^8.5.3"
     "@wdio/config": "npm:8.43.0"
     "@wdio/logger": "npm:8.38.0"
-    "@wdio/protocols": "npm:8.40.3"
+    "@wdio/protocols": "npm:8.44.0"
     "@wdio/types": "npm:8.41.0"
     "@wdio/utils": "npm:8.41.0"
     deepmerge-ts: "npm:^5.1.0"
     got: "npm:^12.6.1"
     ky: "npm:^0.33.0"
     ws: "npm:^8.8.0"
-  checksum: 10/9221f0f48cb98542fde44a411bf1e15545230e42d0d81de3db5025ecee4664419bbe4e3061b5448267a61e35eac4c025eeb3deba4c0d34f46a12f58dc7e50913
+  checksum: 10/ae0acff75bf60578d2c08dd7496f0c9d77328476d0b210bbcf65a8f77b9f4a8019a3f113a36a032806684c866520b407ca8ff6f5f9ab0ac6a76ad38eb308a049
   languageName: node
   linkType: hard
 
 "webdriverio@npm:^8.21.0":
-  version: 8.43.0
-  resolution: "webdriverio@npm:8.43.0"
+  version: 8.44.1
+  resolution: "webdriverio@npm:8.44.1"
   dependencies:
     "@types/node": "npm:^22.2.0"
     "@wdio/config": "npm:8.43.0"
     "@wdio/logger": "npm:8.38.0"
-    "@wdio/protocols": "npm:8.40.3"
+    "@wdio/protocols": "npm:8.44.0"
     "@wdio/repl": "npm:8.40.3"
     "@wdio/types": "npm:8.41.0"
     "@wdio/utils": "npm:8.41.0"
@@ -19737,13 +19737,13 @@ __metadata:
     resq: "npm:^1.9.1"
     rgb2hex: "npm:0.2.5"
     serialize-error: "npm:^11.0.1"
-    webdriver: "npm:8.43.0"
+    webdriver: "npm:8.44.0"
   peerDependencies:
     devtools: ^8.14.0
   peerDependenciesMeta:
     devtools:
       optional: true
-  checksum: 10/f4c981d4b26207d93546a67fdbe938d70cfd9f74b0bb7d95cc6386b8bfe58dfec0c7c48bd863618fb9db12a6a97aa6ec0787bfa56883e7f2b1d1df309ed8875a
+  checksum: 10/e428cbff8596e57af3f219d23fdfb2a981ac8ea5d54516fdd902cedf3465b30600c4abe977555efe8e6dea8ea4e9b4697a37e28924141064614790ff1932fd1e
   languageName: node
   linkType: hard
 
