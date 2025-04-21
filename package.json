@@ -61,7 +61,7 @@
     "connect-redis": "^5.2.0",
     "cookie-parser": "^1.4.4",
     "csrf-sync": "^4.0.3",
-    "express": "^4.20.0",
+    "express": "^5.0.0",
     "express-session": "^1.16.2",
     "express-urlrewrite": "^2.0.1",
     "git-rev-sync": "^3.0.2",
