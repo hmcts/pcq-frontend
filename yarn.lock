@@ -10277,13 +10277,13 @@ __metadata:
   linkType: hard
 
 "formidable@npm:^3.2.4":
-  version: 3.5.3
-  resolution: "formidable@npm:3.5.3"
+  version: 3.5.4
+  resolution: "formidable@npm:3.5.4"
   dependencies:
     "@paralleldrive/cuid2": "npm:^2.2.2"
     dezalgo: "npm:^1.0.4"
     once: "npm:^1.4.0"
-  checksum: 10/df00eed293b5234a186a605dcd1662e03b57192d5cc956171f34397925745e54ce1c51ee95977a4c1e785df2c07c715373e04af67445806d43f6c2367dd6d7a5
+  checksum: 10/4645e6ce3d8bbefd3dd873dcd6211362da3bf8a04c8426d7f454c238be0142975f02e5bdbc792fdbd2be493fdcf5442fe01d9a246bd8c3fd8e779738290cc630
   languageName: node
   linkType: hard
 
