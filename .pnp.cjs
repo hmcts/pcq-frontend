@@ -13178,12 +13178,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["formidable", [\
-      ["npm:3.5.3", {\
-        "packageLocation": "./.yarn/cache/formidable-npm-3.5.3-d07886d514-df00eed293.zip/node_modules/formidable/",\
+      ["npm:3.5.4", {\
+        "packageLocation": "./.yarn/cache/formidable-npm-3.5.4-a3473998f7-4645e6ce3d.zip/node_modules/formidable/",\
         "packageDependencies": [\
           ["@paralleldrive/cuid2", "npm:2.2.2"],\
           ["dezalgo", "npm:1.0.4"],\
-          ["formidable", "npm:3.5.3"],\
+          ["formidable", "npm:3.5.4"],\
           ["once", "npm:1.4.0"]\
         ],\
         "linkType": "HARD"\
@@ -21965,7 +21965,7 @@ const RAW_RUNTIME_STATE =
           ["debug", "virtual:e376c6d25689d1413f13b759a5649fe969efab30320e886cab81ece2b6daf8c4c74f642faff7228a9a286b4b82bc7bac5773e45f1085910307cd111b19a8cd17#npm:4.4.0"],\
           ["fast-safe-stringify", "npm:2.1.1"],\
           ["form-data", "npm:4.0.0"],\
-          ["formidable", "npm:3.5.3"],\
+          ["formidable", "npm:3.5.4"],\
           ["methods", "npm:1.1.2"],\
           ["mime", "npm:2.6.0"],\
           ["qs", "npm:6.11.2"],\
@@ -21982,7 +21982,7 @@ const RAW_RUNTIME_STATE =
           ["debug", "virtual:e376c6d25689d1413f13b759a5649fe969efab30320e886cab81ece2b6daf8c4c74f642faff7228a9a286b4b82bc7bac5773e45f1085910307cd111b19a8cd17#npm:4.4.0"],\
           ["fast-safe-stringify", "npm:2.1.1"],\
           ["form-data", "npm:4.0.0"],\
-          ["formidable", "npm:3.5.3"],\
+          ["formidable", "npm:3.5.4"],\
           ["methods", "npm:1.1.2"],\
           ["mime", "npm:2.6.0"],\
           ["qs", "npm:6.11.2"],\
