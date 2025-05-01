@@ -3,5 +3,5 @@
   "paragraph1": "These are optional questions about you.",
   "paragraph2": "Your answers will not affect your application.",
   "paragraph3": "Your answers will help us check we are treating people fairly and equally.",
-  "paragraph4": "Find out how we use this information in our <a href=\"/privacy-policy\">privacy policy</a>."
+  "paragraph4": "Find out how we use this information in our <a class=\"govuk-link\" href=\"/privacy-policy\">privacy policy</a>."
 }
