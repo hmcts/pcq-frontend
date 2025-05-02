@@ -277,6 +277,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         res.locals.govuk = commonContent.govuk;
         res.locals.serviceName = commonContent.serviceName;
         res.locals.releaseVersion = releaseVersion;
+        res.locals.language = req.session.language;
         next();
     });
 
