@@ -91,7 +91,7 @@ links:
   myAbilityLink: 'https://mcmw.abilitynet.org.uk/'
   equalityAdvisorLink: 'https://www.equalityadvisoryservice.com/'
   wcag21Link: 'https://www.w3.org/TR/WCAG21/'
-  govWelsh: 'https://www.gov.uk/cymraeg'
+  govWelsh: 'https://www.gov.uk/cymraeg/?lang=cy'
   userGds: 'https://www.gov.uk/government/organisations/government-digital-service'
 utils:
   api:
