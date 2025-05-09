@@ -12,7 +12,7 @@
   "paragraph4": "<a href=\"{myAbilityLink}\" class=\"govuk-link\" target=\"_blank\" rel=\"external noopener noreferrer\">AbilityNet</a> has advice on making your device easier to use if you have a disability.",
 
   "heading2": "How accessible this website is",
-  "paragraph5": "This website is WCAG 2.1 AA compliant and also uses the latest version of the GOV.UK Design System. In addition, we’ve carried out internal and external accessibility testing to ensure that we’re in-line with the latest accessibility standards.",
+  "paragraph5": "This website is WCAG 2.2 AA compliant and also uses the latest version of the GOV.UK Design System. In addition, we’ve carried out internal and external accessibility testing to ensure that we’re in-line with the latest accessibility standards.",
 
   "heading3": "Feedback and contact information",
   "paragraph6": "If you need information on this website in a different format like accessible PDF, large print, easy read or braille:",
@@ -44,15 +44,15 @@
 
   "heading7": "Technical information about this website’s accessibility",
   "paragraph14": "HMCTS is committed to making its websites accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.",
-  "paragraph15": "This website is fully compliant with the <a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Web Content Accessibility Guidelines version 2.1</a> AA standard",
+  "paragraph15": "This website is fully compliant with the <a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Web Content Accessibility Guidelines version 2.2</a> AA standard",
 
   "heading8": "Compliance status",
-  "paragraph16": "This website is fully compliant with the <a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Web Content Accessibility Guidelines version 2.1</a> AA standard",
+  "paragraph16": "This website is fully compliant with the <a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Web Content Accessibility Guidelines version 2.2</a> AA standard",
 
   "heading9": "Preparation of this accessibility statement",
-  "paragraph17": "This statement was prepared on 28<sup>th</sup> May 2020. It was last updated on 8<sup>th</sup> January 2024.",
-  "paragraph18": "This website was last tested on 30<sup>th</sup> May 2023. The test was carried out by Digital Accessibility Centre Ltd.",
-  "paragraph19": "We tested all pages of this website against the WCAG 2.1 standard.",
+  "paragraph17": "This statement was prepared on 28<sup>th</sup> May 2020. It was last updated on 8<sup>th</sup> May 2025.",
+  "paragraph18": "This website was last tested on 2<sup>nd</sup> April 2025. The test was carried out by Digital Accessibility Centre Ltd.",
+  "paragraph19": "We tested all pages of this website against the WCAG 2.2 standard.",
 
   "heading10": "What we’re doing to improve accessibility",
   "paragraph20": "This website is continually tested using accessibility software. Any new features which are introduced will also be tested internally or with the Digital Accessibility Centre (DAC)."

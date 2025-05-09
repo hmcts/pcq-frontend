@@ -12,7 +12,7 @@
   "paragraph4": "Gallwch gael cyngor gan <a href=\"{myAbilityLink}\" class=\"govuk-link\" target=\"_blank\" rel=\"external noopener noreferrer\">AbilityNet</a> ynghylch gwneud eich dyfais yn haws i’w defnyddio os oes gennych anabledd.",
 
   "heading2": "Pa mor hygyrch yw&#39;r wefan hon?",
-  "paragraph5": "Mae’r wefan yn cydymffurfio &acirc; WCAG 2.1 AA ac mae hefyd yn defnyddio fersiwn ddiweddaraf System Dylunio GOV.UK. Rydym hefyd wedi profi&#39;r wefan yn fewnol ac yn allanol i sicrhau ein bod yn cydymffurfio &acirc;’r safonau hygyrchedd diweddaraf.",
+  "paragraph5": "Mae’r wefan yn cydymffurfio &acirc; WCAG 2.2 AA ac mae hefyd yn defnyddio fersiwn ddiweddaraf System Dylunio GOV.UK. Rydym hefyd wedi profi&#39;r wefan yn fewnol ac yn allanol i sicrhau ein bod yn cydymffurfio &acirc;’r safonau hygyrchedd diweddaraf.",
 
   "heading3": "Adborth a gwybodaeth gyswllt",
   "paragraph6": "Os ydych angen gwybodaeth sydd ar y wefan hon mewn fformat arall megis ar ffurf PDF hygyrch, print bras, fformat hawdd ei ddarllen, neu braille:",
@@ -44,15 +44,15 @@
 
   "heading7": "Gwybodaeth dechnegol am hygyrchedd y wefan hon",
   "paragraph14": "Mae GLlTEM wedi ymrwymo i sicrhau bod ei wefannau yn hygyrch, a hynny yn unol &acirc; Rheoliadau Hygyrchedd Cyrff y Sector Cyhoeddus (Gwefannau a Rhaglenni Symudol) (Rhif 2) 2018.",
-  "paragraph15": "Mae’r wefan hon yn cydymffurfio’n llwyr &acirc; <a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Canllawiau Hygyrchedd Cynnwys Gwe fersiwn 2.1</a> safon AA.",
+  "paragraph15": "Mae’r wefan hon yn cydymffurfio’n llwyr &acirc; <a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Canllawiau Hygyrchedd Cynnwys Gwe fersiwn 2.2</a> safon AA.",
 
   "heading8": "Statws Cydymffurfiaeth",
-  "paragraph16": "Mae’r wefan hon yn cydymffurfio’n llwyr &acirc; <a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Canllawiau Hygyrchedd Cynnwys Gwe fersiwn 2.1</a> safon AA.",
-  
+  "paragraph16": "Mae’r wefan hon yn cydymffurfio’n llwyr &acirc; <a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Canllawiau Hygyrchedd Cynnwys Gwe fersiwn 2.2</a> safon AA.",
+
   "heading9": "Paratoi&#39;r datganiad hygyrchedd hwn",
-  "paragraph17": "Cafodd y datganiad hwn ei baratoi ar yr 28ain o Fai 2020. Cafodd ei adolygu ddiwethaf ar yr 8fed o Ionawr 2024.",
-  "paragraph18": "Cafodd y wefan ei phrofi ddiwethaf ar y 30ain o Fai 2023. Cynhaliwyd y prawf gan Digital Accessibility Centre.",
-  "paragraph19": "Profwyd pob tudalen o&#39;r wefan hon yn erbyn safon WCAG 2.1.",
+  "paragraph17": "Paratowyd y datganiad hwn ar 28 Mai 2020. Fe’i ddiweddarwyd diwethaf ar 9 Mai 2025.",
+  "paragraph18": "Profwyd y wefan hon ddiwethaf ar 2 Ebrill 2025. Cynhaliwyd y prawf gan y Ganolfan Hygyrchedd Digidol Cyf (DAC).",
+  "paragraph19": "Profwyd pob tudalen o&#39;r wefan hon yn erbyn safon WCAG 2.2.",
 
   "heading10": "Beth rydym yn ei wneud i wella hygyrchedd?",
   "paragraph20": "Mae’r wefan yn cael ei phrofi’n barhaus gan ddefnyddio meddalwedd hygyrchedd. Bydd unrhyw nodweddion newydd a gyflwynir hefyd yn cael eu profi’n fewnol neu gan y Digital Accessibility Centre (DAC)."
