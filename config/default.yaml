@@ -90,7 +90,7 @@ links:
   deathReportedToCoroner: 'https://www.gov.uk/after-a-death/when-a-death-is-reported-to-a-coroner'
   myAbilityLink: 'https://mcmw.abilitynet.org.uk/'
   equalityAdvisorLink: 'https://www.equalityadvisoryservice.com/'
-  wcag21Link: 'https://www.w3.org/TR/WCAG21/'
+  wcag21Link: 'https://www.w3.org/TR/WCAG22/'
   govWelsh: 'https://www.gov.uk/cymraeg'
   userGds: 'https://www.gov.uk/government/organisations/government-digital-service'
 utils:
