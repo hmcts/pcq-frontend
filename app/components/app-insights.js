@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const appInsights = require('applicationinsights');
 const logger = require('app/components/logger')('Init');
