@@ -12,20 +12,21 @@ exports.initAppInsights = function initAppInsights() {
         logger.info('Starting Application Insights');
 
         appInsights.setup(connectionString)
-            .setAutoCollectConsole(false)
-            .setSendLiveMetrics(false)
-            .setUseDiskRetryCaching(true)
+            .setAutoCollectConsole(true)
+            .setSendLiveMetrics(true)
             .start();
 
         client = appInsights.defaultClient;
+        client.context.tags[client.context.keys.cloudRole] = 'pcq-frontend';
+        client.trackTrace({ message: 'App Insights activated' });
 
         // Safely delay context setup and re-enable features
-        setTimeout(() => {
+        /*setTimeout(() => {
             client.context.tags[client.context.keys.cloudRole] = 'pcq-frontend';
             client.config.autoCollectConsole = true;
             client.config.setSendLiveMetrics = true;
             client.trackTrace({ message: 'App Insights activated' });
-        }, 2000);
+        }, 2000);*/
     } else {
         logger.warn('No Application Insights connection string found. Telemetry is disabled.');
         client = null;
