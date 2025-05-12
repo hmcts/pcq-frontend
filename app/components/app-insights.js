@@ -1,53 +1,40 @@
-'use strict';
+'use strict'
 
 const appInsights = require('applicationinsights');
 const logger = require('app/components/logger')('Init');
 const config = require('config');
-const path = require('path');
-const fs = require('fs');
-const os = require('os');
 
-let client ;
-const instrumentationKey = config.get('appInsights.instrumentationKey');
+let client;
 const connectionString = config.get('appInsights.connectionString');
-const TEMPDIR_PREFIX = 'appInsights-node';
 
 exports.initAppInsights = function initAppInsights() {
-    if (instrumentationKey) {
-        createTempDir();
-
-        logger.info('Starting App Insights');
+    if (connectionString) {
+        logger.info('Starting Application Insights');
 
         appInsights.setup(connectionString)
-            .setSendLiveMetrics(false)
             .setAutoCollectConsole(false)
+            .setSendLiveMetrics(false)
+            .setUseDiskRetryCaching(true)
             .start();
-        
+
         client = appInsights.defaultClient;
+
+        // Safely delay context setup and re-enable features
         setTimeout(() => {
             client.context.tags[client.context.keys.cloudRole] = 'pcq-frontend';
-            // Now re-enable auto-collection
             client.config.autoCollectConsole = true;
             client.config.setSendLiveMetrics = true;
-            client.trackTrace({ message: 'App insights activated' });
+            client.trackTrace({ message: 'App Insights activated' });
         }, 0);
-        
     } else {
+        logger.warn('No Application Insights connection string found. Telemetry is disabled.');
         client = null;
-    }
-
-    function createTempDir() {
-        const tempDir = path.join(os.tmpdir(), TEMPDIR_PREFIX + instrumentationKey);
-
-        if (!fs.existsSync(tempDir)) {
-            logger.info('Creating App Insights temp dir');
-            fs.mkdirSync(tempDir);
-        }
     }
 };
 
-exports.trackTrace = function trackTrace(trace){
-    if(instrumentationKey && client){
+exports.trackTrace = function trackTrace(trace) {
+    if (client) {
         client.trackTrace(trace);
     }
 };
+
