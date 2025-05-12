@@ -25,7 +25,7 @@ exports.initAppInsights = function initAppInsights() {
             client.config.autoCollectConsole = true;
             client.config.setSendLiveMetrics = true;
             client.trackTrace({ message: 'App Insights activated' });
-        }, 0);
+        }, 2000);
     } else {
         logger.warn('No Application Insights connection string found. Telemetry is disabled.');
         client = null;
