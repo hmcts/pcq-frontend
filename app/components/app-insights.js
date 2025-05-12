@@ -19,14 +19,16 @@ exports.initAppInsights = function initAppInsights() {
         logger.info('Starting App Insights');
 
         appInsights.setup(connectionString)
-            .setSendLiveMetrics(true)
-            .setAutoCollectConsole(true, true)
+            .setSendLiveMetrics(false)
+            .setAutoCollectConsole(false)
             .start();
         
         client = appInsights.defaultClient;
-        if(client!=null)
         setTimeout(() => {
             client.context.tags[client.context.keys.cloudRole] = 'pcq-frontend';
+            // Now re-enable auto-collection
+            client.config.autoCollectConsole = true;
+            client.config.setSendLiveMetrics = true;
             client.trackTrace({ message: 'App insights activated' });
         }, 0);
         
