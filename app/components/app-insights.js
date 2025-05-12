@@ -24,10 +24,11 @@ exports.initAppInsights = function initAppInsights() {
             .start();
         
         client = appInsights.defaultClient;
-        setImmediate(() => {
+        if(client!=null)
+        setTimeout(() => {
             client.context.tags[client.context.keys.cloudRole] = 'pcq-frontend';
-            client.trackTrace({message: 'App insights activated' });
-        });
+            client.trackTrace({ message: 'App insights activated' });
+        }, 0);
         
     } else {
         client = null;
