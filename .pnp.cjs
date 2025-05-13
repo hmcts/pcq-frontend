@@ -52,7 +52,7 @@ const RAW_RUNTIME_STATE =
           ["config", "npm:3.3.12"],\
           ["connect-redis", "npm:5.2.0"],\
           ["cookie-parser", "npm:1.4.7"],\
-          ["csrf-sync", "npm:4.2.0"],\
+          ["csrf-sync", "npm:4.2.1"],\
           ["debug", "virtual:cdef168378c8f637e1a6826f3d20d2d269f4d55bb13633c52c16404abf2070f78cc8bcf2dbac627be1f954af9c0e91292f0bfe489299a3eb08d103fe49bab493#npm:4.4.0"],\
           ["eslint", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.26.0"],\
           ["esmify", "npm:2.1.1"],\
@@ -91,7 +91,7 @@ const RAW_RUNTIME_STATE =
           ["require-directory", "npm:2.1.1"],\
           ["rewire", "npm:7.0.0"],\
           ["sanitizer", "npm:0.1.3"],\
-          ["sass", "npm:1.87.0"],\
+          ["sass", "npm:1.88.0"],\
           ["serve-favicon", "npm:2.5.0"],\
           ["sinon", "npm:20.0.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
@@ -10844,10 +10844,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["csrf-sync", [\
-      ["npm:4.2.0", {\
-        "packageLocation": "./.yarn/cache/csrf-sync-npm-4.2.0-9e0955b13c-093bc90fb3.zip/node_modules/csrf-sync/",\
+      ["npm:4.2.1", {\
+        "packageLocation": "./.yarn/cache/csrf-sync-npm-4.2.1-5b74d75e2b-6c25ed72c0.zip/node_modules/csrf-sync/",\
         "packageDependencies": [\
-          ["csrf-sync", "npm:4.2.0"],\
+          ["csrf-sync", "npm:4.2.1"],\
           ["http-errors", "npm:2.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -19831,7 +19831,7 @@ const RAW_RUNTIME_STATE =
           ["config", "npm:3.3.12"],\
           ["connect-redis", "npm:5.2.0"],\
           ["cookie-parser", "npm:1.4.7"],\
-          ["csrf-sync", "npm:4.2.0"],\
+          ["csrf-sync", "npm:4.2.1"],\
           ["debug", "virtual:cdef168378c8f637e1a6826f3d20d2d269f4d55bb13633c52c16404abf2070f78cc8bcf2dbac627be1f954af9c0e91292f0bfe489299a3eb08d103fe49bab493#npm:4.4.0"],\
           ["eslint", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.26.0"],\
           ["esmify", "npm:2.1.1"],\
@@ -19870,7 +19870,7 @@ const RAW_RUNTIME_STATE =
           ["require-directory", "npm:2.1.1"],\
           ["rewire", "npm:7.0.0"],\
           ["sanitizer", "npm:0.1.3"],\
-          ["sass", "npm:1.87.0"],\
+          ["sass", "npm:1.88.0"],\
           ["serve-favicon", "npm:2.5.0"],\
           ["sinon", "npm:20.0.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
@@ -21137,13 +21137,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sass", [\
-      ["npm:1.87.0", {\
-        "packageLocation": "./.yarn/cache/sass-npm-1.87.0-d17a958211-43c7d9567b.zip/node_modules/sass/",\
+      ["npm:1.88.0", {\
+        "packageLocation": "./.yarn/cache/sass-npm-1.88.0-ab12725694-dfe4aec194.zip/node_modules/sass/",\
         "packageDependencies": [\
           ["@parcel/watcher", "npm:2.5.1"],\
           ["chokidar", "npm:4.0.3"],\
           ["immutable", "npm:5.0.2"],\
-          ["sass", "npm:1.87.0"],\
+          ["sass", "npm:1.88.0"],\
           ["source-map-js", "npm:1.2.1"]\
         ],\
         "linkType": "HARD"\
