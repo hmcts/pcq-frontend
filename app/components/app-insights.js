@@ -26,7 +26,6 @@ exports.initAppInsights = function initAppInsights() {
             client.trackTrace({ message: 'App Insights activated' });
         }, 2000);
     } else {
-        logger.warn('No Application Insights connection string found. Telemetry is disabled.');
         client = null;
     }
 };
