@@ -3,44 +3,36 @@
 const appInsights = require('applicationinsights');
 const logger = require('app/components/logger')('Init');
 const config = require('config');
-const path = require('path');
-const fs = require('fs');
-const os = require('os');
 
-let client ;
-const instrumentationKey = config.get('appInsights.instrumentationKey');
+let client;
 const connectionString = config.get('appInsights.connectionString');
-const TEMPDIR_PREFIX = 'appInsights-node';
 
 exports.initAppInsights = function initAppInsights() {
-    if (instrumentationKey) {
-        createTempDir();
-
-        logger.info('Starting App Insights');
+    if (connectionString) {
+        logger.info('Starting Application Insights');
 
         appInsights.setup(connectionString)
+            .setAutoCollectConsole(true)
             .setSendLiveMetrics(true)
-            .setAutoCollectConsole(true, true)
             .start();
+
         client = appInsights.defaultClient;
-        client.context.tags[appInsights.defaultClient.context.keys.cloudRole] = 'pcq-frontend';
-        client.trackTrace({message: 'App insights activated'});
+
+        // Safely delay context setup and re-enable features
+        setTimeout(() => {
+            client.context.tags[client.context.keys.cloudRole] = 'pcq-frontend';
+            client.config.autoCollectConsole = true;
+            client.config.setSendLiveMetrics = true;
+            client.trackTrace({ message: 'App Insights activated' });
+        }, 2000);
     } else {
         client = null;
     }
-
-    function createTempDir() {
-        const tempDir = path.join(os.tmpdir(), TEMPDIR_PREFIX + instrumentationKey);
-
-        if (!fs.existsSync(tempDir)) {
-            logger.info('Creating App Insights temp dir');
-            fs.mkdirSync(tempDir);
-        }
-    }
 };
 
-exports.trackTrace = function trackTrace(trace){
-    if(instrumentationKey && client){
+exports.trackTrace = function trackTrace(trace) {
+    if (client) {
         client.trackTrace(trace);
     }
 };
+
