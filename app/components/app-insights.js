@@ -23,7 +23,7 @@ exports.initAppInsights = function initAppInsights() {
             client.context.tags[client.context.keys.cloudRole] = 'pcq-frontend';
             client.config.autoCollectConsole = true;
             client.config.setSendLiveMetrics = true;
-            client.trackTrace({ message: 'App Insights activated in Preview' });
+            client.trackTrace({ message: 'App Insights activated' });
         }, 2000);
     } else {
         client = null;
