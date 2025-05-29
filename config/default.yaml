@@ -101,7 +101,6 @@ utils:
 livenessEndpoint: "/health/liveness"
 healthEndpoint: "/health"
 appInsights:
-  instrumentationKey: ''
   connectionString: ''
 health:
   timeout: 5000

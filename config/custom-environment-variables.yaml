@@ -48,6 +48,5 @@ utils:
     retries: RETRIES_NUMBER
     retryDelay: RETRY_DELAY
 appInsights:
-  instrumentationKey: APPINSIGHTS_INSTRUMENTATION_KEY
   connectionString: app-insights-connection-string
 testUrl: TEST_URL
