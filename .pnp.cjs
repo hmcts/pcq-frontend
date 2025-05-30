@@ -62,7 +62,7 @@ const RAW_RUNTIME_STATE =
           ["fs-extra", "npm:11.3.0"],\
           ["git-rev-sync", "npm:3.0.2"],\
           ["globals", "npm:16.2.0"],\
-          ["govuk-frontend", "npm:5.10.1"],\
+          ["govuk-frontend", "npm:5.10.2"],\
           ["helmet", "npm:3.23.3"],\
           ["https-proxy-agent", "npm:5.0.1"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.2.1"],\
@@ -14005,10 +14005,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["govuk-frontend", [\
-      ["npm:5.10.1", {\
-        "packageLocation": "./.yarn/cache/govuk-frontend-npm-5.10.1-3c4f64775c-cc978baf6f.zip/node_modules/govuk-frontend/",\
+      ["npm:5.10.2", {\
+        "packageLocation": "./.yarn/cache/govuk-frontend-npm-5.10.2-b42af4d852-0e20ad26da.zip/node_modules/govuk-frontend/",\
         "packageDependencies": [\
-          ["govuk-frontend", "npm:5.10.1"]\
+          ["govuk-frontend", "npm:5.10.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -19848,7 +19848,7 @@ const RAW_RUNTIME_STATE =
           ["fs-extra", "npm:11.3.0"],\
           ["git-rev-sync", "npm:3.0.2"],\
           ["globals", "npm:16.2.0"],\
-          ["govuk-frontend", "npm:5.10.1"],\
+          ["govuk-frontend", "npm:5.10.2"],\
           ["helmet", "npm:3.23.3"],\
           ["https-proxy-agent", "npm:5.0.1"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.2.1"],\
