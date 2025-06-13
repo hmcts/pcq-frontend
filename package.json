@@ -96,7 +96,6 @@
     "@stryker-mutator/api": "^8.5.0",
     "@stryker-mutator/core": "^8.5.0",
     "@stryker-mutator/mocha-runner": "8.7.1",
-    "brace-expansion": "^2.0.1",
     "chai": "^4.2.0",
     "chokidar": "^4.0.1",
     "codeceptjs": "3.6.10",
@@ -136,7 +135,8 @@
     "merge": "2.1.1",
     "ws": "8.18.2",
     "import-in-the-middle": "1.14.0",
-    "cross-spawn": "7.0.6"
+    "cross-spawn": "7.0.6",
+    "brace-expansion": "^2.0.1"
   },
   "nyc": {
     "report-dir": "functional-output/coverage",

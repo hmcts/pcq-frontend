@@ -43,7 +43,6 @@ const RAW_RUNTIME_STATE =
           ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["applicationinsights", "npm:3.7.0"],\
           ["body-parser", "npm:2.2.0"],\
-          ["brace-expansion", "npm:2.0.2"],\
           ["chai", "npm:4.5.0"],\
           ["chokidar", "npm:4.0.3"],\
           ["co", "npm:4.6.0"],\
@@ -9036,15 +9035,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["brace-expansion", [\
-      ["npm:1.1.12", {\
-        "packageLocation": "./.yarn/cache/brace-expansion-npm-1.1.12-329e9ad7a1-12cb6d6310.zip/node_modules/brace-expansion/",\
-        "packageDependencies": [\
-          ["balanced-match", "npm:1.0.2"],\
-          ["brace-expansion", "npm:1.1.12"],\
-          ["concat-map", "npm:0.0.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:2.0.2", {\
         "packageLocation": "./.yarn/cache/brace-expansion-npm-2.0.2-bc7f134bbc-01dff195e3.zip/node_modules/brace-expansion/",\
         "packageDependencies": [\
@@ -10405,15 +10395,6 @@ const RAW_RUNTIME_STATE =
           ["on-headers", "npm:1.0.2"],\
           ["safe-buffer", "npm:5.2.1"],\
           ["vary", "npm:1.1.2"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["concat-map", [\
-      ["npm:0.0.1", {\
-        "packageLocation": "./.yarn/cache/concat-map-npm-0.0.1-85a921b7ee-9680699c8e.zip/node_modules/concat-map/",\
-        "packageDependencies": [\
-          ["concat-map", "npm:0.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -17282,7 +17263,7 @@ const RAW_RUNTIME_STATE =
       ["npm:3.1.2", {\
         "packageLocation": "./.yarn/cache/minimatch-npm-3.1.2-9405269906-e0b25b04cd.zip/node_modules/minimatch/",\
         "packageDependencies": [\
-          ["brace-expansion", "npm:1.1.12"],\
+          ["brace-expansion", "npm:2.0.2"],\
           ["minimatch", "npm:3.1.2"]\
         ],\
         "linkType": "HARD"\
@@ -19426,7 +19407,6 @@ const RAW_RUNTIME_STATE =
           ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["applicationinsights", "npm:3.7.0"],\
           ["body-parser", "npm:2.2.0"],\
-          ["brace-expansion", "npm:2.0.2"],\
           ["chai", "npm:4.5.0"],\
           ["chokidar", "npm:4.0.3"],\
           ["co", "npm:4.6.0"],\
