@@ -92,7 +92,7 @@ const RAW_RUNTIME_STATE =
           ["rewire", "npm:7.0.0"],\
           ["sanitizer", "npm:0.1.3"],\
           ["sass", "npm:1.89.2"],\
-          ["serve-favicon", "npm:2.5.0"],\
+          ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:20.0.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
           ["sonarqube-scanner", "npm:4.3.0"],\
@@ -17644,13 +17644,6 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:2.1.1", {\
-        "packageLocation": "./.yarn/cache/ms-npm-2.1.1-5b4fd72c86-0078a23cd9.zip/node_modules/ms/",\
-        "packageDependencies": [\
-          ["ms", "npm:2.1.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:2.1.2", {\
         "packageLocation": "./.yarn/cache/ms-npm-2.1.2-ec0c1512ff-673cdb2c31.zip/node_modules/ms/",\
         "packageDependencies": [\
@@ -19456,7 +19449,7 @@ const RAW_RUNTIME_STATE =
           ["rewire", "npm:7.0.0"],\
           ["sanitizer", "npm:0.1.3"],\
           ["sass", "npm:1.89.2"],\
-          ["serve-favicon", "npm:2.5.0"],\
+          ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:20.0.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
           ["sonarqube-scanner", "npm:4.3.0"],\
@@ -20590,13 +20583,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["safe-buffer", [\
-      ["npm:5.1.1", {\
-        "packageLocation": "./.yarn/cache/safe-buffer-npm-5.1.1-cdaab52fc6-e8acac337b.zip/node_modules/safe-buffer/",\
-        "packageDependencies": [\
-          ["safe-buffer", "npm:5.1.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:5.1.2", {\
         "packageLocation": "./.yarn/cache/safe-buffer-npm-5.1.2-c27fedf6c4-7eb5b48f2e.zip/node_modules/safe-buffer/",\
         "packageDependencies": [\
@@ -20849,15 +20835,15 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["serve-favicon", [\
-      ["npm:2.5.0", {\
-        "packageLocation": "./.yarn/cache/serve-favicon-npm-2.5.0-c5088a9dbc-dcb2734bf9.zip/node_modules/serve-favicon/",\
+      ["npm:2.5.1", {\
+        "packageLocation": "./.yarn/cache/serve-favicon-npm-2.5.1-04576a0679-7cfb714bb0.zip/node_modules/serve-favicon/",\
         "packageDependencies": [\
           ["etag", "npm:1.8.1"],\
           ["fresh", "npm:0.5.2"],\
-          ["ms", "npm:2.1.1"],\
+          ["ms", "npm:2.1.3"],\
           ["parseurl", "npm:1.3.3"],\
-          ["safe-buffer", "npm:5.1.1"],\
-          ["serve-favicon", "npm:2.5.0"]\
+          ["safe-buffer", "npm:5.2.1"],\
+          ["serve-favicon", "npm:2.5.1"]\
         ],\
         "linkType": "HARD"\
       }]\
