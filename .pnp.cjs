@@ -72,7 +72,7 @@ const RAW_RUNTIME_STATE =
           ["jsonwebtoken", "npm:9.0.2"],\
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
           ["lodash", "npm:4.17.21"],\
-          ["mocha", "npm:11.5.0"],\
+          ["mocha", "npm:11.6.0"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
           ["moment", "npm:2.30.1"],\
           ["nock", "npm:14.0.5"],\
@@ -6822,7 +6822,7 @@ const RAW_RUNTIME_STATE =
           ["@stryker-mutator/util", "npm:8.7.1"],\
           ["@types/mocha", null],\
           ["@types/stryker-mutator__core", null],\
-          ["mocha", "npm:11.5.0"],\
+          ["mocha", "npm:11.6.0"],\
           ["tslib", "npm:2.7.0"]\
         ],\
         "packagePeers": [\
@@ -17498,8 +17498,8 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:11.5.0", {\
-        "packageLocation": "./.yarn/cache/mocha-npm-11.5.0-c1e4da0545-b0cd3be7c2.zip/node_modules/mocha/",\
+      ["npm:11.6.0", {\
+        "packageLocation": "./.yarn/cache/mocha-npm-11.6.0-6b8c5f310b-1bbf367e92.zip/node_modules/mocha/",\
         "packageDependencies": [\
           ["browser-stdout", "npm:1.3.1"],\
           ["chokidar", "npm:4.0.3"],\
@@ -17512,13 +17512,13 @@ const RAW_RUNTIME_STATE =
           ["js-yaml", "npm:4.1.0"],\
           ["log-symbols", "npm:4.1.0"],\
           ["minimatch", "npm:9.0.5"],\
-          ["mocha", "npm:11.5.0"],\
+          ["mocha", "npm:11.6.0"],\
           ["ms", "npm:2.1.3"],\
           ["picocolors", "npm:1.1.1"],\
           ["serialize-javascript", "npm:6.0.2"],\
           ["strip-json-comments", "npm:3.1.1"],\
           ["supports-color", "npm:8.1.1"],\
-          ["workerpool", "npm:6.5.1"],\
+          ["workerpool", "npm:9.3.2"],\
           ["yargs", "npm:17.7.2"],\
           ["yargs-parser", "npm:21.1.1"],\
           ["yargs-unparser", "npm:2.0.0"]\
@@ -17545,7 +17545,7 @@ const RAW_RUNTIME_STATE =
           ["lodash.isfunction", "npm:3.0.9"],\
           ["lodash.isobject", "npm:3.0.2"],\
           ["lodash.isstring", "npm:4.0.1"],\
-          ["mocha", "npm:11.5.0"],\
+          ["mocha", "npm:11.6.0"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
           ["mochawesome-report-generator", "npm:6.2.0"],\
           ["strip-ansi", "npm:6.0.1"],\
@@ -19429,7 +19429,7 @@ const RAW_RUNTIME_STATE =
           ["jsonwebtoken", "npm:9.0.2"],\
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
           ["lodash", "npm:4.17.21"],\
-          ["mocha", "npm:11.5.0"],\
+          ["mocha", "npm:11.6.0"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
           ["moment", "npm:2.30.1"],\
           ["nock", "npm:14.0.5"],\
@@ -23476,6 +23476,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/workerpool-npm-6.5.1-7e0dd85ca7-b1b00139fe.zip/node_modules/workerpool/",\
         "packageDependencies": [\
           ["workerpool", "npm:6.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:9.3.2", {\
+        "packageLocation": "./.yarn/cache/workerpool-npm-9.3.2-264c284a0a-3d6354bea5.zip/node_modules/workerpool/",\
+        "packageDependencies": [\
+          ["workerpool", "npm:9.3.2"]\
         ],\
         "linkType": "HARD"\
       }]\
