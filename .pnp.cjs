@@ -32,7 +32,7 @@ const RAW_RUNTIME_STATE =
           ["@babel/types", "npm:7.28.0"],\
           ["@eslint/js", "npm:9.28.0"],\
           ["@hmcts/cookie-manager", "npm:1.0.0"],\
-          ["@hmcts/nodejs-healthcheck", "npm:1.8.5"],\
+          ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
           ["@hmcts/properties-volume", "npm:1.2.0"],\
           ["@parcel/watcher", "npm:2.5.1"],\
@@ -4003,13 +4003,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@hmcts/nodejs-healthcheck", [\
-      ["npm:1.8.5", {\
-        "packageLocation": "./.yarn/cache/@hmcts-nodejs-healthcheck-npm-1.8.5-fa7409827a-c847735784.zip/node_modules/@hmcts/nodejs-healthcheck/",\
+      ["npm:1.8.6", {\
+        "packageLocation": "./.yarn/cache/@hmcts-nodejs-healthcheck-npm-1.8.6-da4b651ec1-baa0fcb688.zip/node_modules/@hmcts/nodejs-healthcheck/",\
         "packageDependencies": [\
-          ["@hmcts/nodejs-healthcheck", "npm:1.8.5"],\
+          ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
           ["js-yaml", "npm:4.1.0"],\
-          ["superagent", "npm:9.0.1"]\
+          ["superagent", "npm:10.2.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -19424,7 +19424,7 @@ const RAW_RUNTIME_STATE =
           ["@babel/types", "npm:7.28.0"],\
           ["@eslint/js", "npm:9.28.0"],\
           ["@hmcts/cookie-manager", "npm:1.0.0"],\
-          ["@hmcts/nodejs-healthcheck", "npm:1.8.5"],\
+          ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
           ["@hmcts/properties-volume", "npm:1.2.0"],\
           ["@parcel/watcher", "npm:2.5.1"],\
@@ -21778,8 +21778,8 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:9.0.1", {\
-        "packageLocation": "./.yarn/cache/superagent-npm-9.0.1-de90d6ad61-a6e7cd5b93.zip/node_modules/superagent/",\
+      ["npm:10.2.2", {\
+        "packageLocation": "./.yarn/cache/superagent-npm-10.2.2-e8b673973b-e89ae49163.zip/node_modules/superagent/",\
         "packageDependencies": [\
           ["component-emitter", "npm:1.3.0"],\
           ["cookiejar", "npm:2.1.4"],\
@@ -21790,8 +21790,7 @@ const RAW_RUNTIME_STATE =
           ["methods", "npm:1.1.2"],\
           ["mime", "npm:2.6.0"],\
           ["qs", "npm:6.11.2"],\
-          ["semver", "npm:7.5.4"],\
-          ["superagent", "npm:9.0.1"]\
+          ["superagent", "npm:10.2.2"]\
         ],\
         "linkType": "HARD"\
       }]\
