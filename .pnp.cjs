@@ -48,7 +48,7 @@ const RAW_RUNTIME_STATE =
           ["co", "npm:4.6.0"],\
           ["codeceptjs", "npm:3.6.10"],\
           ["codecov", "npm:4.0.0-0"],\
-          ["compression", "npm:1.8.0"],\
+          ["compression", "npm:1.8.1"],\
           ["config", "npm:3.3.12"],\
           ["connect-redis", "npm:5.2.0"],\
           ["cookie-parser", "npm:1.4.7"],\
@@ -6254,7 +6254,7 @@ const RAW_RUNTIME_STATE =
           ["@react-native-community/cli-debugger-ui", "npm:12.3.7"],\
           ["@react-native-community/cli-server-api", "npm:12.3.7"],\
           ["@react-native-community/cli-tools", "npm:12.3.7"],\
-          ["compression", "npm:1.8.0"],\
+          ["compression", "npm:1.8.1"],\
           ["connect", "npm:3.7.0"],\
           ["errorhandler", "npm:1.5.1"],\
           ["nocache", "npm:3.0.4"],\
@@ -10418,15 +10418,15 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["compression", [\
-      ["npm:1.8.0", {\
-        "packageLocation": "./.yarn/cache/compression-npm-1.8.0-5088616544-ca213b9bd0.zip/node_modules/compression/",\
+      ["npm:1.8.1", {\
+        "packageLocation": "./.yarn/cache/compression-npm-1.8.1-e34a5db404-e7552bfbd7.zip/node_modules/compression/",\
         "packageDependencies": [\
           ["bytes", "npm:3.1.2"],\
           ["compressible", "npm:2.0.18"],\
-          ["compression", "npm:1.8.0"],\
+          ["compression", "npm:1.8.1"],\
           ["debug", "virtual:1eb054913bca2149e4634db25d2ccd7ab57cd4c7053bbe0b50db0b93201c1b7c6d3c6b4c278fb0b20e9afccb8339c4e1122905c01ed4410624523f3c7a274095#npm:2.6.9"],\
           ["negotiator", "npm:0.6.4"],\
-          ["on-headers", "npm:1.0.2"],\
+          ["on-headers", "npm:1.1.0"],\
           ["safe-buffer", "npm:5.2.1"],\
           ["vary", "npm:1.1.2"]\
         ],\
@@ -18399,6 +18399,13 @@ const RAW_RUNTIME_STATE =
           ["on-headers", "npm:1.0.2"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:1.1.0", {\
+        "packageLocation": "./.yarn/cache/on-headers-npm-1.1.0-7d18779060-98aa64629f.zip/node_modules/on-headers/",\
+        "packageDependencies": [\
+          ["on-headers", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["once", [\
@@ -19440,7 +19447,7 @@ const RAW_RUNTIME_STATE =
           ["co", "npm:4.6.0"],\
           ["codeceptjs", "npm:3.6.10"],\
           ["codecov", "npm:4.0.0-0"],\
-          ["compression", "npm:1.8.0"],\
+          ["compression", "npm:1.8.1"],\
           ["config", "npm:3.3.12"],\
           ["connect-redis", "npm:5.2.0"],\
           ["cookie-parser", "npm:1.4.7"],\
