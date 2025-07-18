@@ -57,7 +57,7 @@ const RAW_RUNTIME_STATE =
           ["eslint", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.28.0"],\
           ["esmify", "npm:2.1.1"],\
           ["express", "npm:4.21.2"],\
-          ["express-session", "npm:1.18.1"],\
+          ["express-session", "npm:1.18.2"],\
           ["express-urlrewrite", "npm:2.0.3"],\
           ["fs-extra", "npm:11.3.0"],\
           ["git-rev-sync", "npm:3.0.2"],\
@@ -12526,15 +12526,15 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["express-session", [\
-      ["npm:1.18.1", {\
-        "packageLocation": "./.yarn/cache/express-session-npm-1.18.1-b1aa040a8f-fec407d20e.zip/node_modules/express-session/",\
+      ["npm:1.18.2", {\
+        "packageLocation": "./.yarn/cache/express-session-npm-1.18.2-1fdf1a09db-1a89a4d3e5.zip/node_modules/express-session/",\
         "packageDependencies": [\
           ["cookie", "npm:1.0.2"],\
           ["cookie-signature", "npm:1.0.7"],\
           ["debug", "virtual:1eb054913bca2149e4634db25d2ccd7ab57cd4c7053bbe0b50db0b93201c1b7c6d3c6b4c278fb0b20e9afccb8339c4e1122905c01ed4410624523f3c7a274095#npm:2.6.9"],\
           ["depd", "npm:2.0.0"],\
-          ["express-session", "npm:1.18.1"],\
-          ["on-headers", "npm:1.0.2"],\
+          ["express-session", "npm:1.18.2"],\
+          ["on-headers", "npm:1.1.0"],\
           ["parseurl", "npm:1.3.3"],\
           ["safe-buffer", "npm:5.2.1"],\
           ["uid-safe", "npm:2.1.5"]\
@@ -18399,6 +18399,13 @@ const RAW_RUNTIME_STATE =
           ["on-headers", "npm:1.0.2"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:1.1.0", {\
+        "packageLocation": "./.yarn/cache/on-headers-npm-1.1.0-7d18779060-98aa64629f.zip/node_modules/on-headers/",\
+        "packageDependencies": [\
+          ["on-headers", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["once", [\
@@ -19449,7 +19456,7 @@ const RAW_RUNTIME_STATE =
           ["eslint", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.28.0"],\
           ["esmify", "npm:2.1.1"],\
           ["express", "npm:4.21.2"],\
-          ["express-session", "npm:1.18.1"],\
+          ["express-session", "npm:1.18.2"],\
           ["express-urlrewrite", "npm:2.0.3"],\
           ["fs-extra", "npm:11.3.0"],\
           ["git-rev-sync", "npm:3.0.2"],\
