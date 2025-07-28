@@ -1,6 +1,6 @@
 {
   "phase": "Beta",
-  "feedback": "This is a new service – your <a href=\"{smartSurveyFeedbackUrl}?pageurl={currentPageUrl}\" class=\"govuk-link\" target=\"_blank\" rel=\"external noopener noreferrer\">feedback</a> will help us to improve it.",
+  "feedback": "This is a new service.Help us improve it and <a href=\"{smartSurveyFeedbackUrl}?pageurl={currentPageUrl}\" class=\"govuk-link\" target=\"_blank\" rel=\"external noopener noreferrer\">give your feedback by email.</a>",
   "languageToggle": "<a href=\"?lng=cy\" class=\"govuk-link language\">Cymraeg</a>",
   "govuk": "GOV.UK",
   "serviceName": "Equality and diversity questions",
