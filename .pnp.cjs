@@ -75,7 +75,7 @@ const RAW_RUNTIME_STATE =
           ["mocha", "npm:11.7.1"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
           ["moment", "npm:2.30.1"],\
-          ["nock", "npm:14.0.6"],\
+          ["nock", "npm:14.0.7"],\
           ["node-emoji", "npm:2.2.0"],\
           ["node-fetch", "virtual:30941e4951ac6d1287fb12c26a7afed794bbb9f0089d7db177d8be4b10361b145255aafe174851a9123e126cbf4a09fd871b52100910a73274b5273a96c43f9a#npm:2.7.0"],\
           ["nodemon", "npm:3.1.10"],\
@@ -17904,12 +17904,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["nock", [\
-      ["npm:14.0.6", {\
-        "packageLocation": "./.yarn/cache/nock-npm-14.0.6-3889b97e7e-32048a34b1.zip/node_modules/nock/",\
+      ["npm:14.0.7", {\
+        "packageLocation": "./.yarn/cache/nock-npm-14.0.7-921593b50a-b7d52d539e.zip/node_modules/nock/",\
         "packageDependencies": [\
           ["@mswjs/interceptors", "npm:0.39.3"],\
           ["json-stringify-safe", "npm:5.0.1"],\
-          ["nock", "npm:14.0.6"],\
+          ["nock", "npm:14.0.7"],\
           ["propagate", "npm:2.0.1"]\
         ],\
         "linkType": "HARD"\
@@ -19490,7 +19490,7 @@ const RAW_RUNTIME_STATE =
           ["mocha", "npm:11.7.1"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
           ["moment", "npm:2.30.1"],\
-          ["nock", "npm:14.0.6"],\
+          ["nock", "npm:14.0.7"],\
           ["node-emoji", "npm:2.2.0"],\
           ["node-fetch", "virtual:30941e4951ac6d1287fb12c26a7afed794bbb9f0089d7db177d8be4b10361b145255aafe174851a9123e126cbf4a09fd871b52100910a73274b5273a96c43f9a#npm:2.7.0"],\
           ["nodemon", "npm:3.1.10"],\
