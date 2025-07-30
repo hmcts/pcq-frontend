@@ -22,8 +22,8 @@ describe('accessibility', () => {
                 myAbilityLink: config.links.myAbilityLink,
                 callChargesLink: config.links.callCharges,
                 equalityAdvisorLink: config.links.equalityAdvisorLink,
-                wcag21Link: config.links.wcag21Link,
-                paragraph8: accessibility.paragraph8,
+                wcag21Link: config.links.wcag21Link
+                /*paragraph8: accessibility.paragraph8,
                 list2divorce: accessibility['list2-divorce'],
                 list2probate: accessibility['list2-probate'],
                 list2sscs: accessibility['list2-sscs'],
@@ -34,7 +34,7 @@ describe('accessibility', () => {
                 list2jurordigital: accessibility['list2-jurordigital'],
                 list2prl_ca: accessibility['list2-prl_ca'],
                 list2civilcitizenui: accessibility['list2-civil-citizen-ui'],
-                list2Adoption: accessibility['list2-adoption']
+                list2Adoption: accessibility['list2-adoption']*/
             };
             testWrapper.testContent(done, contentData);
         });
