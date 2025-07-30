@@ -20,13 +20,9 @@ describe('accessibility', () => {
         it('test content loaded on the page', (done) => {
             const contentData = {
                 myAbilityLink: config.links.myAbilityLink,
-                helpLineNumber: commonContent.helplineNumber,
                 callChargesLink: config.links.callCharges,
                 equalityAdvisorLink: config.links.equalityAdvisorLink,
                 wcag21Link: config.links.wcag21Link,
-                applicationFormPA15: config.links.applicationFormPA15,
-                deathReportedToCoroner: config.links.deathReportedToCoroner,
-                pcqStartApplyLink: config.links.pcqStartApplyLink,
                 paragraph8: accessibility.paragraph8,
                 list2divorce: accessibility['list2-divorce'],
                 list2probate: accessibility['list2-probate'],
