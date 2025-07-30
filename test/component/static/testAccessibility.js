@@ -21,7 +21,6 @@ describe('accessibility', () => {
             const contentData = {
                 myAbilityLink: config.links.myAbilityLink,
                 helpLineNumber: commonContent.helplineNumber,
-                helpLineHours: commonContent.helplineHours,
                 callChargesLink: config.links.callCharges,
                 equalityAdvisorLink: config.links.equalityAdvisorLink,
                 wcag21Link: config.links.wcag21Link,
