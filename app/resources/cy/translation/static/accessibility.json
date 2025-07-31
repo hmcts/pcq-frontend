@@ -1,10 +1,10 @@
 {
   "title": "Datganiad Hygyrchedd",
   "heading1": "Datganiad hygyrchedd ar gyfer y cwestiynau Cydraddoldeb ac Amrywiaeth",
-  "paragraph0": "This accessibility statement applies to the Equality and Diversity questions service.",
-  "paragraph1": "Mae’r gwasanaeth hwn yn gofyn cyfres o gwestiynau a fydd yn ein helpu ni i wirio ein bod yn trin pobl yn deg ac yn gydradd. Mae&#39;n ein helpu i gyflawni ein hymrwymiad i gydraddoldeb (o dan Ddeddf Cydraddoldeb 2010).",
+  "paragraph0": "Mae’r datganiad hygyrchedd hwn yn berthnasol i’r gwasanaeth cwestiynau Cydraddoldeb ac Amrywiaeth.",
+  "paragraph1": "Mae’r gwasanaeth hwn yn gofyn set o gwestiynau fydd yn ein helpu i wirio ein bod yn trin pobl yn deg ac yn gyfartal. Mae'n ein helpu i gyflawni ein hymrwymiad i gydraddoldeb (o dan Ddeddf Cydraddoldeb 2010).",
   "paragraph2": "Gwasanaeth Llysoedd a Thribiwnlysoedd EM sy’n gyfrifol am y wefan hon. Rydym eisiau i gymaint o bobl &acirc; phosib allu defnyddio&#39;r wefan, felly rydym wedi ceisio ei gwneud mor hygyrch &acirc; phosib. Er enghraifft, golyga hyn y dylech allu:",
-  "list1-item1": "newid y lliwiau, y lefelau cyferbyniad a’r ffontiau using browser or device settings",
+  "list1-item1": "newid y lliwiau, y lefelau cyferbyniad a’r ffontiau neu osodiadau’r ddyfais",
   "list1-item2": "gwneud y testun hyd at 400% yn fwy heb iddo ddiflannu oddi ar y sgrin",
   "list1-item3": "llywio&#39;r rhan fwyaf o&#39;r wefan gan ddefnyddio bysellfwrdd yn unig",
   "list1-item4": "llywio&#39;r rhan fwyaf o&#39;r wefan gan ddefnyddio meddalwedd adnabod llais",
@@ -16,9 +16,9 @@
   "paragraph5": "Mae’r wefan yn cydymffurfio &acirc; WCAG 2.2 AA ac mae hefyd yn defnyddio fersiwn ddiweddaraf System Dylunio GOV.UK. Rydym hefyd wedi profi&#39;r wefan yn fewnol ac yn allanol i sicrhau ein bod yn cydymffurfio &acirc;’r safonau hygyrchedd diweddaraf.",
 
   "heading3": "Adborth a gwybodaeth gyswllt",
-  "paragraph6": "We provide a text relay service for people who are deaf, hearing impaired or have a speech impediment. Os ydych angen gwybodaeth sydd ar y wefan hon mewn fformat arall megis ar ffurf PDF hygyrch, print bras, fformat hawdd ei ddarllen, neu braille",
+  "paragraph6": "Rydym yn darparu gwasanaeth cyfnewid negeseuon testun ar gyfer pobl fyddar, pobl sydd â nam ar eu clyw a phobl sydd â nam ar eu lleferydd. Os ydych angen gwybodaeth sydd ar y wefan hon mewn fformat arall megis ar ffurf PDF hygyrch, print bras, fformat hawdd ei ddarllen, neu braille",
   "paragraph7": "Anfonwch neges e-bost i: <a href=\"mailto:HMCTSforms@justice.gov.uk\" class=\"govuk-link\">HMCTSforms@justice.gov.uk</a>",
-  "paragraph8": "<strong>You can also contact us via the following helplines:</strong>",
+  "paragraph8": "<strong>Gallwch hefyd gysylltu â ni drwy’r llinellau cymorth canlynol:</strong>",
   "list2-divorce": "Gwasanaeth Ysgariad: 0300 303 5171",
   "list2-probate": "Gwasanaeth Profiant: 0300 303 0654",
   "list2-sscs": "Apelio i Dribiwnlys Nawdd Cymdeithasol a Chynnal Plant: 0300 303 5170",
@@ -32,7 +32,7 @@
   "list2-adoption": "Os oeddech chi'n defnyddio'r gwasanaeth mabwysiadu: e-bostiwch: adoptionproject@justice.gov.uk, dydd Llun i ddydd Gwener: 9am tan 5pm.",
 
   "paragraph9": "<a target=\"_blank\" rel=\"external noopener noreferrer\" href=\"{callChargesLink}\" class=\"govuk-link\">Gwybodaeth am brisiau galwadau</a>",
-  "paragraph10": "We’re always looking to improve the accessibility of this website. If you find any problems that are not listed on this page or think we’re not meeting accessibility requirements please contact us on the phone helplines.",
+  "paragraph10": "Rydym wastad yn ceisio gwella hygyrchedd y wefan hon. Os byddwch yn cael unrhyw broblemau nad ydynt wedi’u cynnwys ar y dudalen hon, neu’n credu nad ydym yn bodloni’r gofynion o ran hygyrchedd,cysylltwch â ni ar y llinellau cymorth dros y ffôn.",
   "paragraph11": "Byddwn yn ystyried eich ceisiadau ac yn ymateb o fewn 10 diwrnod gwaith.", 
 
   "heading5": "Y Weithdrefn Orfodi",
@@ -42,12 +42,12 @@
   "paragraph14": "Mae GLlTEM wedi ymrwymo i sicrhau bod ei wefannau yn hygyrch, a hynny yn unol &acirc; Rheoliadau Hygyrchedd Cyrff y Sector Cyhoeddus (Gwefannau a Rhaglenni Symudol) (Rhif 2) 2018.",
   
   "heading8": "Statws Cydymffurfiaeth",
-  "paragraph15": "Mae'r wefan hon wedi'i phrofi ac mae'n cydymffurfio'n llawn â'r &acirc;<a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Canllawiau Hygyrchedd Cynnwys Gwe fersiwn 2.2</a> safon AA.",
+  "paragraph15": "Mae’r wefan hon wedi’i phrofi ac mae’n cydymffurfio’n llwyr â’r  &acirc;<a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Canllawiau Hygyrchedd Cynnwys Gwe fersiwn 2.2</a> safon AA.",
   
   "heading9": "Beth rydym yn ei wneud i wella hygyrchedd?",
-  "paragraph16": "This website is continually tested using accessibility automated tests and basic manual and assistive technology checks. Any new features which are introduced will also be tested internally or with the support of the internal HMCTS accessibility testing team.",
+  "paragraph16": "Mae’r wefan hon yn cael ei phrofi’n barhaus drwy ddefnyddio profion hygyrchedd awtomatig a gwiriadau technoleg gynorthwyol. Bydd unrhyw nodweddion newydd a gyflwynir hefyd yn cael eu profi’n fewnol neu gyda chefnogaeth tîm prawf hygyrchedd mewnol GLlTEF.",
 
   "heading10": "Paratoi&#39;r datganiad hygyrchedd hwn",
-  "paragraph17": "Paratowyd y datganiad hwn ar 28 Mai 2020. Fe’i ddiweddarwyd diwethaf ar 4 aug 2025.",
-  "paragraph18": "Profwyd y wefan hon ddiwethaf ar 2 Ebrill 2025. The test audit was carried out by the internal HMCTS accessibility testing team. The team tested against a range of assistive technologies and accessibility testing tools."
+  "paragraph17": "Paratowyd y datganiad hwn ar 28 Mai 2020. Fe’i ddiweddarwyd ddiwethaf ar 31 Gorffennaf 2025.",
+  "paragraph18": "Profwyd y wefan hon ddiwethaf ar 2 Ebrill 2025. Cynhaliwyd yr archwiliad gan dîm profi hygyrchedd mewnol GLlTEF. Roedd y tîm wedi profi yn erbyn ystod o dechnolegau cynorthwyol ac adnoddau profi hygyrchedd."
 }
