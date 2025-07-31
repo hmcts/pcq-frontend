@@ -1,10 +1,11 @@
 {
   "title": "Datganiad Hygyrchedd",
-  "heading1": "Datganiad hygyrchedd ar gyfer y cwestiynau cydraddoldeb ac amrywiaeth",
+  "heading1": "Datganiad hygyrchedd ar gyfer y cwestiynau Cydraddoldeb ac Amrywiaeth",
+  "paragraph0": "This accessibility statement applies to the Equality and Diversity questions service.",
   "paragraph1": "Mae’r gwasanaeth hwn yn gofyn cyfres o gwestiynau a fydd yn ein helpu ni i wirio ein bod yn trin pobl yn deg ac yn gydradd. Mae&#39;n ein helpu i gyflawni ein hymrwymiad i gydraddoldeb (o dan Ddeddf Cydraddoldeb 2010).",
   "paragraph2": "Gwasanaeth Llysoedd a Thribiwnlysoedd EM sy’n gyfrifol am y wefan hon. Rydym eisiau i gymaint o bobl &acirc; phosib allu defnyddio&#39;r wefan, felly rydym wedi ceisio ei gwneud mor hygyrch &acirc; phosib. Er enghraifft, golyga hyn y dylech allu:",
-  "list1-item1": "newid y lliwiau, y lefelau cyferbyniad a’r ffontiau",
-  "list1-item2": "gwneud y testun hyd at 300% yn fwy heb iddo ddiflannu oddi ar y sgrin",
+  "list1-item1": "newid y lliwiau, y lefelau cyferbyniad a’r ffontiau using browser or device settings",
+  "list1-item2": "gwneud y testun hyd at 400% yn fwy heb iddo ddiflannu oddi ar y sgrin",
   "list1-item3": "llywio&#39;r rhan fwyaf o&#39;r wefan gan ddefnyddio bysellfwrdd yn unig",
   "list1-item4": "llywio&#39;r rhan fwyaf o&#39;r wefan gan ddefnyddio meddalwedd adnabod llais",
   "list1-item5": "gwrando ar y rhan fwyaf o&#39;r wefan gan ddefnyddio darllenydd sgrin (gan gynnwys fersiynau diweddaraf JAWS, NVDA a VoiceOver)",
@@ -15,9 +16,9 @@
   "paragraph5": "Mae’r wefan yn cydymffurfio &acirc; WCAG 2.2 AA ac mae hefyd yn defnyddio fersiwn ddiweddaraf System Dylunio GOV.UK. Rydym hefyd wedi profi&#39;r wefan yn fewnol ac yn allanol i sicrhau ein bod yn cydymffurfio &acirc;’r safonau hygyrchedd diweddaraf.",
 
   "heading3": "Adborth a gwybodaeth gyswllt",
-  "paragraph6": "Os ydych angen gwybodaeth sydd ar y wefan hon mewn fformat arall megis ar ffurf PDF hygyrch, print bras, fformat hawdd ei ddarllen, neu braille:",
+  "paragraph6": "We provide a text relay service for people who are deaf, hearing impaired or have a speech impediment. Os ydych angen gwybodaeth sydd ar y wefan hon mewn fformat arall megis ar ffurf PDF hygyrch, print bras, fformat hawdd ei ddarllen, neu braille",
   "paragraph7": "Anfonwch neges e-bost i: <a href=\"mailto:HMCTSforms@justice.gov.uk\" class=\"govuk-link\">HMCTSforms@justice.gov.uk</a>",
-  "paragraph8": "<strong>Llinell Gymorth: </strong>",
+  "paragraph8": "<strong>You can also contact us via the following helplines:</strong>",
   "list2-divorce": "Gwasanaeth Ysgariad: 0300 303 5171",
   "list2-probate": "Gwasanaeth Profiant: 0300 303 0654",
   "list2-sscs": "Apelio i Dribiwnlys Nawdd Cymdeithasol a Chynnal Plant: 0300 303 5170",
@@ -30,30 +31,23 @@
   "list2-civil-citizen-ui": "Os oeddech chi’n defnyddio’r gwasanaeth gwneud Hawliad am Arian: 0300 303 5174 (Cymraeg), 0300 123 7050 (Saesneg), dydd Llun i ddydd Gwener: 8:30am - 5pm, neu e-bost: ymholiadaucymraeg@justice.gov.uk",
   "list2-adoption": "Os oeddech chi'n defnyddio'r gwasanaeth mabwysiadu: e-bostiwch: adoptionproject@justice.gov.uk, dydd Llun i ddydd Gwener: 9am tan 5pm.",
 
-  "paragraph9": "{helpLineHours}<br><a target=\"_blank\" rel=\"external noopener noreferrer\" href=\"{callChargesLink}\" class=\"govuk-link\">Gwybodaeth am brisiau galwadau</a>",
-  "paragraph10": "Byddwn yn ystyried eich cais ac yn ymateb o fewn 10 diwrnod gwaith.",
-
-  "heading4": "Riportio problemau hygyrchedd gyda&#39;r wefan hon",
-  "paragraph11": "Rydym wastad yn ceisio gwella hygyrchedd y wefan hon. Os byddwch yn cael unrhyw broblemau nad ydynt wedi’u cynnwys ar y dudalen hon, neu’n credu nad ydym yn bodloni’r gofynion o ran hygyrchedd, cysylltwch &acirc;:",
+  "paragraph9": "<a target=\"_blank\" rel=\"external noopener noreferrer\" href=\"{callChargesLink}\" class=\"govuk-link\">Gwybodaeth am brisiau galwadau</a>",
+  "paragraph10": "We’re always looking to improve the accessibility of this website. If you find any problems that are not listed on this page or think we’re not meeting accessibility requirements please contact us on the phone helplines.",
+  "paragraph11": "Byddwn yn ystyried eich ceisiadau ac yn ymateb o fewn 10 diwrnod gwaith.", 
 
   "heading5": "Y Weithdrefn Orfodi",
   "paragraph12": "Y Comisiwn Cydraddoldeb a Hawliau Dynol (EHRC) sy’n gyfrifol am orfodi Rheoliadau Hygyrchedd Cyrff y Sector Cyhoeddus (Gwefannau a Rhaglenni Symudol) (Rhif 2) 2018 (y &lsquo;rheoliadau hygyrchedd’). Os ydych chi’n anhapus gyda’r ffordd rydym yn ymateb i’ch cwyn, <a href=\"{equalityAdvisorLink}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">cysylltwch &acirc;’r Gwasanaeth Cynghori a Chymorth Cydraddoldeb (EASS)</a>.",
 
-  "heading6": "Cysylltu &acirc; ni dros y ff&ocirc;n",
-  "paragraph13": "Rydym yn darparu gwasanaeth cyfnewid negeseuon testun ar gyfer pobl byddar, pobl sydd &acirc; nam ar eu clyw a phobl sydd &acirc; nam ar eu lleferydd.",
-
   "heading7": "Gwybodaeth dechnegol am hygyrchedd y wefan hon",
   "paragraph14": "Mae GLlTEM wedi ymrwymo i sicrhau bod ei wefannau yn hygyrch, a hynny yn unol &acirc; Rheoliadau Hygyrchedd Cyrff y Sector Cyhoeddus (Gwefannau a Rhaglenni Symudol) (Rhif 2) 2018.",
-  "paragraph15": "Mae’r wefan hon yn cydymffurfio’n llwyr &acirc; <a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Canllawiau Hygyrchedd Cynnwys Gwe fersiwn 2.2</a> safon AA.",
-
+  
   "heading8": "Statws Cydymffurfiaeth",
-  "paragraph16": "Mae’r wefan hon yn cydymffurfio’n llwyr &acirc; <a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Canllawiau Hygyrchedd Cynnwys Gwe fersiwn 2.2</a> safon AA.",
+  "paragraph15": "Mae'r wefan hon wedi'i phrofi ac mae'n cydymffurfio'n llawn â'r &acirc;<a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Canllawiau Hygyrchedd Cynnwys Gwe fersiwn 2.2</a> safon AA.",
+  
+  "heading9": "Beth rydym yn ei wneud i wella hygyrchedd?",
+  "paragraph16": "This website is continually tested using accessibility automated tests and basic manual and assistive technology checks. Any new features which are introduced will also be tested internally or with the support of the internal HMCTS accessibility testing team.",
 
-  "heading9": "Paratoi&#39;r datganiad hygyrchedd hwn",
-  "paragraph17": "Paratowyd y datganiad hwn ar 28 Mai 2020. Fe’i ddiweddarwyd diwethaf ar 9 Mai 2025.",
-  "paragraph18": "Profwyd y wefan hon ddiwethaf ar 2 Ebrill 2025. Cynhaliwyd y prawf gan y Ganolfan Hygyrchedd Digidol Cyf (DAC).",
-  "paragraph19": "Profwyd pob tudalen o&#39;r wefan hon yn erbyn safon WCAG 2.2.",
-
-  "heading10": "Beth rydym yn ei wneud i wella hygyrchedd?",
-  "paragraph20": "Mae’r wefan yn cael ei phrofi’n barhaus gan ddefnyddio meddalwedd hygyrchedd. Bydd unrhyw nodweddion newydd a gyflwynir hefyd yn cael eu profi’n fewnol neu gan y Digital Accessibility Centre (DAC)."
+  "heading10": "Paratoi&#39;r datganiad hygyrchedd hwn",
+  "paragraph17": "Paratowyd y datganiad hwn ar 28 Mai 2020. Fe’i ddiweddarwyd diwethaf ar 4 aug 2025.",
+  "paragraph18": "Profwyd y wefan hon ddiwethaf ar 2 Ebrill 2025. The test audit was carried out by the internal HMCTS accessibility testing team. The team tested against a range of assistive technologies and accessibility testing tools."
 }

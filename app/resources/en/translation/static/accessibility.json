@@ -1,10 +1,11 @@
 {
   "title": "Accessibility statement",
-  "heading1": "Accessibility statement for equality and diversity questions",
-  "paragraph1": "This service will ask a set of questions that will help us check we are treating people fairly and equally. It helps us to meet our commitment to equality (under the Equality Act 2010).",
+  "heading1": "Accessibility statement for Equality and Diversity questions",
+  "paragraph0": "This accessibility statement applies to the Equality and Diversity questions service.",
+  "paragraph1": "This service asks a set of questions that will help us check we are treating people fairly and equally. It helps us to meet our commitment to equality (under the Equality Act 2010).",
   "paragraph2": "This website is run by HM Courts and Tribunals. We want as many people as possible to be able to use this website, so we have designed it to be accessible. For example, that means you should be able to:",
-  "list1-item1": "change colours, contrast levels and fonts",
-  "list1-item2": "zoom in up to 300% without the text spilling off the screen",
+  "list1-item1": "change colours, contrast levels and fonts using browser or device settings",
+  "list1-item2": "zoom in up to 400% without the text spilling off the screen",
   "list1-item3": "navigate most of the website using just a keyboard",
   "list1-item4": "navigate most of the website using speech recognition software",
   "list1-item5": "listen to most of the website using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver)",
@@ -15,9 +16,9 @@
   "paragraph5": "This website is WCAG 2.2 AA compliant and also uses the latest version of the GOV.UK Design System. In addition, we’ve carried out internal and external accessibility testing to ensure that we’re in-line with the latest accessibility standards.",
 
   "heading3": "Feedback and contact information",
-  "paragraph6": "If you need information on this website in a different format like accessible PDF, large print, easy read or braille:",
+  "paragraph6": "We provide a text relay service for people who are deaf, hearing impaired or have a speech impediment.If you need information on this website in a different format like accessible PDF, large print, easy read or braille",
   "paragraph7": "Email: <a href=\"mailto:HMCTSforms@justice.gov.uk\" class=\"govuk-link\">HMCTSforms@justice.gov.uk</a>",
-  "paragraph8": "<strong>Helplines:</strong>",
+  "paragraph8": "<strong>You can also contact us via the following helplines:</strong>",
   "list2-divorce": "If you were using the Divorce service: 0300 303 0642",
   "list2-probate": "If you were using the Probate service: 0300 303 0648",
   "list2-sscs": "If you were appealing to the Social Security and Child Support Tribunal: 0300 123 1142",
@@ -30,30 +31,23 @@
   "list2-civil-citizen-ui": "If you were using the Money Claim service: 0300 123 7050 (English), 0300 303 5174 (Welsh), Monday to Friday: 8:30am to 5pm, or email: contactocmc@justice.gov.uk",
   "list2-adoption": "If you were using the adoption service: email: adoptionproject@justice.gov.uk, Monday to Friday: 9am to 5pm.",
 
-  "paragraph9": "{helpLineHours}<br><a target=\"_blank\" rel=\"external noopener noreferrer\" href=\"{callChargesLink}\" class=\"govuk-link\">Find out about call charges</a>",
-  "paragraph10": "We’ll consider your request and get back to you within 10 working days.",
-
-  "heading4": "Reporting accessibility problems with this website",
-  "paragraph11": "We’re always looking to improve the accessibility of this website. If you find any problems that are not listed on this page or think we’re not meeting accessibility requirements, contact:",
+  "paragraph9": "<a target=\"_blank\" rel=\"external noopener noreferrer\" href=\"{callChargesLink}\" class=\"govuk-link\">Find out about call charges</a>",
+  "paragraph10": "We’re always looking to improve the accessibility of this website. If you find any problems that are not listed on this page or think we’re not meeting accessibility requirements please contact us on the phone helplines.",
+  "paragraph11": "We’ll consider your requests and get back to you within 10 working days.",
 
   "heading5": "Enforcement procedure",
   "paragraph12": "The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the &lsquo;accessibility regulations’). If you’re not happy with how we respond to your complaint, <a href=\"{equalityAdvisorLink}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">contact the Equality Advisory and Support Service (EASS)</a>.",
 
-  "heading6": "Contacting us by phone",
-  "paragraph13": "We provide a text relay service for people who are deaf, hearing impaired or have a speech impediment.",
-
   "heading7": "Technical information about this website’s accessibility",
   "paragraph14": "HMCTS is committed to making its websites accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.",
-  "paragraph15": "This website is fully compliant with the <a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Web Content Accessibility Guidelines version 2.2</a> AA standard",
-
+  
   "heading8": "Compliance status",
-  "paragraph16": "This website is fully compliant with the <a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Web Content Accessibility Guidelines version 2.2</a> AA standard",
+  "paragraph15": "This website has been tested to and is fully compliant with the <a href=\"{wcag21Link}\" target=\"_blank\" rel=\"external noopener noreferrer\" class=\"govuk-link\">Web Content Accessibility Guidelines version 2.2</a> AA standard",
+ 
+  "heading9": "What we’re doing to improve accessibility",
+  "paragraph16": "This website is continually tested using accessibility automated tests and basic manual and assistive technology checks. Any new features which are introduced will also be tested internally or with the support of the internal HMCTS accessibility testing team.",
 
-  "heading9": "Preparation of this accessibility statement",
-  "paragraph17": "This statement was prepared on 28<sup>th</sup> May 2020. It was last updated on 9<sup>th</sup> May 2025.",
-  "paragraph18": "This website was last tested on 2<sup>nd</sup> April 2025. The test was carried out by Digital Accessibility Centre Ltd.",
-  "paragraph19": "We tested all pages of this website against the WCAG 2.2 standard.",
-
-  "heading10": "What we’re doing to improve accessibility",
-  "paragraph20": "This website is continually tested using accessibility software. Any new features which are introduced will also be tested internally or with the Digital Accessibility Centre (DAC)."
+  "heading10": "Preparation of this accessibility statement",
+  "paragraph17": "This statement was prepared on 28<sup>th</sup> May 2020. It was last updated on 31<sup>th</sup> July 2025.",
+  "paragraph18": "This website was last tested on 2<sup>nd</sup> April 2025. The audit was carried out by the internal HMCTS accessibility testing team. The team tested against a range of assistive technologies and accessibility testing tools."
 }
