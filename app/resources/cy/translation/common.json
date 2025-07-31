@@ -1,6 +1,6 @@
 {
   "phase": "Beta",
-  "feedback": "Mae hwn yn wasanaeth newydd - bydd eich <a aria-label=\"Adborth: Bydd y ddolen hon yn agor mewn ffenestr newydd. Bydd angen ichi ddychwelyd i’r ffenestr hon i barhau gyda’ch cais.\" href=\"{smartSurveyFeedbackUrl}?pageurl={currentPageUrl}\" class=\"govuk-link\" target=\"_blank\" rel=\"external noopener noreferrer\">adborth</a> yn ein helpu ni i’w wella.",
+  "feedback": "Mae hwn yn wasanaeth newydd.Helpwch ni i'w wella a <a aria-label=\"Adborth: Bydd y ddolen hon yn agor mewn ffenestr newydd. Bydd angen ichi ddychwelyd i’r ffenestr hon i barhau gyda’ch cais.\" href=\"{smartSurveyFeedbackUrl}?pageurl={currentPageUrl}\" class=\"govuk-link\" target=\"_blank\" rel=\"external noopener noreferrer\">rhowch eich adborth (agor mewn tab newydd).</a>",
   "languageToggle": "<a href=\"?lng=en\" class=\"govuk-link language\">English</a>",
   "govuk": "GOV.UK",
   "serviceName": "Cwestiynau am Gydraddoldeb ac Amrywiaeth",
