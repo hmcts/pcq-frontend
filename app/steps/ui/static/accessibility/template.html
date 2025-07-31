@@ -7,6 +7,7 @@
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
             <h1 class="govuk-heading-l">{{ content.heading1 | safe }}</h1>
+            <p class="govuk-body">{{ content.paragraph0 | safe }}</p>
             <p class="govuk-body">{{ content.paragraph1 | safe }}</p>
             <p class="govuk-body">{{ content.paragraph2 | safe }}</p>
             {{ unorderedList([content["list1-item1"], content["list1-item2"], content["list1-item3"], content["list1-item4"], content["list1-item5"]]) }}
@@ -24,39 +25,26 @@
                 content["list2-divorce"], content["list2-probate"], content["list2-sscs"], content["list2-iac"], content["list2-et"], content["list2-online_plea"],
                 content["list2-specialtribunals_cic"],content["list2-jurordigital"],content["list2-prl_ca"],content["list2-civil-citizen-ui"], content["list2-adoption"]
             ]) }}
-            <p class="govuk-body">{{ content.paragraph9 | replace("{helpLineHours}", common.helplineHours) | replace("{callChargesLink}", globals.links.callCharges) | safe }}</p>
+            <p class="govuk-body">{{ content.paragraph9 | replace("{callChargesLink}", globals.links.callCharges) | safe }}</p>
             <p class="govuk-body">{{ content.paragraph10 | safe }}</p>
-
-            <h2 class="govuk-heading-m">{{ content.heading4 | safe }}</h2>
             <p class="govuk-body">{{ content.paragraph11 | safe }}</p>
-            <h3 class="govuk-body">{{ content.paragraph8 | safe }}</h3>
-            {{ unorderedList([
-                content["list2-divorce"], content["list2-probate"], content["list2-sscs"], content["list2-iac"], content["list2-et"], content["list2-online_plea"],
-                content["list2-specialtribunals_cic"],content["list2-jurordigital"],content["list2-prl_ca"],content["list2-civil-citizen-ui"], content["list2-adoption"]
-            ]) }}
-            <p class="govuk-body">{{ content.paragraph9 | replace("{helpLineHours}", common.helplineHours)  | replace("{callChargesLink}", globals.links.callCharges) | safe }}</p>
-            <p class="govuk-body">{{ content.paragraph10 | safe }}</p>
-
+      
             <h2 class="govuk-heading-m">{{ content.heading5 | safe }}</h2>
             <p class="govuk-body">{{ content.paragraph12 | replace("{equalityAdvisorLink}", globals.links.equalityAdvisorLink) | safe }}</p>
 
-            <h2 class="govuk-heading-m">{{ content.heading6 | safe }}</h2>
-            <p class="govuk-body">{{ content.paragraph13 | safe }}</p>
-
             <h2 class="govuk-heading-m">{{ content.heading7 | safe }}</h2>
             <p class="govuk-body">{{ content.paragraph14 | safe }}</p>
+           
+            <h2 class="govuk-heading-m">{{ content.heading8 | safe }}</h2>
             <p class="govuk-body">{{ content.paragraph15 | replace("{wcag21Link}", globals.links.wcag21Link) | safe }}</p>
 
-            <h2 class="govuk-heading-m">{{ content.heading8 | safe }}</h2>
-            <p class="govuk-body">{{ content.paragraph16 | safe }}</p>
-
             <h2 class="govuk-heading-m">{{ content.heading9 | safe }}</h2>
+            <p class="govuk-body">{{ content.paragraph16 | safe }}</p>
+            
+            <h2 class="govuk-heading-m">{{ content.heading10 | safe }}</h2>
             <p class="govuk-body">{{ content.paragraph17 | safe }}</p>
             <p class="govuk-body">{{ content.paragraph18 | safe }}</p>
             <p class="govuk-body">{{ content.paragraph19 | safe }}</p>
-
-            <h2 class="govuk-heading-m">{{ content.heading10 | safe }}</h2>
-            <p class="govuk-body">{{ content.paragraph20 | safe }}</p>
         </div>
     </div>
 {% endblock %}
