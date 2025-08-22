@@ -31,7 +31,7 @@ const RAW_RUNTIME_STATE =
           ["@babel/traverse", "npm:7.28.3"],\
           ["@babel/types", "npm:7.28.2"],\
           ["@eslint/js", "npm:9.28.0"],\
-          ["@hmcts/cookie-manager", "npm:1.0.0"],\
+          ["@hmcts/cookie-manager", "npm:1.1.0"],\
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
           ["@hmcts/properties-volume", "npm:1.2.0"],\
@@ -3994,10 +3994,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@hmcts/cookie-manager", [\
-      ["npm:1.0.0", {\
-        "packageLocation": "./.yarn/cache/@hmcts-cookie-manager-npm-1.0.0-f7ac279484-8ea2c9e9f8.zip/node_modules/@hmcts/cookie-manager/",\
+      ["npm:1.1.0", {\
+        "packageLocation": "./.yarn/cache/@hmcts-cookie-manager-npm-1.1.0-b7df48a726-f480f04fc9.zip/node_modules/@hmcts/cookie-manager/",\
         "packageDependencies": [\
-          ["@hmcts/cookie-manager", "npm:1.0.0"]\
+          ["@hmcts/cookie-manager", "npm:1.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -19718,7 +19718,7 @@ const RAW_RUNTIME_STATE =
           ["@babel/traverse", "npm:7.28.3"],\
           ["@babel/types", "npm:7.28.2"],\
           ["@eslint/js", "npm:9.28.0"],\
-          ["@hmcts/cookie-manager", "npm:1.0.0"],\
+          ["@hmcts/cookie-manager", "npm:1.1.0"],\
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
           ["@hmcts/properties-volume", "npm:1.2.0"],\
