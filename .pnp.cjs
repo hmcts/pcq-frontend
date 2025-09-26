@@ -83,7 +83,7 @@ const RAW_RUNTIME_STATE =
           ["nyc", "npm:17.1.0"],\
           ["pa11y", "npm:8.0.0"],\
           ["permissions-policy", "npm:0.6.0"],\
-          ["playwright", "npm:1.55.0"],\
+          ["playwright", "npm:1.55.1"],\
           ["pre-commit", "npm:1.2.2"],\
           ["protected-characteristics-frontend", "workspace:."],\
           ["proxyquire", "npm:2.1.3"],\
@@ -19278,21 +19278,21 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["playwright", [\
-      ["npm:1.55.0", {\
-        "packageLocation": "./.yarn/cache/playwright-npm-1.55.0-20fc643e73-df02529693.zip/node_modules/playwright/",\
+      ["npm:1.55.1", {\
+        "packageLocation": "./.yarn/cache/playwright-npm-1.55.1-8b5d08a45d-5dcf9ce564.zip/node_modules/playwright/",\
         "packageDependencies": [\
           ["fsevents", "patch:fsevents@npm%3A2.3.2#optional!builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"],\
-          ["playwright", "npm:1.55.0"],\
-          ["playwright-core", "npm:1.55.0"]\
+          ["playwright", "npm:1.55.1"],\
+          ["playwright-core", "npm:1.55.1"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["playwright-core", [\
-      ["npm:1.55.0", {\
-        "packageLocation": "./.yarn/cache/playwright-core-npm-1.55.0-1c6d3fab0f-843376a8e2.zip/node_modules/playwright-core/",\
+      ["npm:1.55.1", {\
+        "packageLocation": "./.yarn/cache/playwright-core-npm-1.55.1-1fbca4286d-953a43039d.zip/node_modules/playwright-core/",\
         "packageDependencies": [\
-          ["playwright-core", "npm:1.55.0"]\
+          ["playwright-core", "npm:1.55.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -19652,7 +19652,7 @@ const RAW_RUNTIME_STATE =
           ["nyc", "npm:17.1.0"],\
           ["pa11y", "npm:8.0.0"],\
           ["permissions-policy", "npm:0.6.0"],\
-          ["playwright", "npm:1.55.0"],\
+          ["playwright", "npm:1.55.1"],\
           ["pre-commit", "npm:1.2.2"],\
           ["protected-characteristics-frontend", "workspace:."],\
           ["proxyquire", "npm:2.1.3"],\
