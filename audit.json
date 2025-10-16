@@ -642,5 +642,5 @@
   "90033_Loosely Scoped Cookie_https://pcq.aat.platform.hmcts.net/offline?lng=en_GET": "ignore",
   "90033_Loosely Scoped Cookie_https://pcq.aat.platform.hmcts.net/robots.txt_GET": "ignore",
   "90033_Loosely Scoped Cookie_https://pcq.aat.platform.hmcts.net/sitemap.xml_GET": "ignore",
-  "2_Private IP Disclosure_https://pcq.aat.platform.hmcts.net/assets/images/favicon.svg_GET": "ignore",
+  "2_Private IP Disclosure_https://pcq.aat.platform.hmcts.net/assets/images/favicon.svg_GET": "ignore"
 }
