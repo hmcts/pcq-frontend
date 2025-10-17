@@ -9,7 +9,3 @@ nodejs:
 
 redis:
   enabled: true
-  image:
-    registry: docker.io
-    repository: bitnamilegacy/redis
-    tag: 8.2.1-debian-12-r0

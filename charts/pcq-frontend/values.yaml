@@ -49,7 +49,11 @@ nodejs:
         - civil-citizen-ui-token-key
 
 redis:
+  enabled: false
   architecture: standalone
+  image:
+    registry: hmctspublic.azurecr.io
+    repository: imported/bitnami/redis
   auth:
     enabled: false
   master:
