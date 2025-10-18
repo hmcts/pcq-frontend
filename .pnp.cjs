@@ -73,7 +73,7 @@ const RAW_RUNTIME_STATE =
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
           ["lodash", "npm:4.17.21"],\
           ["mocha", "npm:11.7.2"],\
-          ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
+          ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
           ["moment", "npm:2.30.1"],\
           ["nock", "npm:14.0.10"],\
           ["node-emoji", "npm:2.2.0"],\
@@ -17704,15 +17704,15 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["mochawesome", [\
-      ["npm:7.1.3", {\
-        "packageLocation": "./.yarn/cache/mochawesome-npm-7.1.3-17afbbd4e0-ff5298705e.zip/node_modules/mochawesome/",\
+      ["npm:7.1.4", {\
+        "packageLocation": "./.yarn/cache/mochawesome-npm-7.1.4-4da28f16c4-340a511cf9.zip/node_modules/mochawesome/",\
         "packageDependencies": [\
-          ["mochawesome", "npm:7.1.3"]\
+          ["mochawesome", "npm:7.1.4"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3", {\
-        "packageLocation": "./.yarn/__virtual__/mochawesome-virtual-299d6dc92f/0/cache/mochawesome-npm-7.1.3-17afbbd4e0-ff5298705e.zip/node_modules/mochawesome/",\
+      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4", {\
+        "packageLocation": "./.yarn/__virtual__/mochawesome-virtual-fa66775d89/0/cache/mochawesome-npm-7.1.4-4da28f16c4-340a511cf9.zip/node_modules/mochawesome/",\
         "packageDependencies": [\
           ["@types/mocha", null],\
           ["chalk", "npm:4.1.2"],\
@@ -17723,8 +17723,8 @@ const RAW_RUNTIME_STATE =
           ["lodash.isobject", "npm:3.0.2"],\
           ["lodash.isstring", "npm:4.0.1"],\
           ["mocha", "npm:11.7.2"],\
-          ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
-          ["mochawesome-report-generator", "npm:6.2.0"],\
+          ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
+          ["mochawesome-report-generator", "npm:6.3.0"],\
           ["strip-ansi", "npm:6.0.1"],\
           ["uuid", "npm:8.3.2"]\
         ],\
@@ -17736,8 +17736,8 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["mochawesome-report-generator", [\
-      ["npm:6.2.0", {\
-        "packageLocation": "./.yarn/cache/mochawesome-report-generator-npm-6.2.0-8649ea3e3d-94ed8a862f.zip/node_modules/mochawesome-report-generator/",\
+      ["npm:6.3.0", {\
+        "packageLocation": "./.yarn/cache/mochawesome-report-generator-npm-6.3.0-00832bf097-d634e93eda.zip/node_modules/mochawesome-report-generator/",\
         "packageDependencies": [\
           ["chalk", "npm:4.1.2"],\
           ["dateformat", "npm:4.6.3"],\
@@ -17745,7 +17745,7 @@ const RAW_RUNTIME_STATE =
           ["fs-extra", "npm:10.1.0"],\
           ["fsu", "npm:1.1.1"],\
           ["lodash.isfunction", "npm:3.0.9"],\
-          ["mochawesome-report-generator", "npm:6.2.0"],\
+          ["mochawesome-report-generator", "npm:6.3.0"],\
           ["opener", "npm:1.5.2"],\
           ["prop-types", "npm:15.8.1"],\
           ["tcomb", "npm:3.2.29"],\
@@ -19621,7 +19621,7 @@ const RAW_RUNTIME_STATE =
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
           ["lodash", "npm:4.17.21"],\
           ["mocha", "npm:11.7.2"],\
-          ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.3"],\
+          ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
           ["moment", "npm:2.30.1"],\
           ["nock", "npm:14.0.10"],\
           ["node-emoji", "npm:2.2.0"],\
