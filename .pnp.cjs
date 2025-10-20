@@ -66,7 +66,7 @@ const RAW_RUNTIME_STATE =
           ["helmet", "npm:3.23.3"],\
           ["https-proxy-agent", "npm:5.0.1"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.5.2"],\
-          ["immutable", "npm:5.1.3"],\
+          ["immutable", "npm:5.1.4"],\
           ["ioredis", "npm:5.7.0"],\
           ["js-yaml", "npm:4.1.0"],\
           ["jsonwebtoken", "npm:9.0.2"],\
@@ -14499,10 +14499,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:5.1.3", {\
-        "packageLocation": "./.yarn/cache/immutable-npm-5.1.3-27d8e1c55d-6d29b29036.zip/node_modules/immutable/",\
+      ["npm:5.1.4", {\
+        "packageLocation": "./.yarn/cache/immutable-npm-5.1.4-cddca3d05c-0655b33af2.zip/node_modules/immutable/",\
         "packageDependencies": [\
-          ["immutable", "npm:5.1.3"]\
+          ["immutable", "npm:5.1.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -19621,7 +19621,7 @@ const RAW_RUNTIME_STATE =
           ["helmet", "npm:3.23.3"],\
           ["https-proxy-agent", "npm:5.0.1"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.5.2"],\
-          ["immutable", "npm:5.1.3"],\
+          ["immutable", "npm:5.1.4"],\
           ["ioredis", "npm:5.7.0"],\
           ["js-yaml", "npm:4.1.0"],\
           ["jsonwebtoken", "npm:9.0.2"],\
