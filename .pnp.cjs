@@ -95,7 +95,7 @@ const RAW_RUNTIME_STATE =
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:20.0.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-          ["sonarqube-scanner", "npm:4.3.0"],\
+          ["sonarqube-scanner", "npm:4.3.2"],\
           ["supertest", "npm:7.1.4"],\
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.11"],\
@@ -7952,10 +7952,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["adm-zip", [\
-      ["npm:0.5.12", {\
-        "packageLocation": "./.yarn/cache/adm-zip-npm-0.5.12-c8d76a4373-258bfd115f.zip/node_modules/adm-zip/",\
+      ["npm:0.5.16", {\
+        "packageLocation": "./.yarn/cache/adm-zip-npm-0.5.16-4556fea098-e167d1b9e6.zip/node_modules/adm-zip/",\
         "packageDependencies": [\
-          ["adm-zip", "npm:0.5.12"]\
+          ["adm-zip", "npm:0.5.16"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8572,20 +8572,20 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["axios", [\
-      ["npm:1.7.7", {\
-        "packageLocation": "./.yarn/cache/axios-npm-1.7.7-cfbedc233d-7f875ea13b.zip/node_modules/axios/",\
+      ["npm:1.12.2", {\
+        "packageLocation": "./.yarn/cache/axios-npm-1.12.2-cdb8ea6c90-886a797705.zip/node_modules/axios/",\
         "packageDependencies": [\
-          ["axios", "npm:1.7.7"],\
+          ["axios", "npm:1.12.2"],\
           ["follow-redirects", "virtual:cfbedc233d4c16068d815547ad303dec1092fdb3b8bb4ec9ab9c56bdd55b4e87650c7a525a88805756f4d2819c03abfd96a9983cfa927fedf995d1b8b879db38#npm:1.15.6"],\
           ["form-data", "npm:4.0.4"],\
           ["proxy-from-env", "npm:1.1.0"]\
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:1.8.2", {\
-        "packageLocation": "./.yarn/cache/axios-npm-1.8.2-55671cda10-d432875812.zip/node_modules/axios/",\
+      ["npm:1.7.7", {\
+        "packageLocation": "./.yarn/cache/axios-npm-1.7.7-cfbedc233d-7f875ea13b.zip/node_modules/axios/",\
         "packageDependencies": [\
-          ["axios", "npm:1.8.2"],\
+          ["axios", "npm:1.7.7"],\
           ["follow-redirects", "virtual:cfbedc233d4c16068d815547ad303dec1092fdb3b8bb4ec9ab9c56bdd55b4e87650c7a525a88805756f4d2819c03abfd96a9983cfa927fedf995d1b8b879db38#npm:1.15.6"],\
           ["form-data", "npm:4.0.4"],\
           ["proxy-from-env", "npm:1.1.0"]\
@@ -10462,6 +10462,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/commander-npm-12.1.0-65c868e907-cdaeb672d9.zip/node_modules/commander/",\
         "packageDependencies": [\
           ["commander", "npm:12.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:13.1.0", {\
+        "packageLocation": "./.yarn/cache/commander-npm-13.1.0-bdbbfaaf9d-d3b4b79e6b.zip/node_modules/commander/",\
+        "packageDependencies": [\
+          ["commander", "npm:13.1.0"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -19564,10 +19571,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["properties-file", [\
-      ["npm:3.5.4", {\
-        "packageLocation": "./.yarn/cache/properties-file-npm-3.5.4-588e4bb38c-6b6e995219.zip/node_modules/properties-file/",\
+      ["npm:3.6.1", {\
+        "packageLocation": "./.yarn/cache/properties-file-npm-3.6.1-8eaf3343ff-72ae41f898.zip/node_modules/properties-file/",\
         "packageDependencies": [\
-          ["properties-file", "npm:3.5.4"]\
+          ["properties-file", "npm:3.6.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -19643,7 +19650,7 @@ const RAW_RUNTIME_STATE =
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:20.0.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-          ["sonarqube-scanner", "npm:4.3.0"],\
+          ["sonarqube-scanner", "npm:4.3.2"],\
           ["supertest", "npm:7.1.4"],\
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.11"],\
@@ -20964,6 +20971,13 @@ const RAW_RUNTIME_STATE =
           ["semver", "npm:7.6.3"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:7.7.2", {\
+        "packageLocation": "./.yarn/cache/semver-npm-7.7.2-dfc3bc5ec9-7a24cffcaa.zip/node_modules/semver/",\
+        "packageDependencies": [\
+          ["semver", "npm:7.7.2"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["send", [\
@@ -21440,20 +21454,20 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sonarqube-scanner", [\
-      ["npm:4.3.0", {\
-        "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-4.3.0-7ea9958171-a6448c5b9a.zip/node_modules/sonarqube-scanner/",\
+      ["npm:4.3.2", {\
+        "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-4.3.2-7e05a76c54-dd218acc93.zip/node_modules/sonarqube-scanner/",\
         "packageDependencies": [\
-          ["adm-zip", "npm:0.5.12"],\
-          ["axios", "npm:1.8.2"],\
-          ["commander", "npm:12.0.0"],\
-          ["fs-extra", "npm:11.2.0"],\
+          ["adm-zip", "npm:0.5.16"],\
+          ["axios", "npm:1.12.2"],\
+          ["commander", "npm:13.1.0"],\
+          ["fs-extra", "npm:11.3.2"],\
           ["hpagent", "npm:1.2.0"],\
           ["node-forge", "npm:1.3.1"],\
-          ["properties-file", "npm:3.5.4"],\
+          ["properties-file", "npm:3.6.1"],\
           ["proxy-from-env", "npm:1.1.0"],\
-          ["semver", "npm:7.6.0"],\
+          ["semver", "npm:7.7.2"],\
           ["slugify", "npm:1.6.6"],\
-          ["sonarqube-scanner", "npm:4.3.0"],\
+          ["sonarqube-scanner", "npm:4.3.2"],\
           ["tar-stream", "npm:3.1.7"]\
         ],\
         "linkType": "HARD"\
