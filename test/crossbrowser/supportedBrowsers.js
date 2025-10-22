@@ -22,11 +22,15 @@ const supportedBrowsers = {
         chrome_mac_latest: {
             browserName: 'chrome',
             browserVersion: 'latest',
-            platformName: 'macOS 14',
+            platformName: 'macOS 13',
             'sauce:options': {
                 name: 'PCQ_MAC_CHROME_LATEST',
                 extendedDebugging: true
-            }
+            },
+            'bstack:options': {
+                os: 'OS X',
+                osVersion: 'Sequoia',
+                sessionName: 'PCQ_MAC_CHROME_LATEST'
         }
     },
     firefox: {
