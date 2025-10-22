@@ -22,7 +22,7 @@ const supportedBrowsers = {
         chrome_mac_latest: {
             browserName: 'chrome',
             browserVersion: 'latest',
-            platformName: 'macOS 15',
+            platformName: 'macOS 14',
             'sauce:options': {
                 name: 'PCQ_MAC_CHROME_LATEST',
                 extendedDebugging: true
