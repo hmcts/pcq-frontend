@@ -1,14 +1,4 @@
 const supportedBrowsers = {
-    microsoftIE11: {
-        ie11: {
-            browserName: 'internet explorer',
-            platformName: 'Windows 10',
-            browserVersion: '11.285',
-            'sauce:options': {
-                name: 'PCQ_WIN10_IE11_11',
-            }
-        }
-    },
     microsoftEdge: {
         edge: {
             browserName: 'MicrosoftEdge',
