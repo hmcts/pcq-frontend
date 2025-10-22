@@ -31,6 +31,7 @@ const supportedBrowsers = {
                 os: 'OS X',
                 osVersion: 'Sequoia',
                 sessionName: 'PCQ_MAC_CHROME_LATEST'
+            }
         }
     },
     firefox: {
