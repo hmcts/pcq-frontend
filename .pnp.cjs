@@ -72,7 +72,7 @@ const RAW_RUNTIME_STATE =
           ["jsonwebtoken", "npm:9.0.2"],\
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
           ["lodash", "npm:4.17.21"],\
-          ["mocha", "npm:11.7.2"],\
+          ["mocha", "npm:11.7.4"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
           ["moment", "npm:2.30.1"],\
           ["nock", "npm:14.0.10"],\
@@ -6958,7 +6958,7 @@ const RAW_RUNTIME_STATE =
           ["@stryker-mutator/util", "npm:8.7.1"],\
           ["@types/mocha", null],\
           ["@types/stryker-mutator__core", null],\
-          ["mocha", "npm:11.7.2"],\
+          ["mocha", "npm:11.7.4"],\
           ["tslib", "npm:2.7.0"]\
         ],\
         "packagePeers": [\
@@ -17787,8 +17787,8 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:11.7.2", {\
-        "packageLocation": "./.yarn/cache/mocha-npm-11.7.2-488175d820-d32ff20a48.zip/node_modules/mocha/",\
+      ["npm:11.7.4", {\
+        "packageLocation": "./.yarn/cache/mocha-npm-11.7.4-6a97a68247-d4ad2faefe.zip/node_modules/mocha/",\
         "packageDependencies": [\
           ["browser-stdout", "npm:1.3.1"],\
           ["chokidar", "npm:4.0.3"],\
@@ -17798,10 +17798,11 @@ const RAW_RUNTIME_STATE =
           ["find-up", "npm:5.0.0"],\
           ["glob", "npm:10.4.5"],\
           ["he", "npm:1.2.0"],\
+          ["is-path-inside", "npm:3.0.3"],\
           ["js-yaml", "npm:4.1.0"],\
           ["log-symbols", "npm:4.1.0"],\
           ["minimatch", "npm:9.0.5"],\
-          ["mocha", "npm:11.7.2"],\
+          ["mocha", "npm:11.7.4"],\
           ["ms", "npm:2.1.3"],\
           ["picocolors", "npm:1.1.1"],\
           ["serialize-javascript", "npm:6.0.2"],\
@@ -17834,7 +17835,7 @@ const RAW_RUNTIME_STATE =
           ["lodash.isfunction", "npm:3.0.9"],\
           ["lodash.isobject", "npm:3.0.2"],\
           ["lodash.isstring", "npm:4.0.1"],\
-          ["mocha", "npm:11.7.2"],\
+          ["mocha", "npm:11.7.4"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
           ["mochawesome-report-generator", "npm:6.3.0"],\
           ["strip-ansi", "npm:6.0.1"],\
@@ -19739,7 +19740,7 @@ const RAW_RUNTIME_STATE =
           ["jsonwebtoken", "npm:9.0.2"],\
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
           ["lodash", "npm:4.17.21"],\
-          ["mocha", "npm:11.7.2"],\
+          ["mocha", "npm:11.7.4"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
           ["moment", "npm:2.30.1"],\
           ["nock", "npm:14.0.10"],\
@@ -29541,7 +29542,8 @@ class ZipFS extends BasePortableFakeFS {
         const entries = Array.from(directoryListing, (name) => {
           return Object.assign(this.statImpl(`lstat`, ppath.join(p, name)), {
             name,
-            path: PortablePath.dot
+            path: PortablePath.dot,
+            parentPath: PortablePath.dot
           });
         });
         for (const entry of entries) {
@@ -29552,7 +29554,8 @@ class ZipFS extends BasePortableFakeFS {
           for (const child of subListing) {
             entries.push(Object.assign(this.statImpl(`lstat`, ppath.join(p, subPath, child)), {
               name: child,
-              path: subPath
+              path: subPath,
+              parentPath: subPath
             }));
           }
         }
@@ -29573,7 +29576,8 @@ class ZipFS extends BasePortableFakeFS {
       return Array.from(directoryListing, (name) => {
         return Object.assign(this.statImpl(`lstat`, ppath.join(p, name)), {
           name,
-          path: void 0
+          path: void 0,
+          parentPath: void 0
         });
       });
     } else {
