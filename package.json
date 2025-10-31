@@ -96,7 +96,7 @@
     "@stryker-mutator/api": "^8.5.0",
     "@stryker-mutator/core": "^8.5.0",
     "@stryker-mutator/mocha-runner": "8.7.1",
-    "chai": "^4.2.0",
+    "chai": "^6.0.0",
     "chokidar": "^4.0.1",
     "codeceptjs": "3.6.10",
     "codecov": "^4.0.0-0",
