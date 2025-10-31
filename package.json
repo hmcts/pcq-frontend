@@ -136,7 +136,7 @@
     "ws": "8.18.3",
     "import-in-the-middle": "1.15.0",
     "cross-spawn": "7.0.6",
-    "brace-expansion": "^2.0.1",
+    "brace-expansion": "^4.0.0",
     "ip": "2.0.1"
   },
   "nyc": {
