@@ -17862,7 +17862,7 @@ const RAW_RUNTIME_STATE =
           ["prop-types", "npm:15.8.1"],\
           ["tcomb", "npm:3.2.29"],\
           ["tcomb-validation", "npm:3.4.1"],\
-          ["validator", "npm:13.7.0"],\
+          ["validator", "npm:13.15.20"],\
           ["yargs", "npm:17.5.1"]\
         ],\
         "linkType": "HARD"\
@@ -23354,10 +23354,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["validator", [\
-      ["npm:13.7.0", {\
-        "packageLocation": "./.yarn/cache/validator-npm-13.7.0-624277e841-c317ec8835.zip/node_modules/validator/",\
+      ["npm:13.15.20", {\
+        "packageLocation": "./.yarn/cache/validator-npm-13.15.20-81be70a87b-498f9b201d.zip/node_modules/validator/",\
         "packageDependencies": [\
-          ["validator", "npm:13.7.0"]\
+          ["validator", "npm:13.15.20"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -29541,7 +29541,8 @@ class ZipFS extends BasePortableFakeFS {
         const entries = Array.from(directoryListing, (name) => {
           return Object.assign(this.statImpl(`lstat`, ppath.join(p, name)), {
             name,
-            path: PortablePath.dot
+            path: PortablePath.dot,
+            parentPath: PortablePath.dot
           });
         });
         for (const entry of entries) {
@@ -29552,7 +29553,8 @@ class ZipFS extends BasePortableFakeFS {
           for (const child of subListing) {
             entries.push(Object.assign(this.statImpl(`lstat`, ppath.join(p, subPath, child)), {
               name: child,
-              path: subPath
+              path: subPath,
+              parentPath: subPath
             }));
           }
         }
@@ -29573,7 +29575,8 @@ class ZipFS extends BasePortableFakeFS {
       return Array.from(directoryListing, (name) => {
         return Object.assign(this.statImpl(`lstat`, ppath.join(p, name)), {
           name,
-          path: void 0
+          path: void 0,
+          parentPath: void 0
         });
       });
     } else {
