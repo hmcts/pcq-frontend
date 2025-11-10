@@ -43,7 +43,7 @@ const RAW_RUNTIME_STATE =
           ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["applicationinsights", "npm:3.9.0"],\
           ["body-parser", "npm:2.2.0"],\
-          ["chai", "npm:4.5.0"],\
+          ["chai", "npm:6.2.0"],\
           ["chokidar", "npm:4.0.3"],\
           ["co", "npm:4.6.0"],\
           ["codeceptjs", "npm:3.6.10"],\
@@ -8523,13 +8523,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["assertion-error", [\
-      ["npm:1.1.0", {\
-        "packageLocation": "./.yarn/cache/assertion-error-npm-1.1.0-66b893015e-fd9429d3a3.zip/node_modules/assertion-error/",\
-        "packageDependencies": [\
-          ["assertion-error", "npm:1.1.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:2.0.1", {\
         "packageLocation": "./.yarn/cache/assertion-error-npm-2.0.1-8169d136f2-a0789dd882.zip/node_modules/assertion-error/",\
         "packageDependencies": [\
@@ -9775,20 +9768,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["chai", [\
-      ["npm:4.5.0", {\
-        "packageLocation": "./.yarn/cache/chai-npm-4.5.0-428447e206-cde341aee1.zip/node_modules/chai/",\
-        "packageDependencies": [\
-          ["assertion-error", "npm:1.1.0"],\
-          ["chai", "npm:4.5.0"],\
-          ["check-error", "npm:1.0.3"],\
-          ["deep-eql", "npm:4.1.3"],\
-          ["get-func-name", "npm:2.0.2"],\
-          ["loupe", "npm:2.3.6"],\
-          ["pathval", "npm:1.1.1"],\
-          ["type-detect", "npm:4.1.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:5.1.1", {\
         "packageLocation": "./.yarn/cache/chai-npm-5.1.1-2e09e40819-ee67279a56.zip/node_modules/chai/",\
         "packageDependencies": [\
@@ -9798,6 +9777,13 @@ const RAW_RUNTIME_STATE =
           ["deep-eql", "npm:5.0.2"],\
           ["loupe", "npm:3.2.1"],\
           ["pathval", "npm:2.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:6.2.0", {\
+        "packageLocation": "./.yarn/cache/chai-npm-6.2.0-ce657a084d-199422854e.zip/node_modules/chai/",\
+        "packageDependencies": [\
+          ["chai", "npm:6.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9991,14 +9977,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["check-error", [\
-      ["npm:1.0.3", {\
-        "packageLocation": "./.yarn/cache/check-error-npm-1.0.3-137994eabc-e2131025cf.zip/node_modules/check-error/",\
-        "packageDependencies": [\
-          ["check-error", "npm:1.0.3"],\
-          ["get-func-name", "npm:2.0.2"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:2.1.1", {\
         "packageLocation": "./.yarn/cache/check-error-npm-2.1.1-34e4ef357e-d785ed17b1.zip/node_modules/check-error/",\
         "packageDependencies": [\
@@ -11241,14 +11219,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["deep-eql", [\
-      ["npm:4.1.3", {\
-        "packageLocation": "./.yarn/cache/deep-eql-npm-4.1.3-020a64f862-12ce93ae63.zip/node_modules/deep-eql/",\
-        "packageDependencies": [\
-          ["deep-eql", "npm:4.1.3"],\
-          ["type-detect", "npm:4.0.8"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:5.0.2", {\
         "packageLocation": "./.yarn/cache/deep-eql-npm-5.0.2-3bce58289f-a529b81e2e.zip/node_modules/deep-eql/",\
         "packageDependencies": [\
@@ -13569,15 +13539,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/get-caller-file-npm-2.0.5-80e8a86305-b9769a836d.zip/node_modules/get-caller-file/",\
         "packageDependencies": [\
           ["get-caller-file", "npm:2.0.5"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["get-func-name", [\
-      ["npm:2.0.2", {\
-        "packageLocation": "./.yarn/cache/get-func-name-npm-2.0.2-409dbe3703-3f62f4c236.zip/node_modules/get-func-name/",\
-        "packageDependencies": [\
-          ["get-func-name", "npm:2.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -16743,14 +16704,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["loupe", [\
-      ["npm:2.3.6", {\
-        "packageLocation": "./.yarn/cache/loupe-npm-2.3.6-b8b37d55e7-8e695f3c99.zip/node_modules/loupe/",\
-        "packageDependencies": [\
-          ["get-func-name", "npm:2.0.2"],\
-          ["loupe", "npm:2.3.6"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:3.2.1", {\
         "packageLocation": "./.yarn/cache/loupe-npm-3.2.1-a8f491982f-a4d78ec758.zip/node_modules/loupe/",\
         "packageDependencies": [\
@@ -19213,13 +19166,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["pathval", [\
-      ["npm:1.1.1", {\
-        "packageLocation": "./.yarn/cache/pathval-npm-1.1.1-ce0311d7e0-b50a475106.zip/node_modules/pathval/",\
-        "packageDependencies": [\
-          ["pathval", "npm:1.1.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:2.0.1", {\
         "packageLocation": "./.yarn/cache/pathval-npm-2.0.1-7fb9ae82ba-f5e8b82f6b.zip/node_modules/pathval/",\
         "packageDependencies": [\
@@ -19711,7 +19657,7 @@ const RAW_RUNTIME_STATE =
           ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["applicationinsights", "npm:3.9.0"],\
           ["body-parser", "npm:2.2.0"],\
-          ["chai", "npm:4.5.0"],\
+          ["chai", "npm:6.2.0"],\
           ["chokidar", "npm:4.0.3"],\
           ["co", "npm:4.6.0"],\
           ["codeceptjs", "npm:3.6.10"],\
@@ -21444,7 +21390,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/chai", null],\
           ["@types/sinon", null],\
-          ["chai", "npm:4.5.0"],\
+          ["chai", "npm:6.2.0"],\
           ["sinon", "npm:20.0.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"]\
         ],\
