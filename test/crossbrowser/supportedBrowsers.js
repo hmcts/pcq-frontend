@@ -1,64 +1,67 @@
 const supportedBrowsers = {
-  ios_safari_18: {
-    platformName: 'iOS',
-    'appium:platformVersion': '18.0',
-    'appium:deviceName': 'iPhone 15',
-    'appium:automationName': 'XCUITest',
-    browserName: 'safari',
-    'sauce:options': {
-      name: 'PCQ_IOS_SAFARI_18',
-    },
+  microsoftEdge: {
+        edge: {
+            browserName: 'MicrosoftEdge',
+            platformName: 'Windows 11',
+            browserVersion: 'latest',
+            'sauce:options': {
+                name: 'PCQ_WIN11_EDGE_LATEST',
+            }
+        }
   },
 
-  android_15_chrome_mobile: {
-    platformName: 'Android',
-    'appium:platformVersion': '15.0',
-    'appium:deviceName': 'Android GoogleAPI Emulator',
-    'appium:automationName': 'UiAutomator2',
-    browserName: 'chrome',
-    'sauce:options': {
-      name: 'PCQ_ANDROID15_CHROME_MOBILE',
-    },
+  chrome: {
+        chrome_win_latest: {
+            browserName: 'chrome',
+            browserVersion: 'latest',
+            platformName: 'Windows 11',
+            'sauce:options': {
+                name: 'PCQ_WIN11_CHROME_LATEST',
+                extendedDebugging: true
+            }
+        },
+        chrome_mac_latest: {
+            browserName: 'chrome',
+            browserVersion: 'latest',
+            platformName: 'macOS 11',
+            'sauce:options': {
+                name: 'PCQ_MAC_CHROME_LATEST',
+                extendedDebugging: true
+            }
+        }
   },
 
-  windows11_chrome: {
-    browserName: 'chrome',
-    platformName: 'Windows 11',
-    browserVersion: 'latest',
-    'sauce:options': {
-      name: 'PCQ_WIN11_CHROME_LATEST',
-      extendedDebugging: true,
-    },
+  firefox: {
+        firefox_win_latest: {
+            browserName: 'firefox',
+            platformName: 'Windows 11',
+            browserVersion: 'latest',
+            'sauce:options': {
+                name: 'PCQ_WIN11_FIREFOX_LATEST',
+                extendedDebugging: true
+            }
+        },
+        firefox_mac_latest: {
+            browserName: 'firefox',
+            platformName: 'macOS 11',
+            browserVersion: 'latest',
+            'sauce:options': {
+                name: 'PCQ_MAC_FIREFOX_LATEST',
+                extendedDebugging: true
+            }
+        }
   },
-
-  windows11_edge: {
-    browserName: 'microsoftedge',
-    platformName: 'Windows 11',
-    browserVersion: 'latest',
-    'sauce:options': {
-      name: 'PCQ_WIN11_EDGE_LATEST',
-      extendedDebugging: true,
-    },
-  },
-
-  macos_10_15_chrome: {
-    browserName: 'chrome',
-    platformName: 'macOS 10.15',
-    browserVersion: 'latest',
-    'sauce:options': {
-      name: 'PCQ_MAC1015_CHROME',
-      extendedDebugging: true,
-    },
-  },
-
-  macos_10_15_safari: {
-    browserName: 'safari',
-    platformName: 'macOS 10.15',
-    browserVersion: '15',
-    'sauce:options': {
-      name: 'PCQ_MAC1015_SAFARI',
-    },
-  },
+  safari: {
+        safari_mac_latest: {
+            browserName: 'safari',
+            browserVersion: 'latest',
+            platformName: 'macOS 11',
+            'sauce:options': {
+                name: 'PCQ_MAC_SAFARI_LATEST',
+            }
+        }
+  }
+  
 };
 
 module.exports = supportedBrowsers;
