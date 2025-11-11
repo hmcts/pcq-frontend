@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.221",
+  "version": "1.2.222",
   "license": "MIT",
   "engines": {
     "node": ">=14.18.1"
@@ -96,7 +96,7 @@
     "@stryker-mutator/api": "^8.5.0",
     "@stryker-mutator/core": "^8.5.0",
     "@stryker-mutator/mocha-runner": "8.7.1",
-    "chai": "^6.0.0",
+    "chai": "^4.3.10",
     "chokidar": "^4.0.1",
     "codeceptjs": "3.6.10",
     "codecov": "^4.0.0-0",

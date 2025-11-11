@@ -43,7 +43,7 @@ const RAW_RUNTIME_STATE =
           ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["applicationinsights", "npm:3.9.0"],\
           ["body-parser", "npm:2.2.0"],\
-          ["chai", "npm:6.2.0"],\
+          ["chai", "npm:4.5.0"],\
           ["chokidar", "npm:4.0.3"],\
           ["co", "npm:4.6.0"],\
           ["codeceptjs", "npm:3.6.10"],\
@@ -8523,6 +8523,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["assertion-error", [\
+      ["npm:1.1.0", {\
+        "packageLocation": "./.yarn/cache/assertion-error-npm-1.1.0-66b893015e-fd9429d3a3.zip/node_modules/assertion-error/",\
+        "packageDependencies": [\
+          ["assertion-error", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:2.0.1", {\
         "packageLocation": "./.yarn/cache/assertion-error-npm-2.0.1-8169d136f2-a0789dd882.zip/node_modules/assertion-error/",\
         "packageDependencies": [\
@@ -9768,6 +9775,20 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["chai", [\
+      ["npm:4.5.0", {\
+        "packageLocation": "./.yarn/cache/chai-npm-4.5.0-428447e206-cde341aee1.zip/node_modules/chai/",\
+        "packageDependencies": [\
+          ["assertion-error", "npm:1.1.0"],\
+          ["chai", "npm:4.5.0"],\
+          ["check-error", "npm:1.0.3"],\
+          ["deep-eql", "npm:4.1.4"],\
+          ["get-func-name", "npm:2.0.2"],\
+          ["loupe", "npm:2.3.7"],\
+          ["pathval", "npm:1.1.1"],\
+          ["type-detect", "npm:4.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:5.1.1", {\
         "packageLocation": "./.yarn/cache/chai-npm-5.1.1-2e09e40819-ee67279a56.zip/node_modules/chai/",\
         "packageDependencies": [\
@@ -9777,13 +9798,6 @@ const RAW_RUNTIME_STATE =
           ["deep-eql", "npm:5.0.2"],\
           ["loupe", "npm:3.2.1"],\
           ["pathval", "npm:2.0.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:6.2.0", {\
-        "packageLocation": "./.yarn/cache/chai-npm-6.2.0-ce657a084d-199422854e.zip/node_modules/chai/",\
-        "packageDependencies": [\
-          ["chai", "npm:6.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9977,6 +9991,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["check-error", [\
+      ["npm:1.0.3", {\
+        "packageLocation": "./.yarn/cache/check-error-npm-1.0.3-137994eabc-e2131025cf.zip/node_modules/check-error/",\
+        "packageDependencies": [\
+          ["check-error", "npm:1.0.3"],\
+          ["get-func-name", "npm:2.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:2.1.1", {\
         "packageLocation": "./.yarn/cache/check-error-npm-2.1.1-34e4ef357e-d785ed17b1.zip/node_modules/check-error/",\
         "packageDependencies": [\
@@ -11219,6 +11241,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["deep-eql", [\
+      ["npm:4.1.4", {\
+        "packageLocation": "./.yarn/cache/deep-eql-npm-4.1.4-bc4d39c2ca-f04f4d581f.zip/node_modules/deep-eql/",\
+        "packageDependencies": [\
+          ["deep-eql", "npm:4.1.4"],\
+          ["type-detect", "npm:4.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:5.0.2", {\
         "packageLocation": "./.yarn/cache/deep-eql-npm-5.0.2-3bce58289f-a529b81e2e.zip/node_modules/deep-eql/",\
         "packageDependencies": [\
@@ -13539,6 +13569,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/get-caller-file-npm-2.0.5-80e8a86305-b9769a836d.zip/node_modules/get-caller-file/",\
         "packageDependencies": [\
           ["get-caller-file", "npm:2.0.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["get-func-name", [\
+      ["npm:2.0.2", {\
+        "packageLocation": "./.yarn/cache/get-func-name-npm-2.0.2-409dbe3703-3f62f4c236.zip/node_modules/get-func-name/",\
+        "packageDependencies": [\
+          ["get-func-name", "npm:2.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -16704,6 +16743,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["loupe", [\
+      ["npm:2.3.7", {\
+        "packageLocation": "./.yarn/cache/loupe-npm-2.3.7-f294c2ef33-635c8f0914.zip/node_modules/loupe/",\
+        "packageDependencies": [\
+          ["get-func-name", "npm:2.0.2"],\
+          ["loupe", "npm:2.3.7"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:3.2.1", {\
         "packageLocation": "./.yarn/cache/loupe-npm-3.2.1-a8f491982f-a4d78ec758.zip/node_modules/loupe/",\
         "packageDependencies": [\
@@ -19166,6 +19213,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["pathval", [\
+      ["npm:1.1.1", {\
+        "packageLocation": "./.yarn/cache/pathval-npm-1.1.1-ce0311d7e0-b50a475106.zip/node_modules/pathval/",\
+        "packageDependencies": [\
+          ["pathval", "npm:1.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:2.0.1", {\
         "packageLocation": "./.yarn/cache/pathval-npm-2.0.1-7fb9ae82ba-f5e8b82f6b.zip/node_modules/pathval/",\
         "packageDependencies": [\
@@ -19657,7 +19711,7 @@ const RAW_RUNTIME_STATE =
           ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["applicationinsights", "npm:3.9.0"],\
           ["body-parser", "npm:2.2.0"],\
-          ["chai", "npm:6.2.0"],\
+          ["chai", "npm:4.5.0"],\
           ["chokidar", "npm:4.0.3"],\
           ["co", "npm:4.6.0"],\
           ["codeceptjs", "npm:3.6.10"],\
@@ -21390,7 +21444,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/chai", null],\
           ["@types/sinon", null],\
-          ["chai", "npm:6.2.0"],\
+          ["chai", "npm:4.5.0"],\
           ["sinon", "npm:20.0.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"]\
         ],\
@@ -27072,28 +27126,40 @@ class FileHandle {
   sync() {
     throw new Error(`Method not implemented.`);
   }
-  async read(bufferOrOptions, offset, length, position) {
+  async read(bufferOrOptions, offsetOrOptions, length, position) {
     try {
       this[kRef](this.read);
       let buffer;
-      if (!Buffer.isBuffer(bufferOrOptions)) {
-        bufferOrOptions ??= {};
-        buffer = bufferOrOptions.buffer ?? Buffer.alloc(16384);
-        offset = bufferOrOptions.offset || 0;
-        length = bufferOrOptions.length ?? buffer.byteLength;
-        position = bufferOrOptions.position ?? null;
+      let offset;
+      if (!ArrayBuffer.isView(bufferOrOptions)) {
+        buffer = bufferOrOptions?.buffer ?? Buffer.alloc(16384);
+        offset = bufferOrOptions?.offset ?? 0;
+        length = bufferOrOptions?.length ?? buffer.byteLength - offset;
+        position = bufferOrOptions?.position ?? null;
+      } else if (typeof offsetOrOptions === `object` && offsetOrOptions !== null) {
+        buffer = bufferOrOptions;
+        offset = offsetOrOptions?.offset ?? 0;
+        length = offsetOrOptions?.length ?? buffer.byteLength - offset;
+        position = offsetOrOptions?.position ?? null;
       } else {
         buffer = bufferOrOptions;
+        offset = offsetOrOptions ?? 0;
+        length ??= 0;
       }
-      offset ??= 0;
-      length ??= 0;
       if (length === 0) {
         return {
           bytesRead: length,
           buffer
         };
       }
-      const bytesRead = await this[kBaseFs].readPromise(this.fd, buffer, offset, length, position);
+      const bytesRead = await this[kBaseFs].readPromise(
+        this.fd,
+        // FIXME: FakeFS should support ArrayBufferViews directly
+        Buffer.isBuffer(buffer) ? buffer : Buffer.from(buffer.buffer, buffer.byteOffset, buffer.byteLength),
+        offset,
+        length,
+        position
+      );
       return {
         bytesRead,
         buffer
@@ -29998,6 +30064,7 @@ function applyPatch(pnpapi, opts) {
       const optionNames = new Set(Object.keys(options));
       optionNames.delete(`paths`);
       optionNames.delete(`plugnplay`);
+      optionNames.delete(`conditions`);
       if (optionNames.size > 0) {
         throw makeError(
           ErrorCode.UNSUPPORTED,
@@ -30026,11 +30093,15 @@ function applyPatch(pnpapi, opts) {
       const issuerApi = apiPath !== null ? opts.manager.getApiEntry(apiPath, true).instance : null;
       try {
         if (issuerApi !== null) {
-          resolution = issuerApi.resolveRequest(request, path !== null ? `${path}/` : null);
+          resolution = issuerApi.resolveRequest(request, path !== null ? `${path}/` : null, {
+            conditions: options?.conditions
+          });
         } else {
           if (path === null)
             throw new Error(`Assertion failed: Expected the path to be set`);
-          resolution = originalModuleResolveFilename.call(require$$0.Module, request, module || makeFakeParent(path), isMain);
+          resolution = originalModuleResolveFilename.call(require$$0.Module, request, module || makeFakeParent(path), isMain, {
+            conditions: options?.conditions
+          });
         }
       } catch (error) {
         firstError = firstError || error;
