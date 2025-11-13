@@ -78,7 +78,7 @@ const RAW_RUNTIME_STATE =
           ["nock", "npm:14.0.10"],\
           ["node-emoji", "npm:2.2.0"],\
           ["node-fetch", "virtual:30941e4951ac6d1287fb12c26a7afed794bbb9f0089d7db177d8be4b10361b145255aafe174851a9123e126cbf4a09fd871b52100910a73274b5273a96c43f9a#npm:2.7.0"],\
-          ["nodemon", "npm:3.1.10"],\
+          ["nodemon", "npm:3.1.11"],\
           ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
           ["nyc", "npm:17.1.0"],\
           ["pa11y", "npm:8.0.0"],\
@@ -11192,11 +11192,11 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["virtual:a345fb10767f7507bb836583037bd0538e45be4c0b7d01b378c28de2575623867b926ab06543de0e9efc893338034a56314289b227582d36e15650769aac23d1#npm:4.4.3", {\
-        "packageLocation": "./.yarn/__virtual__/debug-virtual-73403df550/0/cache/debug-npm-4.4.3-0105c6123a-9ada3434ea.zip/node_modules/debug/",\
+      ["virtual:eb55b1333858b7ec4dd0cc5edf720a48d6d98a84d44bcb103009fc7b671e3980a4b52d48edba7b3f7df2e57b36e7a0f947cac5a015f823fcf8c60a96ae4c8deb#npm:4.4.3", {\
+        "packageLocation": "./.yarn/__virtual__/debug-virtual-03f5a14155/0/cache/debug-npm-4.4.3-0105c6123a-9ada3434ea.zip/node_modules/debug/",\
         "packageDependencies": [\
           ["@types/supports-color", null],\
-          ["debug", "virtual:a345fb10767f7507bb836583037bd0538e45be4c0b7d01b378c28de2575623867b926ab06543de0e9efc893338034a56314289b227582d36e15650769aac23d1#npm:4.4.3"],\
+          ["debug", "virtual:eb55b1333858b7ec4dd0cc5edf720a48d6d98a84d44bcb103009fc7b671e3980a4b52d48edba7b3f7df2e57b36e7a0f947cac5a015f823fcf8c60a96ae4c8deb#npm:4.4.3"],\
           ["ms", "npm:2.1.3"],\
           ["supports-color", "npm:5.5.0"]\
         ],\
@@ -18374,14 +18374,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["nodemon", [\
-      ["npm:3.1.10", {\
-        "packageLocation": "./.yarn/unplugged/nodemon-npm-3.1.10-a345fb1076/node_modules/nodemon/",\
+      ["npm:3.1.11", {\
+        "packageLocation": "./.yarn/unplugged/nodemon-npm-3.1.11-eb55b13338/node_modules/nodemon/",\
         "packageDependencies": [\
           ["chokidar", "npm:3.6.0"],\
-          ["debug", "virtual:a345fb10767f7507bb836583037bd0538e45be4c0b7d01b378c28de2575623867b926ab06543de0e9efc893338034a56314289b227582d36e15650769aac23d1#npm:4.4.3"],\
+          ["debug", "virtual:eb55b1333858b7ec4dd0cc5edf720a48d6d98a84d44bcb103009fc7b671e3980a4b52d48edba7b3f7df2e57b36e7a0f947cac5a015f823fcf8c60a96ae4c8deb#npm:4.4.3"],\
           ["ignore-by-default", "npm:1.0.1"],\
           ["minimatch", "npm:3.1.2"],\
-          ["nodemon", "npm:3.1.10"],\
+          ["nodemon", "npm:3.1.11"],\
           ["pstree.remy", "npm:1.1.8"],\
           ["semver", "npm:7.5.4"],\
           ["simple-update-notifier", "npm:2.0.0"],\
@@ -19746,7 +19746,7 @@ const RAW_RUNTIME_STATE =
           ["nock", "npm:14.0.10"],\
           ["node-emoji", "npm:2.2.0"],\
           ["node-fetch", "virtual:30941e4951ac6d1287fb12c26a7afed794bbb9f0089d7db177d8be4b10361b145255aafe174851a9123e126cbf4a09fd871b52100910a73274b5273a96c43f9a#npm:2.7.0"],\
-          ["nodemon", "npm:3.1.10"],\
+          ["nodemon", "npm:3.1.11"],\
           ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
           ["nyc", "npm:17.1.0"],\
           ["pa11y", "npm:8.0.0"],\
