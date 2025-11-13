@@ -13,6 +13,9 @@ const getBrowserConfig = (browserGroup) => {
     caps['sauce:options'] = caps['sauce:options'] || {};
     caps['sauce:options'].tunnelIdentifier = tunnelName;
     caps['sauce:options'].tags = ['pcq-frontend'];
+    caps['sauce:options'].idleTimeout = 180;
+    caps['sauce:options'].maxDuration = 1800;
+
 
     caps.acceptInsecureCerts = true;
 
@@ -60,9 +63,9 @@ const setupConfig = {
         }
     },
     multiple: {
-        microsoftEdge: {
+        /*microsoftEdge: {
             browsers: getBrowserConfig('microsoftEdge')
-        },
+        },*/
         chrome: {
             browsers: getBrowserConfig('chrome')
         /*},

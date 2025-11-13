@@ -31,7 +31,7 @@
     "test:codecov-upload": "NODE_ENV=test NODE_PATH=. nyc --cache false _mocha './test/**/test*.js' -- -R spec && codecov",
     "test:coverage": "NODE_ENV=testing ALLOW_CONFIG_MUTATIONS=true NODE_PATH=. nyc --cache false _mocha './test/**/test*.js'",
     "test:mutation": "npm run createVersionFile && NODE_ENV=testing ALLOW_CONFIG_MUTATIONS=true NODE_PATH=. stryker run test/mutation/stryker.conf.js",
-    "test-crossbrowser-e2e": "NODE_ENV=testing ALLOW_CONFIG_MUTATIONS=true LOG_LEVEL=OFF NODE_PATH=. yarn codeceptjs run-multiple ${BROWSER_GROUP:-'--all'} -c test/end-to-end/saucelabs.conf.js",
+    "test-crossbrowser-e2e": "NODE_ENV=testing ALLOW_CONFIG_MUTATIONS=true LOG_LEVEL=OFF NODE_PATH=. yarn codeceptjs run-multiple ${BROWSER_GROUP:---all} -c test/end-to-end/saucelabs.conf.js",
     "test:crossbrowser_chrome": "NODE_PATH=. ALLOW_CONFIG_MUTATIONS=true codeceptjs run-multiple chrome -c test/end-to-end/saucelabs.conf.js",
     "test:crossbrowser_safari": "NODE_PATH=. ALLOW_CONFIG_MUTATIONS=true codeceptjs run-multiple safari -c test/end-to-end/saucelabs.conf.js",
     "test:fullfunctional": "./bin/run-full-functional-tests.sh",
