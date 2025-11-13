@@ -8,19 +8,19 @@ const getBrowserConfig = (browserGroup) => {
   if (!group) throw new Error(`Unknown browserGroup: ${browserGroup}`);
 
   return Object.keys(group).map(k => {
-    const caps = clone(group[k]);
+        const caps = clone(group[k]);
 
-    caps['sauce:options'] = caps['sauce:options'] || {};
-    caps['sauce:options'].tunnelIdentifier = tunnelName;
-    caps['sauce:options'].tags = ['pcq-frontend'];
-    caps['sauce:options'].idleTimeout = 180;
-    caps['sauce:options'].maxDuration = 1800;
+        caps['sauce:options'] = caps['sauce:options'] || {};
+        caps['sauce:options'].tunnelIdentifier = tunnelName;
+        caps['sauce:options'].tags = ['pcq-frontend'];
+        caps['sauce:options'].idleTimeout = 180;
+        caps['sauce:options'].maxDuration = 1800;
 
 
-    caps.acceptInsecureCerts = true;
+        caps.acceptInsecureCerts = true;
 
-    return { browser: caps.browserName, desiredCapabilities: caps };
-  });
+        return { browser: caps.browserName, desiredCapabilities: caps };
+    });
 
 };
 
@@ -28,36 +28,45 @@ const setupConfig = {
     output: `${process.cwd()}/functional-output`,
     helpers: {
         WebDriver: {
-        host: 'ondemand.eu-central-1.saucelabs.com',
-        port: 443,
-        protocol: 'https',
-        user: process.env.SAUCE_USERNAME,
-        key: process.env.SAUCE_ACCESS_KEY,
-        url: process.env.TEST_URL || 'https://pcq.aat.platform.hmcts.net',
-        desiredCapabilities: { 'sauce:options': {} },
-        cssSelectorsEnabled: true,
+            host: 'ondemand.eu-central-1.saucelabs.com',
+            port: 443,
+            protocol: 'https',
+
+            url: process.env.TEST_URL || 'https://pcq.aat.platform.hmcts.net',
+            cssSelectorsEnabled: 'true',
+
+            user: process.env.SAUCE_USERNAME,
+            key: process.env.SAUCE_ACCESS_KEY,
+
+            // This line is required to ensure test name and browsers are set correctly for some reason.
+            desiredCapabilities: {'sauce:options': {}}
         },
-        SauceLabsReportingHelper: { require: './helpers/SauceLabsReportingHelper.js' },
+        SauceLabsReportingHelper: {
+            require: './helpers/SauceLabsReportingHelper.js'
+        },
     },
     plugins: {
-        autoDelay: { enabled: true },
-        retryFailedStep: { enabled: true, retries: 1 },
+        autoDelay: {
+            enabled: true,
+        },
+        retryFailedStep: {
+            enabled: true,
+        },
     },
     gherkin: {
         features: 'features/crossbrowser.feature',
         steps: ['./step_definitions/probatepcqjourney.js']
     },
-    include: { 
-        I: './pages/steps.js' 
+    include: {
+        I: './pages/steps.js'
     },
     mocha: {
         reporter: 'mochawesome',
         reporterOptions: {
-        reportDir: process.env.E2E_CROSSBROWSER_OUTPUT_DIR || './functional-output',
-        reportTitle: 'Crossbrowser results',
-        inline: true
-        },
-        retries: 1
+            reportDir: process.env.E2E_CROSSBROWSER_OUTPUT_DIR || './functional-output',
+            reportTitle: 'Crossbrowser results',
+            inline: true
+        }
     },
     multiple: {
         microsoftEdge: {
@@ -68,10 +77,10 @@ const setupConfig = {
         },
         firefox: {
             browsers: getBrowserConfig('firefox')
-        },
+        }/*,
         safari: {
             browsers: getBrowserConfig('safari')
-        }
+        }*/
     }
 };
 

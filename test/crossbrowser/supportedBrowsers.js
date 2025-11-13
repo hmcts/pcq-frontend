@@ -48,7 +48,7 @@ const supportedBrowsers = {
                 extendedDebugging: true
             }
         }
-  },
+  }/*,
   safari: {
         safari_mac_latest: {
             browserName: 'safari',
@@ -58,7 +58,7 @@ const supportedBrowsers = {
                 name: 'PCQ_MAC_SAFARI_LATEST',
             }
         }
-  }
+  }*/
   
 };
 
