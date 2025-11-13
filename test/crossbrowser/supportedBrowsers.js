@@ -30,7 +30,7 @@ const supportedBrowsers = {
                 name: 'PCQ_WIN11_FIREFOX_LATEST',
                 extendedDebugging: true
             }
-        }/*,
+        },
         firefox_mac_latest: {
             browserName: 'firefox',
             platformName: 'macOS 11',
@@ -39,13 +39,13 @@ const supportedBrowsers = {
                 name: 'PCQ_MAC_FIREFOX_LATEST',
                 extendedDebugging: true
             }
-        }*/
+        }
   },
   safari: {
         safari_mac_latest: {
             browserName: 'safari',
             browserVersion: 'latest',
-            platformName: 'macOS 14',
+            platformName: 'macOS 11',
             'sauce:options': {
                 armRequired: true,
                 name: 'PCQ_MAC_SAFARI_LATEST',
