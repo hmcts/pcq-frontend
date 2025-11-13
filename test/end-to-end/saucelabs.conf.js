@@ -68,12 +68,12 @@ const setupConfig = {
         },
         chrome: {
             browsers: getBrowserConfig('chrome')
-        /*},
+        },
         firefox: {
             browsers: getBrowserConfig('firefox')
         },
         safari: {
-            browsers: getBrowserConfig('safari')*/
+            browsers: getBrowserConfig('safari')
         }
     }
 };
