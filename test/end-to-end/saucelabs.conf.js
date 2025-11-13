@@ -19,10 +19,6 @@ const getBrowserConfig = (browserGroup) => {
 
     caps.acceptInsecureCerts = true;
 
-    if (String(caps.browserName).toLowerCase() === 'microsoftedge') {
-      caps.browserName = 'MicrosoftEdge';
-    }
-
     return { browser: caps.browserName, desiredCapabilities: caps };
   });
 
