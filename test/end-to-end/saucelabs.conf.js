@@ -41,7 +41,7 @@ const setupConfig = {
     },
     plugins: {
         autoDelay: { enabled: true },
-        retryFailedStep: { enabled: true },
+        retryFailedStep: { enabled: true, retries: 1 },
     },
     gherkin: {
         features: 'features/crossbrowser.feature',
@@ -56,7 +56,8 @@ const setupConfig = {
         reportDir: process.env.E2E_CROSSBROWSER_OUTPUT_DIR || './functional-output',
         reportTitle: 'Crossbrowser results',
         inline: true
-        }
+        },
+        retries: 1
     },
     multiple: {
         microsoftEdge: {
