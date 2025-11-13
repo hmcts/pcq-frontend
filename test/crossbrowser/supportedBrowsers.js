@@ -1,5 +1,5 @@
 const supportedBrowsers = {
-  /*microsoftEdge: {
+  microsoftEdge: {
         edge: {
             browserName: 'MicrosoftEdge',
             platformName: 'Windows 11',
@@ -8,7 +8,7 @@ const supportedBrowsers = {
                 name: 'PCQ_WIN11_EDGE_LATEST',
             }
         }
-  },*/
+  },
 
   chrome: {
         chrome_win_latest: {
@@ -19,7 +19,7 @@ const supportedBrowsers = {
                 name: 'PCQ_WIN11_CHROME_LATEST',
             }
         }
-  },
+  }
 
   /*firefox: {
         firefox_win_latest: {
