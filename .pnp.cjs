@@ -68,7 +68,7 @@ const RAW_RUNTIME_STATE =
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.6.2"],\
           ["immutable", "npm:5.1.4"],\
           ["ioredis", "npm:5.8.2"],\
-          ["js-yaml", "npm:4.1.0"],\
+          ["js-yaml", "npm:4.1.1"],\
           ["jsonwebtoken", "npm:9.0.2"],\
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
           ["lodash", "npm:4.17.21"],\
@@ -77,8 +77,13 @@ const RAW_RUNTIME_STATE =
           ["moment", "npm:2.30.1"],\
           ["nock", "npm:14.0.10"],\
           ["node-emoji", "npm:2.2.0"],\
+<<<<<<< HEAD
           ["node-fetch", "virtual:e23c7b3683bd8e2a255418671e6eb79398d031a4ef468972e6b26c5d3ad8d2e640eaa14f72cd91b24a755b69ac7ed4c97655682655b60a5c73a4d3dc9190b035#npm:2.7.0"],\
           ["nodemon", "npm:3.1.10"],\
+=======
+          ["node-fetch", "virtual:30941e4951ac6d1287fb12c26a7afed794bbb9f0089d7db177d8be4b10361b145255aafe174851a9123e126cbf4a09fd871b52100910a73274b5273a96c43f9a#npm:2.7.0"],\
+          ["nodemon", "npm:3.1.11"],\
+>>>>>>> 6ca3a5de1549a277c813f7ec2fde0828dd300603
           ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
           ["nyc", "npm:17.1.0"],\
           ["pa11y", "npm:8.0.0"],\
@@ -3938,7 +3943,7 @@ const RAW_RUNTIME_STATE =
           ["globals", "npm:13.24.0"],\
           ["ignore", "npm:5.2.0"],\
           ["import-fresh", "npm:3.3.0"],\
-          ["js-yaml", "npm:4.1.0"],\
+          ["js-yaml", "npm:4.1.1"],\
           ["minimatch", "npm:3.1.2"],\
           ["strip-json-comments", "npm:3.1.1"]\
         ],\
@@ -3954,7 +3959,7 @@ const RAW_RUNTIME_STATE =
           ["globals", "npm:14.0.0"],\
           ["ignore", "npm:5.2.0"],\
           ["import-fresh", "npm:3.3.0"],\
-          ["js-yaml", "npm:4.1.0"],\
+          ["js-yaml", "npm:4.1.1"],\
           ["minimatch", "npm:3.1.2"],\
           ["strip-json-comments", "npm:3.1.1"]\
         ],\
@@ -4082,7 +4087,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
-          ["js-yaml", "npm:4.1.0"],\
+          ["js-yaml", "npm:4.1.1"],\
           ["superagent", "npm:10.2.2"]\
         ],\
         "linkType": "HARD"\
@@ -4108,7 +4113,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/keyvault-secrets", "npm:4.7.0"],\
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
           ["@hmcts/properties-volume", "npm:1.2.0"],\
-          ["js-yaml", "npm:4.1.0"],\
+          ["js-yaml", "npm:4.1.1"],\
           ["lodash", "npm:4.17.21"]\
         ],\
         "linkType": "HARD"\
@@ -10722,7 +10727,7 @@ const RAW_RUNTIME_STATE =
           ["cosmiconfig", "virtual:8f112d66c23d21960be619b34b74ad1fa6e6015593b9720226bc91c9c5f1343c9eba0b8af03e1c02dba0e2c30938c8c0b67ff2f4174c788bf9b31d541efa0420#npm:9.0.0"],\
           ["env-paths", "npm:2.2.1"],\
           ["import-fresh", "npm:3.3.0"],\
-          ["js-yaml", "npm:4.1.0"],\
+          ["js-yaml", "npm:4.1.1"],\
           ["parse-json", "npm:5.2.0"],\
           ["typescript", null]\
         ],\
@@ -11062,11 +11067,11 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["virtual:a345fb10767f7507bb836583037bd0538e45be4c0b7d01b378c28de2575623867b926ab06543de0e9efc893338034a56314289b227582d36e15650769aac23d1#npm:4.4.3", {\
-        "packageLocation": "./.yarn/__virtual__/debug-virtual-73403df550/0/cache/debug-npm-4.4.3-0105c6123a-9ada3434ea.zip/node_modules/debug/",\
+      ["virtual:eb55b1333858b7ec4dd0cc5edf720a48d6d98a84d44bcb103009fc7b671e3980a4b52d48edba7b3f7df2e57b36e7a0f947cac5a015f823fcf8c60a96ae4c8deb#npm:4.4.3", {\
+        "packageLocation": "./.yarn/__virtual__/debug-virtual-03f5a14155/0/cache/debug-npm-4.4.3-0105c6123a-9ada3434ea.zip/node_modules/debug/",\
         "packageDependencies": [\
           ["@types/supports-color", null],\
-          ["debug", "virtual:a345fb10767f7507bb836583037bd0538e45be4c0b7d01b378c28de2575623867b926ab06543de0e9efc893338034a56314289b227582d36e15650769aac23d1#npm:4.4.3"],\
+          ["debug", "virtual:eb55b1333858b7ec4dd0cc5edf720a48d6d98a84d44bcb103009fc7b671e3980a4b52d48edba7b3f7df2e57b36e7a0f947cac5a015f823fcf8c60a96ae4c8deb#npm:4.4.3"],\
           ["ms", "npm:2.1.3"],\
           ["supports-color", "npm:5.5.0"]\
         ],\
@@ -12232,7 +12237,7 @@ const RAW_RUNTIME_STATE =
           ["imurmurhash", "npm:0.1.4"],\
           ["is-glob", "npm:4.0.3"],\
           ["is-path-inside", "npm:3.0.3"],\
-          ["js-yaml", "npm:4.1.0"],\
+          ["js-yaml", "npm:4.1.1"],\
           ["json-stable-stringify-without-jsonify", "npm:1.0.1"],\
           ["levn", "npm:0.4.1"],\
           ["lodash.merge", "npm:4.6.2"],\
@@ -15784,11 +15789,11 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:4.1.0", {\
-        "packageLocation": "./.yarn/cache/js-yaml-npm-4.1.0-3606f32312-c138a34a3f.zip/node_modules/js-yaml/",\
+      ["npm:4.1.1", {\
+        "packageLocation": "./.yarn/cache/js-yaml-npm-4.1.1-86ec786790-a52d0519f0.zip/node_modules/js-yaml/",\
         "packageDependencies": [\
           ["argparse", "npm:2.0.1"],\
-          ["js-yaml", "npm:4.1.0"]\
+          ["js-yaml", "npm:4.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -17580,7 +17585,7 @@ const RAW_RUNTIME_STATE =
           ["find-up", "npm:5.0.0"],\
           ["glob", "npm:10.4.5"],\
           ["he", "npm:1.2.0"],\
-          ["js-yaml", "npm:4.1.0"],\
+          ["js-yaml", "npm:4.1.1"],\
           ["log-symbols", "npm:4.1.0"],\
           ["minimatch", "npm:5.1.6"],\
           ["mocha", "npm:11.1.0"],\
@@ -17607,7 +17612,7 @@ const RAW_RUNTIME_STATE =
           ["glob", "npm:10.4.5"],\
           ["he", "npm:1.2.0"],\
           ["is-path-inside", "npm:3.0.3"],\
-          ["js-yaml", "npm:4.1.0"],\
+          ["js-yaml", "npm:4.1.1"],\
           ["log-symbols", "npm:4.1.0"],\
           ["minimatch", "npm:9.0.5"],\
           ["mocha", "npm:11.7.5"],\
@@ -18150,14 +18155,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["nodemon", [\
-      ["npm:3.1.10", {\
-        "packageLocation": "./.yarn/unplugged/nodemon-npm-3.1.10-a345fb1076/node_modules/nodemon/",\
+      ["npm:3.1.11", {\
+        "packageLocation": "./.yarn/unplugged/nodemon-npm-3.1.11-eb55b13338/node_modules/nodemon/",\
         "packageDependencies": [\
           ["chokidar", "npm:3.6.0"],\
-          ["debug", "virtual:a345fb10767f7507bb836583037bd0538e45be4c0b7d01b378c28de2575623867b926ab06543de0e9efc893338034a56314289b227582d36e15650769aac23d1#npm:4.4.3"],\
+          ["debug", "virtual:eb55b1333858b7ec4dd0cc5edf720a48d6d98a84d44bcb103009fc7b671e3980a4b52d48edba7b3f7df2e57b36e7a0f947cac5a015f823fcf8c60a96ae4c8deb#npm:4.4.3"],\
           ["ignore-by-default", "npm:1.0.1"],\
           ["minimatch", "npm:3.1.2"],\
-          ["nodemon", "npm:3.1.10"],\
+          ["nodemon", "npm:3.1.11"],\
           ["pstree.remy", "npm:1.1.8"],\
           ["semver", "npm:7.5.4"],\
           ["simple-update-notifier", "npm:2.0.0"],\
@@ -19515,7 +19520,7 @@ const RAW_RUNTIME_STATE =
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.6.2"],\
           ["immutable", "npm:5.1.4"],\
           ["ioredis", "npm:5.8.2"],\
-          ["js-yaml", "npm:4.1.0"],\
+          ["js-yaml", "npm:4.1.1"],\
           ["jsonwebtoken", "npm:9.0.2"],\
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
           ["lodash", "npm:4.17.21"],\
@@ -19524,8 +19529,13 @@ const RAW_RUNTIME_STATE =
           ["moment", "npm:2.30.1"],\
           ["nock", "npm:14.0.10"],\
           ["node-emoji", "npm:2.2.0"],\
+<<<<<<< HEAD
           ["node-fetch", "virtual:e23c7b3683bd8e2a255418671e6eb79398d031a4ef468972e6b26c5d3ad8d2e640eaa14f72cd91b24a755b69ac7ed4c97655682655b60a5c73a4d3dc9190b035#npm:2.7.0"],\
           ["nodemon", "npm:3.1.10"],\
+=======
+          ["node-fetch", "virtual:30941e4951ac6d1287fb12c26a7afed794bbb9f0089d7db177d8be4b10361b145255aafe174851a9123e126cbf4a09fd871b52100910a73274b5273a96c43f9a#npm:2.7.0"],\
+          ["nodemon", "npm:3.1.11"],\
+>>>>>>> 6ca3a5de1549a277c813f7ec2fde0828dd300603
           ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
           ["nyc", "npm:17.1.0"],\
           ["pa11y", "npm:8.0.0"],\
@@ -23781,7 +23791,7 @@ const RAW_RUNTIME_STATE =
           ["commander", "npm:12.1.0"],\
           ["fast-glob", "npm:3.3.2"],\
           ["fs-extra", "npm:11.3.2"],\
-          ["js-yaml", "npm:4.1.0"],\
+          ["js-yaml", "npm:4.1.1"],\
           ["lodash-es", "npm:4.17.21"],\
           ["semver", "npm:7.6.3"],\
           ["synp", "npm:1.9.14"],\
