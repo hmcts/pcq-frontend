@@ -23,7 +23,7 @@ const supportedBrowsers = {
         chrome_mac_latest: {
             browserName: 'chrome',
             browserVersion: 'latest',
-            platformName: 'macOS 11',
+            platformName: 'macOS 12',
             'sauce:options': {
                 name: 'PCQ_MAC_CHROME_LATEST',
                 extendedDebugging: true
@@ -31,7 +31,7 @@ const supportedBrowsers = {
         }
   },
 
-  firefox: {
+  /*firefox: {
         firefox_win_latest: {
             browserName: 'firefox',
             platformName: 'Windows 11',
@@ -60,7 +60,7 @@ const supportedBrowsers = {
                 name: 'PCQ_MAC_SAFARI_LATEST',
             }
         }
-  }
+  }*/
   
 };
 
