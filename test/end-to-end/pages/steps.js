@@ -3,10 +3,6 @@
 const requireDirectory = require('require-directory');
 const steps = requireDirectory(module);
 
-Before(() => {
-  console.log('✅ Before hook alive – CodeceptJS test is starting');
-});
-
 module.exports = () => {
     return actor({
         startapply: steps.startpage.startpage,
