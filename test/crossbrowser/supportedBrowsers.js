@@ -22,11 +22,13 @@ const supportedBrowsers = {
         },
         chrome_andriod_latest: {
             browserName: 'chrome',
+            browserVersion: 'latest',
+            platformName: 'Android',
+            
             'appium:deviceName': 'Google.*',
             'appium:platformVersion': '10',
             'appium:automationName': 'UiAutomator2',
-            browserVersion: 'latest',
-            platformName: 'android',
+           
             'sauce:options': {
                 appiumVersion: 'latest',
                 name: 'PCQ_ANDROID_CHROME_LATEST',
