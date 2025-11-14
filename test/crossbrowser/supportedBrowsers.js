@@ -11,7 +11,7 @@ const supportedBrowsers = {
   },
 
   chrome: {
-        chrome_win_latest: {
+        /*chrome_win_latest: {
             browserName: 'chrome',
             browserVersion: 'latest',
             platformName: 'Windows 11',
@@ -19,7 +19,20 @@ const supportedBrowsers = {
                 name: 'PCQ_WIN11_CHROME_LATEST',
                 extendedDebugging: true
             }
-        }
+        },*/
+        chrome_android_16: {
+            platformName: 'Android',
+            browserName: 'Chrome',
+            'appium:deviceName': 'Google Pixel 9 Pro Emulator',
+            'appium:platformVersion': '16.0',
+            'appium:automationName': 'UiAutomator2',
+            'sauce:options': {
+                appiumVersion: '2.11.0',
+                name: 'PCQ_ANDROID_CHROME_16',
+                deviceOrientation: 'PORTRAIT',
+            }
+        },
+        
   },
 
   firefox: {
