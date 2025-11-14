@@ -19,6 +19,19 @@ const supportedBrowsers = {
                 name: 'PCQ_WIN11_CHROME_LATEST',
                 extendedDebugging: true
             }
+        },
+        chrome_andriod_latest: {
+            browserName: 'chrome',
+            'appium:deviceName': 'Google.*',
+            'appium:platformVersion': '10',
+            'appium:automationName': 'UiAutomator2',
+            browserVersion: 'latest',
+            platformName: 'android',
+            'sauce:options': {
+                appiumVersion: 'latest',
+                name: 'PCQ_ANDROID_CHROME_LATEST',
+                extendedDebugging: true
+            }
         }
       
   },
@@ -43,7 +56,7 @@ const supportedBrowsers = {
             }
         }
    },
-   ios: {
+   safari: {
         ios_latest: {
             browserName: 'safari',
             'appium:deviceName': 'iPhone.*',
@@ -57,26 +70,7 @@ const supportedBrowsers = {
             }
         }
       
-  },
-  andriod: {
-        andriod_latest: {
-            browserName: 'chrome',
-            'appium:deviceName': 'Google.*',
-            'appium:platformVersion': '10',
-            'appium:automationName': 'UiAutomator2',
-            browserVersion: 'latest',
-            platformName: 'android',
-            'sauce:options': {
-                appiumVersion: 'latest',
-                name: 'PCQ_ANDROID_CHROME_LATEST',
-                extendedDebugging: true
-            }
-        }
-      
-  },
-   
-      
-  
+  }
 };
 
 module.exports = supportedBrowsers;
