@@ -10,19 +10,6 @@ const supportedBrowsers = {
         }
   },
 
-  chrome: {
-        chrome_win_latest: {
-            browserName: 'chrome',
-            browserVersion: 'latest',
-            platformName: 'Windows 11',
-            'sauce:options': {
-                name: 'PCQ_WIN11_CHROME_LATEST',
-                extendedDebugging: true
-            }
-          }
-        
-  },
-
   firefox: {
         firefox_win_latest: {
             browserName: 'firefox',
