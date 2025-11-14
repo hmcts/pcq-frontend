@@ -10,27 +10,6 @@ const supportedBrowsers = {
         }
   },
 
-  chrome: {
-        chrome_win_latest: {
-            browserName: 'chrome',
-            browserVersion: 'latest',
-            platformName: 'Windows 11',
-            'sauce:options': {
-                name: 'PCQ_WIN11_CHROME_LATEST',
-                extendedDebugging: true
-            }
-        },
-        chrome_mac_latest: {
-            browserName: 'chrome',
-            browserVersion: 'latest',
-            platformName: 'macOS 11',
-            'sauce:options': {
-                name: 'PCQ_MAC_CHROME_LATEST',
-                extendedDebugging: true
-            }
-        }
-  },
-
   firefox: {
         firefox_win_latest: {
             browserName: 'firefox',
@@ -48,16 +27,6 @@ const supportedBrowsers = {
             'sauce:options': {
                 name: 'PCQ_MAC_FIREFOX_LATEST',
                 extendedDebugging: true
-            }
-        }
-  },
-  safari: {
-        safari_mac_latest: {
-            browserName: 'safari',
-            browserVersion: 'latest',
-            platformName: 'macOS 11',
-            'sauce:options': {
-                name: 'PCQ_MAC_SAFARI_LATEST',
             }
         }
   }
