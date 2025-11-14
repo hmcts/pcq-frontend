@@ -41,7 +41,20 @@ const supportedBrowsers = {
                 extendedDebugging: true
             }
         }
-    }
+  },
+  safari: {
+        safari_ios_simulator_17: {
+            browserName: 'Safari',
+            platformName: 'iOS',
+            'appium:deviceName': 'iPhone Simulator',
+            'appium:platformVersion': '17.0',
+            'appium:automationName': 'XCUITest',
+            'sauce:options': {
+                appiumVersion: '2.1.3',
+                name: 'PCQ_IOS_SAFARI_17',
+            }
+        }
+  }
   
 };
 
