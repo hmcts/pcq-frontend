@@ -13,6 +13,8 @@ const getBrowserConfig = (browserGroup) => {
         caps['sauce:options'].tunnelIdentifier = tunnelName;
         caps.acceptInsecureCerts = true;
         caps['sauce:options'].tags = ['pcq-frontend'];
+        caps['sauce:options'].idleTimeout = 180;
+        caps['sauce:options'].maxDuration = 1800;
 
         return { browser: caps.browserName, desiredCapabilities: caps };
       
