@@ -74,9 +74,6 @@ const setupConfig = {
         },
         firefox: {
             browsers: getBrowserConfig('firefox')
-        },
-        safari: {
-            browsers: getBrowserConfig('safari')
         }
     }
 };
