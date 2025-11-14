@@ -17,6 +17,7 @@ const supportedBrowsers = {
             platformName: 'Windows 11',
             'sauce:options': {
                 name: 'PCQ_WIN11_CHROME_LATEST',
+                extendedDebugging: true
             }
         }
       
