@@ -26,8 +26,7 @@ const supportedBrowsers = {
             'sauce:options': {
                 name: 'PCQ_MAC_CHROME_LATEST',
                 extendedDebugging: true
-            },
-            webSocketUrl: true
+            }
         }
       
   },
@@ -59,8 +58,7 @@ const supportedBrowsers = {
             platformName: 'macOS 11',
             'sauce:options': {
                 name: 'PCQ_MAC_SAFARI_LATEST',
-            },
-            webSocketUrl: true
+            }
         }
     }
   
