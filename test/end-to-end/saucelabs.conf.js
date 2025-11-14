@@ -1,42 +1,39 @@
 const supportedBrowsers = require('../crossbrowser/supportedBrowsers.js');
+
+const browser = process.env.SAUCELABS_BROWSER;
 const tunnelName = process.env.TUNNEL_IDENTIFIER || 'reformtunnel';
-
-const clone = o => JSON.parse(JSON.stringify(o));
-
 const getBrowserConfig = (browserGroup) => {
-  const group = supportedBrowsers[browserGroup];
-  if (!group) throw new Error(`Unknown browserGroup: ${browserGroup}`);
-
-  return Object.keys(group).map(k => {
-        const caps = clone(group[k]);
-
-        caps['sauce:options'] = caps['sauce:options'] || {};
-        caps['sauce:options'].tunnelIdentifier = tunnelName;
-        caps['sauce:options'].tags = ['pcq-frontend'];
-        caps['sauce:options'].idleTimeout = 180;
-        caps['sauce:options'].maxDuration = 1800;
-
-
-        caps.acceptInsecureCerts = true;
-
-        return { browser: caps.browserName, desiredCapabilities: caps };
-    });
-
+    const browserConfig = [];
+    for (const candidateBrowser in supportedBrowsers[browserGroup]) {
+        if (candidateBrowser) {
+            const desiredCapability = supportedBrowsers[browserGroup][candidateBrowser];
+            desiredCapability['sauce:options'].tunnelIdentifier = tunnelName;
+            desiredCapability['sauce:options'].acceptSslCerts = true;
+            desiredCapability['sauce:options'].tags = ['pcq-frontend'];
+            browserConfig.push({
+                browser: desiredCapability.browserName,
+                desiredCapabilities: desiredCapability
+            });
+        } else {
+            console.error('ERROR: supportedBrowsers.js is empty or incorrectly defined');
+        }
+    }
+    return browserConfig;
 };
 
 const setupConfig = {
     output: `${process.cwd()}/functional-output`,
     helpers: {
         WebDriver: {
-            host: 'ondemand.eu-central-1.saucelabs.com',
-            port: 443,
-            protocol: 'https',
-
             url: process.env.TEST_URL || 'https://pcq.aat.platform.hmcts.net',
+            browser,
             cssSelectorsEnabled: 'true',
 
             user: process.env.SAUCE_USERNAME,
             key: process.env.SAUCE_ACCESS_KEY,
+            region: 'eu',
+            sauceConnect: true,
+            services: ['sauce'],
 
             // This line is required to ensure test name and browsers are set correctly for some reason.
             desiredCapabilities: {'sauce:options': {}}
@@ -58,7 +55,7 @@ const setupConfig = {
         steps: ['./step_definitions/probatepcqjourney.js']
     },
     include: {
-        I: './pages/steps.js'
+        'I': './pages/steps.js'
     },
     mocha: {
         reporter: 'mochawesome',
@@ -77,6 +74,9 @@ const setupConfig = {
         },
         firefox: {
             browsers: getBrowserConfig('firefox')
+        },
+        safari: {
+            browsers: getBrowserConfig('safari')
         }
     }
 };

@@ -42,7 +42,39 @@ const supportedBrowsers = {
                 extendedDebugging: true
             }
         }
-   }
+   },
+   ios: {
+        ios_latest: {
+            browserName: 'safari',
+            'appium:deviceName': 'iPhone.*',
+            'appium:platformVersion': '18',
+            'appium:automationName': 'XCUITest',
+            platformName: 'iOS',
+            'sauce:options': {
+                appiumVersion: 'latest',
+                name: 'PCQ_IOS_SAFARI_LATEST',
+                extendedDebugging: true
+            }
+        }
+      
+  },
+  andriod: {
+        andriod_latest: {
+            browserName: 'chrome',
+            'appium:deviceName': 'Google.*',
+            'appium:platformVersion': '10',
+            'appium:automationName': 'UiAutomator2',
+            browserVersion: 'latest',
+            platformName: 'android',
+            'sauce:options': {
+                appiumVersion: 'latest',
+                name: 'PCQ_ANDROID_CHROME_LATEST',
+                extendedDebugging: true
+            }
+        }
+      
+  },
+   
       
   
 };
