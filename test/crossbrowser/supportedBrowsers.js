@@ -18,15 +18,7 @@ const supportedBrowsers = {
             'sauce:options': {
                 name: 'PCQ_WIN11_CHROME_LATEST',
             }
-        }/*,
-        chrome_mac_latest: {
-            browserName: 'chrome',
-            browserVersion: 'latest',
-            platformName: 'macOS 11',
-            'sauce:options': {
-                name: 'PCQ_MAC_CHROME_LATEST',
-            }
-        }*/
+        }
   },
 
   firefox: {
@@ -46,16 +38,6 @@ const supportedBrowsers = {
             'sauce:options': {
                 name: 'PCQ_MAC_FIREFOX_LATEST',
                 extendedDebugging: true
-            }
-        }
-  },
-  safari: {
-        safari_mac_latest: {
-            browserName: 'safari',
-            browserVersion: 'latest',
-            platformName: 'macOS 13',
-            'sauce:options': {
-                name: 'PCQ_MAC_SAFARI_LATEST',
             }
         }
   }
