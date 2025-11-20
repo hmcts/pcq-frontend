@@ -12,6 +12,15 @@ exports.config = {
             waitForNavigation: 'load',
             ignoreHTTPSErrors: true,
         },
+        WebDriver: {
+            url: 'https://pcq.aat.platform.hmcts.net',
+            browser: 'chrome',
+            waitForTimeout: true,
+            waitForAction: 350,
+            timeout: 10000,
+            waitForNavigation: 'load',
+            ignoreHTTPSErrors: true,
+        }
     },
     include: {
         I: 'test/end-to-end/pages/steps.js'
