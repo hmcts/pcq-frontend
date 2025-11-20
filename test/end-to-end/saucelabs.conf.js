@@ -71,6 +71,9 @@ const setupConfig = {
         },
         firefox: {
             browsers: getBrowserConfig('firefox')
+        },
+        chrome: {
+            browsers: getBrowserConfig('chrome')
         }
     }
 };

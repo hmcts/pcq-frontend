@@ -1,15 +1,17 @@
 const supportedBrowsers = {
-  chrome: {
-        chrome_win_142: {
-            browserName: 'chrome',
-            platformName: 'Windows 11',
-            browserVersion: '142',
-            'sauce:options': {
-                name: 'PCQ_WIN11_CHROME_142',
-            }
-        }
-  },
   
+    browser: 'chrome',
+  desiredCapabilities: {
+    browserName: 'chrome',
+    browserVersion: 'latest',
+    platformName: 'Windows 11',
+    'sauce:options': {
+      username: process.env.SAUCE_USERNAME,
+      accessKey: process.env.SAUCE_ACCESS_KEY,
+      name: 'PCQ Chrome Sauce Test'
+    }
+  },
+
   microsoftEdge: {
         edge: {
             browserName: 'MicrosoftEdge',
@@ -41,7 +43,7 @@ const supportedBrowsers = {
             }
         }
   }
-  
+
 };
 
 module.exports = supportedBrowsers;
