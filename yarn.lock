@@ -16462,7 +16462,6 @@ __metadata:
     i18next: "npm:^25.0.0"
     immutable: "npm:5.1.4"
     ioredis: "npm:^5.3.2"
-    js-yaml: "npm:^4.1.0"
     jsonwebtoken: "npm:^9.0.2"
     launchdarkly-node-server-sdk: "npm:^7.0.3"
     lodash: "npm:^4.17.21"
