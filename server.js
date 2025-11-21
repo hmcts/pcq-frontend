@@ -6,4 +6,14 @@ setupSecrets();
 
 const app = require('./app');
 
-app.init();
+const { http } = app.init();
+
+function shutdown() {
+    http.close(() => {
+        process.exit(0);
+    });
+    setTimeout(() => process.exit(1), 5000).unref();
+}
+
+process.on('SIGINT', shutdown);
+process.on('SIGTERM', shutdown);
