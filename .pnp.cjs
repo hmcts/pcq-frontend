@@ -93,7 +93,7 @@ const RAW_RUNTIME_STATE =
           ["sanitizer", "npm:0.1.3"],\
           ["sass", "npm:1.94.0"],\
           ["serve-favicon", "npm:2.5.1"],\
-          ["sinon", "npm:20.0.0"],\
+          ["sinon", "npm:21.0.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
           ["sonarqube-scanner", "npm:4.3.2"],\
           ["supertest", "npm:7.1.4"],\
@@ -19761,7 +19761,7 @@ const RAW_RUNTIME_STATE =
           ["sanitizer", "npm:0.1.3"],\
           ["sass", "npm:1.94.0"],\
           ["serve-favicon", "npm:2.5.1"],\
-          ["sinon", "npm:20.0.0"],\
+          ["sinon", "npm:21.0.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
           ["sonarqube-scanner", "npm:4.3.2"],\
           ["supertest", "npm:7.1.4"],\
@@ -21418,14 +21418,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sinon", [\
-      ["npm:20.0.0", {\
-        "packageLocation": "./.yarn/cache/sinon-npm-20.0.0-7df4ef86e3-825cb36a58.zip/node_modules/sinon/",\
+      ["npm:21.0.0", {\
+        "packageLocation": "./.yarn/cache/sinon-npm-21.0.0-ccf5462756-b460e1cde5.zip/node_modules/sinon/",\
         "packageDependencies": [\
           ["@sinonjs/commons", "npm:3.0.1"],\
           ["@sinonjs/fake-timers", "npm:13.0.5"],\
           ["@sinonjs/samsam", "npm:8.0.2"],\
           ["diff", "npm:7.0.0"],\
-          ["sinon", "npm:20.0.0"],\
+          ["sinon", "npm:21.0.0"],\
           ["supports-color", "npm:7.2.0"]\
         ],\
         "linkType": "HARD"\
@@ -21445,7 +21445,7 @@ const RAW_RUNTIME_STATE =
           ["@types/chai", null],\
           ["@types/sinon", null],\
           ["chai", "npm:4.5.0"],\
-          ["sinon", "npm:20.0.0"],\
+          ["sinon", "npm:21.0.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"]\
         ],\
         "packagePeers": [\
