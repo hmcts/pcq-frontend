@@ -33,8 +33,10 @@ class TestWrapper {
             res.send('OK');
         });
 
-        // Set the journey for each test.
+        // Set the journey for each test. Insert before step handlers so it runs first.
         this.routes.use('*', (req, res, next) => setJourney(req, res).then(() => next()));
+        const setJourneyLayer = this.routes.stack.pop();
+        this.routes.stack.splice(2, 0, setJourneyLayer);
 
         config.app.useCSRFProtection = 'false';
         this.server = app.init(false, {}, ftValue);

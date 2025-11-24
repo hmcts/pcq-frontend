@@ -39,11 +39,6 @@ router.get('/start-page-back-service', startPageBackService);
 
 router.get('/continue-to-questions', continueToQuestions);
 
-const allSteps = {
-    'en': initSteps([`${__dirname}/steps/ui`], 'en'),
-    'cy': initSteps([`${__dirname}/steps/ui`], 'cy')
-};
-
 router.use(async (req, res, next) => {
     const toggles = await Promise.all([
         featureToggle.checkToggle('ft_dtrum_session_properties', req, res),
@@ -54,14 +49,21 @@ router.use(async (req, res, next) => {
     req.session.featureToggles.ft_dtrum_opt_out = toggles[1];
     req.session.featureToggles.ft_ga_nonce_update = toggles[2];
 
-    Object.entries(allSteps[req.session.language]).forEach(([, step]) => {
-        router.get(step.constructor.getUrl(), step.runner().GET(step));
-        router.post(step.constructor.getUrl(), continueToQuestions, step.runner().POST(step));
-    });
-
     res.locals.session = req.session;
     res.locals.pageUrl = req.url;
     next();
+});
+
+const stepsByLang = {
+    en: initSteps([`${__dirname}/steps/ui`], 'en'),
+    cy: initSteps([`${__dirname}/steps/ui`], 'cy')
+};
+
+Object.values(stepsByLang.en).forEach(stepEn => {
+    const path = stepEn.constructor.getUrl();
+    const pickStep = req => stepsByLang[stepsByLang[req.session.language] ? req.session.language : 'en'][stepEn.constructor.name];
+    router.get(path, (req, res, next) => pickStep(req).runner().GET(pickStep(req))(req, res, next));
+    router.post(path, continueToQuestions, (req, res, next) => pickStep(req).runner().POST(pickStep(req))(req, res, next));
 });
 
 router.get('/health/liveness', (req, res) => {
