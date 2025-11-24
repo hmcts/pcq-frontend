@@ -1,37 +1,32 @@
 'use strict';
 
 const appInsights = require('applicationinsights');
-const logger = require('app/components/logger')('Init');
-const config = require('config');
 
 let client;
-const connectionString = config.get('appInsights.connectionString');
 
-exports.initAppInsights = function initAppInsights() {
-    if (connectionString) {
-        logger.info('Starting Application Insights');
-
-        appInsights.setup(connectionString)
-            .setAutoCollectConsole(true)
-            .setSendLiveMetrics(true)
-            .start();
-
-        client = appInsights.defaultClient;
-
-        // Safely delay context setup and re-enable features
-        setTimeout(() => {
-            client.context.tags[client.context.keys.cloudRole] = 'pcq-frontend';
-            client.config.autoCollectConsole = true;
-            client.config.setSendLiveMetrics = true;
-            client.trackTrace({ message: 'App Insights activated' });
-        }, 2000);
-    } else {
-        client = null;
+exports.initAppInsights = function initAppInsights(connectionString) {
+    if (!connectionString) {
+        return;
     }
+    appInsights.setup(connectionString)
+        .setAutoCollectConsole(false)
+        .setAutoCollectDependencies(false)
+        .setAutoCollectPerformance(false)
+        .setSendLiveMetrics(false)
+        .start();
+
+    client = appInsights.defaultClient;
+    client.trackTrace({message: 'Application Insights started'});
 };
 
 exports.trackTrace = function trackTrace(trace) {
-    if (client) {
+    if (!client) {
+        console.warn('trackTrace called before AppInsights client initialised, dropped trace: ', trace);
+        return;
+    }
+    if (typeof trace === 'string') {
+        client.trackTrace({message: trace});
+    } else {
         client.trackTrace(trace);
     }
 };

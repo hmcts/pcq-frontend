@@ -37,7 +37,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     const govUkFrontendPath = path.resolve(require.resolve('govuk-frontend'), '../../');
 
     // Initialise Azure Application Insights
-    appInsights.initAppInsights();
+    appInsights.initAppInsights(config.get('appInsights.connectionString'));
 
     // Application settings
     app.set('view engine', 'html');
@@ -147,8 +147,8 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
 
    app.use(permissionsPolicy({
             features: {
-            camera: [], 
-            microphone: [], 
+            camera: [],
+            microphone: [],
             geolocation: []
             },
         })
@@ -266,8 +266,8 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         res.locals.csrfToken = csrfToken;
         next();
     });
-  
-    
+
+
 
 
     // Add variables that are available in all views
