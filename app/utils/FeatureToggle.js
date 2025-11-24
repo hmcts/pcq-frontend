@@ -36,8 +36,7 @@ class FeatureToggle {
 
         return new Promise((resolve, reject) => {
             this.launchDarkly.variation(toggleKey, ldUser, defaultValue, (err, enabled) => {
-                logger(sessionId).info(`Checking feature toggle: ${toggleKey}, isEnabled: ${enabled}`);
-
+                logger(sessionId).debug(`Checking feature toggle: ${toggleKey}, isEnabled: ${enabled}`);
                 if (err) {
                     logger(sessionId).error(`ERROR checking feature toggle: ${toggleKey}, err: ${err}`);
                     reject(err);

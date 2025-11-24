@@ -81,7 +81,7 @@ const validatedService = (serviceId) => {
 };
 
 const registerIncomingService = (req) => {
-    logger.info(req.query);
+    logger.info(JSON.stringify(req.query));
     const partyId = req.query.partyId;
     if (partyId) {
         // Ensure emails are properly encoded
