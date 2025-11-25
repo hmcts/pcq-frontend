@@ -41,7 +41,7 @@ const RAW_RUNTIME_STATE =
           ["ajv", "npm:6.12.6"],\
           ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["applicationinsights", "npm:3.9.0"],\
-          ["body-parser", "npm:2.2.0"],\
+          ["body-parser", "npm:2.2.1"],\
           ["chai", "npm:4.5.0"],\
           ["chokidar", "npm:4.0.3"],\
           ["co", "npm:4.6.0"],\
@@ -9220,18 +9220,18 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:2.2.0", {\
-        "packageLocation": "./.yarn/cache/body-parser-npm-2.2.0-b3d2aaf918-e9d844b036.zip/node_modules/body-parser/",\
+      ["npm:2.2.1", {\
+        "packageLocation": "./.yarn/cache/body-parser-npm-2.2.1-79691d0c2a-cab162d62d.zip/node_modules/body-parser/",\
         "packageDependencies": [\
-          ["body-parser", "npm:2.2.0"],\
+          ["body-parser", "npm:2.2.1"],\
           ["bytes", "npm:3.1.2"],\
           ["content-type", "npm:1.0.5"],\
           ["debug", "virtual:2b51d83636a42cdc1434b9a574324a754fe902f0d8f47c84f37fc9dd9e42f0be9d5cd9599ca4ccf8c80b9be5756c7aea000403217e2fd7a585437af81d091cfd#npm:4.4.3"],\
           ["http-errors", "npm:2.0.0"],\
-          ["iconv-lite", "npm:0.6.3"],\
+          ["iconv-lite", "npm:0.7.0"],\
           ["on-finished", "npm:2.4.1"],\
           ["qs", "npm:6.14.0"],\
-          ["raw-body", "npm:3.0.0"],\
+          ["raw-body", "npm:3.0.2"],\
           ["type-is", "npm:2.0.1"]\
         ],\
         "linkType": "HARD"\
@@ -14471,6 +14471,18 @@ const RAW_RUNTIME_STATE =
           ["toidentifier", "npm:1.0.1"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:2.0.1", {\
+        "packageLocation": "./.yarn/cache/http-errors-npm-2.0.1-6d19ab492e-9fe31bc0ed.zip/node_modules/http-errors/",\
+        "packageDependencies": [\
+          ["depd", "npm:2.0.0"],\
+          ["http-errors", "npm:2.0.1"],\
+          ["inherits", "npm:2.0.4"],\
+          ["setprototypeof", "npm:1.2.0"],\
+          ["statuses", "npm:2.0.2"],\
+          ["toidentifier", "npm:1.0.1"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["http-proxy-agent", [\
@@ -14623,6 +14635,14 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/iconv-lite-npm-0.6.3-24b8aae27e-24e3292dd3.zip/node_modules/iconv-lite/",\
         "packageDependencies": [\
           ["iconv-lite", "npm:0.6.3"],\
+          ["safer-buffer", "npm:2.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:0.7.0", {\
+        "packageLocation": "./.yarn/cache/iconv-lite-npm-0.7.0-89105876e3-5bfc897fed.zip/node_modules/iconv-lite/",\
+        "packageDependencies": [\
+          ["iconv-lite", "npm:0.7.0"],\
           ["safer-buffer", "npm:2.1.2"]\
         ],\
         "linkType": "HARD"\
@@ -19819,7 +19839,7 @@ const RAW_RUNTIME_STATE =
           ["ajv", "npm:6.12.6"],\
           ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["applicationinsights", "npm:3.9.0"],\
-          ["body-parser", "npm:2.2.0"],\
+          ["body-parser", "npm:2.2.1"],\
           ["chai", "npm:4.5.0"],\
           ["chokidar", "npm:4.0.3"],\
           ["co", "npm:4.6.0"],\
@@ -20180,13 +20200,13 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:3.0.0", {\
-        "packageLocation": "./.yarn/cache/raw-body-npm-3.0.0-cd8403b401-2443429bbb.zip/node_modules/raw-body/",\
+      ["npm:3.0.2", {\
+        "packageLocation": "./.yarn/cache/raw-body-npm-3.0.2-77b7ebce9c-4168c82157.zip/node_modules/raw-body/",\
         "packageDependencies": [\
           ["bytes", "npm:3.1.2"],\
-          ["http-errors", "npm:2.0.0"],\
-          ["iconv-lite", "npm:0.6.3"],\
-          ["raw-body", "npm:3.0.0"],\
+          ["http-errors", "npm:2.0.1"],\
+          ["iconv-lite", "npm:0.7.0"],\
+          ["raw-body", "npm:3.0.2"],\
           ["unpipe", "npm:1.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -21887,6 +21907,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/statuses-npm-2.0.1-81d2b97fee-18c7623fdb.zip/node_modules/statuses/",\
         "packageDependencies": [\
           ["statuses", "npm:2.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:2.0.2", {\
+        "packageLocation": "./.yarn/cache/statuses-npm-2.0.2-2d84c63b8c-6927feb50c.zip/node_modules/statuses/",\
+        "packageDependencies": [\
+          ["statuses", "npm:2.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
