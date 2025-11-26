@@ -10,7 +10,7 @@ const supportedBrowsers = {
         }
   },
 
-  chrome: {
+  /*chrome: {
         chrome_win_latest: {
             browserName: 'chrome',
             browserVersion: 'latest',
@@ -29,7 +29,7 @@ const supportedBrowsers = {
                 extendedDebugging: true
             }
         }
-  },
+  },*/
 
   firefox: {
         firefox_win_latest: {
@@ -50,7 +50,7 @@ const supportedBrowsers = {
                 extendedDebugging: true
             }
         }
-  },
+  }/*,
   safari: {
         safari_mac_latest: {
             browserName: 'safari',
@@ -60,7 +60,7 @@ const supportedBrowsers = {
                 name: 'PCQ_MAC_SAFARI_LATEST',
             }
         }
-  }
+  }*/
   
 };
 

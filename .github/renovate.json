@@ -8,10 +8,6 @@
   {
     "matchPackageNames": ["chai"],
     "allowedVersions": "<5.0.0"
-  },
-  {
-    "matchPackageNames": ["codeceptjs"],
-    "allowedVersions": "<3.7.0"
   }
 ]
 }
