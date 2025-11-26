@@ -70,9 +70,9 @@ const setupConfig = {
         microsoftEdge: {
             browsers: getBrowserConfig('microsoftEdge')
         },
-        /*chrome: {
+        chrome: {
             browsers: getBrowserConfig('chrome')
-        },*/
+        },
         firefox: {
             browsers: getBrowserConfig('firefox')
         }/*,
