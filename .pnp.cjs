@@ -392,7 +392,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@azure-functions-npm-4.6.1-ee7c89b08b-ec6ee801d9.zip/node_modules/@azure/functions/",\
         "packageDependencies": [\
           ["@azure/functions", "npm:4.6.1"],\
-          ["cookie", "npm:1.0.2"],\
+          ["cookie", "npm:1.1.0"],\
           ["long", "npm:4.0.0"],\
           ["undici", "npm:5.29.0"]\
         ],\
@@ -10826,10 +10826,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["cookie", [\
-      ["npm:1.0.2", {\
-        "packageLocation": "./.yarn/cache/cookie-npm-1.0.2-7a4273d897-f5817cdc84.zip/node_modules/cookie/",\
+      ["npm:1.1.0", {\
+        "packageLocation": "./.yarn/cache/cookie-npm-1.1.0-15453afa1b-fb7863135a.zip/node_modules/cookie/",\
         "packageDependencies": [\
-          ["cookie", "npm:1.0.2"]\
+          ["cookie", "npm:1.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -10838,7 +10838,7 @@ const RAW_RUNTIME_STATE =
       ["npm:1.4.7", {\
         "packageLocation": "./.yarn/cache/cookie-parser-npm-1.4.7-970a70a2fd-243fa13f21.zip/node_modules/cookie-parser/",\
         "packageDependencies": [\
-          ["cookie", "npm:1.0.2"],\
+          ["cookie", "npm:1.1.0"],\
           ["cookie-parser", "npm:1.4.7"],\
           ["cookie-signature", "npm:1.0.6"]\
         ],\
@@ -12782,7 +12782,7 @@ const RAW_RUNTIME_STATE =
           ["body-parser", "npm:1.20.3"],\
           ["content-disposition", "npm:0.5.4"],\
           ["content-type", "npm:1.0.4"],\
-          ["cookie", "npm:1.0.2"],\
+          ["cookie", "npm:1.1.0"],\
           ["cookie-signature", "npm:1.0.6"],\
           ["debug", "virtual:1eb054913bca2149e4634db25d2ccd7ab57cd4c7053bbe0b50db0b93201c1b7c6d3c6b4c278fb0b20e9afccb8339c4e1122905c01ed4410624523f3c7a274095#npm:2.6.9"],\
           ["depd", "npm:2.0.0"],\
@@ -12817,7 +12817,7 @@ const RAW_RUNTIME_STATE =
       ["npm:1.18.2", {\
         "packageLocation": "./.yarn/cache/express-session-npm-1.18.2-1fdf1a09db-1a89a4d3e5.zip/node_modules/express-session/",\
         "packageDependencies": [\
-          ["cookie", "npm:1.0.2"],\
+          ["cookie", "npm:1.1.0"],\
           ["cookie-signature", "npm:1.0.7"],\
           ["debug", "virtual:1eb054913bca2149e4634db25d2ccd7ab57cd4c7053bbe0b50db0b93201c1b7c6d3c6b4c278fb0b20e9afccb8339c4e1122905c01ed4410624523f3c7a274095#npm:2.6.9"],\
           ["depd", "npm:2.0.0"],\

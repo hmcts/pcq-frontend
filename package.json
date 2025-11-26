@@ -132,7 +132,7 @@
   "resolutions": {
     "json5": "2.2.3",
     "send": "0.19.1",
-    "cookie": "1.0.2",
+    "cookie": "1.1.0",
     "merge": "2.1.1",
     "ws": "8.18.3",
     "import-in-the-middle": "1.15.0",
