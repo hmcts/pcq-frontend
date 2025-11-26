@@ -90,7 +90,7 @@ const RAW_RUNTIME_STATE =
           ["require-directory", "npm:2.1.1"],\
           ["rewire", "npm:7.0.0"],\
           ["sanitizer", "npm:0.1.3"],\
-          ["sass", "npm:1.94.0"],\
+          ["sass", "npm:1.94.2"],\
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:20.0.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
@@ -19888,7 +19888,7 @@ const RAW_RUNTIME_STATE =
           ["require-directory", "npm:2.1.1"],\
           ["rewire", "npm:7.0.0"],\
           ["sanitizer", "npm:0.1.3"],\
-          ["sass", "npm:1.94.0"],\
+          ["sass", "npm:1.94.2"],\
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:20.0.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
@@ -21119,13 +21119,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sass", [\
-      ["npm:1.94.0", {\
-        "packageLocation": "./.yarn/cache/sass-npm-1.94.0-a5a155fbab-625b4d5675.zip/node_modules/sass/",\
+      ["npm:1.94.2", {\
+        "packageLocation": "./.yarn/cache/sass-npm-1.94.2-25ad66b92d-e60c214ea9.zip/node_modules/sass/",\
         "packageDependencies": [\
           ["@parcel/watcher", "npm:2.5.1"],\
           ["chokidar", "npm:4.0.3"],\
           ["immutable", "npm:5.0.2"],\
-          ["sass", "npm:1.94.0"],\
+          ["sass", "npm:1.94.2"],\
           ["source-map-js", "npm:1.2.1"]\
         ],\
         "linkType": "HARD"\
