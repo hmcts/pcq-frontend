@@ -1,3 +1,4 @@
+'use strict';
 
 const event = require('codeceptjs').event;
 const container = require('codeceptjs').container;
@@ -8,7 +9,7 @@ const sauceKey = process.env.SAUCE_ACCESS_KEY;
 
 function updateSauceLabsResult(result, sessionId) {
     console.log('SauceOnDemandSessionID=' + sessionId + ' job-name=pcq-frontend');
-    return 'curl -X PUT -s -d \'{"passed": ' + result + '}\' -u ' + sauceUsername + ':' + sauceKey + ' https://eu-central-1.saucelabs.com/rest/v1/' + sauceUsername + '/jobs/' + sessionId;
+    return `curl -X PUT -s -d '{"passed": ${result}}' -u ${sauceUsername}:${sauceKey} https://eu-central-1.saucelabs.com/rest/v1/${sauceUsername}/jobs/${sessionId}`;
 }
 
 module.exports = function() {
