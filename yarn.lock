@@ -2715,7 +2715,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/context-async-hooks@npm:2.2.0":
+"@opentelemetry/context-async-hooks@npm:2.2.0, @opentelemetry/context-async-hooks@npm:^2.2.0":
   version: 2.2.0
   resolution: "@opentelemetry/context-async-hooks@npm:2.2.0"
   peerDependencies:
@@ -5112,7 +5112,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"applicationinsights@npm:^3.2.1":
+"applicationinsights@npm:~3.12.0":
   version: 3.12.1
   resolution: "applicationinsights@npm:3.12.1"
   dependencies:
@@ -14860,13 +14860,15 @@ __metadata:
     "@hmcts/cookie-manager": "npm:^1.0.0"
     "@hmcts/nodejs-healthcheck": "npm:^1.7.3"
     "@hmcts/properties-volume": "npm:^1.0.0"
+    "@opentelemetry/api": "npm:^1.9.0"
+    "@opentelemetry/context-async-hooks": "npm:^2.2.0"
     "@parcel/watcher": "npm:^2.4.1"
     "@stryker-mutator/api": "npm:^8.5.0"
     "@stryker-mutator/core": "npm:^8.5.0"
     "@stryker-mutator/mocha-runner": "npm:8.7.1"
     ajv: "npm:^6.12.6"
     app: "link:./app"
-    applicationinsights: "npm:^3.2.1"
+    applicationinsights: "npm:~3.12.0"
     body-parser: "npm:^2.0.0"
     chai: "npm:^4.3.10"
     chokidar: "npm:^4.0.1"

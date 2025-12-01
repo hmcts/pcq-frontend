@@ -34,6 +34,8 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/cookie-manager", "npm:1.1.0"],\
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/properties-volume", "npm:1.2.0"],\
+          ["@opentelemetry/api", "npm:1.9.0"],\
+          ["@opentelemetry/context-async-hooks", "virtual:9d2bfaebefd4a1a30dc511101384c466c03581d83bc4eef7eea04cb42a877fab2981719a3ca28ca43b9f1309a1473933c836d6953bfa897d1055f2ae6e7a0059#npm:2.2.0"],\
           ["@parcel/watcher", "npm:2.5.1"],\
           ["@stryker-mutator/api", "npm:8.7.1"],\
           ["@stryker-mutator/core", "npm:8.7.1"],\
@@ -17377,6 +17379,8 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/cookie-manager", "npm:1.1.0"],\
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/properties-volume", "npm:1.2.0"],\
+          ["@opentelemetry/api", "npm:1.9.0"],\
+          ["@opentelemetry/context-async-hooks", "virtual:9d2bfaebefd4a1a30dc511101384c466c03581d83bc4eef7eea04cb42a877fab2981719a3ca28ca43b9f1309a1473933c836d6953bfa897d1055f2ae6e7a0059#npm:2.2.0"],\
           ["@parcel/watcher", "npm:2.5.1"],\
           ["@stryker-mutator/api", "npm:8.7.1"],\
           ["@stryker-mutator/core", "npm:8.7.1"],\
