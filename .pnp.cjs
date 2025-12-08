@@ -448,7 +448,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/msal-browser", "npm:3.20.0"],\
           ["@azure/msal-node", "npm:2.12.0"],\
           ["events", "npm:3.3.0"],\
-          ["jws", "npm:4.0.0"],\
+          ["jws", "npm:3.2.3"],\
           ["open", "npm:8.4.2"],\
           ["stoppable", "npm:1.1.0"],\
           ["tslib", "npm:2.8.1"]\
@@ -469,7 +469,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/msal-browser", "npm:4.7.0"],\
           ["@azure/msal-node", "npm:3.3.0"],\
           ["events", "npm:3.3.0"],\
-          ["jws", "npm:4.0.0"],\
+          ["jws", "npm:3.2.3"],\
           ["open", "npm:10.1.0"],\
           ["stoppable", "npm:1.1.0"],\
           ["tslib", "npm:2.8.1"]\
@@ -14140,7 +14140,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/jsonwebtoken-npm-9.0.0-36fd1594c0-769ea563e9.zip/node_modules/jsonwebtoken/",\
         "packageDependencies": [\
           ["jsonwebtoken", "npm:9.0.0"],\
-          ["jws", "npm:3.2.2"],\
+          ["jws", "npm:3.2.3"],\
           ["lodash", "npm:4.17.21"],\
           ["ms", "npm:2.1.3"],\
           ["semver", "npm:7.5.4"]\
@@ -14151,7 +14151,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/jsonwebtoken-npm-9.0.2-42c6b14d02-6e9b6d879c.zip/node_modules/jsonwebtoken/",\
         "packageDependencies": [\
           ["jsonwebtoken", "npm:9.0.2"],\
-          ["jws", "npm:3.2.2"],\
+          ["jws", "npm:3.2.3"],\
           ["lodash.includes", "npm:4.3.0"],\
           ["lodash.isboolean", "npm:3.0.3"],\
           ["lodash.isinteger", "npm:4.0.4"],\
@@ -14179,42 +14179,23 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["jwa", [\
-      ["npm:1.4.1", {\
-        "packageLocation": "./.yarn/cache/jwa-npm-1.4.1-4f19d6572c-0bc002b71d.zip/node_modules/jwa/",\
+      ["npm:1.4.2", {\
+        "packageLocation": "./.yarn/cache/jwa-npm-1.4.2-9b996c4b2d-a46c9ddbcc.zip/node_modules/jwa/",\
         "packageDependencies": [\
           ["buffer-equal-constant-time", "npm:1.0.1"],\
           ["ecdsa-sig-formatter", "npm:1.0.11"],\
-          ["jwa", "npm:1.4.1"],\
-          ["safe-buffer", "npm:5.2.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:2.0.0", {\
-        "packageLocation": "./.yarn/cache/jwa-npm-2.0.0-52a7c3f1ca-ab983f6685.zip/node_modules/jwa/",\
-        "packageDependencies": [\
-          ["buffer-equal-constant-time", "npm:1.0.1"],\
-          ["ecdsa-sig-formatter", "npm:1.0.11"],\
-          ["jwa", "npm:2.0.0"],\
+          ["jwa", "npm:1.4.2"],\
           ["safe-buffer", "npm:5.2.1"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["jws", [\
-      ["npm:3.2.2", {\
-        "packageLocation": "./.yarn/cache/jws-npm-3.2.2-c1ae59c7af-70b016974a.zip/node_modules/jws/",\
+      ["npm:3.2.3", {\
+        "packageLocation": "./.yarn/cache/jws-npm-3.2.3-b393e05a7c-707387dd1c.zip/node_modules/jws/",\
         "packageDependencies": [\
-          ["jwa", "npm:1.4.1"],\
-          ["jws", "npm:3.2.2"],\
-          ["safe-buffer", "npm:5.2.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:4.0.0", {\
-        "packageLocation": "./.yarn/cache/jws-npm-4.0.0-2a24fd53b9-1d15f4cdea.zip/node_modules/jws/",\
-        "packageDependencies": [\
-          ["jwa", "npm:2.0.0"],\
-          ["jws", "npm:4.0.0"],\
+          ["jwa", "npm:1.4.2"],\
+          ["jws", "npm:3.2.3"],\
           ["safe-buffer", "npm:5.2.1"]\
         ],\
         "linkType": "HARD"\

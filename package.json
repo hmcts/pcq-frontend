@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.229",
+  "version": "1.2.230",
   "license": "MIT",
   "engines": {
     "node": ">=14.18.1"
@@ -140,7 +140,8 @@
     "import-in-the-middle": "1.15.0",
     "cross-spawn": "7.0.6",
     "brace-expansion": "^2.0.1",
-    "ip": "2.0.1"
+    "ip": "2.0.1",
+    "jws": "3.2.3"
   },
   "nyc": {
     "report-dir": "functional-output/coverage",
