@@ -66,7 +66,7 @@ const RAW_RUNTIME_STATE =
           ["govuk-frontend", "npm:5.13.0"],\
           ["helmet", "npm:3.23.3"],\
           ["https-proxy-agent", "npm:5.0.1"],\
-          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.7.1"],\
+          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.7.3"],\
           ["immutable", "npm:5.1.4"],\
           ["ioredis", "npm:5.8.2"],\
           ["js-yaml", "npm:4.1.1"],\
@@ -12582,19 +12582,19 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["i18next", [\
-      ["npm:25.7.1", {\
-        "packageLocation": "./.yarn/cache/i18next-npm-25.7.1-f5373c01cf-7ae61c5ad3.zip/node_modules/i18next/",\
+      ["npm:25.7.3", {\
+        "packageLocation": "./.yarn/cache/i18next-npm-25.7.3-809a0c5aa6-ec6601b226.zip/node_modules/i18next/",\
         "packageDependencies": [\
-          ["i18next", "npm:25.7.1"]\
+          ["i18next", "npm:25.7.3"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.7.1", {\
-        "packageLocation": "./.yarn/__virtual__/i18next-virtual-b1ad867806/0/cache/i18next-npm-25.7.1-f5373c01cf-7ae61c5ad3.zip/node_modules/i18next/",\
+      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.7.3", {\
+        "packageLocation": "./.yarn/__virtual__/i18next-virtual-3c6f5c819b/0/cache/i18next-npm-25.7.3-809a0c5aa6-ec6601b226.zip/node_modules/i18next/",\
         "packageDependencies": [\
           ["@babel/runtime", "npm:7.28.4"],\
           ["@types/typescript", null],\
-          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.7.1"],\
+          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.7.3"],\
           ["typescript", null]\
         ],\
         "packagePeers": [\
@@ -17392,7 +17392,7 @@ const RAW_RUNTIME_STATE =
           ["govuk-frontend", "npm:5.13.0"],\
           ["helmet", "npm:3.23.3"],\
           ["https-proxy-agent", "npm:5.0.1"],\
-          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.7.1"],\
+          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.7.3"],\
           ["immutable", "npm:5.1.4"],\
           ["ioredis", "npm:5.8.2"],\
           ["js-yaml", "npm:4.1.1"],\
