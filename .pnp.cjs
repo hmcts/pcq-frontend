@@ -70,7 +70,7 @@ const RAW_RUNTIME_STATE =
           ["immutable", "npm:5.1.4"],\
           ["ioredis", "npm:5.8.2"],\
           ["js-yaml", "npm:4.1.1"],\
-          ["jsonwebtoken", "npm:9.0.2"],\
+          ["jsonwebtoken", "npm:9.0.3"],\
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
           ["lodash", "npm:4.17.21"],\
           ["mocha", "npm:11.7.5"],\
@@ -614,7 +614,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@azure/msal-common", "npm:14.14.0"],\
           ["@azure/msal-node", "npm:2.12.0"],\
-          ["jsonwebtoken", "npm:9.0.0"],\
+          ["jsonwebtoken", "npm:9.0.3"],\
           ["uuid", "npm:8.3.2"]\
         ],\
         "linkType": "HARD"\
@@ -624,7 +624,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@azure/msal-common", "npm:15.2.1"],\
           ["@azure/msal-node", "npm:3.3.0"],\
-          ["jsonwebtoken", "npm:9.0.0"],\
+          ["jsonwebtoken", "npm:9.0.3"],\
           ["uuid", "npm:8.3.2"]\
         ],\
         "linkType": "HARD"\
@@ -14136,21 +14136,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["jsonwebtoken", [\
-      ["npm:9.0.0", {\
-        "packageLocation": "./.yarn/cache/jsonwebtoken-npm-9.0.0-36fd1594c0-769ea563e9.zip/node_modules/jsonwebtoken/",\
+      ["npm:9.0.3", {\
+        "packageLocation": "./.yarn/cache/jsonwebtoken-npm-9.0.3-c3c17849ba-a67a276db4.zip/node_modules/jsonwebtoken/",\
         "packageDependencies": [\
-          ["jsonwebtoken", "npm:9.0.0"],\
-          ["jws", "npm:3.2.3"],\
-          ["lodash", "npm:4.17.21"],\
-          ["ms", "npm:2.1.3"],\
-          ["semver", "npm:7.5.4"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:9.0.2", {\
-        "packageLocation": "./.yarn/cache/jsonwebtoken-npm-9.0.2-42c6b14d02-6e9b6d879c.zip/node_modules/jsonwebtoken/",\
-        "packageDependencies": [\
-          ["jsonwebtoken", "npm:9.0.2"],\
+          ["jsonwebtoken", "npm:9.0.3"],\
           ["jws", "npm:3.2.3"],\
           ["lodash.includes", "npm:4.3.0"],\
           ["lodash.isboolean", "npm:3.0.3"],\
@@ -17396,7 +17385,7 @@ const RAW_RUNTIME_STATE =
           ["immutable", "npm:5.1.4"],\
           ["ioredis", "npm:5.8.2"],\
           ["js-yaml", "npm:4.1.1"],\
-          ["jsonwebtoken", "npm:9.0.2"],\
+          ["jsonwebtoken", "npm:9.0.3"],\
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
           ["lodash", "npm:4.17.21"],\
           ["mocha", "npm:11.7.5"],\
