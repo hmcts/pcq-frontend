@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.229",
+  "version": "1.2.230",
   "license": "MIT",
   "engines": {
     "node": ">=14.18.1"
@@ -133,14 +133,15 @@
   },
   "resolutions": {
     "json5": "2.2.3",
-    "send": "0.19.1",
+    "send": "0.19.2",
     "cookie": "1.1.1",
     "merge": "2.1.1",
     "ws": "8.18.3",
     "import-in-the-middle": "1.15.0",
     "cross-spawn": "7.0.6",
     "brace-expansion": "^2.0.1",
-    "ip": "2.0.1"
+    "ip": "2.0.1",
+    "jws": "3.2.3"
   },
   "nyc": {
     "report-dir": "functional-output/coverage",
