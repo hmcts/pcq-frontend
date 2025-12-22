@@ -15578,7 +15578,7 @@ const RAW_RUNTIME_STATE =
           ["prop-types", "npm:15.8.1"],\
           ["tcomb", "npm:3.2.29"],\
           ["tcomb-validation", "npm:3.4.1"],\
-          ["validator", "npm:13.15.20"],\
+          ["validator", "npm:13.15.23"],\
           ["yargs", "npm:17.5.1"]\
         ],\
         "linkType": "HARD"\
@@ -20675,10 +20675,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["validator", [\
-      ["npm:13.15.20", {\
-        "packageLocation": "./.yarn/cache/validator-npm-13.15.20-81be70a87b-498f9b201d.zip/node_modules/validator/",\
+      ["npm:13.15.23", {\
+        "packageLocation": "./.yarn/cache/validator-npm-13.15.23-617cdf95cc-03e4a37c04.zip/node_modules/validator/",\
         "packageDependencies": [\
-          ["validator", "npm:13.15.20"]\
+          ["validator", "npm:13.15.23"]\
         ],\
         "linkType": "HARD"\
       }]\
