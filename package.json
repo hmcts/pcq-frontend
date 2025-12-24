@@ -4,7 +4,7 @@
   "version": "1.2.230",
   "license": "MIT",
   "engines": {
-    "node": ">=14.18.1"
+    "node": ">=20.0.0"
   },
   "scripts": {
     "preinstall": "./bin/preinstall.sh || true",
