@@ -70,13 +70,19 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     app.enable('trust proxy');
 
     // Security library helmet to verify 11 smaller middleware functions
-    app.use(helmet());
+    app.use(helmet({
+        contentSecurityPolicy: false,
+        referrerPolicy: false,
+        crossOriginEmbedderPolicy: false,
+        crossOriginOpenerPolicy: false,
+        crossOriginResourcePolicy: false
+    }));
 
     // Content security policy to allow just assets from same domain
     app.use(helmet.contentSecurityPolicy({
         directives: {
             defaultSrc: ['\'self\''],
-            fontSrc: ['\'self\' data:', 'fonts.gstatic.com'],
+            fontSrc: ['\'self\'', 'data:', 'fonts.gstatic.com'],
             scriptSrc: [
                 '\'self\'',
                 '\'sha256-GUQ5ad8JK5KmEWmROf3LZd9ge94daqNvd8xy9YS1iDw=\'',
@@ -102,7 +108,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
             frameSrc: ['vcc-eu4.8x8.com', 'vcc-eu4b.8x8.com'],
             imgSrc: [
                 '\'self\'',
-                '\'self\' data:',
+                'data:',
                 'https://*.google-analytics.com',
                 'https://*.analytics.google.com',
                 'https://*.googletagmanager.com',
@@ -121,14 +127,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
             ],
             frameAncestors: ['\'self\'']
         },
-        browserSniff: false,
-        setAllHeaders: false
-    }));
-
-    // Http public key pinning
-    app.use(helmet.hpkp({
-        maxAge: 900,
-        sha256s: ['AbCdEf123=', 'XyzABC123=']
+        useDefaults: false
     }));
 
     // Referrer policy for helmet
@@ -136,9 +135,13 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         policy: 'origin'
     }));
 
-    app.use(helmet.noCache());
-
-    app.use(helmet.xssFilter({setOnOldIE: true}));
+    app.use((req, res, next) => {
+        res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+        res.setHeader('Pragma', 'no-cache');
+        res.setHeader('Expires', '0');
+        res.setHeader('Surrogate-Control', 'no-store');
+        next();
+    });
 
     app.use((req, res, next) => {
         res.removeHeader('Accept-Ranges');
