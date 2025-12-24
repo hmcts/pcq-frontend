@@ -1,10 +1,10 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.230",
+  "version": "1.2.231",
   "license": "MIT",
   "engines": {
-    "node": ">=14.18.1"
+    "node": ">=20.0.0"
   },
   "scripts": {
     "preinstall": "./bin/preinstall.sh || true",
@@ -65,7 +65,7 @@
     "express-urlrewrite": "^2.0.1",
     "git-rev-sync": "^3.0.2",
     "govuk-frontend": "^5.4.0",
-    "helmet": "^3.23.3",
+    "helmet": "^6.2.0",
     "https-proxy-agent": "^5.0.1",
     "i18next": "^25.0.0",
     "ioredis": "^5.3.2",
