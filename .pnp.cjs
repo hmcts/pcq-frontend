@@ -3816,7 +3816,7 @@ const RAW_RUNTIME_STATE =
           ["@opentelemetry/instrumentation", "virtual:0e053620b5edf882443272dda3c232f8a68fccbe23c2a49442092338f266fea4d2ddea17869f20d8b01aa167ea7c54f0181154a5c980c6e249309818ebc81b38#npm:0.53.0"],\
           ["@types/opentelemetry__api", null],\
           ["@types/shimmer", "npm:1.2.0"],\
-          ["import-in-the-middle", "npm:1.15.0"],\
+          ["import-in-the-middle", "npm:2.0.1"],\
           ["require-in-the-middle", "npm:7.2.0"],\
           ["semver", "npm:7.6.3"],\
           ["shimmer", "npm:1.2.1"]\
@@ -3834,7 +3834,7 @@ const RAW_RUNTIME_STATE =
           ["@opentelemetry/api-logs", "npm:0.208.0"],\
           ["@opentelemetry/instrumentation", "virtual:bad39d092d0d8210c130ec7e38dad347d48da9a91f5528ea760c3648573b7e7497faab81d83f192044849f0bf472133910213d1a0b569f34bcc5f9da1c4b5926#npm:0.208.0"],\
           ["@types/opentelemetry__api", null],\
-          ["import-in-the-middle", "npm:1.15.0"],\
+          ["import-in-the-middle", "npm:2.0.1"],\
           ["require-in-the-middle", "npm:8.0.1"]\
         ],\
         "packagePeers": [\
@@ -3851,7 +3851,7 @@ const RAW_RUNTIME_STATE =
           ["@opentelemetry/instrumentation", "virtual:e430023ce8bea844a7a40e96b7b41dcb632d30e09db19c5fc11a4160162017d9180db6d464596b231481c0f84bb73c58a8e914f33e423420f33de3623a228783#npm:0.200.0"],\
           ["@types/opentelemetry__api", null],\
           ["@types/shimmer", "npm:1.2.0"],\
-          ["import-in-the-middle", "npm:1.15.0"],\
+          ["import-in-the-middle", "npm:2.0.1"],\
           ["require-in-the-middle", "npm:7.2.0"],\
           ["shimmer", "npm:1.2.1"]\
         ],\
@@ -6276,12 +6276,12 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:22df041632a7b0c8f4ca9637c22d2ce838b958d4385e6ad755da970593788d9207795bbbc88496bcb7196e5dffc46b415b181657b8660e1f97e9e529196fb1c6#npm:1.9.5", {\
-        "packageLocation": "./.yarn/__virtual__/acorn-import-attributes-virtual-7339951b02/0/cache/acorn-import-attributes-npm-1.9.5-d1e666eb35-8bfbfbb6e2.zip/node_modules/acorn-import-attributes/",\
+      ["virtual:0bc27e1578afd692efca309a518ae46ff132429ed144848831d93a327994c86a5a9d0525d312aabba65216465ab73a4ce12c1afac55af598b178ccb3af67c3c0#npm:1.9.5", {\
+        "packageLocation": "./.yarn/__virtual__/acorn-import-attributes-virtual-362f6a71fd/0/cache/acorn-import-attributes-npm-1.9.5-d1e666eb35-8bfbfbb6e2.zip/node_modules/acorn-import-attributes/",\
         "packageDependencies": [\
           ["@types/acorn", null],\
           ["acorn", "npm:8.14.0"],\
-          ["acorn-import-attributes", "virtual:22df041632a7b0c8f4ca9637c22d2ce838b958d4385e6ad755da970593788d9207795bbbc88496bcb7196e5dffc46b415b181657b8660e1f97e9e529196fb1c6#npm:1.9.5"]\
+          ["acorn-import-attributes", "virtual:0bc27e1578afd692efca309a518ae46ff132429ed144848831d93a327994c86a5a9d0525d312aabba65216465ab73a4ce12c1afac55af598b178ccb3af67c3c0#npm:1.9.5"]\
         ],\
         "packagePeers": [\
           "@types/acorn",\
@@ -12729,13 +12729,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["import-in-the-middle", [\
-      ["npm:1.15.0", {\
-        "packageLocation": "./.yarn/cache/import-in-the-middle-npm-1.15.0-22df041632-a1ff65ea55.zip/node_modules/import-in-the-middle/",\
+      ["npm:2.0.1", {\
+        "packageLocation": "./.yarn/cache/import-in-the-middle-npm-2.0.1-0bc27e1578-fe4e9bc9b6.zip/node_modules/import-in-the-middle/",\
         "packageDependencies": [\
           ["acorn", "npm:8.14.0"],\
-          ["acorn-import-attributes", "virtual:22df041632a7b0c8f4ca9637c22d2ce838b958d4385e6ad755da970593788d9207795bbbc88496bcb7196e5dffc46b415b181657b8660e1f97e9e529196fb1c6#npm:1.9.5"],\
+          ["acorn-import-attributes", "virtual:0bc27e1578afd692efca309a518ae46ff132429ed144848831d93a327994c86a5a9d0525d312aabba65216465ab73a4ce12c1afac55af598b178ccb3af67c3c0#npm:1.9.5"],\
           ["cjs-module-lexer", "npm:1.2.3"],\
-          ["import-in-the-middle", "npm:1.15.0"],\
+          ["import-in-the-middle", "npm:2.0.1"],\
           ["module-details-from-path", "npm:1.0.3"]\
         ],\
         "linkType": "HARD"\
