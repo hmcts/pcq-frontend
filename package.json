@@ -136,7 +136,7 @@
     "send": "0.19.2",
     "cookie": "1.1.1",
     "merge": "2.1.1",
-    "ws": "8.18.3",
+    "ws": "8.19.0",
     "import-in-the-middle": "2.0.1",
     "cross-spawn": "7.0.6",
     "brace-expansion": "^2.0.1",
