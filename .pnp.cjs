@@ -107,7 +107,7 @@ const RAW_RUNTIME_STATE =
           ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.46.0"],\
           ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.103.0"],\
           ["webpack-cli", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:6.0.1"],\
-          ["winston", "npm:3.18.3"],\
+          ["winston", "npm:3.19.0"],\
           ["winston-transport", "npm:4.9.0"],\
           ["yarn-audit-fix", "npm:10.1.1"]\
         ],\
@@ -2557,7 +2557,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
           ["moment", "npm:2.30.1"],\
           ["on-finished", "npm:2.4.1"],\
-          ["winston", "npm:2.4.6"]\
+          ["winston", "npm:2.4.7"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6015,7 +6015,7 @@ const RAW_RUNTIME_STATE =
           ["chalk", "npm:4.1.2"],\
           ["expect", null],\
           ["pngjs", "npm:7.0.0"],\
-          ["winston", "npm:3.18.3"]\
+          ["winston", "npm:3.19.0"]\
         ],\
         "packagePeers": [\
           "@types/expect",\
@@ -6796,6 +6796,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["async", [\
+      ["npm:2.6.4", {\
+        "packageLocation": "./.yarn/cache/async-npm-2.6.4-3155e80151-df8e52817d.zip/node_modules/async/",\
+        "packageDependencies": [\
+          ["async", "npm:2.6.4"],\
+          ["lodash", "npm:4.17.21"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:3.2.4", {\
         "packageLocation": "./.yarn/cache/async-npm-3.2.4-aba13508f9-bebb5dc225.zip/node_modules/async/",\
         "packageDependencies": [\
@@ -17387,7 +17395,7 @@ const RAW_RUNTIME_STATE =
           ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.46.0"],\
           ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.103.0"],\
           ["webpack-cli", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:6.0.1"],\
-          ["winston", "npm:3.18.3"],\
+          ["winston", "npm:3.19.0"],\
           ["winston-transport", "npm:4.9.0"],\
           ["yarn-audit-fix", "npm:10.1.1"]\
         ],\
@@ -21121,21 +21129,21 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["winston", [\
-      ["npm:2.4.6", {\
-        "packageLocation": "./.yarn/cache/winston-npm-2.4.6-0a71eef9c3-9f653d3f87.zip/node_modules/winston/",\
+      ["npm:2.4.7", {\
+        "packageLocation": "./.yarn/cache/winston-npm-2.4.7-f6df5db564-44665f99bb.zip/node_modules/winston/",\
         "packageDependencies": [\
-          ["async", "npm:3.2.4"],\
+          ["async", "npm:2.6.4"],\
           ["colors", "npm:1.0.3"],\
           ["cycle", "npm:1.0.3"],\
           ["eyes", "npm:0.1.8"],\
           ["isstream", "npm:0.1.2"],\
           ["stack-trace", "npm:0.0.10"],\
-          ["winston", "npm:2.4.6"]\
+          ["winston", "npm:2.4.7"]\
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:3.18.3", {\
-        "packageLocation": "./.yarn/cache/winston-npm-3.18.3-60bcb643a0-0d94690e05.zip/node_modules/winston/",\
+      ["npm:3.19.0", {\
+        "packageLocation": "./.yarn/cache/winston-npm-3.19.0-186e261f8d-8279e221d8.zip/node_modules/winston/",\
         "packageDependencies": [\
           ["@colors/colors", "npm:1.6.0"],\
           ["@dabh/diagnostics", "npm:2.0.8"],\
@@ -21147,7 +21155,7 @@ const RAW_RUNTIME_STATE =
           ["safe-stable-stringify", "npm:2.4.3"],\
           ["stack-trace", "npm:0.0.10"],\
           ["triple-beam", "npm:1.4.1"],\
-          ["winston", "npm:3.18.3"],\
+          ["winston", "npm:3.19.0"],\
           ["winston-transport", "npm:4.9.0"]\
         ],\
         "linkType": "HARD"\
