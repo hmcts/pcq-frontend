@@ -33,7 +33,7 @@ const RAW_RUNTIME_STATE =
           ["@eslint/js", "npm:9.39.2"],\
           ["@hmcts/cookie-manager", "npm:1.1.0"],\
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
-          ["@hmcts/properties-volume", "npm:1.2.0"],\
+          ["@hmcts/properties-volume", "npm:1.3.0"],\
           ["@opentelemetry/api", "npm:1.9.0"],\
           ["@opentelemetry/context-async-hooks", "virtual:9d2bfaebefd4a1a30dc511101384c466c03581d83bc4eef7eea04cb42a877fab2981719a3ca28ca43b9f1309a1473933c836d6953bfa897d1055f2ae6e7a0059#npm:2.2.0"],\
           ["@parcel/watcher", "npm:2.5.1"],\
@@ -143,6 +143,21 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@azure-rest/core-client", [\
+      ["npm:2.5.1", {\
+        "packageLocation": "./.yarn/cache/@azure-rest-core-client-npm-2.5.1-33ab19c97e-622eb43411.zip/node_modules/@azure-rest/core-client/",\
+        "packageDependencies": [\
+          ["@azure-rest/core-client", "npm:2.5.1"],\
+          ["@azure/abort-controller", "npm:2.1.2"],\
+          ["@azure/core-auth", "npm:1.10.1"],\
+          ["@azure/core-rest-pipeline", "npm:1.22.2"],\
+          ["@azure/core-tracing", "npm:1.3.1"],\
+          ["@typespec/ts-http-runtime", "npm:0.3.2"],\
+          ["tslib", "npm:2.8.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@azure/abort-controller", [\
       ["npm:1.1.0", {\
         "packageLocation": "./.yarn/cache/@azure-abort-controller-npm-1.1.0-5b4e309629-1efe8735cf.zip/node_modules/@azure/abort-controller/",\
@@ -177,16 +192,6 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@azure/abort-controller", "npm:1.1.0"],\
           ["@azure/core-auth", "npm:1.4.0"],\
-          ["tslib", "npm:2.8.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:1.5.0", {\
-        "packageLocation": "./.yarn/cache/@azure-core-auth-npm-1.5.0-f02d565dd9-07d93f672e.zip/node_modules/@azure/core-auth/",\
-        "packageDependencies": [\
-          ["@azure/abort-controller", "npm:1.1.0"],\
-          ["@azure/core-auth", "npm:1.5.0"],\
-          ["@azure/core-util", "npm:1.6.1"],\
           ["tslib", "npm:2.8.1"]\
         ],\
         "linkType": "HARD"\
@@ -247,23 +252,23 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@azure/core-http-compat", [\
-      ["npm:1.3.0", {\
-        "packageLocation": "./.yarn/cache/@azure-core-http-compat-npm-1.3.0-5f89920f91-cdbd71f7eb.zip/node_modules/@azure/core-http-compat/",\
+      ["npm:2.3.1", {\
+        "packageLocation": "./.yarn/cache/@azure-core-http-compat-npm-2.3.1-afd2f01f9c-4f573a2f90.zip/node_modules/@azure/core-http-compat/",\
         "packageDependencies": [\
-          ["@azure/abort-controller", "npm:1.1.0"],\
-          ["@azure/core-client", "npm:1.7.3"],\
-          ["@azure/core-http-compat", "npm:1.3.0"],\
-          ["@azure/core-rest-pipeline", "npm:1.11.0"]\
+          ["@azure/abort-controller", "npm:2.1.2"],\
+          ["@azure/core-client", "npm:1.10.1"],\
+          ["@azure/core-http-compat", "npm:2.3.1"],\
+          ["@azure/core-rest-pipeline", "npm:1.22.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@azure/core-lro", [\
-      ["npm:2.5.3", {\
-        "packageLocation": "./.yarn/cache/@azure-core-lro-npm-2.5.3-3708742b93-13386edafb.zip/node_modules/@azure/core-lro/",\
+      ["npm:2.7.2", {\
+        "packageLocation": "./.yarn/cache/@azure-core-lro-npm-2.7.2-8c7fa05bf6-73b4e1d74a.zip/node_modules/@azure/core-lro/",\
         "packageDependencies": [\
-          ["@azure/abort-controller", "npm:1.1.0"],\
-          ["@azure/core-lro", "npm:2.5.3"],\
+          ["@azure/abort-controller", "npm:2.1.2"],\
+          ["@azure/core-lro", "npm:2.7.2"],\
           ["@azure/core-util", "npm:1.3.2"],\
           ["@azure/logger", "npm:1.0.3"],\
           ["tslib", "npm:2.8.1"]\
@@ -272,10 +277,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@azure/core-paging", [\
-      ["npm:1.5.0", {\
-        "packageLocation": "./.yarn/cache/@azure-core-paging-npm-1.5.0-63e6dd76d4-b02bbd7b3b.zip/node_modules/@azure/core-paging/",\
+      ["npm:1.6.2", {\
+        "packageLocation": "./.yarn/cache/@azure-core-paging-npm-1.6.2-443aafee6d-fb1d4c4fcd.zip/node_modules/@azure/core-paging/",\
         "packageDependencies": [\
-          ["@azure/core-paging", "npm:1.5.0"],\
+          ["@azure/core-paging", "npm:1.6.2"],\
           ["tslib", "npm:2.8.1"]\
         ],\
         "linkType": "HARD"\
@@ -392,15 +397,6 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:1.6.1", {\
-        "packageLocation": "./.yarn/cache/@azure-core-util-npm-1.6.1-320643eba9-e6baec7181.zip/node_modules/@azure/core-util/",\
-        "packageDependencies": [\
-          ["@azure/abort-controller", "npm:1.1.0"],\
-          ["@azure/core-util", "npm:1.6.1"],\
-          ["tslib", "npm:2.8.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:1.9.1", {\
         "packageLocation": "./.yarn/cache/@azure-core-util-npm-1.9.1-2bcbbcecde-0b9d331430.zip/node_modules/@azure/core-util/",\
         "packageDependencies": [\
@@ -434,23 +430,20 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@azure/identity", [\
-      ["npm:4.4.0", {\
-        "packageLocation": "./.yarn/cache/@azure-identity-npm-4.4.0-80dd1242a4-77d5821e51.zip/node_modules/@azure/identity/",\
+      ["npm:4.13.0", {\
+        "packageLocation": "./.yarn/cache/@azure-identity-npm-4.13.0-341784cb11-8b97154ac8.zip/node_modules/@azure/identity/",\
         "packageDependencies": [\
-          ["@azure/abort-controller", "npm:1.1.0"],\
-          ["@azure/core-auth", "npm:1.5.0"],\
+          ["@azure/abort-controller", "npm:2.1.2"],\
+          ["@azure/core-auth", "npm:1.9.0"],\
           ["@azure/core-client", "npm:1.9.2"],\
-          ["@azure/core-rest-pipeline", "npm:1.11.0"],\
+          ["@azure/core-rest-pipeline", "npm:1.19.1"],\
           ["@azure/core-tracing", "npm:1.0.1"],\
-          ["@azure/core-util", "npm:1.3.2"],\
-          ["@azure/identity", "npm:4.4.0"],\
+          ["@azure/core-util", "npm:1.11.0"],\
+          ["@azure/identity", "npm:4.13.0"],\
           ["@azure/logger", "npm:1.0.3"],\
-          ["@azure/msal-browser", "npm:3.20.0"],\
-          ["@azure/msal-node", "npm:2.12.0"],\
-          ["events", "npm:3.3.0"],\
-          ["jws", "npm:3.2.3"],\
-          ["open", "npm:8.4.2"],\
-          ["stoppable", "npm:1.1.0"],\
+          ["@azure/msal-browser", "npm:4.7.0"],\
+          ["@azure/msal-node", "npm:3.8.4"],\
+          ["open", "npm:10.1.0"],\
           ["tslib", "npm:2.8.1"]\
         ],\
         "linkType": "HARD"\
@@ -477,21 +470,39 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["@azure/keyvault-secrets", [\
-      ["npm:4.7.0", {\
-        "packageLocation": "./.yarn/cache/@azure-keyvault-secrets-npm-4.7.0-a5e8780c58-4c3939cfb6.zip/node_modules/@azure/keyvault-secrets/",\
+    ["@azure/keyvault-common", [\
+      ["npm:2.0.0", {\
+        "packageLocation": "./.yarn/cache/@azure-keyvault-common-npm-2.0.0-63647fff87-c2124c6d57.zip/node_modules/@azure/keyvault-common/",\
         "packageDependencies": [\
-          ["@azure/abort-controller", "npm:1.1.0"],\
+          ["@azure/abort-controller", "npm:2.1.2"],\
           ["@azure/core-auth", "npm:1.4.0"],\
           ["@azure/core-client", "npm:1.7.3"],\
-          ["@azure/core-http-compat", "npm:1.3.0"],\
-          ["@azure/core-lro", "npm:2.5.3"],\
-          ["@azure/core-paging", "npm:1.5.0"],\
           ["@azure/core-rest-pipeline", "npm:1.11.0"],\
           ["@azure/core-tracing", "npm:1.0.1"],\
-          ["@azure/core-util", "npm:1.2.0"],\
-          ["@azure/keyvault-secrets", "npm:4.7.0"],\
-          ["@azure/logger", "npm:1.0.3"],\
+          ["@azure/core-util", "npm:1.13.1"],\
+          ["@azure/keyvault-common", "npm:2.0.0"],\
+          ["@azure/logger", "npm:1.3.0"],\
+          ["tslib", "npm:2.8.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@azure/keyvault-secrets", [\
+      ["npm:4.10.0", {\
+        "packageLocation": "./.yarn/cache/@azure-keyvault-secrets-npm-4.10.0-662949eac7-aed4a7b197.zip/node_modules/@azure/keyvault-secrets/",\
+        "packageDependencies": [\
+          ["@azure-rest/core-client", "npm:2.5.1"],\
+          ["@azure/abort-controller", "npm:2.1.2"],\
+          ["@azure/core-auth", "npm:1.9.0"],\
+          ["@azure/core-http-compat", "npm:2.3.1"],\
+          ["@azure/core-lro", "npm:2.7.2"],\
+          ["@azure/core-paging", "npm:1.6.2"],\
+          ["@azure/core-rest-pipeline", "npm:1.19.1"],\
+          ["@azure/core-tracing", "npm:1.2.0"],\
+          ["@azure/core-util", "npm:1.11.0"],\
+          ["@azure/keyvault-common", "npm:2.0.0"],\
+          ["@azure/keyvault-secrets", "npm:4.10.0"],\
+          ["@azure/logger", "npm:1.3.0"],\
           ["tslib", "npm:2.8.1"]\
         ],\
         "linkType": "HARD"\
@@ -575,14 +586,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@azure/msal-browser", [\
-      ["npm:3.20.0", {\
-        "packageLocation": "./.yarn/cache/@azure-msal-browser-npm-3.20.0-b06c83e8d6-25bf912f41.zip/node_modules/@azure/msal-browser/",\
-        "packageDependencies": [\
-          ["@azure/msal-browser", "npm:3.20.0"],\
-          ["@azure/msal-common", "npm:14.14.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:4.7.0", {\
         "packageLocation": "./.yarn/cache/@azure-msal-browser-npm-4.7.0-f89b8b3c2b-9ed2daa734.zip/node_modules/@azure/msal-browser/",\
         "packageDependencies": [\
@@ -593,10 +596,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@azure/msal-common", [\
-      ["npm:14.14.0", {\
-        "packageLocation": "./.yarn/cache/@azure-msal-common-npm-14.14.0-e59c10cc3d-1c8b19c6e2.zip/node_modules/@azure/msal-common/",\
+      ["npm:15.13.3", {\
+        "packageLocation": "./.yarn/cache/@azure-msal-common-npm-15.13.3-548449c463-7d438e09f0.zip/node_modules/@azure/msal-common/",\
         "packageDependencies": [\
-          ["@azure/msal-common", "npm:14.14.0"]\
+          ["@azure/msal-common", "npm:15.13.3"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -609,21 +612,21 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@azure/msal-node", [\
-      ["npm:2.12.0", {\
-        "packageLocation": "./.yarn/cache/@azure-msal-node-npm-2.12.0-7ffe6b920c-96ae84891a.zip/node_modules/@azure/msal-node/",\
-        "packageDependencies": [\
-          ["@azure/msal-common", "npm:14.14.0"],\
-          ["@azure/msal-node", "npm:2.12.0"],\
-          ["jsonwebtoken", "npm:9.0.3"],\
-          ["uuid", "npm:8.3.2"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:3.3.0", {\
         "packageLocation": "./.yarn/cache/@azure-msal-node-npm-3.3.0-583e8b4a58-4ec1e1a5b0.zip/node_modules/@azure/msal-node/",\
         "packageDependencies": [\
           ["@azure/msal-common", "npm:15.2.1"],\
           ["@azure/msal-node", "npm:3.3.0"],\
+          ["jsonwebtoken", "npm:9.0.3"],\
+          ["uuid", "npm:8.3.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:3.8.4", {\
+        "packageLocation": "./.yarn/cache/@azure-msal-node-npm-3.8.4-f8476cabc6-183c52f21d.zip/node_modules/@azure/msal-node/",\
+        "packageDependencies": [\
+          ["@azure/msal-common", "npm:15.13.3"],\
+          ["@azure/msal-node", "npm:3.8.4"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["uuid", "npm:8.3.2"]\
         ],\
@@ -2560,13 +2563,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@hmcts/properties-volume", [\
-      ["npm:1.2.0", {\
-        "packageLocation": "./.yarn/cache/@hmcts-properties-volume-npm-1.2.0-3245eeab8f-d808737225.zip/node_modules/@hmcts/properties-volume/",\
+      ["npm:1.3.0", {\
+        "packageLocation": "./.yarn/cache/@hmcts-properties-volume-npm-1.3.0-87e64a3a99-e88ed2a3e8.zip/node_modules/@hmcts/properties-volume/",\
         "packageDependencies": [\
-          ["@azure/identity", "npm:4.4.0"],\
-          ["@azure/keyvault-secrets", "npm:4.7.0"],\
+          ["@azure/identity", "npm:4.13.0"],\
+          ["@azure/keyvault-secrets", "npm:4.10.0"],\
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
-          ["@hmcts/properties-volume", "npm:1.2.0"],\
+          ["@hmcts/properties-volume", "npm:1.3.0"],\
           ["js-yaml", "npm:4.1.1"],\
           ["lodash", "npm:4.17.21"]\
         ],\
@@ -9300,13 +9303,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["define-lazy-prop", [\
-      ["npm:2.0.0", {\
-        "packageLocation": "./.yarn/cache/define-lazy-prop-npm-2.0.0-bba0cd91a7-0115fdb065.zip/node_modules/define-lazy-prop/",\
-        "packageDependencies": [\
-          ["define-lazy-prop", "npm:2.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:3.0.0", {\
         "packageLocation": "./.yarn/cache/define-lazy-prop-npm-3.0.0-6bb0fc1510-f28421cf9e.zip/node_modules/define-lazy-prop/",\
         "packageDependencies": [\
@@ -16350,16 +16346,6 @@ const RAW_RUNTIME_STATE =
           ["open", "npm:7.4.2"]\
         ],\
         "linkType": "HARD"\
-      }],\
-      ["npm:8.4.2", {\
-        "packageLocation": "./.yarn/unplugged/open-npm-8.4.2-1f763e8b75/node_modules/open/",\
-        "packageDependencies": [\
-          ["define-lazy-prop", "npm:2.0.0"],\
-          ["is-docker", "npm:2.2.1"],\
-          ["is-wsl", "npm:2.2.0"],\
-          ["open", "npm:8.4.2"]\
-        ],\
-        "linkType": "HARD"\
       }]\
     ]],\
     ["opener", [\
@@ -17327,7 +17313,7 @@ const RAW_RUNTIME_STATE =
           ["@eslint/js", "npm:9.39.2"],\
           ["@hmcts/cookie-manager", "npm:1.1.0"],\
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
-          ["@hmcts/properties-volume", "npm:1.2.0"],\
+          ["@hmcts/properties-volume", "npm:1.3.0"],\
           ["@opentelemetry/api", "npm:1.9.0"],\
           ["@opentelemetry/context-async-hooks", "virtual:9d2bfaebefd4a1a30dc511101384c466c03581d83bc4eef7eea04cb42a877fab2981719a3ca28ca43b9f1309a1473933c836d6953bfa897d1055f2ae6e7a0059#npm:2.2.0"],\
           ["@parcel/watcher", "npm:2.5.1"],\
