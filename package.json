@@ -139,7 +139,7 @@
     "ws": "8.18.3",
     "import-in-the-middle": "2.0.1",
     "cross-spawn": "7.0.6",
-    "brace-expansion": "^2.0.1",
+    "brace-expansion": "^4.0.0",
     "ip": "2.0.1",
     "jws": "3.2.3"
   },
