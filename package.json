@@ -4,7 +4,7 @@
   "version": "1.2.230",
   "license": "MIT",
   "engines": {
-    "node": ">=14.18.1"
+    "node": ">=20.0.0"
   },
   "scripts": {
     "preinstall": "./bin/preinstall.sh || true",
@@ -56,7 +56,7 @@
     "body-parser": "^2.0.0",
     "co": "^4.6.0",
     "compression": "^1.8.1",
-    "config": "^3.3.11",
+    "config": "^4.0.0",
     "connect-redis": "^5.2.0",
     "cookie-parser": "^1.4.4",
     "csrf-sync": "^4.0.3",
