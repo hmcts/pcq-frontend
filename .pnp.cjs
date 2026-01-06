@@ -68,7 +68,7 @@ const RAW_RUNTIME_STATE =
           ["https-proxy-agent", "npm:5.0.1"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.7.3"],\
           ["immutable", "npm:5.1.4"],\
-          ["ioredis", "npm:5.8.2"],\
+          ["ioredis", "npm:5.9.0"],\
           ["js-yaml", "npm:4.1.1"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
@@ -2822,10 +2822,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@ioredis/commands", [\
-      ["npm:1.4.0", {\
-        "packageLocation": "./.yarn/cache/@ioredis-commands-npm-1.4.0-3a627ac2f0-ea299f2205.zip/node_modules/@ioredis/commands/",\
+      ["npm:1.5.0", {\
+        "packageLocation": "./.yarn/cache/@ioredis-commands-npm-1.5.0-a7f9964632-b5a842fde4.zip/node_modules/@ioredis/commands/",\
         "packageDependencies": [\
-          ["@ioredis/commands", "npm:1.4.0"]\
+          ["@ioredis/commands", "npm:1.5.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -12594,14 +12594,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["ioredis", [\
-      ["npm:5.8.2", {\
-        "packageLocation": "./.yarn/cache/ioredis-npm-5.8.2-c93c355ee3-550cbe7bba.zip/node_modules/ioredis/",\
+      ["npm:5.9.0", {\
+        "packageLocation": "./.yarn/cache/ioredis-npm-5.9.0-1824405181-6f91013861.zip/node_modules/ioredis/",\
         "packageDependencies": [\
-          ["@ioredis/commands", "npm:1.4.0"],\
+          ["@ioredis/commands", "npm:1.5.0"],\
           ["cluster-key-slot", "npm:1.1.0"],\
           ["debug", "virtual:2b51d83636a42cdc1434b9a574324a754fe902f0d8f47c84f37fc9dd9e42f0be9d5cd9599ca4ccf8c80b9be5756c7aea000403217e2fd7a585437af81d091cfd#npm:4.4.3"],\
           ["denque", "npm:2.1.0"],\
-          ["ioredis", "npm:5.8.2"],\
+          ["ioredis", "npm:5.9.0"],\
           ["lodash.defaults", "npm:4.2.0"],\
           ["lodash.isarguments", "npm:3.1.0"],\
           ["redis-errors", "npm:1.2.0"],\
@@ -17343,7 +17343,7 @@ const RAW_RUNTIME_STATE =
           ["https-proxy-agent", "npm:5.0.1"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.7.3"],\
           ["immutable", "npm:5.1.4"],\
-          ["ioredis", "npm:5.8.2"],\
+          ["ioredis", "npm:5.9.0"],\
           ["js-yaml", "npm:4.1.1"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
