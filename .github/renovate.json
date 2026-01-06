@@ -10,10 +10,9 @@
     "allowedVersions": "<5.0.0"
   },
   {
-      "groupName": "all non-major dependencies",
-      "groupSlug": "all-minor-patch",
+      "groupName": "all patch dependencies",
+      "groupSlug": "all-patch",
       "matchUpdateTypes": [
-        "minor",
         "patch"
       ],
       "matchPackageNames": [
