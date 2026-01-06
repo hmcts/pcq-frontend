@@ -51,7 +51,7 @@ const RAW_RUNTIME_STATE =
           ["codecov", "npm:4.0.0-0"],\
           ["compression", "npm:1.8.1"],\
           ["config", "npm:4.1.1"],\
-          ["connect-redis", "npm:5.2.0"],\
+          ["connect-redis", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.0.0"],\
           ["cookie-parser", "npm:1.4.7"],\
           ["csrf-sync", "npm:4.2.1"],\
           ["debug", "virtual:2b51d83636a42cdc1434b9a574324a754fe902f0d8f47c84f37fc9dd9e42f0be9d5cd9599ca4ccf8c80b9be5756c7aea000403217e2fd7a585437af81d091cfd#npm:4.4.3"],\
@@ -8662,10 +8662,27 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["connect-redis", [\
-      ["npm:5.2.0", {\
-        "packageLocation": "./.yarn/cache/connect-redis-npm-5.2.0-a7eb1b69e4-74139735f7.zip/node_modules/connect-redis/",\
+      ["npm:9.0.0", {\
+        "packageLocation": "./.yarn/cache/connect-redis-npm-9.0.0-44b8c73dee-da5c6304a3.zip/node_modules/connect-redis/",\
         "packageDependencies": [\
-          ["connect-redis", "npm:5.2.0"]\
+          ["connect-redis", "npm:9.0.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.0.0", {\
+        "packageLocation": "./.yarn/__virtual__/connect-redis-virtual-7a0eb08086/0/cache/connect-redis-npm-9.0.0-44b8c73dee-da5c6304a3.zip/node_modules/connect-redis/",\
+        "packageDependencies": [\
+          ["@types/express-session", null],\
+          ["@types/redis", null],\
+          ["connect-redis", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.0.0"],\
+          ["express-session", "npm:1.18.2"],\
+          ["redis", null]\
+        ],\
+        "packagePeers": [\
+          "@types/express-session",\
+          "@types/redis",\
+          "express-session",\
+          "redis"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -17345,7 +17362,7 @@ const RAW_RUNTIME_STATE =
           ["codecov", "npm:4.0.0-0"],\
           ["compression", "npm:1.8.1"],\
           ["config", "npm:4.1.1"],\
-          ["connect-redis", "npm:5.2.0"],\
+          ["connect-redis", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.0.0"],\
           ["cookie-parser", "npm:1.4.7"],\
           ["csrf-sync", "npm:4.2.1"],\
           ["debug", "virtual:2b51d83636a42cdc1434b9a574324a754fe902f0d8f47c84f37fc9dd9e42f0be9d5cd9599ca4ccf8c80b9be5756c7aea000403217e2fd7a585437af81d091cfd#npm:4.4.3"],\
