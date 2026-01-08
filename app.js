@@ -70,13 +70,26 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     app.enable('trust proxy');
 
     // Security library helmet to verify 11 smaller middleware functions
-    app.use(helmet({
-        contentSecurityPolicy: false,
-        referrerPolicy: false,
-        crossOriginEmbedderPolicy: false,
-        crossOriginOpenerPolicy: false,
-        crossOriginResourcePolicy: false
-    }));
+    app.use(
+        helmet({
+            contentSecurityPolicy: false,
+
+            referrerPolicy: {
+            policy: 'origin'
+            },
+
+            crossOriginOpenerPolicy: {
+            policy: 'same-origin'
+            },
+
+            crossOriginEmbedderPolicy: {
+            policy: 'credentialless'
+            },
+
+            crossOriginResourcePolicy: false
+        })
+     );
+
 
     // Content security policy to allow just assets from same domain
     app.use(helmet.contentSecurityPolicy({
@@ -129,11 +142,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         },
         useDefaults: false
     }));
-
-    // Referrer policy for helmet
-    app.use(helmet.referrerPolicy({
-        policy: 'origin'
-    }));
+ 
 
     app.use((req, res, next) => {
         res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
