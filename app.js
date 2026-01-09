@@ -12,7 +12,6 @@ const session = require('express-session');
 const nunjucks = require('nunjucks');
 const routes = require(`${__dirname}/app/routes`);
 const favicon = require('serve-favicon');
-const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const config = require('config');
 const utils = require(`${__dirname}/app/components/utils`);
@@ -185,8 +184,8 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     app.use(favicon(path.join(govUkFrontendPath, 'govuk', 'assets', 'images', 'favicon.ico')));
 
     // Support for parsing data in POSTs
-    app.use(bodyParser.json());
-    app.use(bodyParser.urlencoded({
+    app.use(express.json());
+    app.use(express.urlencoded({
         extended: true
     }));
 
