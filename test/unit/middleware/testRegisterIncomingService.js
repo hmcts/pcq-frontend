@@ -1,3 +1,4 @@
+
 'use strict';
 
 const expect = require('chai').expect;
@@ -176,93 +177,58 @@ describe('registerIncomingService', () => {
         });
     });
     describe('route', () => {
-        const originalPort = config.app.port;
-        const originalNodeEnvironment = config.nodeEnvironment;
-        const getHealthRequest = () => {
-            const protocol = (config.frontendPublicHttpProtocol || 'http').toLowerCase();
-            const host = config.hostname || 'localhost:4000';
-            const basePath = config.app && config.app.basePath ? config.app.basePath : '';
-            const healthPath = config.healthEndpoint || '/health';
-            const normalizedBase = basePath.replace(/\/+$/, '');
-            const normalizedHealth = healthPath.startsWith('/') ? healthPath : `/${healthPath}`;
-            const path = normalizedBase ? `${normalizedBase}${normalizedHealth}` : normalizedHealth;
-
-            return {origin: `${protocol}://${host}`, path};
-        };
-        const withServerReady = (server, callback) => {
-            if (server.http && server.http.listening) {
-                callback();
-                return;
-            }
-
-            server.http.once('listening', callback);
-        };
-
-        beforeEach(() => {
-            config.app.port = 0;
-            config.nodeEnvironment = 'production';
-        });
 
         afterEach(() => {
             nock.cleanAll();
-            config.app.port = originalPort;
-            config.nodeEnvironment = originalNodeEnvironment;
         });
 
         it('should redirect to /start-page if the backend is up', (done) => {
-            const {origin, path} = getHealthRequest();
-            nock(origin)
-                .get(path)
+            nock('http://localhost:4000')
+                .get('/health')
                 .reply(
                     200,
                     {'pcq-backend': {'status': 'UP'}}
                 );
             const server = app.init();
-            withServerReady(server, () => {
-                const agent = request.agent(server.http);
-                agent.get('/service-endpoint?serviceId=PROBATE&actor=APPLICANT&pcqId=12&ccdCaseId=12&partyId=12&returnUrl=test')
-                    .expect(302)
-                    .end((err, res) => {
-                        server.http.close();
-                        if (err) {
-                            throw err;
-                        }
-                        expect(res.redirect).to.equal(true);
-                        expect(res.header.location).to.equal('/start-page');
-                        done();
-                    });
-            });
+            const agent = request.agent(server.app);
+            agent.get('/service-endpoint?serviceId=PROBATE&actor=APPLICANT&pcqId=12&ccdCaseId=12&partyId=12&returnUrl=test')
+                .expect(302)
+                .end((err, res) => {
+                    server.http.close();
+                    if (err) {
+                        throw err;
+                    }
+                    expect(res.redirect).to.equal(true);
+                    expect(res.header.location).to.equal('/start-page');
+                    done();
+                });
         });
 
         it('should redirect to /offline if the backend is down', (done) => {
-            const {origin, path} = getHealthRequest();
-            nock(origin)
-                .get(path)
+            nock(config.services.pcqBackend.url)
+                .get('/health')
                 .reply(
                     500,
                     {'status': 'DOWN'}
                 );
             const server = app.init();
-            withServerReady(server, () => {
-                const agent = request.agent(server.http);
-                agent.get('/service-endpoint')
-                    .expect(302)
-                    .end((err, res) => {
-                        server.http.close();
-                        if (err) {
-                            throw err;
-                        }
-                        expect(res.redirect).to.equal(true);
-                        expect(res.header.location).to.equal('/offline');
-                        done();
-                    });
-            });
+            const agent = request.agent(server.app);
+            agent.get('/service-endpoint')
+                .expect(302)
+                .end((err, res) => {
+                    server.http.close();
+                    if (err) {
+                        throw err;
+                    }
+                    expect(res.redirect).to.equal(true);
+                    expect(res.header.location).to.equal('/offline');
+                    done();
+                });
         });
 
         it('should redirect to /start-page if the backend is DOWN and backend \'enabled\' is set to false', (done) => {
-            const {origin, path} = getHealthRequest();
-            nock(origin)
-                .get(path)
+            nock('http://localhost:4000')
+                .get('/health')
                 .reply(
                     200,
                     {'pcq-backend': {'status': 'DOWN'}}
@@ -270,20 +236,18 @@ describe('registerIncomingService', () => {
             const rewiredApp = rewire('../../../app');
             rewiredApp.__set__('config.services.pcqBackend.enabled', 'false');
             const server = rewiredApp.init();
-            withServerReady(server, () => {
-                const agent = request.agent(server.http);
-                agent.get('/service-endpoint?serviceId=PROBATE&actor=APPLICANT&pcqId=12&ccdCaseId=12&partyId=12&returnUrl=test')
-                    .expect(302)
-                    .end((err, res) => {
-                        server.http.close();
-                        if (err) {
-                            throw err;
-                        }
-                        expect(res.redirect).to.equal(true);
-                        expect(res.header.location).to.equal('/start-page');
-                        done();
-                    });
-            });
+            const agent = request.agent(server.app);
+            agent.get('/service-endpoint?serviceId=PROBATE&actor=APPLICANT&pcqId=12&ccdCaseId=12&partyId=12&returnUrl=test')
+                .expect(302)
+                .end((err, res) => {
+                    server.http.close();
+                    if (err) {
+                        throw err;
+                    }
+                    expect(res.redirect).to.equal(true);
+                    expect(res.header.location).to.equal('/start-page');
+                    done();
+                });
         });
     });
 });
