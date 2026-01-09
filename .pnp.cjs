@@ -90,7 +90,7 @@ const RAW_RUNTIME_STATE =
           ["react-native", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:0.83.1"],\
           ["require-directory", "npm:2.1.1"],\
           ["rewire", "npm:9.0.1"],\
-          ["sanitizer", "npm:0.1.3"],\
+          ["sanitize-html", "npm:2.17.0"],\
           ["sass", "npm:1.97.2"],\
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:21.0.1"],\
@@ -8032,6 +8032,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["deepmerge", [\
+      ["npm:4.3.1", {\
+        "packageLocation": "./.yarn/cache/deepmerge-npm-4.3.1-4f751a0844-058d9e1b0f.zip/node_modules/deepmerge/",\
+        "packageDependencies": [\
+          ["deepmerge", "npm:4.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["deepmerge-ts", [\
       ["npm:5.1.0", {\
         "packageLocation": "./.yarn/cache/deepmerge-ts-npm-5.1.0-f2ee394fd9-0f615ccfb2.zip/node_modules/deepmerge-ts/",\
@@ -10522,6 +10531,17 @@ const RAW_RUNTIME_STATE =
           ["htmlparser2", "npm:10.0.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:8.0.2", {\
+        "packageLocation": "./.yarn/cache/htmlparser2-npm-8.0.2-5d9f901bb6-ea5512956e.zip/node_modules/htmlparser2/",\
+        "packageDependencies": [\
+          ["domelementtype", "npm:2.3.0"],\
+          ["domhandler", "npm:5.0.3"],\
+          ["domutils", "npm:3.2.2"],\
+          ["entities", "npm:4.5.0"],\
+          ["htmlparser2", "npm:8.0.2"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["http-cache-semantics", [\
@@ -11198,6 +11218,13 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["is-plain-object", "npm:2.0.4"],\
           ["isobject", "npm:3.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:5.0.0", {\
+        "packageLocation": "./.yarn/cache/is-plain-object-npm-5.0.0-285b70faa3-e32d27061e.zip/node_modules/is-plain-object/",\
+        "packageDependencies": [\
+          ["is-plain-object", "npm:5.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -13449,6 +13476,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["nanoid", [\
+      ["npm:3.3.11", {\
+        "packageLocation": "./.yarn/cache/nanoid-npm-3.3.11-f98c1f9ef6-73b5afe597.zip/node_modules/nanoid/",\
+        "packageDependencies": [\
+          ["nanoid", "npm:3.3.11"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["natural-compare", [\
       ["npm:1.4.0", {\
         "packageLocation": "./.yarn/cache/natural-compare-npm-1.4.0-97b75b362d-23ad088b08.zip/node_modules/natural-compare/",\
@@ -14295,6 +14331,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["parse-srcset", [\
+      ["npm:1.0.2", {\
+        "packageLocation": "./.yarn/cache/parse-srcset-npm-1.0.2-8acc142245-d40c131cfc.zip/node_modules/parse-srcset/",\
+        "packageDependencies": [\
+          ["parse-srcset", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["parse5", [\
       ["npm:7.3.0", {\
         "packageLocation": "./.yarn/cache/parse5-npm-7.3.0-b0410074a3-b0e48be20b.zip/node_modules/parse5/",\
@@ -14562,6 +14607,18 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/possible-typed-array-names-npm-1.1.0-ce60ca4401-2f44137b8d.zip/node_modules/possible-typed-array-names/",\
         "packageDependencies": [\
           ["possible-typed-array-names", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["postcss", [\
+      ["npm:8.5.6", {\
+        "packageLocation": "./.yarn/cache/postcss-npm-8.5.6-e7f126c6f3-9e4fbe9757.zip/node_modules/postcss/",\
+        "packageDependencies": [\
+          ["nanoid", "npm:3.3.11"],\
+          ["picocolors", "npm:1.1.1"],\
+          ["postcss", "npm:8.5.6"],\
+          ["source-map-js", "npm:1.2.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -14846,7 +14903,7 @@ const RAW_RUNTIME_STATE =
           ["react-native", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:0.83.1"],\
           ["require-directory", "npm:2.1.1"],\
           ["rewire", "npm:9.0.1"],\
-          ["sanitizer", "npm:0.1.3"],\
+          ["sanitize-html", "npm:2.17.0"],\
           ["sass", "npm:1.97.2"],\
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:21.0.1"],\
@@ -15802,11 +15859,17 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["sanitizer", [\
-      ["npm:0.1.3", {\
-        "packageLocation": "./.yarn/cache/sanitizer-npm-0.1.3-080772964e-59d9693323.zip/node_modules/sanitizer/",\
+    ["sanitize-html", [\
+      ["npm:2.17.0", {\
+        "packageLocation": "./.yarn/cache/sanitize-html-npm-2.17.0-925831136a-93a91c629b.zip/node_modules/sanitize-html/",\
         "packageDependencies": [\
-          ["sanitizer", "npm:0.1.3"]\
+          ["deepmerge", "npm:4.3.1"],\
+          ["escape-string-regexp", "npm:4.0.0"],\
+          ["htmlparser2", "npm:8.0.2"],\
+          ["is-plain-object", "npm:5.0.0"],\
+          ["parse-srcset", "npm:1.0.2"],\
+          ["postcss", "npm:8.5.6"],\
+          ["sanitize-html", "npm:2.17.0"]\
         ],\
         "linkType": "HARD"\
       }]\
