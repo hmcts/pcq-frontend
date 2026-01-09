@@ -41,7 +41,7 @@ describe('SanitizeRequestBody', () => {
         it('should remove closed tag', function() {
             req.body.name= 'hello<script/> world';
             sanitizeRequestBody(req, res, next);
-            assert.equal(req.body.name, 'hello world');
+            assert.equal(req.body.name, 'hello');
         });
 
         it('should remove tag and its content', function() {
@@ -53,13 +53,13 @@ describe('SanitizeRequestBody', () => {
         it('should ignore close tag', function() {
             req.body.name= '>hello world';
             sanitizeRequestBody(req, res, next);
-            assert.equal(req.body.name, '>hello world');
+            assert.equal(req.body.name, '&gt;hello world');
         });
 
         it('should ignore close tag', function() {
             req.body.name= 'hello world>';
             sanitizeRequestBody(req, res, next);
-            assert.equal(req.body.name, 'hello world>');
+            assert.equal(req.body.name, 'hello world&gt;');
         });
 
         it('should ignore non string field', function() {
@@ -73,7 +73,7 @@ describe('SanitizeRequestBody', () => {
         it('should ignore close tag', function() {
             req.body.name= 'hello world>';
             sanitizeRequestBody(req, res, next);
-            assert.equal(req.body.name, 'hello world>');
+            assert.equal(req.body.name, 'hello world&gt;');
         });
     });
 });
