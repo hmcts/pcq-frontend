@@ -65,9 +65,9 @@ const RAW_RUNTIME_STATE =
           ["govuk-frontend", "npm:5.13.0"],\
           ["helmet", "npm:3.23.3"],\
           ["https-proxy-agent", "npm:5.0.1"],\
-          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.7.3"],\
+          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.7.4"],\
           ["immutable", "npm:5.1.4"],\
-          ["ioredis", "npm:5.9.0"],\
+          ["ioredis", "npm:5.9.1"],\
           ["js-yaml", "npm:4.1.1"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
@@ -95,7 +95,7 @@ const RAW_RUNTIME_STATE =
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:21.0.1"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-          ["sonarqube-scanner", "npm:4.3.2"],\
+          ["sonarqube-scanner", "npm:4.3.4"],\
           ["supertest", "npm:7.2.2"],\
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.11"],\
@@ -6858,6 +6858,16 @@ const RAW_RUNTIME_STATE =
           ["proxy-from-env", "npm:1.1.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:1.13.2", {\
+        "packageLocation": "./.yarn/cache/axios-npm-1.13.2-90e3ae8f5d-ae4e06dcd1.zip/node_modules/axios/",\
+        "packageDependencies": [\
+          ["axios", "npm:1.13.2"],\
+          ["follow-redirects", "virtual:cdb8ea6c90bba762bf2366a1a88869c55a09bf9d9076ce8fcccf1e27011bd6d92acc154b2b250d8981e0c9daf722c96602b003df3b346cc7d59ad22f6b68080f#npm:1.15.6"],\
+          ["form-data", "npm:4.0.4"],\
+          ["proxy-from-env", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["b4a", [\
@@ -12319,19 +12329,19 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["i18next", [\
-      ["npm:25.7.3", {\
-        "packageLocation": "./.yarn/cache/i18next-npm-25.7.3-809a0c5aa6-ec6601b226.zip/node_modules/i18next/",\
+      ["npm:25.7.4", {\
+        "packageLocation": "./.yarn/cache/i18next-npm-25.7.4-d46a0dccd4-7b6ee82987.zip/node_modules/i18next/",\
         "packageDependencies": [\
-          ["i18next", "npm:25.7.3"]\
+          ["i18next", "npm:25.7.4"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.7.3", {\
-        "packageLocation": "./.yarn/__virtual__/i18next-virtual-3c6f5c819b/0/cache/i18next-npm-25.7.3-809a0c5aa6-ec6601b226.zip/node_modules/i18next/",\
+      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.7.4", {\
+        "packageLocation": "./.yarn/__virtual__/i18next-virtual-38e8012141/0/cache/i18next-npm-25.7.4-d46a0dccd4-7b6ee82987.zip/node_modules/i18next/",\
         "packageDependencies": [\
           ["@babel/runtime", "npm:7.28.4"],\
           ["@types/typescript", null],\
-          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.7.3"],\
+          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.7.4"],\
           ["typescript", null]\
         ],\
         "packagePeers": [\
@@ -12620,14 +12630,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["ioredis", [\
-      ["npm:5.9.0", {\
-        "packageLocation": "./.yarn/cache/ioredis-npm-5.9.0-1824405181-6f91013861.zip/node_modules/ioredis/",\
+      ["npm:5.9.1", {\
+        "packageLocation": "./.yarn/cache/ioredis-npm-5.9.1-e410e06e84-ea2853b6b3.zip/node_modules/ioredis/",\
         "packageDependencies": [\
           ["@ioredis/commands", "npm:1.5.0"],\
           ["cluster-key-slot", "npm:1.1.0"],\
           ["debug", "virtual:2b51d83636a42cdc1434b9a574324a754fe902f0d8f47c84f37fc9dd9e42f0be9d5cd9599ca4ccf8c80b9be5756c7aea000403217e2fd7a585437af81d091cfd#npm:4.4.3"],\
           ["denque", "npm:2.1.0"],\
-          ["ioredis", "npm:5.9.0"],\
+          ["ioredis", "npm:5.9.1"],\
           ["lodash.defaults", "npm:4.2.0"],\
           ["lodash.isarguments", "npm:3.1.0"],\
           ["redis-errors", "npm:1.2.0"],\
@@ -15895,10 +15905,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["node-forge", [\
-      ["npm:1.3.1", {\
-        "packageLocation": "./.yarn/cache/node-forge-npm-1.3.1-f31fd566cc-05bab68686.zip/node_modules/node-forge/",\
+      ["npm:1.3.3", {\
+        "packageLocation": "./.yarn/cache/node-forge-npm-1.3.3-6f469a1f76-f41c31b929.zip/node_modules/node-forge/",\
         "packageDependencies": [\
-          ["node-forge", "npm:1.3.1"]\
+          ["node-forge", "npm:1.3.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -17322,10 +17332,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["properties-file", [\
-      ["npm:3.6.1", {\
-        "packageLocation": "./.yarn/cache/properties-file-npm-3.6.1-8eaf3343ff-72ae41f898.zip/node_modules/properties-file/",\
+      ["npm:3.6.3", {\
+        "packageLocation": "./.yarn/cache/properties-file-npm-3.6.3-c61d9890a3-cd9cc6d4c3.zip/node_modules/properties-file/",\
         "packageDependencies": [\
-          ["properties-file", "npm:3.6.1"]\
+          ["properties-file", "npm:3.6.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -17371,9 +17381,9 @@ const RAW_RUNTIME_STATE =
           ["govuk-frontend", "npm:5.13.0"],\
           ["helmet", "npm:3.23.3"],\
           ["https-proxy-agent", "npm:5.0.1"],\
-          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.7.3"],\
+          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.7.4"],\
           ["immutable", "npm:5.1.4"],\
-          ["ioredis", "npm:5.9.0"],\
+          ["ioredis", "npm:5.9.1"],\
           ["js-yaml", "npm:4.1.1"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
@@ -17401,7 +17411,7 @@ const RAW_RUNTIME_STATE =
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:21.0.1"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-          ["sonarqube-scanner", "npm:4.3.2"],\
+          ["sonarqube-scanner", "npm:4.3.4"],\
           ["supertest", "npm:7.2.2"],\
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.11"],\
@@ -18550,13 +18560,6 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:7.7.2", {\
-        "packageLocation": "./.yarn/cache/semver-npm-7.7.2-dfc3bc5ec9-7a24cffcaa.zip/node_modules/semver/",\
-        "packageDependencies": [\
-          ["semver", "npm:7.7.2"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:7.7.3", {\
         "packageLocation": "./.yarn/cache/semver-npm-7.7.3-9cf7b3b46c-8dbc3168e0.zip/node_modules/semver/",\
         "packageDependencies": [\
@@ -19019,20 +19022,20 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sonarqube-scanner", [\
-      ["npm:4.3.2", {\
-        "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-4.3.2-7e05a76c54-dd218acc93.zip/node_modules/sonarqube-scanner/",\
+      ["npm:4.3.4", {\
+        "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-4.3.4-8e4e3b404c-0f9d3dfc19.zip/node_modules/sonarqube-scanner/",\
         "packageDependencies": [\
           ["adm-zip", "npm:0.5.16"],\
-          ["axios", "npm:1.12.2"],\
+          ["axios", "npm:1.13.2"],\
           ["commander", "npm:13.1.0"],\
-          ["fs-extra", "npm:11.3.2"],\
+          ["fs-extra", "npm:11.3.3"],\
           ["hpagent", "npm:1.2.0"],\
-          ["node-forge", "npm:1.3.1"],\
-          ["properties-file", "npm:3.6.1"],\
+          ["node-forge", "npm:1.3.3"],\
+          ["properties-file", "npm:3.6.3"],\
           ["proxy-from-env", "npm:1.1.0"],\
-          ["semver", "npm:7.7.2"],\
+          ["semver", "npm:7.7.3"],\
           ["slugify", "npm:1.6.6"],\
-          ["sonarqube-scanner", "npm:4.3.2"],\
+          ["sonarqube-scanner", "npm:4.3.4"],\
           ["tar-stream", "npm:3.1.7"]\
         ],\
         "linkType": "HARD"\
