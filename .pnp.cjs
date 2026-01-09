@@ -6679,7 +6679,7 @@ const RAW_RUNTIME_STATE =
           ["@types/http-cache-semantics", "npm:4.0.4"],\
           ["cacheable-request", "npm:10.2.14"],\
           ["get-stream", "npm:6.0.1"],\
-          ["http-cache-semantics", "npm:4.2.0"],\
+          ["http-cache-semantics", "npm:4.1.1"],\
           ["keyv", "npm:4.5.4"],\
           ["mimic-response", "npm:4.0.0"],\
           ["normalize-url", "npm:8.1.1"],\
@@ -10545,10 +10545,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["http-cache-semantics", [\
-      ["npm:4.2.0", {\
-        "packageLocation": "./.yarn/cache/http-cache-semantics-npm-4.2.0-fadacfb3ad-4efd2dfcfe.zip/node_modules/http-cache-semantics/",\
+      ["npm:4.1.1", {\
+        "packageLocation": "./.yarn/cache/http-cache-semantics-npm-4.1.1-1120131375-362d5ed66b.zip/node_modules/http-cache-semantics/",\
         "packageDependencies": [\
-          ["http-cache-semantics", "npm:4.2.0"]\
+          ["http-cache-semantics", "npm:4.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -12573,7 +12573,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@npmcli/agent", "npm:4.0.0"],\
           ["cacache", "npm:20.0.3"],\
-          ["http-cache-semantics", "npm:4.2.0"],\
+          ["http-cache-semantics", "npm:4.1.1"],\
           ["make-fetch-happen", "npm:15.0.3"],\
           ["minipass", "npm:7.1.2"],\
           ["minipass-fetch", "npm:5.0.0"],\
