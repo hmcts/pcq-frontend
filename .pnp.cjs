@@ -43,10 +43,6 @@ const RAW_RUNTIME_STATE =
           ["ajv", "npm:6.12.6"],\
           ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["applicationinsights", "npm:3.12.1"],\
-<<<<<<< HEAD
-          ["body-parser", "npm:2.2.2"],\
-=======
->>>>>>> 10e62775b99a05187f29032774a2f518ff0f28fe
           ["chai", "npm:4.5.0"],\
           ["chokidar", "npm:4.0.3"],\
           ["co", "npm:4.6.0"],\
@@ -6270,10 +6266,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["baseline-browser-mapping", [\
-      ["npm:2.9.13", {\
-        "packageLocation": "./.yarn/cache/baseline-browser-mapping-npm-2.9.13-abf69b4ce9-304fcd0668.zip/node_modules/baseline-browser-mapping/",\
+      ["npm:2.9.14", {\
+        "packageLocation": "./.yarn/cache/baseline-browser-mapping-npm-2.9.14-76c8c0db34-a329881e5f.zip/node_modules/baseline-browser-mapping/",\
         "packageDependencies": [\
-          ["baseline-browser-mapping", "npm:2.9.13"]\
+          ["baseline-browser-mapping", "npm:2.9.14"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6385,25 +6381,6 @@ const RAW_RUNTIME_STATE =
           ["unpipe", "npm:1.0.0"]\
         ],\
         "linkType": "HARD"\
-<<<<<<< HEAD
-      }],\
-      ["npm:2.2.2", {\
-        "packageLocation": "./.yarn/cache/body-parser-npm-2.2.2-2aa532c1f4-69671f67d4.zip/node_modules/body-parser/",\
-        "packageDependencies": [\
-          ["body-parser", "npm:2.2.2"],\
-          ["bytes", "npm:3.1.2"],\
-          ["content-type", "npm:1.0.5"],\
-          ["debug", "virtual:2b51d83636a42cdc1434b9a574324a754fe902f0d8f47c84f37fc9dd9e42f0be9d5cd9599ca4ccf8c80b9be5756c7aea000403217e2fd7a585437af81d091cfd#npm:4.4.3"],\
-          ["http-errors", "npm:2.0.1"],\
-          ["iconv-lite", "npm:0.7.2"],\
-          ["on-finished", "npm:2.4.1"],\
-          ["qs", "npm:6.14.1"],\
-          ["raw-body", "npm:3.0.2"],\
-          ["type-is", "npm:2.0.1"]\
-        ],\
-        "linkType": "HARD"\
-=======
->>>>>>> 10e62775b99a05187f29032774a2f518ff0f28fe
       }]\
     ]],\
     ["boolbase", [\
@@ -6457,7 +6434,7 @@ const RAW_RUNTIME_STATE =
       ["npm:4.28.1", {\
         "packageLocation": "./.yarn/cache/browserslist-npm-4.28.1-e455c4c2e8-64f2a97de4.zip/node_modules/browserslist/",\
         "packageDependencies": [\
-          ["baseline-browser-mapping", "npm:2.9.13"],\
+          ["baseline-browser-mapping", "npm:2.9.14"],\
           ["browserslist", "npm:4.28.1"],\
           ["caniuse-lite", "npm:1.0.30001763"],\
           ["electron-to-chromium", "npm:1.5.267"],\
@@ -12946,6 +12923,13 @@ const RAW_RUNTIME_STATE =
           ["mime-db", "npm:1.52.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:1.54.0", {\
+        "packageLocation": "./.yarn/cache/mime-db-npm-1.54.0-82cccb9d70-9e7834be3d.zip/node_modules/mime-db/",\
+        "packageDependencies": [\
+          ["mime-db", "npm:1.54.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["mime-types", [\
@@ -12956,17 +12940,6 @@ const RAW_RUNTIME_STATE =
           ["mime-types", "npm:2.1.35"]\
         ],\
         "linkType": "HARD"\
-<<<<<<< HEAD
-      }],\
-      ["npm:3.0.2", {\
-        "packageLocation": "./.yarn/cache/mime-types-npm-3.0.2-d6d24e27e8-9db0ad31f5.zip/node_modules/mime-types/",\
-        "packageDependencies": [\
-          ["mime-db", "npm:1.54.0"],\
-          ["mime-types", "npm:3.0.2"]\
-        ],\
-        "linkType": "HARD"\
-=======
->>>>>>> 10e62775b99a05187f29032774a2f518ff0f28fe
       }]\
     ]],\
     ["mimic-fn", [\
@@ -14826,10 +14799,6 @@ const RAW_RUNTIME_STATE =
           ["ajv", "npm:6.12.6"],\
           ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["applicationinsights", "npm:3.12.1"],\
-<<<<<<< HEAD
-          ["body-parser", "npm:2.2.2"],\
-=======
->>>>>>> 10e62775b99a05187f29032774a2f518ff0f28fe
           ["chai", "npm:4.5.0"],\
           ["chokidar", "npm:4.0.3"],\
           ["co", "npm:4.6.0"],\
@@ -15153,20 +15122,6 @@ const RAW_RUNTIME_STATE =
           ["unpipe", "npm:1.0.0"]\
         ],\
         "linkType": "HARD"\
-<<<<<<< HEAD
-      }],\
-      ["npm:3.0.2", {\
-        "packageLocation": "./.yarn/cache/raw-body-npm-3.0.2-77b7ebce9c-4168c82157.zip/node_modules/raw-body/",\
-        "packageDependencies": [\
-          ["bytes", "npm:3.1.2"],\
-          ["http-errors", "npm:2.0.1"],\
-          ["iconv-lite", "npm:0.7.2"],\
-          ["raw-body", "npm:3.0.2"],\
-          ["unpipe", "npm:1.0.0"]\
-        ],\
-        "linkType": "HARD"\
-=======
->>>>>>> 10e62775b99a05187f29032774a2f518ff0f28fe
       }]\
     ]],\
     ["react-devtools-core", [\
@@ -17294,19 +17249,6 @@ const RAW_RUNTIME_STATE =
           ["type-is", "npm:1.6.18"]\
         ],\
         "linkType": "HARD"\
-<<<<<<< HEAD
-      }],\
-      ["npm:2.0.1", {\
-        "packageLocation": "./.yarn/cache/type-is-npm-2.0.1-8ef194d26e-bacdb23c87.zip/node_modules/type-is/",\
-        "packageDependencies": [\
-          ["content-type", "npm:1.0.5"],\
-          ["media-typer", "npm:1.1.0"],\
-          ["mime-types", "npm:3.0.2"],\
-          ["type-is", "npm:2.0.1"]\
-        ],\
-        "linkType": "HARD"\
-=======
->>>>>>> 10e62775b99a05187f29032774a2f518ff0f28fe
       }]\
     ]],\
     ["typed-array-buffer", [\
