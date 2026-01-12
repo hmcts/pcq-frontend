@@ -3,7 +3,6 @@
 const expect = require('chai').expect;
 const rewire = require('rewire');
 const Service = rewire('app/services/Service');
-const fetch = require('node-fetch');
 const HttpsProxyAgent = require('https-proxy-agent');
 const sinon = require('sinon');
 
@@ -157,7 +156,7 @@ describe('Service', () => {
                 .fetchBuffer('http://localhost/forms', {})
                 .catch((err) => {
                     expect(service.log.calledOnce).to.equal(true);
-                    expect(err.message).to.contain('FetchError');
+                    expect(err.message).to.contain('fetch failed');
                     done();
                 });
         });
@@ -182,7 +181,7 @@ describe('Service', () => {
                 follow: 10,
                 timeout: 10000,
                 body: JSON.stringify(data),
-                headers: new fetch.Headers(headers),
+                headers: new Headers(headers),
                 agent: new HttpsProxyAgent(proxy)
             });
             done();

@@ -42,7 +42,7 @@ describe('AsyncFetch', () => {
             await asyncFetch.fetch(testUrl, {}, res => res.json());
         } catch (err) {
             errored = true;
-            expect(err.message).to.contain('FetchError');
+            expect(err.message).to.contain('Unexpected end of JSON input');
         }
         expect(errored).to.equal(true);
     });

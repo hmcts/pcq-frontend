@@ -11097,7 +11097,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^2.6.12, node-fetch@npm:^2.6.9":
+"node-fetch@npm:^2.6.12":
   version: 2.7.0
   resolution: "node-fetch@npm:2.7.0"
   dependencies:
@@ -12238,7 +12238,6 @@ __metadata:
     moment: "npm:^2.29.4"
     nock: "npm:^14.0.0"
     node-emoji: "npm:^2.1.0"
-    node-fetch: "npm:^2.6.9"
     nodemon: "npm:^3.1.0"
     nunjucks: "npm:^3.2.4"
     nyc: "npm:^17.0.0"

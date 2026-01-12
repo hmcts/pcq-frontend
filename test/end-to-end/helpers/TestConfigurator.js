@@ -3,7 +3,6 @@
 const CONF = require('config');
 const testConfig = require('test/config');
 const {v4: uuidv4} = require('uuid');
-const fetch = require('node-fetch');
 const assert = require('chai').assert;
 
 class TestConfigurator {

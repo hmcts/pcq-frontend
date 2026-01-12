@@ -59,7 +59,7 @@ describe('api-utils', () => {
             const fetchOptions = utils.fetchOptions(null, 'GET', {});
             const error = await utils.fetchJson(testUrl, fetchOptions);
 
-            expect(error.message).to.contain('FetchError');
+            expect(error.message).to.contain('fetch failed');
         });
     });
 
@@ -83,7 +83,7 @@ describe('api-utils', () => {
             const fetchOptions = utils.fetchOptions(null, 'GET', {});
             const error = await utils.fetchText(testUrl, fetchOptions);
 
-            expect(error.message).to.contain('FetchError');
+            expect(error.message).to.contain('fetch failed');
         });
     });
 
@@ -108,7 +108,7 @@ describe('api-utils', () => {
             try {
                 await utils.fetchBuffer(testUrl, fetchOptions);
             } catch (e) {
-                expect(e.message).to.contain('FetchError');
+                expect(e.message).to.contain('fetch failed');
             }
         });
     });
@@ -141,7 +141,7 @@ describe('api-utils', () => {
 
             const fetchOptions = utils.fetchOptions(null, 'GET', {});
             try {
-                await utils.asyncFetch('http://localhost:8888/info', fetchOptions, res => res.buffer());
+                await utils.asyncFetch('http://localhost:8888/info', fetchOptions, res => res.arrayBuffer().then(buffer => Buffer.from(buffer)));
             } catch (e) {
                 expect(e.message).to.equal('Bad Request');
             }

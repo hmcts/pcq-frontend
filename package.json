@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.232",
+  "version": "1.2.233",
   "license": "MIT",
   "engines": {
     "node": ">=20.0.0"
@@ -74,7 +74,6 @@
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
     "node-emoji": "^2.1.0",
-    "node-fetch": "^2.6.9",
     "nunjucks": "^3.2.4",
     "require-directory": "^2.1.1",
     "sanitize-html": "^2.14.0",

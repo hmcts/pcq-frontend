@@ -2,12 +2,11 @@
 
 const logger = require('app/components/logger')('Init');
 const {endsWith} = require('lodash');
-const fetch = require('node-fetch');
 const HttpsProxyAgent = require('https-proxy-agent');
 const config = require('config');
 
 const buildRequest = (url, options) => {
-    return new fetch.Request(url, options);
+    return new Request(url, options);
 };
 
 const retryOptions = () => {
@@ -68,7 +67,7 @@ const fetchText = (url, options) => {
 };
 
 const fetchBuffer = (url, options) => {
-    return asyncFetch(url, options, res => res.buffer())
+    return asyncFetch(url, options, res => res.arrayBuffer().then(buffer => Buffer.from(buffer)))
         .then(buffer => buffer)
         .catch(err => {
             logger.error(`Error${err}`);
@@ -84,7 +83,7 @@ const fetchOptions = (data, method, headers, proxy) => {
         follow: 10,
         timeout: config.utils.api.timeout,
         body: method === 'POST' ? JSON.stringify(data) : null,
-        headers: new fetch.Headers(headers),
+        headers: new Headers(headers || {}),
         agent: proxy ? new HttpsProxyAgent(proxy) : null
     };
 };
