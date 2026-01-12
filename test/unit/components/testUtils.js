@@ -57,7 +57,7 @@ describe('api-utils', () => {
     });
 
     describe('getStore', () => {
-    it('creates a valid RedisStore', () => {
+        it('creates a valid RedisStore', () => {
             const redisConfig = {
                 enabled: 'true',
                 password: 'secure',
