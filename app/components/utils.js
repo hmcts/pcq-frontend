@@ -34,16 +34,16 @@ exports.getStore = (redisConfig, session) => {
         let keepAliveInterval;
         
         client.on('ready', () => {
-            if (redisConfig.keepAlive !== 'false') {
-                keepAliveInterval = setInterval(() => {
-                client.ping();
-            }, 60000);
-         } // 60s
+                if (redisConfig.keepAlive !== 'false') {
+                    keepAliveInterval = setInterval(() => {
+                    client.ping();
+                }, 60000); // 60s
+            }
         });
         client.on('end', () => {
-                if (keepAliveInterval) {
-                    clearInterval(keepAliveInterval);
-                }
+            if (keepAliveInterval) {
+                clearInterval(keepAliveInterval);
+            }
         });
 
 
