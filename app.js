@@ -198,6 +198,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     });
 
     // Support session data
+    const isProduction = process.env.NODE_ENV === 'production' || config.nodeEnvironment === 'production';
     app.use(session({
         proxy: config.redis.proxy,
         resave: config.redis.resave,
@@ -205,7 +206,8 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         secret: config.redis.secret,
         cookie: {
             httpOnly: config.redis.cookie.httpOnly,
-            sameSite: config.redis.cookie.sameSite
+            sameSite: config.redis.cookie.sameSite,
+            secure: isProduction ? true : config.redis.cookie.secure
         },
         store: utils.getStore(config.redis, session)
     }));
@@ -225,7 +227,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     });
 
     app.use((req, res, next) => {
-        req.session.cookie.secure = req.protocol === 'https';
+        req.session.cookie.secure = isProduction ? true : req.protocol === 'https';
         next();
     });
 

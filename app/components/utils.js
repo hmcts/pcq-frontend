@@ -20,7 +20,8 @@ exports.forceHttps = function (req, res, next) {
 exports.getStore = (redisConfig, session) => {
     if (redisConfig.enabled === 'true') {
         const Redis = require('ioredis');
-        const RedisStore = require('connect-redis')(session);
+        const connectRedis = require('connect-redis');
+        const RedisStore = connectRedis.default ? connectRedis.default : connectRedis;
         const tlsOptions = {
             password: redisConfig.password,
             tls: true
@@ -30,11 +31,21 @@ exports.getStore = (redisConfig, session) => {
 
         // Azure Cache for Redis has issues with a 10 minute connection idle timeout, the recommendation is to keep the connection alive
         // https://gist.github.com/JonCole/925630df72be1351b21440625ff2671f#file-redis-bestpractices-node-js-md
+        let keepAliveInterval;
+        
         client.on('ready', () => {
-            setInterval(() => {
+            if (redisConfig.keepAlive !== 'false') {
+                keepAliveInterval = setInterval(() => {
                 client.ping();
-            }, 60000); // 60s
+            }, 60000);
+         } // 60s
         });
+        client.on('end', () => {
+                if (keepAliveInterval) {
+                    clearInterval(keepAliveInterval);
+                }
+        });
+
 
         return new RedisStore({client});
     }
