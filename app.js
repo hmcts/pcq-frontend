@@ -198,7 +198,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     });
 
     // Support session data
-    const isProduction = process.env.NODE_ENV === 'production' || config.nodeEnvironment === 'production';
+    const isProduction = config.environment === 'prod' || config.environment === 'production';
     app.use(session({
         proxy: config.redis.proxy,
         resave: config.redis.resave,
