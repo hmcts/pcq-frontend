@@ -4,10 +4,6 @@ const expect = require('chai').expect;
 const utils = require('app/components/utils');
 const sinon = require('sinon');
 const session = require('express-session');
-<<<<<<< Updated upstream
-const utils = require('app/components/utils');
-=======
->>>>>>> Stashed changes
 
 describe('api-utils', () => {
 
@@ -61,28 +57,6 @@ describe('api-utils', () => {
     });
 
     describe('getStore', () => {
-<<<<<<< Updated upstream
-        it('creates a valid RedisStore', () => {
-        const redisConfig = {
-            enabled: 'true',
-            password: 'secure',
-            useTLS: 'false',   //  avoid TLS in unit tests
-            host: 'localhost',
-            port: '6379',
-            keepAlive: 'false' // disable ping interval
-        };
-
-        const redisStore = utils.getStore(redisConfig, session);
-        const redisStoreName = redisStore.constructor.name;
-
-        //ioredis uses disconnect(), not end()
-        if (redisStore?.client) {
-            redisStore.client.disconnect();
-        }
-
-        // Destroy the store after client disconnect
-        redisStore.destroy();
-=======
     it('creates a valid RedisStore', () => {
             const redisConfig = {
                 enabled: 'true',
@@ -92,7 +66,6 @@ describe('api-utils', () => {
                 port: '6379',
                 keepAlive: 'false' // disable ping interval
             };
-
             const redisStore = utils.getStore(redisConfig, session);
             const redisStoreName = redisStore.constructor.name;
 
@@ -102,7 +75,6 @@ describe('api-utils', () => {
 
             // Destroy the store after client disconnect
             redisStore.destroy();
->>>>>>> Stashed changes
 
             expect(redisStoreName).to.equal('RedisStore');
         });
