@@ -2391,7 +2391,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@npmcli-fs-npm-5.0.0-9d737ae2f3-4935c7719d.zip/node_modules/@npmcli/fs/",\
         "packageDependencies": [\
           ["@npmcli/fs", "npm:5.0.0"],\
-          ["semver", "npm:7.7.3"]\
+          ["semver", "npm:7.5.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8298,7 +8298,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/diagnostic-channel-npm-1.1.1-fcb6c82af0-bbfc422b8a.zip/node_modules/diagnostic-channel/",\
         "packageDependencies": [\
           ["diagnostic-channel", "npm:1.1.1"],\
-          ["semver", "npm:7.7.3"]\
+          ["semver", "npm:7.5.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8507,7 +8507,7 @@ const RAW_RUNTIME_STATE =
           ["commander", "npm:10.0.1"],\
           ["editorconfig", "npm:1.0.4"],\
           ["minimatch", "npm:9.0.1"],\
-          ["semver", "npm:7.7.3"]\
+          ["semver", "npm:7.5.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -11482,7 +11482,7 @@ const RAW_RUNTIME_STATE =
           ["@istanbuljs/schema", "npm:0.1.3"],\
           ["istanbul-lib-coverage", "npm:3.2.2"],\
           ["istanbul-lib-instrument", "npm:6.0.3"],\
-          ["semver", "npm:7.7.3"]\
+          ["semver", "npm:7.5.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -11966,7 +11966,7 @@ const RAW_RUNTIME_STATE =
           ["lodash.isstring", "npm:4.0.1"],\
           ["lodash.once", "npm:4.1.1"],\
           ["ms", "npm:2.1.3"],\
-          ["semver", "npm:7.7.3"]\
+          ["semver", "npm:7.5.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -12071,7 +12071,7 @@ const RAW_RUNTIME_STATE =
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
           ["lru-cache", "npm:6.0.0"],\
           ["node-cache", "npm:5.1.2"],\
-          ["semver", "npm:7.7.3"],\
+          ["semver", "npm:7.5.4"],\
           ["tunnel", "npm:0.0.6"],\
           ["uuid", "npm:8.3.2"]\
         ],\
@@ -12562,7 +12562,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/make-dir-npm-4.0.0-ec3cd921cc-bf0731a2dd.zip/node_modules/make-dir/",\
         "packageDependencies": [\
           ["make-dir", "npm:4.0.0"],\
-          ["semver", "npm:7.7.3"]\
+          ["semver", "npm:7.5.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -13672,7 +13672,7 @@ const RAW_RUNTIME_STATE =
           ["node-gyp", "npm:12.1.0"],\
           ["nopt", "npm:9.0.0"],\
           ["proc-log", "npm:6.1.0"],\
-          ["semver", "npm:7.7.3"],\
+          ["semver", "npm:7.5.4"],\
           ["tar", "npm:7.5.2"],\
           ["tinyglobby", "npm:0.2.15"],\
           ["which", "npm:6.0.0"]\
@@ -13741,7 +13741,7 @@ const RAW_RUNTIME_STATE =
           ["minimatch", "npm:3.1.2"],\
           ["nodemon", "npm:3.1.11"],\
           ["pstree.remy", "npm:1.1.8"],\
-          ["semver", "npm:7.7.3"],\
+          ["semver", "npm:7.5.4"],\
           ["simple-update-notifier", "npm:2.0.0"],\
           ["supports-color", "npm:5.5.0"],\
           ["touch", "npm:3.1.1"],\
@@ -15924,6 +15924,14 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
+      ["npm:7.5.4", {\
+        "packageLocation": "./.yarn/cache/semver-npm-7.5.4-c4ad957fcd-985dec0d37.zip/node_modules/semver/",\
+        "packageDependencies": [\
+          ["lru-cache", "npm:6.0.0"],\
+          ["semver", "npm:7.5.4"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:7.6.3", {\
         "packageLocation": "./.yarn/cache/semver-npm-7.6.3-57e82c14d5-36b1fbe1a2.zip/node_modules/semver/",\
         "packageDependencies": [\
@@ -16221,7 +16229,7 @@ const RAW_RUNTIME_STATE =
       ["npm:2.0.0", {\
         "packageLocation": "./.yarn/cache/simple-update-notifier-npm-2.0.0-4d6e5dba61-40bd4f96aa.zip/node_modules/simple-update-notifier/",\
         "packageDependencies": [\
-          ["semver", "npm:7.7.3"],\
+          ["semver", "npm:7.5.4"],\
           ["simple-update-notifier", "npm:2.0.0"]\
         ],\
         "linkType": "HARD"\
