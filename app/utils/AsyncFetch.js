@@ -2,12 +2,11 @@
 
 const config = require('config');
 const logger = require('app/components/logger');
-const fetch = require('node-fetch');
 const log = logger('Init');
 
 class AsyncFetch {
     buildRequest(url, fetchOptions) {
-        return new fetch.Request(url, fetchOptions);
+        return new Request(url, fetchOptions);
     }
 
     retryOptions() {

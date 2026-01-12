@@ -1,6 +1,5 @@
 'use strict';
 
-const fetch = require('node-fetch');
 const HttpsProxyAgent = require('https-proxy-agent');
 const logger = require('app/components/logger');
 const config = require('config');
@@ -57,7 +56,7 @@ class Service {
 
     fetchBuffer(url, fetchOptions) {
         return asyncFetch
-            .fetch(url, fetchOptions, res => res.buffer())
+            .fetch(url, fetchOptions, res => res.arrayBuffer().then(buffer => Buffer.from(buffer)))
             .then(buffer => buffer)
             .catch(err => {
                 this.log(`Fetch buffer error: ${this.formatErrorMessage(err)}`, 'error');
@@ -73,7 +72,7 @@ class Service {
             follow: 10,
             timeout: 10000,
             body: JSON.stringify(data),
-            headers: new fetch.Headers(headers),
+            headers: new Headers(headers || {}),
             agent: proxy ? new HttpsProxyAgent(proxy) : null
         };
     }
