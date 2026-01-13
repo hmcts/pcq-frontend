@@ -180,7 +180,28 @@ describe('api-utils', () => {
 
             expect(clearIntervalStub.calledOnce).to.be.true;
         });
+
+        it('does not set password or tls when TLS is disabled', () => {
+            const redisConfig = {
+                enabled: 'true',
+                useTLS: 'false',
+                keepAlive: 'false',
+                host: 'localhost',
+                port: '6379'
+            };
+
+            utils.getStore(redisConfig, null, {
+                Redis: RedisClientFactoryStub,
+                connectRedis: { default: RedisStoreStub }
+            });
+
+            const redisOptionsPassed =
+                RedisClientFactoryStub.getCall(0).args[0];
+
+            expect(redisOptionsPassed.password).to.be.undefined;
+            expect(redisOptionsPassed.tls).to.be.undefined;
+        });
+
     });
-
-
+    
 });
