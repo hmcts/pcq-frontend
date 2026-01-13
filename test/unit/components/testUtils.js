@@ -56,7 +56,7 @@ describe('api-utils', () => {
         });
     });
 
-    describe('getStore (stubbed)', () => {
+    /*describe('getStore (stubbed)', () => {
         let RedisStub;
 
         beforeEach(() => {
@@ -87,10 +87,10 @@ describe('api-utils', () => {
             const memoryStore = utils.getStore(redisConfig, session);
             expect(memoryStore.constructor.name).to.equal('MemoryStore');
         });
-    });
+    });*/
 
 
-    describe('getStore (test to cover all scenarios)', () => {
+    describe('getStore', () => {
         let redisClientStub;
         let RedisClientFactoryStub;
         let RedisStoreStub;
