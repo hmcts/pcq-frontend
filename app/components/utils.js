@@ -26,7 +26,7 @@ exports.getStore = (redisConfig,
             const Redis = deps.Redis || require('ioredis');
             const connectRedis = deps.connectRedis || require('connect-redis');
             //const RedisStore = connectRedis.default ?? connectRedis;
-            const RedisStore = connectRedis.default
+            const RedisStore = connectRedis.default;
 
         const redisOptions = {
             host: redisConfig.host,
