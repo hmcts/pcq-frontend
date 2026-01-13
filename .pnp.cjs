@@ -50,7 +50,7 @@ const RAW_RUNTIME_STATE =
           ["codecov", "npm:4.0.0-0"],\
           ["compression", "npm:1.8.1"],\
           ["config", "npm:4.1.1"],\
-          ["connect-redis", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.0.0"],\
+          ["connect-redis", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.1"],\
           ["cookie-parser", "npm:1.4.7"],\
           ["csrf-sync", "npm:4.2.1"],\
           ["debug", "virtual:e426afeacf914b5bf58dae7cf7cd76bf78be254e03b94e4a92e9c2b0226626f65c7431ea500d2321d9c0a431f45ed64b60ab02116d77b5064e6e0918b0a30bca#npm:4.4.3"],\
@@ -7601,27 +7601,23 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["connect-redis", [\
-      ["npm:9.0.0", {\
-        "packageLocation": "./.yarn/cache/connect-redis-npm-9.0.0-44b8c73dee-da5c6304a3.zip/node_modules/connect-redis/",\
+      ["npm:7.1.1", {\
+        "packageLocation": "./.yarn/cache/connect-redis-npm-7.1.1-e1ca4e05df-1a08013567.zip/node_modules/connect-redis/",\
         "packageDependencies": [\
-          ["connect-redis", "npm:9.0.0"]\
+          ["connect-redis", "npm:7.1.1"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.0.0", {\
-        "packageLocation": "./.yarn/__virtual__/connect-redis-virtual-7a0eb08086/0/cache/connect-redis-npm-9.0.0-44b8c73dee-da5c6304a3.zip/node_modules/connect-redis/",\
+      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.1", {\
+        "packageLocation": "./.yarn/__virtual__/connect-redis-virtual-04efdc45c0/0/cache/connect-redis-npm-7.1.1-e1ca4e05df-1a08013567.zip/node_modules/connect-redis/",\
         "packageDependencies": [\
           ["@types/express-session", null],\
-          ["@types/redis", null],\
-          ["connect-redis", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.0.0"],\
-          ["express-session", "npm:1.18.2"],\
-          ["redis", null]\
+          ["connect-redis", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.1"],\
+          ["express-session", "npm:1.18.2"]\
         ],\
         "packagePeers": [\
           "@types/express-session",\
-          "@types/redis",\
-          "express-session",\
-          "redis"\
+          "express-session"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -14933,7 +14929,7 @@ const RAW_RUNTIME_STATE =
           ["codecov", "npm:4.0.0-0"],\
           ["compression", "npm:1.8.1"],\
           ["config", "npm:4.1.1"],\
-          ["connect-redis", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.0.0"],\
+          ["connect-redis", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.1"],\
           ["cookie-parser", "npm:1.4.7"],\
           ["csrf-sync", "npm:4.2.1"],\
           ["debug", "virtual:e426afeacf914b5bf58dae7cf7cd76bf78be254e03b94e4a92e9c2b0226626f65c7431ea500d2321d9c0a431f45ed64b60ab02116d77b5064e6e0918b0a30bca#npm:4.4.3"],\
