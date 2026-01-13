@@ -89,4 +89,98 @@ describe('api-utils', () => {
         });
     });
 
+
+    describe('getStore (test to cover all scenarios)', () => {
+        let redisClientStub;
+        let RedisClientFactoryStub;
+        let RedisStoreStub;
+        let setIntervalStub;
+        let clearIntervalStub;
+
+        beforeEach(() => {
+            redisClientStub = {
+                on: sinon.stub(),
+                ping: sinon.stub().resolves()
+            };
+
+            RedisClientFactoryStub = sinon.stub().returns(redisClientStub);
+
+            RedisStoreStub = function RedisStoreStub() {};
+
+            setIntervalStub = sinon.stub(global, 'setInterval').returns(1);
+            clearIntervalStub = sinon.stub(global, 'clearInterval');
+        });
+
+        afterEach(() => {
+            sinon.restore();
+        });
+
+        it('creates RedisStore when redis is enabled', () => {
+            const redisConfig = {
+                enabled: 'true',
+                host: 'localhost',
+                port: '6379',
+                keepAlive: 'false'
+            };
+
+            const store = utils.getStore(redisConfig, null, {
+                Redis: RedisClientFactoryStub,
+                connectRedis: { default: RedisStoreStub }
+            });
+
+            expect(store).to.be.instanceOf(RedisStoreStub);
+        });
+
+        it('starts keepAlive when enabled', () => {
+            const redisConfig = {
+                enabled: 'true',
+                keepAlive: 'true',
+                host: 'localhost',
+                port: '6379'
+            };
+
+            utils.getStore(redisConfig, null, {
+                Redis: RedisClientFactoryStub,
+                connectRedis: { default: RedisStoreStub }
+            });
+
+            const readyHandler = redisClientStub.on
+                .withArgs('ready')
+                .getCall(0).args[1];
+
+            readyHandler();
+
+            expect(setIntervalStub.calledOnce).to.be.true;
+        });
+
+        it('clears keepAlive on client end', () => {
+            const redisConfig = {
+                enabled: 'true',
+                keepAlive: 'true',
+                host: 'localhost',
+                port: '6379'
+            };
+
+            utils.getStore(redisConfig, null, {
+                Redis: RedisClientFactoryStub,
+                connectRedis: { default: RedisStoreStub }
+            });
+
+            const readyHandler = redisClientStub.on
+                .withArgs('ready')
+                .getCall(0).args[1];
+
+            readyHandler();
+
+            const endHandler = redisClientStub.on
+                .withArgs('end')
+                .getCall(0).args[1];
+
+            endHandler();
+
+            expect(clearIntervalStub.calledOnce).to.be.true;
+        });
+    });
+
+
 });

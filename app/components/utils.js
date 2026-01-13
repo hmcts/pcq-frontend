@@ -17,11 +17,15 @@ exports.forceHttps = function (req, res, next) {
     next();
 };
 
-exports.getStore = (redisConfig, session) => {
-    if (redisConfig.enabled === 'true') {
-        const Redis = require('ioredis');
-        const connectRedis = require('connect-redis');
-        const RedisStore = connectRedis.default ?? connectRedis;
+
+exports.getStore = (redisConfig,
+    session,
+    deps = {}   // optional dependencies
+    ) => {
+        if (redisConfig.enabled === 'true') {
+            const Redis = deps.Redis || require('ioredis');
+            const connectRedis = deps.connectRedis || require('connect-redis');
+            const RedisStore = connectRedis.default ?? connectRedis;
 
         const redisOptions = {
             host: redisConfig.host,
