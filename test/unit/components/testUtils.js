@@ -56,40 +56,6 @@ describe('api-utils', () => {
         });
     });
 
-    /*describe('getStore (stubbed)', () => {
-        let RedisStub;
-
-        beforeEach(() => {
-            // Stub ioredis constructor BEFORE calling getStore
-            RedisStub = sinon.stub(require('ioredis').prototype, 'connect').resolves();
-        });
-
-        afterEach(() => {
-            sinon.restore();
-        });
-
-        it('creates a valid RedisStore', () => {
-            const redisConfig = {
-                enabled: 'true',
-                host: 'localhost',
-                port: '6379',
-                useTLS: 'false',
-                keepAlive: 'false'
-            };
-
-            const redisStore = utils.getStore(redisConfig, session);
-
-            expect(redisStore.constructor.name).to.equal('RedisStore');
-        });
-
-        it('creates a valid MemoryStore', () => {
-            const redisConfig = { enabled: 'false' };
-            const memoryStore = utils.getStore(redisConfig, session);
-            expect(memoryStore.constructor.name).to.equal('MemoryStore');
-        });
-    });*/
-
-
     describe('getStore', () => {
         let redisClientStub;
         let RedisClientFactoryStub;
