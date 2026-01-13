@@ -20,23 +20,39 @@ exports.forceHttps = function (req, res, next) {
 exports.getStore = (redisConfig, session) => {
     if (redisConfig.enabled === 'true') {
         const Redis = require('ioredis');
-        const RedisStore = require('connect-redis')(session);
-        const tlsOptions = {
-            password: redisConfig.password,
-            tls: true
-        };
-        const redisOptions = redisConfig.useTLS === 'true' ? tlsOptions : {};
-        const client = new Redis(redisConfig.port, redisConfig.host, redisOptions);
+        const connectRedis = require('connect-redis');
+        const RedisStore = connectRedis.default ?? connectRedis;
 
-        // Azure Cache for Redis has issues with a 10 minute connection idle timeout, the recommendation is to keep the connection alive
-        // https://gist.github.com/JonCole/925630df72be1351b21440625ff2671f#file-redis-bestpractices-node-js-md
+        const redisOptions = {
+            host: redisConfig.host,
+            port: redisConfig.port
+        };
+
+        if (redisConfig.useTLS === 'true') {
+            redisOptions.password = redisConfig.password;
+            redisOptions.tls = {};
+        }
+
+        const client = new Redis(redisOptions);
+
+        // Azure Redis idle timeout workaround
+        let keepAliveInterval;
         client.on('ready', () => {
-            setInterval(() => {
-                client.ping();
-            }, 60000); // 60s
+            if (redisConfig.keepAlive !== 'false') {
+                keepAliveInterval = setInterval(() => {
+                    client.ping().catch(() => {});
+                }, 60000); // 60s
+            }
         });
 
-        return new RedisStore({client});
+        // Clean up interval when client closes
+        client.on('end', () => {
+            if (keepAliveInterval) {
+                clearInterval(keepAliveInterval);
+            }
+        });
+
+        return new RedisStore({ client });
     }
     const MemoryStore = require('express-session').MemoryStore;
     return new MemoryStore();

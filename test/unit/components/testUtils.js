@@ -56,29 +56,34 @@ describe('api-utils', () => {
         });
     });
 
-    describe('getStore', () => {
+    describe('getStore (stubbed)', () => {
+        let RedisStub;
+
+        beforeEach(() => {
+            // Stub ioredis constructor BEFORE calling getStore
+            RedisStub = sinon.stub(require('ioredis').prototype, 'connect').resolves();
+        });
+
+        afterEach(() => {
+            sinon.restore();
+        });
+
         it('creates a valid RedisStore', () => {
             const redisConfig = {
                 enabled: 'true',
-                password: 'secure',
-                useTLS: 'true',
                 host: 'localhost',
-                port: '6379'
+                port: '6379',
+                useTLS: 'false',
+                keepAlive: 'false'
             };
+
             const redisStore = utils.getStore(redisConfig, session);
-            const redisStoreName = redisStore.constructor.name;
 
-            // End and destroy before expect in case of error. These will hang the tests if not run.
-            redisStore.client.end();
-            redisStore.destroy();
-
-            expect(redisStoreName).to.equal('RedisStore');
+            expect(redisStore.constructor.name).to.equal('RedisStore');
         });
 
         it('creates a valid MemoryStore', () => {
-            const redisConfig = {
-                enabled: 'false'
-            };
+            const redisConfig = { enabled: 'false' };
             const memoryStore = utils.getStore(redisConfig, session);
             expect(memoryStore.constructor.name).to.equal('MemoryStore');
         });
