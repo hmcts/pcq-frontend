@@ -181,6 +181,37 @@ describe('api-utils', () => {
             expect(clearIntervalStub.calledOnce).to.be.true;
         });
 
+        it('sets password and tls options when TLS is enabled', () => {
+            const redisConfig = {
+                enabled: 'true',
+                useTLS: 'true',
+                keepAlive: 'false',
+                host: 'localhost',
+                port: '6379',
+                password: 'secret'
+            };
+
+            utils.getStore(redisConfig, null, {
+                Redis: RedisClientFactoryStub,
+                connectRedis: { default: RedisStoreStub }
+            });
+
+            // Assert constructor was called
+            sinon.assert.calledOnce(RedisClientFactoryStub);
+
+            const redisOptionsPassed =
+                RedisClientFactoryStub.getCall(0).args[0];
+
+            expect(redisOptionsPassed).to.deep.include({
+                host: 'localhost',
+                port: '6379',
+                password: 'secret'
+            });
+
+            expect(redisOptionsPassed.tls).to.deep.equal({});
+        });
+
+
         it('does not set password or tls when TLS is disabled', () => {
             const redisConfig = {
                 enabled: 'true',
@@ -203,5 +234,5 @@ describe('api-utils', () => {
         });
 
     });
-    
+
 });
