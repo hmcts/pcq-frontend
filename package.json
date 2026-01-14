@@ -139,7 +139,7 @@
     "cross-spawn": "7.0.6",
     "brace-expansion": "^2.0.1",
     "ip": "2.0.1",
-    "jws": "3.2.3"
+    "jws": "4.0.1"
   },
   "nyc": {
     "report-dir": "functional-output/coverage",
