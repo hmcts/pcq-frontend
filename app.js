@@ -197,6 +197,8 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         next();
     });
 
+    const isProduction = config.environment === 'prod' || config.environment === 'production';
+    app.set('trust proxy', 1);
     // Support session data
     app.use(session({
         proxy: config.redis.proxy,
@@ -205,7 +207,8 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         secret: config.redis.secret,
         cookie: {
             httpOnly: config.redis.cookie.httpOnly,
-            sameSite: config.redis.cookie.sameSite
+            sameSite: config.redis.cookie.sameSite,
+            secure: isProduction ? true : config.redis.cookie.secure
         },
         store: utils.getStore(config.redis, session)
     }));
