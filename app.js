@@ -228,11 +228,6 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     });
 
     app.use((req, res, next) => {
-        req.session.cookie.secure = req.protocol === 'https';
-        next();
-    });
-
-    app.use((req, res, next) => {
         if (!req.session.language) {
             req.session.language = 'en';
         }
