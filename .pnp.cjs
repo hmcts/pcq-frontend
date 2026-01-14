@@ -44,7 +44,7 @@ const RAW_RUNTIME_STATE =
           ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["applicationinsights", "npm:3.12.1"],\
           ["chai", "npm:4.5.0"],\
-          ["chokidar", "npm:4.0.3"],\
+          ["chokidar", "npm:5.0.0"],\
           ["co", "npm:4.6.0"],\
           ["codeceptjs", "npm:3.7.5"],\
           ["codecov", "npm:4.0.0-0"],\
@@ -7017,6 +7017,14 @@ const RAW_RUNTIME_STATE =
           ["readdirp", "npm:4.1.2"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:5.0.0", {\
+        "packageLocation": "./.yarn/cache/chokidar-npm-5.0.0-2f70d31c86-a1c2a4ee6e.zip/node_modules/chokidar/",\
+        "packageDependencies": [\
+          ["chokidar", "npm:5.0.0"],\
+          ["readdirp", "npm:5.0.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["chownr", [\
@@ -13904,7 +13912,7 @@ const RAW_RUNTIME_STATE =
           ["@types/chokidar", null],\
           ["a-sync-waterfall", "npm:1.0.1"],\
           ["asap", "npm:2.0.6"],\
-          ["chokidar", "npm:4.0.3"],\
+          ["chokidar", "npm:5.0.0"],\
           ["commander", "npm:5.1.0"],\
           ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"]\
         ],\
@@ -14923,7 +14931,7 @@ const RAW_RUNTIME_STATE =
           ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["applicationinsights", "npm:3.12.1"],\
           ["chai", "npm:4.5.0"],\
-          ["chokidar", "npm:4.0.3"],\
+          ["chokidar", "npm:5.0.0"],\
           ["co", "npm:4.6.0"],\
           ["codeceptjs", "npm:3.7.5"],\
           ["codecov", "npm:4.0.0-0"],\
@@ -15454,6 +15462,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/readdirp-npm-4.1.2-3440472afe-7b817c2659.zip/node_modules/readdirp/",\
         "packageDependencies": [\
           ["readdirp", "npm:4.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:5.0.0", {\
+        "packageLocation": "./.yarn/cache/readdirp-npm-5.0.0-82b01a282e-a17a591b51.zip/node_modules/readdirp/",\
+        "packageDependencies": [\
+          ["readdirp", "npm:5.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
