@@ -57,31 +57,148 @@ describe('api-utils', () => {
     });
 
     describe('getStore', () => {
-        it('creates a valid RedisStore', () => {
+        let redisClientStub;
+        let RedisClientFactoryStub;
+        let RedisStoreStub;
+        let setIntervalStub;
+        let clearIntervalStub;
+
+        beforeEach(() => {
+            redisClientStub = {
+                on: sinon.stub(),
+                ping: sinon.stub().resolves()
+            };
+
+            RedisClientFactoryStub = sinon.stub().returns(redisClientStub);
+
+            RedisStoreStub = function RedisStoreStub() {};
+
+            setIntervalStub = sinon.stub(global, 'setInterval').returns(1);
+            clearIntervalStub = sinon.stub(global, 'clearInterval');
+        });
+
+        afterEach(() => {
+            sinon.restore();
+        });
+
+        it('creates RedisStore when redis is enabled', () => {
             const redisConfig = {
                 enabled: 'true',
-                password: 'secure',
-                useTLS: 'true',
+                host: 'localhost',
+                port: '6379',
+                keepAlive: 'false'
+            };
+
+            const store = utils.getStore(redisConfig, null, {
+                Redis: RedisClientFactoryStub,
+                connectRedis: { default: RedisStoreStub }
+            });
+
+            expect(store).to.be.instanceOf(RedisStoreStub);
+        });
+
+        it('starts keepAlive when enabled', () => {
+            const redisConfig = {
+                enabled: 'true',
+                keepAlive: 'true',
                 host: 'localhost',
                 port: '6379'
             };
-            const redisStore = utils.getStore(redisConfig, session);
-            const redisStoreName = redisStore.constructor.name;
 
-            // End and destroy before expect in case of error. These will hang the tests if not run.
-            redisStore.client.end();
-            redisStore.destroy();
+            utils.getStore(redisConfig, null, {
+                Redis: RedisClientFactoryStub,
+                connectRedis: { default: RedisStoreStub }
+            });
 
-            expect(redisStoreName).to.equal('RedisStore');
+            const readyHandler = redisClientStub.on
+                .withArgs('ready')
+                .getCall(0).args[1];
+
+            readyHandler();
+
+            expect(setIntervalStub.calledOnce).to.be.true;
         });
 
-        it('creates a valid MemoryStore', () => {
+        it('clears keepAlive on client end', () => {
             const redisConfig = {
-                enabled: 'false'
+                enabled: 'true',
+                keepAlive: 'true',
+                host: 'localhost',
+                port: '6379'
             };
-            const memoryStore = utils.getStore(redisConfig, session);
-            expect(memoryStore.constructor.name).to.equal('MemoryStore');
+
+            utils.getStore(redisConfig, null, {
+                Redis: RedisClientFactoryStub,
+                connectRedis: { default: RedisStoreStub }
+            });
+
+            const readyHandler = redisClientStub.on
+                .withArgs('ready')
+                .getCall(0).args[1];
+
+            readyHandler();
+
+            const endHandler = redisClientStub.on
+                .withArgs('end')
+                .getCall(0).args[1];
+
+            endHandler();
+
+            expect(clearIntervalStub.calledOnce).to.be.true;
         });
+
+        it('sets password and tls options when TLS is enabled', () => {
+            const redisConfig = {
+                enabled: 'true',
+                useTLS: 'true',
+                keepAlive: 'false',
+                host: 'localhost',
+                port: '6379',
+                password: 'secret'
+            };
+
+            utils.getStore(redisConfig, null, {
+                Redis: RedisClientFactoryStub,
+                connectRedis: { default: RedisStoreStub }
+            });
+
+            // Assert constructor was called
+            sinon.assert.calledOnce(RedisClientFactoryStub);
+
+            const redisOptionsPassed =
+                RedisClientFactoryStub.getCall(0).args[0];
+
+            expect(redisOptionsPassed).to.deep.include({
+                host: 'localhost',
+                port: '6379',
+                password: 'secret'
+            });
+
+            expect(redisOptionsPassed.tls).to.deep.equal({});
+        });
+
+
+        it('does not set password or tls when TLS is disabled', () => {
+            const redisConfig = {
+                enabled: 'true',
+                useTLS: 'false',
+                keepAlive: 'false',
+                host: 'localhost',
+                port: '6379'
+            };
+
+            utils.getStore(redisConfig, null, {
+                Redis: RedisClientFactoryStub,
+                connectRedis: { default: RedisStoreStub }
+            });
+
+            const redisOptionsPassed =
+                RedisClientFactoryStub.getCall(0).args[0];
+
+            expect(redisOptionsPassed.password).to.be.undefined;
+            expect(redisOptionsPassed.tls).to.be.undefined;
+        });
+
     });
 
 });
