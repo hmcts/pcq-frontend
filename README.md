@@ -74,9 +74,30 @@ This file is not version controlled so any config here will not be pushed to git
 
 As an example, if you want to use LanuchDarkly locally, place the SDK Key in this file. You can keep the key there as this file is not version controlled.
 
-### Environment Variable
-NODE_ENV is the variable we set in flux . The host is set as ingressHost in flux .
-REDIS_HOST, PCQ_BACKENT_URL, REFORM_ENVIRONMENT is set by code for different environment. There is no other external services configured. It will communicate with pcq-backend.
+## Deployment and environment configuration
+
+This service is deployed via Helm. The chart is in `charts/pcq-frontend/Chart.yaml` and uses the `nodejs` Helm dependency.
+
+### Ingress and routing
+
+- The service listens on port 4000.
+- The ingress host is set via `nodejs.ingressHost` in `charts/pcq-frontend/values.yaml`.
+- The default host pattern is `pcq.<environment>.platform.hmcts.net`.
+- Ingress host is different for production environment.
+
+### Environment configuration sources
+
+- Baseline config lives in `config/default.yaml`.
+- Environment-variable mapping is in `config/custom-environment-variables.yaml`.
+- Deployment-time overrides are supplied via Helm values (see `charts/pcq-frontend/values.yaml`,
+  `charts/pcq-frontend/values.aat.template.yaml`, and `charts/pcq-frontend/values.preview.template.yaml`).
+
+### External services and secrets
+
+- Redis: configured via `REDIS_HOST`, `REDIS_PORT`, and `REDIS_USE_TLS` in Helm values.
+- PCQ backend: configured via `PCQ_BACKEND_URL` in Helm values.
+- LaunchDarkly and App Insights: configured via secrets from Azure Key Vault.
+- Service-to-service token keys: managed in Azure Key Vault and referenced by `keyVaults.pcq.secrets` in Helm values.
 
 ### Running the tests
 
