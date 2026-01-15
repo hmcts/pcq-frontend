@@ -20,7 +20,7 @@ This is the frontend for the protected characteristics questionnaire service. Th
 
 ### Prerequisites
 
-- [Node.js](nodejs.org) >= 12.15.0
+- [Node.js](nodejs.org) >= 20.0.0
 - [yarn](yarnpkg.com)
 
 ### Installation
@@ -73,6 +73,10 @@ For development only config, use the `dev.yaml` file. Running the app using `$ y
 This file is not version controlled so any config here will not be pushed to git.
 
 As an example, if you want to use LanuchDarkly locally, place the SDK Key in this file. You can keep the key there as this file is not version controlled.
+
+### Environment Variable
+NODE_ENV is the variable we set in flux . The host is set as ingressHost in flux .
+REDIS_HOST, PCQ_BACKENT_URL, REFORM_ENVIRONMENT is set by code for different environment. There is no other external services configured. It will communicate with pcq-backend.
 
 ### Running the tests
 
