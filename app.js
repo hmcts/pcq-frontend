@@ -94,8 +94,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     app.use(helmet.contentSecurityPolicy({
         directives: {
             defaultSrc: ['\'self\''],
-            fontSrc: ['\'self\'', 'data:', 'fonts.gstatic.com'],
-            formAction: ['\'self\''],     
+            fontSrc: ['\'self\'', 'data:', 'fonts.gstatic.com'],   
             baseUri: ['\'self\''],        
             objectSrc: ['\'none\''],
             scriptSrc: [
