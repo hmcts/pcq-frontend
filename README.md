@@ -1,4 +1,4 @@
-# Protected Characteristics Questionnaire
+# Protected Characteristics Questionnaire 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=PCQ&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=PCQ) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=PCQ&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=PCQ) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=PCQ&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=PCQ) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=PCQ&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=PCQ) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=PCQ&metric=coverage)](https://sonarcloud.io/summary/new_code?id=PCQ)
 
