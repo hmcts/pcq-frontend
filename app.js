@@ -95,8 +95,6 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         directives: {
             defaultSrc: ['\'self\''],
             fontSrc: ['\'self\'', 'data:', 'fonts.gstatic.com'],   
-            baseUri: ['\'self\''],        
-            objectSrc: ['\'none\''],
             scriptSrc: [
                 '\'self\'',
                 '\'sha256-GUQ5ad8JK5KmEWmROf3LZd9ge94daqNvd8xy9YS1iDw=\'',
