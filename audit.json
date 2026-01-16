@@ -64,6 +64,7 @@
   "10031_User Controllable HTML Element Attribute (Potential XSS)_https://pcq.aat.platform.hmcts.net/cookies?lng=cy_GET": "ignore",
   "10031_User Controllable HTML Element Attribute (Potential XSS)_https://pcq.aat.platform.hmcts.net/cookies?lng=en_GET": "ignore",
   "10031_User Controllable HTML Element Attribute (Potential XSS)_https://pcq.aat.platform.hmcts.net/offline?lng=en_GET": "ignore",
+  "10031_User Controllable HTML Element Attribute (Potential XSS)_https://pcq.aat.platform.hmcts.net/offline?lng=cy_GET": "ignore",
   "10031_User Controllable HTML Element Attribute (Potential XSS)_https://pcq.aat.platform.hmcts.net/privacy-policy?lng=cy_GET": "ignore",
   "10031_User Controllable HTML Element Attribute (Potential XSS)_https://pcq.aat.platform.hmcts.net/privacy-policy?lng=en_GET": "ignore",
   "10031_User Controllable HTML Element Attribute (Potential XSS)_https://pcq.aat.platform.hmcts.net/terms-conditions?lng=cy_GET": "ignore",
