@@ -1,6 +1,7 @@
 'use strict';
 
 const expect = require('chai').expect;
+const sinon = require('sinon');
 const rewire = require('rewire');
 const {verifyToken} = require('app/components/encryption-token');
 
@@ -104,5 +105,28 @@ describe('VerifyToken', () => {
 
         expect(verifyTokenRewired.verifyToken(reqQuery)).to.equal(true);
         done();
+    });
+
+    it('should log auth tag when logging is enabled', () => {
+        const tokenModule = rewire('app/components/encryption-token');
+        const loggerStub = {info: sinon.spy(), error: sinon.spy()};
+        tokenModule.__set__('logger', loggerStub);
+        tokenModule.__set__('config', {
+            tokenKeys: {
+                registered: 'REGISTERED_TOKEN_KEY'
+            }
+        });
+        tokenModule.__set__('shouldLog', true);
+
+        const result = tokenModule.generateToken({
+            serviceId: 'REGISTERED',
+            actor: 'APPLICANT',
+            pcqId: '12345',
+            partyId: 'test@test.com',
+            returnUrl: 'test.com'
+        });
+
+        expect(result.authTag).to.not.equal('');
+        sinon.assert.calledWith(loggerStub.info, sinon.match(/^Auth Tag : /));
     });
 });
