@@ -7,6 +7,7 @@ const logger = require('app/components/logger')('Init');
 const algorithmAesGcm256 = 'aes-256-gcm';
 const algorithmAesCbc256 = 'aes-256-cbc';
 const iv = Buffer.alloc(16, 0); // Initialization vector
+const shouldLog = String(config.get('loggingEnabled')).toLowerCase() === 'true';
 
 const generateToken = (params, algorithm) => {
     algorithm = algorithm || algorithmAesGcm256;
@@ -30,7 +31,7 @@ const generateToken = (params, algorithm) => {
 
         if (algorithm === algorithmAesGcm256) {
             authTag = cipher.getAuthTag().toString('base64');
-            if (config.environment !== 'prod') {
+            if (shouldLog) {
                 logger.info('Auth Tag : ' + authTag);
             }
         }

@@ -6,6 +6,8 @@ const stringUtils = require('../components/string-utils');
 const registeredServices = require('app/registeredServices');
 const {verifyToken} = require('app/components/encryption-token');
 const appInsights = require('app/components/app-insights');
+const config = require('config');
+const shouldLog = String(config.get('loggingEnabled')).toLowerCase() === 'true';
 
 // This excludes the token as this is handled separately
 const pcqParameters = [
@@ -81,7 +83,9 @@ const validatedService = (serviceId) => {
 };
 
 const registerIncomingService = (req) => {
-    logger.info(JSON.stringify(req.query));
+    if (shouldLog) {
+        logger.info(JSON.stringify(req.query));
+    }
     const partyId = req.query.partyId;
     if (partyId) {
         // Ensure emails are properly encoded
