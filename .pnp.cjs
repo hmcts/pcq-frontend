@@ -35,7 +35,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/properties-volume", "npm:1.3.0"],\
           ["@opentelemetry/api", "npm:1.9.0"],\
-          ["@opentelemetry/context-async-hooks", "virtual:7abd9ff049d493c86ee613dd41f726430d6642abf2e1a72d6aac5488c04571daf53e66678b6e5df403f5e030760fbc3cb1a708e581e1b7c1c3a7de0de135a55f#npm:2.3.0"],\
+          ["@opentelemetry/context-async-hooks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.4.0"],\
           ["@parcel/watcher", "npm:2.5.4"],\
           ["@stryker-mutator/api", "npm:8.7.1"],\
           ["@stryker-mutator/core", "npm:8.7.1"],\
@@ -2536,6 +2536,26 @@ const RAW_RUNTIME_STATE =
           ["@opentelemetry/context-async-hooks", "npm:2.3.0"]\
         ],\
         "linkType": "SOFT"\
+      }],\
+      ["npm:2.4.0", {\
+        "packageLocation": "./.yarn/cache/@opentelemetry-context-async-hooks-npm-2.4.0-2c12cc00f1-8f700b94da.zip/node_modules/@opentelemetry/context-async-hooks/",\
+        "packageDependencies": [\
+          ["@opentelemetry/context-async-hooks", "npm:2.4.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.4.0", {\
+        "packageLocation": "./.yarn/__virtual__/@opentelemetry-context-async-hooks-virtual-fcbcdf548c/0/cache/@opentelemetry-context-async-hooks-npm-2.4.0-2c12cc00f1-8f700b94da.zip/node_modules/@opentelemetry/context-async-hooks/",\
+        "packageDependencies": [\
+          ["@opentelemetry/api", "npm:1.9.0"],\
+          ["@opentelemetry/context-async-hooks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.4.0"],\
+          ["@types/opentelemetry__api", null]\
+        ],\
+        "packagePeers": [\
+          "@opentelemetry/api",\
+          "@types/opentelemetry__api"\
+        ],\
+        "linkType": "HARD"\
       }],\
       ["virtual:6df1dc5fb57a2b72c8bfdab7d2c6bbe032d09f48f4c9ecb8649873edd5ef87d61863c4dc2c3d1891508b65bb84fbc4c61b5e04a3e67b162c3b0702f7b7bf3a4c#npm:2.2.0", {\
         "packageLocation": "./.yarn/__virtual__/@opentelemetry-context-async-hooks-virtual-4af4189e5e/0/cache/@opentelemetry-context-async-hooks-npm-2.2.0-de0d5c60c7-00ee1a35ce.zip/node_modules/@opentelemetry/context-async-hooks/",\
@@ -14864,7 +14884,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/properties-volume", "npm:1.3.0"],\
           ["@opentelemetry/api", "npm:1.9.0"],\
-          ["@opentelemetry/context-async-hooks", "virtual:7abd9ff049d493c86ee613dd41f726430d6642abf2e1a72d6aac5488c04571daf53e66678b6e5df403f5e030760fbc3cb1a708e581e1b7c1c3a7de0de135a55f#npm:2.3.0"],\
+          ["@opentelemetry/context-async-hooks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.4.0"],\
           ["@parcel/watcher", "npm:2.5.4"],\
           ["@stryker-mutator/api", "npm:8.7.1"],\
           ["@stryker-mutator/core", "npm:8.7.1"],\
