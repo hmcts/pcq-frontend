@@ -99,7 +99,7 @@
     "@stryker-mutator/mocha-runner": "8.7.1",
     "chai": "^4.3.10",
     "chokidar": "^4.0.1",
-    "codeceptjs": "3.7.5",
+    "codeceptjs": "3.7.6",
     "codecov": "^4.0.0-0",
     "debug": "^4.3.4",
     "eslint": "^9.4.0",
@@ -130,9 +130,9 @@
     "yarn-audit-fix": "^10.0.3"
   },
   "resolutions": {
-    "cookie": "1.1.1",
     "merge": "2.1.1",
-    "ip": "2.0.1"
+    "ip": "2.0.1",
+    "jws": "4.0.1"
   },
   "nyc": {
     "report-dir": "functional-output/coverage",
