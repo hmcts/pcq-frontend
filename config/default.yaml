@@ -68,6 +68,7 @@ redis:
 dateFormat: 'DD/MM/YYYY'
 hostname: 'localhost:4000'
 enableTracking: 'true'
+loggingEnabled: 'false'
 links:
   cookies: '/cookies'
   privacy: '/privacy-policy'

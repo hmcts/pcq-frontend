@@ -41,6 +41,7 @@ redis:
   secret: REDIS_SECRET
 hostname: FRONTEND_HOSTNAME
 enableTracking: ENABLE_TRACKING
+loggingEnabled: LOGGING_ENABLED
 links:
   survey: SURVEY
 utils:

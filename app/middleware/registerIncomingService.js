@@ -6,6 +6,8 @@ const stringUtils = require('../components/string-utils');
 const registeredServices = require('app/registeredServices');
 const {verifyToken} = require('app/components/encryption-token');
 const appInsights = require('app/components/app-insights');
+const config = require('config');
+const shouldLog = String(config.get('loggingEnabled')).toLowerCase() === 'true';
 
 // This excludes the token as this is handled separately
 const pcqParameters = [
@@ -67,7 +69,6 @@ const validateParameters = req => {
     } else if (!validatedService(req.query.serviceId)) {
         logger.error(`Service ${req.query.serviceId} is not registered with PCQ`);
     } else {
-        logger.info('Parameters verified successfully.');
         appInsights.trackTrace({message: 'Entering PCQ Journey', properties: {['ServiceId']:req.query.serviceId}});
         req.session.validParameters = true;
         // Create the JWT Token after the required parameters have been set.
@@ -81,7 +82,9 @@ const validatedService = (serviceId) => {
 };
 
 const registerIncomingService = (req) => {
-    logger.info(JSON.stringify(req.query));
+    if (shouldLog) {
+        logger.info(JSON.stringify(req.query));
+    }
     const partyId = req.query.partyId;
     if (partyId) {
         // Ensure emails are properly encoded
