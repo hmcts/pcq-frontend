@@ -42,7 +42,7 @@ const RAW_RUNTIME_STATE =
           ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.7.1"],\
           ["ajv", "npm:6.12.6"],\
           ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
-          ["applicationinsights", "npm:3.12.1"],\
+          ["applicationinsights", "npm:3.13.0"],\
           ["chai", "npm:4.5.0"],\
           ["chokidar", "npm:4.0.3"],\
           ["co", "npm:4.6.0"],\
@@ -5623,8 +5623,8 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["applicationinsights", [\
-      ["npm:3.12.1", {\
-        "packageLocation": "./.yarn/cache/applicationinsights-npm-3.12.1-c8ecc3fee1-ff10989ba4.zip/node_modules/applicationinsights/",\
+      ["npm:3.13.0", {\
+        "packageLocation": "./.yarn/cache/applicationinsights-npm-3.13.0-7ff5b10765-c4691c855a.zip/node_modules/applicationinsights/",\
         "packageDependencies": [\
           ["@azure/core-auth", "npm:1.10.1"],\
           ["@azure/functions", "npm:4.11.0"],\
@@ -5650,9 +5650,9 @@ const RAW_RUNTIME_STATE =
           ["@opentelemetry/sdk-trace-base", "virtual:5b8c71dce837b418640991b6042594701a0d5738a4769333fb93cf724eb5afdf96474fe827d55ce681ee55838e4dd885a1348dc05a155c9792654dbb72b715fc#npm:2.4.0"],\
           ["@opentelemetry/sdk-trace-node", "virtual:cc2031273b751c8b11f4755536b98b172f0b04de4011621a6520121066be9eaa57f742bdd860b01f99eb42c5dcb74feb100825dac0095054727c6062c3adef26#npm:2.4.0"],\
           ["@opentelemetry/semantic-conventions", "npm:1.39.0"],\
-          ["applicationinsights", "npm:3.12.1"],\
+          ["applicationinsights", "npm:3.13.0"],\
           ["diagnostic-channel", "npm:1.1.1"],\
-          ["diagnostic-channel-publishers", "virtual:c8ecc3fee190564eb77128a6b7a6fd5603ef97252f7fd057b26ae60df289e084b7823d98115661f05f3b18536cf450d7e7190440f02f8351021a0982dc0d7233#npm:1.0.8"]\
+          ["diagnostic-channel-publishers", "virtual:7ff5b10765fe3f49b1d8ae1b8bb507e262582307a9cb1683f189cc4dc12b87a202cbdd2d701e236db03cee1dc5342845eda5996204608f0257ed197ca01df891#npm:1.0.8"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8356,12 +8356,12 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:c8ecc3fee190564eb77128a6b7a6fd5603ef97252f7fd057b26ae60df289e084b7823d98115661f05f3b18536cf450d7e7190440f02f8351021a0982dc0d7233#npm:1.0.8", {\
-        "packageLocation": "./.yarn/__virtual__/diagnostic-channel-publishers-virtual-94a0d79b4e/0/cache/diagnostic-channel-publishers-npm-1.0.8-3f6e5fd12b-d6422dc4c9.zip/node_modules/diagnostic-channel-publishers/",\
+      ["virtual:7ff5b10765fe3f49b1d8ae1b8bb507e262582307a9cb1683f189cc4dc12b87a202cbdd2d701e236db03cee1dc5342845eda5996204608f0257ed197ca01df891#npm:1.0.8", {\
+        "packageLocation": "./.yarn/__virtual__/diagnostic-channel-publishers-virtual-2f8417c26b/0/cache/diagnostic-channel-publishers-npm-1.0.8-3f6e5fd12b-d6422dc4c9.zip/node_modules/diagnostic-channel-publishers/",\
         "packageDependencies": [\
           ["@types/diagnostic-channel", null],\
           ["diagnostic-channel", "npm:1.1.1"],\
-          ["diagnostic-channel-publishers", "virtual:c8ecc3fee190564eb77128a6b7a6fd5603ef97252f7fd057b26ae60df289e084b7823d98115661f05f3b18536cf450d7e7190440f02f8351021a0982dc0d7233#npm:1.0.8"]\
+          ["diagnostic-channel-publishers", "virtual:7ff5b10765fe3f49b1d8ae1b8bb507e262582307a9cb1683f189cc4dc12b87a202cbdd2d701e236db03cee1dc5342845eda5996204608f0257ed197ca01df891#npm:1.0.8"]\
         ],\
         "packagePeers": [\
           "@types/diagnostic-channel",\
@@ -14881,7 +14881,7 @@ const RAW_RUNTIME_STATE =
           ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.7.1"],\
           ["ajv", "npm:6.12.6"],\
           ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
-          ["applicationinsights", "npm:3.12.1"],\
+          ["applicationinsights", "npm:3.13.0"],\
           ["chai", "npm:4.5.0"],\
           ["chokidar", "npm:4.0.3"],\
           ["co", "npm:4.6.0"],\
