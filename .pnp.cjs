@@ -90,7 +90,7 @@ const RAW_RUNTIME_STATE =
           ["require-directory", "npm:2.1.1"],\
           ["rewire", "npm:9.0.1"],\
           ["sanitize-html", "npm:2.17.0"],\
-          ["sass", "npm:1.97.2"],\
+          ["sass", "npm:1.97.3"],\
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:21.0.1"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
@@ -13706,7 +13706,7 @@ const RAW_RUNTIME_STATE =
           ["nopt", "npm:9.0.0"],\
           ["proc-log", "npm:6.1.0"],\
           ["semver", "npm:7.7.3"],\
-          ["tar", "npm:7.5.4"],\
+          ["tar", "npm:7.5.6"],\
           ["tinyglobby", "npm:0.2.15"],\
           ["which", "npm:6.0.0"]\
         ],\
@@ -14936,7 +14936,7 @@ const RAW_RUNTIME_STATE =
           ["require-directory", "npm:2.1.1"],\
           ["rewire", "npm:9.0.1"],\
           ["sanitize-html", "npm:2.17.0"],\
-          ["sass", "npm:1.97.2"],\
+          ["sass", "npm:1.97.3"],\
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:21.0.1"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
@@ -15916,13 +15916,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sass", [\
-      ["npm:1.97.2", {\
-        "packageLocation": "./.yarn/cache/sass-npm-1.97.2-e0b3310409-a6b27e6a75.zip/node_modules/sass/",\
+      ["npm:1.97.3", {\
+        "packageLocation": "./.yarn/cache/sass-npm-1.97.3-632c69cd32-707ef8e525.zip/node_modules/sass/",\
         "packageDependencies": [\
           ["@parcel/watcher", "npm:2.5.4"],\
           ["chokidar", "npm:4.0.3"],\
           ["immutable", "npm:5.1.4"],\
-          ["sass", "npm:1.97.2"],\
+          ["sass", "npm:1.97.3"],\
           ["source-map-js", "npm:1.2.1"]\
         ],\
         "linkType": "HARD"\
@@ -16908,14 +16908,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["tar", [\
-      ["npm:7.5.4", {\
-        "packageLocation": "./.yarn/cache/tar-npm-7.5.4-9413ae778a-c6a2b93a14.zip/node_modules/tar/",\
+      ["npm:7.5.6", {\
+        "packageLocation": "./.yarn/cache/tar-npm-7.5.6-955ec951c2-cf4a84d79b.zip/node_modules/tar/",\
         "packageDependencies": [\
           ["@isaacs/fs-minipass", "npm:4.0.1"],\
           ["chownr", "npm:3.0.0"],\
           ["minipass", "npm:7.1.2"],\
           ["minizlib", "npm:3.1.0"],\
-          ["tar", "npm:7.5.4"],\
+          ["tar", "npm:7.5.6"],\
           ["yallist", "npm:5.0.0"]\
         ],\
         "linkType": "HARD"\
