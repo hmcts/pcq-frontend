@@ -71,7 +71,7 @@ const RAW_RUNTIME_STATE =
           ["js-yaml", "npm:4.1.1"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
-          ["lodash", "npm:4.17.21"],\
+          ["lodash", "npm:4.17.23"],\
           ["mocha", "npm:11.7.5"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
           ["moment", "npm:2.30.1"],\
@@ -12255,6 +12255,13 @@ const RAW_RUNTIME_STATE =
           ["lodash", "npm:4.17.21"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:4.17.23", {\
+        "packageLocation": "./.yarn/cache/lodash-npm-4.17.23-50bdb1c01a-82504c8825.zip/node_modules/lodash/",\
+        "packageDependencies": [\
+          ["lodash", "npm:4.17.23"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["lodash-es", [\
@@ -14910,7 +14917,7 @@ const RAW_RUNTIME_STATE =
           ["js-yaml", "npm:4.1.1"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
-          ["lodash", "npm:4.17.21"],\
+          ["lodash", "npm:4.17.23"],\
           ["mocha", "npm:11.7.5"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
           ["moment", "npm:2.30.1"],\
