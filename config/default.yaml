@@ -30,6 +30,8 @@ auth:
   jwt:
     ttl: '8h'
     secret: 'JwtSecretKey'
+    issuer: 'pcq-frontend'
+    audience: 'pcq-backend'
 services:
   pcqBackend:
     enabled: 'true'
