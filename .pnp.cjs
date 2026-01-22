@@ -12265,10 +12265,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lodash-es", [\
-      ["npm:4.17.22", {\
-        "packageLocation": "./.yarn/cache/lodash-es-npm-4.17.22-2fc5a201e5-e93bcb57f9.zip/node_modules/lodash-es/",\
+      ["npm:4.17.23", {\
+        "packageLocation": "./.yarn/cache/lodash-es-npm-4.17.23-b4279789e6-1feae200df.zip/node_modules/lodash-es/",\
         "packageDependencies": [\
-          ["lodash-es", "npm:4.17.22"]\
+          ["lodash-es", "npm:4.17.23"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -18595,7 +18595,7 @@ const RAW_RUNTIME_STATE =
           ["fast-glob", "npm:3.3.3"],\
           ["fs-extra", "npm:11.3.3"],\
           ["js-yaml", "npm:4.1.1"],\
-          ["lodash-es", "npm:4.17.22"],\
+          ["lodash-es", "npm:4.17.23"],\
           ["semver", "npm:7.7.3"],\
           ["synp", "npm:1.9.14"],\
           ["yarn-audit-fix", "npm:10.1.1"]\
