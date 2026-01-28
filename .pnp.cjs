@@ -57,7 +57,7 @@ const RAW_RUNTIME_STATE =
           ["eslint", "virtual:a52d081492f5d31321985d5816bd40e85a60e84a99be850cdce6dbe27cc08870610ebf564d05f3dbe23db7ee20c4de57f3173d6348977cec6817b57bf86c0170#npm:9.39.2"],\
           ["esmify", "npm:2.1.1"],\
           ["express", "npm:4.22.1"],\
-          ["express-session", "npm:1.18.2"],\
+          ["express-session", "npm:1.19.0"],\
           ["express-urlrewrite", "npm:2.0.3"],\
           ["fs-extra", "npm:11.3.3"],\
           ["git-rev-sync", "npm:3.0.2"],\
@@ -7602,7 +7602,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/express-session", null],\
           ["connect-redis", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.1"],\
-          ["express-session", "npm:1.18.2"]\
+          ["express-session", "npm:1.19.0"]\
         ],\
         "packagePeers": [\
           "@types/express-session",\
@@ -9332,14 +9332,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["express-session", [\
-      ["npm:1.18.2", {\
-        "packageLocation": "./.yarn/cache/express-session-npm-1.18.2-1fdf1a09db-1a89a4d3e5.zip/node_modules/express-session/",\
+      ["npm:1.19.0", {\
+        "packageLocation": "./.yarn/cache/express-session-npm-1.19.0-1988fe2b3a-5f36b51d34.zip/node_modules/express-session/",\
         "packageDependencies": [\
           ["cookie", "npm:0.7.2"],\
           ["cookie-signature", "npm:1.0.7"],\
           ["debug", "virtual:04e17282184d1dd8ebe9be1cf43aab3ec3497566ee201258c65471258a0598bf13554ebaee2c4f89425bfcd02b07008290d1416ead8ec323401963827fce05d6#npm:2.6.9"],\
           ["depd", "npm:2.0.0"],\
-          ["express-session", "npm:1.18.2"],\
+          ["express-session", "npm:1.19.0"],\
           ["on-headers", "npm:1.1.0"],\
           ["parseurl", "npm:1.3.3"],\
           ["safe-buffer", "npm:5.2.1"],\
@@ -14923,7 +14923,7 @@ const RAW_RUNTIME_STATE =
           ["eslint", "virtual:a52d081492f5d31321985d5816bd40e85a60e84a99be850cdce6dbe27cc08870610ebf564d05f3dbe23db7ee20c4de57f3173d6348977cec6817b57bf86c0170#npm:9.39.2"],\
           ["esmify", "npm:2.1.1"],\
           ["express", "npm:4.22.1"],\
-          ["express-session", "npm:1.18.2"],\
+          ["express-session", "npm:1.19.0"],\
           ["express-urlrewrite", "npm:2.0.3"],\
           ["fs-extra", "npm:11.3.3"],\
           ["git-rev-sync", "npm:3.0.2"],\
