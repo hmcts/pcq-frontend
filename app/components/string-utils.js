@@ -23,6 +23,7 @@ function isUrlWhitelisted(url) {
             'platform.hmcts.net',
             'staging.apps.hmcts.net',
             'test.gov.uk',
+            'apps.hmcts.net'
         ];
         const whitelistedPrefixes = ['https://localhost', 'http://localhost'];
 
