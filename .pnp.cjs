@@ -99,7 +99,7 @@ const RAW_RUNTIME_STATE =
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.11"],\
           ["tslib", "npm:2.8.1"],\
-          ["undici", "npm:7.19.0"],\
+          ["undici", "npm:7.20.0"],\
           ["uuid", "npm:11.1.0"],\
           ["watch", "npm:1.0.2"],\
           ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.46.0"],\
@@ -7000,7 +7000,7 @@ const RAW_RUNTIME_STATE =
           ["parse5", "npm:7.3.0"],\
           ["parse5-htmlparser2-tree-adapter", "npm:7.1.0"],\
           ["parse5-parser-stream", "npm:7.1.2"],\
-          ["undici", "npm:7.19.0"],\
+          ["undici", "npm:7.20.0"],\
           ["whatwg-mimetype", "npm:4.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -15009,7 +15009,7 @@ const RAW_RUNTIME_STATE =
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.11"],\
           ["tslib", "npm:2.8.1"],\
-          ["undici", "npm:7.19.0"],\
+          ["undici", "npm:7.20.0"],\
           ["uuid", "npm:11.1.0"],\
           ["watch", "npm:1.0.2"],\
           ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.46.0"],\
@@ -17628,10 +17628,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["undici", [\
-      ["npm:7.19.0", {\
-        "packageLocation": "./.yarn/cache/undici-npm-7.19.0-3baf60239f-5a60b11ed2.zip/node_modules/undici/",\
+      ["npm:7.20.0", {\
+        "packageLocation": "./.yarn/cache/undici-npm-7.20.0-605f0a5012-09ca3e1255.zip/node_modules/undici/",\
         "packageDependencies": [\
-          ["undici", "npm:7.19.0"]\
+          ["undici", "npm:7.20.0"]\
         ],\
         "linkType": "HARD"\
       }]\
