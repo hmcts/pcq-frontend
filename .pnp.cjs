@@ -80,7 +80,7 @@ const RAW_RUNTIME_STATE =
           ["nodemon", "npm:3.1.11"],\
           ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
           ["nyc", "npm:17.1.0"],\
-          ["pa11y", "npm:9.0.1"],\
+          ["pa11y", "npm:9.1.0"],\
           ["permissions-policy", "npm:0.6.0"],\
           ["playwright", "npm:1.58.0"],\
           ["pre-commit", "npm:1.2.2"],\
@@ -3695,6 +3695,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@pa11y/html_codesniffer", [\
+      ["npm:2.6.0", {\
+        "packageLocation": "./.yarn/cache/@pa11y-html_codesniffer-npm-2.6.0-602b7f5502-129123b3a2.zip/node_modules/@pa11y/html_codesniffer/",\
+        "packageDependencies": [\
+          ["@pa11y/html_codesniffer", "npm:2.6.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@paralleldrive/cuid2", [\
       ["npm:2.3.1", {\
         "packageLocation": "./.yarn/cache/@paralleldrive-cuid2-npm-2.3.1-34889f1c27-08687b891d.zip/node_modules/@paralleldrive/cuid2/",\
@@ -5932,10 +5941,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["axe-core", [\
-      ["npm:4.10.3", {\
-        "packageLocation": "./.yarn/cache/axe-core-npm-4.10.3-3534c4324b-9ff51ad0fd.zip/node_modules/axe-core/",\
+      ["npm:4.11.1", {\
+        "packageLocation": "./.yarn/cache/axe-core-npm-4.11.1-87a6aa2514-bbc8e89592.zip/node_modules/axe-core/",\
         "packageDependencies": [\
-          ["axe-core", "npm:4.10.3"]\
+          ["axe-core", "npm:4.11.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7479,6 +7488,13 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
+      ["npm:14.0.3", {\
+        "packageLocation": "./.yarn/cache/commander-npm-14.0.3-93ab31471d-dfa9ebe2a4.zip/node_modules/commander/",\
+        "packageDependencies": [\
+          ["commander", "npm:14.0.3"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:2.20.3", {\
         "packageLocation": "./.yarn/cache/commander-npm-2.20.3-d8dcbaa39b-90c5b68986.zip/node_modules/commander/",\
         "packageDependencies": [\
@@ -8773,13 +8789,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["envinfo", [\
-      ["npm:7.14.0", {\
-        "packageLocation": "./.yarn/cache/envinfo-npm-7.14.0-624fecc5a5-0d9d711f2b.zip/node_modules/envinfo/",\
-        "packageDependencies": [\
-          ["envinfo", "npm:7.14.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:7.15.0", {\
         "packageLocation": "./.yarn/cache/envinfo-npm-7.15.0-d7ce619568-6e8bdea096.zip/node_modules/envinfo/",\
         "packageDependencies": [\
@@ -10613,15 +10622,6 @@ const RAW_RUNTIME_STATE =
           ["param-case", "npm:3.0.4"],\
           ["relateurl", "npm:0.2.7"],\
           ["terser", "npm:5.46.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["html_codesniffer", [\
-      ["npm:2.5.1", {\
-        "packageLocation": "./.yarn/cache/html_codesniffer-npm-2.5.1-5621e5bca3-baeb07f54f.zip/node_modules/html_codesniffer/",\
-        "packageDependencies": [\
-          ["html_codesniffer", "npm:2.5.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -14297,18 +14297,18 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["pa11y", [\
-      ["npm:9.0.1", {\
-        "packageLocation": "./.yarn/cache/pa11y-npm-9.0.1-65a2fcb723-9df4ee7da9.zip/node_modules/pa11y/",\
+      ["npm:9.1.0", {\
+        "packageLocation": "./.yarn/cache/pa11y-npm-9.1.0-fc1d038381-f471f7d718.zip/node_modules/pa11y/",\
         "packageDependencies": [\
-          ["axe-core", "npm:4.10.3"],\
+          ["@pa11y/html_codesniffer", "npm:2.6.0"],\
+          ["axe-core", "npm:4.11.1"],\
           ["bfj", "npm:9.1.2"],\
-          ["commander", "npm:13.1.0"],\
-          ["envinfo", "npm:7.14.0"],\
-          ["html_codesniffer", "npm:2.5.1"],\
+          ["commander", "npm:14.0.3"],\
+          ["envinfo", "npm:7.21.0"],\
           ["kleur", "npm:4.1.5"],\
           ["mustache", "npm:4.2.0"],\
           ["node.extend", "npm:2.0.3"],\
-          ["pa11y", "npm:9.0.1"],\
+          ["pa11y", "npm:9.1.0"],\
           ["puppeteer", "npm:24.35.0"],\
           ["semver", "npm:7.7.3"]\
         ],\
@@ -14990,7 +14990,7 @@ const RAW_RUNTIME_STATE =
           ["nodemon", "npm:3.1.11"],\
           ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
           ["nyc", "npm:17.1.0"],\
-          ["pa11y", "npm:9.0.1"],\
+          ["pa11y", "npm:9.1.0"],\
           ["permissions-policy", "npm:0.6.0"],\
           ["playwright", "npm:1.58.0"],\
           ["pre-commit", "npm:1.2.2"],\
