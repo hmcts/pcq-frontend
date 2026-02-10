@@ -69,7 +69,8 @@ const validateParameters = req => {
     } else if (!validatedService(req.query.serviceId)) {
         logger.error(`Service ${req.query.serviceId} is not registered with PCQ`);
     } else {
-        appInsights.trackTrace({message: 'Entering PCQ Journey', properties: {['ServiceId']:req.query.serviceId}});
+        appInsights.trackTrace({message: `Entering PCQ Journey - ServiceId: ${req.query.serviceId}`, 
+            properties: {['ServiceId']:req.query.serviceId}});
         req.session.validParameters = true;
         // Create the JWT Token after the required parameters have been set.
         auth.createToken(req, req.session.form.partyId);
