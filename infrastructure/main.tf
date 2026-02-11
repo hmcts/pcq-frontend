@@ -38,3 +38,18 @@ resource "azurerm_key_vault_secret" "redis_access_key" {
   value        = module.pcq-frontend-redis-cache.access_key
   key_vault_id = data.azurerm_key_vault.key_vault.id
 }
+
+resource "azurerm_key_vault_secret" "frontend_redis_secret" {
+  name         = "frontend-redis-secret"
+  value        = random_password.frontend_redis_secret.result
+  key_vault_id = data.azurerm_key_vault.key_vault.id
+}
+
+resource "random_password" "frontend_redis_secret" {
+  length           = 32
+  override_special = "()-_"
+
+  keepers = {
+    rotation = var.frontend_redis_secret_rotation
+  }
+}
