@@ -10,7 +10,6 @@ const setSecret = (secretPath, configPath) => {
 const setupSecrets = () => {
     if (config.has('secrets.pcq')) {
         setSecret('secrets.pcq.frontend-redis-access-key', 'redis.password');
-        setSecret('secrets.pcq.frontend-redis-secret', 'redis.secret');
         setSecret('secrets.pcq.jwt-secret', 'auth.jwt.secret');
         setSecret('secrets.pcq.app-insights-connection-string', 'appInsights.connectionString');
         setSecret('secrets.pcq.launchdarkly-key', 'featureToggles.launchDarklyKey');

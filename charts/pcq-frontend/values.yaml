@@ -31,7 +31,6 @@ nodejs:
       resourceGroup: pcq
       secrets:
         - app-insights-connection-string
-        - frontend-redis-secret
         - frontend-redis-access-key
         - jwt-secret
         - launchdarkly-key
