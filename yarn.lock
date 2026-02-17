@@ -3970,7 +3970,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:^6.12.4, ajv@npm:^6.12.6":
+"ajv@npm:^6.12.4":
   version: 6.12.6
   resolution: "ajv@npm:6.12.6"
   dependencies:
@@ -12278,7 +12278,7 @@ __metadata:
     "@stryker-mutator/api": "npm:^8.5.0"
     "@stryker-mutator/core": "npm:^8.5.0"
     "@stryker-mutator/mocha-runner": "npm:8.7.1"
-    ajv: "npm:^6.12.6"
+    ajv: "npm:^8.0.0"
     app: "link:./app"
     applicationinsights: "npm:~3.13.0"
     chai: "npm:^4.3.10"
