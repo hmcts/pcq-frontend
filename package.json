@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.248",
+  "version": "1.2.249",
   "license": "MIT",
   "engines": {
     "node": ">=20.0.0"
@@ -135,7 +135,8 @@
     "jws": "4.0.1",
     "tar": "^7.5.9",
     "@isaacs/brace-expansion": "5.0.1",
-    "qs": "^6.14.2"
+    "qs": "^6.14.2",
+    "ajv": "^8.18.0"
   },
   "nyc": {
     "report-dir": "functional-output/coverage",
