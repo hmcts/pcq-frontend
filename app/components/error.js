@@ -37,7 +37,7 @@ const generateErrors = (errs, ctx, formdata, errorPath, language = 'en') => {
                 param = e.params.missingProperty;
                 return FieldError(param, 'required', errorPath, ctx, language);
             }
-            [, param] = e.dataPath.split('.');
+            param = extractErrorParam(e);
 
             param = stripBrackets(param, e);
 
@@ -51,10 +51,24 @@ const generateErrors = (errs, ctx, formdata, errorPath, language = 'en') => {
 };
 
 const stripBrackets = (param, e) => {
-    if (!param && e.dataPath.includes('[\'') && e.dataPath.includes('\']')) {
-        return e.dataPath.replace(/\['|']/g, '');
+    const path = e.instancePath || '';
+    if (!param && path.includes('[\'') && path.includes('\']')) {
+        return path.replace(/\['|']/g, '');
     }
     return param;
+};
+
+const extractErrorParam = (e) => {
+    if (e.params && e.params.missingProperty) {
+        return e.params.missingProperty;
+    }
+
+    if (e.instancePath) {
+        const [, firstSegment] = e.instancePath.split('/');
+        return firstSegment;
+    }
+
+    return undefined;
 };
 
 const populateErrors = (errors) => {

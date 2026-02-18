@@ -1,12 +1,14 @@
 'use strict';
 
 const {mapValues, reduce} = require('lodash');
-const Ajv = require('ajv');
+const Ajv = require('ajv').default;
+const addFormats = require('ajv-formats');
 const Step = require('app/core/steps/Step');
 const generateErrors = require('app/components/error').generateErrors;
 
-const validator = new Ajv({allErrors: true});
-validator.addMetaSchema(require('ajv/lib/refs/json-schema-draft-06.json'));
+const validator = new Ajv({allErrors: true, strict: false});
+validator.addMetaSchema(require('ajv/dist/refs/json-schema-draft-06.json'));
+addFormats(validator);
 
 class ValidationStep extends Step {
 
