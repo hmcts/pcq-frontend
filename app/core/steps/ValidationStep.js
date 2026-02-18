@@ -6,7 +6,7 @@ const addFormats = require('ajv-formats');
 const Step = require('app/core/steps/Step');
 const generateErrors = require('app/components/error').generateErrors;
 
-const validator = new Ajv({allErrors: true, strict: false, addUsedSchema: false});
+const validator = new Ajv({allErrors: true, strict: false});
 validator.addMetaSchema(require('ajv/dist/refs/json-schema-draft-06.json'));
 addFormats(validator);
 
