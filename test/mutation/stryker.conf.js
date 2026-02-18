@@ -34,7 +34,6 @@ module.exports = {
         'test/unit/services/testServiceInvokerData.json'
     ],
     testRunner: 'mocha',
-    concurrency: 1,
     mochaOptions: {
         spec:
             [
