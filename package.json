@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.248",
+  "version": "1.2.249",
   "license": "MIT",
   "engines": {
     "node": ">=20.0.0"
@@ -50,7 +50,8 @@
     "@hmcts/cookie-manager": "^1.0.0",
     "@hmcts/nodejs-healthcheck": "^1.7.3",
     "@hmcts/properties-volume": "^1.0.0",
-    "ajv": "^6.12.6",
+    "ajv": "^8.18.0",
+    "ajv-formats": "^2.1.1",
     "app": "link:./app",
     "applicationinsights": "~3.13.0",
     "co": "^4.6.0",
