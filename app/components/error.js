@@ -53,13 +53,13 @@ const generateErrors = (errs, ctx, formdata, errorPath, language = 'en') => {
 const stripBrackets = (param, e) => {
     const path = e.instancePath || '';
     if (!param && path.includes('[\'') && path.includes('\']')) {
-        return path.replace(/\['|']/g, '');
+        return path.replaceAll(/\['|']/g, '');
     }
     return param;
 };
 
 const extractErrorParam = (e) => {
-    if (e.params && e.params.missingProperty) {
+    if (e.params?.missingProperty) {
         return e.params.missingProperty;
     }
 

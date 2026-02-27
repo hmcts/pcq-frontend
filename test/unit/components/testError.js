@@ -4,6 +4,54 @@ const expect = require('chai').expect;
 const FieldError = require('app/components/error');
 
 describe('error', () => {
+    describe('generateErrors() core branches', () => {
+        before(() => {
+            // Ensure i18next is initialized before generateErrors() calls changeLanguage().
+            FieldError('crossField', 'oneOf', 'startpage', {}, 'en');
+        });
+
+        it('should return only crossField oneOf error when oneOf is present', () => {
+            const errors = FieldError.generateErrors([
+                {keyword: 'oneOf'},
+                {keyword: 'type', params: {}, instancePath: '/dob-day'}
+            ], {name: 'Alex'}, {name: 'Sam'}, 'startpage', 'en');
+
+            expect(errors).to.have.length(1);
+            expect(errors[0].field).to.equal('crossField');
+            expect(errors[0].href).to.equal('#crossField');
+        });
+
+        it('should map required-like keywords to required errors using missingProperty', () => {
+            const errors = FieldError.generateErrors([
+                {keyword: 'required', params: {missingProperty: 'dob-day'}},
+                {keyword: 'switch', params: {missingProperty: 'dob-day'}},
+                {keyword: 'dependencies', params: {missingProperty: 'dob-month'}}
+            ], {}, {}, 'startpage', 'en');
+
+            expect(errors).to.have.length(2);
+            expect(errors.map((e) => e.field)).to.deep.equal(['dob-day', 'dob-month']);
+        });
+
+        it('should remove duplicate errors via uniqWith', () => {
+            const errors = FieldError.generateErrors([
+                {keyword: 'type', params: {}, instancePath: '/dob-year'},
+                {keyword: 'type', params: {}, instancePath: '/dob-year'}
+            ], {}, {}, 'startpage', 'en');
+
+            expect(errors).to.have.length(1);
+            expect(errors[0].field).to.equal('dob-year');
+        });
+
+        it('should throw ReferenceError when required-like error has no params', () => {
+            expect(() => FieldError.generateErrors([
+                {keyword: 'required'}
+            ], {}, {}, 'startpage', 'en')).to.throw(
+                ReferenceError,
+                'Error messages have not been defined for Step in content.json for errors.undefined'
+            );
+        });
+    });
+
     describe('generateErrors() extractErrorParam', () => {
         before(() => {
             // Ensure i18next is initialized before generateErrors() calls changeLanguage().
@@ -24,6 +72,22 @@ describe('error', () => {
             ], {}, {}, 'startpage', 'en');
 
             expect(errors[0].field).to.equal('dob-year');
+        });
+
+        it('should use first segment from instancePath when params is undefined', () => {
+            const errors = FieldError.generateErrors([
+                {keyword: 'type', instancePath: '/dob-month'}
+            ], {}, {}, 'startpage', 'en');
+
+            expect(errors[0].field).to.equal('dob-month');
+        });
+
+        it('should strip bracket notation from instancePath when no param is resolved', () => {
+            const errors = FieldError.generateErrors([
+                {keyword: 'type', params: {}, instancePath: '[\'child\']'}
+            ], {}, {}, 'startpage', 'en');
+
+            expect(errors[0].field).to.equal('child');
         });
 
         it('should return undefined field when neither missingProperty nor instancePath is available', () => {
