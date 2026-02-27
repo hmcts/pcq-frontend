@@ -2,6 +2,7 @@
 
 const expect = require('chai').expect;
 const ValidationStep = require('app/core/steps/ValidationStep');
+const FieldError = require('app/components/error');
 const i18next = require('i18next');
 
 describe('ValidationStep', () => {
@@ -19,6 +20,18 @@ describe('ValidationStep', () => {
     });
 
     describe('uniqueProperties()', () => {
+        it('should return schema properties when properties keyword is present', (done) => {
+            const validationStep = Object.create(ValidationStep.prototype);
+            const schema = {
+                properties: {
+                    name: {type: 'string'}
+                }
+            };
+
+            expect(validationStep.uniqueProperties(schema)).to.deep.equal(schema.properties);
+            done();
+        });
+
         it('should map oneOf properties to a flattened type object', (done) => {
             const validationStep = Object.create(ValidationStep.prototype);
             const schema = {
@@ -75,6 +88,11 @@ describe('ValidationStep', () => {
     });
 
     describe('validate()', () => {
+        before(() => {
+            // Initialize i18next before exercising invalid-path generateErrors calls.
+            FieldError('crossField', 'oneOf', 'startpage', {}, 'en');
+        });
+
         it('should validate ctx when present and return true for valid data', (done) => {
             const schema = {
                 type: 'object',
@@ -89,6 +107,45 @@ describe('ValidationStep', () => {
 
             expect(isValid).to.equal(true);
             expect(errors).to.deep.equal([]);
+            done();
+        });
+
+        it('should strip empty string fields from ctx before validation', (done) => {
+            const schema = {
+                type: 'object',
+                properties: {
+                    name: {type: 'string'},
+                    optionalField: {type: 'string'}
+                },
+                required: ['name']
+            };
+
+            const validationStep = new ValidationStep({}, 'test', 'startpage', i18next, schema, 'en');
+            const ctx = {name: 'Priyanka', optionalField: '   '};
+
+            const [isValid, errors] = validationStep.validate(ctx, {}, 'en');
+
+            expect(isValid).to.equal(true);
+            expect(errors).to.deep.equal([]);
+            expect(ctx).to.deep.equal({name: 'Priyanka'});
+            done();
+        });
+
+        it('should return false and generated errors for invalid data', (done) => {
+            const schema = {
+                type: 'object',
+                properties: {
+                    name: {type: 'string'}
+                },
+                required: ['name']
+            };
+
+            const validationStep = new ValidationStep({}, 'test', 'startpage', i18next, schema, 'en');
+            const [isValid, errors] = validationStep.validate({}, {}, 'en');
+
+            expect(isValid).to.equal(false);
+            expect(errors).to.have.length(1);
+            expect(errors[0].field).to.equal('name');
             done();
         });
     });
