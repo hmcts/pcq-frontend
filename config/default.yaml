@@ -38,26 +38,26 @@ services:
     paths:
       forms: '/pcq/backend/submitAnswers'
 tokenKeys:
-  probate: 'SERVICE_TOKEN_KEY'
-  cmc: 'SERVICE_TOKEN_KEY'
-  divorce: 'SERVICE_TOKEN_KEY'
-  new_divorce_law: 'SERVICE_TOKEN_KEY'
-  sscs: 'SERVICE_TOKEN_KEY'
-  iac: 'SERVICE_TOKEN_KEY'
-  adoption: 'SERVICE_TOKEN_KEY'
-  et: 'SERVICE_TOKEN_KEY'
-  online_plea: 'SERVICE_TOKEN_KEY'
-  specialtribunals_cic: 'SERVICE_TOKEN_KEY'
-  jurordigital: 'SERVICE_TOKEN_KEY'
-  prl_ca: 'SERVICE_TOKEN_KEY'
-  civil-citizen-ui: 'SERVICE_TOKEN_KEY'
+  probate: 
+  cmc: 
+  divorce: 
+  new_divorce_law: 
+  sscs: 
+  iac: 
+  adoption: 
+  et: 
+  online_plea: 
+  specialtribunals_cic: 
+  jurordigital: 
+  prl_ca: 
+  civil-citizen-ui: 
 redis:
   host: 'localhost'
   port: 6379
-  password: 'dummy_password'
+  password: 
   useTLS: 'false'
   enabled: 'false'
-  secret: 'OVERWRITE_THIS'
+  secret: 
   proxy: true
   resave: false
   saveUninitialized: false
