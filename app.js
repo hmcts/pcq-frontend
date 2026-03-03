@@ -339,7 +339,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     }
 
     // PCQ Invoker
-    if (String(config.get('invoker.enabled')).toLowerCase() === 'true') {
+    if (config.environment !== 'prod' && String(config.invoker.enabled).toLowerCase() === 'true') {
         invoker.addTo(app);
     }
 
