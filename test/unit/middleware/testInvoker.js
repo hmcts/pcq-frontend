@@ -105,10 +105,28 @@ describe('Invoker', () => {
                 });
         });
 
-        it('should not load in prod environment', (done) => {
+        it('should not load in prod environment even when enabled', (done) => {
             const rewiredApp = rewire('../../../app');
             rewiredApp.__set__('config.environment', 'prod');
-            rewiredApp.__set__('config.invoker.enabled', 'false');
+            rewiredApp.__set__('config.invoker.enabled', 'true');
+            const server = rewiredApp.init(false, {});
+            const agent = request.agent(server.app);
+            agent.get('/invoker')
+                .expect(404)
+                .end((err, res) => {
+                    server.http.close();
+                    if (err) {
+                        throw err;
+                    }
+                    expect(res.text).to.contain('Page not found');
+                    done();
+                });
+        });
+
+        it('should not load in production environment even when enabled', (done) => {
+            const rewiredApp = rewire('../../../app');
+            rewiredApp.__set__('config.environment', 'production');
+            rewiredApp.__set__('config.invoker.enabled', 'true');
             const server = rewiredApp.init(false, {});
             const agent = request.agent(server.app);
             agent.get('/invoker')
