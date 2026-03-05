@@ -67,7 +67,7 @@ const RAW_RUNTIME_STATE =
           ["helmet", "npm:8.1.0"],\
           ["https-proxy-agent", "npm:5.0.1"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.8.0"],\
-          ["immutable", "npm:5.1.4"],\
+          ["immutable", "npm:4.3.8"],\
           ["ioredis", "npm:5.10.0"],\
           ["js-yaml", "npm:4.1.1"],\
           ["jsonwebtoken", "npm:9.0.3"],\
@@ -10844,10 +10844,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["immutable", [\
-      ["npm:5.1.4", {\
-        "packageLocation": "./.yarn/cache/immutable-npm-5.1.4-cddca3d05c-0655b33af2.zip/node_modules/immutable/",\
+      ["npm:4.3.8", {\
+        "packageLocation": "./.yarn/cache/immutable-npm-4.3.8-9db2d34fb7-27a134cec0.zip/node_modules/immutable/",\
         "packageDependencies": [\
-          ["immutable", "npm:5.1.4"]\
+          ["immutable", "npm:4.3.8"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -13787,7 +13787,7 @@ const RAW_RUNTIME_STATE =
           ["nopt", "npm:9.0.0"],\
           ["proc-log", "npm:6.1.0"],\
           ["semver", "npm:7.7.3"],\
-          ["tar", "npm:7.5.9"],\
+          ["tar", "npm:7.5.10"],\
           ["tinyglobby", "npm:0.2.15"],\
           ["which", "npm:6.0.0"]\
         ],\
@@ -14994,7 +14994,7 @@ const RAW_RUNTIME_STATE =
           ["helmet", "npm:8.1.0"],\
           ["https-proxy-agent", "npm:5.0.1"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.8.0"],\
-          ["immutable", "npm:5.1.4"],\
+          ["immutable", "npm:4.3.8"],\
           ["ioredis", "npm:5.10.0"],\
           ["js-yaml", "npm:4.1.1"],\
           ["jsonwebtoken", "npm:9.0.3"],\
@@ -15993,7 +15993,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@parcel/watcher", "npm:2.5.4"],\
           ["chokidar", "npm:4.0.3"],\
-          ["immutable", "npm:5.1.4"],\
+          ["immutable", "npm:4.3.8"],\
           ["sass", "npm:1.97.2"],\
           ["source-map-js", "npm:1.2.1"]\
         ],\
@@ -16979,14 +16979,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["tar", [\
-      ["npm:7.5.9", {\
-        "packageLocation": "./.yarn/cache/tar-npm-7.5.9-dd42dd386e-1213cdde9c.zip/node_modules/tar/",\
+      ["npm:7.5.10", {\
+        "packageLocation": "./.yarn/cache/tar-npm-7.5.10-83147ff192-98ba6421a2.zip/node_modules/tar/",\
         "packageDependencies": [\
           ["@isaacs/fs-minipass", "npm:4.0.1"],\
           ["chownr", "npm:3.0.0"],\
           ["minipass", "npm:7.1.2"],\
           ["minizlib", "npm:3.1.0"],\
-          ["tar", "npm:7.5.9"],\
+          ["tar", "npm:7.5.10"],\
           ["yallist", "npm:5.0.0"]\
         ],\
         "linkType": "HARD"\
