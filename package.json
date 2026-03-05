@@ -132,6 +132,7 @@
   },
   "resolutions": {
     "merge": "2.1.1",
+    "serialize-javascript": "^7.0.3",
     "minimatch@^10.1.1": "10.2.3"
   },
   "nyc": {
