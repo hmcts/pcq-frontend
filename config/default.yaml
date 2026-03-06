@@ -26,6 +26,8 @@ app:
   port: '4000'
   useCSRFProtection: 'true'
   basePath: ''
+invoker:
+  enabled: 'false'
 auth:
   jwt:
     ttl: '8h'
