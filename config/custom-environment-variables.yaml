@@ -11,6 +11,8 @@ featureToggles:
 app:
   useHttps: USE_HTTPS
   port: PORT
+invoker:
+  enabled: ENABLE_INVOKER
 auth:
   jwt:
     secret: JWT_SECRET
