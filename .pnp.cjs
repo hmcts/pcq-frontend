@@ -34,6 +34,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/cookie-manager", "npm:1.1.0"],\
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/properties-volume", "npm:1.3.0"],\
+          ["@launchdarkly/node-server-sdk", "npm:9.10.9"],\
           ["@opentelemetry/api", "npm:1.9.0"],\
           ["@opentelemetry/context-async-hooks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.6.0"],\
           ["@parcel/watcher", "npm:2.5.4"],\
@@ -71,7 +72,6 @@ const RAW_RUNTIME_STATE =
           ["ioredis", "npm:5.10.0"],\
           ["js-yaml", "npm:4.1.1"],\
           ["jsonwebtoken", "npm:9.0.3"],\
-          ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
           ["lodash", "npm:4.17.23"],\
           ["mocha", "npm:11.7.5"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
@@ -2340,6 +2340,38 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@js-sdsl-ordered-map-npm-4.4.2-158f6c6b74-ac64e3f061.zip/node_modules/@js-sdsl/ordered-map/",\
         "packageDependencies": [\
           ["@js-sdsl/ordered-map", "npm:4.4.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@launchdarkly/js-sdk-common", [\
+      ["npm:2.23.0", {\
+        "packageLocation": "./.yarn/cache/@launchdarkly-js-sdk-common-npm-2.23.0-9d405edf82-5e874cdf7a.zip/node_modules/@launchdarkly/js-sdk-common/",\
+        "packageDependencies": [\
+          ["@launchdarkly/js-sdk-common", "npm:2.23.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@launchdarkly/js-server-sdk-common", [\
+      ["npm:2.18.2", {\
+        "packageLocation": "./.yarn/cache/@launchdarkly-js-server-sdk-common-npm-2.18.2-53511e447f-bd308d08e8.zip/node_modules/@launchdarkly/js-server-sdk-common/",\
+        "packageDependencies": [\
+          ["@launchdarkly/js-sdk-common", "npm:2.23.0"],\
+          ["@launchdarkly/js-server-sdk-common", "npm:2.18.2"],\
+          ["semver", "npm:7.5.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@launchdarkly/node-server-sdk", [\
+      ["npm:9.10.9", {\
+        "packageLocation": "./.yarn/cache/@launchdarkly-node-server-sdk-npm-9.10.9-068c2cc406-2febf2f3e3.zip/node_modules/@launchdarkly/node-server-sdk/",\
+        "packageDependencies": [\
+          ["@launchdarkly/js-server-sdk-common", "npm:2.18.2"],\
+          ["@launchdarkly/node-server-sdk", "npm:9.10.9"],\
+          ["https-proxy-agent", "npm:7.0.6"],\
+          ["launchdarkly-eventsource", "npm:2.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7279,13 +7311,6 @@ const RAW_RUNTIME_STATE =
           ["clone", "npm:1.0.4"]\
         ],\
         "linkType": "HARD"\
-      }],\
-      ["npm:2.1.2", {\
-        "packageLocation": "./.yarn/cache/clone-npm-2.1.2-1d491c6629-d9c79efba6.zip/node_modules/clone/",\
-        "packageDependencies": [\
-          ["clone", "npm:2.1.2"]\
-        ],\
-        "linkType": "HARD"\
       }]\
     ]],\
     ["clone-deep", [\
@@ -12205,26 +12230,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["launchdarkly-eventsource", [\
-      ["npm:1.4.4", {\
-        "packageLocation": "./.yarn/cache/launchdarkly-eventsource-npm-1.4.4-aedba60b7d-ed27acd89a.zip/node_modules/launchdarkly-eventsource/",\
+      ["npm:2.2.0", {\
+        "packageLocation": "./.yarn/cache/launchdarkly-eventsource-npm-2.2.0-97023a166b-9269ca3bc7.zip/node_modules/launchdarkly-eventsource/",\
         "packageDependencies": [\
-          ["launchdarkly-eventsource", "npm:1.4.4"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["launchdarkly-node-server-sdk", [\
-      ["npm:7.0.4", {\
-        "packageLocation": "./.yarn/cache/launchdarkly-node-server-sdk-npm-7.0.4-11c0166550-52a524002b.zip/node_modules/launchdarkly-node-server-sdk/",\
-        "packageDependencies": [\
-          ["async", "npm:3.2.6"],\
-          ["launchdarkly-eventsource", "npm:1.4.4"],\
-          ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
-          ["lru-cache", "npm:6.0.0"],\
-          ["node-cache", "npm:5.1.2"],\
-          ["semver", "npm:7.7.3"],\
-          ["tunnel", "npm:0.0.6"],\
-          ["uuid", "npm:8.3.2"]\
+          ["launchdarkly-eventsource", "npm:2.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -13733,16 +13742,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["node-cache", [\
-      ["npm:5.1.2", {\
-        "packageLocation": "./.yarn/cache/node-cache-npm-5.1.2-f65482660d-6ac71a9e65.zip/node_modules/node-cache/",\
-        "packageDependencies": [\
-          ["clone", "npm:2.1.2"],\
-          ["node-cache", "npm:5.1.2"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["node-domexception", [\
       ["npm:1.0.0", {\
         "packageLocation": "./.yarn/cache/node-domexception-npm-1.0.0-e1e813b76f-e332522f24.zip/node_modules/node-domexception/",\
@@ -15002,6 +15001,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/cookie-manager", "npm:1.1.0"],\
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/properties-volume", "npm:1.3.0"],\
+          ["@launchdarkly/node-server-sdk", "npm:9.10.9"],\
           ["@opentelemetry/api", "npm:1.9.0"],\
           ["@opentelemetry/context-async-hooks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.6.0"],\
           ["@parcel/watcher", "npm:2.5.4"],\
@@ -15039,7 +15039,6 @@ const RAW_RUNTIME_STATE =
           ["ioredis", "npm:5.10.0"],\
           ["js-yaml", "npm:4.1.1"],\
           ["jsonwebtoken", "npm:9.0.3"],\
-          ["launchdarkly-node-server-sdk", "npm:7.0.4"],\
           ["lodash", "npm:4.17.23"],\
           ["mocha", "npm:11.7.5"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
@@ -16092,6 +16091,14 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/semver-npm-6.3.1-bcba31fdbe-1ef3a85bd0.zip/node_modules/semver/",\
         "packageDependencies": [\
           ["semver", "npm:6.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:7.5.4", {\
+        "packageLocation": "./.yarn/cache/semver-npm-7.5.4-c4ad957fcd-985dec0d37.zip/node_modules/semver/",\
+        "packageDependencies": [\
+          ["lru-cache", "npm:6.0.0"],\
+          ["semver", "npm:7.5.4"]\
         ],\
         "linkType": "HARD"\
       }],\
