@@ -8666,7 +8666,7 @@ const RAW_RUNTIME_STATE =
           ["decamelize", "npm:6.0.1"],\
           ["edge-paths", "npm:3.0.5"],\
           ["edgedriver", "npm:5.6.1"],\
-          ["fast-xml-parser", "npm:4.5.3"],\
+          ["fast-xml-parser", "npm:4.5.5"],\
           ["node-fetch", "npm:3.3.2"],\
           ["which", "npm:4.0.0"]\
         ],\
@@ -9571,10 +9571,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["fast-xml-parser", [\
-      ["npm:4.5.3", {\
-        "packageLocation": "./.yarn/cache/fast-xml-parser-npm-4.5.3-4c572a6316-ca22bf9d65.zip/node_modules/fast-xml-parser/",\
+      ["npm:4.5.5", {\
+        "packageLocation": "./.yarn/cache/fast-xml-parser-npm-4.5.5-784cfb6faf-4820da9216.zip/node_modules/fast-xml-parser/",\
         "packageDependencies": [\
-          ["fast-xml-parser", "npm:4.5.3"],\
+          ["fast-xml-parser", "npm:4.5.5"],\
           ["strnum", "npm:1.1.2"]\
         ],\
         "linkType": "HARD"\
@@ -19024,16 +19024,16 @@ function convertToBigIntStats(stats) {
     if (Object.hasOwn(stats, key)) {
       const element = stats[key];
       if (typeof element === `number`) {
-        bigintStats[key] = BigInt(element);
+        bigintStats[key] = BigInt(Math.floor(element));
       } else if (nodeUtils__namespace.types.isDate(element)) {
         bigintStats[key] = new Date(element);
       }
     }
   }
-  bigintStats.atimeNs = bigintStats.atimeMs * BigInt(1e6);
-  bigintStats.mtimeNs = bigintStats.mtimeMs * BigInt(1e6);
-  bigintStats.ctimeNs = bigintStats.ctimeMs * BigInt(1e6);
-  bigintStats.birthtimeNs = bigintStats.birthtimeMs * BigInt(1e6);
+  bigintStats.atimeNs = bigintStats.atimeMs * BigInt(1e6) + BigInt(Math.floor(stats.atimeMs % 1 * 1e3)) * BigInt(1e3);
+  bigintStats.mtimeNs = bigintStats.mtimeMs * BigInt(1e6) + BigInt(Math.floor(stats.mtimeMs % 1 * 1e3)) * BigInt(1e3);
+  bigintStats.ctimeNs = bigintStats.ctimeMs * BigInt(1e6) + BigInt(Math.floor(stats.ctimeMs % 1 * 1e3)) * BigInt(1e3);
+  bigintStats.birthtimeNs = bigintStats.birthtimeMs * BigInt(1e6) + BigInt(Math.floor(stats.birthtimeMs % 1 * 1e3)) * BigInt(1e3);
   return bigintStats;
 }
 function areStatsEqual(a, b) {
