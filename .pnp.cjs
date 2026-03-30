@@ -9384,7 +9384,7 @@ const RAW_RUNTIME_STATE =
           ["methods", "npm:1.1.2"],\
           ["on-finished", "npm:2.4.1"],\
           ["parseurl", "npm:1.3.3"],\
-          ["path-to-regexp", "npm:0.1.12"],\
+          ["path-to-regexp", "npm:0.1.13"],\
           ["proxy-addr", "npm:2.0.7"],\
           ["qs", "npm:6.14.2"],\
           ["range-parser", "npm:1.2.1"],\
@@ -13343,7 +13343,7 @@ const RAW_RUNTIME_STATE =
           ["mocha", "npm:11.7.5"],\
           ["ms", "npm:2.1.3"],\
           ["picocolors", "npm:1.1.1"],\
-          ["serialize-javascript", "npm:7.0.4"],\
+          ["serialize-javascript", "npm:7.0.5"],\
           ["strip-json-comments", "npm:3.1.1"],\
           ["supports-color", "npm:8.1.1"],\
           ["workerpool", "npm:9.3.4"],\
@@ -14575,10 +14575,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["path-to-regexp", [\
-      ["npm:0.1.12", {\
-        "packageLocation": "./.yarn/cache/path-to-regexp-npm-0.1.12-a9bf1de212-2e30f6a014.zip/node_modules/path-to-regexp/",\
+      ["npm:0.1.13", {\
+        "packageLocation": "./.yarn/cache/path-to-regexp-npm-0.1.13-53f2083228-f1e4bdedc4.zip/node_modules/path-to-regexp/",\
         "packageDependencies": [\
-          ["path-to-regexp", "npm:0.1.12"]\
+          ["path-to-regexp", "npm:0.1.13"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -16131,10 +16131,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["serialize-javascript", [\
-      ["npm:7.0.4", {\
-        "packageLocation": "./.yarn/cache/serialize-javascript-npm-7.0.4-c70012ae10-f96d59d605.zip/node_modules/serialize-javascript/",\
+      ["npm:7.0.5", {\
+        "packageLocation": "./.yarn/cache/serialize-javascript-npm-7.0.5-0078177797-6237c76ef6.zip/node_modules/serialize-javascript/",\
         "packageDependencies": [\
-          ["serialize-javascript", "npm:7.0.4"]\
+          ["serialize-javascript", "npm:7.0.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -17121,7 +17121,7 @@ const RAW_RUNTIME_STATE =
           ["esbuild", null],\
           ["jest-worker", "npm:27.5.1"],\
           ["schema-utils", "npm:4.3.3"],\
-          ["serialize-javascript", "npm:7.0.4"],\
+          ["serialize-javascript", "npm:7.0.5"],\
           ["terser", "npm:5.46.0"],\
           ["terser-webpack-plugin", "virtual:3cd4b00589f8c058d5861422dfdb1c2b4678909ca71ec84a70ed6917a6d314e46c588bc0ac3689504114ddf066744b9af91de42243b9c4403f3f6bb023e67fd7#npm:5.3.16"],\
           ["uglify-js", null],\
