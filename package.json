@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.262",
+  "version": "1.2.263",
   "license": "MIT",
   "engines": {
     "node": ">=20.0.0"
@@ -133,8 +133,7 @@
   "resolutions": {
     "merge": "2.1.1",
     "serialize-javascript": "^7.0.3",
-    "minimatch@^10.1.1": "^10.2.4",
-    "brace-expansion": "^5.0.5"
+    "minimatch@^10.1.1": "^10.2.4"
   },
   "nyc": {
     "report-dir": "functional-output/coverage",
