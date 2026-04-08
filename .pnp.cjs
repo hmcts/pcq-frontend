@@ -67,12 +67,12 @@ const RAW_RUNTIME_STATE =
           ["govuk-frontend", "npm:5.14.0"],\
           ["helmet", "npm:8.1.0"],\
           ["https-proxy-agent", "npm:5.0.1"],\
-          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.10.9"],\
+          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.0.3"],\
           ["immutable", "npm:5.1.4"],\
           ["ioredis", "npm:5.10.0"],\
           ["js-yaml", "npm:4.1.1"],\
           ["jsonwebtoken", "npm:9.0.3"],\
-          ["lodash", "npm:4.17.23"],\
+          ["lodash", "npm:4.18.1"],\
           ["mocha", "npm:11.7.5"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
           ["moment", "npm:2.30.1"],\
@@ -83,7 +83,7 @@ const RAW_RUNTIME_STATE =
           ["nyc", "npm:18.0.0"],\
           ["pa11y", "npm:9.1.0"],\
           ["permissions-policy", "npm:0.6.0"],\
-          ["playwright", "npm:1.58.0"],\
+          ["playwright", "npm:1.59.1"],\
           ["pre-commit", "npm:1.2.2"],\
           ["protected-characteristics-frontend", "workspace:."],\
           ["proxyquire", "npm:2.1.3"],\
@@ -1872,7 +1872,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
           ["@hmcts/properties-volume", "npm:1.3.0"],\
           ["js-yaml", "npm:4.1.1"],\
-          ["lodash", "npm:4.17.23"]\
+          ["lodash", "npm:4.18.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -5796,7 +5796,7 @@ const RAW_RUNTIME_STATE =
           ["graceful-fs", "npm:4.2.11"],\
           ["is-stream", "npm:2.0.1"],\
           ["lazystream", "npm:1.0.1"],\
-          ["lodash", "npm:4.17.23"],\
+          ["lodash", "npm:4.18.1"],\
           ["normalize-path", "npm:3.0.0"],\
           ["readable-stream", "npm:4.7.0"]\
         ],\
@@ -5923,7 +5923,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/async-npm-2.6.4-3155e80151-df8e52817d.zip/node_modules/async/",\
         "packageDependencies": [\
           ["async", "npm:2.6.4"],\
-          ["lodash", "npm:4.17.23"]\
+          ["lodash", "npm:4.18.1"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -6209,7 +6209,7 @@ const RAW_RUNTIME_STATE =
           ["babel-traverse", "npm:6.26.0"],\
           ["babel-types", "npm:6.26.0"],\
           ["babylon", "npm:6.18.0"],\
-          ["lodash", "npm:4.17.23"]\
+          ["lodash", "npm:4.18.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6227,7 +6227,7 @@ const RAW_RUNTIME_STATE =
           ["debug", "virtual:04e17282184d1dd8ebe9be1cf43aab3ec3497566ee201258c65471258a0598bf13554ebaee2c4f89425bfcd02b07008290d1416ead8ec323401963827fce05d6#npm:2.6.9"],\
           ["globals", "npm:9.18.0"],\
           ["invariant", "npm:2.2.4"],\
-          ["lodash", "npm:4.17.23"]\
+          ["lodash", "npm:4.18.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6239,7 +6239,7 @@ const RAW_RUNTIME_STATE =
           ["babel-runtime", "npm:6.26.0"],\
           ["babel-types", "npm:6.26.0"],\
           ["esutils", "npm:2.0.3"],\
-          ["lodash", "npm:4.17.23"],\
+          ["lodash", "npm:4.18.1"],\
           ["to-fast-properties", "npm:1.0.3"]\
         ],\
         "linkType": "HARD"\
@@ -8403,7 +8403,7 @@ const RAW_RUNTIME_STATE =
           ["jest", null],\
           ["jest-environment-emit", "virtual:f5211d03eceb5c615629f746a3045d2fa91c38ed5392d5803bbd628fe39c1e446acff433cc73b52e3dd04db2cd7cd15da2104cc82362f80d1b6e17fa5edd6959#npm:1.2.0"],\
           ["json-cycle", "npm:1.5.0"],\
-          ["lodash", "npm:4.17.23"],\
+          ["lodash", "npm:4.18.1"],\
           ["multi-sort-stream", "npm:1.0.4"],\
           ["multipipe", "npm:4.0.0"],\
           ["node-ipc", "npm:9.2.1"],\
@@ -10791,19 +10791,19 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["i18next", [\
-      ["npm:25.10.9", {\
-        "packageLocation": "./.yarn/cache/i18next-npm-25.10.9-789e1fa652-1e9e6b9506.zip/node_modules/i18next/",\
+      ["npm:26.0.3", {\
+        "packageLocation": "./.yarn/cache/i18next-npm-26.0.3-eb29cdd791-5f7286d863.zip/node_modules/i18next/",\
         "packageDependencies": [\
-          ["i18next", "npm:25.10.9"]\
+          ["i18next", "npm:26.0.3"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.10.9", {\
-        "packageLocation": "./.yarn/__virtual__/i18next-virtual-4e6a53ac91/0/cache/i18next-npm-25.10.9-789e1fa652-1e9e6b9506.zip/node_modules/i18next/",\
+      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.0.3", {\
+        "packageLocation": "./.yarn/__virtual__/i18next-virtual-d98c81344f/0/cache/i18next-npm-26.0.3-eb29cdd791-5f7286d863.zip/node_modules/i18next/",\
         "packageDependencies": [\
           ["@babel/runtime", "npm:7.29.2"],\
           ["@types/typescript", null],\
-          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.10.9"],\
+          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.0.3"],\
           ["typescript", null]\
         ],\
         "packagePeers": [\
@@ -11014,7 +11014,7 @@ const RAW_RUNTIME_STATE =
           ["cli-width", "npm:3.0.0"],\
           ["figures", "npm:3.2.0"],\
           ["inquirer", "npm:8.2.7"],\
-          ["lodash", "npm:4.17.23"],\
+          ["lodash", "npm:4.18.1"],\
           ["mute-stream", "npm:0.0.8"],\
           ["ora", "npm:5.4.1"],\
           ["run-async", "npm:2.4.1"],\
@@ -12370,19 +12370,19 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:4.17.23", {\
-        "packageLocation": "./.yarn/cache/lodash-npm-4.17.23-50bdb1c01a-82504c8825.zip/node_modules/lodash/",\
+      ["npm:4.18.1", {\
+        "packageLocation": "./.yarn/cache/lodash-npm-4.18.1-a64c3070ac-306fea53df.zip/node_modules/lodash/",\
         "packageDependencies": [\
-          ["lodash", "npm:4.17.23"]\
+          ["lodash", "npm:4.18.1"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["lodash-es", [\
-      ["npm:4.17.23", {\
-        "packageLocation": "./.yarn/cache/lodash-es-npm-4.17.23-b4279789e6-1feae200df.zip/node_modules/lodash-es/",\
+      ["npm:4.18.1", {\
+        "packageLocation": "./.yarn/cache/lodash-es-npm-4.18.1-02cf41b912-8bfad225ef.zip/node_modules/lodash-es/",\
         "packageDependencies": [\
-          ["lodash-es", "npm:4.17.23"]\
+          ["lodash-es", "npm:4.18.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -14724,21 +14724,21 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["playwright", [\
-      ["npm:1.58.0", {\
-        "packageLocation": "./.yarn/cache/playwright-npm-1.58.0-e962aa7ad7-5ef5d09779.zip/node_modules/playwright/",\
+      ["npm:1.59.1", {\
+        "packageLocation": "./.yarn/cache/playwright-npm-1.59.1-8e8808a3f1-17b2df42ef.zip/node_modules/playwright/",\
         "packageDependencies": [\
           ["fsevents", "patch:fsevents@npm%3A2.3.2#optional!builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"],\
-          ["playwright", "npm:1.58.0"],\
-          ["playwright-core", "npm:1.58.0"]\
+          ["playwright", "npm:1.59.1"],\
+          ["playwright-core", "npm:1.59.1"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["playwright-core", [\
-      ["npm:1.58.0", {\
-        "packageLocation": "./.yarn/cache/playwright-core-npm-1.58.0-5753f9e161-718549cdcd.zip/node_modules/playwright-core/",\
+      ["npm:1.59.1", {\
+        "packageLocation": "./.yarn/cache/playwright-core-npm-1.59.1-e63605649f-d27857a670.zip/node_modules/playwright-core/",\
         "packageDependencies": [\
-          ["playwright-core", "npm:1.58.0"]\
+          ["playwright-core", "npm:1.59.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -15030,12 +15030,12 @@ const RAW_RUNTIME_STATE =
           ["govuk-frontend", "npm:5.14.0"],\
           ["helmet", "npm:8.1.0"],\
           ["https-proxy-agent", "npm:5.0.1"],\
-          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:25.10.9"],\
+          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.0.3"],\
           ["immutable", "npm:5.1.4"],\
           ["ioredis", "npm:5.10.0"],\
           ["js-yaml", "npm:4.1.1"],\
           ["jsonwebtoken", "npm:9.0.3"],\
-          ["lodash", "npm:4.17.23"],\
+          ["lodash", "npm:4.18.1"],\
           ["mocha", "npm:11.7.5"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
           ["moment", "npm:2.30.1"],\
@@ -15046,7 +15046,7 @@ const RAW_RUNTIME_STATE =
           ["nyc", "npm:18.0.0"],\
           ["pa11y", "npm:9.1.0"],\
           ["permissions-policy", "npm:0.6.0"],\
-          ["playwright", "npm:1.58.0"],\
+          ["playwright", "npm:1.59.1"],\
           ["pre-commit", "npm:1.2.2"],\
           ["protected-characteristics-frontend", "workspace:."],\
           ["proxyquire", "npm:2.1.3"],\
@@ -18738,7 +18738,7 @@ const RAW_RUNTIME_STATE =
           ["fast-glob", "npm:3.3.3"],\
           ["fs-extra", "npm:11.3.3"],\
           ["js-yaml", "npm:4.1.1"],\
-          ["lodash-es", "npm:4.17.23"],\
+          ["lodash-es", "npm:4.18.1"],\
           ["semver", "npm:7.7.3"],\
           ["synp", "npm:1.9.14"],\
           ["yarn-audit-fix", "npm:10.1.1"]\
