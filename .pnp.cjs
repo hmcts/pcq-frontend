@@ -33,7 +33,7 @@ const RAW_RUNTIME_STATE =
           ["@eslint/js", "npm:9.39.2"],\
           ["@hmcts/cookie-manager", "npm:1.1.0"],\
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
-          ["@hmcts/properties-volume", "npm:1.3.0"],\
+          ["@hmcts/properties-volume", "npm:1.4.0"],\
           ["@launchdarkly/node-server-sdk", "npm:9.10.9"],\
           ["@opentelemetry/api", "npm:1.9.0"],\
           ["@opentelemetry/context-async-hooks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.6.0"],\
@@ -1864,13 +1864,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@hmcts/properties-volume", [\
-      ["npm:1.3.0", {\
-        "packageLocation": "./.yarn/cache/@hmcts-properties-volume-npm-1.3.0-87e64a3a99-e88ed2a3e8.zip/node_modules/@hmcts/properties-volume/",\
+      ["npm:1.4.0", {\
+        "packageLocation": "./.yarn/cache/@hmcts-properties-volume-npm-1.4.0-c2be5d086e-2d5ecf1286.zip/node_modules/@hmcts/properties-volume/",\
         "packageDependencies": [\
           ["@azure/identity", "npm:4.13.0"],\
           ["@azure/keyvault-secrets", "npm:4.10.0"],\
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
-          ["@hmcts/properties-volume", "npm:1.3.0"],\
+          ["@hmcts/properties-volume", "npm:1.4.0"],\
           ["js-yaml", "npm:4.1.1"],\
           ["lodash", "npm:4.18.1"]\
         ],\
@@ -15257,7 +15257,7 @@ const RAW_RUNTIME_STATE =
           ["@eslint/js", "npm:9.39.2"],\
           ["@hmcts/cookie-manager", "npm:1.1.0"],\
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
-          ["@hmcts/properties-volume", "npm:1.3.0"],\
+          ["@hmcts/properties-volume", "npm:1.4.0"],\
           ["@launchdarkly/node-server-sdk", "npm:9.10.9"],\
           ["@opentelemetry/api", "npm:1.9.0"],\
           ["@opentelemetry/context-async-hooks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.6.0"],\
