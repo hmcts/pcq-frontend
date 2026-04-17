@@ -1768,7 +1768,7 @@ const RAW_RUNTIME_STATE =
           ["@grpc/proto-loader", "npm:0.8.0"],\
           ["lodash.camelcase", "npm:4.3.0"],\
           ["long", "npm:5.3.2"],\
-          ["protobufjs", "npm:7.5.4"],\
+          ["protobufjs", "npm:7.5.5"],\
           ["yargs", "npm:17.7.2"]\
         ],\
         "linkType": "HARD"\
@@ -3269,7 +3269,7 @@ const RAW_RUNTIME_STATE =
           ["@opentelemetry/sdk-metrics", "virtual:ae18a813b6882ecb791f7ad406488d1cb3076605463ec55dfaffa1520d978e41fe1603fee2dbda545efab0f378287520ea6ccb51a4a008439119ccae77b4d89e#npm:2.2.0"],\
           ["@opentelemetry/sdk-trace-base", "virtual:ae18a813b6882ecb791f7ad406488d1cb3076605463ec55dfaffa1520d978e41fe1603fee2dbda545efab0f378287520ea6ccb51a4a008439119ccae77b4d89e#npm:2.2.0"],\
           ["@types/opentelemetry__api", null],\
-          ["protobufjs", "npm:7.5.4"]\
+          ["protobufjs", "npm:7.5.5"]\
         ],\
         "packagePeers": [\
           "@opentelemetry/api",\
@@ -15347,8 +15347,8 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["protobufjs", [\
-      ["npm:7.5.4", {\
-        "packageLocation": "./.yarn/unplugged/protobufjs-npm-7.5.4-4d6f681551/node_modules/protobufjs/",\
+      ["npm:7.5.5", {\
+        "packageLocation": "./.yarn/unplugged/protobufjs-npm-7.5.5-73830b5abb/node_modules/protobufjs/",\
         "packageDependencies": [\
           ["@protobufjs/aspromise", "npm:1.1.2"],\
           ["@protobufjs/base64", "npm:1.1.2"],\
@@ -15362,7 +15362,7 @@ const RAW_RUNTIME_STATE =
           ["@protobufjs/utf8", "npm:1.1.0"],\
           ["@types/node", "npm:25.0.9"],\
           ["long", "npm:5.3.2"],\
-          ["protobufjs", "npm:7.5.4"]\
+          ["protobufjs", "npm:7.5.5"]\
         ],\
         "linkType": "HARD"\
       }]\
