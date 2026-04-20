@@ -33,10 +33,10 @@ const RAW_RUNTIME_STATE =
           ["@eslint/js", "npm:9.39.2"],\
           ["@hmcts/cookie-manager", "npm:1.1.0"],\
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
-          ["@hmcts/properties-volume", "npm:1.3.0"],\
+          ["@hmcts/properties-volume", "npm:1.4.0"],\
           ["@launchdarkly/node-server-sdk", "npm:9.10.9"],\
           ["@opentelemetry/api", "npm:1.9.0"],\
-          ["@opentelemetry/context-async-hooks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.6.0"],\
+          ["@opentelemetry/context-async-hooks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.7.0"],\
           ["@parcel/watcher", "npm:2.5.4"],\
           ["@stryker-mutator/api", "npm:8.7.1"],\
           ["@stryker-mutator/core", "npm:8.7.1"],\
@@ -1768,7 +1768,7 @@ const RAW_RUNTIME_STATE =
           ["@grpc/proto-loader", "npm:0.8.0"],\
           ["lodash.camelcase", "npm:4.3.0"],\
           ["long", "npm:5.3.2"],\
-          ["protobufjs", "npm:7.5.4"],\
+          ["protobufjs", "npm:8.0.1"],\
           ["yargs", "npm:17.7.2"]\
         ],\
         "linkType": "HARD"\
@@ -1864,13 +1864,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@hmcts/properties-volume", [\
-      ["npm:1.3.0", {\
-        "packageLocation": "./.yarn/cache/@hmcts-properties-volume-npm-1.3.0-87e64a3a99-e88ed2a3e8.zip/node_modules/@hmcts/properties-volume/",\
+      ["npm:1.4.0", {\
+        "packageLocation": "./.yarn/cache/@hmcts-properties-volume-npm-1.4.0-c2be5d086e-2d5ecf1286.zip/node_modules/@hmcts/properties-volume/",\
         "packageDependencies": [\
           ["@azure/identity", "npm:4.13.0"],\
           ["@azure/keyvault-secrets", "npm:4.10.0"],\
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
-          ["@hmcts/properties-volume", "npm:1.3.0"],\
+          ["@hmcts/properties-volume", "npm:1.4.0"],\
           ["js-yaml", "npm:4.1.1"],\
           ["lodash", "npm:4.18.1"]\
         ],\
@@ -2559,18 +2559,18 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["npm:2.6.0", {\
-        "packageLocation": "./.yarn/cache/@opentelemetry-context-async-hooks-npm-2.6.0-18d63e1e37-a1f746fb9b.zip/node_modules/@opentelemetry/context-async-hooks/",\
+      ["npm:2.7.0", {\
+        "packageLocation": "./.yarn/cache/@opentelemetry-context-async-hooks-npm-2.7.0-080db51bd6-c481755032.zip/node_modules/@opentelemetry/context-async-hooks/",\
         "packageDependencies": [\
-          ["@opentelemetry/context-async-hooks", "npm:2.6.0"]\
+          ["@opentelemetry/context-async-hooks", "npm:2.7.0"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.6.0", {\
-        "packageLocation": "./.yarn/__virtual__/@opentelemetry-context-async-hooks-virtual-a20dc3028c/0/cache/@opentelemetry-context-async-hooks-npm-2.6.0-18d63e1e37-a1f746fb9b.zip/node_modules/@opentelemetry/context-async-hooks/",\
+      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.7.0", {\
+        "packageLocation": "./.yarn/__virtual__/@opentelemetry-context-async-hooks-virtual-8e289a18e3/0/cache/@opentelemetry-context-async-hooks-npm-2.7.0-080db51bd6-c481755032.zip/node_modules/@opentelemetry/context-async-hooks/",\
         "packageDependencies": [\
           ["@opentelemetry/api", "npm:1.9.0"],\
-          ["@opentelemetry/context-async-hooks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.6.0"],\
+          ["@opentelemetry/context-async-hooks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.7.0"],\
           ["@types/opentelemetry__api", null]\
         ],\
         "packagePeers": [\
@@ -3269,7 +3269,7 @@ const RAW_RUNTIME_STATE =
           ["@opentelemetry/sdk-metrics", "virtual:ae18a813b6882ecb791f7ad406488d1cb3076605463ec55dfaffa1520d978e41fe1603fee2dbda545efab0f378287520ea6ccb51a4a008439119ccae77b4d89e#npm:2.2.0"],\
           ["@opentelemetry/sdk-trace-base", "virtual:ae18a813b6882ecb791f7ad406488d1cb3076605463ec55dfaffa1520d978e41fe1603fee2dbda545efab0f378287520ea6ccb51a4a008439119ccae77b4d89e#npm:2.2.0"],\
           ["@types/opentelemetry__api", null],\
-          ["protobufjs", "npm:7.5.4"]\
+          ["protobufjs", "npm:8.0.1"]\
         ],\
         "packagePeers": [\
           "@opentelemetry/api",\
@@ -15257,10 +15257,10 @@ const RAW_RUNTIME_STATE =
           ["@eslint/js", "npm:9.39.2"],\
           ["@hmcts/cookie-manager", "npm:1.1.0"],\
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
-          ["@hmcts/properties-volume", "npm:1.3.0"],\
+          ["@hmcts/properties-volume", "npm:1.4.0"],\
           ["@launchdarkly/node-server-sdk", "npm:9.10.9"],\
           ["@opentelemetry/api", "npm:1.9.0"],\
-          ["@opentelemetry/context-async-hooks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.6.0"],\
+          ["@opentelemetry/context-async-hooks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:2.7.0"],\
           ["@parcel/watcher", "npm:2.5.4"],\
           ["@stryker-mutator/api", "npm:8.7.1"],\
           ["@stryker-mutator/core", "npm:8.7.1"],\
@@ -15347,8 +15347,8 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["protobufjs", [\
-      ["npm:7.5.4", {\
-        "packageLocation": "./.yarn/unplugged/protobufjs-npm-7.5.4-4d6f681551/node_modules/protobufjs/",\
+      ["npm:8.0.1", {\
+        "packageLocation": "./.yarn/unplugged/protobufjs-npm-8.0.1-7ab71bd67f/node_modules/protobufjs/",\
         "packageDependencies": [\
           ["@protobufjs/aspromise", "npm:1.1.2"],\
           ["@protobufjs/base64", "npm:1.1.2"],\
@@ -15362,7 +15362,7 @@ const RAW_RUNTIME_STATE =
           ["@protobufjs/utf8", "npm:1.1.0"],\
           ["@types/node", "npm:25.0.9"],\
           ["long", "npm:5.3.2"],\
-          ["protobufjs", "npm:7.5.4"]\
+          ["protobufjs", "npm:8.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\

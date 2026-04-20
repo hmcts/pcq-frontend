@@ -133,7 +133,8 @@
   "resolutions": {
     "merge": "2.1.1",
     "serialize-javascript": "^7.0.3",
-    "minimatch@^10.1.1": "^10.2.4"
+    "minimatch@^10.1.1": "^10.2.4",
+    "protobufjs": "^8.0.1"
   },
   "nyc": {
     "report-dir": "functional-output/coverage",
