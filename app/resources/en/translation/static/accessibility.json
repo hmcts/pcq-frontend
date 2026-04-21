@@ -27,9 +27,10 @@
   "list2-online_plea": "If you were using the Make a plea service : 0300 303 0656",
   "list2-specialtribunals_cic": "If you were using the First-tier Tribunal (Criminal Injuries Compensation) service : 0300 790 6234 or email CIC.enquiries@justice.gov.uk",
   "list2-jurordigital": "If you were using the Jury Central Summoning Bureau: 0300 456 1024 (English), 0300 303 5173 (Welsh), Monday to Thursday: 9am to 5pm, Friday: 9am to 3pm or email: jurysummoning@justice.gov.uk",
-  "list2-prl_ca": "If you were using the Child Arrangements and Family Injunctions service: Email: C100applications@justice.gov.uk.",
+  "list2-prl_ca": "If you were using the Private Law service: 0300 323 0185 or email: FamilyPrivateLawService@justice.gov.uk.",
   "list2-civil-citizen-ui": "If you were using the Money Claim service: 0300 123 7050 (English), 0300 303 5174 (Welsh), Monday to Friday: 8:30am to 5pm, or email: contactocmc@justice.gov.uk",
   "list2-adoption": "If you were using the adoption service: email: adoptionproject@justice.gov.uk, Monday to Friday: 9am to 5pm.",
+
 
   "paragraph9": "<a target=\"_blank\" rel=\"external noopener noreferrer\" href=\"{callChargesLink}\" class=\"govuk-link\">Find out about call charges</a>",
   "paragraph10": "We’re always looking to improve the accessibility of this website. If you find any problems that are not listed on this page or think we’re not meeting accessibility requirements please contact us on the phone helplines.",
@@ -48,6 +49,6 @@
   "paragraph16": "This website is continually tested using accessibility automated tests and basic manual and assistive technology checks. Any new features which are introduced will also be tested internally or with the support of the internal HMCTS accessibility testing team.",
 
   "heading10": "Preparation of this accessibility statement",
-  "paragraph17": "This statement was prepared on 28<sup>th</sup> May 2020. It was last updated on 31<sup>st</sup> July 2025.",
+  "paragraph17": "This statement was prepared on 28<sup>th</sup> May 2020. It was last updated on 21<sup>st</sup> April 2026.",
   "paragraph18": "This website was last tested on 2<sup>nd</sup> April 2025. The audit was carried out by the internal HMCTS accessibility testing team. The team tested against a range of assistive technologies and accessibility testing tools."
 }
