@@ -100,7 +100,7 @@
     "@stryker-mutator/mocha-runner": "9.6.1",
     "chai": "^4.3.10",
     "chokidar": "^4.0.1",
-    "codeceptjs": "3.7.6",
+    "codeceptjs": "3.7.9",
     "codecov": "^4.0.0-0",
     "debug": "^4.3.4",
     "eslint": "^9.4.0",
