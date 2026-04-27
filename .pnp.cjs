@@ -15128,12 +15128,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["postcss", [\
-      ["npm:8.5.6", {\
-        "packageLocation": "./.yarn/cache/postcss-npm-8.5.6-e7f126c6f3-9e4fbe9757.zip/node_modules/postcss/",\
+      ["npm:8.5.12", {\
+        "packageLocation": "./.yarn/cache/postcss-npm-8.5.12-9e3c2c1a24-ec6b79b68c.zip/node_modules/postcss/",\
         "packageDependencies": [\
           ["nanoid", "npm:3.3.11"],\
           ["picocolors", "npm:1.1.1"],\
-          ["postcss", "npm:8.5.6"],\
+          ["postcss", "npm:8.5.12"],\
           ["source-map-js", "npm:1.2.1"]\
         ],\
         "linkType": "HARD"\
@@ -16401,7 +16401,7 @@ const RAW_RUNTIME_STATE =
           ["htmlparser2", "npm:10.1.0"],\
           ["is-plain-object", "npm:5.0.0"],\
           ["parse-srcset", "npm:1.0.2"],\
-          ["postcss", "npm:8.5.6"],\
+          ["postcss", "npm:8.5.12"],\
           ["sanitize-html", "npm:2.17.3"]\
         ],\
         "linkType": "HARD"\
