@@ -8826,7 +8826,7 @@ const RAW_RUNTIME_STATE =
           ["decamelize", "npm:6.0.1"],\
           ["edge-paths", "npm:3.0.5"],\
           ["edgedriver", "npm:5.6.1"],\
-          ["fast-xml-parser", "npm:4.5.3"],\
+          ["fast-xml-parser", "npm:4.5.6"],\
           ["node-fetch", "npm:3.3.2"],\
           ["which", "npm:4.0.0"]\
         ],\
@@ -9729,10 +9729,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["fast-xml-parser", [\
-      ["npm:4.5.3", {\
-        "packageLocation": "./.yarn/cache/fast-xml-parser-npm-4.5.3-4c572a6316-ca22bf9d65.zip/node_modules/fast-xml-parser/",\
+      ["npm:4.5.6", {\
+        "packageLocation": "./.yarn/cache/fast-xml-parser-npm-4.5.6-3bfe6f0c66-dd77cce4b1.zip/node_modules/fast-xml-parser/",\
         "packageDependencies": [\
-          ["fast-xml-parser", "npm:4.5.3"],\
+          ["fast-xml-parser", "npm:4.5.6"],\
           ["strnum", "npm:1.1.2"]\
         ],\
         "linkType": "HARD"\
