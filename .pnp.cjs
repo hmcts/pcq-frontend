@@ -41,7 +41,7 @@ const RAW_RUNTIME_STATE =
           ["@stryker-mutator/api", "npm:9.6.1"],\
           ["@stryker-mutator/core", "npm:9.6.1"],\
           ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.6.1"],\
-          ["ajv", "npm:8.18.0"],\
+          ["ajv", "npm:8.20.0"],\
           ["ajv-formats", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.0.1"],\
           ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["applicationinsights", "npm:3.14.0"],\
@@ -5689,6 +5689,17 @@ const RAW_RUNTIME_STATE =
           ["require-from-string", "npm:2.0.2"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:8.20.0", {\
+        "packageLocation": "./.yarn/cache/ajv-npm-8.20.0-d622223dad-5ce59c0537.zip/node_modules/ajv/",\
+        "packageDependencies": [\
+          ["ajv", "npm:8.20.0"],\
+          ["fast-deep-equal", "npm:3.1.3"],\
+          ["fast-uri", "npm:3.1.0"],\
+          ["json-schema-traverse", "npm:1.0.0"],\
+          ["require-from-string", "npm:2.0.2"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["ajv-formats", [\
@@ -5710,7 +5721,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/ajv-formats-virtual-dfbb778217/0/cache/ajv-formats-npm-2.1.1-3cec02eae9-70c263ded2.zip/node_modules/ajv-formats/",\
         "packageDependencies": [\
           ["@types/ajv", null],\
-          ["ajv", "npm:8.18.0"],\
+          ["ajv", "npm:8.20.0"],\
           ["ajv-formats", "virtual:4954c4a72ee1ac7afec22da3b17d9a937f807567fbfd843f7fb4d48a0c27456b3fd63f5453a6ffa910bcac753ec013f5554ffe0d1c324703fa4d0658622f21bd#npm:2.1.1"]\
         ],\
         "packagePeers": [\
@@ -5723,7 +5734,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/ajv-formats-virtual-6803676899/0/cache/ajv-formats-npm-3.0.1-2662cf5b12-5679b9f9ce.zip/node_modules/ajv-formats/",\
         "packageDependencies": [\
           ["@types/ajv", null],\
-          ["ajv", "npm:8.18.0"],\
+          ["ajv", "npm:8.20.0"],\
           ["ajv-formats", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.0.1"]\
         ],\
         "packagePeers": [\
@@ -5745,7 +5756,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/ajv-keywords-virtual-bf8e723e64/0/cache/ajv-keywords-npm-5.1.0-ee670a3944-5021f96ab7.zip/node_modules/ajv-keywords/",\
         "packageDependencies": [\
           ["@types/ajv", null],\
-          ["ajv", "npm:8.18.0"],\
+          ["ajv", "npm:8.20.0"],\
           ["ajv-keywords", "virtual:4954c4a72ee1ac7afec22da3b17d9a937f807567fbfd843f7fb4d48a0c27456b3fd63f5453a6ffa910bcac753ec013f5554ffe0d1c324703fa4d0658622f21bd#npm:5.1.0"],\
           ["fast-deep-equal", "npm:3.1.3"]\
         ],\
@@ -8548,7 +8559,7 @@ const RAW_RUNTIME_STATE =
           ["@types/jest", null],\
           ["@wix-pilot/core", "virtual:f5211d03eceb5c615629f746a3045d2fa91c38ed5392d5803bbd628fe39c1e446acff433cc73b52e3dd04db2cd7cd15da2104cc82362f80d1b6e17fa5edd6959#npm:3.4.2"],\
           ["@wix-pilot/detox", "virtual:f5211d03eceb5c615629f746a3045d2fa91c38ed5392d5803bbd628fe39c1e446acff433cc73b52e3dd04db2cd7cd15da2104cc82362f80d1b6e17fa5edd6959#npm:1.0.13"],\
-          ["ajv", "npm:8.18.0"],\
+          ["ajv", "npm:8.20.0"],\
           ["bunyan", "npm:1.8.15"],\
           ["bunyan-debug-stream", "virtual:f5211d03eceb5c615629f746a3045d2fa91c38ed5392d5803bbd628fe39c1e446acff433cc73b52e3dd04db2cd7cd15da2104cc82362f80d1b6e17fa5edd6959#npm:3.1.1"],\
           ["caf", "npm:15.0.1"],\
@@ -15363,7 +15374,7 @@ const RAW_RUNTIME_STATE =
           ["@stryker-mutator/api", "npm:9.6.1"],\
           ["@stryker-mutator/core", "npm:9.6.1"],\
           ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.6.1"],\
-          ["ajv", "npm:8.18.0"],\
+          ["ajv", "npm:8.20.0"],\
           ["ajv-formats", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.0.1"],\
           ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["applicationinsights", "npm:3.14.0"],\
@@ -16441,7 +16452,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/schema-utils-npm-4.3.3-4954c4a72e-dba77a46ad.zip/node_modules/schema-utils/",\
         "packageDependencies": [\
           ["@types/json-schema", "npm:7.0.15"],\
-          ["ajv", "npm:8.18.0"],\
+          ["ajv", "npm:8.20.0"],\
           ["ajv-formats", "virtual:4954c4a72ee1ac7afec22da3b17d9a937f807567fbfd843f7fb4d48a0c27456b3fd63f5453a6ffa910bcac753ec013f5554ffe0d1c324703fa4d0658622f21bd#npm:2.1.1"],\
           ["ajv-keywords", "virtual:4954c4a72ee1ac7afec22da3b17d9a937f807567fbfd843f7fb4d48a0c27456b3fd63f5453a6ffa910bcac753ec013f5554ffe0d1c324703fa4d0658622f21bd#npm:5.1.0"],\
           ["schema-utils", "npm:4.3.3"]\
