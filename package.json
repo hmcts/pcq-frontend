@@ -84,7 +84,7 @@
     "traverse": "^0.6.6",
     "uuid": "^11.0.0",
     "webpack": "^5.95.0",
-    "webpack-cli": "^6.0.0",
+    "webpack-cli": "^7.0.0",
     "winston": "^3.18.3",
     "winston-transport": "^4.9.0"
   },
