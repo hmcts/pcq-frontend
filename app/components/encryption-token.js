@@ -86,8 +86,8 @@ const generateSecureToken = (params) => {
 };
 
 const sameParams = (left, right) => {
-    const leftKeys = Object.keys(left).sort();
-    const rightKeys = Object.keys(right).sort();
+    const leftKeys = Object.keys(left).sort((a, b) => a.localeCompare(b));
+    const rightKeys = Object.keys(right).sort((a, b) => a.localeCompare(b));
 
     if (leftKeys.length !== rightKeys.length) {
         return false;
@@ -120,6 +120,7 @@ const verifySecureToken = (params, token, authTag, tokenIv, salt) => {
         const tokenParams = JSON.parse(decrypted);
         return sameParams(tokenParams, params);
     } catch (error) {
+        logger.warn(`Secure token verification failed: ${error.name}`);
         return false;
     }
 };
