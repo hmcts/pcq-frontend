@@ -103,7 +103,8 @@ if (cookieBanner) {
 
         const token = document.querySelector('#token');
         const authTag = document.querySelector('#authTag');
-        //const formInputs = document.getElementById('invoker-form').getElementsByTagName('input');
+        const tokenIv = document.querySelector('#iv');
+        const tokenSalt = document.querySelector('#salt');
         const formInputs = document.getElementById('invoker-form').querySelectorAll('input, select');
 
         const queries = [];
@@ -117,6 +118,8 @@ if (cookieBanner) {
             res.json().then((json) => {
                 token.value = json.token;
                 authTag.value = json.authTag;
+                tokenIv.value = json.iv || '';
+                tokenSalt.value = json.salt || '';
             });
         });
     };
