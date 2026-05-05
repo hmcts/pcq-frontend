@@ -1,6 +1,7 @@
 'use strict';
 
 const expect = require('chai').expect;
+const rewire = require('rewire');
 const Invoker = require('app/utils/Invoker');
 
 describe('Invoker', () => {
@@ -47,6 +48,38 @@ describe('Invoker', () => {
             const serviceEndpoint = invoker.serviceEndpoint(form);
             expect(serviceEndpoint).to.equal('/service-endpoint?serviceId=a&actor=b&pcqId=c&ccdCaseId=d&partyId=e&returnUrl=f&language=g');
             done();
+        });
+
+        it('should include secure token fields and exclude useSecureToken from service endpoint url', (done) => {
+            const form = {
+                serviceId: 'a',
+                actor: 'b',
+                token: 'token',
+                authTag: 'auth-tag',
+                iv: 'token-iv',
+                salt: 'token-salt',
+                useSecureToken: 'true',
+                _csrf: 'h',
+            };
+
+            const serviceEndpoint = invoker.serviceEndpoint(form);
+            expect(serviceEndpoint).to.equal('/service-endpoint?serviceId=a&actor=b&token=token&authTag=auth-tag&iv=token-iv&salt=token-salt');
+            done();
+        });
+    });
+
+    describe('generateToken()', () => {
+        it('should use secure token generation when useSecureToken is true', () => {
+            const InvokerRewired = rewire('app/utils/Invoker');
+            const generateTokenStub = () => ({token: 'legacy'});
+            const generateSecureTokenStub = () => ({token: 'secure', authTag: 'a', iv: 'i', salt: 's'});
+            InvokerRewired.__set__('generateToken', generateTokenStub);
+            InvokerRewired.__set__('generateSecureToken', generateSecureTokenStub);
+
+            const rewiredInvoker = new (InvokerRewired)();
+            const result = rewiredInvoker.generateToken({serviceId: 'A', useSecureToken: 'true'});
+
+            expect(result).to.deep.equal({token: 'secure', authTag: 'a', iv: 'i', salt: 's'});
         });
     });
 
