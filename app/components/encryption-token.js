@@ -55,7 +55,7 @@ const generateSecureToken = (params) => {
 
     if (!params.serviceId) {
         logError('serviceId is missing from the incoming parameters.');
-    } else if (!tokenKey) {
+    } else if (tokenKey.length === 0) {
         logError(`Token key is missing for service id: ${serviceId}`);
     } else {
         logger.info(`Using ${tokenKey === 'SERVICE_TOKEN_KEY' ? 'local' : 'Azure KV'} secret for service token key`);
