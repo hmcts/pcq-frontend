@@ -12614,7 +12614,7 @@ __metadata:
     test: "link:./test"
     traverse: "npm:^0.6.6"
     tslib: "npm:^2.6.0"
-    undici: "npm:^7.0.0"
+    undici: "npm:^8.0.0"
     uuid: "npm:^11.0.0"
     watch: "npm:^1.0.2"
     webdriverio: "npm:^8.21.0"
@@ -15005,10 +15005,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:^7.0.0, undici@npm:^7.19.0":
+"undici@npm:^7.19.0":
   version: 7.25.0
   resolution: "undici@npm:7.25.0"
   checksum: 10/038d3568c72bb976e3cc389284f7f1cc64cd70d578300e4676a449fbcb624a35fe99ac127b5f3729f18b8246d6c090444ab61b1b67736bb88f52a3e913d76bf8
+  languageName: node
+  linkType: hard
+
+"undici@npm:^8.0.0":
+  version: 8.2.0
+  resolution: "undici@npm:8.2.0"
+  checksum: 10/5525ab7addea2a5db313572d2ab894eac427a96e98b3f45f6860919a2a2ae27ff2f960e75422dced214c7a651d31a0b253de9144d3ce79c18d66961325092575
   languageName: node
   linkType: hard
 
