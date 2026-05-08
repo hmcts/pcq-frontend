@@ -1,7 +1,7 @@
 #!groovy
 import uk.gov.hmcts.contino.GithubAPI
 
-@Library("Infrastructure")
+@Library("Infrastructure@dtspo-32102")
 
 def type = "nodejs"
 def product = "pcq"
