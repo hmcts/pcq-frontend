@@ -11,7 +11,7 @@
     "setup": "sh ./bin/setup.sh",
     "createVersionFile": "NODE_PATH=. node setup/createVersionFile.js",
     "copyGovUkResources": "NODE_PATH=. node setup/copyGovukResources.js",
-    "bundle": "NODE_PATH=. yarn webpack",
+    "bundle": "NODE_PATH=. yarn webpack --disable-interpret --config webpack.config.cjs",
     "start": "NODE_PATH=. node server.js",
     "debug": "NODE_PATH=. node inspect server.js",
     "start:dev": "npm run sass:watch && NODE_ENV=dev NODE_PATH=. nodemon -e js,json --watch 'app/' --watch 'test/' -x 'node server.js'",
