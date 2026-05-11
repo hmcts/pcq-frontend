@@ -42,8 +42,7 @@
     "pretest": "playwright install",
     "preunit-test": "playwright install",
     "precomponent-test": "playwright install",
-    "prea11y-test": "playwright install"
-  },
+    "prea11y-test": "playwright install",
     "//": "The below scripts are just stubs, don't use them in production",
     "stub:pcq-backend": "NODE_PATH=. node test/service-stubs/pcq-backend.js",
     "stub:feature-toggles": "NODE_PATH=. node test/service-stubs/feature-toggles.js"
