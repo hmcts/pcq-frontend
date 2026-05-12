@@ -66,6 +66,18 @@
                         name: "pcqId"
                     }) }}
 
+                    {{ govukSelect({
+                        id: "useSecureToken",
+                        name: "useSecureToken",
+                        label: {
+                            text: "Token Mode"
+                        },
+                        classes: "govuk-!-width-full",
+                        items: [
+                            {value: "false", text: "Legacy", selected: true},
+                            {value: "true", text: "Secure (IV + Salt)"}
+                        ]
+                    }) }}
                 </div>
                 <div class="govuk-grid-column-one-half">
 
@@ -131,6 +143,29 @@
                                 classes: "govuk-!-width-full",
                                 id: "authTag",
                                 name: "authTag"
+                            }) }}
+                        </div>
+                    </div>
+
+                    <div class="govuk-grid-row">
+                        <div class="govuk-grid-column-one-half">
+                            {{ govukInput({
+                                label: {
+                                    text: "IV"
+                                },
+                                classes: "govuk-!-width-full",
+                                id: "iv",
+                                name: "iv"
+                            }) }}
+                        </div>
+                        <div class="govuk-grid-column-one-half">
+                            {{ govukInput({
+                                label: {
+                                    text: "Salt"
+                                },
+                                classes: "govuk-!-width-full",
+                                id: "salt",
+                                name: "salt"
                             }) }}
                         </div>
                     </div>
