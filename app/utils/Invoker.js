@@ -1,7 +1,7 @@
 'use strict';
 
 const {v4: uuidv4} = require('uuid');
-const {generateToken} = require('app/components/encryption-token');
+const {generateToken, generateSecureToken} = require('app/components/encryption-token');
 const registeredServices = require('app/registeredServices');
 const AgeCheck = require('./Constants');
 
@@ -36,7 +36,7 @@ class Invoker {
 
     serviceEndpoint(form) {
         const qs = Object.keys(form)
-            .filter(key => form[key] !== '' && key !== '_csrf' && key !== 'authTag')
+            .filter(key => form[key] !== '' && key !== '_csrf' && key !== 'useSecureToken')
             .map(key => key + '=' + encodeURIComponent(form[key]))
             .join('&');
 
@@ -75,7 +75,15 @@ class Invoker {
     }
 
     generateToken(params) {
-        return generateToken(params);
+        const useSecureToken = String(params.useSecureToken).toLowerCase() === 'true';
+        const tokenParams = {...params};
+        delete tokenParams.useSecureToken;
+
+        if (useSecureToken) {
+            return generateSecureToken(tokenParams);
+        }
+
+        return generateToken(tokenParams);
     }
 
 }
