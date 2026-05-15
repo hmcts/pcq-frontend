@@ -129,4 +129,55 @@ describe('VerifyToken', () => {
         expect(result.authTag).to.not.equal('');
         sinon.assert.calledWith(loggerStub.info, sinon.match(/^Auth Tag : /));
     });
+
+    it('should successfully verify a secure token using authTag, iv and salt', () => {
+        const tokenModule = rewire('app/components/encryption-token');
+        tokenModule.__set__('config', {
+            tokenKeys: {
+                registered: 'REGISTERED_TOKEN_KEY'
+            }
+        });
+
+        const params = {
+            serviceId: 'REGISTERED',
+            actor: 'APPLICANT',
+            pcqId: '12345',
+            partyId: 'test@test.com',
+            returnUrl: 'test.com'
+        };
+
+        const secureToken = tokenModule.generateSecureToken(params);
+        const reqQuery = {
+            ...params,
+            ...secureToken
+        };
+
+        expect(tokenModule.verifyToken(reqQuery)).to.equal(true);
+    });
+
+    it('should fail verification when secure token auth tag is tampered', () => {
+        const tokenModule = rewire('app/components/encryption-token');
+        tokenModule.__set__('config', {
+            tokenKeys: {
+                registered: 'REGISTERED_TOKEN_KEY'
+            }
+        });
+
+        const params = {
+            serviceId: 'REGISTERED',
+            actor: 'APPLICANT',
+            pcqId: '12345',
+            partyId: 'test@test.com',
+            returnUrl: 'test.com'
+        };
+
+        const secureToken = tokenModule.generateSecureToken(params);
+        const reqQuery = {
+            ...params,
+            ...secureToken,
+            authTag: secureToken.authTag.slice(0, -2) + 'AA'
+        };
+
+        expect(tokenModule.verifyToken(reqQuery)).to.equal(false);
+    });
 });

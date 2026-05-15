@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.269",
+  "version": "1.2.270",
   "license": "MIT",
   "engines": {
     "node": ">=20.0.0"
@@ -137,7 +137,7 @@
     "minimatch@^10.1.1": "^10.2.4",
     "protobufjs": "^8.0.1",
     "uuid": "^11.1.1",
-    "@opentelemetry/sdk-node": "^0.217.0"
+    "@opentelemetry/sdk-node": "^0.218.0"
   },
   "nyc": {
     "report-dir": "functional-output/coverage",
