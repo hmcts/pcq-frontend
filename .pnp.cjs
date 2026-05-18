@@ -85,7 +85,7 @@ const RAW_RUNTIME_STATE =
           ["pa11y", "npm:9.1.1"],\
           ["permissions-policy", "npm:0.6.0"],\
           ["playwright", "npm:1.59.1"],\
-          ["pre-commit", "npm:1.2.2"],\
+          ["pre-commit", "npm:2.0.0"],\
           ["protected-characteristics-frontend", "workspace:."],\
           ["proxyquire", "npm:2.1.3"],\
           ["react-native", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:0.85.3"],\
@@ -8121,16 +8121,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["cross-spawn", [\
-      ["npm:5.1.0", {\
-        "packageLocation": "./.yarn/cache/cross-spawn-npm-5.1.0-a3e220603e-726939c995.zip/node_modules/cross-spawn/",\
-        "packageDependencies": [\
-          ["cross-spawn", "npm:5.1.0"],\
-          ["lru-cache", "npm:4.1.5"],\
-          ["shebang-command", "npm:1.2.0"],\
-          ["which", "npm:1.3.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:7.0.6", {\
         "packageLocation": "./.yarn/cache/cross-spawn-npm-7.0.6-264bddf921-0d52657d7a.zip/node_modules/cross-spawn/",\
         "packageDependencies": [\
@@ -13025,15 +13015,6 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:4.1.5", {\
-        "packageLocation": "./.yarn/cache/lru-cache-npm-4.1.5-ede304cc43-9ec7d73f11.zip/node_modules/lru-cache/",\
-        "packageDependencies": [\
-          ["lru-cache", "npm:4.1.5"],\
-          ["pseudomap", "npm:1.0.2"],\
-          ["yallist", "npm:2.1.2"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:5.1.1", {\
         "packageLocation": "./.yarn/cache/lru-cache-npm-5.1.1-f475882a51-951d2673dc.zip/node_modules/lru-cache/",\
         "packageDependencies": [\
@@ -14801,15 +14782,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["os-shim", [\
-      ["npm:0.1.3", {\
-        "packageLocation": "./.yarn/cache/os-shim-npm-0.1.3-03d492dbf1-100b6d19b9.zip/node_modules/os-shim/",\
-        "packageDependencies": [\
-          ["os-shim", "npm:0.1.3"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["outvariant", [\
       ["npm:1.4.3", {\
         "packageLocation": "./.yarn/cache/outvariant-npm-1.4.3-192f951f81-3a75827458.zip/node_modules/outvariant/",\
@@ -15373,13 +15345,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["pre-commit", [\
-      ["npm:1.2.2", {\
-        "packageLocation": "./.yarn/cache/pre-commit-npm-1.2.2-f30af83877-4d31494b4b.zip/node_modules/pre-commit/",\
+      ["npm:2.0.0", {\
+        "packageLocation": "./.yarn/cache/pre-commit-npm-2.0.0-829ea5dc84-05ad84fbfd.zip/node_modules/pre-commit/",\
         "packageDependencies": [\
-          ["cross-spawn", "npm:5.1.0"],\
-          ["pre-commit", "npm:1.2.2"],\
-          ["spawn-sync", "npm:1.0.15"],\
-          ["which", "npm:1.2.14"]\
+          ["cross-spawn", "npm:7.0.6"],\
+          ["pre-commit", "npm:2.0.0"],\
+          ["which", "npm:4.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -15603,7 +15574,7 @@ const RAW_RUNTIME_STATE =
           ["pa11y", "npm:9.1.1"],\
           ["permissions-policy", "npm:0.6.0"],\
           ["playwright", "npm:1.59.1"],\
-          ["pre-commit", "npm:1.2.2"],\
+          ["pre-commit", "npm:2.0.0"],\
           ["protected-characteristics-frontend", "workspace:."],\
           ["proxyquire", "npm:2.1.3"],\
           ["react-native", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:0.85.3"],\
@@ -15719,15 +15690,6 @@ const RAW_RUNTIME_STATE =
           ["module-not-found-error", "npm:1.0.1"],\
           ["proxyquire", "npm:2.1.3"],\
           ["resolve", "patch:resolve@npm%3A1.22.11#optional!builtin<compat/resolve>::version=1.22.11&hash=c3c19d"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["pseudomap", [\
-      ["npm:1.0.2", {\
-        "packageLocation": "./.yarn/cache/pseudomap-npm-1.0.2-0d0e40fee0-856c0aae0f.zip/node_modules/pseudomap/",\
-        "packageDependencies": [\
-          ["pseudomap", "npm:1.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -16829,14 +16791,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["shebang-command", [\
-      ["npm:1.2.0", {\
-        "packageLocation": "./.yarn/cache/shebang-command-npm-1.2.0-8990ba5d1d-9eed175030.zip/node_modules/shebang-command/",\
-        "packageDependencies": [\
-          ["shebang-command", "npm:1.2.0"],\
-          ["shebang-regex", "npm:1.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:2.0.0", {\
         "packageLocation": "./.yarn/cache/shebang-command-npm-2.0.0-eb2b01921d-6b52fe8727.zip/node_modules/shebang-command/",\
         "packageDependencies": [\
@@ -16847,13 +16801,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["shebang-regex", [\
-      ["npm:1.0.0", {\
-        "packageLocation": "./.yarn/cache/shebang-regex-npm-1.0.0-c3612b74e9-404c5a752c.zip/node_modules/shebang-regex/",\
-        "packageDependencies": [\
-          ["shebang-regex", "npm:1.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:3.0.0", {\
         "packageLocation": "./.yarn/cache/shebang-regex-npm-3.0.0-899a0cd65e-1a2bcae50d.zip/node_modules/shebang-regex/",\
         "packageDependencies": [\
@@ -17145,17 +17092,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/spacetrim-npm-0.11.59-7c56d7399a-d15e5d5278.zip/node_modules/spacetrim/",\
         "packageDependencies": [\
           ["spacetrim", "npm:0.11.59"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["spawn-sync", [\
-      ["npm:1.0.15", {\
-        "packageLocation": "./.yarn/cache/spawn-sync-npm-1.0.15-ae144228c0-5c8edbf102.zip/node_modules/spawn-sync/",\
-        "packageDependencies": [\
-          ["concat-stream", "npm:1.6.2"],\
-          ["os-shim", "npm:0.1.3"],\
-          ["spawn-sync", "npm:1.0.15"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -18745,14 +18681,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["which", [\
-      ["npm:1.2.14", {\
-        "packageLocation": "./.yarn/cache/which-npm-1.2.14-dd68f18c46-e809936d40.zip/node_modules/which/",\
-        "packageDependencies": [\
-          ["isexe", "npm:2.0.0"],\
-          ["which", "npm:1.2.14"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:1.3.1", {\
         "packageLocation": "./.yarn/cache/which-npm-1.3.1-f0ebb8bdd8-549dcf1752.zip/node_modules/which/",\
         "packageDependencies": [\
@@ -19139,13 +19067,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["yallist", [\
-      ["npm:2.1.2", {\
-        "packageLocation": "./.yarn/cache/yallist-npm-2.1.2-2e38c366a3-75fc7bee48.zip/node_modules/yallist/",\
-        "packageDependencies": [\
-          ["yallist", "npm:2.1.2"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:3.1.1", {\
         "packageLocation": "./.yarn/cache/yallist-npm-3.1.1-a568a556b4-9af0a4329c.zip/node_modules/yallist/",\
         "packageDependencies": [\
