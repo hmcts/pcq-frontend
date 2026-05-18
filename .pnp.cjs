@@ -94,7 +94,7 @@ const RAW_RUNTIME_STATE =
           ["sanitize-html", "npm:2.17.4"],\
           ["sass", "npm:1.99.0"],\
           ["serve-favicon", "npm:2.5.1"],\
-          ["sinon", "npm:21.1.2"],\
+          ["sinon", "npm:22.0.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
           ["sonarqube-scanner", "npm:4.3.6"],\
           ["supertest", "npm:7.2.2"],\
@@ -4578,11 +4578,11 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:15.3.2", {\
-        "packageLocation": "./.yarn/cache/@sinonjs-fake-timers-npm-15.3.2-bb1364ea28-270a0f440b.zip/node_modules/@sinonjs/fake-timers/",\
+      ["npm:15.4.0", {\
+        "packageLocation": "./.yarn/cache/@sinonjs-fake-timers-npm-15.4.0-94cf7a0827-3960a9fe06.zip/node_modules/@sinonjs/fake-timers/",\
         "packageDependencies": [\
           ["@sinonjs/commons", "npm:3.0.1"],\
-          ["@sinonjs/fake-timers", "npm:15.3.2"]\
+          ["@sinonjs/fake-timers", "npm:15.4.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8655,10 +8655,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:8.0.4", {\
-        "packageLocation": "./.yarn/cache/diff-npm-8.0.4-88b039fd53-b4036ceda0.zip/node_modules/diff/",\
+      ["npm:9.0.0", {\
+        "packageLocation": "./.yarn/cache/diff-npm-9.0.0-7def25b473-f8b5e38a6a.zip/node_modules/diff/",\
         "packageDependencies": [\
-          ["diff", "npm:8.0.4"]\
+          ["diff", "npm:9.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -15436,7 +15436,7 @@ const RAW_RUNTIME_STATE =
           ["sanitize-html", "npm:2.17.4"],\
           ["sass", "npm:1.99.0"],\
           ["serve-favicon", "npm:2.5.1"],\
-          ["sinon", "npm:21.1.2"],\
+          ["sinon", "npm:22.0.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
           ["sonarqube-scanner", "npm:4.3.6"],\
           ["supertest", "npm:7.2.2"],\
@@ -16795,14 +16795,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sinon", [\
-      ["npm:21.1.2", {\
-        "packageLocation": "./.yarn/cache/sinon-npm-21.1.2-2a86952a19-dccad5c6d1.zip/node_modules/sinon/",\
+      ["npm:22.0.0", {\
+        "packageLocation": "./.yarn/cache/sinon-npm-22.0.0-d8071e3bce-5d0a692c2f.zip/node_modules/sinon/",\
         "packageDependencies": [\
           ["@sinonjs/commons", "npm:3.0.1"],\
-          ["@sinonjs/fake-timers", "npm:15.3.2"],\
+          ["@sinonjs/fake-timers", "npm:15.4.0"],\
           ["@sinonjs/samsam", "npm:10.0.2"],\
-          ["diff", "npm:8.0.4"],\
-          ["sinon", "npm:21.1.2"]\
+          ["diff", "npm:9.0.0"],\
+          ["sinon", "npm:22.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -16821,7 +16821,7 @@ const RAW_RUNTIME_STATE =
           ["@types/chai", null],\
           ["@types/sinon", null],\
           ["chai", "npm:4.5.0"],\
-          ["sinon", "npm:21.1.2"],\
+          ["sinon", "npm:22.0.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"]\
         ],\
         "packagePeers": [\
