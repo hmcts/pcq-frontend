@@ -63,7 +63,7 @@ describe('ShutterPage', () => {
                     'divorce_respondent': 'https://www.respond-divorce.service.gov.uk',
                     'sscs': 'https://www.gov.uk/appeal-benefit-decision/submit-appeal',
                     'iac': 'https://www.appeal-immigration-asylum-decision.service.gov.uk',
-                    'adoption': 'https://www.adoption-web.service.gov.uk/review-pay-submit/check-your-answers',
+                    'adoption': 'https://apply-to-adopt-a-child-placed-in-your-care.service.gov.uk/review-pay-submit/check-your-answers',
                     'et_claimant': 'https://claim-employment-tribunals.service.gov.uk/check-your-answers',
                     'online_plea': 'https://onlineplea.cjscp.org.uk/onlineplea/check-your-answers.xhtml',
                     'specialtribunals_cic': 'https://www.special-tribunals.service.gov.uk/check-your-answers',
