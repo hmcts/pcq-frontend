@@ -210,6 +210,12 @@ describe('prefixHttps', () => {
         expect(result).to.equal('https://adoption-web.aat.platform.hmcts.net/review-pay-submit/check-your-answers');
     });
 
+    it('should return same url for preview URL for ADOPTION', () => {
+        const url = 'https://adoption-web-pr-1785.preview.platform.hmcts.net/review-pay-submit/check-your-answers';
+        const result = prefixHttps(url);
+        expect(result).to.equal('https://adoption-web-pr-1785.preview.platform.hmcts.net/review-pay-submit/check-your-answers');
+    });
+
     it('should add prefix to string for a whitelist URL for ET', () => {
         const url = 'www.claim-employment-tribunals.service.gov.uk/check-your-answers';
         const result = prefixHttps(url);
