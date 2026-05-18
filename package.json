@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.269",
+  "version": "1.2.270",
   "license": "MIT",
   "engines": {
     "node": ">=20.0.0"
@@ -11,7 +11,7 @@
     "setup": "sh ./bin/setup.sh",
     "createVersionFile": "NODE_PATH=. node setup/createVersionFile.js",
     "copyGovUkResources": "NODE_PATH=. node setup/copyGovukResources.js",
-    "bundle": "NODE_PATH=. yarn webpack",
+    "bundle": "NODE_PATH=. yarn webpack --disable-interpret",
     "start": "NODE_PATH=. node server.js",
     "debug": "NODE_PATH=. node inspect server.js",
     "start:dev": "npm run sass:watch && NODE_ENV=dev NODE_PATH=. nodemon -e js,json --watch 'app/' --watch 'test/' -x 'node server.js'",
@@ -47,6 +47,7 @@
     "lint"
   ],
   "dependencies": {
+    "@azure/logger": "^1.3.0",
     "@hmcts/cookie-manager": "^1.0.0",
     "@hmcts/nodejs-healthcheck": "^1.7.3",
     "@hmcts/properties-volume": "^1.0.0",
@@ -54,7 +55,7 @@
     "ajv": "^8.18.0",
     "ajv-formats": "^3.0.0",
     "app": "link:./app",
-    "applicationinsights": "~3.14.0",
+    "applicationinsights": "~3.15.0",
     "co": "^4.6.0",
     "compression": "^1.8.1",
     "config": "^4.0.0",
@@ -135,7 +136,8 @@
     "serialize-javascript": "^7.0.3",
     "minimatch@^10.1.1": "^10.2.4",
     "protobufjs": "^8.0.1",
-    "uuid": "^11.1.1"
+    "uuid": "^11.1.1",
+    "@opentelemetry/sdk-node": "^0.218.0"
   },
   "nyc": {
     "report-dir": "functional-output/coverage",
