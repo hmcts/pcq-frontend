@@ -171,9 +171,9 @@ describe('Service', () => {
                 'Content-Type': 'application/json'
             };
             const proxy = 'http://localhost';
-            const fakeAgent = { constructor: { name: 'HttpsProxyAgent' } };
-            const createHttpsProxyAgent = sinon.stub().returns(fakeAgent);
-            Service.__set__('createHttpsProxyAgent', createHttpsProxyAgent);
+            const testAgent = { constructor: { name: 'HttpsProxyAgent' } };
+            const createHttpsProxyAgent = sinon.stub().returns(testAgent);
+            const revertCreateHttpsProxyAgent = Service.__set__('createHttpsProxyAgent', createHttpsProxyAgent);
             const service = new Service();
             const options = service.fetchOptions(data, method, headers, proxy);
             expect(options.method).to.equal('POST');
@@ -184,7 +184,31 @@ describe('Service', () => {
             expect(options.body).to.equal(JSON.stringify(data));
             expect(options.headers.get('Content-Type')).to.equal('application/json');
             expect(createHttpsProxyAgent.calledOnceWith(proxy)).to.equal(true);
-            expect(options.agent).to.equal(fakeAgent);
+            expect(options.agent).to.equal(testAgent);
+            revertCreateHttpsProxyAgent();
+            done();
+        });
+
+        it('should create an https proxy agent when proxy is provided', (done) => {
+            class TestHttpsProxyAgent {
+                constructor(proxy) {
+                    this.proxy = proxy;
+                }
+            }
+
+            const requireStub = sinon.stub().withArgs('https-proxy-agent').returns({
+                HttpsProxyAgent: TestHttpsProxyAgent
+            });
+                const revertRequire = Service.__set__('require', requireStub);
+
+            const proxy = 'http://proxy.local';
+            const service = new Service();
+            const options = service.fetchOptions({}, 'GET', {}, proxy);
+
+            expect(requireStub.calledOnceWith('https-proxy-agent')).to.equal(true);
+            expect(options.agent).to.be.instanceof(TestHttpsProxyAgent);
+            expect(options.agent.proxy).to.equal(proxy);
+                revertRequire();
             done();
         });
 

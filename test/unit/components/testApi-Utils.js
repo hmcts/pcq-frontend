@@ -4,6 +4,7 @@ const expect = require('chai').expect;
 const utils = require('app/components/api-utils');
 const config = require('config');
 const nock = require('nock');
+const rewire = require('rewire');
 
 describe('api-utils', () => {
 
@@ -35,6 +36,31 @@ describe('api-utils', () => {
             expectedFetchOptions.body = null;
             const fetchOptions = utils.fetchOptions({}, 'GET', null, null);
             expect(fetchOptions.body).to.equal(expectedFetchOptions.body);
+            done();
+        });
+
+        it('test fetchoptions creates an https proxy agent when proxy is provided', (done) => {
+            class TestHttpsProxyAgent {
+                constructor(proxy) {
+                    this.proxy = proxy;
+                }
+            }
+
+            const rewiredUtils = rewire('app/components/api-utils');
+            const requireStub = requireModule => {
+                if (requireModule === 'https-proxy-agent') {
+                    return { HttpsProxyAgent: TestHttpsProxyAgent };
+                }
+                return require(requireModule);
+            };
+            const revertRequire = rewiredUtils.__set__('require', requireStub);
+
+            const proxy = 'http://proxy.local';
+            const fetchOptions = rewiredUtils.fetchOptions({}, 'GET', null, proxy);
+
+            expect(fetchOptions.agent).to.be.instanceof(TestHttpsProxyAgent);
+            expect(fetchOptions.agent.proxy).to.equal(proxy);
+            revertRequire();
             done();
         });
     });
