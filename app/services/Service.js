@@ -1,11 +1,15 @@
 'use strict';
 
-const HttpsProxyAgent = require('https-proxy-agent');
 const logger = require('app/components/logger');
 const config = require('config');
 const formatUrl = require('app/utils/FormatUrl');
 const AsyncFetch = require('app/utils/AsyncFetch');
 const asyncFetch = new AsyncFetch();
+
+const createHttpsProxyAgent = proxy => {
+    const { HttpsProxyAgent } = require('https-proxy-agent');
+    return new HttpsProxyAgent(proxy);
+};
 
 class Service {
     constructor(endpoint, sessionId) {
@@ -73,7 +77,7 @@ class Service {
             timeout: 10000,
             body: JSON.stringify(data),
             headers: new Headers(headers || {}),
-            agent: proxy ? new HttpsProxyAgent(proxy) : null
+            agent: proxy ? createHttpsProxyAgent(proxy) : null
         };
     }
 
