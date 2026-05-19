@@ -2,8 +2,12 @@
 
 const logger = require('app/components/logger')('Init');
 const {endsWith} = require('lodash');
-const HttpsProxyAgent = require('https-proxy-agent');
 const config = require('config');
+
+const createHttpsProxyAgent = proxy => {
+    const { HttpsProxyAgent } = require('https-proxy-agent');
+    return new HttpsProxyAgent(proxy);
+};
 
 const buildRequest = (url, options) => {
     return new Request(url, options);
@@ -84,7 +88,7 @@ const fetchOptions = (data, method, headers, proxy) => {
         timeout: config.utils.api.timeout,
         body: method === 'POST' ? JSON.stringify(data) : null,
         headers: new Headers(headers || {}),
-        agent: proxy ? new HttpsProxyAgent(proxy) : null
+        agent: proxy ? createHttpsProxyAgent(proxy) : null
     };
 };
 
