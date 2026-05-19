@@ -3,7 +3,6 @@
 const expect = require('chai').expect;
 const rewire = require('rewire');
 const Service = rewire('app/services/Service');
-const { HttpsProxyAgent } = require('https-proxy-agent');
 const sinon = require('sinon');
 
 describe('Service', () => {
@@ -172,6 +171,9 @@ describe('Service', () => {
                 'Content-Type': 'application/json'
             };
             const proxy = 'http://localhost';
+            const fakeAgent = { constructor: { name: 'HttpsProxyAgent' } };
+            const createHttpsProxyAgent = sinon.stub().returns(fakeAgent);
+            Service.__set__('createHttpsProxyAgent', createHttpsProxyAgent);
             const service = new Service();
             const options = service.fetchOptions(data, method, headers, proxy);
             expect(options.method).to.equal('POST');
@@ -181,7 +183,8 @@ describe('Service', () => {
             expect(options.timeout).to.equal(10000);
             expect(options.body).to.equal(JSON.stringify(data));
             expect(options.headers.get('Content-Type')).to.equal('application/json');
-            expect(options.agent).to.be.instanceof(HttpsProxyAgent);
+            expect(createHttpsProxyAgent.calledOnceWith(proxy)).to.equal(true);
+            expect(options.agent).to.equal(fakeAgent);
             done();
         });
 
