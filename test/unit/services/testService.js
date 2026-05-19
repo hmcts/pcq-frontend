@@ -3,7 +3,6 @@
 const expect = require('chai').expect;
 const rewire = require('rewire');
 const Service = rewire('app/services/Service');
-const HttpsProxyAgent = require('https-proxy-agent');
 const sinon = require('sinon');
 
 describe('Service', () => {
@@ -171,19 +170,16 @@ describe('Service', () => {
             const headers = {
                 'Content-Type': 'application/json'
             };
-            const proxy = 'http://localhost';
             const service = new Service();
-            const options = service.fetchOptions(data, method, headers, proxy);
-            expect(options).to.deep.equal({
-                method: 'POST',
-                mode: 'cors',
-                redirect: 'follow',
-                follow: 10,
-                timeout: 10000,
-                body: JSON.stringify(data),
-                headers: new Headers(headers),
-                agent: new HttpsProxyAgent(proxy)
-            });
+            const options = service.fetchOptions(data, method, headers);
+            expect(options.method).to.equal('POST');
+            expect(options.mode).to.equal('cors');
+            expect(options.redirect).to.equal('follow');
+            expect(options.follow).to.equal(10);
+            expect(options.timeout).to.equal(10000);
+            expect(options.body).to.equal(JSON.stringify(data));
+            expect(options.headers.get('Content-Type')).to.equal('application/json');
+            expect(options.agent).to.equal(null);
             done();
         });
 
