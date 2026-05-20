@@ -1,9 +1,17 @@
 'use strict';
 
 const expect = require('chai').expect;
-const rewire = require('rewire');
-const JourneyMap = rewire('app/core/JourneyMap');
+const Proxyquire = require('proxyquire/lib/proxyquire');
+const proxyquire = new Proxyquire(module).noCallThru();
 const defaultJourney = require('app/journeys/default');
+
+const buildJourneyMap = (steps) => {
+    return proxyquire('app/core/JourneyMap', {
+        'app/core/initSteps': {steps}
+    });
+};
+
+const defaultSteps = require('app/core/initSteps').steps;
 
 describe('JourneyMap.js', () => {
     let currentStep;
@@ -25,6 +33,7 @@ describe('JourneyMap.js', () => {
             const ctx = {
                 language: 'optionOther'
             };
+            const JourneyMap = buildJourneyMap(defaultSteps);
             const journeyMap = new JourneyMap({});
             const nextOptionStep = journeyMap.nextOptionStep(currentStep, ctx);
             expect(nextOptionStep).to.equal('otherLanguage');
@@ -33,6 +42,7 @@ describe('JourneyMap.js', () => {
 
         it('should return otherwise', (done) => {
             const ctx = {};
+            const JourneyMap = buildJourneyMap(defaultSteps);
             const journeyMap = new JourneyMap({});
             const nextOptionStep = journeyMap.nextOptionStep(currentStep, ctx);
             expect(nextOptionStep).to.equal('otherwise');
@@ -41,11 +51,11 @@ describe('JourneyMap.js', () => {
     });
 
     describe('nextStep()', () => {
-        let revert;
+        let JourneyMap;
         let journey;
 
         beforeEach(() => {
-            revert = JourneyMap.__set__('steps', {
+            JourneyMap = buildJourneyMap({
                 ApplicantEnglishLevel: {
                     name: 'ApplicantEnglishLevel'
                 },
@@ -54,10 +64,6 @@ describe('JourneyMap.js', () => {
                 }
             });
             journey = defaultJourney();
-        });
-
-        afterEach(() => {
-            revert();
         });
 
         it('should return the next option step if the next step is a string', (done) => {
@@ -82,10 +88,10 @@ describe('JourneyMap.js', () => {
     });
 
     describe('nextStep() - With skip list', () => {
-        let revert;
+        let JourneyMap;
 
         beforeEach(() => {
-            revert = JourneyMap.__set__('steps', {
+            JourneyMap = buildJourneyMap({
                 ApplicantDateOfBirth: {
                     name: 'ApplicantDateOfBirth'
                 },
@@ -105,10 +111,6 @@ describe('JourneyMap.js', () => {
                     name: 'ApplicantMaritalStatus'
                 }
             });
-        });
-
-        afterEach(() => {
-            revert();
         });
 
         it('should skip a step if it is in the skip list', (done) => {
@@ -193,6 +195,7 @@ describe('JourneyMap.js', () => {
 
     describe('stepList()', () => {
         it('should return the journey step list', (done) => {
+            const JourneyMap = buildJourneyMap(defaultSteps);
             const journeyMap = new JourneyMap(defaultJourney);
             const stepList = journeyMap.stepList();
             expect(stepList).to.deep.equal(defaultJourney.stepList);

@@ -1,8 +1,8 @@
 'use strict';
 
 const expect = require('chai').expect;
-const rewire = require('rewire');
-const JourneyMap = rewire('app/core/JourneyMap');
+const Proxyquire = require('proxyquire/lib/proxyquire');
+const proxyquire = new Proxyquire(module).noCallThru();
 const initSteps = require('app/core/initSteps');
 const steps = initSteps([`${__dirname}/../../../app/steps/ui`]);
 const serviceData = require('test/unit/core/testServiceData.json');
@@ -12,6 +12,12 @@ const ShutterPage = steps.ShutterPage;
 //requiring path and fs modules
 const path = require('path');
 const fs = require('fs');
+
+const buildJourneyMap = (steps) => {
+    return proxyquire('app/core/JourneyMap', {
+        'app/core/initSteps': {steps}
+    });
+};
 //joining path of directory
 const directoryPath = path.join(`${__dirname}/../../../app`, 'journeys');
 
@@ -34,6 +40,7 @@ fs.readdir(directoryPath, function (err, files) {
                 const skipStepName = serviceData.services[serviceName].skipStepName;
                 describe('stepList()', () => {
                     it('should return the journey step list without skip list', (done) => {
+                        const JourneyMap = buildJourneyMap(steps);
                         const journeyMap = new JourneyMap(serviceJourney);
                         const stepList = journeyMap.stepList();
                         if (stepList !== null) {
@@ -44,15 +51,12 @@ fs.readdir(directoryPath, function (err, files) {
                 });
                 describe('nextStep()', () => {
                     let journey;
-                    let revert;
+                    let JourneyMap;
                     const nextStep = serviceData.services[serviceName].nextStep;
                     const nextStepName = serviceData.services[serviceName].nextStepName;
                     beforeEach(() => {
-                        revert = JourneyMap.__set__('steps', nextStep);
+                        JourneyMap = buildJourneyMap(nextStep);
                         journey = serviceJourney;
-                    });
-                    afterEach(() => {
-                        revert();
                     });
                     it('should skip a step and go to next step as mentioned in service', (done) => {
                         currentStep.name = serviceData.services[serviceName].currentStep;
