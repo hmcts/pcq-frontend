@@ -27,9 +27,9 @@ describe('ApplicantDisability', () => {
     });
 
     describe('handlePost()', () => {
-        let ctx;
-        let errors;
-        let formdata;
+        let ctx = {};
+        let errors = [];
+        let formdata = {};
         const session = {};
 
         it('should return the required fields set to null if no options are selected', (done) => {
@@ -62,10 +62,8 @@ describe('ApplicantDisability', () => {
                     'disability_none': 0
                 }
             };
-            let ctx = {
-                'disability_conditions': 2
-            };
-            [ctx, formdata] = ApplicantDisability.action(ctx, formdata);
+            let ctx;
+            [ctx, formdata] = ApplicantDisability.action({'disability_conditions': 2}, formdata);
             expect(formdata.pcqAnswers).to.deep.equal({});
             done();
         });
@@ -87,10 +85,8 @@ describe('ApplicantDisability', () => {
                     'disability_none': 0
                 }
             };
-            let ctx = {
-                'disability_conditions': 0
-            };
-            [ctx, formdata] = ApplicantDisability.action(ctx, formdata);
+            let ctx;
+            [ctx, formdata] = ApplicantDisability.action({'disability_conditions': 0}, formdata);
             expect(formdata.pcqAnswers).to.deep.equal({});
             done();
         });
@@ -101,10 +97,8 @@ describe('ApplicantDisability', () => {
                     'disability_impact': 2,
                 }
             };
-            let ctx = {
-                'disability_conditions': 2
-            };
-            [ctx, formdata] = ApplicantDisability.action(ctx, formdata);
+            let ctx;
+            [ctx, formdata] = ApplicantDisability.action({'disability_conditions': 2}, formdata);
             expect(formdata.pcqAnswers).to.deep.equal({});
             done();
         });
@@ -127,10 +121,8 @@ describe('ApplicantDisability', () => {
                     'disability_none': 0
                 }
             };
-            let ctx = {
-                'disability_conditions': 1
-            };
-            [ctx, formdata] = ApplicantDisability.action(ctx, formdata);
+            let ctx;
+            [ctx, formdata] = ApplicantDisability.action({'disability_conditions': 1}, formdata);
             expect(formdata.pcqAnswers).to.deep.equal({
                 'disability_impact': 1,
                 'disability_other_details': 'qweqweqew',

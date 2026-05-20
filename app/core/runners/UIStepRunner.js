@@ -66,8 +66,7 @@ class UIStepRunner {
 
         return co(function* () {
             let ctx = step.getContextData(req, res);
-            let [isValid, errors] = [];
-            [isValid, errors] = step.validate(ctx, formdata, session.language);
+            let [isValid, errors] = step.validate(ctx, formdata, session.language);
             const featureToggles = session.featureToggles;
             if (isValid) {
                 [ctx, errors] = yield step.handlePost(ctx, errors, formdata, req.session, FormatUrl.createHostname(req), featureToggles);
