@@ -1,10 +1,15 @@
 'use strict';
 
 const expect = require('chai').expect;
-const rewire = require('rewire');
-const Service = rewire('app/services/Service');
+const Proxyquire = require('proxyquire/lib/proxyquire');
+const proxyquire = new Proxyquire(module).noCallThru();
+const Service = require('app/services/Service');
 const HttpsProxyAgent = require('https-proxy-agent');
 const sinon = require('sinon');
+
+const buildServiceClass = (overrides = {}) => {
+    return proxyquire('app/services/Service', overrides);
+};
 
 describe('Service', () => {
     describe('get()', () => {
@@ -40,35 +45,29 @@ describe('Service', () => {
     });
 
     describe('log()', () => {
-        let revert;
-
-        beforeEach(() => {
-            revert = Service.__set__('logger', sinon.stub().returns({
-                info: () => true
-            }));
-        });
-
-        afterEach(() => {
-            revert();
-        });
-
         it('should log a message without a sessionId', (done) => {
-            const service = new Service();
+            const loggerFactory = sinon.stub().returns({
+                info: () => true
+            });
+            const ServiceWithLogger = buildServiceClass({'app/components/logger': loggerFactory});
+            const service = new ServiceWithLogger();
             service.log();
-            expect(Service.__get__('logger').calledOnce).to.equal(true);
-            expect(Service.__get__('logger').calledWith('Init')).to.equal(true);
-            revert();
+            expect(loggerFactory.calledOnce).to.equal(true);
+            expect(loggerFactory.calledWith('Init')).to.equal(true);
             done();
         });
 
         it('should log a message with a sessionId', (done) => {
             const sessionId = 'sid123';
-            const service = new Service();
+            const loggerFactory = sinon.stub().returns({
+                info: () => true
+            });
+            const ServiceWithLogger = buildServiceClass({'app/components/logger': loggerFactory});
+            const service = new ServiceWithLogger();
             service.sessionId = sessionId;
             service.log();
-            expect(Service.__get__('logger').calledOnce).to.equal(true);
-            expect(Service.__get__('logger').calledWith(sessionId)).to.equal(true);
-            revert();
+            expect(loggerFactory.calledOnce).to.equal(true);
+            expect(loggerFactory.calledWith(sessionId)).to.equal(true);
             done();
         });
     });
@@ -86,17 +85,18 @@ describe('Service', () => {
 
     describe('fetchJson()', () => {
         it('should return a json response', (done) => {
-            const revert = Service.__set__('asyncFetch', class {
-                static fetch() {
-                    return Promise.resolve({result: 'something'});
+            const ServiceWithAsyncFetch = buildServiceClass({
+                'app/utils/AsyncFetch': class {
+                    fetch() {
+                        return Promise.resolve({result: 'something'});
+                    }
                 }
             });
-            const service = new Service();
+            const service = new ServiceWithAsyncFetch();
             service
                 .fetchJson('http://localhost/forms', {})
                 .then((res) => {
                     expect(res).to.deep.equal({result: 'something'});
-                    revert();
                     done();
                 })
                 .catch((err) => {
@@ -107,17 +107,18 @@ describe('Service', () => {
 
     describe('fetchText()', () => {
         it('should return a text response', (done) => {
-            const revert = Service.__set__('asyncFetch', class {
-                static fetch() {
-                    return Promise.resolve('something');
+            const ServiceWithAsyncFetch = buildServiceClass({
+                'app/utils/AsyncFetch': class {
+                    fetch() {
+                        return Promise.resolve('something');
+                    }
                 }
             });
-            const service = new Service();
+            const service = new ServiceWithAsyncFetch();
             service
                 .fetchText('http://localhost/forms', {})
                 .then((res) => {
                     expect(res).to.equal('something');
-                    revert();
                     done();
                 })
                 .catch((err) => {
@@ -129,17 +130,18 @@ describe('Service', () => {
     describe('fetchBuffer()', () => {
         it('should return a buffer response', (done) => {
             const buffer = new Buffer('really interesting file contents');
-            const revert = Service.__set__('asyncFetch', class {
-                static fetch() {
-                    return Promise.resolve(buffer);
+            const ServiceWithAsyncFetch = buildServiceClass({
+                'app/utils/AsyncFetch': class {
+                    fetch() {
+                        return Promise.resolve(buffer);
+                    }
                 }
             });
-            const service = new Service();
+            const service = new ServiceWithAsyncFetch();
             service
                 .fetchBuffer('http://localhost/forms', {})
                 .then((res) => {
                     expect(res).to.equal(buffer);
-                    revert();
                     done();
                 })
                 .catch((err) => {

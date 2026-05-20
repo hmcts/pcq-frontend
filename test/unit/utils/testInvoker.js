@@ -1,7 +1,8 @@
 'use strict';
 
 const expect = require('chai').expect;
-const rewire = require('rewire');
+const Proxyquire = require('proxyquire/lib/proxyquire');
+const proxyquire = new Proxyquire(module).noCallThru();
 const Invoker = require('app/utils/Invoker');
 
 describe('Invoker', () => {
@@ -70,11 +71,14 @@ describe('Invoker', () => {
 
     describe('generateToken()', () => {
         it('should use secure token generation when useSecureToken is true', () => {
-            const InvokerRewired = rewire('app/utils/Invoker');
             const generateTokenStub = () => ({token: 'legacy'});
             const generateSecureTokenStub = () => ({token: 'secure', authTag: 'a', iv: 'i', salt: 's'});
-            InvokerRewired.__set__('generateToken', generateTokenStub);
-            InvokerRewired.__set__('generateSecureToken', generateSecureTokenStub);
+            const InvokerRewired = proxyquire('app/utils/Invoker', {
+                'app/components/encryption-token': {
+                    generateToken: generateTokenStub,
+                    generateSecureToken: generateSecureTokenStub
+                }
+            });
 
             const rewiredInvoker = new (InvokerRewired)();
             const result = rewiredInvoker.generateToken({serviceId: 'A', useSecureToken: 'true'});

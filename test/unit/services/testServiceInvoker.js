@@ -5,11 +5,10 @@ const sinon = require('sinon');
 const config = require('config');
 const app = require('../../../app');
 const nock = require('nock');
-const rewire = require('rewire');
 const request = require('supertest');
 const serviceInvokerData = require('test/unit/services/testServiceInvokerData.json');
+const {generateToken} = require('app/components/encryption-token');
 const {setSession, registerIncomingService} = require('app/middleware/registerIncomingService');
-const invoker = rewire('app/middleware/invoker');
 
 //requiring path and fs modules
 const path = require('path');
@@ -36,7 +35,6 @@ fs.readdir(directoryPath, function (err, files) {
                     const formData = serviceInvokerData.services[serviceName].datas[data].formData;
                     describe('Valid Params : '+ data, () => {
                         it('should assign valid incoming query params to the session', () => {
-                            const genToken = invoker.__get__('genToken');
                             const req = {
                                 query: {
                                     serviceId: formData.serviceId,
@@ -56,8 +54,7 @@ fs.readdir(directoryPath, function (err, files) {
                                 json: sinon.spy()
                             };
 
-                            genToken(req, res);
-                            const generatedToken = res.json.args[0][0].token;
+                            const generatedToken = generateToken(req.query).token;
                             req.query.token = generatedToken;
 
                             setSession(req);

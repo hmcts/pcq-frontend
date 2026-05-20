@@ -2,14 +2,26 @@
 
 const expect = require('chai').expect;
 const sinon = require('sinon');
-const rewire = require('rewire');
 const request = require('supertest');
-const invoker = rewire('app/middleware/invoker');
+const config = require('config');
+const app = require('../../../app');
+const invoker = require('app/middleware/invoker');
+
+const routeHandler = (method, path) => {
+    const appMock = {
+        get: sinon.spy(),
+        post: sinon.spy()
+    };
+    invoker.addTo(appMock);
+    const routes = method === 'get' ? appMock.get.args : appMock.post.args;
+    const route = routes.find(([routePath]) => routePath === path);
+    return route[1];
+};
 
 describe('Invoker', () => {
     describe('formFiller()', () => {
         it('should fill specified fields', (done) => {
-            const formFiller = invoker.__get__('formFiller');
+            const formFiller = routeHandler('get', '/invoker/formFiller');
             const req = {
                 query: {
                     service: 'SERVICE',
@@ -34,7 +46,7 @@ describe('Invoker', () => {
 
     describe('postForm()', () => {
         it('should redirect to the service endpoint with the correct params', (done) => {
-            const postForm = invoker.__get__('postForm');
+            const postForm = routeHandler('post', '/invoker');
             const req = {
                 body: {
                     serviceId: 'a',
@@ -61,7 +73,7 @@ describe('Invoker', () => {
 
     describe('genToken()', () => {
         it('should generate a valid encryption token for the provided fields', (done) => {
-            const genToken = invoker.__get__('genToken');
+            const genToken = routeHandler('get', '/invoker/genToken');
             const req = {
                 query: {
                     serviceId: 'CMC',
@@ -89,14 +101,18 @@ describe('Invoker', () => {
 
     describe('Routing', () => {
         it('should load the invoker page when enabled', (done) => {
-            const rewiredApp = rewire('../../../app');
-            rewiredApp.__set__('config.invoker.enabled', 'true');
-            const server = rewiredApp.init(false, {});
+            const originalInvokerEnabled = config.invoker.enabled;
+            const originalEnvironment = config.environment;
+            config.invoker.enabled = 'true';
+            config.environment = 'test';
+            const server = app.init(false, {});
             const agent = request.agent(server.app);
             agent.get('/invoker')
                 .expect(200)
                 .end((err, res) => {
                     server.http.close();
+                    config.invoker.enabled = originalInvokerEnabled;
+                    config.environment = originalEnvironment;
                     if (err) {
                         throw err;
                     }
@@ -106,15 +122,18 @@ describe('Invoker', () => {
         });
 
         it('should not load in prod environment even when enabled', (done) => {
-            const rewiredApp = rewire('../../../app');
-            rewiredApp.__set__('config.environment', 'prod');
-            rewiredApp.__set__('config.invoker.enabled', 'true');
-            const server = rewiredApp.init(false, {});
+            const originalInvokerEnabled = config.invoker.enabled;
+            const originalEnvironment = config.environment;
+            config.environment = 'prod';
+            config.invoker.enabled = 'true';
+            const server = app.init(false, {});
             const agent = request.agent(server.app);
             agent.get('/invoker')
                 .expect(404)
                 .end((err, res) => {
                     server.http.close();
+                    config.invoker.enabled = originalInvokerEnabled;
+                    config.environment = originalEnvironment;
                     if (err) {
                         throw err;
                     }
@@ -124,15 +143,18 @@ describe('Invoker', () => {
         });
 
         it('should not load in production environment even when enabled', (done) => {
-            const rewiredApp = rewire('../../../app');
-            rewiredApp.__set__('config.environment', 'production');
-            rewiredApp.__set__('config.invoker.enabled', 'true');
-            const server = rewiredApp.init(false, {});
+            const originalInvokerEnabled = config.invoker.enabled;
+            const originalEnvironment = config.environment;
+            config.environment = 'production';
+            config.invoker.enabled = 'true';
+            const server = app.init(false, {});
             const agent = request.agent(server.app);
             agent.get('/invoker')
                 .expect(404)
                 .end((err, res) => {
                     server.http.close();
+                    config.invoker.enabled = originalInvokerEnabled;
+                    config.environment = originalEnvironment;
                     if (err) {
                         throw err;
                     }

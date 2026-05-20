@@ -6,7 +6,6 @@ const jwt = require('jsonwebtoken');
 const config = require('config');
 const app = require('../../../app');
 const nock = require('nock');
-const rewire = require('rewire');
 const request = require('supertest');
 const {setSession, registerIncomingService} = require('app/middleware/registerIncomingService');
 
@@ -232,14 +231,15 @@ describe('registerIncomingService', () => {
                     200,
                     {'pcq-backend': {'status': 'DOWN'}}
                 );
-            const rewiredApp = rewire('../../../app');
-            rewiredApp.__set__('config.services.pcqBackend.enabled', 'false');
-            const server = rewiredApp.init();
+            const originalBackendEnabled = config.services.pcqBackend.enabled;
+            config.services.pcqBackend.enabled = 'false';
+            const server = app.init();
             const agent = request.agent(server.app);
             agent.get('/service-endpoint?serviceId=PROBATE&actor=APPLICANT&pcqId=12&ccdCaseId=12&partyId=12&returnUrl=test')
                 .expect(302)
                 .end((err, res) => {
                     server.http.close();
+                    config.services.pcqBackend.enabled = originalBackendEnabled;
                     if (err) {
                         throw err;
                     }

@@ -2,9 +2,9 @@
 
 const expect = require('chai').expect;
 const sinon = require('sinon');
-const rewire = require('rewire');
+const Proxyquire = require('proxyquire/lib/proxyquire');
+const proxyquire = new Proxyquire(module).noCallThru();
 const FeatureToggle = require('app/utils/FeatureToggle');
-const RewiredFeatureToggle = rewire('app/utils/FeatureToggle');
 
 describe('FeatureToggle', () => {
     describe('callCheckToggle()', () => {
@@ -67,8 +67,10 @@ describe('FeatureToggle', () => {
                 callback: () => true,
                 redirectPage: '/dummy-page'
             };
-            RewiredFeatureToggle.__set__('LaunchDarkly', FeatureToggleStub);
-            const featureToggle = new RewiredFeatureToggle();
+            const FeatureToggleWithStub = proxyquire('app/utils/FeatureToggle', {
+                'app/components/launch-darkly': FeatureToggleStub
+            });
+            const featureToggle = new FeatureToggleWithStub();
 
             await featureToggle.callCheckToggle(...Object.values(params));
 

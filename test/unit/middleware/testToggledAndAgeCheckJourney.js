@@ -1,8 +1,7 @@
 'use strict';
 
 const expect = require('chai').expect;
-const rewire = require('rewire');
-const setJourney = rewire('app/middleware/setJourney');
+const setJourney = require('app/middleware/setJourney');
 const ageCheckQuestionsJourney = require('test/data/journeys/ageCheckQuestions');
 const toggledAndAgeCheckQuestionsJourney = require('test/data/journeys/toggledAndAgeCheckQuestions');
 
@@ -14,15 +13,11 @@ describe('toggledAndAgeCheckQuestionsJourney', () => {
             const req = {
                 session: {
                     form: {
-                        serviceId: 'TEST'
+                        serviceId: '../../test/data/journeys/agecheckquestions'
                     },
                     ageCheck: 2
                 }
             };
-
-            const revert = setJourney.__set__('getBaseJourney', () => {
-                return require('test/data/journeys/ageCheckQuestions');
-            });
 
             await setJourney(req, {});
 
@@ -36,7 +31,7 @@ describe('toggledAndAgeCheckQuestionsJourney', () => {
 
             expect(req.session).to.deep.equal({
                 form: {
-                    serviceId: 'TEST',
+                    serviceId: '../../test/data/journeys/agecheckquestions',
                 },
                 ageCheck: 2,
                 journey: journey
@@ -53,7 +48,7 @@ describe('toggledAndAgeCheckQuestionsJourney', () => {
 
             expect(req.session).to.deep.equal({
                 form: {
-                    serviceId: 'TEST',
+                    serviceId: '../../test/data/journeys/agecheckquestions',
                 },
                 ageCheck: 1,
                 journey: journey
@@ -70,20 +65,18 @@ describe('toggledAndAgeCheckQuestionsJourney', () => {
 
             expect(req.session).to.deep.equal({
                 form: {
-                    serviceId: 'TEST',
+                    serviceId: '../../test/data/journeys/agecheckquestions',
                 },
                 ageCheck: 0,
                 journey: journey
             });
-
-            revert();
         });
 
         it('merges the skip lists correctly', async () => {
             const req = {
                 session: {
                     form: {
-                        serviceId: 'TEST'
+                        serviceId: '../../test/data/journeys/toggledandagecheckquestions'
                     },
                     ageCheck: 2
                 }
@@ -99,10 +92,6 @@ describe('toggledAndAgeCheckQuestionsJourney', () => {
                     }
                 },
             };
-
-            const revert = setJourney.__set__('getBaseJourney', () => {
-                return require('test/data/journeys/toggledAndAgeCheckQuestions');
-            });
 
             await setJourney(req, res);
 
@@ -121,7 +110,7 @@ describe('toggledAndAgeCheckQuestionsJourney', () => {
 
             expect(req.session).to.deep.equal({
                 form: {
-                    serviceId: 'TEST',
+                    serviceId: '../../test/data/journeys/toggledandagecheckquestions',
                 },
                 ageCheck: 2,
                 journey: journey
@@ -145,7 +134,7 @@ describe('toggledAndAgeCheckQuestionsJourney', () => {
 
             expect(req.session).to.deep.equal({
                 form: {
-                    serviceId: 'TEST',
+                    serviceId: '../../test/data/journeys/toggledandagecheckquestions',
                 },
                 ageCheck: 1,
                 journey: journey
@@ -168,13 +157,11 @@ describe('toggledAndAgeCheckQuestionsJourney', () => {
 
             expect(req.session).to.deep.equal({
                 form: {
-                    serviceId: 'TEST',
+                    serviceId: '../../test/data/journeys/toggledandagecheckquestions',
                 },
                 ageCheck: 0,
                 journey: journey
             });
-
-            revert();
         });
 
     });

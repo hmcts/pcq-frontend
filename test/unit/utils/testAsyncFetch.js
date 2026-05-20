@@ -2,7 +2,7 @@
 
 const expect = require('chai').expect;
 const nock = require('nock');
-const rewire = require('rewire');
+const sinon = require('sinon');
 const AsyncFetch = require('app/utils/AsyncFetch');
 const asyncFetch = new AsyncFetch();
 
@@ -66,18 +66,12 @@ describe('AsyncFetch', () => {
     });
 
     it('logs a non json body', () => {
-        const RewiredAsyncFetch = rewire('app/utils/AsyncFetch');
-        const JSON = {
-            stringify: () => {
-                throw Error('Force error');
-            }
-        };
-        const revert = RewiredAsyncFetch.__set__('JSON', JSON);
-        const testAsyncFetch = new RewiredAsyncFetch();
+        const stringifyStub = sinon.stub(JSON, 'stringify').throws(new Error('Force error'));
+        const testAsyncFetch = new AsyncFetch();
 
         // Test will fail if the error thrown is not caught
         const err = testAsyncFetch.logBody('non json');
         expect(err.message).to.equal('Force error');
-        revert();
+        stringifyStub.restore();
     });
 });

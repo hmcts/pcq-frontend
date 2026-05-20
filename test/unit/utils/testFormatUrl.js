@@ -1,8 +1,8 @@
 'use strict';
 
 const expect = require('chai').expect;
-const rewire = require('rewire');
-const FormatUrl = rewire('app/utils/FormatUrl');
+const config = require('config');
+const FormatUrl = require('app/utils/FormatUrl');
 
 describe('FormatUrl.js', () => {
     describe('format()', () => {
@@ -51,11 +51,11 @@ describe('FormatUrl.js', () => {
             });
 
             it('when an uppercase protocol is given', (done) => {
-                FormatUrl.__set__('config', {
-                    frontendPublicHttpProtocol: 'HTTPS'
-                });
+                const previousProtocol = config.frontendPublicHttpProtocol;
+                config.frontendPublicHttpProtocol = 'HTTPS';
                 const hostname = FormatUrl.createHostname(req);
                 expect(hostname).to.equal('https://localhost');
+                config.frontendPublicHttpProtocol = previousProtocol;
                 done();
             });
         });

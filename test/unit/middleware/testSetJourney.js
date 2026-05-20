@@ -1,12 +1,11 @@
 'use strict';
 
 const expect = require('chai').expect;
-const rewire = require('rewire');
-const setJourney = rewire('app/middleware/setJourney');
+const setJourney = require('app/middleware/setJourney');
 const defaultJourney = require('app/journeys/default');
 const probateJourney = require('app/journeys/probate');
 const toggledQuestionsJourney = require('test/data/journeys/toggledQuestions');
-const actorDefinedJourneys = rewire('test/data/journeys/actorDefinedJourneys');
+const actorDefinedJourneys = require('test/data/journeys/actorDefinedJourneys');
 
 describe('setJourney', () => {
     it('should set req.journey with the default journey when no form session', async () => {
@@ -80,7 +79,7 @@ describe('setJourney', () => {
         const req = {
             session: {
                 form: {
-                    serviceId: 'TEST'
+                    serviceId: '../../test/data/journeys/toggledquestions'
                 }
             }
         };
@@ -94,10 +93,6 @@ describe('setJourney', () => {
                 }
             },
         };
-
-        const revert = setJourney.__set__('getBaseJourney', () => {
-            return require('test/data/journeys/toggledQuestions');
-        });
 
         await setJourney(req, res);
 
@@ -116,12 +111,10 @@ describe('setJourney', () => {
 
         expect(req.session).to.deep.equal({
             form: {
-                serviceId: 'TEST',
+                serviceId: '../../test/data/journeys/toggledquestions',
             },
             journey: journey
         });
-
-        revert();
     });
 
     describe('by actor', () => {
@@ -129,60 +122,48 @@ describe('setJourney', () => {
             const req = {
                 session: {
                     form: {
-                        serviceId: 'TEST',
+                        serviceId: '../../test/data/journeys/actordefinedjourneys',
                         actor: 'WITHDOB'
                     }
                 }
             };
             const res = {};
 
-            const withDobJourney = actorDefinedJourneys.__get__('withDob');
-
-            const revert = setJourney.__set__('getBaseJourney', () => {
-                return require('test/data/journeys/actorDefinedJourneys');
-            });
+            const withDobJourney = actorDefinedJourneys('withdob').stepList;
 
             await setJourney(req, res);
 
             expect(req.session).to.deep.equal({
                 form: {
-                    serviceId: 'TEST',
+                    serviceId: '../../test/data/journeys/actordefinedjourneys',
                     actor: 'WITHDOB'
                 },
                 journey: {stepList: withDobJourney}
             });
-
-            revert();
         });
 
         it('sets journey by actor - 2', async () => {
             const req = {
                 session: {
                     form: {
-                        serviceId: 'TEST',
+                        serviceId: '../../test/data/journeys/actordefinedjourneys',
                         actor: 'WITHOUTDOB'
                     }
                 }
             };
             const res = {};
 
-            const withoutDobJourney = actorDefinedJourneys.__get__('withoutDob');
-
-            const revert = setJourney.__set__('getBaseJourney', () => {
-                return require('test/data/journeys/actorDefinedJourneys');
-            });
+            const withoutDobJourney = actorDefinedJourneys('withoutdob').stepList;
 
             await setJourney(req, res);
 
             expect(req.session).to.deep.equal({
                 form: {
-                    serviceId: 'TEST',
+                    serviceId: '../../test/data/journeys/actordefinedjourneys',
                     actor: 'WITHOUTDOB'
                 },
                 journey: {stepList: withoutDobJourney}
             });
-
-            revert();
         });
     });
 });
