@@ -63,7 +63,7 @@ class Service {
             });
     }
 
-    fetchOptions(data, method, headers, proxy) {
+    fetchOptions(data, method, headers) {
         return {
             method: method,
             mode: 'cors',

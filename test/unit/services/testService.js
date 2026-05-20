@@ -182,13 +182,6 @@ describe('Service', () => {
             expect(options.agent).to.equal(null);
             done();
         });
-
-        it('should return the agent set to null if a proxy is not given', (done) => {
-            const service = new Service();
-            const options = service.fetchOptions();
-            expect(options.agent).to.equal(null);
-            done();
-        });
     });
 
     describe('formatErrorMessage()', () => {

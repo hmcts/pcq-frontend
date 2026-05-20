@@ -74,7 +74,7 @@ const fetchBuffer = (url, options) => {
         });
 };
 
-const fetchOptions = (data, method, headers, proxy) => {
+const fetchOptions = (data, method, headers) => {
     return {
         method: method,
         mode: 'cors',

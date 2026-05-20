@@ -26,14 +26,14 @@ describe('api-utils', () => {
         };
 
         it('test fetchoptions body for a POST method', (done) => {
-            const fetchOptions = utils.fetchOptions(data, 'POST', null, null);
+            const fetchOptions = utils.fetchOptions(data, 'POST', null);
             expect(fetchOptions.body).to.equal(expectedFetchOptions.body);
             done();
         });
 
         it('test fetchoptions body for a GET method', (done) => {
             expectedFetchOptions.body = null;
-            const fetchOptions = utils.fetchOptions({}, 'GET', null, null);
+            const fetchOptions = utils.fetchOptions({}, 'GET', null);
             expect(fetchOptions.body).to.equal(expectedFetchOptions.body);
             done();
         });
