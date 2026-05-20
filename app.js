@@ -27,6 +27,7 @@ const sanitizeRequestBody = require('app/middleware/sanitizeRequestBody');
 const isEmpty = require('lodash').isEmpty;
 const invoker = require('app/middleware/invoker');
 const permissionsPolicy = require('permissions-policy');
+const translationLoader = require('app/components/translationLoader');
 
 exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     const app = express();
@@ -281,7 +282,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
 
     // Add variables that are available in all views
     app.use(function (req, res, next) {
-        const commonContent = require(`app/resources/${req.session.language}/translation/common`);
+        const commonContent = translationLoader.getCommonTranslation(req.session.language);
 
         res.locals.govuk = commonContent.govuk;
         res.locals.serviceName = commonContent.serviceName;
