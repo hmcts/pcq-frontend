@@ -1,6 +1,7 @@
 'use strict';
 
 const UIStepRunner = require('app/core/runners/UIStepRunner');
+const translationLoader = require('app/components/translationLoader');
 
 class OptionGetRunner extends UIStepRunner {
 
@@ -14,7 +15,7 @@ class OptionGetRunner extends UIStepRunner {
     }
 
     handlePost(step, req, res) {
-        const commonContent = require(`app/resources/${req.session.language}/translation/common`);
+        const commonContent = translationLoader.getCommonTranslation(req.session.language);
 
         req.log.error('Post operation not defined for OptionGetRunner');
         res.status(404);

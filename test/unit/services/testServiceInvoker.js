@@ -91,7 +91,7 @@ fs.readdir(directoryPath, function (err, files) {
                             const server = app.init();
                             const agent = request.agent(server.app);
                             const url = '/service-endpoint?serviceId='+formData.serviceId+'&actor='+formData.actor+'&pcqId='+formData.pcqId+'&ccdCaseId='+formData.ccdCaseId+
-                            '&partyId='+formData.partyId+'&returnUrl'+formData.returnUrl;
+                            '&partyId='+formData.partyId+'&returnUrl='+formData.returnUrl;
                             agent.get(`${url}`)
                                 .expect(302)
                                 .end((err, res) => {
@@ -135,7 +135,7 @@ fs.readdir(directoryPath, function (err, files) {
                             const server = app.init();
                             const agent = request.agent(server.app);
                             const url = '/service-endpoint?actor='+formData.actor+'&pcqId='+formData.pcqId+'&ccdCaseId='+formData.ccdCaseId+
-                            '&partyId='+formData.partyId+'&returnUrl'+formData.returnUrl;
+                            '&partyId='+formData.partyId+'&returnUrl='+formData.returnUrl;
                             agent.get(`${url}`).redirects(1)
                                 .expect(302)
                                 .end((err, res) => {

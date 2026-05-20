@@ -2,10 +2,11 @@
 
 const i18next = require('i18next');
 const mapValues = require('lodash').mapValues;
+const translationLoader = require('app/components/translationLoader');
 
 const commonContent = function (language = 'en') {
     i18next.changeLanguage(language);
-    const common = require(`app/resources/${language}/translation/common`);
+    const common = translationLoader.getCommonTranslation(language);
     return mapValues(common, (value, key) => i18next.t(`common.${key}`));
 };
 

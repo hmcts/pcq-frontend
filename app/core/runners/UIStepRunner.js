@@ -3,6 +3,7 @@
 const co = require('co');
 const {curry, isEmpty, forEach, omit, set} = require('lodash');
 const FormatUrl = require('app/utils/FormatUrl');
+const translationLoader = require('app/components/translationLoader');
 
 class UIStepRunner {
 
@@ -15,7 +16,7 @@ class UIStepRunner {
         let errors = req.session.ctx.errors || null;
         const session = req.session;
         const formdata = session.form;
-        const commonContent = require(`app/resources/${session.language}/translation/common`);
+        const commonContent = translationLoader.getCommonTranslation(session.language);
 
         return co(function* () {
             let ctx = step.getContextData(req, res);
@@ -62,7 +63,7 @@ class UIStepRunner {
         const session = req.session;
         let formdata = session.form;
         formdata.pcqAnswers = formdata.pcqAnswers || {};
-        const commonContent = require(`app/resources/${session.language}/translation/common`);
+        const commonContent = translationLoader.getCommonTranslation(session.language);
 
         return co(function* () {
             let ctx = step.getContextData(req, res);
