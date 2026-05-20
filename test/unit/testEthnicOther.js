@@ -15,9 +15,9 @@ describe('ApplicantEthnicBackgroundOther', () => {
     });
 
     describe('handlePost()', () => {
-        let ctx;
-        let errors;
-        let formdata;
+        let ctx = {};
+        let errors = [];
+        let formdata = {};
         const session = {};
 
         it('should return the ctx with the ethnicity', (done) => {

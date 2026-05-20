@@ -24,9 +24,9 @@ describe('ApplicantDateOfBirth', () => {
     });
 
     describe('handlePost()', () => {
-        let ctx;
-        let errors;
-        let formdata;
+        let ctx = {};
+        let errors = [];
+        let formdata = {};
         const session = {};
 
         it('should return the ctx with the deceased dob', (done) => {
@@ -146,14 +146,8 @@ describe('ApplicantDateOfBirth', () => {
 
     describe('action()', () => {
         it('should delete the dob variables if the user doesn\'t want to provide it', (done) => {
-            let formdata = {};
-            let ctx = {
-                'dob_provided': 0,
-                'dob-day': '02',
-                'dob-month': '03',
-                'dob-year': '3000'
-            };
-            [ctx, formdata] = ApplicantDateOfBirth.action(ctx, formdata);
+            let ctx;
+            [ctx] = ApplicantDateOfBirth.action({dob_provided: 0, 'dob-day': '02', 'dob-month': '03', 'dob-year': '3000'}, {});
             expect(ctx).to.deep.equal({
                 dob_provided: 0
             });
