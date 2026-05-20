@@ -2,7 +2,8 @@
 
 const expect = require('chai').expect;
 const sinon = require('sinon');
-const proxyquire = require('proxyquire').noCallThru();
+const Proxyquire = require('proxyquire/lib/proxyquire');
+const proxyquire = new Proxyquire(module).noCallThru();
 const config = require('config');
 const tokenModule = require('app/components/encryption-token');
 
