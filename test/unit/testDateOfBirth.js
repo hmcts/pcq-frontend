@@ -2,7 +2,7 @@
 
 const initSteps = require('app/core/initSteps');
 const expect = require('chai').expect;
-const steps = initSteps([`${__dirname}/../../app/steps/ui`]);
+const steps = initSteps([`${__dirname}/../../app/steps/ui/dateofbirth`]);
 const ApplicantDateOfBirth = steps.ApplicantDateOfBirth;
 const content = require('app/resources/en/translation/dateofbirth');
 

@@ -1,6 +1,8 @@
 'use strict';
 
 const co = require('co');
+const fs = require('fs');
+const path = require('path');
 const request = require('supertest');
 const a11y = require('test/util/a11y');
 const expect = require('chai').expect;
@@ -9,7 +11,11 @@ const initSteps = require('app/core/initSteps');
 const {endsWith} = require('lodash');
 const commonContent = require('app/resources/en/translation/common');
 const stepsToExclude = [];
-const steps = initSteps([`${__dirname}/../../app/steps/ui`], 'en');
+const stepRoot = path.join(__dirname, '../../app/steps/ui');
+const stepLocations = fs.readdirSync(stepRoot, {withFileTypes: true})
+    .filter(entry => entry.isDirectory())
+    .map(entry => path.join(stepRoot, entry.name));
+const steps = initSteps(stepLocations, 'en');
 const nock = require('nock');
 const config = require('config');
 const commonSessionData = {

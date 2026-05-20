@@ -1,7 +1,7 @@
 'use strict';
 
 const initSteps = require('app/core/initSteps');
-const steps = initSteps([`${__dirname}/../../app/steps/ui`]);
+const steps = initSteps([`${__dirname}/../../app/steps/ui/shutterpage`]);
 const ShutterPage = steps.ShutterPage;
 const expect = require('chai').expect;
 

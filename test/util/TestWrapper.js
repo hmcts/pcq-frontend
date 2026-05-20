@@ -2,17 +2,56 @@
 
 const {forEach, filter, isEmpty, set, get, cloneDeep} = require('lodash');
 const {expect, assert} = require('chai');
+const path = require('path');
 const app = require('../../app');
 const routes = require('app/routes');
 const config = require('config');
 const request = require('supertest');
 const initSteps = require('app/core/initSteps');
-const steps = initSteps([`${__dirname}/../../app/steps/ui`], 'en');
 const setJourney = require('app/middleware/setJourney');
+
+const stepLocations = {
+    Accessibility: 'static/accessibility',
+    ApplicantDateOfBirth: 'dateofbirth',
+    ApplicantDisability: 'disability',
+    ApplicantDisabilityImplicationAreas: 'disabilityimplicationsareas',
+    ApplicantDisabilityImplications: 'disabilityimplications',
+    ApplicantEnglishLevel: 'englishlevel',
+    ApplicantEthnicBackgroundAsian: 'ethnicasian',
+    ApplicantEthnicBackgroundBlack: 'ethnicblack',
+    ApplicantEthnicBackgroundMixed: 'ethnicmixed',
+    ApplicantEthnicBackgroundOther: 'ethnicother',
+    ApplicantEthnicBackgroundWhite: 'ethnicwhite',
+    ApplicantEthnicGroup: 'ethnicgroup',
+    ApplicantGenderSameAsSex: 'gender',
+    ApplicantLanguage: 'language',
+    ApplicantMaritalStatus: 'maritalstatus',
+    ApplicantPregnant: 'pregnant',
+    ApplicantReligion: 'religion',
+    ApplicantSex: 'sex',
+    ApplicantSexualOrientation: 'sexualorientation',
+    Cookies: 'static/cookies',
+    EndPage: 'endpage',
+    PrivacyPolicy: 'static/privacy',
+    ShutterPage: 'shutterpage',
+    StartPage: 'startpage',
+    TermsConditions: 'static/terms'
+};
+
+const loadStep = stepName => {
+    const location = stepLocations[stepName];
+
+    if (!location) {
+        throw new Error(`Unknown test step: ${stepName}`);
+    }
+
+    const steps = initSteps([path.join(__dirname, '../../app/steps/ui', location)], 'en');
+    return steps[stepName];
+};
 
 class TestWrapper {
     constructor(stepName, ftValue) {
-        this.pageToTest = steps[stepName];
+        this.pageToTest = loadStep(stepName);
         this.pageUrl = this.pageToTest.constructor.getUrl();
 
         this.content = require(`app/resources/en/translation/${this.pageToTest.resourcePath}`);

@@ -2,7 +2,7 @@
 
 const initSteps = require('app/core/initSteps');
 const expect = require('chai').expect;
-const steps = initSteps([`${__dirname}/../../app/steps/ui`]);
+const steps = initSteps([`${__dirname}/../../app/steps/ui/disabilityimplicationsareas`]);
 const ApplicantDisabilityImplicationAreas = steps.ApplicantDisabilityImplicationAreas;
 
 describe('ApplicantDisabilityImplicationAreas', () => {
