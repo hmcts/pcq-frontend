@@ -54,16 +54,36 @@ router.use(async (req, res, next) => {
     next();
 });
 
-const stepsByLang = {
-    en: initSteps([`${__dirname}/steps/ui`], 'en'),
-    cy: initSteps([`${__dirname}/steps/ui`], 'cy')
+let stepsByLang;
+let routesRegistered = false;
+
+const getStepsByLang = () => {
+    if (!stepsByLang) {
+        stepsByLang = {
+            en: initSteps([`${__dirname}/steps/ui`], 'en'),
+            cy: initSteps([`${__dirname}/steps/ui`], 'cy')
+        };
+    }
+    return stepsByLang;
 };
 
-Object.values(stepsByLang.en).forEach(stepEn => {
-    const path = stepEn.constructor.getUrl();
-    const pickStep = req => stepsByLang[stepsByLang[req.session.language] ? req.session.language : 'en'][stepEn.constructor.name];
-    router.get(path, (req, res, next) => pickStep(req).runner().GET(pickStep(req))(req, res, next));
-    router.post(path, continueToQuestions, (req, res, next) => pickStep(req).runner().POST(pickStep(req))(req, res, next));
+const registerRoutes = () => {
+    if (routesRegistered) {
+        return;
+    }
+    const steps = getStepsByLang();
+    Object.values(steps.en).forEach(stepEn => {
+        const path = stepEn.constructor.getUrl();
+        const pickStep = req => steps[steps[req.session.language] ? req.session.language : 'en'][stepEn.constructor.name];
+        router.get(path, (req, res, next) => pickStep(req).runner().GET(pickStep(req))(req, res, next));
+        router.post(path, continueToQuestions, (req, res, next) => pickStep(req).runner().POST(pickStep(req))(req, res, next));
+    });
+    routesRegistered = true;
+};
+
+router.use((req, res, next) => {
+    registerRoutes();
+    next();
 });
 
 router.get('/health/liveness', (req, res) => {
