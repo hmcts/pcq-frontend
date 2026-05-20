@@ -2,7 +2,7 @@
 
 const expect = require('chai').expect;
 const Proxyquire = require('proxyquire/lib/proxyquire');
-const proxyquire = new Proxyquire(module).noCallThru();
+const proxyquire = new Proxyquire(module).callThru();
 const Service = require('app/services/Service');
 const HttpsProxyAgent = require('https-proxy-agent');
 const sinon = require('sinon');

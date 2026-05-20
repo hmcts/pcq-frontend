@@ -3,7 +3,7 @@
 const expect = require('chai').expect;
 const sinon = require('sinon');
 const Proxyquire = require('proxyquire/lib/proxyquire');
-const proxyquire = new Proxyquire(module).noCallThru();
+const proxyquire = new Proxyquire(module).callThru();
 const FeatureToggle = require('app/utils/FeatureToggle');
 
 describe('FeatureToggle', () => {
