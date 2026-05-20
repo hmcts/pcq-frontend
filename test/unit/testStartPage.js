@@ -50,19 +50,15 @@ describe('StartPage', () => {
 
     describe('action()', () => {
         it('test that context variables are removed and empty object returned', () => {
-            let formdata = {};
-            let ctx = {
-                returnUrl: 'some_url'
-            };
-            [ctx, formdata] = StartPage.action(ctx, formdata);
+            let formdata;
+            let ctx;
+            [ctx, formdata] = StartPage.action({returnUrl: 'some_url'}, {});
             expect(ctx).to.deep.equal({});
         });
         it('removes the optOut flag from formdata if present', () => {
-            let formdata = {
-                optOut: 'Y'
-            };
-            let ctx = {};
-            [ctx, formdata] = StartPage.action(ctx, formdata);
+            let formdata;
+            let ctx;
+            [ctx, formdata] = StartPage.action({}, {optOut: 'Y'});
             expect(formdata).to.deep.equal({});
         });
     });

@@ -27,9 +27,9 @@ describe('ApplicantLanguage', () => {
     });
 
     describe('handlePost()', () => {
-        let ctx;
-        let errors;
-        let formdata;
+        let ctx = {};
+        let errors = [];
+        let formdata = {};
         const session = {};
 
         it('should return the required fields set to null if no options are selected', (done) => {
@@ -57,12 +57,8 @@ describe('ApplicantLanguage', () => {
 
     describe('action()', () => {
         it('should delete the language_other field from the context when not selected', (done) => {
-            let formdata = {};
-            let ctx = {
-                'language_main': 1,
-                'language_other': 'To be deleted'
-            };
-            [ctx, formdata] = ApplicantLanguage.action(ctx, formdata);
+            let ctx;
+            [ctx] = ApplicantLanguage.action({'language_main': 1, 'language_other': 'To be deleted'}, {});
             expect(ctx).to.deep.equal({
                 language_main: 1
             });
@@ -77,10 +73,8 @@ describe('ApplicantLanguage', () => {
                     'english_language_level': 1
                 }
             };
-            let ctx = {
-                'language_main': 1
-            };
-            [ctx, formdata] = ApplicantLanguage.action(ctx, formdata);
+            let ctx;
+            [ctx, formdata] = ApplicantLanguage.action({'language_main': 1}, formdata);
             expect(formdata.pcqAnswers).to.deep.equal({});
             done();
         });
@@ -91,10 +85,8 @@ describe('ApplicantLanguage', () => {
                     'english_language_level': 1
                 }
             };
-            let ctx = {
-                'language_main': 2
-            };
-            [ctx, formdata] = ApplicantLanguage.action(ctx, formdata);
+            let ctx;
+            [ctx, formdata] = ApplicantLanguage.action({'language_main': 2}, formdata);
             expect(formdata.pcqAnswers).to.deep.equal({
                 'english_language_level': 1
             });
