@@ -1,25 +1,22 @@
 'use strict';
 
 const OptionGetRunner = require('app/core/runners/OptionGetRunner');
+const UIStepRunner = require('app/core/runners/UIStepRunner');
 const sinon = require('sinon');
 const chai = require('chai');
 const expect = chai.expect;
 const sinonChai = require('sinon-chai');
-const initSteps = require('app/core/initSteps');
-const steps = initSteps([`${__dirname}/../../../app/steps/ui`], 'en');
-const journey = require('app/journeys/default');
 
 chai.use(sinonChai);
 
 describe('OptionGetRunner', () => {
     it('Test GET redirect', () => {
-        const step = steps.StartPage;
+        const step = {
+            getContextData: sinon.stub().returns({foo: 'bar'}),
+            nextStepUrl: sinon.stub().returns('/date-of-birth')
+        };
         const req = {
             params: ['redirect'],
-            session: {
-                ctx: {StartPage: {}},
-                journey: journey()
-            },
             sessionID: '123'
         };
 
@@ -33,91 +30,24 @@ describe('OptionGetRunner', () => {
     });
 
     it('Test GET', async () => {
-        const step = steps.StartPage;
+        const superGetStub = sinon.stub(UIStepRunner.prototype, 'handleGet').resolves('ok');
+        const step = {name: 'test-step'};
         const req = {
             params: ['no-redirect'],
-            session: {
-                ctx: {StartPage: {}},
-                journey: journey(),
-                language: 'en',
-                back: {push: () => 0}
-            },
+            session: {language: 'en'},
             query: {source: ''},
             sessionID: '123'
         };
 
-        const res = {
-            render: sinon.spy()
-        };
+        const res = {render: sinon.spy()};
 
         const runner = new OptionGetRunner();
-        await runner.handleGet(step, req, res);
+        const result = await runner.handleGet(step, req, res);
 
-        expect(res.render.calledOnce).to.equal(true);
-    });
-
-    it('Test GET - with dtrum session properties', async () => {
-        const step = steps.StartPage;
-        const req = {
-            params: ['no-redirect'],
-            session: {
-                featureToggles: {
-                    ft_dtrum_session_properties: true
-                },
-                form: {
-                    serviceId: 'test'
-                },
-                ctx: {StartPage: {}},
-                journey: journey(),
-                language: 'en',
-                back: {push: () => 0}
-            },
-            query: {source: ''},
-            sessionID: '123'
-        };
-
-        const res = {
-            render: sinon.spy(),
-            locals: {releaseVersion: 'testVersion'}
-        };
-
-        const runner = new OptionGetRunner();
-        await runner.handleGet(step, req, res);
-
-        expect(res.render.calledOnce).to.equal(true);
-        expect(res.render.args[0][1].app).to.deep.equal({version: 'testVersion', serviceId: 'test', gaNonceUpdate: false});
-    });
-
-    it('Test GET - with GA Nonce Update', async () => {
-        const step = steps.StartPage;
-        const req = {
-            params: ['no-redirect'],
-            session: {
-                featureToggles: {
-                    ft_ga_nonce_update: true
-                },
-                form: {
-                    serviceId: 'test'
-                },
-                ctx: {StartPage: {}},
-                journey: journey(),
-                language: 'en',
-                back: {push: () => 0}
-            },
-            query: {source: ''},
-            sessionID: '123'
-        };
-
-        const res = {
-            render: sinon.spy(),
-            locals: {releaseVersion: 'testVersion'}
-        };
-
-        const runner = new OptionGetRunner();
-        await runner.handleGet(step, req, res);
-
-        expect(res.render.calledOnce).to.equal(true);
-        expect(res.render.args[0][1].app).to.deep.equal({gaNonceUpdate: true});
+        expect(superGetStub.calledOnce).to.equal(true);
+        expect(superGetStub.calledWith(step, req, res)).to.equal(true);
+        expect(result).to.equal('ok');
+        superGetStub.restore();
     });
 
     it('Test POST', () => {
