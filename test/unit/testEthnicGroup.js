@@ -31,9 +31,9 @@ describe('ApplicantEthnicGroup', () => {
     });
 
     describe('handlePost()', () => {
-        let ctx;
-        let errors;
-        let formdata;
+        let ctx = {};
+        let errors = [];
+        let formdata = {};
         const session = {};
         it('sets the ethnicity and resets "other" text when selecting "None"', (done) => {
             ctx = {
