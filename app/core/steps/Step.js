@@ -8,6 +8,7 @@ const config = require('config');
 const ServiceMapper = require('app/utils/ServiceMapper');
 const FeatureToggle = require('app/utils/FeatureToggle');
 const utils = require('app/components/step-utils');
+const translationLoader = require('app/components/translationLoader');
 const moment = require('moment');
 const logger = require('app/components/logger');
 
@@ -41,7 +42,7 @@ class Step {
         this.section = section || null;
         this.resourcePath = resourcePath;
         this.templatePath = `ui/${resourcePath}`;
-        this.content = require(`app/resources/${language}/translation/${resourcePath}`);
+        this.content = translationLoader.getStepTranslation(language, resourcePath);
         this.i18next = i18next;
     }
 
@@ -108,7 +109,7 @@ class Step {
         if (formdata?.serviceId && formdata.actor) {
             let variableContent;
             try {
-                variableContent = require(`app/resources/${language}/translation/variable/${formdata.serviceId}`)[formdata.actor];
+                variableContent = translationLoader.getVariableTranslation(language, formdata.serviceId)[formdata.actor];
             } catch {
                 logger().info(`Step ${this.name} has no variable-text.json file in its resource folder for service ${formdata.serviceId}`);
             }
@@ -122,7 +123,7 @@ class Step {
 
     commonContent(language = 'en') {
         this.i18next.changeLanguage(language);
-        const common = require(`app/resources/${language}/translation/common`);
+        const common = translationLoader.getCommonTranslation(language);
         return mapValues(common, (value, key) => this.i18next.t(`common.${key}`));
     }
 

@@ -8,7 +8,6 @@ const serviceData = require('test/unit/core/testServiceData.json');
 let StartPage;
 let EndPage;
 let ShutterPage;
-let journeySteps;
 //requiring path and fs modules
 const path = require('path');
 const fs = require('fs');
@@ -19,22 +18,21 @@ const buildJourneyMap = (steps) => {
     });
 };
 
-const loadJourneySteps = () => initSteps([
+const journeySteps = initSteps([
     `${__dirname}/../../../app/steps/ui/startpage`,
     `${__dirname}/../../../app/steps/ui/endpage`,
     `${__dirname}/../../../app/steps/ui/shutterpage`
 ]);
-//joining path of directory
-const directoryPath = path.join(`${__dirname}/../../../app`, 'journeys');
-
-const files = fs.readdirSync(directoryPath);
 
 before(() => {
-    journeySteps = loadJourneySteps();
     StartPage = journeySteps.StartPage;
     EndPage = journeySteps.EndPage;
     ShutterPage = journeySteps.ShutterPage;
 });
+//joining path of directory
+const directoryPath = path.join(`${__dirname}/../../../app`, 'journeys');
+
+const files = fs.readdirSync(directoryPath);
 
 files.forEach(function (file) {
     const filePathFragments = file.split('.');
