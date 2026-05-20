@@ -2,7 +2,8 @@
 
 const TestWrapper = require('test/util/TestWrapper');
 const config = require('config');
-const commonContent = require('app/resources/en/translation/common');
+const translationLoader = require('app/components/translationLoader');
+const commonContent = translationLoader.getCommonTranslation('en');
 
 describe('terms-conditions', () => {
     let testWrapper;

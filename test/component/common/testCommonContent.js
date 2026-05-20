@@ -1,7 +1,8 @@
 'use strict';
 
 const TestWrapper = require('test/util/TestWrapper');
-const commonContent = require('app/resources/en/translation/common');
+const translationLoader = require('app/components/translationLoader');
+const commonContent = translationLoader.getCommonTranslation('en');
 
 class TestCommonContent {
     static runTest(page) {

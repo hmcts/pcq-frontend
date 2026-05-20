@@ -1,7 +1,8 @@
 const {expect} = require('chai');
 const app = require('../../../app');
 const request = require('supertest');
-const commonContent = require('app/resources/en/translation/common');
+const translationLoader = require('app/components/translationLoader');
+const commonContent = translationLoader.getCommonTranslation('en');
 
 describe('healthcheck.js', () => {
     it('/health should return the correct params', (done) => {

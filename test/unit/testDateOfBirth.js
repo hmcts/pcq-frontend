@@ -2,8 +2,9 @@
 
 const initSteps = require('app/core/initSteps');
 const expect = require('chai').expect;
+const translationLoader = require('app/components/translationLoader');
 let ApplicantDateOfBirth;
-const content = require('app/resources/en/translation/dateofbirth');
+const content = translationLoader.getStepTranslation('en', 'dateofbirth');
 
 describe('ApplicantDateOfBirth', () => {
     before(() => {
