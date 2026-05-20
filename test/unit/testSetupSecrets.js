@@ -1,7 +1,8 @@
 const expect = require('chai').expect;
 const {cloneDeep} = require('lodash');
 const config = require('config');
-const proxyquire = require('proxyquire');
+const Proxyquire = require('proxyquire/lib/proxyquire');
+const proxyquire = new Proxyquire(module).noCallThru();
 
 const modulePath = 'app/setupSecrets';
 
