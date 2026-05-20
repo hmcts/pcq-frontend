@@ -1,11 +1,15 @@
 'use strict';
 
 const initSteps = require('app/core/initSteps');
-const steps = initSteps([`${__dirname}/../../app/steps/ui/shutterpage`]);
-const ShutterPage = steps.ShutterPage;
 const expect = require('chai').expect;
+let ShutterPage;
 
 describe('ShutterPage', () => {
+    before(() => {
+        const steps = initSteps([`${__dirname}/../../app/steps/ui/shutterpage`]);
+        ShutterPage = steps.ShutterPage;
+    });
+
     describe('getUrl()', () => {
         it('should return the correct url', (done) => {
             const url = ShutterPage.constructor.getUrl();

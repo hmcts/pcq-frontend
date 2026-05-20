@@ -2,10 +2,14 @@
 
 const initSteps = require('app/core/initSteps');
 const expect = require('chai').expect;
-const steps = initSteps([`${__dirname}/../../app/steps/ui/ethnicmixed`]);
-const ApplicantEthnicBackgroundMixed = steps.ApplicantEthnicBackgroundMixed;
+let ApplicantEthnicBackgroundMixed;
 
 describe('ApplicantEthnicBackgroundMixed', () => {
+    before(() => {
+        const steps = initSteps([`${__dirname}/../../app/steps/ui/ethnicmixed`]);
+        ApplicantEthnicBackgroundMixed = steps.ApplicantEthnicBackgroundMixed;
+    });
+
     describe('getUrl()', () => {
         it('should return the correct url', (done) => {
             const url = ApplicantEthnicBackgroundMixed.constructor.getUrl();

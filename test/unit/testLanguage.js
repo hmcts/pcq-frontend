@@ -2,10 +2,14 @@
 
 const initSteps = require('app/core/initSteps');
 const expect = require('chai').expect;
-const steps = initSteps([`${__dirname}/../../app/steps/ui/language`]);
-const ApplicantLanguage = steps.ApplicantLanguage;
+let ApplicantLanguage;
 
 describe('ApplicantLanguage', () => {
+    before(() => {
+        const steps = initSteps([`${__dirname}/../../app/steps/ui/language`]);
+        ApplicantLanguage = steps.ApplicantLanguage;
+    });
+
     describe('getUrl()', () => {
         it('should return the correct url', (done) => {
             const url = ApplicantLanguage.constructor.getUrl();

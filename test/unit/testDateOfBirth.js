@@ -2,11 +2,15 @@
 
 const initSteps = require('app/core/initSteps');
 const expect = require('chai').expect;
-const steps = initSteps([`${__dirname}/../../app/steps/ui/dateofbirth`]);
-const ApplicantDateOfBirth = steps.ApplicantDateOfBirth;
+let ApplicantDateOfBirth;
 const content = require('app/resources/en/translation/dateofbirth');
 
 describe('ApplicantDateOfBirth', () => {
+    before(() => {
+        const steps = initSteps([`${__dirname}/../../app/steps/ui/dateofbirth`]);
+        ApplicantDateOfBirth = steps.ApplicantDateOfBirth;
+    });
+
     describe('getUrl()', () => {
         it('should return the correct url', (done) => {
             const url = ApplicantDateOfBirth.constructor.getUrl();

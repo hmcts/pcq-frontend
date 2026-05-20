@@ -2,10 +2,14 @@
 
 const initSteps = require('app/core/initSteps');
 const expect = require('chai').expect;
-const steps = initSteps([`${__dirname}/../../app/steps/ui/englishlevel`]);
-const ApplicantEnglishLevel = steps.ApplicantEnglishLevel;
+let ApplicantEnglishLevel;
 
 describe('ApplicantEnglishLevel', () => {
+    before(() => {
+        const steps = initSteps([`${__dirname}/../../app/steps/ui/englishlevel`]);
+        ApplicantEnglishLevel = steps.ApplicantEnglishLevel;
+    });
+
     describe('getUrl()', () => {
         it('should return the correct url', (done) => {
             const url = ApplicantEnglishLevel.constructor.getUrl();

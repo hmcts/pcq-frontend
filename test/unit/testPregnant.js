@@ -2,10 +2,14 @@
 
 const initSteps = require('app/core/initSteps');
 const expect = require('chai').expect;
-const steps = initSteps([`${__dirname}/../../app/steps/ui/pregnant`]);
-const ApplicantPregnant = steps.ApplicantPregnant;
+let ApplicantPregnant;
 
 describe('ApplicantPregnant', () => {
+    before(() => {
+        const steps = initSteps([`${__dirname}/../../app/steps/ui/pregnant`]);
+        ApplicantPregnant = steps.ApplicantPregnant;
+    });
+
     describe('getUrl()', () => {
         it('should return the correct url', (done) => {
             const url = ApplicantPregnant.constructor.getUrl();

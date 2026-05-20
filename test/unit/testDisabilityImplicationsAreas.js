@@ -2,10 +2,14 @@
 
 const initSteps = require('app/core/initSteps');
 const expect = require('chai').expect;
-const steps = initSteps([`${__dirname}/../../app/steps/ui/disabilityimplicationsareas`]);
-const ApplicantDisabilityImplicationAreas = steps.ApplicantDisabilityImplicationAreas;
+let ApplicantDisabilityImplicationAreas;
 
 describe('ApplicantDisabilityImplicationAreas', () => {
+    before(() => {
+        const steps = initSteps([`${__dirname}/../../app/steps/ui/disabilityimplicationsareas`]);
+        ApplicantDisabilityImplicationAreas = steps.ApplicantDisabilityImplicationAreas;
+    });
+
     describe('getUrl()', () => {
         it('should return the correct url', (done) => {
             const url = ApplicantDisabilityImplicationAreas.constructor.getUrl();

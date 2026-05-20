@@ -2,10 +2,14 @@
 
 const initSteps = require('app/core/initSteps');
 const expect = require('chai').expect;
-const steps = initSteps([`${__dirname}/../../app/steps/ui/gender`]);
-const ApplicantGenderSameAsSex = steps.ApplicantGenderSameAsSex;
+let ApplicantGenderSameAsSex;
 
 describe('ApplicantGenderSameAsSex', () => {
+    before(() => {
+        const steps = initSteps([`${__dirname}/../../app/steps/ui/gender`]);
+        ApplicantGenderSameAsSex = steps.ApplicantGenderSameAsSex;
+    });
+
     describe('getUrl()', () => {
         it('should return the correct url', (done) => {
             const url = ApplicantGenderSameAsSex.constructor.getUrl();

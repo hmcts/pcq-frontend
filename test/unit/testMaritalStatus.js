@@ -2,10 +2,14 @@
 
 const initSteps = require('app/core/initSteps');
 const expect = require('chai').expect;
-const steps = initSteps([`${__dirname}/../../app/steps/ui/maritalstatus`]);
-const ApplicantMaritalStatus = steps.ApplicantMaritalStatus;
+let ApplicantMaritalStatus;
 
 describe('ApplicantMaritalStatus', () => {
+    before(() => {
+        const steps = initSteps([`${__dirname}/../../app/steps/ui/maritalstatus`]);
+        ApplicantMaritalStatus = steps.ApplicantMaritalStatus;
+    });
+
     describe('getUrl()', () => {
         it('should return the correct url', (done) => {
             const url = ApplicantMaritalStatus.constructor.getUrl();

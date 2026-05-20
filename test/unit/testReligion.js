@@ -2,10 +2,14 @@
 
 const initSteps = require('app/core/initSteps');
 const expect = require('chai').expect;
-const steps = initSteps([`${__dirname}/../../app/steps/ui/religion`]);
-const ApplicantReligion = steps.ApplicantReligion;
+let ApplicantReligion;
 
 describe('ApplicantReligion', () => {
+    before(() => {
+        const steps = initSteps([`${__dirname}/../../app/steps/ui/religion`]);
+        ApplicantReligion = steps.ApplicantReligion;
+    });
+
     describe('getUrl()', () => {
         it('should return the correct url', (done) => {
             const url = ApplicantReligion.constructor.getUrl();

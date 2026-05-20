@@ -2,10 +2,14 @@
 
 const initSteps = require('app/core/initSteps');
 const expect = require('chai').expect;
-const steps = initSteps([`${__dirname}/../../app/steps/ui/endpage`]);
-const EndPage = steps.EndPage;
+let EndPage;
 
 describe('EndPage', () => {
+    before(() => {
+        const steps = initSteps([`${__dirname}/../../app/steps/ui/endpage`]);
+        EndPage = steps.EndPage;
+    });
+
     describe('getUrl()', () => {
         it('should return the correct url', (done) => {
             const url = EndPage.constructor.getUrl();

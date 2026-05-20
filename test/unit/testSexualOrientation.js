@@ -2,10 +2,14 @@
 
 const initSteps = require('app/core/initSteps');
 const expect = require('chai').expect;
-const steps = initSteps([`${__dirname}/../../app/steps/ui/sexualorientation`]);
-const ApplicantSexualOrientation = steps.ApplicantSexualOrientation;
+let ApplicantSexualOrientation;
 
 describe('ApplicantSexualOrientation', () => {
+    before(() => {
+        const steps = initSteps([`${__dirname}/../../app/steps/ui/sexualorientation`]);
+        ApplicantSexualOrientation = steps.ApplicantSexualOrientation;
+    });
+
     describe('getUrl()', () => {
         it('should return the correct url', (done) => {
             const url = ApplicantSexualOrientation.constructor.getUrl();
