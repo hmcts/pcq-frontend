@@ -15,9 +15,9 @@ describe('ApplicantGenderSameAsSex', () => {
     });
 
     describe('handlePost()', () => {
-        let ctx;
-        let errors;
-        let formdata;
+        let ctx = {};
+        let errors = [];
+        let formdata = {};
         const session = {};
 
         it('should delete the gender_other field from the context when not selected', (done) => {

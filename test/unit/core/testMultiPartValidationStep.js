@@ -32,8 +32,8 @@ describe('MultiPartValidationStep', () => {
                     'test3': 'This is a test'
                 }
             };
-            let ctx = {};
-            [ctx, formdata] = invalidChildSteps.action(ctx, formdata);
+            let ctx;
+            [ctx, formdata] = invalidChildSteps.action({}, formdata);
             expect(formdata.pcqAnswers).to.deep.equal({
                 'test1': 1,
                 'test2': 0,
@@ -59,10 +59,8 @@ describe('MultiPartValidationStep', () => {
                     'dontdeleteme': 'please'
                 }
             };
-            let ctx = {
-                'test': 1
-            };
-            [ctx, formdata] = testStep.action(ctx, formdata);
+            let ctx;
+            [ctx, formdata] = testStep.action({'test': 1}, formdata);
             expect(formdata.pcqAnswers).to.deep.equal({
                 'dontdeleteme': 'please'
             });
@@ -77,10 +75,8 @@ describe('MultiPartValidationStep', () => {
                     'dontdeleteme': 'please'
                 }
             };
-            let ctx = {
-                'test': 0
-            };
-            [ctx, formdata] = testStep.action(ctx, formdata);
+            let ctx;
+            [ctx, formdata] = testStep.action({'test': 0}, formdata);
             expect(formdata.pcqAnswers).to.deep.equal({
                 'test1': 1,
                 'test2': 0,
@@ -91,8 +87,8 @@ describe('MultiPartValidationStep', () => {
 
         it('should not complain if pcqAnswers is undefined', (done) => {
             let formdata = {};
-            let ctx = {};
-            [ctx, formdata] = testStep.action(ctx, formdata);
+            let ctx;
+            [ctx, formdata] = testStep.action({}, formdata);
             expect(formdata).to.deep.equal({});
             done();
         });
