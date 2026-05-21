@@ -71,8 +71,7 @@ class Service {
             follow: 10,
             timeout: 10000,
             body: JSON.stringify(data),
-            headers: new Headers(headers || {}),
-            agent: null
+            headers: new Headers(headers || {})
         };
     }
 

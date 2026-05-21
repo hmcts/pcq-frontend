@@ -179,7 +179,6 @@ describe('Service', () => {
             expect(options.timeout).to.equal(10000);
             expect(options.body).to.equal(JSON.stringify(data));
             expect(options.headers.get('Content-Type')).to.equal('application/json');
-            expect(options.agent).to.equal(null);
             done();
         });
     });
