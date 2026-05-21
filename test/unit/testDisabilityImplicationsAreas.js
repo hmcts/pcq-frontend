@@ -57,9 +57,9 @@ describe('ApplicantDisabilityImplicationAreas', () => {
     });
 
     describe('handlePost()', () => {
-        let ctx;
-        let errors;
-        let formdata;
+        let ctx = {};
+        let errors = [];
+        let formdata = {};
         const session = {};
 
         it('should return the ctx will all fields null when no options are selected', (done) => {

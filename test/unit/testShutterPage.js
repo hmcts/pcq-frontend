@@ -77,11 +77,9 @@ describe('ShutterPage', () => {
 
     describe('action()', () => {
         it('test that context variables are removed and empty object returned', () => {
-            let formdata = {};
-            let ctx = {
-                returnUrl: 'some_url'
-            };
-            [ctx, formdata] = ShutterPage.action(ctx, formdata);
+            let formdata;
+            let ctx;
+            [ctx, formdata] = ShutterPage.action({returnUrl: 'some_url'}, {});
             expect(ctx).to.deep.equal({});
         });
     });

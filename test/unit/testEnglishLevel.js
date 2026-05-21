@@ -15,9 +15,9 @@ describe('ApplicantEnglishLevel', () => {
     });
 
     describe('handlePost()', () => {
-        let ctx;
-        let errors;
-        let formdata;
+        let ctx = {};
+        let errors = [];
+        let formdata = {};
         const session = {};
 
         it('should return the required fields set to null if no options are selected', (done) => {

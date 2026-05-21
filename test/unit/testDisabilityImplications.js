@@ -28,9 +28,9 @@ describe('ApplicantDisabilityImplications', () => {
     });
 
     describe('handlePost()', () => {
-        let ctx;
-        let errors;
-        let formdata;
+        let ctx = {};
+        let errors = [];
+        let formdata = {};
         const session = {};
 
         it('should return the required fields set to null if no options are selected', (done) => {
@@ -62,10 +62,8 @@ describe('ApplicantDisabilityImplications', () => {
                     'disability_none': 0
                 }
             };
-            let ctx = {
-                'disability_impact': 3
-            };
-            [ctx, formdata] = ApplicantDisabilityImplications.action(ctx, formdata);
+            let ctx;
+            [ctx, formdata] = ApplicantDisabilityImplications.action({'disability_impact': 3}, formdata);
             expect(formdata.pcqAnswers).to.deep.equal({});
             done();
         });
@@ -87,10 +85,8 @@ describe('ApplicantDisabilityImplications', () => {
                     'disability_none': 0
                 }
             };
-            let ctx = {
-                'disability_impact': 1
-            };
-            [ctx, formdata] = ApplicantDisabilityImplications.action(ctx, formdata);
+            let ctx;
+            [ctx, formdata] = ApplicantDisabilityImplications.action({'disability_impact': 1}, formdata);
             expect(formdata.pcqAnswers).to.deep.equal({
                 'disability_other_details': 'qweqweqew',
                 'disability_vision': 1,
