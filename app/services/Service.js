@@ -1,6 +1,5 @@
 'use strict';
 
-const HttpsProxyAgent = require('https-proxy-agent');
 const logger = require('app/components/logger');
 const config = require('config');
 const formatUrl = require('app/utils/FormatUrl');
@@ -64,7 +63,7 @@ class Service {
             });
     }
 
-    fetchOptions(data, method, headers, proxy) {
+    fetchOptions(data, method, headers) {
         return {
             method: method,
             mode: 'cors',
@@ -72,8 +71,7 @@ class Service {
             follow: 10,
             timeout: 10000,
             body: JSON.stringify(data),
-            headers: new Headers(headers || {}),
-            agent: proxy ? new HttpsProxyAgent(proxy) : null
+            headers: new Headers(headers || {})
         };
     }
 
