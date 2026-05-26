@@ -91,7 +91,7 @@ const RAW_RUNTIME_STATE =
           ["require-directory", "npm:2.1.1"],\
           ["rewire", "npm:9.0.1"],\
           ["sanitize-html", "npm:2.17.4"],\
-          ["sass", "npm:1.99.0"],\
+          ["sass", "npm:1.100.0"],\
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:22.0.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
@@ -7308,6 +7308,14 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["chokidar", "npm:4.0.3"],\
           ["readdirp", "npm:4.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:5.0.0", {\
+        "packageLocation": "./.yarn/cache/chokidar-npm-5.0.0-2f70d31c86-a1c2a4ee6e.zip/node_modules/chokidar/",\
+        "packageDependencies": [\
+          ["chokidar", "npm:5.0.0"],\
+          ["readdirp", "npm:5.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -15532,7 +15540,7 @@ const RAW_RUNTIME_STATE =
           ["require-directory", "npm:2.1.1"],\
           ["rewire", "npm:9.0.1"],\
           ["sanitize-html", "npm:2.17.4"],\
-          ["sass", "npm:1.99.0"],\
+          ["sass", "npm:1.100.0"],\
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:22.0.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
@@ -16004,6 +16012,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/readdirp-npm-4.1.2-3440472afe-7b817c2659.zip/node_modules/readdirp/",\
         "packageDependencies": [\
           ["readdirp", "npm:4.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:5.0.0", {\
+        "packageLocation": "./.yarn/cache/readdirp-npm-5.0.0-82b01a282e-a17a591b51.zip/node_modules/readdirp/",\
+        "packageDependencies": [\
+          ["readdirp", "npm:5.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -16500,13 +16515,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sass", [\
-      ["npm:1.99.0", {\
-        "packageLocation": "./.yarn/cache/sass-npm-1.99.0-9ed8fe8584-93f9d5c3b3.zip/node_modules/sass/",\
+      ["npm:1.100.0", {\
+        "packageLocation": "./.yarn/cache/sass-npm-1.100.0-5be5b715ed-165d5ba502.zip/node_modules/sass/",\
         "packageDependencies": [\
           ["@parcel/watcher", "npm:2.5.6"],\
-          ["chokidar", "npm:4.0.3"],\
+          ["chokidar", "npm:5.0.0"],\
           ["immutable", "npm:5.1.5"],\
-          ["sass", "npm:1.99.0"],\
+          ["sass", "npm:1.100.0"],\
           ["source-map-js", "npm:1.2.1"]\
         ],\
         "linkType": "HARD"\
