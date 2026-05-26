@@ -5,7 +5,7 @@ const utils = require('app/components/utils');
 const sinon = require('sinon');
 const session = require('express-session');
 
-describe('api-utils', () => {
+describe('utils', () => {
 
     describe('forceHttps', () => {
         it('redirects to https site on http call', () => {
