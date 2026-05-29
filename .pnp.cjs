@@ -69,7 +69,7 @@ const RAW_RUNTIME_STATE =
           ["helmet", "npm:8.2.0"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.0"],\
           ["immutable", "npm:5.1.5"],\
-          ["ioredis", "npm:5.10.1"],\
+          ["ioredis", "npm:5.11.0"],\
           ["js-yaml", "npm:4.1.1"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["lodash", "npm:4.18.1"],\
@@ -2410,10 +2410,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@ioredis/commands", [\
-      ["npm:1.5.1", {\
-        "packageLocation": "./.yarn/cache/@ioredis-commands-npm-1.5.1-c707e1afdc-7efb033930.zip/node_modules/@ioredis/commands/",\
+      ["npm:1.10.0", {\
+        "packageLocation": "./.yarn/cache/@ioredis-commands-npm-1.10.0-0ecb8bcb37-2b0322f99d.zip/node_modules/@ioredis/commands/",\
         "packageDependencies": [\
-          ["@ioredis/commands", "npm:1.5.1"]\
+          ["@ioredis/commands", "npm:1.10.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7617,10 +7617,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["cluster-key-slot", [\
-      ["npm:1.1.2", {\
-        "packageLocation": "./.yarn/cache/cluster-key-slot-npm-1.1.2-0571a28825-516ed8b5e1.zip/node_modules/cluster-key-slot/",\
+      ["npm:1.1.1", {\
+        "packageLocation": "./.yarn/cache/cluster-key-slot-npm-1.1.1-95cf628278-2b926e8ebe.zip/node_modules/cluster-key-slot/",\
         "packageDependencies": [\
-          ["cluster-key-slot", "npm:1.1.2"]\
+          ["cluster-key-slot", "npm:1.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -11433,16 +11433,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["ioredis", [\
-      ["npm:5.10.1", {\
-        "packageLocation": "./.yarn/cache/ioredis-npm-5.10.1-5e9921e0bf-a85786fc17.zip/node_modules/ioredis/",\
+      ["npm:5.11.0", {\
+        "packageLocation": "./.yarn/cache/ioredis-npm-5.11.0-1af96edd87-ab802874e2.zip/node_modules/ioredis/",\
         "packageDependencies": [\
-          ["@ioredis/commands", "npm:1.5.1"],\
-          ["cluster-key-slot", "npm:1.1.2"],\
+          ["@ioredis/commands", "npm:1.10.0"],\
+          ["cluster-key-slot", "npm:1.1.1"],\
           ["debug", "virtual:643ed7cc338bcf145a82d8b05b3bef6bcf150ca545df386225596f10ce53cc90b88b3ca83e348ade1ccea5f3f8e76c92d2f0e2ba544da60d40aff9921c56872d#npm:4.4.3"],\
           ["denque", "npm:2.1.0"],\
-          ["ioredis", "npm:5.10.1"],\
-          ["lodash.defaults", "npm:4.2.0"],\
-          ["lodash.isarguments", "npm:3.1.0"],\
+          ["ioredis", "npm:5.11.0"],\
           ["redis-errors", "npm:1.2.0"],\
           ["redis-parser", "npm:3.0.0"],\
           ["standard-as-callback", "npm:2.1.0"]\
@@ -12761,15 +12759,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["lodash.defaults", [\
-      ["npm:4.2.0", {\
-        "packageLocation": "./.yarn/cache/lodash.defaults-npm-4.2.0-c5dea025ab-6a2a9ea5ad.zip/node_modules/lodash.defaults/",\
-        "packageDependencies": [\
-          ["lodash.defaults", "npm:4.2.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["lodash.flattendeep", [\
       ["npm:4.4.0", {\
         "packageLocation": "./.yarn/cache/lodash.flattendeep-npm-4.4.0-26b2b4cbd7-0d0b41d8d8.zip/node_modules/lodash.flattendeep/",\
@@ -12793,15 +12782,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/lodash.includes-npm-4.3.0-3a2f6fa22c-45e0a7c783.zip/node_modules/lodash.includes/",\
         "packageDependencies": [\
           ["lodash.includes", "npm:4.3.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["lodash.isarguments", [\
-      ["npm:3.1.0", {\
-        "packageLocation": "./.yarn/cache/lodash.isarguments-npm-3.1.0-9e74d350b8-e5186d5fe0.zip/node_modules/lodash.isarguments/",\
-        "packageDependencies": [\
-          ["lodash.isarguments", "npm:3.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -15600,7 +15580,7 @@ const RAW_RUNTIME_STATE =
           ["helmet", "npm:8.2.0"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.0"],\
           ["immutable", "npm:5.1.5"],\
-          ["ioredis", "npm:5.10.1"],\
+          ["ioredis", "npm:5.11.0"],\
           ["js-yaml", "npm:4.1.1"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["lodash", "npm:4.18.1"],\
