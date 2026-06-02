@@ -1254,13 +1254,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/plugin-kit@npm:^0.7.1":
-  version: 0.7.1
-  resolution: "@eslint/plugin-kit@npm:0.7.1"
+"@eslint/plugin-kit@npm:^0.7.2":
+  version: 0.7.2
+  resolution: "@eslint/plugin-kit@npm:0.7.2"
   dependencies:
     "@eslint/core": "npm:^1.2.1"
     levn: "npm:^0.4.1"
-  checksum: 10/8f923f4cdadadd215e0c2028e6a53101bb148a7780cdb4dc8cd69b0c77fc88496742e87e0605b12905ff715e2c7ad6cbd2d92c5653cdbf91cca1e229b5022c1f
+  checksum: 10/ef9fc6f8ca28e132d4c81cfbaa92274800d1d73bb9d6ef2124613dd39b7f09e3592deb64bad10b183bff78db5465d4b100f522d994c8550424526b9ac4a072b0
   languageName: node
   linkType: hard
 
@@ -1887,13 +1887,13 @@ __metadata:
   linkType: hard
 
 "@launchdarkly/node-server-sdk@npm:^9.10.9":
-  version: 9.11.0
-  resolution: "@launchdarkly/node-server-sdk@npm:9.11.0"
+  version: 9.11.1
+  resolution: "@launchdarkly/node-server-sdk@npm:9.11.1"
   dependencies:
     "@launchdarkly/js-server-sdk-common": "npm:2.19.0"
     https-proxy-agent: "npm:^7.0.6"
     launchdarkly-eventsource: "npm:2.2.0"
-  checksum: 10/2d25a864057d58bfff0c65fc114cc099c90ffc30d0e579e429d6e8a9486b622010c5c29f9e9b0c9dc73d23974b3762545d6f712b41b8ad7d31ecac67348bf7ef
+  checksum: 10/aa1498c4f853f9ea20c10ace5124334870d706a5f8fc9716da80a7cea16f745aee6b09a52cabddee94d7f34a8cff108ae34064dd6efbecaa987144ca555d9606
   languageName: node
   linkType: hard
 
@@ -6925,15 +6925,15 @@ __metadata:
   linkType: hard
 
 "eslint@npm:^10.0.0":
-  version: 10.4.0
-  resolution: "eslint@npm:10.4.0"
+  version: 10.4.1
+  resolution: "eslint@npm:10.4.1"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.8.0"
     "@eslint-community/regexpp": "npm:^4.12.2"
     "@eslint/config-array": "npm:^0.23.5"
     "@eslint/config-helpers": "npm:^0.6.0"
     "@eslint/core": "npm:^1.2.1"
-    "@eslint/plugin-kit": "npm:^0.7.1"
+    "@eslint/plugin-kit": "npm:^0.7.2"
     "@humanfs/node": "npm:^0.16.6"
     "@humanwhocodes/module-importer": "npm:^1.0.1"
     "@humanwhocodes/retry": "npm:^0.4.2"
@@ -6965,7 +6965,7 @@ __metadata:
       optional: true
   bin:
     eslint: bin/eslint.js
-  checksum: 10/ab20a8fd250ee7c31a162d35a71e534a4f959736a7198661e5c963069b12880a53acfb349f3dc94fa82c91c74dd0594accbd878576bf65c33fa4225342ad7df6
+  checksum: 10/5722bd0ec1a87f49ee4511c7549dcfa69df0076927b0290b0a3b145425fd357906ffe6dc1307214a0bd344131bf53795fa2cdebfd36ee9146c01d98147044679
   languageName: node
   linkType: hard
 
@@ -8508,7 +8508,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"immutable@npm:5.1.5, immutable@npm:^5.1.5":
+"immutable@npm:5.1.6":
+  version: 5.1.6
+  resolution: "immutable@npm:5.1.6"
+  checksum: 10/4ba416dac4cc9d1cab4155bd6aefa54d5ca25e56bfee8a1d4edc3f23115b599486edafe76e91f83d22961bd065754fd705b04f052809ec967ccd71817c8dac2a
+  languageName: node
+  linkType: hard
+
+"immutable@npm:^5.1.5":
   version: 5.1.5
   resolution: "immutable@npm:5.1.5"
   checksum: 10/7aec2740239772ec8e92e793c991bd809203a97694f4ff3a18e50e28f9a6b02393ad033d87b458037bdf8c0ea37d4446d640e825f6171df3405cf6cf300ce028
@@ -12183,7 +12190,7 @@ __metadata:
     govuk-frontend: "npm:^5.4.0"
     helmet: "npm:^8.0.0"
     i18next: "npm:^26.0.0"
-    immutable: "npm:5.1.5"
+    immutable: "npm:5.1.6"
     ioredis: "npm:^5.3.2"
     js-yaml: "npm:^4.1.0"
     jsonwebtoken: "npm:^9.0.2"

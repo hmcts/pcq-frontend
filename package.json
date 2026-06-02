@@ -101,7 +101,7 @@
     "eslint": "^10.0.0",
     "fs-extra": "^11.1.0",
     "globals": "^17.0.0",
-    "immutable": "5.1.5",
+    "immutable": "5.1.6",
     "mocha": "^11.0.0",
     "mochawesome": "^7.1.3",
     "nock": "^14.0.0",
