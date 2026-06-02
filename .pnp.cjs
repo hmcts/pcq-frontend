@@ -70,7 +70,7 @@ const RAW_RUNTIME_STATE =
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.0"],\
           ["immutable", "npm:5.1.5"],\
           ["ioredis", "npm:5.11.0"],\
-          ["js-yaml", "npm:4.1.1"],\
+          ["js-yaml", "npm:4.2.0"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["lodash", "npm:4.18.1"],\
           ["mocha", "npm:11.7.6"],\
@@ -1799,7 +1799,7 @@ const RAW_RUNTIME_STATE =
           ["globals", "npm:14.0.0"],\
           ["ignore", "npm:5.3.2"],\
           ["import-fresh", "npm:3.3.1"],\
-          ["js-yaml", "npm:4.1.1"],\
+          ["js-yaml", "npm:4.2.0"],\
           ["minimatch", "npm:3.1.5"],\
           ["strip-json-comments", "npm:3.1.1"]\
         ],\
@@ -1975,7 +1975,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
-          ["js-yaml", "npm:4.1.1"],\
+          ["js-yaml", "npm:4.2.0"],\
           ["superagent", "npm:10.3.0"]\
         ],\
         "linkType": "HARD"\
@@ -2001,7 +2001,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/keyvault-secrets", "npm:4.10.0"],\
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
           ["@hmcts/properties-volume", "npm:1.4.0"],\
-          ["js-yaml", "npm:4.1.1"],\
+          ["js-yaml", "npm:4.2.0"],\
           ["lodash", "npm:4.18.1"]\
         ],\
         "linkType": "HARD"\
@@ -8110,7 +8110,7 @@ const RAW_RUNTIME_STATE =
           ["cosmiconfig", "virtual:7e0cf4c5a4f212875e786e11c1f29fb9aa5b52da165023199f4a89b0d999a4b30c7a6378ae5b40014c8fccd4650358039f7d2e9d6f99406727e7a13e32c8a873#npm:9.0.0"],\
           ["env-paths", "npm:2.2.1"],\
           ["import-fresh", "npm:3.3.1"],\
-          ["js-yaml", "npm:4.1.1"],\
+          ["js-yaml", "npm:4.2.0"],\
           ["parse-json", "npm:5.2.0"],\
           ["typescript", null]\
         ],\
@@ -12371,11 +12371,11 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:4.1.1", {\
-        "packageLocation": "./.yarn/cache/js-yaml-npm-4.1.1-86ec786790-a52d0519f0.zip/node_modules/js-yaml/",\
+      ["npm:4.2.0", {\
+        "packageLocation": "./.yarn/cache/js-yaml-npm-4.2.0-0ab78512c1-51de2067a2.zip/node_modules/js-yaml/",\
         "packageDependencies": [\
           ["argparse", "npm:2.0.1"],\
-          ["js-yaml", "npm:4.1.1"]\
+          ["js-yaml", "npm:4.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -13911,7 +13911,7 @@ const RAW_RUNTIME_STATE =
           ["glob", "npm:10.5.0"],\
           ["he", "npm:1.2.0"],\
           ["is-path-inside", "npm:3.0.3"],\
-          ["js-yaml", "npm:4.1.1"],\
+          ["js-yaml", "npm:4.2.0"],\
           ["log-symbols", "npm:4.1.0"],\
           ["minimatch", "npm:9.0.9"],\
           ["mocha", "npm:11.7.5"],\
@@ -13939,7 +13939,7 @@ const RAW_RUNTIME_STATE =
           ["glob", "npm:10.5.0"],\
           ["he", "npm:1.2.0"],\
           ["is-path-inside", "npm:3.0.3"],\
-          ["js-yaml", "npm:4.1.1"],\
+          ["js-yaml", "npm:4.2.0"],\
           ["log-symbols", "npm:4.1.0"],\
           ["minimatch", "npm:9.0.9"],\
           ["mocha", "npm:11.7.6"],\
@@ -15581,7 +15581,7 @@ const RAW_RUNTIME_STATE =
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.0"],\
           ["immutable", "npm:5.1.5"],\
           ["ioredis", "npm:5.11.0"],\
-          ["js-yaml", "npm:4.1.1"],\
+          ["js-yaml", "npm:4.2.0"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["lodash", "npm:4.18.1"],\
           ["mocha", "npm:11.7.6"],\
@@ -19244,7 +19244,7 @@ const RAW_RUNTIME_STATE =
           ["commander", "npm:12.1.0"],\
           ["fast-glob", "npm:3.3.3"],\
           ["fs-extra", "npm:11.3.5"],\
-          ["js-yaml", "npm:4.1.1"],\
+          ["js-yaml", "npm:4.2.0"],\
           ["lodash-es", "npm:4.18.1"],\
           ["semver", "npm:7.7.3"],\
           ["synp", "npm:1.9.14"],\
