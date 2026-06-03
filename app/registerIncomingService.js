@@ -8,6 +8,7 @@ const config = require('config');
 const AsyncFetch = require('app/utils/AsyncFetch');
 const asyncFetch = new AsyncFetch();
 const logger = require('app/components/logger')('Init');
+const frontendHealthUrl = config.services.pcqFrontend.healthUrl;
 
 router.get('/service-endpoint', (req, res) => {
     // Reset the session on registering a new incoming service
@@ -21,7 +22,7 @@ router.get('/service-endpoint', (req, res) => {
     };
 
     asyncFetch
-        .fetch('http://localhost:4000/health', {}, fetchRes => fetchRes.json())
+        .fetch(frontendHealthUrl, {}, fetchRes => fetchRes.json())
         .then(async json => {
             if ((json['pcq-backend'] && json['pcq-backend'].status === 'UP') || config.services.pcqBackend.enabled === 'false') {
                 registerIncomingService(req);
