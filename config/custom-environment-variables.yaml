@@ -20,6 +20,8 @@ services:
   pcqBackend:
     enabled: PCQ_BACKEND_ENABLED
     url: PCQ_BACKEND_URL
+  pcqFrontend:
+    healthUrl: PCQ_FRONTEND_HEALTH_URL
 tokenKeys:
   probate: PROBATE_TOKEN_KEY
   cmc: CMC_TOKEN_KEY
