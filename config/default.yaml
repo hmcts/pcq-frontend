@@ -39,6 +39,8 @@ services:
     port: 4550
     paths:
       forms: '/pcq/backend/submitAnswers'
+  pcqFrontend:
+    healthUrl: 'http://localhost:4000/health'
 tokenKeys:
   probate: 
   cmc: 
