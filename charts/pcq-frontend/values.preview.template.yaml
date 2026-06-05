@@ -5,6 +5,8 @@ nodejs:
     REDIS_PORT: 6379
     REDIS_USE_TLS: false
     ENABLE_INVOKER: true
+    PCQ_BACKEND_ENABLED: true
+    PCQ_BACKEND_URL: https://pcq-backend-pr-1603.preview.platform.hmcts.net
   image: ${IMAGE_NAME}
   ingressHost: ${SERVICE_FQDN}
 
