@@ -11992,7 +11992,6 @@ __metadata:
     i18next: "npm:^26.0.0"
     immutable: "npm:5.1.6"
     ioredis: "npm:^5.3.2"
-    js-yaml: "npm:^4.1.0"
     jsonwebtoken: "npm:^9.0.2"
     lodash: "npm:^4.17.21"
     mocha: "npm:^11.0.0"
