@@ -1822,7 +1822,7 @@ const RAW_RUNTIME_STATE =
           ["@grpc/proto-loader", "npm:0.8.0"],\
           ["lodash.camelcase", "npm:4.3.0"],\
           ["long", "npm:5.3.2"],\
-          ["protobufjs", "npm:8.6.3"],\
+          ["protobufjs", "npm:8.6.4"],\
           ["yargs", "npm:17.7.2"]\
         ],\
         "linkType": "HARD"\
@@ -3642,7 +3642,7 @@ const RAW_RUNTIME_STATE =
           ["@opentelemetry/sdk-metrics", "virtual:760f78f935d4e037d0342f8c1730746f28c0c7bd47f642705712ad91685324b45d4e454ba9fb8eb12f0955b9ce25c7a13ec90e4c3ccf9e0a8e6a37c566975f97#npm:2.7.1"],\
           ["@opentelemetry/sdk-trace-base", "virtual:760f78f935d4e037d0342f8c1730746f28c0c7bd47f642705712ad91685324b45d4e454ba9fb8eb12f0955b9ce25c7a13ec90e4c3ccf9e0a8e6a37c566975f97#npm:2.7.1"],\
           ["@types/opentelemetry__api", null],\
-          ["protobufjs", "npm:8.6.3"]\
+          ["protobufjs", "npm:8.6.4"]\
         ],\
         "packagePeers": [\
           "@opentelemetry/api",\
@@ -13039,7 +13039,7 @@ const RAW_RUNTIME_STATE =
           ["mocha", "npm:11.7.5"],\
           ["ms", "npm:2.1.3"],\
           ["picocolors", "npm:1.1.1"],\
-          ["serialize-javascript", "npm:7.0.5"],\
+          ["serialize-javascript", "npm:7.0.6"],\
           ["strip-json-comments", "npm:3.1.1"],\
           ["supports-color", "npm:8.1.1"],\
           ["workerpool", "npm:9.3.4"],\
@@ -13067,7 +13067,7 @@ const RAW_RUNTIME_STATE =
           ["mocha", "npm:11.7.6"],\
           ["ms", "npm:2.1.3"],\
           ["picocolors", "npm:1.1.1"],\
-          ["serialize-javascript", "npm:7.0.5"],\
+          ["serialize-javascript", "npm:7.0.6"],\
           ["strip-json-comments", "npm:3.1.1"],\
           ["supports-color", "npm:8.1.1"],\
           ["workerpool", "npm:9.3.4"],\
@@ -14678,11 +14678,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["protobufjs", [\
-      ["npm:8.6.3", {\
-        "packageLocation": "./.yarn/cache/protobufjs-npm-8.6.3-b4fbb32768-3a2326c2bf.zip/node_modules/protobufjs/",\
+      ["npm:8.6.4", {\
+        "packageLocation": "./.yarn/cache/protobufjs-npm-8.6.4-4f5460f674-0dfbc2dd78.zip/node_modules/protobufjs/",\
         "packageDependencies": [\
           ["long", "npm:5.3.2"],\
-          ["protobufjs", "npm:8.6.3"]\
+          ["protobufjs", "npm:8.6.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -15637,10 +15637,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["serialize-javascript", [\
-      ["npm:7.0.5", {\
-        "packageLocation": "./.yarn/cache/serialize-javascript-npm-7.0.5-0078177797-6237c76ef6.zip/node_modules/serialize-javascript/",\
+      ["npm:7.0.6", {\
+        "packageLocation": "./.yarn/cache/serialize-javascript-npm-7.0.6-ce9adca2cf-e3790f5dfd.zip/node_modules/serialize-javascript/",\
         "packageDependencies": [\
-          ["serialize-javascript", "npm:7.0.5"]\
+          ["serialize-javascript", "npm:7.0.6"]\
         ],\
         "linkType": "HARD"\
       }]\
