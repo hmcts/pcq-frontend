@@ -4014,6 +4014,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"agent-base@npm:6":
+  version: 6.0.2
+  resolution: "agent-base@npm:6.0.2"
+  dependencies:
+    debug: "npm:4"
+  checksum: 10/21fb903e0917e5cb16591b4d0ef6a028a54b83ac30cd1fca58dece3d4e0990512a8723f9f83130d88a41e2af8b1f7be1386fda3ea2d181bb1a62155e75e95e23
+  languageName: node
+  linkType: hard
+
 "agent-base@npm:^7.1.0, agent-base@npm:^7.1.2":
   version: 7.1.4
   resolution: "agent-base@npm:7.1.4"
@@ -4425,17 +4434,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:1.15.0":
-  version: 1.15.0
-  resolution: "axios@npm:1.15.0"
-  dependencies:
-    follow-redirects: "npm:^1.15.11"
-    form-data: "npm:^4.0.5"
-    proxy-from-env: "npm:^2.1.0"
-  checksum: 10/d39a2c0ebc7ff4739401b282e726cc2673377949d6c46d60eb619458f8d7a2f7eadbcada7097f4dbc7d5c59abb4d3bf6fac33d474412bc3415d3f5aa7ed45530
-  languageName: node
-  linkType: hard
-
 "axios@npm:1.15.1":
   version: 1.15.1
   resolution: "axios@npm:1.15.1"
@@ -4444,6 +4442,18 @@ __metadata:
     form-data: "npm:^4.0.5"
     proxy-from-env: "npm:^2.1.0"
   checksum: 10/bfa286e29d1866695426b45c9a25ef21975669e500a8511a01e2fe5b9c4f734906701266d214b562dc525e463bae2bbba24c8e9e10c214f0d4f4c669e9372a7f
+  languageName: node
+  linkType: hard
+
+"axios@npm:1.17.0":
+  version: 1.17.0
+  resolution: "axios@npm:1.17.0"
+  dependencies:
+    follow-redirects: "npm:^1.16.0"
+    form-data: "npm:^4.0.5"
+    https-proxy-agent: "npm:^5.0.1"
+    proxy-from-env: "npm:^2.1.0"
+  checksum: 10/bc6995122fb9ca1431836579ae53fdd94894ad3d676de229d474da6465bc323ad93e8bf0b3bdb33ec4fbd460d93485ef2b5240e97d778700c029bf053c7f75cd
   languageName: node
   linkType: hard
 
@@ -7498,7 +7508,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.15.11":
+"follow-redirects@npm:^1.15.11, follow-redirects@npm:^1.16.0":
   version: 1.16.0
   resolution: "follow-redirects@npm:1.16.0"
   peerDependenciesMeta:
@@ -8275,6 +8285,16 @@ __metadata:
     agent-base: "npm:^7.1.0"
     debug: "npm:^4.3.4"
   checksum: 10/d062acfa0cb82beeb558f1043c6ba770ea892b5fb7b28654dbc70ea2aeea55226dd34c02a294f6c1ca179a5aa483c4ea641846821b182edbd9cc5d89b54c6848
+  languageName: node
+  linkType: hard
+
+"https-proxy-agent@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "https-proxy-agent@npm:5.0.1"
+  dependencies:
+    agent-base: "npm:6"
+    debug: "npm:4"
+  checksum: 10/f0dce7bdcac5e8eaa0be3c7368bb8836ed010fb5b6349ffb412b172a203efe8f807d9a6681319105ea1b6901e1972c7b5ea899672a7b9aad58309f766dcbe0df
   languageName: node
   linkType: hard
 
@@ -11945,10 +11965,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"properties-file@npm:4.0.0":
-  version: 4.0.0
-  resolution: "properties-file@npm:4.0.0"
-  checksum: 10/9cc3a1f708ac6ff9e0d4d08096cdbcb82611f39740546dc27e8fb2425a951ab19fd9a283e614aa04cb7c18b61b4b0856e0a102ef3d1d5d165e16d076a617fb62
+"properties-file@npm:5.0.5":
+  version: 5.0.5
+  resolution: "properties-file@npm:5.0.5"
+  checksum: 10/75fef1faa1f8777ae90be9bfb5d2c53b0be1151ceba632dfce73c851d4cc0400961b8d07d513945bc8614f8734b3c48c243a1c0e79fb6d94f84c818c808afe2e
   languageName: node
   linkType: hard
 
@@ -12880,12 +12900,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:7.7.4, semver@npm:^7.7.4, semver@npm:~7.7.0, semver@npm:~7.7.4":
-  version: 7.7.4
-  resolution: "semver@npm:7.7.4"
+"semver@npm:7.8.4":
+  version: 7.8.4
+  resolution: "semver@npm:7.8.4"
   bin:
     semver: bin/semver.js
-  checksum: 10/26bdc6d58b29528f4142d29afb8526bc335f4fc04c4a10f2b98b217f277a031c66736bf82d3d3bb354a2f6a3ae50f18fd62b053c4ac3f294a3d10a61f5075b75
+  checksum: 10/a9c139031d4143932adfacfd2165d6489848c3b84c26d5fc2beef88c6d54c01191ef553e3f71049ccc47df85f0df30748907f84005f46f326095003171c5b673
   languageName: node
   linkType: hard
 
@@ -12904,6 +12924,15 @@ __metadata:
   bin:
     semver: bin/semver.js
   checksum: 10/8dbc3168e057a38fc322af909c7f5617483c50caddba135439ff09a754b20bdd6482a5123ff543dad4affa488ecf46ec5fb56d61312ad20bb140199b88dfaea9
+  languageName: node
+  linkType: hard
+
+"semver@npm:^7.7.4, semver@npm:~7.7.0, semver@npm:~7.7.4":
+  version: 7.7.4
+  resolution: "semver@npm:7.7.4"
+  bin:
+    semver: bin/semver.js
+  checksum: 10/26bdc6d58b29528f4142d29afb8526bc335f4fc04c4a10f2b98b217f277a031c66736bf82d3d3bb354a2f6a3ae50f18fd62b053c4ac3f294a3d10a61f5075b75
   languageName: node
   linkType: hard
 
@@ -13240,23 +13269,23 @@ __metadata:
   linkType: hard
 
 "sonarqube-scanner@npm:^4.0.0":
-  version: 4.3.6
-  resolution: "sonarqube-scanner@npm:4.3.6"
+  version: 4.3.8
+  resolution: "sonarqube-scanner@npm:4.3.8"
   dependencies:
     adm-zip: "npm:0.5.17"
-    axios: "npm:1.15.0"
+    axios: "npm:1.17.0"
     commander: "npm:14.0.3"
     hpagent: "npm:1.2.0"
     node-forge: "npm:1.4.0"
-    properties-file: "npm:4.0.0"
+    properties-file: "npm:5.0.5"
     proxy-from-env: "npm:2.1.0"
-    semver: "npm:7.7.4"
+    semver: "npm:7.8.4"
     slugify: "npm:1.6.9"
-    tar-stream: "npm:3.1.8"
+    tar-stream: "npm:3.2.0"
   bin:
     sonar: bin/sonar-scanner.js
     sonar-scanner: bin/sonar-scanner.js
-  checksum: 10/55fa5c334c8b1acdf5a08dd3f3ae8a3dd318147c984dc749ea51fe861073435ae62ea70fa33cae94dbeaecc0e437cf34b6f0dd7cd5c1b845250e76fb2e1b5b6a
+  checksum: 10/96081ba1af968dc9a9a4dc1ab301040dff7cd3cce0b71acd8fd2bcac3f3304e17f763e0c93fb0578e179230d5f26e09b5957b65ddf255d165a837231df645912
   languageName: node
   linkType: hard
 
@@ -13715,19 +13744,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tar-stream@npm:3.1.8":
-  version: 3.1.8
-  resolution: "tar-stream@npm:3.1.8"
-  dependencies:
-    b4a: "npm:^1.6.4"
-    bare-fs: "npm:^4.5.5"
-    fast-fifo: "npm:^1.2.0"
-    streamx: "npm:^2.15.0"
-  checksum: 10/c26647792d0b64a0d2aaf3e6df075dbc51f02b071835ea69636c4f91aa47e234e2bf0404c282d415d75307522083ac34c273f00feff765c95d9d414881f8ae93
-  languageName: node
-  linkType: hard
-
-"tar-stream@npm:^3.0.0":
+"tar-stream@npm:3.2.0, tar-stream@npm:^3.0.0":
   version: 3.2.0
   resolution: "tar-stream@npm:3.2.0"
   dependencies:
