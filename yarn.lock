@@ -8400,10 +8400,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"immutable@npm:5.1.6":
-  version: 5.1.6
-  resolution: "immutable@npm:5.1.6"
-  checksum: 10/4ba416dac4cc9d1cab4155bd6aefa54d5ca25e56bfee8a1d4edc3f23115b599486edafe76e91f83d22961bd065754fd705b04f052809ec967ccd71817c8dac2a
+"immutable@npm:5.1.7":
+  version: 5.1.7
+  resolution: "immutable@npm:5.1.7"
+  checksum: 10/be92b320190d794959d0b92483b85b48b08b0b1de4509ed03ac56b7711df894865a5702c32805c69f75fe0dccae4e2a00e4b5f07183ebd39f0d19c80e5b1ae71
   languageName: node
   linkType: hard
 
@@ -12010,7 +12010,7 @@ __metadata:
     govuk-frontend: "npm:^5.4.0"
     helmet: "npm:^8.0.0"
     i18next: "npm:^26.0.0"
-    immutable: "npm:5.1.6"
+    immutable: "npm:5.1.7"
     ioredis: "npm:^5.3.2"
     js-yaml: "npm:^4.1.0"
     jsonwebtoken: "npm:^9.0.2"
