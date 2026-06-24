@@ -58,7 +58,7 @@ const RAW_RUNTIME_STATE =
           ["express-urlrewrite", "npm:2.0.3"],\
           ["fs-extra", "npm:11.3.5"],\
           ["git-rev-sync", "npm:3.0.2"],\
-          ["globals", "npm:17.6.0"],\
+          ["globals", "npm:17.7.0"],\
           ["govuk-frontend", "npm:5.14.0"],\
           ["helmet", "npm:8.2.0"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.1"],\
@@ -10200,10 +10200,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:17.6.0", {\
-        "packageLocation": "./.yarn/cache/globals-npm-17.6.0-eaf9fd02d3-2bf0febf31.zip/node_modules/globals/",\
+      ["npm:17.7.0", {\
+        "packageLocation": "./.yarn/cache/globals-npm-17.7.0-b005e29e29-79304ccc4d.zip/node_modules/globals/",\
         "packageDependencies": [\
-          ["globals", "npm:17.6.0"]\
+          ["globals", "npm:17.7.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -14641,7 +14641,7 @@ const RAW_RUNTIME_STATE =
           ["express-urlrewrite", "npm:2.0.3"],\
           ["fs-extra", "npm:11.3.5"],\
           ["git-rev-sync", "npm:3.0.2"],\
-          ["globals", "npm:17.6.0"],\
+          ["globals", "npm:17.7.0"],\
           ["govuk-frontend", "npm:5.14.0"],\
           ["helmet", "npm:8.2.0"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.1"],\
