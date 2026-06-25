@@ -44,6 +44,10 @@ withNightlyPipeline(type, product, component) {
     enableCrossBrowserTest()
     enableFullFunctionalTest(20)
 
+    before('crossBrowserTest') {
+      yarnBuilder.yarn("playwright install")
+    }
+
     before('fullFunctionalTest') {
       yarnBuilder.yarn("playwright install")
     }
