@@ -61,7 +61,7 @@ const RAW_RUNTIME_STATE =
           ["globals", "npm:17.7.0"],\
           ["govuk-frontend", "npm:5.14.0"],\
           ["helmet", "npm:8.2.0"],\
-          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.1"],\
+          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.2"],\
           ["immutable", "npm:5.1.7"],\
           ["ioredis", "npm:5.11.1"],\
           ["js-yaml", "npm:4.2.0"],\
@@ -77,7 +77,7 @@ const RAW_RUNTIME_STATE =
           ["nyc", "npm:18.0.0"],\
           ["pa11y", "npm:9.1.1"],\
           ["permissions-policy", "npm:0.6.0"],\
-          ["playwright", "npm:1.61.0"],\
+          ["playwright", "npm:1.61.1"],\
           ["protected-characteristics-frontend", "workspace:."],\
           ["proxyquire", "npm:2.1.3"],\
           ["require-directory", "npm:2.1.1"],\
@@ -10543,18 +10543,18 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["i18next", [\
-      ["npm:26.3.1", {\
-        "packageLocation": "./.yarn/cache/i18next-npm-26.3.1-06d8819d49-d0d86873f3.zip/node_modules/i18next/",\
+      ["npm:26.3.2", {\
+        "packageLocation": "./.yarn/cache/i18next-npm-26.3.2-00d49cccd0-935351d439.zip/node_modules/i18next/",\
         "packageDependencies": [\
-          ["i18next", "npm:26.3.1"]\
+          ["i18next", "npm:26.3.2"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.1", {\
-        "packageLocation": "./.yarn/__virtual__/i18next-virtual-a76f3d58bd/0/cache/i18next-npm-26.3.1-06d8819d49-d0d86873f3.zip/node_modules/i18next/",\
+      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.2", {\
+        "packageLocation": "./.yarn/__virtual__/i18next-virtual-81edd57a63/0/cache/i18next-npm-26.3.2-00d49cccd0-935351d439.zip/node_modules/i18next/",\
         "packageDependencies": [\
           ["@types/typescript", null],\
-          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.1"],\
+          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.2"],\
           ["typescript", null]\
         ],\
         "packagePeers": [\
@@ -14363,21 +14363,21 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["playwright", [\
-      ["npm:1.61.0", {\
-        "packageLocation": "./.yarn/cache/playwright-npm-1.61.0-c85be28568-b5faf97391.zip/node_modules/playwright/",\
+      ["npm:1.61.1", {\
+        "packageLocation": "./.yarn/cache/playwright-npm-1.61.1-55c1fb1408-0cd1a8a7e1.zip/node_modules/playwright/",\
         "packageDependencies": [\
           ["fsevents", "patch:fsevents@npm%3A2.3.2#optional!builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"],\
-          ["playwright", "npm:1.61.0"],\
-          ["playwright-core", "npm:1.61.0"]\
+          ["playwright", "npm:1.61.1"],\
+          ["playwright-core", "npm:1.61.1"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["playwright-core", [\
-      ["npm:1.61.0", {\
-        "packageLocation": "./.yarn/cache/playwright-core-npm-1.61.0-1e3cc5651b-e7ac4b2ef1.zip/node_modules/playwright-core/",\
+      ["npm:1.61.1", {\
+        "packageLocation": "./.yarn/cache/playwright-core-npm-1.61.1-0f9bd8b431-b0e7b1d4de.zip/node_modules/playwright-core/",\
         "packageDependencies": [\
-          ["playwright-core", "npm:1.61.0"]\
+          ["playwright-core", "npm:1.61.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -14644,7 +14644,7 @@ const RAW_RUNTIME_STATE =
           ["globals", "npm:17.7.0"],\
           ["govuk-frontend", "npm:5.14.0"],\
           ["helmet", "npm:8.2.0"],\
-          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.1"],\
+          ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.2"],\
           ["immutable", "npm:5.1.7"],\
           ["ioredis", "npm:5.11.1"],\
           ["js-yaml", "npm:4.2.0"],\
@@ -14660,7 +14660,7 @@ const RAW_RUNTIME_STATE =
           ["nyc", "npm:18.0.0"],\
           ["pa11y", "npm:9.1.1"],\
           ["permissions-policy", "npm:0.6.0"],\
-          ["playwright", "npm:1.61.0"],\
+          ["playwright", "npm:1.61.1"],\
           ["protected-characteristics-frontend", "workspace:."],\
           ["proxyquire", "npm:2.1.3"],\
           ["require-directory", "npm:2.1.1"],\
