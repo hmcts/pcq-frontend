@@ -15,8 +15,10 @@ function buildServiceUrl(pcqId) {
         language: 'en'
     };
     const { token } = generateToken(params);
-    params.token = token;
-    const qs = Object.entries(params).map(([k, v]) => `${k}=${v}`).join('&');
+    const qs = Object.entries(params)
+        .map(([k, v]) => `${k}=${v}`)
+        .concat([`token=${token}`])
+        .join('&');
     return `/service-endpoint?${qs}`;
 }
 
