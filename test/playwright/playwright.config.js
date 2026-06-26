@@ -1,4 +1,3 @@
-// @playwright/test is required — install via: yarn add -D @playwright/test
 const { defineConfig, devices } = require('@playwright/test');
 
 module.exports = defineConfig({
