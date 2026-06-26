@@ -2992,14 +2992,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@playwright/test@npm:1.61.0":
-  version: 1.61.0
-  resolution: "@playwright/test@npm:1.61.0"
+"@playwright/test@npm:1.61.1":
+  version: 1.61.1
+  resolution: "@playwright/test@npm:1.61.1"
   dependencies:
-    playwright: "npm:1.61.0"
+    playwright: "npm:1.61.1"
   bin:
     playwright: cli.js
-  checksum: 10/359a9a4a59a87361d416818966bb810a38970d9f2b8364349d22099fb23eb043530714374a83010f9f3471c7e758df43c49bf32128745af13277adfb211aa752
+  checksum: 10/08915357031e1bc273a19bb428fb7e51031ca44f25750832e389bcd69c399f6a243f5f832e7832d46153b57b1305f1f5f5dd63f3a3261f928f61e464c6b3c64e
   languageName: node
   linkType: hard
 
@@ -11768,15 +11768,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright-core@npm:1.61.0":
-  version: 1.61.0
-  resolution: "playwright-core@npm:1.61.0"
-  bin:
-    playwright-core: cli.js
-  checksum: 10/e7ac4b2ef1c5f1701ec8086e47bc341988a3f753009d450e2a62daab5ade1fa943f1ef7fb48c721618dd7bd42667a11ff73c2e5dbd0674c20a3397b3c5be2f61
-  languageName: node
-  linkType: hard
-
 "playwright-core@npm:1.61.1":
   version: 1.61.1
   resolution: "playwright-core@npm:1.61.1"
@@ -11786,22 +11777,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright@npm:1.61.0":
-  version: 1.61.0
-  resolution: "playwright@npm:1.61.0"
-  dependencies:
-    fsevents: "npm:2.3.2"
-    playwright-core: "npm:1.61.0"
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  bin:
-    playwright: cli.js
-  checksum: 10/b5faf97391315334a30e88e03216fd6090988b99896e71b341995a27c49d49dcebc825ec389dabc9b2d2cab6368c418cad9cbb925a88de35fb3b26a19bf05bea
-  languageName: node
-  linkType: hard
-
-"playwright@npm:^1.43.1":
+"playwright@npm:1.61.1, playwright@npm:^1.43.1":
   version: 1.61.1
   resolution: "playwright@npm:1.61.1"
   dependencies:
@@ -12018,7 +11994,7 @@ __metadata:
     "@hmcts/properties-volume": "npm:^1.0.0"
     "@launchdarkly/node-server-sdk": "npm:^9.10.9"
     "@parcel/watcher": "npm:^2.4.1"
-    "@playwright/test": "npm:1.61.0"
+    "@playwright/test": "npm:1.61.1"
     "@stryker-mutator/core": "npm:^9.0.0"
     "@stryker-mutator/mocha-runner": "npm:9.6.1"
     ajv: "npm:^8.18.0"
