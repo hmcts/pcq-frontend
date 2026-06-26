@@ -41,9 +41,9 @@ withNightlyPipeline(type, product, component) {
     enableMutationTest();
     enableSlackNotifications('#pcq-builds')
     enableFortifyScan()
-    enableCrossBrowserTest()
     enableFullFunctionalTest(20)
 
+    
     before('fullFunctionalTest') {
       yarnBuilder.yarn("playwright install")
     }
@@ -65,7 +65,7 @@ withNightlyPipeline(type, product, component) {
       }
     }
 
-    afterAlways('crossBrowserTest') {
+    afterAlways('fullFunctionalTest') {
         steps.archiveArtifacts allowEmptyArchive: true, artifacts: 'functional-output/**/*'
     }
 
