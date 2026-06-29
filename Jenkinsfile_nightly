@@ -41,12 +41,8 @@ withNightlyPipeline(type, product, component) {
     enableMutationTest();
     enableSlackNotifications('#pcq-builds')
     enableFortifyScan()
-    //enableCrossBrowserTest()
     enableFullFunctionalTest(20)
 
-    /*before('crossBrowserTest') {
-      yarnBuilder.yarn("playwright install")
-    }*/
     
     before('fullFunctionalTest') {
       yarnBuilder.yarn("playwright install")
