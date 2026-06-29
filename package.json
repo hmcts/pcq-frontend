@@ -25,7 +25,7 @@
     "test:a11y": "NODE_ENV=testing NODE_PATH=. ALLOW_CONFIG_MUTATIONS=true LOG_LEVEL=error ENABLE_TRACKING=false mocha test/accessibility --timeout 30000 --exit",
     "test:e2e": "NODE_ENV=testing NODE_PATH=. ALLOW_CONFIG_MUTATIONS=true yarn codeceptjs run -c ./test/end-to-end/",
     "test:functional": "./bin/run-functional-tests.sh",
-    "test:crossbrowser": "NODE_ENV=testing NODE_PATH=. playwright test -c test/playwright/playwright.config.js",
+    "test:fullFunctional": "NODE_ENV=testing NODE_PATH=. playwright test -c test/playwright/playwright.config.js",
     "test:smoke": "./bin/run-smoke-tests.sh",
     "lint": "NODE_PATH=. eslint .",
     "test:codecov-upload": "NODE_ENV=test NODE_PATH=. nyc --cache false _mocha './test/**/test*.js' -- -R spec && codecov",
