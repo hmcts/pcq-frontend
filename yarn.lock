@@ -9479,6 +9479,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"js-yaml@npm:^5.0.0":
+  version: 5.2.0
+  resolution: "js-yaml@npm:5.2.0"
+  dependencies:
+    argparse: "npm:^2.0.1"
+  bin:
+    js-yaml: bin/js-yaml.mjs
+  checksum: 10/8a5e55c5d0fcafae4ac02114a99dc070048b8e5a82a056089ce1f69f8a00fd8eb05b622e76ad50aac1f9d409010636c9616c6b2ed4e58dae138379a60d301220
+  languageName: node
+  linkType: hard
+
 "jsc-safe-url@npm:^0.2.2":
   version: 0.2.4
   resolution: "jsc-safe-url@npm:0.2.4"
@@ -12087,7 +12098,7 @@ __metadata:
     i18next: "npm:^26.0.0"
     immutable: "npm:5.1.8"
     ioredis: "npm:^5.3.2"
-    js-yaml: "npm:^4.1.0"
+    js-yaml: "npm:^5.0.0"
     jsonwebtoken: "npm:^9.0.2"
     lodash: "npm:^4.17.21"
     mocha: "npm:^11.0.0"
