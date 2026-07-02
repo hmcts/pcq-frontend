@@ -34,14 +34,6 @@ redis:
 
 testUrl: 'http://localhost:4000'
 
-saucelabs:
-  browser: 'chrome'
-  username: 'username'
-  key: 'privatekey'
-  tunnelId: 'reformtunnel'
-  waitForTimeout: 10000
-  smartWait: 5000
-
 showSitemap: true
 
 http:
