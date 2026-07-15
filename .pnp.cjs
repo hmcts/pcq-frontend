@@ -28,7 +28,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@azure/logger", "npm:1.3.0"],\
+          ["@azure/logger", "npm:1.4.0"],\
           ["@eslint/js", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:10.0.1"],\
           ["@hmcts/cookie-manager", "npm:1.1.0"],\
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
@@ -175,7 +175,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/core-rest-pipeline", "npm:1.24.0"],\
           ["@azure/core-tracing", "npm:1.3.1"],\
           ["@azure/core-util", "npm:1.13.1"],\
-          ["@azure/logger", "npm:1.3.0"],\
+          ["@azure/logger", "npm:1.4.0"],\
           ["tslib", "npm:2.8.1"]\
         ],\
         "linkType": "HARD"\
@@ -188,7 +188,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/abort-controller", "npm:2.1.2"],\
           ["@azure/core-lro", "npm:2.7.2"],\
           ["@azure/core-util", "npm:1.13.1"],\
-          ["@azure/logger", "npm:1.3.0"],\
+          ["@azure/logger", "npm:1.4.0"],\
           ["tslib", "npm:2.8.1"]\
         ],\
         "linkType": "HARD"\
@@ -213,7 +213,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/core-rest-pipeline", "npm:1.24.0"],\
           ["@azure/core-tracing", "npm:1.3.1"],\
           ["@azure/core-util", "npm:1.13.1"],\
-          ["@azure/logger", "npm:1.3.0"],\
+          ["@azure/logger", "npm:1.4.0"],\
           ["@typespec/ts-http-runtime", "npm:0.3.6"],\
           ["tslib", "npm:2.8.1"]\
         ],\
@@ -273,7 +273,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/core-tracing", "npm:1.3.1"],\
           ["@azure/core-util", "npm:1.13.1"],\
           ["@azure/identity", "npm:4.13.1"],\
-          ["@azure/logger", "npm:1.3.0"],\
+          ["@azure/logger", "npm:1.4.0"],\
           ["@azure/msal-browser", "npm:5.16.0"],\
           ["@azure/msal-node", "npm:5.3.1"],\
           ["open", "npm:10.2.0"],\
@@ -293,7 +293,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/core-tracing", "npm:1.3.1"],\
           ["@azure/core-util", "npm:1.13.1"],\
           ["@azure/keyvault-common", "npm:2.1.0"],\
-          ["@azure/logger", "npm:1.3.0"],\
+          ["@azure/logger", "npm:1.4.0"],\
           ["tslib", "npm:2.8.1"]\
         ],\
         "linkType": "HARD"\
@@ -313,17 +313,17 @@ const RAW_RUNTIME_STATE =
           ["@azure/core-util", "npm:1.13.1"],\
           ["@azure/keyvault-common", "npm:2.1.0"],\
           ["@azure/keyvault-secrets", "npm:4.11.2"],\
-          ["@azure/logger", "npm:1.3.0"],\
+          ["@azure/logger", "npm:1.4.0"],\
           ["tslib", "npm:2.8.1"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@azure/logger", [\
-      ["npm:1.3.0", {\
-        "packageLocation": "./.yarn/cache/@azure-logger-npm-1.3.0-d53081e040-7df11bf3b4.zip/node_modules/@azure/logger/",\
+      ["npm:1.4.0", {\
+        "packageLocation": "./.yarn/cache/@azure-logger-npm-1.4.0-3b48f7b49f-84ee66109a.zip/node_modules/@azure/logger/",\
         "packageDependencies": [\
-          ["@azure/logger", "npm:1.3.0"],\
+          ["@azure/logger", "npm:1.4.0"],\
           ["@typespec/ts-http-runtime", "npm:0.3.6"],\
           ["tslib", "npm:2.8.1"]\
         ],\
@@ -338,7 +338,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/core-auth", "npm:1.10.1"],\
           ["@azure/core-rest-pipeline", "npm:1.24.0"],\
           ["@azure/core-tracing", "npm:1.3.1"],\
-          ["@azure/logger", "npm:1.3.0"],\
+          ["@azure/logger", "npm:1.4.0"],\
           ["@azure/monitor-opentelemetry", "npm:1.18.2"],\
           ["@azure/monitor-opentelemetry-exporter", "npm:1.0.0-beta.43"],\
           ["@azure/opentelemetry-instrumentation-azure-sdk", "npm:1.1.0-beta.1"],\
@@ -426,7 +426,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@azure-opentelemetry-instrumentation-azure-sdk-npm-1.0.0-f9228c6e07-b8be22db8f.zip/node_modules/@azure/opentelemetry-instrumentation-azure-sdk/",\
         "packageDependencies": [\
           ["@azure/core-tracing", "npm:1.3.1"],\
-          ["@azure/logger", "npm:1.3.0"],\
+          ["@azure/logger", "npm:1.4.0"],\
           ["@azure/opentelemetry-instrumentation-azure-sdk", "npm:1.0.0"],\
           ["@opentelemetry/api", "npm:1.9.1"],\
           ["@opentelemetry/core", "virtual:6a4ad4f62682c7051aa3bd0279710747c36953507638a63360d887effda0624d1a5b97a2865dec3e7717610d30c801482c56ce5dfdcb4094b58c398b5d607b6a#npm:2.9.0"],\
@@ -440,7 +440,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@azure-opentelemetry-instrumentation-azure-sdk-npm-1.1.0-beta.1-3eab3d2600-f7cb397de2.zip/node_modules/@azure/opentelemetry-instrumentation-azure-sdk/",\
         "packageDependencies": [\
           ["@azure/core-tracing", "npm:1.3.1"],\
-          ["@azure/logger", "npm:1.3.0"],\
+          ["@azure/logger", "npm:1.4.0"],\
           ["@azure/opentelemetry-instrumentation-azure-sdk", "npm:1.1.0-beta.1"],\
           ["@opentelemetry/api", "npm:1.9.1"],\
           ["@opentelemetry/core", "virtual:6a4ad4f62682c7051aa3bd0279710747c36953507638a63360d887effda0624d1a5b97a2865dec3e7717610d30c801482c56ce5dfdcb4094b58c398b5d607b6a#npm:2.9.0"],\
@@ -16116,7 +16116,7 @@ const RAW_RUNTIME_STATE =
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["@azure/logger", "npm:1.3.0"],\
+          ["@azure/logger", "npm:1.4.0"],\
           ["@eslint/js", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:10.0.1"],\
           ["@hmcts/cookie-manager", "npm:1.1.0"],\
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
