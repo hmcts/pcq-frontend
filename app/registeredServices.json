@@ -125,5 +125,14 @@
       "RESPONDENT",
       "APPLICANT"
     ]
+  },
+  {
+    "serviceId": "PCS",
+    "actors": [
+      "RESPONDENT"
+    ],
+    "redirectLinks": {
+      "prl_ca": "TBC"
+    }
   }
 ]
