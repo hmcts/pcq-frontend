@@ -62,7 +62,7 @@ const RAW_RUNTIME_STATE =
           ["git-rev-sync", "npm:3.0.2"],\
           ["globals", "npm:17.7.0"],\
           ["govuk-frontend", "npm:5.14.0"],\
-          ["helmet", "npm:8.2.0"],\
+          ["helmet", "npm:8.3.0"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.6"],\
           ["immutable", "npm:5.1.9"],\
           ["ioredis", "npm:5.11.1"],\
@@ -11752,10 +11752,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["helmet", [\
-      ["npm:8.2.0", {\
-        "packageLocation": "./.yarn/cache/helmet-npm-8.2.0-04ebb5e2f9-bc34f2e043.zip/node_modules/helmet/",\
+      ["npm:8.3.0", {\
+        "packageLocation": "./.yarn/cache/helmet-npm-8.3.0-010a4aefcf-077db98df8.zip/node_modules/helmet/",\
         "packageDependencies": [\
-          ["helmet", "npm:8.2.0"]\
+          ["helmet", "npm:8.3.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -16157,7 +16157,7 @@ const RAW_RUNTIME_STATE =
           ["git-rev-sync", "npm:3.0.2"],\
           ["globals", "npm:17.7.0"],\
           ["govuk-frontend", "npm:5.14.0"],\
-          ["helmet", "npm:8.2.0"],\
+          ["helmet", "npm:8.3.0"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.6"],\
           ["immutable", "npm:5.1.9"],\
           ["ioredis", "npm:5.11.1"],\
