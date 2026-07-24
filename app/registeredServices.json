@@ -130,9 +130,6 @@
     "serviceId": "PCS",
     "actors": [
       "RESPONDENT"
-    ],
-    "redirectLinks": {
-      "prl_ca": "TBC"
-    }
+    ]
   }
 ]
