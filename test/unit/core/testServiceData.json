@@ -610,7 +610,39 @@
                     "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl i'ch achos yn awr."
                 }
             }
-        }
+        },
+            "pcs" :
+            {
+                "nextStep":
+                {
+                    "ApplicantLanguage": {
+                        "name": "ApplicantLanguage"
+                    }
+                },
+                "nextStepName" :
+                {
+                    "name": "ApplicantLanguage"
+                },
+                "currentStep" : "StartPage",
+                "skipStepName" :{},
+                "datas" :
+                {
+                    "respondent":
+                    {
+                        "formData" :
+                        {
+                            "serviceId": "pcs",
+                            "actor" : "respondent"
+                        },
+                        "startPageTextEn" : "Your answers will not affect your case.",
+                        "startPageTextCy" : "",
+                        "endPageTextEn" : "",
+                        "endPageTextCy" : "",
+                        "shutterPageTextEn" : "We have saved your answers and will direct you back to your case now.",
+                        "shutterPageTextCy" : "Rydym wedi arbed eich atebion a byddwn yn eich cyfeirio yn ôl i'ch achos yn awr."
+                    }
+                }
+            }
 
     }
 }
