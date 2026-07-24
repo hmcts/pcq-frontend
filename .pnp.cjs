@@ -6891,7 +6891,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["ajv", "npm:8.18.0"],\
           ["fast-deep-equal", "npm:3.1.3"],\
-          ["fast-uri", "npm:3.1.3"],\
+          ["fast-uri", "npm:3.1.4"],\
           ["json-schema-traverse", "npm:1.0.0"],\
           ["require-from-string", "npm:2.0.2"]\
         ],\
@@ -6902,7 +6902,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["ajv", "npm:8.20.0"],\
           ["fast-deep-equal", "npm:3.1.3"],\
-          ["fast-uri", "npm:3.1.3"],\
+          ["fast-uri", "npm:3.1.4"],\
           ["json-schema-traverse", "npm:1.0.0"],\
           ["require-from-string", "npm:2.0.2"]\
         ],\
@@ -7797,11 +7797,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["brace-expansion", [\
-      ["npm:1.1.15", {\
-        "packageLocation": "./.yarn/cache/brace-expansion-npm-1.1.15-f6d8185c59-f2a950034e.zip/node_modules/brace-expansion/",\
+      ["npm:1.1.16", {\
+        "packageLocation": "./.yarn/cache/brace-expansion-npm-1.1.16-ff37b52845-94498bead6.zip/node_modules/brace-expansion/",\
         "packageDependencies": [\
           ["balanced-match", "npm:1.0.2"],\
-          ["brace-expansion", "npm:1.1.15"],\
+          ["brace-expansion", "npm:1.1.16"],\
           ["concat-map", "npm:0.0.1"]\
         ],\
         "linkType": "HARD"\
@@ -10805,10 +10805,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["fast-uri", [\
-      ["npm:3.1.3", {\
-        "packageLocation": "./.yarn/cache/fast-uri-npm-3.1.3-90ca1925ff-7969a50a32.zip/node_modules/fast-uri/",\
+      ["npm:3.1.4", {\
+        "packageLocation": "./.yarn/cache/fast-uri-npm-3.1.4-e2023ad958-1c1ff8e7b6.zip/node_modules/fast-uri/",\
         "packageDependencies": [\
-          ["fast-uri", "npm:3.1.3"]\
+          ["fast-uri", "npm:3.1.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -14371,7 +14371,7 @@ const RAW_RUNTIME_STATE =
       ["npm:3.1.5", {\
         "packageLocation": "./.yarn/cache/minimatch-npm-3.1.5-86958baf50-b11a7ee577.zip/node_modules/minimatch/",\
         "packageDependencies": [\
-          ["brace-expansion", "npm:1.1.15"],\
+          ["brace-expansion", "npm:1.1.16"],\
           ["minimatch", "npm:3.1.5"]\
         ],\
         "linkType": "HARD"\
