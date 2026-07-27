@@ -130,6 +130,9 @@
     "serviceId": "PCS",
     "actors": [
       "RESPONDENT"
-    ]
+    ],
+    "redirectLinks": {
+      "pcs": "https://pcs.platform.hmcts.net/"
+    }
   }
 ]
