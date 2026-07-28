@@ -58,7 +58,7 @@ const RAW_RUNTIME_STATE =
           ["express", "npm:4.22.2"],\
           ["express-session", "npm:1.19.0"],\
           ["express-urlrewrite", "npm:2.0.3"],\
-          ["fs-extra", "npm:11.3.6"],\
+          ["fs-extra", "npm:11.4.0"],\
           ["git-rev-sync", "npm:3.0.2"],\
           ["globals", "npm:17.7.0"],\
           ["govuk-frontend", "npm:5.14.0"],\
@@ -9548,7 +9548,7 @@ const RAW_RUNTIME_STATE =
           ["detox", "virtual:cdd2077da4644486f47cea673f3ee25c45ad1b11d6025be971425b97eab5e45c4a8c229f9fac60e98ba97b88f823929d5cef0a6b29bf454acbec36c5251cf7a3#npm:20.42.0"],\
           ["execa", "npm:5.1.1"],\
           ["find-up", "npm:5.0.0"],\
-          ["fs-extra", "npm:11.3.6"],\
+          ["fs-extra", "npm:11.4.0"],\
           ["funpermaproxy", "npm:1.1.0"],\
           ["glob", "npm:8.1.0"],\
           ["ini", "npm:1.3.8"],\
@@ -11220,10 +11220,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:11.3.6", {\
-        "packageLocation": "./.yarn/cache/fs-extra-npm-11.3.6-1ac5bffb56-34a981697b.zip/node_modules/fs-extra/",\
+      ["npm:11.4.0", {\
+        "packageLocation": "./.yarn/cache/fs-extra-npm-11.4.0-c6192f38dc-a1bd91076f.zip/node_modules/fs-extra/",\
         "packageDependencies": [\
-          ["fs-extra", "npm:11.3.6"],\
+          ["fs-extra", "npm:11.4.0"],\
           ["graceful-fs", "npm:4.2.11"],\
           ["jsonfile", "npm:6.2.1"],\
           ["universalify", "npm:2.0.1"]\
@@ -16153,7 +16153,7 @@ const RAW_RUNTIME_STATE =
           ["express", "npm:4.22.2"],\
           ["express-session", "npm:1.19.0"],\
           ["express-urlrewrite", "npm:2.0.3"],\
-          ["fs-extra", "npm:11.3.6"],\
+          ["fs-extra", "npm:11.4.0"],\
           ["git-rev-sync", "npm:3.0.2"],\
           ["globals", "npm:17.7.0"],\
           ["govuk-frontend", "npm:5.14.0"],\
@@ -19713,7 +19713,7 @@ const RAW_RUNTIME_STATE =
           ["chalk", "npm:5.6.2"],\
           ["commander", "npm:12.1.0"],\
           ["fast-glob", "npm:3.3.3"],\
-          ["fs-extra", "npm:11.3.6"],\
+          ["fs-extra", "npm:11.4.0"],\
           ["js-yaml", "npm:4.3.0"],\
           ["lodash-es", "npm:4.18.1"],\
           ["semver", "npm:7.8.5"],\
