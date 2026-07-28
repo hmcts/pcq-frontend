@@ -5476,20 +5476,20 @@ __metadata:
   linkType: hard
 
 "brace-expansion@npm:^2.0.1, brace-expansion@npm:^2.0.2":
-  version: 2.1.1
-  resolution: "brace-expansion@npm:2.1.1"
+  version: 2.1.2
+  resolution: "brace-expansion@npm:2.1.2"
   dependencies:
     balanced-match: "npm:^1.0.0"
-  checksum: 10/4681c533dc4e6c77b3ad795b38683d297fd03c739a17bfb2a338529fa7dcf4540683a79dcd662905f4c5b0db7cfda18daafcd18dd1bbf7c3b076fe0c9c3487eb
+  checksum: 10/0e0f9b0df1f0809e9c326470e022eeb24334ddb54c43b1ac39f1d38f3cbaeb940794de1db826f5491843ac00d7932c43f10350a65ccd51fe7d05da627152f204
   languageName: node
   linkType: hard
 
 "brace-expansion@npm:^5.0.5":
-  version: 5.0.7
-  resolution: "brace-expansion@npm:5.0.7"
+  version: 5.0.8
+  resolution: "brace-expansion@npm:5.0.8"
   dependencies:
     balanced-match: "npm:^4.0.2"
-  checksum: 10/98c12de33fa53ab07b2b5179f6740045508c61c4319638faf47a0d72615db80058f66c0d1cb74dc8ed591bbf507c068027e80cfb86a2f467bfd330574e13ed7b
+  checksum: 10/75d2d2ebc8f5f65156d16706216d23e48f499a1164e4b045e0ca4045d3ce6b16ced11ea2e4c76e3670b6c38454123213f43d23127df8fc6840980aea9a35e061
   languageName: node
   linkType: hard
 
@@ -8444,13 +8444,13 @@ __metadata:
   linkType: hard
 
 "fs-extra@npm:^11.0.0, fs-extra@npm:^11.1.0, fs-extra@npm:^11.2.0":
-  version: 11.3.6
-  resolution: "fs-extra@npm:11.3.6"
+  version: 11.4.0
+  resolution: "fs-extra@npm:11.4.0"
   dependencies:
     graceful-fs: "npm:^4.2.0"
     jsonfile: "npm:^6.0.1"
     universalify: "npm:^2.0.0"
-  checksum: 10/34a981697b199002ea3b85c3483bcf353637d33ec4c922b136a8d8a597faa0495638d69b20c181448be041c31778c2bb7f7799d589819edf33da50f75b1abde9
+  checksum: 10/a1bd91076fe9de9114bd037a433f1f498857eb3f0cf778e647fd00dc5984374dee5e088854de3d6ca77cd9f11554a85f6f016a6004d0838bbc7cd722e33601ce
   languageName: node
   linkType: hard
 
@@ -11687,12 +11687,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.3.12":
-  version: 3.3.15
-  resolution: "nanoid@npm:3.3.15"
+"nanoid@npm:^3.3.16":
+  version: 3.3.16
+  resolution: "nanoid@npm:3.3.16"
   bin:
     nanoid: bin/nanoid.cjs
-  checksum: 10/13c74a5208d455286f7af46f42ac9f3d7b821b8a719aff8dbd5ad3fb80399c0c63cdd1e92d046ea576e403bec05262fbb7e116beb4cfcd5b5483550372bd94b1
+  checksum: 10/8004af92b5541af1dbd23b69845b5026f777d5b7ef07163cea1837aae86e052ced8b383cecbf8a4f1b5e77ae207df96dc45e16b9e0fa3c4b761d085f1e42851b
   languageName: node
   linkType: hard
 
@@ -12661,13 +12661,13 @@ __metadata:
   linkType: hard
 
 "postcss@npm:^8.3.11":
-  version: 8.5.16
-  resolution: "postcss@npm:8.5.16"
+  version: 8.5.23
+  resolution: "postcss@npm:8.5.23"
   dependencies:
-    nanoid: "npm:^3.3.12"
+    nanoid: "npm:^3.3.16"
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
-  checksum: 10/b39408900aa394bce6f567d539b7361e71c07f361313e5b01e40481c5120309a570e7a54c6a0c6ea5f0c0c06ff8c12b560beeebcc29ea173ad42ec74bae86069
+  checksum: 10/8387f421216696bf62a13e5a270e9fefdafc81e196903c0f8d7653f8bab315367cc2261b3c22cf197e492cb075f31bdfc07fd9c3be1cb165ff3cabe14c5a039a
   languageName: node
   linkType: hard
 
@@ -14633,15 +14633,15 @@ __metadata:
   linkType: hard
 
 "tar@npm:^7.5.16":
-  version: 7.5.20
-  resolution: "tar@npm:7.5.20"
+  version: 7.5.22
+  resolution: "tar@npm:7.5.22"
   dependencies:
     "@isaacs/fs-minipass": "npm:^4.0.0"
     chownr: "npm:^3.0.0"
     minipass: "npm:^7.1.2"
     minizlib: "npm:^3.1.0"
     yallist: "npm:^5.0.0"
-  checksum: 10/90a0fe423ac921197ad5eefc5e5f7ad7f42b06e80444c8c347c1e4112384cbe9cb53ade3ef71748eed3684888756869c2aeef6b6303c766101f3217e254d4be9
+  checksum: 10/129606384b3c895f422aaca48bf316357be6dc7aa35c1066c3f06c28acfff0be5b356e1b0a0be7c53a7a8945534ac06cec6d8e296d170d8a09c8bff67b29300e
   languageName: node
   linkType: hard
 
