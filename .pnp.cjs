@@ -34,7 +34,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/playwright-common", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:1.1.3"],\
           ["@hmcts/properties-volume", "npm:1.4.1"],\
-          ["@launchdarkly/node-server-sdk", "npm:9.12.1"],\
+          ["@launchdarkly/node-server-sdk", "npm:9.12.3"],\
           ["@parcel/watcher", "npm:2.5.6"],\
           ["@playwright/test", "npm:1.61.1"],\
           ["@stryker-mutator/core", "npm:9.6.1"],\
@@ -2522,31 +2522,31 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@launchdarkly/js-sdk-common", [\
-      ["npm:2.25.1", {\
-        "packageLocation": "./.yarn/cache/@launchdarkly-js-sdk-common-npm-2.25.1-2f177bfbc4-4b99f83fb6.zip/node_modules/@launchdarkly/js-sdk-common/",\
+      ["npm:2.25.2", {\
+        "packageLocation": "./.yarn/cache/@launchdarkly-js-sdk-common-npm-2.25.2-be2b02d829-7b9ffdfd5e.zip/node_modules/@launchdarkly/js-sdk-common/",\
         "packageDependencies": [\
-          ["@launchdarkly/js-sdk-common", "npm:2.25.1"]\
+          ["@launchdarkly/js-sdk-common", "npm:2.25.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@launchdarkly/js-server-sdk-common", [\
-      ["npm:2.19.3", {\
-        "packageLocation": "./.yarn/cache/@launchdarkly-js-server-sdk-common-npm-2.19.3-3cd9ce6a3a-fd34a769b4.zip/node_modules/@launchdarkly/js-server-sdk-common/",\
+      ["npm:2.19.5", {\
+        "packageLocation": "./.yarn/cache/@launchdarkly-js-server-sdk-common-npm-2.19.5-0411cb5adf-b446c9b9c5.zip/node_modules/@launchdarkly/js-server-sdk-common/",\
         "packageDependencies": [\
-          ["@launchdarkly/js-sdk-common", "npm:2.25.1"],\
-          ["@launchdarkly/js-server-sdk-common", "npm:2.19.3"],\
+          ["@launchdarkly/js-sdk-common", "npm:2.25.2"],\
+          ["@launchdarkly/js-server-sdk-common", "npm:2.19.5"],\
           ["semver", "npm:7.5.4"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@launchdarkly/node-server-sdk", [\
-      ["npm:9.12.1", {\
-        "packageLocation": "./.yarn/cache/@launchdarkly-node-server-sdk-npm-9.12.1-1962bc16dc-506a2867b8.zip/node_modules/@launchdarkly/node-server-sdk/",\
+      ["npm:9.12.3", {\
+        "packageLocation": "./.yarn/cache/@launchdarkly-node-server-sdk-npm-9.12.3-0f937b0abe-a516b76178.zip/node_modules/@launchdarkly/node-server-sdk/",\
         "packageDependencies": [\
-          ["@launchdarkly/js-server-sdk-common", "npm:2.19.3"],\
-          ["@launchdarkly/node-server-sdk", "npm:9.12.1"],\
+          ["@launchdarkly/js-server-sdk-common", "npm:2.19.5"],\
+          ["@launchdarkly/node-server-sdk", "npm:9.12.3"],\
           ["https-proxy-agent", "npm:7.0.6"],\
           ["launchdarkly-eventsource", "npm:2.2.0"]\
         ],\
@@ -16129,7 +16129,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/playwright-common", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:1.1.3"],\
           ["@hmcts/properties-volume", "npm:1.4.1"],\
-          ["@launchdarkly/node-server-sdk", "npm:9.12.1"],\
+          ["@launchdarkly/node-server-sdk", "npm:9.12.3"],\
           ["@parcel/watcher", "npm:2.5.6"],\
           ["@playwright/test", "npm:1.61.1"],\
           ["@stryker-mutator/core", "npm:9.6.1"],\
