@@ -611,17 +611,17 @@
                 }
             }
         },
-    "PCS" :
+    "pcs" :
         {
             "nextStep":
-            {
-                "ApplicantLanguage": {
-                    "name": "ApplicantLanguage"
-                }
-            },
+                {
+                    "ApplicantDateOfBirth": {
+                        "name": "ApplicantDateOfBirth"
+                    }
+                },
             "nextStepName" :
             {
-                "name": "ApplicantLanguage"
+                "name": "ApplicantDateOfBirth"
             },
             "currentStep" : "StartPage",
             "skipStepName" :{},
@@ -631,11 +631,11 @@
                 {
                     "formData" :
                     {
-                        "serviceId": "PCS",
+                        "serviceId": "pcs",
                         "actor" : "respondent"
                     },
                     "startPageTextEn" : "Your answers will not affect your case.",
-                    "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich achos",
+                    "startPageTextCy" : "Ni fydd eich atebion yn effeithio ar eich achos.",
                     "endPageTextEn" : "",
                     "endPageTextCy" : "",
                     "shutterPageTextEn" : "We have saved your answers and will direct you back to your case now.",
