@@ -69,7 +69,7 @@ const RAW_RUNTIME_STATE =
           ["js-yaml", "npm:4.3.1"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["lodash", "npm:4.18.1"],\
-          ["mocha", "npm:11.7.6"],\
+          ["mocha", "npm:11.8.0"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
           ["moment", "npm:2.30.1"],\
           ["nock", "npm:14.0.17"],\
@@ -5465,7 +5465,7 @@ const RAW_RUNTIME_STATE =
           ["@stryker-mutator/util", "npm:9.6.1"],\
           ["@types/mocha", null],\
           ["@types/stryker-mutator__core", null],\
-          ["mocha", "npm:11.7.6"],\
+          ["mocha", "npm:11.8.0"],\
           ["tslib", "npm:2.8.1"]\
         ],\
         "packagePeers": [\
@@ -14547,8 +14547,8 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:11.7.6", {\
-        "packageLocation": "./.yarn/cache/mocha-npm-11.7.6-4a91363d4e-a083a65d4a.zip/node_modules/mocha/",\
+      ["npm:11.8.0", {\
+        "packageLocation": "./.yarn/cache/mocha-npm-11.8.0-8763e403e8-4387620673.zip/node_modules/mocha/",\
         "packageDependencies": [\
           ["browser-stdout", "npm:1.3.1"],\
           ["chokidar", "npm:4.0.3"],\
@@ -14562,7 +14562,7 @@ const RAW_RUNTIME_STATE =
           ["js-yaml", "npm:4.3.1"],\
           ["log-symbols", "npm:4.1.0"],\
           ["minimatch", "npm:9.0.9"],\
-          ["mocha", "npm:11.7.6"],\
+          ["mocha", "npm:11.8.0"],\
           ["ms", "npm:2.1.3"],\
           ["picocolors", "npm:1.1.1"],\
           ["serialize-javascript", "npm:7.0.7"],\
@@ -14595,7 +14595,7 @@ const RAW_RUNTIME_STATE =
           ["lodash.isfunction", "npm:3.0.9"],\
           ["lodash.isobject", "npm:3.0.2"],\
           ["lodash.isstring", "npm:4.0.1"],\
-          ["mocha", "npm:11.7.6"],\
+          ["mocha", "npm:11.8.0"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
           ["mochawesome-report-generator", "npm:6.3.2"],\
           ["strip-ansi", "npm:6.0.1"],\
@@ -16154,7 +16154,7 @@ const RAW_RUNTIME_STATE =
           ["js-yaml", "npm:4.3.1"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["lodash", "npm:4.18.1"],\
-          ["mocha", "npm:11.7.6"],\
+          ["mocha", "npm:11.8.0"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
           ["moment", "npm:2.30.1"],\
           ["nock", "npm:14.0.17"],\
