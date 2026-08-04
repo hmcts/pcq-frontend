@@ -60,7 +60,7 @@ const RAW_RUNTIME_STATE =
           ["express-urlrewrite", "npm:2.0.3"],\
           ["fs-extra", "npm:11.4.0"],\
           ["git-rev-sync", "npm:3.0.2"],\
-          ["globals", "npm:17.7.0"],\
+          ["globals", "npm:17.9.0"],\
           ["govuk-frontend", "npm:5.14.0"],\
           ["helmet", "npm:8.3.0"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.6"],\
@@ -1836,7 +1836,7 @@ const RAW_RUNTIME_STATE =
           ["eslint", "virtual:a52d081492f5d31321985d5816bd40e85a60e84a99be850cdce6dbe27cc08870610ebf564d05f3dbe23db7ee20c4de57f3173d6348977cec6817b57bf86c0170#npm:9.39.5"],\
           ["eslint-plugin-playwright", "virtual:2d32322eb6ce86e58fd09ac950f5bad51e30b52d9c8e9849a57243793ca46db42758668da5eef78c4e16d75c63797175e11a019992d8c9c13c0631140beab521#npm:2.10.4"],\
           ["get-port", "npm:7.2.0"],\
-          ["globals", "npm:17.7.0"],\
+          ["globals", "npm:17.9.0"],\
           ["lighthouse", "npm:13.4.0"],\
           ["playwright-core", null],\
           ["playwright-lighthouse", "virtual:2d32322eb6ce86e58fd09ac950f5bad51e30b52d9c8e9849a57243793ca46db42758668da5eef78c4e16d75c63797175e11a019992d8c9c13c0631140beab521#npm:4.0.0"],\
@@ -10369,7 +10369,7 @@ const RAW_RUNTIME_STATE =
           ["@types/eslint", null],\
           ["eslint", "virtual:a52d081492f5d31321985d5816bd40e85a60e84a99be850cdce6dbe27cc08870610ebf564d05f3dbe23db7ee20c4de57f3173d6348977cec6817b57bf86c0170#npm:9.39.5"],\
           ["eslint-plugin-playwright", "virtual:2d32322eb6ce86e58fd09ac950f5bad51e30b52d9c8e9849a57243793ca46db42758668da5eef78c4e16d75c63797175e11a019992d8c9c13c0631140beab521#npm:2.10.4"],\
-          ["globals", "npm:17.7.0"]\
+          ["globals", "npm:17.9.0"]\
         ],\
         "packagePeers": [\
           "@types/eslint",\
@@ -11585,10 +11585,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:17.7.0", {\
-        "packageLocation": "./.yarn/cache/globals-npm-17.7.0-b005e29e29-79304ccc4d.zip/node_modules/globals/",\
+      ["npm:17.9.0", {\
+        "packageLocation": "./.yarn/cache/globals-npm-17.9.0-51af5ce1eb-8619386d44.zip/node_modules/globals/",\
         "packageDependencies": [\
-          ["globals", "npm:17.7.0"]\
+          ["globals", "npm:17.9.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -16152,7 +16152,7 @@ const RAW_RUNTIME_STATE =
           ["express-urlrewrite", "npm:2.0.3"],\
           ["fs-extra", "npm:11.4.0"],\
           ["git-rev-sync", "npm:3.0.2"],\
-          ["globals", "npm:17.7.0"],\
+          ["globals", "npm:17.9.0"],\
           ["govuk-frontend", "npm:5.14.0"],\
           ["helmet", "npm:8.3.0"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.6"],\
