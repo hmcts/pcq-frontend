@@ -54,7 +54,8 @@ tokenKeys:
   specialtribunals_cic: 
   jurordigital: 
   prl_ca: 
-  civil-citizen-ui: 
+  civil-citizen-ui:
+  pcs:
 redis:
   host: 'localhost'
   port: 6379

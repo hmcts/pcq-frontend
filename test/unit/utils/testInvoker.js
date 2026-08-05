@@ -158,7 +158,11 @@ describe('Invoker', () => {
                     {
                         value: 'civil-citizen-ui',
                         text: 'civil-citizen-ui'
-                    }
+                    },
+                    {
+                        value: 'PCS',
+                        text: 'PCS'
+                    },
                 ],
                 ageCheckList,
                 actorList: {
@@ -208,6 +212,9 @@ describe('Invoker', () => {
                     'civil-citizen-ui': [
                         'RESPONDENT',
                         'APPLICANT'
+                    ],
+                    'PCS': [
+                        'RESPONDENT'
                     ]
                 }
             });
