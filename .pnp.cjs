@@ -2587,10 +2587,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@nodable/entities", [\
-      ["npm:2.2.0", {\
-        "packageLocation": "./.yarn/cache/@nodable-entities-npm-2.2.0-65a43c3fa8-7f44743adb.zip/node_modules/@nodable/entities/",\
+      ["npm:3.0.0", {\
+        "packageLocation": "./.yarn/cache/@nodable-entities-npm-3.0.0-bb8933fa6e-185fef5819.zip/node_modules/@nodable/entities/",\
         "packageDependencies": [\
-          ["@nodable/entities", "npm:2.2.0"]\
+          ["@nodable/entities", "npm:3.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9913,7 +9913,7 @@ const RAW_RUNTIME_STATE =
           ["decamelize", "npm:6.0.1"],\
           ["edge-paths", "npm:3.0.5"],\
           ["edgedriver", "npm:6.3.0"],\
-          ["fast-xml-parser", "npm:5.9.3"],\
+          ["fast-xml-parser", "npm:5.10.1"],\
           ["http-proxy-agent", "npm:7.0.2"],\
           ["https-proxy-agent", "npm:7.0.6"],\
           ["which", "npm:6.0.1"]\
@@ -10920,16 +10920,16 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["fast-xml-parser", [\
-      ["npm:5.9.3", {\
-        "packageLocation": "./.yarn/cache/fast-xml-parser-npm-5.9.3-eb9065e34b-356cf56b7a.zip/node_modules/fast-xml-parser/",\
+      ["npm:5.10.1", {\
+        "packageLocation": "./.yarn/cache/fast-xml-parser-npm-5.10.1-45fb525b26-3d2a502efd.zip/node_modules/fast-xml-parser/",\
         "packageDependencies": [\
-          ["@nodable/entities", "npm:2.2.0"],\
+          ["@nodable/entities", "npm:3.0.0"],\
           ["fast-xml-builder", "npm:1.2.1"],\
-          ["fast-xml-parser", "npm:5.9.3"],\
-          ["is-unsafe", "npm:1.0.1"],\
-          ["path-expression-matcher", "npm:1.6.1"],\
+          ["fast-xml-parser", "npm:5.10.1"],\
+          ["is-unsafe", "npm:2.0.0"],\
+          ["path-expression-matcher", "npm:1.6.2"],\
           ["strnum", "npm:2.4.1"],\
-          ["xml-naming", "npm:0.1.0"]\
+          ["xml-naming", "npm:0.3.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -12782,10 +12782,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["is-unsafe", [\
-      ["npm:1.0.1", {\
-        "packageLocation": "./.yarn/cache/is-unsafe-npm-1.0.1-dd87b494a9-971d05c69a.zip/node_modules/is-unsafe/",\
+      ["npm:2.0.0", {\
+        "packageLocation": "./.yarn/cache/is-unsafe-npm-2.0.0-6b50020d83-a5d47fa4f3.zip/node_modules/is-unsafe/",\
         "packageDependencies": [\
-          ["is-unsafe", "npm:1.0.1"]\
+          ["is-unsafe", "npm:2.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -15761,6 +15761,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/path-expression-matcher-npm-1.6.1-ae77d4ce87-117d84b8db.zip/node_modules/path-expression-matcher/",\
         "packageDependencies": [\
           ["path-expression-matcher", "npm:1.6.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:1.6.2", {\
+        "packageLocation": "./.yarn/cache/path-expression-matcher-npm-1.6.2-f725f1f519-d7786b1709.zip/node_modules/path-expression-matcher/",\
+        "packageDependencies": [\
+          ["path-expression-matcher", "npm:1.6.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -19627,6 +19634,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/xml-naming-npm-0.1.0-6def6e9a28-45abd94ba6.zip/node_modules/xml-naming/",\
         "packageDependencies": [\
           ["xml-naming", "npm:0.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:0.3.0", {\
+        "packageLocation": "./.yarn/cache/xml-naming-npm-0.3.0-83875da6c6-1a09c3f147.zip/node_modules/xml-naming/",\
+        "packageDependencies": [\
+          ["xml-naming", "npm:0.3.0"]\
         ],\
         "linkType": "HARD"\
       }]\
