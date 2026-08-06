@@ -27,6 +27,7 @@ tokenKeys:
   prl_ca: 'SERVICE_TOKEN_KEY'
   civil-citizen-ui: 'SERVICE_TOKEN_KEY'
   notregistered: 'SERVICE_TOKEN_KEY'
+  pcs: 'SERVICE_TOKEN_KEY'
 
 redis:
   password: 'dummy_password'
