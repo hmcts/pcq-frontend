@@ -13309,7 +13309,7 @@ const RAW_RUNTIME_STATE =
           ["js-yaml", "npm:4.3.1"]\
         ],\
         "linkType": "HARD"\
-      }]\
+      }],\
     ]],\
     ["jsc-safe-url", [\
       ["npm:0.2.4", {\
