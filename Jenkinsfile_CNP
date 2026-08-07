@@ -1,7 +1,7 @@
 #!groovy
 import uk.gov.hmcts.contino.GithubAPI
 
-@Library("Infrastructure@2.4.4")
+@Library("Infrastructure@cve-dashboard")
 
 def type = "nodejs"
 def product = "pcq"
@@ -24,6 +24,7 @@ static LinkedHashMap<String, Object> secret(String secretName, String envVar) {
 }
 
 withPipeline(type, product, component) {
+  enableCveDashboardIngestion()
 
   afterAlways('build') {
     sh 'yarn setup'
