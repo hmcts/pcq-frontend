@@ -66,7 +66,7 @@ const RAW_RUNTIME_STATE =
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.6"],\
           ["immutable", "npm:5.1.9"],\
           ["ioredis", "npm:5.11.1"],\
-          ["js-yaml", "npm:4.3.1"],\
+          ["js-yaml", "npm:5.2.2"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["lodash", "npm:4.18.1"],\
           ["mocha", "npm:11.8.0"],\
@@ -13310,6 +13310,14 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
+      ["npm:5.2.2", {\
+        "packageLocation": "./.yarn/cache/js-yaml-npm-5.2.2-dde534df9f-2b4c2933af.zip/node_modules/js-yaml/",\
+        "packageDependencies": [\
+          ["argparse", "npm:2.0.1"],\
+          ["js-yaml", "npm:5.2.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
     ]],\
     ["jsc-safe-url", [\
       ["npm:0.2.4", {\
@@ -14925,10 +14933,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["nanoid", [\
-      ["npm:3.3.16", {\
-        "packageLocation": "./.yarn/cache/nanoid-npm-3.3.16-dbca216f06-8004af92b5.zip/node_modules/nanoid/",\
+      ["npm:3.3.18", {\
+        "packageLocation": "./.yarn/cache/nanoid-npm-3.3.18-3dd24ff2e6-1b3b4fdac8.zip/node_modules/nanoid/",\
         "packageDependencies": [\
-          ["nanoid", "npm:3.3.16"]\
+          ["nanoid", "npm:3.3.18"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -16018,7 +16026,7 @@ const RAW_RUNTIME_STATE =
       ["npm:8.5.23", {\
         "packageLocation": "./.yarn/cache/postcss-npm-8.5.23-ea01eac089-8387f42121.zip/node_modules/postcss/",\
         "packageDependencies": [\
-          ["nanoid", "npm:3.3.16"],\
+          ["nanoid", "npm:3.3.18"],\
           ["picocolors", "npm:1.1.1"],\
           ["postcss", "npm:8.5.23"],\
           ["source-map-js", "npm:1.2.1"]\
@@ -16254,7 +16262,7 @@ const RAW_RUNTIME_STATE =
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.6"],\
           ["immutable", "npm:5.1.9"],\
           ["ioredis", "npm:5.11.1"],\
-          ["js-yaml", "npm:4.3.1"],\
+          ["js-yaml", "npm:5.2.2"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["lodash", "npm:4.18.1"],\
           ["mocha", "npm:11.8.0"],\
@@ -19210,7 +19218,7 @@ const RAW_RUNTIME_STATE =
           ["envinfo", "npm:7.21.0"],\
           ["import-local", "npm:3.2.0"],\
           ["interpret", "npm:3.1.1"],\
-          ["js-yaml", "npm:4.3.1"],\
+          ["js-yaml", "npm:5.2.2"],\
           ["json5", null],\
           ["rechoir", "npm:0.8.0"],\
           ["toml", null],\
