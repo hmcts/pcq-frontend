@@ -14515,7 +14515,7 @@ const RAW_RUNTIME_STATE =
           ["mocha", "npm:11.7.5"],\
           ["ms", "npm:2.1.3"],\
           ["picocolors", "npm:1.1.1"],\
-          ["serialize-javascript", "npm:7.0.7"],\
+          ["serialize-javascript", "npm:7.1.0"],\
           ["strip-json-comments", "npm:3.1.1"],\
           ["supports-color", "npm:8.1.1"],\
           ["workerpool", "npm:9.3.4"],\
@@ -14543,7 +14543,7 @@ const RAW_RUNTIME_STATE =
           ["mocha", "npm:11.8.0"],\
           ["ms", "npm:2.1.3"],\
           ["picocolors", "npm:1.1.1"],\
-          ["serialize-javascript", "npm:7.0.7"],\
+          ["serialize-javascript", "npm:7.1.0"],\
           ["strip-json-comments", "npm:3.1.1"],\
           ["supports-color", "npm:8.1.1"],\
           ["workerpool", "npm:9.3.4"],\
@@ -17179,10 +17179,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["serialize-javascript", [\
-      ["npm:7.0.7", {\
-        "packageLocation": "./.yarn/cache/serialize-javascript-npm-7.0.7-6fd9a2397a-da427e5660.zip/node_modules/serialize-javascript/",\
+      ["npm:7.1.0", {\
+        "packageLocation": "./.yarn/cache/serialize-javascript-npm-7.1.0-45141b8409-ac3da6a2f7.zip/node_modules/serialize-javascript/",\
         "packageDependencies": [\
-          ["serialize-javascript", "npm:7.0.7"]\
+          ["serialize-javascript", "npm:7.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
