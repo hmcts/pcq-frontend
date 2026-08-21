@@ -66,7 +66,7 @@ const RAW_RUNTIME_STATE =
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.6"],\
           ["immutable", "npm:5.1.9"],\
           ["ioredis", "npm:5.11.1"],\
-          ["js-yaml", "npm:5.2.3"],\
+          ["js-yaml", "npm:5.3.0"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["lodash", "npm:4.18.1"],\
           ["mocha", "npm:11.8.0"],\
@@ -13191,11 +13191,11 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:5.2.3", {\
-        "packageLocation": "./.yarn/cache/js-yaml-npm-5.2.3-3c11a484d2-5d2562f2d7.zip/node_modules/js-yaml/",\
+      ["npm:5.3.0", {\
+        "packageLocation": "./.yarn/cache/js-yaml-npm-5.3.0-a7eb200207-6c7e8ea8dd.zip/node_modules/js-yaml/",\
         "packageDependencies": [\
           ["argparse", "npm:2.0.1"],\
-          ["js-yaml", "npm:5.2.3"]\
+          ["js-yaml", "npm:5.3.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -16143,7 +16143,7 @@ const RAW_RUNTIME_STATE =
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.3.6"],\
           ["immutable", "npm:5.1.9"],\
           ["ioredis", "npm:5.11.1"],\
-          ["js-yaml", "npm:5.2.3"],\
+          ["js-yaml", "npm:5.3.0"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["lodash", "npm:4.18.1"],\
           ["mocha", "npm:11.8.0"],\
@@ -19099,7 +19099,7 @@ const RAW_RUNTIME_STATE =
           ["envinfo", "npm:7.21.0"],\
           ["import-local", "npm:3.2.0"],\
           ["interpret", "npm:3.1.1"],\
-          ["js-yaml", "npm:5.2.3"],\
+          ["js-yaml", "npm:5.3.0"],\
           ["json5", null],\
           ["rechoir", "npm:0.8.0"],\
           ["toml", null],\
