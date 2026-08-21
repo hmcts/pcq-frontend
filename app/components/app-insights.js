@@ -9,6 +9,7 @@ exports.initAppInsights = function initAppInsights(connectionString) {
         return;
     }
     appInsights.setup(connectionString)
+        .setAutoCollectRequests(true)
         .setAutoCollectConsole(false)
         .setAutoCollectDependencies(false)
         .setAutoCollectPerformance(false)
