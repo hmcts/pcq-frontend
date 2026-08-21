@@ -34,7 +34,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/playwright-common", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:1.1.4"],\
           ["@hmcts/properties-volume", "npm:1.4.1"],\
-          ["@launchdarkly/node-server-sdk", "npm:9.13.0"],\
+          ["@launchdarkly/node-server-sdk", "npm:9.13.1"],\
           ["@parcel/watcher", "npm:2.6.0"],\
           ["@playwright/test", "npm:1.62.1"],\
           ["@stryker-mutator/core", "npm:9.6.1"],\
@@ -84,7 +84,7 @@ const RAW_RUNTIME_STATE =
           ["proxyquire", "npm:2.1.3"],\
           ["require-directory", "npm:2.1.1"],\
           ["rewire", "npm:9.0.1"],\
-          ["sanitize-html", "npm:2.17.6"],\
+          ["sanitize-html", "npm:2.17.7"],\
           ["sass", "npm:1.102.0"],\
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:22.1.0"],\
@@ -2554,22 +2554,22 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@launchdarkly/js-server-sdk-common", [\
-      ["npm:2.20.0", {\
-        "packageLocation": "./.yarn/cache/@launchdarkly-js-server-sdk-common-npm-2.20.0-71b5161256-b77bab9910.zip/node_modules/@launchdarkly/js-server-sdk-common/",\
+      ["npm:2.20.1", {\
+        "packageLocation": "./.yarn/cache/@launchdarkly-js-server-sdk-common-npm-2.20.1-c8fdace057-67282f6a11.zip/node_modules/@launchdarkly/js-server-sdk-common/",\
         "packageDependencies": [\
           ["@launchdarkly/js-sdk-common", "npm:2.25.2"],\
-          ["@launchdarkly/js-server-sdk-common", "npm:2.20.0"],\
+          ["@launchdarkly/js-server-sdk-common", "npm:2.20.1"],\
           ["semver", "npm:7.5.4"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@launchdarkly/node-server-sdk", [\
-      ["npm:9.13.0", {\
-        "packageLocation": "./.yarn/cache/@launchdarkly-node-server-sdk-npm-9.13.0-2f15eb82b8-b33d78c0c1.zip/node_modules/@launchdarkly/node-server-sdk/",\
+      ["npm:9.13.1", {\
+        "packageLocation": "./.yarn/cache/@launchdarkly-node-server-sdk-npm-9.13.1-0668ce96e0-ef43ddc948.zip/node_modules/@launchdarkly/node-server-sdk/",\
         "packageDependencies": [\
-          ["@launchdarkly/js-server-sdk-common", "npm:2.20.0"],\
-          ["@launchdarkly/node-server-sdk", "npm:9.13.0"],\
+          ["@launchdarkly/js-server-sdk-common", "npm:2.20.1"],\
+          ["@launchdarkly/node-server-sdk", "npm:9.13.1"],\
           ["https-proxy-agent", "npm:7.0.6"],\
           ["launchdarkly-eventsource", "npm:2.2.0"]\
         ],\
@@ -16111,7 +16111,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/playwright-common", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:1.1.4"],\
           ["@hmcts/properties-volume", "npm:1.4.1"],\
-          ["@launchdarkly/node-server-sdk", "npm:9.13.0"],\
+          ["@launchdarkly/node-server-sdk", "npm:9.13.1"],\
           ["@parcel/watcher", "npm:2.6.0"],\
           ["@playwright/test", "npm:1.62.1"],\
           ["@stryker-mutator/core", "npm:9.6.1"],\
@@ -16161,7 +16161,7 @@ const RAW_RUNTIME_STATE =
           ["proxyquire", "npm:2.1.3"],\
           ["require-directory", "npm:2.1.1"],\
           ["rewire", "npm:9.0.1"],\
-          ["sanitize-html", "npm:2.17.6"],\
+          ["sanitize-html", "npm:2.17.7"],\
           ["sass", "npm:1.102.0"],\
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:22.1.0"],\
@@ -17043,8 +17043,8 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sanitize-html", [\
-      ["npm:2.17.6", {\
-        "packageLocation": "./.yarn/cache/sanitize-html-npm-2.17.6-1ef2e3ee58-dafa757719.zip/node_modules/sanitize-html/",\
+      ["npm:2.17.7", {\
+        "packageLocation": "./.yarn/cache/sanitize-html-npm-2.17.7-23e00739cb-8418fcfdab.zip/node_modules/sanitize-html/",\
         "packageDependencies": [\
           ["deepmerge", "npm:4.3.1"],\
           ["escape-string-regexp", "npm:4.0.0"],\
@@ -17053,7 +17053,7 @@ const RAW_RUNTIME_STATE =
           ["launder", "npm:1.7.1"],\
           ["parse-srcset", "npm:1.0.2"],\
           ["postcss", "npm:8.5.23"],\
-          ["sanitize-html", "npm:2.17.6"]\
+          ["sanitize-html", "npm:2.17.7"]\
         ],\
         "linkType": "HARD"\
       }]\
