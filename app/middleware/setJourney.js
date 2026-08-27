@@ -2,8 +2,31 @@
 const featureToggle = new (require('app/utils/FeatureToggle'))();
 const logger = require('app/components/logger');
 
+// Static allowlist of journeys 
+const journeyMap = {
+    probate: require('app/journeys/probate'),
+    cmc: require('app/journeys/cmc'),
+    divorce: require('app/journeys/divorce'),
+    new_divorce_law: require('app/journeys/new_divorce_law'),
+    sscs: require('app/journeys/sscs'),
+    iac: require('app/journeys/iac'),
+    adoption: require('app/journeys/adoption'),
+    et: require('app/journeys/et'),
+    online_plea: require('app/journeys/online_plea'),
+    specialtribunals_cic: require('app/journeys/specialtribunals_cic'),
+    jurordigital: require('app/journeys/jurordigital'),
+    prl_ca: require('app/journeys/prl_ca'),
+    'civil-citizen-ui': require('app/journeys/civil-citizen-ui'),
+    pcs: require('app/journeys/pcs'),
+    default: require('app/journeys/default')
+};
+
 const getBaseJourney = name => {
-    return require(`app/journeys/${name.toLowerCase()}`);
+    const journey = journeyMap[name.toLowerCase()];
+    if (!journey) {
+        throw new Error(`Unknown journey requested: ${name}`);
+    }
+    return journey;
 };
 
 const setJourney = async (req, res) => {
