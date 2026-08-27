@@ -10,12 +10,11 @@ const asyncFetch = new AsyncFetch();
 const logger = require('app/components/logger')('Init');
 const frontendHealthUrl = config.services.pcqFrontend.healthUrl;
 
-router.get('/service-endpoint', (req, res) => {
+router.get('/service-endpoint', async (req, res) => {
     // Reset the session on registering a new incoming service
-    req.session.regenerate(() => {
-        initSession(req, res);
-        setSession(req);
-    });
+    await new Promise(resolve => req.session.regenerate(resolve));
+    initSession(req, res);
+    setSession(req);
 
     const serviceDown = () => {
         res.redirect(`${config.app.basePath}/offline`);
@@ -25,7 +24,10 @@ router.get('/service-endpoint', (req, res) => {
         .fetch(frontendHealthUrl, {}, fetchRes => fetchRes.json())
         .then(async json => {
             if ((json['pcq-backend'] && json['pcq-backend'].status === 'UP') || config.services.pcqBackend.enabled === 'false') {
-                registerIncomingService(req);
+                // Reject invalid/unauthenticated handoffs before any journey selection takes place
+                if (!registerIncomingService(req)) {
+                    return res.redirect(`${config.app.basePath}/offline`);
+                }
                 await setJourney(req, res);
 
                 res.redirect('/start-page');

@@ -93,8 +93,20 @@ fs.readdir(directoryPath, function (err, files) {
                                 );
                             const server = app.init();
                             const agent = request.agent(server.app);
+                            const genToken = invoker.__get__('genToken');
+                            const tokenRes = {json: sinon.spy()};
+                            const tokenParams = {
+                                serviceId: formData.serviceId,
+                                actor: formData.actor,
+                                pcqId: formData.pcqId,
+                                ccdCaseId: formData.ccdCaseId,
+                                partyId: formData.partyId,
+                                returnUrl: formData.returnUrl
+                            };
+                            genToken({query: tokenParams}, tokenRes);
+                            const token = tokenRes.json.args[0][0].token;
                             const url = '/service-endpoint?serviceId='+formData.serviceId+'&actor='+formData.actor+'&pcqId='+formData.pcqId+'&ccdCaseId='+formData.ccdCaseId+
-                            '&partyId='+formData.partyId+'&returnUrl'+formData.returnUrl;
+                            '&partyId='+formData.partyId+'&returnUrl='+formData.returnUrl+'&token='+token;
                             agent.get(`${url}`)
                                 .expect(302)
                                 .end((err, res) => {
@@ -139,7 +151,7 @@ fs.readdir(directoryPath, function (err, files) {
                             const agent = request.agent(server.app);
                             const url = '/service-endpoint?actor='+formData.actor+'&pcqId='+formData.pcqId+'&ccdCaseId='+formData.ccdCaseId+
                             '&partyId='+formData.partyId+'&returnUrl'+formData.returnUrl;
-                            agent.get(`${url}`).redirects(1)
+                            agent.get(`${url}`)
                                 .expect(302)
                                 .end((err, res) => {
                                     server.http.close();
@@ -163,7 +175,7 @@ fs.readdir(directoryPath, function (err, files) {
                             const agent = request.agent(server.app);
                             const url = '/service-endpoint?serviceId='+formData.serviceId+'&actor='+formData.actor+'&pcqId='+formData.pcqId+'&ccdCaseId='+formData.ccdCaseId+
                             '&partyId='+formData.partyId;
-                            agent.get(`${url}`).redirects(1)
+                            agent.get(`${url}`)
                                 .expect(302)
                                 .end((err, res) => {
                                     server.http.close();
