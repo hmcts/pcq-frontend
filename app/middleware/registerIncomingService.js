@@ -85,7 +85,6 @@ const validatedService = (serviceId) => {
         registeredServices.map(s => s.serviceId.toLowerCase()).includes(serviceId.toLowerCase()));
 };
 
-// Returns true only when the handoff is authenticated and well-formed; callers must not proceed on false
 const registerIncomingService = (req) => {
     if (shouldLog) {
         logger.info(JSON.stringify(req.query));

@@ -2,7 +2,7 @@
 const featureToggle = new (require('app/utils/FeatureToggle'))();
 const logger = require('app/components/logger');
 
-// Static allowlist of journeys - prevents arbitrary module resolution from user-controlled serviceId
+// Static allowlist of journeys 
 const journeyMap = {
     probate: require('app/journeys/probate'),
     cmc: require('app/journeys/cmc'),
