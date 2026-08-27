@@ -18956,15 +18956,15 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["webdriverio", [\
-      ["npm:9.31.2", {\
-        "packageLocation": "./.yarn/cache/webdriverio-npm-9.31.2-8ab0795214-a185108cc9.zip/node_modules/webdriverio/",\
+      ["npm:9.31.3", {\
+        "packageLocation": "../../../../../../runner/cache/others/berry/cache/webdriverio-npm-9.31.3-a39ed0dd17-10.zip/node_modules/webdriverio/",\
         "packageDependencies": [\
-          ["webdriverio", "npm:9.31.2"]\
+          ["webdriverio", "npm:9.31.3"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.31.2", {\
-        "packageLocation": "./.yarn/__virtual__/webdriverio-virtual-38edbe17b4/0/cache/webdriverio-npm-9.31.2-8ab0795214-a185108cc9.zip/node_modules/webdriverio/",\
+      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.31.3", {\
+        "packageLocation": "./.yarn/__virtual__/webdriverio-virtual-bef7f1ca1c/7/runner/cache/others/berry/cache/webdriverio-npm-9.31.3-a39ed0dd17-10.zip/node_modules/webdriverio/",\
         "packageDependencies": [\
           ["@types/node", "npm:20.19.43"],\
           ["@types/puppeteer-core", null],\
@@ -18993,7 +18993,7 @@ const RAW_RUNTIME_STATE =
           ["serialize-error", "npm:12.0.0"],\
           ["urlpattern-polyfill", "npm:10.1.0"],\
           ["webdriver", "npm:9.31.2"],\
-          ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.31.2"]\
+          ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.31.3"]\
         ],\
         "packagePeers": [\
           "@types/puppeteer-core",\
