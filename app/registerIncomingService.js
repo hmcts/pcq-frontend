@@ -24,7 +24,7 @@ router.get('/service-endpoint', async (req, res) => {
         .fetch(frontendHealthUrl, {}, fetchRes => fetchRes.json())
         .then(async json => {
             if ((json['pcq-backend'] && json['pcq-backend'].status === 'UP') || config.services.pcqBackend.enabled === 'false') {
-                // Reject invalid/unauthenticated handoffs before any journey selection takes place
+                // Reject invalid service registrations before any journey selection takes place
                 if (!registerIncomingService(req)) {
                     return res.redirect(`${config.app.basePath}/offline`);
                 }
