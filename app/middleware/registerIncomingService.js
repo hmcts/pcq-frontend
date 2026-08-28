@@ -95,7 +95,7 @@ const registerIncomingService = (req) => {
         req.query.partyId = partyId.trim().replace(/\s/g, '+');
     }
     if (!verifyToken(req.query)) {
-        logger.error('Token verification failed for incoming service handoff');
+        logger.error('Token verification failed for incoming service');
         return false;
     }
     return validateParameters(req);
