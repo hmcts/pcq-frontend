@@ -15,7 +15,7 @@
     "start": "NODE_PATH=. node server.js",
     "debug": "NODE_PATH=. node inspect server.js",
     "start:dev": "yarn sass:watch && NODE_ENV=dev NODE_PATH=. nodemon -e js,json --watch 'app/' --watch 'test/' -x 'node server.js'",
-    "sass:watch": "NODE_PATH=. watch 'yarn -s sass' app/assets/sass/ &",
+    "sass:watch": "NODE_PATH=. sass --load-path=public --watch app/assets/sass/application.scss:public/stylesheets/application.css --quiet --style expanded --source-map &",
     "sass": "NODE_PATH=. sass --load-path=public app/assets/sass/application.scss:public/stylesheets/application.css --quiet --style expanded --source-map",
     "sass-ie8": "NODE_PATH=. sass --load-path=public app/assets/sass/application-ie8.scss:public/stylesheets/application.css --quiet --style expanded --source-map",
     "test:all": "NODE_ENV=testing yarn test -- $@ && yarn test:mutation -- $@ && yarn test:component -- $@  && yarn test:smoke -- $@ && yarn test:functional -- $@ && yarn test:a11y -- $@ ",
@@ -114,7 +114,6 @@
     "sinon-chai": "^3.4.0",
     "sonarqube-scanner": "^4.0.0",
     "supertest": "^7.0.0",
-    "watch": "^1.0.2",
     "webdriverio": "^9.0.0",
     "yarn-audit-fix": "^10.0.3"
   },

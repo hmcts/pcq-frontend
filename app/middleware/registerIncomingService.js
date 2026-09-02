@@ -66,15 +66,18 @@ const validateParameters = req => {
 
     if (missingRequiredParams.length > 0) {
         logger.error('Missing required parameters: ' + missingRequiredParams.join(', '));
+        return false;
     } else if (!validatedService(req.query.serviceId)) {
         logger.error(`Service ${req.query.serviceId} is not registered with PCQ`);
-    } else {
-        appInsights.trackTrace({message: `Entering PCQ Journey - ServiceId: ${req.query.serviceId}`, 
-            properties: {['ServiceId']:req.query.serviceId}});
-        req.session.validParameters = true;
-        // Create the JWT Token after the required parameters have been set.
-        auth.createToken(req, req.session.form.partyId);
+        return false;
     }
+
+    appInsights.trackTrace({message: `Entering PCQ Journey - ServiceId: ${req.query.serviceId}`, 
+        properties: {['ServiceId']:req.query.serviceId}});
+    req.session.validParameters = true;
+    // Create the JWT Token after the required parameters have been set.
+    auth.createToken(req, req.session.form.partyId);
+    return true;
 };
 
 const validatedService = (serviceId) => {
@@ -91,9 +94,11 @@ const registerIncomingService = (req) => {
         // Ensure emails are properly encoded
         req.query.partyId = partyId.trim().replace(/\s/g, '+');
     }
-    if (verifyToken(req.query)) {
-        validateParameters(req);
+    if (!verifyToken(req.query)) {
+        logger.error('Token verification failed for incoming service');
+        return false;
     }
+    return validateParameters(req);
 };
 
 module.exports = {
