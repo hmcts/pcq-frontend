@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.289",
+  "version": "1.2.290",
   "license": "MIT",
   "engines": {
     "node": ">=24.0.0"
@@ -129,7 +129,8 @@
     "@opentelemetry/sdk-node": "^0.221.0",
     "tar": "^7.5.16",
     "form-data": "^4.0.6",
-    "@opentelemetry/core": "^2.8.0"
+    "@opentelemetry/core": "^2.8.0",
+    "browserslist": "^4.28.7"
   },
   "nyc": {
     "report-dir": "functional-output/coverage",
