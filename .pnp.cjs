@@ -6890,7 +6890,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["ajv", "npm:8.18.0"],\
           ["fast-deep-equal", "npm:3.1.3"],\
-          ["fast-uri", "npm:3.1.5"],\
+          ["fast-uri", "npm:3.1.6"],\
           ["json-schema-traverse", "npm:1.0.0"],\
           ["require-from-string", "npm:2.0.2"]\
         ],\
@@ -6901,7 +6901,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["ajv", "npm:8.20.0"],\
           ["fast-deep-equal", "npm:3.1.3"],\
-          ["fast-uri", "npm:3.1.5"],\
+          ["fast-uri", "npm:3.1.6"],\
           ["json-schema-traverse", "npm:1.0.0"],\
           ["require-from-string", "npm:2.0.2"]\
         ],\
@@ -7774,7 +7774,7 @@ const RAW_RUNTIME_STATE =
           ["http-errors", "npm:2.0.1"],\
           ["iconv-lite", "npm:0.7.3"],\
           ["on-finished", "npm:2.4.1"],\
-          ["qs", "npm:6.15.3"],\
+          ["qs", "npm:6.16.0"],\
           ["raw-body", "npm:3.0.2"],\
           ["type-is", "npm:2.1.0"]\
         ],\
@@ -10748,10 +10748,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["fast-uri", [\
-      ["npm:3.1.5", {\
-        "packageLocation": "./.yarn/cache/fast-uri-npm-3.1.5-39a8d368d6-784bef687c.zip/node_modules/fast-uri/",\
+      ["npm:3.1.6", {\
+        "packageLocation": "./.yarn/cache/fast-uri-npm-3.1.6-df64e30f4e-de34fceafd.zip/node_modules/fast-uri/",\
         "packageDependencies": [\
-          ["fast-uri", "npm:3.1.5"]\
+          ["fast-uri", "npm:3.1.6"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -16309,6 +16309,15 @@ const RAW_RUNTIME_STATE =
           ["side-channel", "npm:1.1.1"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:6.16.0", {\
+        "packageLocation": "./.yarn/cache/qs-npm-6.16.0-160b61647c-7fbf9c2eb9.zip/node_modules/qs/",\
+        "packageDependencies": [\
+          ["es-define-property", "npm:1.0.1"],\
+          ["qs", "npm:6.16.0"],\
+          ["side-channel", "npm:1.1.1"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["query-selector-shadow-dom", [\
@@ -17910,7 +17919,7 @@ const RAW_RUNTIME_STATE =
           ["formidable", "npm:3.5.4"],\
           ["methods", "npm:1.1.2"],\
           ["mime", "npm:2.6.0"],\
-          ["qs", "npm:6.15.3"],\
+          ["qs", "npm:6.16.0"],\
           ["superagent", "npm:10.3.0"]\
         ],\
         "linkType": "HARD"\
