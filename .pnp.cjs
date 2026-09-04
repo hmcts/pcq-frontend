@@ -89,7 +89,7 @@ const RAW_RUNTIME_STATE =
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:22.1.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-          ["sonarqube-scanner", "npm:4.4.0"],\
+          ["sonarqube-scanner", "npm:5.0.0"],\
           ["supertest", "npm:7.2.2"],\
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.11"],\
@@ -6971,10 +6971,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["adm-zip", [\
-      ["npm:0.5.17", {\
-        "packageLocation": "./.yarn/cache/adm-zip-npm-0.5.17-574142a08f-035ea96d04.zip/node_modules/adm-zip/",\
+      ["npm:0.6.0", {\
+        "packageLocation": "./.yarn/cache/adm-zip-npm-0.6.0-545e4e34af-6a49ab3905.zip/node_modules/adm-zip/",\
         "packageDependencies": [\
-          ["adm-zip", "npm:0.5.17"]\
+          ["adm-zip", "npm:0.6.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7533,10 +7533,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:1.17.0", {\
-        "packageLocation": "./.yarn/cache/axios-npm-1.17.0-a83ee0b582-bc6995122f.zip/node_modules/axios/",\
+      ["npm:1.18.1", {\
+        "packageLocation": "./.yarn/cache/axios-npm-1.18.1-cfe396e04f-c4cdced3ee.zip/node_modules/axios/",\
         "packageDependencies": [\
-          ["axios", "npm:1.17.0"],\
+          ["axios", "npm:1.18.1"],\
           ["follow-redirects", "virtual:9ed84e3ff06d1cfd9b2e1613bb12a36a0024e176f0e2e3ec4540fb571efadd032b9469eb5fa4e19791368f36064f6e312035a28396f4f3fe768dbfc701fb6755#npm:1.16.0"],\
           ["form-data", "npm:4.0.6"],\
           ["https-proxy-agent", "npm:5.0.1"],\
@@ -8861,6 +8861,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/commander-npm-14.0.3-93ab31471d-dfa9ebe2a4.zip/node_modules/commander/",\
         "packageDependencies": [\
           ["commander", "npm:14.0.3"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:15.0.0", {\
+        "packageLocation": "./.yarn/cache/commander-npm-15.0.0-11ca3eec0a-a5dab1f5c3.zip/node_modules/commander/",\
+        "packageDependencies": [\
+          ["commander", "npm:15.0.0"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -16263,7 +16270,7 @@ const RAW_RUNTIME_STATE =
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:22.1.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-          ["sonarqube-scanner", "npm:4.4.0"],\
+          ["sonarqube-scanner", "npm:5.0.0"],\
           ["supertest", "npm:7.2.2"],\
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.11"],\
@@ -17211,13 +17218,6 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:7.8.4", {\
-        "packageLocation": "./.yarn/cache/semver-npm-7.8.4-9c59dc7144-a9c139031d.zip/node_modules/semver/",\
-        "packageDependencies": [\
-          ["semver", "npm:7.8.4"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:7.8.5", {\
         "packageLocation": "./.yarn/cache/semver-npm-7.8.5-785968bbf9-9b01d2ff11.zip/node_modules/semver/",\
         "packageDependencies": [\
@@ -17613,19 +17613,19 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sonarqube-scanner", [\
-      ["npm:4.4.0", {\
-        "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-4.4.0-52a23446f2-ebdcb5d477.zip/node_modules/sonarqube-scanner/",\
+      ["npm:5.0.0", {\
+        "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-5.0.0-f9302307f9-9d40ff771c.zip/node_modules/sonarqube-scanner/",\
         "packageDependencies": [\
-          ["adm-zip", "npm:0.5.17"],\
-          ["axios", "npm:1.17.0"],\
-          ["commander", "npm:14.0.3"],\
+          ["adm-zip", "npm:0.6.0"],\
+          ["axios", "npm:1.18.1"],\
+          ["commander", "npm:15.0.0"],\
           ["hpagent", "npm:1.2.0"],\
           ["node-forge", "npm:1.4.0"],\
           ["properties-file", "npm:5.0.5"],\
           ["proxy-from-env", "npm:2.1.0"],\
-          ["semver", "npm:7.8.4"],\
+          ["semver", "npm:7.8.5"],\
           ["slugify", "npm:1.6.9"],\
-          ["sonarqube-scanner", "npm:4.4.0"],\
+          ["sonarqube-scanner", "npm:5.0.0"],\
           ["tar-stream", "npm:3.2.0"]\
         ],\
         "linkType": "HARD"\
