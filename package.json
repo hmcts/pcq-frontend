@@ -115,7 +115,7 @@
     "sonarqube-scanner": "^4.0.0",
     "supertest": "^7.0.0",
     "webdriverio": "^9.0.0",
-    "yarn-audit-fix": "^10.0.3"
+    "yarn-audit-fix": "^11.0.0"
   },
   "resolutions": {
     "body-parser": "^2.0.0",
