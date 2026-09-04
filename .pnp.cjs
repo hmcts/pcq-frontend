@@ -49,7 +49,7 @@ const RAW_RUNTIME_STATE =
           ["codeceptjs", "npm:3.7.9"],\
           ["codecov", "npm:4.0.0-0"],\
           ["compression", "npm:1.8.1"],\
-          ["config", "npm:4.4.2"],\
+          ["config", "npm:5.0.1"],\
           ["connect-redis", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.1"],\
           ["cookie-parser", "npm:1.4.7"],\
           ["csrf-sync", "npm:4.2.1"],\
@@ -8974,10 +8974,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["config", [\
-      ["npm:4.4.2", {\
-        "packageLocation": "./.yarn/cache/config-npm-4.4.2-68abb5bc52-57c321f94d.zip/node_modules/config/",\
+      ["npm:5.0.1", {\
+        "packageLocation": "./.yarn/cache/config-npm-5.0.1-04281b32ff-20920c671a.zip/node_modules/config/",\
         "packageDependencies": [\
-          ["config", "npm:4.4.2"],\
+          ["config", "npm:5.0.1"],\
           ["json5", "npm:2.2.3"]\
         ],\
         "linkType": "HARD"\
@@ -16223,7 +16223,7 @@ const RAW_RUNTIME_STATE =
           ["codeceptjs", "npm:3.7.9"],\
           ["codecov", "npm:4.0.0-0"],\
           ["compression", "npm:1.8.1"],\
-          ["config", "npm:4.4.2"],\
+          ["config", "npm:5.0.1"],\
           ["connect-redis", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.1"],\
           ["cookie-parser", "npm:1.4.7"],\
           ["csrf-sync", "npm:4.2.1"],\
