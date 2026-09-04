@@ -70,7 +70,7 @@ const RAW_RUNTIME_STATE =
           ["jsonwebtoken", "npm:9.0.3"],\
           ["lodash", "npm:4.18.1"],\
           ["mocha", "npm:11.8.0"],\
-          ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
+          ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.0.1"],\
           ["moment", "npm:2.30.1"],\
           ["nock", "npm:14.0.17"],\
           ["node-emoji", "npm:2.2.0"],\
@@ -13756,15 +13756,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["lodash.isempty", [\
-      ["npm:4.4.0", {\
-        "packageLocation": "./.yarn/cache/lodash.isempty-npm-4.4.0-9997a8300c-b69de4e080.zip/node_modules/lodash.isempty/",\
-        "packageDependencies": [\
-          ["lodash.isempty", "npm:4.4.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["lodash.isfunction", [\
       ["npm:3.0.9", {\
         "packageLocation": "./.yarn/cache/lodash.isfunction-npm-3.0.9-72aaa7f66c-99e54c34b1.zip/node_modules/lodash.isfunction/",\
@@ -13788,15 +13779,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/lodash.isnumber-npm-3.0.3-b3bb5f7347-913784275b.zip/node_modules/lodash.isnumber/",\
         "packageDependencies": [\
           ["lodash.isnumber", "npm:3.0.3"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["lodash.isobject", [\
-      ["npm:3.0.2", {\
-        "packageLocation": "./.yarn/cache/lodash.isobject-npm-3.0.2-ec19461220-6c1667cbc4.zip/node_modules/lodash.isobject/",\
-        "packageDependencies": [\
-          ["lodash.isobject", "npm:3.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -14652,29 +14634,22 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["mochawesome", [\
-      ["npm:7.1.4", {\
-        "packageLocation": "./.yarn/cache/mochawesome-npm-7.1.4-4da28f16c4-340a511cf9.zip/node_modules/mochawesome/",\
+      ["npm:8.0.1", {\
+        "packageLocation": "./.yarn/cache/mochawesome-npm-8.0.1-5a96210a4f-a6e0cfe8d3.zip/node_modules/mochawesome/",\
         "packageDependencies": [\
-          ["mochawesome", "npm:7.1.4"]\
+          ["mochawesome", "npm:8.0.1"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4", {\
-        "packageLocation": "./.yarn/__virtual__/mochawesome-virtual-fa66775d89/0/cache/mochawesome-npm-7.1.4-4da28f16c4-340a511cf9.zip/node_modules/mochawesome/",\
+      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.0.1", {\
+        "packageLocation": "./.yarn/__virtual__/mochawesome-virtual-b2ba12b35e/0/cache/mochawesome-npm-8.0.1-5a96210a4f-a6e0cfe8d3.zip/node_modules/mochawesome/",\
         "packageDependencies": [\
           ["@types/mocha", null],\
-          ["chalk", "npm:4.1.2"],\
           ["diff", "npm:5.2.2"],\
           ["json-stringify-safe", "npm:5.0.1"],\
-          ["lodash.isempty", "npm:4.4.0"],\
-          ["lodash.isfunction", "npm:3.0.9"],\
-          ["lodash.isobject", "npm:3.0.2"],\
-          ["lodash.isstring", "npm:4.0.1"],\
           ["mocha", "npm:11.8.0"],\
-          ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
-          ["mochawesome-report-generator", "npm:6.3.2"],\
-          ["strip-ansi", "npm:6.0.1"],\
-          ["uuid", "npm:11.1.1"]\
+          ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.0.1"],\
+          ["mochawesome-report-generator", "npm:6.3.2"]\
         ],\
         "packagePeers": [\
           "@types/mocha",\
@@ -16244,7 +16219,7 @@ const RAW_RUNTIME_STATE =
           ["jsonwebtoken", "npm:9.0.3"],\
           ["lodash", "npm:4.18.1"],\
           ["mocha", "npm:11.8.0"],\
-          ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
+          ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:8.0.1"],\
           ["moment", "npm:2.30.1"],\
           ["nock", "npm:14.0.17"],\
           ["node-emoji", "npm:2.2.0"],\
