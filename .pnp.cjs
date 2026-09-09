@@ -10803,7 +10803,7 @@ const RAW_RUNTIME_STATE =
           ["parseurl", "npm:1.3.3"],\
           ["path-to-regexp", "npm:0.1.13"],\
           ["proxy-addr", "npm:2.0.7"],\
-          ["qs", "npm:6.15.3"],\
+          ["qs", "npm:6.16.0"],\
           ["range-parser", "npm:1.2.1"],\
           ["safe-buffer", "npm:5.2.1"],\
           ["send", "npm:0.19.2"],\
@@ -16567,23 +16567,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["qs", [\
-      ["npm:6.15.1", {\
-        "packageLocation": "./.yarn/cache/qs-npm-6.15.1-23a708530c-ec10b99574.zip/node_modules/qs/",\
-        "packageDependencies": [\
-          ["qs", "npm:6.15.1"],\
-          ["side-channel", "npm:1.1.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:6.15.3", {\
-        "packageLocation": "./.yarn/cache/qs-npm-6.15.3-47907326d2-1cbb4b0508.zip/node_modules/qs/",\
-        "packageDependencies": [\
-          ["es-define-property", "npm:1.0.1"],\
-          ["qs", "npm:6.15.3"],\
-          ["side-channel", "npm:1.1.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:6.16.0", {\
         "packageLocation": "./.yarn/cache/qs-npm-6.16.0-160b61647c-7fbf9c2eb9.zip/node_modules/qs/",\
         "packageDependencies": [\
@@ -18812,7 +18795,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["des.js", "npm:1.1.0"],\
           ["js-md4", "npm:0.3.2"],\
-          ["qs", "npm:6.15.1"],\
+          ["qs", "npm:6.16.0"],\
           ["tunnel", "npm:0.0.6"],\
           ["typed-rest-client", "npm:2.3.1"],\
           ["underscore", "npm:1.13.8"]\
