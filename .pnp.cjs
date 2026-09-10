@@ -34,7 +34,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/playwright-common", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:1.1.5"],\
           ["@hmcts/properties-volume", "npm:1.4.1"],\
-          ["@launchdarkly/node-server-sdk", "npm:9.13.1"],\
+          ["@launchdarkly/node-server-sdk", "npm:9.13.2"],\
           ["@parcel/watcher", "npm:2.6.0"],\
           ["@playwright/test", "npm:1.62.1"],\
           ["@stryker-mutator/core", "npm:9.6.1"],\
@@ -94,7 +94,7 @@ const RAW_RUNTIME_STATE =
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.11"],\
           ["uuid", "npm:11.1.1"],\
-          ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.31.6"],\
+          ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.31.7"],\
           ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.110.3"],\
           ["webpack-cli", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.2.3"],\
           ["winston", "npm:3.19.0"],\
@@ -2610,22 +2610,22 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@launchdarkly/js-server-sdk-common", [\
-      ["npm:2.20.1", {\
-        "packageLocation": "./.yarn/cache/@launchdarkly-js-server-sdk-common-npm-2.20.1-c8fdace057-67282f6a11.zip/node_modules/@launchdarkly/js-server-sdk-common/",\
+      ["npm:2.21.0", {\
+        "packageLocation": "./.yarn/cache/@launchdarkly-js-server-sdk-common-npm-2.21.0-c9a5ac5204-d4e161b9c4.zip/node_modules/@launchdarkly/js-server-sdk-common/",\
         "packageDependencies": [\
           ["@launchdarkly/js-sdk-common", "npm:2.25.2"],\
-          ["@launchdarkly/js-server-sdk-common", "npm:2.20.1"],\
+          ["@launchdarkly/js-server-sdk-common", "npm:2.21.0"],\
           ["semver", "npm:7.5.4"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@launchdarkly/node-server-sdk", [\
-      ["npm:9.13.1", {\
-        "packageLocation": "./.yarn/cache/@launchdarkly-node-server-sdk-npm-9.13.1-0668ce96e0-ef43ddc948.zip/node_modules/@launchdarkly/node-server-sdk/",\
+      ["npm:9.13.2", {\
+        "packageLocation": "./.yarn/cache/@launchdarkly-node-server-sdk-npm-9.13.2-76e13fe4de-19bbe8d37b.zip/node_modules/@launchdarkly/node-server-sdk/",\
         "packageDependencies": [\
-          ["@launchdarkly/js-server-sdk-common", "npm:2.20.1"],\
-          ["@launchdarkly/node-server-sdk", "npm:9.13.1"],\
+          ["@launchdarkly/js-server-sdk-common", "npm:2.21.0"],\
+          ["@launchdarkly/node-server-sdk", "npm:9.13.2"],\
           ["https-proxy-agent", "npm:7.0.6"],\
           ["launchdarkly-eventsource", "npm:2.2.0"]\
         ],\
@@ -6540,13 +6540,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@wdio/config", [\
-      ["npm:9.31.6", {\
-        "packageLocation": "./.yarn/cache/@wdio-config-npm-9.31.6-6050d764fd-929e65ceed.zip/node_modules/@wdio/config/",\
+      ["npm:9.31.7", {\
+        "packageLocation": "./.yarn/cache/@wdio-config-npm-9.31.7-2048ee7d00-c785f8ecb0.zip/node_modules/@wdio/config/",\
         "packageDependencies": [\
-          ["@wdio/config", "npm:9.31.6"],\
+          ["@wdio/config", "npm:9.31.7"],\
           ["@wdio/logger", "npm:9.29.1"],\
           ["@wdio/types", "npm:9.31.2"],\
-          ["@wdio/utils", "npm:9.31.6"],\
+          ["@wdio/utils", "npm:9.31.7"],\
           ["deepmerge-ts", "npm:8.0.2"],\
           ["glob", "npm:10.5.0"],\
           ["import-meta-resolve", "npm:4.2.0"],\
@@ -6599,13 +6599,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@wdio/utils", [\
-      ["npm:9.31.6", {\
-        "packageLocation": "./.yarn/cache/@wdio-utils-npm-9.31.6-2cfb872a14-0680dc9c68.zip/node_modules/@wdio/utils/",\
+      ["npm:9.31.7", {\
+        "packageLocation": "./.yarn/cache/@wdio-utils-npm-9.31.7-e9913090f4-9f81ff59e3.zip/node_modules/@wdio/utils/",\
         "packageDependencies": [\
           ["@puppeteer/browsers", "npm:2.13.2"],\
           ["@wdio/logger", "npm:9.29.1"],\
           ["@wdio/types", "npm:9.31.2"],\
-          ["@wdio/utils", "npm:9.31.6"],\
+          ["@wdio/utils", "npm:9.31.7"],\
           ["decamelize", "npm:6.0.1"],\
           ["deepmerge-ts", "npm:8.0.2"],\
           ["edgedriver", "npm:6.3.0"],\
@@ -16338,7 +16338,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/playwright-common", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:1.1.5"],\
           ["@hmcts/properties-volume", "npm:1.4.1"],\
-          ["@launchdarkly/node-server-sdk", "npm:9.13.1"],\
+          ["@launchdarkly/node-server-sdk", "npm:9.13.2"],\
           ["@parcel/watcher", "npm:2.6.0"],\
           ["@playwright/test", "npm:1.62.1"],\
           ["@stryker-mutator/core", "npm:9.6.1"],\
@@ -16398,7 +16398,7 @@ const RAW_RUNTIME_STATE =
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.11"],\
           ["uuid", "npm:11.1.1"],\
-          ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.31.6"],\
+          ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.31.7"],\
           ["webpack", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:5.110.3"],\
           ["webpack-cli", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.2.3"],\
           ["winston", "npm:3.19.0"],\
@@ -19187,20 +19187,20 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["webdriver", [\
-      ["npm:9.31.6", {\
-        "packageLocation": "./.yarn/cache/webdriver-npm-9.31.6-483d046053-428a3a1cc3.zip/node_modules/webdriver/",\
+      ["npm:9.31.7", {\
+        "packageLocation": "./.yarn/cache/webdriver-npm-9.31.7-eb9c40ddf3-14ade8bdd6.zip/node_modules/webdriver/",\
         "packageDependencies": [\
           ["@types/node", "npm:20.19.43"],\
           ["@types/ws", "npm:8.18.1"],\
-          ["@wdio/config", "npm:9.31.6"],\
+          ["@wdio/config", "npm:9.31.7"],\
           ["@wdio/logger", "npm:9.29.1"],\
           ["@wdio/protocols", "npm:9.31.5"],\
           ["@wdio/types", "npm:9.31.2"],\
-          ["@wdio/utils", "npm:9.31.6"],\
+          ["@wdio/utils", "npm:9.31.7"],\
           ["deepmerge-ts", "npm:8.0.2"],\
           ["https-proxy-agent", "npm:7.0.6"],\
           ["undici", "npm:6.28.0"],\
-          ["webdriver", "npm:9.31.6"],\
+          ["webdriver", "npm:9.31.7"],\
           ["ws", "virtual:f49a0ff19e0e265538775032d687b273a51fc23b3e4985e1529f3e11122376fbb74456325e17b99f7c5556b37e429a20daf1e019008cfab8beec42da170d3bfb#npm:8.21.0"]\
         ],\
         "linkType": "HARD"\
@@ -19223,25 +19223,25 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["webdriverio", [\
-      ["npm:9.31.6", {\
-        "packageLocation": "./.yarn/cache/webdriverio-npm-9.31.6-ecb362ac1e-5950c4c885.zip/node_modules/webdriverio/",\
+      ["npm:9.31.7", {\
+        "packageLocation": "./.yarn/cache/webdriverio-npm-9.31.7-62307bf47c-107513ba07.zip/node_modules/webdriverio/",\
         "packageDependencies": [\
-          ["webdriverio", "npm:9.31.6"]\
+          ["webdriverio", "npm:9.31.7"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.31.6", {\
-        "packageLocation": "./.yarn/__virtual__/webdriverio-virtual-88dae0cc1d/0/cache/webdriverio-npm-9.31.6-ecb362ac1e-5950c4c885.zip/node_modules/webdriverio/",\
+      ["virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.31.7", {\
+        "packageLocation": "./.yarn/__virtual__/webdriverio-virtual-4d8ee0a79e/0/cache/webdriverio-npm-9.31.7-62307bf47c-107513ba07.zip/node_modules/webdriverio/",\
         "packageDependencies": [\
           ["@types/node", "npm:20.19.43"],\
           ["@types/puppeteer-core", null],\
           ["@types/sinonjs__fake-timers", "npm:8.1.5"],\
-          ["@wdio/config", "npm:9.31.6"],\
+          ["@wdio/config", "npm:9.31.7"],\
           ["@wdio/logger", "npm:9.29.1"],\
           ["@wdio/protocols", "npm:9.31.5"],\
           ["@wdio/repl", "npm:9.16.2"],\
           ["@wdio/types", "npm:9.31.2"],\
-          ["@wdio/utils", "npm:9.31.6"],\
+          ["@wdio/utils", "npm:9.31.7"],\
           ["archiver", "npm:7.0.1"],\
           ["aria-query", "npm:5.3.2"],\
           ["cheerio", "npm:1.2.0"],\
@@ -19259,8 +19259,8 @@ const RAW_RUNTIME_STATE =
           ["rgb2hex", "npm:0.2.5"],\
           ["serialize-error", "npm:12.0.0"],\
           ["urlpattern-polyfill", "npm:10.1.0"],\
-          ["webdriver", "npm:9.31.6"],\
-          ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.31.6"]\
+          ["webdriver", "npm:9.31.7"],\
+          ["webdriverio", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:9.31.7"]\
         ],\
         "packagePeers": [\
           "@types/puppeteer-core",\
