@@ -1855,31 +1855,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@launchdarkly/js-sdk-common@npm:2.25.2":
-  version: 2.25.2
-  resolution: "@launchdarkly/js-sdk-common@npm:2.25.2"
-  checksum: 10/7b9ffdfd5e6e92ec7e916c795abec647af7a9b97293c74c9edaa922d53f6e688a7e6b276f5005532fa049ed270fe912c124ee0ff3e1316d61758658814a165fb
+"@launchdarkly/js-sdk-common@npm:2.26.0":
+  version: 2.26.0
+  resolution: "@launchdarkly/js-sdk-common@npm:2.26.0"
+  checksum: 10/8df0c0ad768464d11cb28800e9d16da9b790274526eef1dd53b3260086a430d4ceb0bedec9da1630d23f3f8b375d03fc08c43b39e8d9786744510836cbbdfaea
   languageName: node
   linkType: hard
 
-"@launchdarkly/js-server-sdk-common@npm:2.21.0":
-  version: 2.21.0
-  resolution: "@launchdarkly/js-server-sdk-common@npm:2.21.0"
+"@launchdarkly/js-server-sdk-common@npm:2.21.2":
+  version: 2.21.2
+  resolution: "@launchdarkly/js-server-sdk-common@npm:2.21.2"
   dependencies:
-    "@launchdarkly/js-sdk-common": "npm:2.25.2"
+    "@launchdarkly/js-sdk-common": "npm:2.26.0"
     semver: "npm:7.5.4"
-  checksum: 10/d4e161b9c4540b5bc68ecedb5d18b4cd8804dcdbd167874404976805c94e8005d5cb7072d857cc23b44fac07e2fe2aaf17d26c6892b837b853471a08cbd7da2d
+  checksum: 10/7038faea2ea20f73c98202674261c42beee0c870f929b2ed1df88471c3b3fcab6480059658439601886fda0465af0144e2badcd2b6648f0fe690d8743f6ede79
   languageName: node
   linkType: hard
 
 "@launchdarkly/node-server-sdk@npm:^9.10.9":
-  version: 9.13.2
-  resolution: "@launchdarkly/node-server-sdk@npm:9.13.2"
+  version: 9.13.4
+  resolution: "@launchdarkly/node-server-sdk@npm:9.13.4"
   dependencies:
-    "@launchdarkly/js-server-sdk-common": "npm:2.21.0"
+    "@launchdarkly/js-server-sdk-common": "npm:2.21.2"
     https-proxy-agent: "npm:^7.0.6"
     launchdarkly-eventsource: "npm:2.2.0"
-  checksum: 10/19bbe8d37ba443f887144a0df6abdae519cf48afcff212b3e8e802528436fb28c99df6bf30df0ca9a1e19b17a5e5d29d31e0bcf4aeb61a3c0e1e61a7fa8dedce
+  checksum: 10/10bb2e574109f03af4389fbb9c872967d09388255877dcfc3ddb45e7678d2f55cedb0b4b69f7b3f02fa0faa73ead0e35b74d224f44302a13696885cc97e12cdc
   languageName: node
   linkType: hard
 
@@ -6503,17 +6503,18 @@ __metadata:
   linkType: hard
 
 "compression@npm:^1.8.1":
-  version: 1.8.1
-  resolution: "compression@npm:1.8.1"
+  version: 1.8.2
+  resolution: "compression@npm:1.8.2"
   dependencies:
     bytes: "npm:3.1.2"
     compressible: "npm:~2.0.18"
     debug: "npm:2.6.9"
+    destroy: "npm:1.2.0"
     negotiator: "npm:~0.6.4"
     on-headers: "npm:~1.1.0"
     safe-buffer: "npm:5.2.1"
     vary: "npm:~1.1.2"
-  checksum: 10/e7552bfbd780f2003c6fe8decb44561f5cc6bc82f0c61e81122caff5ec656f37824084f52155b1e8ef31d7656cecbec9a2499b7a68e92e20780ffb39b479abb7
+  checksum: 10/5b17675cf4abcaff03b83f4be417fb256df4568c7626a65fc4b38cb8ebeb9c0f3917ee79df20cbec90e53d5758ad0d9ae51d5d4669256e22247b16308d290a04
   languageName: node
   linkType: hard
 
