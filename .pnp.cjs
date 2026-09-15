@@ -69,7 +69,7 @@ const RAW_RUNTIME_STATE =
           ["js-yaml", "npm:5.4.1"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["lodash", "npm:4.18.1"],\
-          ["mocha", "npm:11.8.0"],\
+          ["mocha", "npm:12.0.1"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
           ["moment", "npm:2.30.1"],\
           ["nock", "npm:14.0.17"],\
@@ -5687,7 +5687,7 @@ const RAW_RUNTIME_STATE =
           ["@stryker-mutator/util", "npm:9.6.1"],\
           ["@types/mocha", null],\
           ["@types/stryker-mutator__core", null],\
-          ["mocha", "npm:11.8.0"],\
+          ["mocha", "npm:12.0.1"],\
           ["tslib", "npm:2.8.1"]\
         ],\
         "packagePeers": [\
@@ -11176,6 +11176,15 @@ const RAW_RUNTIME_STATE =
           ["path-exists", "npm:4.0.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:8.0.0", {\
+        "packageLocation": "./.yarn/cache/find-up-npm-8.0.0-11fbe7a63d-0db90efb05.zip/node_modules/find-up/",\
+        "packageDependencies": [\
+          ["find-up", "npm:8.0.0"],\
+          ["locate-path", "npm:8.0.0"],\
+          ["unicorn-magic", "npm:0.3.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["flat", [\
@@ -12746,6 +12755,13 @@ const RAW_RUNTIME_STATE =
           ["is-path-inside", "npm:3.0.3"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:4.0.0", {\
+        "packageLocation": "./.yarn/cache/is-path-inside-npm-4.0.0-2af2bde69d-8810fa11c5.zip/node_modules/is-path-inside/",\
+        "packageDependencies": [\
+          ["is-path-inside", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["is-plain-obj", [\
@@ -13806,6 +13822,14 @@ const RAW_RUNTIME_STATE =
           ["p-locate", "npm:5.0.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:8.0.0", {\
+        "packageLocation": "./.yarn/cache/locate-path-npm-8.0.0-c8b2fcf751-9c8c1c0ace.zip/node_modules/locate-path/",\
+        "packageDependencies": [\
+          ["locate-path", "npm:8.0.0"],\
+          ["p-locate", "npm:6.0.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["lodash", [\
@@ -14753,31 +14777,26 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:11.8.0", {\
-        "packageLocation": "./.yarn/cache/mocha-npm-11.8.0-8763e403e8-4387620673.zip/node_modules/mocha/",\
+      ["npm:12.0.1", {\
+        "packageLocation": "./.yarn/cache/mocha-npm-12.0.1-a85f498291-0783f25e25.zip/node_modules/mocha/",\
         "packageDependencies": [\
           ["browser-stdout", "npm:1.3.1"],\
-          ["chokidar", "npm:4.0.3"],\
+          ["chokidar", "npm:5.0.0"],\
           ["debug", "virtual:1968420b2d6933ddb33951f1bab491453fa5b45949cbeb10f639eba83f29960e830a6b34392fd1182a22037f822f26308ecf33f29c31b066e1dcff029c74acca#npm:4.4.3"],\
-          ["diff", "npm:7.0.0"],\
-          ["escape-string-regexp", "npm:4.0.0"],\
-          ["find-up", "npm:5.0.0"],\
-          ["glob", "npm:10.5.0"],\
-          ["he", "npm:1.2.0"],\
-          ["is-path-inside", "npm:3.0.3"],\
-          ["js-yaml", "npm:4.3.2"],\
-          ["log-symbols", "npm:4.1.0"],\
-          ["minimatch", "npm:9.0.9"],\
-          ["mocha", "npm:11.8.0"],\
+          ["diff", "npm:9.0.0"],\
+          ["find-up", "npm:8.0.0"],\
+          ["glob", "npm:13.0.6"],\
+          ["is-path-inside", "npm:4.0.0"],\
+          ["is-unicode-supported", "npm:0.1.0"],\
+          ["js-yaml", "npm:5.4.1"],\
+          ["minimatch", "npm:10.2.5"],\
+          ["mocha", "npm:12.0.1"],\
           ["ms", "npm:2.1.3"],\
           ["picocolors", "npm:1.1.1"],\
           ["serialize-javascript", "npm:7.1.1"],\
-          ["strip-json-comments", "npm:3.1.1"],\
+          ["strip-json-comments", "npm:5.0.3"],\
           ["supports-color", "npm:8.1.1"],\
-          ["workerpool", "npm:9.3.4"],\
-          ["yargs", "npm:17.7.3"],\
-          ["yargs-parser", "npm:21.1.1"],\
-          ["yargs-unparser", "npm:2.0.0"]\
+          ["workerpool", "npm:10.0.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -14801,7 +14820,7 @@ const RAW_RUNTIME_STATE =
           ["lodash.isfunction", "npm:3.0.9"],\
           ["lodash.isobject", "npm:3.0.2"],\
           ["lodash.isstring", "npm:4.0.1"],\
-          ["mocha", "npm:11.8.0"],\
+          ["mocha", "npm:12.0.1"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
           ["mochawesome-report-generator", "npm:6.3.2"],\
           ["strip-ansi", "npm:6.0.1"],\
@@ -15618,6 +15637,14 @@ const RAW_RUNTIME_STATE =
           ["yocto-queue", "npm:0.1.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:4.0.0", {\
+        "packageLocation": "./.yarn/cache/p-limit-npm-4.0.0-5dccf29b67-01d9d70695.zip/node_modules/p-limit/",\
+        "packageDependencies": [\
+          ["p-limit", "npm:4.0.0"],\
+          ["yocto-queue", "npm:1.2.2"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["p-locate", [\
@@ -15634,6 +15661,14 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["p-limit", "npm:3.1.0"],\
           ["p-locate", "npm:5.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:6.0.0", {\
+        "packageLocation": "./.yarn/cache/p-locate-npm-6.0.0-b6cfb720dc-2bfe5234ef.zip/node_modules/p-locate/",\
+        "packageDependencies": [\
+          ["p-limit", "npm:4.0.0"],\
+          ["p-locate", "npm:6.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -16365,7 +16400,7 @@ const RAW_RUNTIME_STATE =
           ["js-yaml", "npm:5.4.1"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["lodash", "npm:4.18.1"],\
-          ["mocha", "npm:11.8.0"],\
+          ["mocha", "npm:12.0.1"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
           ["moment", "npm:2.30.1"],\
           ["nock", "npm:14.0.17"],\
@@ -18153,6 +18188,13 @@ const RAW_RUNTIME_STATE =
           ["strip-json-comments", "npm:3.1.1"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:5.0.3", {\
+        "packageLocation": "./.yarn/cache/strip-json-comments-npm-5.0.3-5042d1b870-3ccbf26f27.zip/node_modules/strip-json-comments/",\
+        "packageDependencies": [\
+          ["strip-json-comments", "npm:5.0.3"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["strnum", [\
@@ -19591,6 +19633,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["workerpool", [\
+      ["npm:10.0.3", {\
+        "packageLocation": "./.yarn/cache/workerpool-npm-10.0.3-f46b7d27f0-72e7e2f268.zip/node_modules/workerpool/",\
+        "packageDependencies": [\
+          ["workerpool", "npm:10.0.3"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:9.3.4", {\
         "packageLocation": "./.yarn/cache/workerpool-npm-9.3.4-5ceb006f53-afe729dde7.zip/node_modules/workerpool/",\
         "packageDependencies": [\
@@ -19971,6 +20020,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/yocto-queue-npm-0.1.0-c6c9a7db29-f77b3d8d00.zip/node_modules/yocto-queue/",\
         "packageDependencies": [\
           ["yocto-queue", "npm:0.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:1.2.2", {\
+        "packageLocation": "./.yarn/cache/yocto-queue-npm-1.2.2-04a540db16-92dd9880c3.zip/node_modules/yocto-queue/",\
+        "packageDependencies": [\
+          ["yocto-queue", "npm:1.2.2"]\
         ],\
         "linkType": "HARD"\
       }]\
