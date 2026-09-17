@@ -1,8 +1,11 @@
 'use strict';
 
 /* eslint no-console: 0 no-unused-vars: 0 */
-
 const appInsights = require('app/components/app-insights');
+const config = require('config');
+// Initialise Azure Application Insights
+appInsights.initAppInsights(config.get('appInsights.connectionString'));
+
 const logger = require('app/components/logger');
 const compression = require('compression');
 const path = require('path');
@@ -13,7 +16,6 @@ const nunjucks = require('nunjucks');
 const routes = require(`${__dirname}/app/routes`);
 const favicon = require('serve-favicon');
 const cookieParser = require('cookie-parser');
-const config = require('config');
 const utils = require(`${__dirname}/app/components/utils`);
 const packageJson = require(`${__dirname}/package`);
 const helmet = require('helmet');
@@ -33,10 +35,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     const port = config.app.port;
     const releaseVersion = packageJson.version;
     const useHttps = config.app.useHttps.toLowerCase();
-    const govUkFrontendPath = path.resolve(require.resolve('govuk-frontend'), '../../');
-
-    // Initialise Azure Application Insights
-    appInsights.initAppInsights(config.get('appInsights.connectionString'));
+    const govUkFrontendPath = path.resolve(require.resolve('govuk-frontend'), '../../'); 
 
     // Application settings
     app.set('view engine', 'html');

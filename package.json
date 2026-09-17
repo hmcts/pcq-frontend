@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.286",
+  "version": "1.2.293",
   "license": "MIT",
   "engines": {
     "node": ">=24.0.0"
@@ -15,7 +15,7 @@
     "start": "NODE_PATH=. node server.js",
     "debug": "NODE_PATH=. node inspect server.js",
     "start:dev": "yarn sass:watch && NODE_ENV=dev NODE_PATH=. nodemon -e js,json --watch 'app/' --watch 'test/' -x 'node server.js'",
-    "sass:watch": "NODE_PATH=. watch 'yarn -s sass' app/assets/sass/ &",
+    "sass:watch": "NODE_PATH=. sass --load-path=public --watch app/assets/sass/application.scss:public/stylesheets/application.css --quiet --style expanded --source-map &",
     "sass": "NODE_PATH=. sass --load-path=public app/assets/sass/application.scss:public/stylesheets/application.css --quiet --style expanded --source-map",
     "sass-ie8": "NODE_PATH=. sass --load-path=public app/assets/sass/application-ie8.scss:public/stylesheets/application.css --quiet --style expanded --source-map",
     "test:all": "NODE_ENV=testing yarn test -- $@ && yarn test:mutation -- $@ && yarn test:component -- $@  && yarn test:smoke -- $@ && yarn test:functional -- $@ && yarn test:a11y -- $@ ",
@@ -51,7 +51,7 @@
     "ajv": "^8.18.0",
     "ajv-formats": "^3.0.0",
     "app": "link:./app",
-    "applicationinsights": "~3.15.0",
+    "applicationinsights": "~3.16.0",
     "co": "^4.6.0",
     "compression": "^1.8.1",
     "config": "^4.0.0",
@@ -65,8 +65,8 @@
     "govuk-frontend": "^5.4.0",
     "helmet": "^8.0.0",
     "i18next": "^26.0.0",
-    "ioredis": "^5.3.2",
-    "js-yaml": "^4.1.0",
+    "ioredis": "^6.0.0",
+    "js-yaml": "^5.0.0",
     "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
@@ -88,7 +88,7 @@
     "@eslint/js": "^10.0.0",
     "@hmcts/playwright-common": "^1.1.2",
     "@parcel/watcher": "^2.4.1",
-    "@playwright/test": "1.62.1",
+    "@playwright/test": "1.63.0",
     "@stryker-mutator/core": "^9.0.0",
     "@stryker-mutator/mocha-runner": "9.6.1",
     "chai": "^4.3.10",
@@ -114,22 +114,22 @@
     "sinon-chai": "^3.4.0",
     "sonarqube-scanner": "^4.0.0",
     "supertest": "^7.0.0",
-    "watch": "^1.0.2",
     "webdriverio": "^9.0.0",
     "yarn-audit-fix": "^10.0.3"
   },
   "resolutions": {
-    "body-parser": "^1.20.5",
+    "body-parser": "^2.0.0",
     "htmlparser2": "^10.1.0",
     "merge": "2.1.1",
     "serialize-javascript": "^7.0.3",
     "minimatch@^10.1.1": "^10.2.4",
     "protobufjs": "^8.0.1",
     "uuid": "^11.1.1",
-    "@opentelemetry/sdk-node": "^0.221.0",
+    "@opentelemetry/sdk-node": "^0.222.0",
     "tar": "^7.5.16",
     "form-data": "^4.0.6",
-    "@opentelemetry/core": "^2.8.0"
+    "@opentelemetry/core": "^2.8.0",
+    "browserslist": "^4.28.7"
   },
   "nyc": {
     "report-dir": "functional-output/coverage",
@@ -139,5 +139,5 @@
       "text"
     ]
   },
-  "packageManager": "yarn@4.17.1"
+  "packageManager": "yarn@4.18.0"
 }

@@ -9,6 +9,7 @@ const nock = require('nock');
 const rewire = require('rewire');
 const request = require('supertest');
 const {setSession, registerIncomingService} = require('app/middleware/registerIncomingService');
+const {generateToken} = require('app/components/encryption-token');
 
 describe('registerIncomingService', () => {
     describe('middleware', () => {
@@ -181,7 +182,7 @@ describe('registerIncomingService', () => {
             nock.cleanAll();
         });
 
-        it('should redirect to /start-page if the backend is up', (done) => {
+        it('should redirect to /offline and not select a journey when the token is missing or invalid', (done) => {
             nock('http://localhost:4000')
                 .get('/health')
                 .reply(
@@ -191,6 +192,30 @@ describe('registerIncomingService', () => {
             const server = app.init();
             const agent = request.agent(server.app);
             agent.get('/service-endpoint?serviceId=PROBATE&actor=APPLICANT&pcqId=12&ccdCaseId=12&partyId=12&returnUrl=test')
+                .expect(302)
+                .end((err, res) => {
+                    server.http.close();
+                    if (err) {
+                        throw err;
+                    }
+                    expect(res.header.location).to.equal('/offline');
+                    done();
+                });
+        });
+
+        it('should redirect to /start-page if the backend is up', (done) => {
+            nock('http://localhost:4000')
+                .get('/health')
+                .reply(
+                    200,
+                    {'pcq-backend': {'status': 'UP'}}
+                );
+            const server = app.init();
+            const agent = request.agent(server.app);
+            const params = {serviceId: 'PROBATE', actor: 'APPLICANT', pcqId: '12', ccdCaseId: '12', partyId: '12', returnUrl: 'test'};
+            const token = generateToken(params).token;
+            agent.get(`/service-endpoint?serviceId=${params.serviceId}&actor=${params.actor}&pcqId=${params.pcqId}` +
+                    `&ccdCaseId=${params.ccdCaseId}&partyId=${params.partyId}&returnUrl=${params.returnUrl}&token=${token}`)
                 .expect(302)
                 .end((err, res) => {
                     server.http.close();
@@ -236,7 +261,10 @@ describe('registerIncomingService', () => {
             rewiredApp.__set__('config.services.pcqBackend.enabled', 'false');
             const server = rewiredApp.init();
             const agent = request.agent(server.app);
-            agent.get('/service-endpoint?serviceId=PROBATE&actor=APPLICANT&pcqId=12&ccdCaseId=12&partyId=12&returnUrl=test')
+            const params = {serviceId: 'PROBATE', actor: 'APPLICANT', pcqId: '12', ccdCaseId: '12', partyId: '12', returnUrl: 'test'};
+            const token = generateToken(params).token;
+            agent.get(`/service-endpoint?serviceId=${params.serviceId}&actor=${params.actor}&pcqId=${params.pcqId}` +
+                    `&ccdCaseId=${params.ccdCaseId}&partyId=${params.partyId}&returnUrl=${params.returnUrl}&token=${token}`)
                 .expect(302)
                 .end((err, res) => {
                     server.http.close();

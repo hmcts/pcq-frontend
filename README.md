@@ -129,6 +129,9 @@ This property will define the name for the service when the user is on the shutt
 When the PCQ service endpoint is called it will verify the serviceId that has been passed and is in the list of registered services. If it's not, the user will be shown the 'service down' page. 
 The redirect link is used in case there is a problem with PCQ and the users session has been lost. In this case PCQ will not know the return url, that was passed in the invocation parameters, and will instead show a list of registered services and their associated redirect link. 
 
+Also add this serviceId to the static `journeyMap` in [setJourney.js](app/middleware/setJourney.js) (`<serviceid>: require('app/journeys/<serviceid>')`, keyed by the lowercased serviceId).
+This must be a static `require()` entry, never built dynamically from the serviceId — a service without an entry here falls back to the `default` journey.
+
 There are 3 pages which require specific wording regarding your service. 
 Please see the [Variable text README](app/resources/en/translation/variable/README.md) for adding your services text.
 
