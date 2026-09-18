@@ -549,7 +549,7 @@ const RAW_RUNTIME_STATE =
           ["@babel/compat-data", "npm:7.29.7"],\
           ["@babel/helper-compilation-targets", "npm:7.29.7"],\
           ["@babel/helper-validator-option", "npm:7.29.7"],\
-          ["browserslist", "npm:4.28.9"],\
+          ["browserslist", "npm:4.29.0"],\
           ["lru-cache", "npm:5.1.1"],\
           ["semver", "npm:6.3.1"]\
         ],\
@@ -7894,10 +7894,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["baseline-browser-mapping", [\
-      ["npm:2.11.21", {\
-        "packageLocation": "./.yarn/cache/baseline-browser-mapping-npm-2.11.21-815e41ca09-b4d223df8d.zip/node_modules/baseline-browser-mapping/",\
+      ["npm:2.11.24", {\
+        "packageLocation": "./.yarn/cache/baseline-browser-mapping-npm-2.11.24-df9e57b23a-ad1837ff33.zip/node_modules/baseline-browser-mapping/",\
         "packageDependencies": [\
-          ["baseline-browser-mapping", "npm:2.11.21"]\
+          ["baseline-browser-mapping", "npm:2.11.24"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8045,15 +8045,15 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["browserslist", [\
-      ["npm:4.28.9", {\
-        "packageLocation": "./.yarn/cache/browserslist-npm-4.28.9-ecf274fb17-493e5e3c11.zip/node_modules/browserslist/",\
+      ["npm:4.29.0", {\
+        "packageLocation": "./.yarn/cache/browserslist-npm-4.29.0-d88b4a5748-d912cb1138.zip/node_modules/browserslist/",\
         "packageDependencies": [\
-          ["baseline-browser-mapping", "npm:2.11.21"],\
-          ["browserslist", "npm:4.28.9"],\
+          ["baseline-browser-mapping", "npm:2.11.24"],\
+          ["browserslist", "npm:4.29.0"],\
           ["caniuse-lite", "npm:1.0.30001810"],\
-          ["electron-to-chromium", "npm:1.5.422"],\
-          ["node-releases", "npm:2.0.54"],\
-          ["update-browserslist-db", "virtual:ecf274fb176218f5e439bf661df8707db90ecfe2c62d28c88edf50be97cb56483947c7f8b1f4825a6f461d3350624a3b2be09f0bfaace49466f33e9ef337f26f#npm:1.3.2"]\
+          ["electron-to-chromium", "npm:1.5.430"],\
+          ["node-releases", "npm:2.0.55"],\
+          ["update-browserslist-db", "virtual:d88b4a57481ffc8d10c0ea1f012b4944a1fa8e2af397485530cb796ab6f799a8dceda3219bffe75fe848e940c806155b6a9fc778359908c8c0c9304db5509343#npm:1.3.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -10018,10 +10018,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["electron-to-chromium", [\
-      ["npm:1.5.422", {\
-        "packageLocation": "./.yarn/cache/electron-to-chromium-npm-1.5.422-4578d7f13d-a4cc1bd720.zip/node_modules/electron-to-chromium/",\
+      ["npm:1.5.430", {\
+        "packageLocation": "./.yarn/cache/electron-to-chromium-npm-1.5.430-a0e9ac01ba-eb9d9e45f0.zip/node_modules/electron-to-chromium/",\
         "packageDependencies": [\
-          ["electron-to-chromium", "npm:1.5.422"]\
+          ["electron-to-chromium", "npm:1.5.430"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -15117,10 +15117,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["node-releases", [\
-      ["npm:2.0.54", {\
-        "packageLocation": "./.yarn/cache/node-releases-npm-2.0.54-bb06fd5c78-36380abbe4.zip/node_modules/node-releases/",\
+      ["npm:2.0.55", {\
+        "packageLocation": "./.yarn/cache/node-releases-npm-2.0.55-85af5b89fc-1ca12c725e.zip/node_modules/node-releases/",\
         "packageDependencies": [\
-          ["node-releases", "npm:2.0.54"]\
+          ["node-releases", "npm:2.0.55"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -18865,21 +18865,21 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["update-browserslist-db", [\
-      ["npm:1.3.2", {\
-        "packageLocation": "./.yarn/cache/update-browserslist-db-npm-1.3.2-2e0fa362e5-ca883e9d0f.zip/node_modules/update-browserslist-db/",\
+      ["npm:1.3.3", {\
+        "packageLocation": "./.yarn/cache/update-browserslist-db-npm-1.3.3-02e6a31cfe-c60c18c53b.zip/node_modules/update-browserslist-db/",\
         "packageDependencies": [\
-          ["update-browserslist-db", "npm:1.3.2"]\
+          ["update-browserslist-db", "npm:1.3.3"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:ecf274fb176218f5e439bf661df8707db90ecfe2c62d28c88edf50be97cb56483947c7f8b1f4825a6f461d3350624a3b2be09f0bfaace49466f33e9ef337f26f#npm:1.3.2", {\
-        "packageLocation": "./.yarn/__virtual__/update-browserslist-db-virtual-34f53bad0b/0/cache/update-browserslist-db-npm-1.3.2-2e0fa362e5-ca883e9d0f.zip/node_modules/update-browserslist-db/",\
+      ["virtual:d88b4a57481ffc8d10c0ea1f012b4944a1fa8e2af397485530cb796ab6f799a8dceda3219bffe75fe848e940c806155b6a9fc778359908c8c0c9304db5509343#npm:1.3.3", {\
+        "packageLocation": "./.yarn/__virtual__/update-browserslist-db-virtual-a51da311e4/0/cache/update-browserslist-db-npm-1.3.3-02e6a31cfe-c60c18c53b.zip/node_modules/update-browserslist-db/",\
         "packageDependencies": [\
           ["@types/browserslist", null],\
-          ["browserslist", "npm:4.28.9"],\
+          ["browserslist", "npm:4.29.0"],\
           ["escalade", "npm:3.2.0"],\
           ["picocolors", "npm:1.1.1"],\
-          ["update-browserslist-db", "virtual:ecf274fb176218f5e439bf661df8707db90ecfe2c62d28c88edf50be97cb56483947c7f8b1f4825a6f461d3350624a3b2be09f0bfaace49466f33e9ef337f26f#npm:1.3.2"]\
+          ["update-browserslist-db", "virtual:d88b4a57481ffc8d10c0ea1f012b4944a1fa8e2af397485530cb796ab6f799a8dceda3219bffe75fe848e940c806155b6a9fc778359908c8c0c9304db5509343#npm:1.3.3"]\
         ],\
         "packagePeers": [\
           "@types/browserslist",\
@@ -19130,7 +19130,7 @@ const RAW_RUNTIME_STATE =
           ["@webassemblyjs/ast", "npm:1.14.1"],\
           ["@webassemblyjs/wasm-edit", "npm:1.14.1"],\
           ["@webassemblyjs/wasm-parser", "npm:1.14.1"],\
-          ["browserslist", "npm:4.28.9"],\
+          ["browserslist", "npm:4.29.0"],\
           ["chrome-trace-event", "npm:1.0.4"],\
           ["enhanced-resolve", "npm:5.25.1"],\
           ["es-module-lexer", "npm:2.3.0"],\
