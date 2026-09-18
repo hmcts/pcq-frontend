@@ -71,7 +71,7 @@ const RAW_RUNTIME_STATE =
           ["lodash", "npm:4.18.1"],\
           ["mocha", "npm:11.8.0"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
-          ["moment", "npm:2.30.1"],\
+          ["moment", "npm:2.31.0"],\
           ["nock", "npm:14.0.17"],\
           ["node-emoji", "npm:2.2.0"],\
           ["nodemon", "npm:3.1.14"],\
@@ -1852,7 +1852,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@hmcts-nodejs-logging-npm-4.0.4-b42d915546-b1cfe4075a.zip/node_modules/@hmcts/nodejs-logging/",\
         "packageDependencies": [\
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
-          ["moment", "npm:2.30.1"],\
+          ["moment", "npm:2.31.0"],\
           ["on-finished", "npm:2.4.1"],\
           ["winston", "npm:2.4.7"]\
         ],\
@@ -8164,7 +8164,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["bunyan", "npm:1.8.15"],\
           ["dtrace-provider", "npm:0.8.8"],\
-          ["moment", "npm:2.30.1"],\
+          ["moment", "npm:2.31.0"],\
           ["mv", "npm:2.1.1"],\
           ["safe-json-stringify", "npm:1.2.0"]\
         ],\
@@ -8176,7 +8176,7 @@ const RAW_RUNTIME_STATE =
           ["bunyan", "npm:2.0.5"],\
           ["dtrace-provider", "npm:0.8.8"],\
           ["exeunt", "npm:1.1.0"],\
-          ["moment", "npm:2.30.1"],\
+          ["moment", "npm:2.31.0"],\
           ["mv", "npm:2.1.1"],\
           ["safe-json-stringify", "npm:1.2.0"]\
         ],\
@@ -14771,10 +14771,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["moment", [\
-      ["npm:2.30.1", {\
-        "packageLocation": "./.yarn/cache/moment-npm-2.30.1-1c51a5c631-ae42d876d4.zip/node_modules/moment/",\
+      ["npm:2.31.0", {\
+        "packageLocation": "./.yarn/cache/moment-npm-2.31.0-f6e03a269c-fd3708d46f.zip/node_modules/moment/",\
         "packageDependencies": [\
-          ["moment", "npm:2.30.1"]\
+          ["moment", "npm:2.31.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -16237,7 +16237,7 @@ const RAW_RUNTIME_STATE =
           ["lodash", "npm:4.18.1"],\
           ["mocha", "npm:11.8.0"],\
           ["mochawesome", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:7.1.4"],\
-          ["moment", "npm:2.30.1"],\
+          ["moment", "npm:2.31.0"],\
           ["nock", "npm:14.0.17"],\
           ["node-emoji", "npm:2.2.0"],\
           ["nodemon", "npm:3.1.14"],\
