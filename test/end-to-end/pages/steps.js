@@ -1,51 +1,88 @@
-'use strict';
+/* eslint-disable no-undef */
+import startpage from './startpage/startpage.js';
+import dateofbirth from './dateofbirth/dateofbirth.js';
+import dobprefernottosay from './dateofbirth/prefernottosay.js';
+import dobvalidations from './dateofbirth/dateofbirthvalidations.js';
+import languageprefernottosay from './language/prefernottosay.js';
+import selectenglish from './language/english.js';
+import selectotherlanguage from './language/otherlanguage.js';
+import selectverywellenglishlevel from './englishlevel/verywell.js';
+import sexprefernottosay from './sex/prefernottosay.js';
+import selectsexmale from './sex/male.js';
+import selectsexfemale from './sex/female.js';
+import gendersameassexprefernottosay from './gendersameassex/prefernottosay.js';
+import selectyesgendersameassex from './gendersameassex/yesgendersameassex.js';
+import selectnogendersameassex from './gendersameassex/nogendersameassex.js';
+import sexualorientationprefernottosay from './sexualorientation/prefernottosay.js';
+import selectothersexualorientation from './sexualorientation/othersexualorientation.js';
+import selecthetersexualorientation from './sexualorientation/heterosexualorstraight.js';
+import selectyesmaritalstatus from './maritalstatus/yes.js';
+import selectnomaritalstatus from './maritalstatus/no.js';
+import maritalstatusprefernottosay from './maritalstatus/prefernottosay.js';
+import selectethnicMixedormultipleethnicgroups from './ethnicgroup/Mixedormultipleethnicgroups.js';
+import selectmixedwhiteandblackcaribbeanethnicgroup from './mixedethnicgroup/whiteandblackcaribbean.js';
+import selectethnicgroup from './ethnicgroup/whiteethnicgroup.js';
+import selectprefernottosayethnicgroup from './ethnicgroup/prefernottosay.js';
+import selectenglishethnicgroup from './whiteethnicgroup/englishwelshscottishirishbritish.js';
+import selectanotherwhiteethnicgroup from './whiteethnicgroup/anotherwhiteethnicgroup.js';
+import selectwhiteethnicgroupprefernottosay from './whiteethnicgroup/prefernottosay.js';
+import asianethnicgroupprefernottosay from './asianethnicgroup/prefernottosay.js';
+import selectasianethnicgroup from './asianethnicgroup/asianethnicgroup.js';
+import selectreligionprefernottosay from './religion/prefernottosay.js';
+import selectchristianreligion from './religion/christian.js';
+import selectotherreligion from './religion/otherreligion.js';
+import disabilityprefernottosay from './disability/prefernottosay.js';
+import selectyesdisability from './disability/yes.js';
+import selectnodisability from './disability/no.js';
+import selectyeslimitedalot from './disabilityimplications/yeslimitedalot.js';
+import selectdisabilityimplicationsareas from './disabilityimplicationsareas/disabilityimplicationsareas.js';
+import pregnantprefernottosay from './pregnant/prefernottosay.js';
+import selectyespregnant from './pregnant/yes.js';
+import selectnopregnant from './pregnant/no.js';
+import endpage from './endpage/endpage.js';
 
-const requireDirectory = require('require-directory');
-const steps = requireDirectory(module);
-
-module.exports = () => {
+export default () => {
     return actor({
-        startapply: steps.startpage.startpage,
-        dateofbirth: steps.dateofbirth.dateofbirth,
-        dobprefernottosay: steps.dateofbirth.prefernottosay,
-        dobvalidations: steps.dateofbirth.dateofbirthvalidations,
-        selectlanguageprefernottosay: steps.language.prefernottosay,
-        selectenglish: steps.language.english,
-        selectwelsh: steps.language.welsh,
-        selectotherlanguage: steps.language.otherlanguage,
-        selectverywellenglishlevel: steps.englishlevel.verywell,
-        sexprefernottosay: steps.sex.prefernottosay,
-        selectsexmale: steps.sex.male,
-        selectsexfemale: steps.sex.female,
-        gendersameassexprefernottosay: steps.gendersameassex.prefernottosay,
-        selectyesgendersameassex: steps.gendersameassex.yesgendersameassex,
-        selectnogendersameassex: steps.gendersameassex.nogendersameassex,
-        sexualorientationprefernottosay: steps.sexualorientation.prefernottosay,
-        selectothersexualorientation: steps.sexualorientation.othersexualorientation,
-        selecthetersexualorientation: steps.sexualorientation.heterosexualorstraight,
-        selectyesmaritalstatus: steps.maritalstatus.yes,
-        selectnomaritalstatus: steps.maritalstatus.no,
-        maritalstatusprefernottosay: steps.maritalstatus.prefernottosay,
-        selectethnicMixedormultipleethnicgroups: steps.ethnicgroup.Mixedormultipleethnicgroups,
-        selectmixedwhiteandblackcaribbeanethnicgroup: steps.mixedethnicgroup.whiteandblackcaribbean,
-        selectethnicgroup: steps.ethnicgroup.whiteethnicgroup,
-        selectprefernottosayethnicgroup: steps.ethnicgroup.prefernottosay,
-        selectenglishethnicgroup: steps.whiteethnicgroup.englishwelshscottishirishbritish,
-        selectanotherwhiteethnicgroup: steps.whiteethnicgroup.anotherwhiteethnicgroup,
-        selectwhiteethnicgroupprefernottosay: steps.whiteethnicgroup.prefernottosay,
-        asianethnicgroupprefernottosay: steps.asianethnicgroup.prefernottosay,
-        selectasianethnicgroup: steps.asianethnicgroup.asianethnicgroup,
-        selectreligionprefernottosay: steps.religion.prefernottosay,
-        selectchristianreligion: steps.religion.christian,
-        selectotherreligion: steps.religion.otherreligion,
-        disabilityprefernottosay: steps.disability.prefernottosay,
-        selectyesdisability: steps.disability.yes,
-        selectnodisability: steps.disability.no,
-        selectyeslimitedalot: steps.disabilityimplications.yeslimitedalot,
-        selectdisabilityimplicationsareas: steps.disabilityimplicationsareas.disabilityimplicationsareas,
-        selectpregnantprefernottosay: steps.pregnant.prefernottosay,
-        selectyespregnant: steps.pregnant.yes,
-        selectnopregnant: steps.pregnant.no,
-        endpage: steps.endpage.endpage
+        startapply: startpage,
+        dateofbirth,
+        dobprefernottosay,
+        dobvalidations,
+        selectlanguageprefernottosay: languageprefernottosay,
+        selectenglish,
+        selectotherlanguage,
+        selectverywellenglishlevel,
+        sexprefernottosay,
+        selectsexmale,
+        selectsexfemale,
+        gendersameassexprefernottosay,
+        selectyesgendersameassex,
+        selectnogendersameassex,
+        sexualorientationprefernottosay,
+        selectothersexualorientation,
+        selecthetersexualorientation,
+        selectyesmaritalstatus,
+        selectnomaritalstatus,
+        maritalstatusprefernottosay,
+        selectethnicMixedormultipleethnicgroups,
+        selectmixedwhiteandblackcaribbeanethnicgroup,
+        selectethnicgroup,
+        selectprefernottosayethnicgroup,
+        selectenglishethnicgroup,
+        selectanotherwhiteethnicgroup,
+        selectwhiteethnicgroupprefernottosay,
+        asianethnicgroupprefernottosay,
+        selectasianethnicgroup,
+        selectreligionprefernottosay,
+        selectchristianreligion,
+        selectotherreligion,
+        disabilityprefernottosay,
+        selectyesdisability,
+        selectnodisability,
+        selectyeslimitedalot,
+        selectdisabilityimplicationsareas,
+        selectpregnantprefernottosay: pregnantprefernottosay,
+        selectyespregnant,
+        selectnopregnant,
+        endpage
     });
 };

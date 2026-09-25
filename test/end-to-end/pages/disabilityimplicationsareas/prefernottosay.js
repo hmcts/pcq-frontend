@@ -1,8 +1,6 @@
-'use strict';
+import pageUnderTest from 'app/steps/ui/disabilityimplicationsareas/index.js';
 
-const pageUnderTest = require('app/steps/ui/disabilityimplicationsareas/index');
-
-module.exports = function () {
+export default function () {
     const I = this;
     I.amOnPage(pageUnderTest.getUrl());
     I.seeCurrentUrlEquals(pageUnderTest.getUrl());
