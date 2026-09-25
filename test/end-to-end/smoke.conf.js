@@ -1,6 +1,6 @@
-const CONF = require('config');
+import CONF from 'config';
 
-exports.config = {
+export const config = {
     output: process.cwd() + '/smoke-output',
     helpers: {
         Playwright: {

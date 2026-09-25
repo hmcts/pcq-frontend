@@ -1,9 +1,8 @@
-'use strict';
-
-const CONF = require('config');
-const testConfig = require('test/config');
-const {v4: uuidv4} = require('uuid');
-const assert = require('chai').assert;
+import CONF from 'config';
+import testConfig from 'test/config.js';
+import {v4 as uuidv4} from 'uuid';
+import chai from 'chai';
+const {assert} = chai;
 
 class TestConfigurator {
     constructor() {
@@ -32,4 +31,4 @@ class TestConfigurator {
     }
 }
 
-module.exports = TestConfigurator;
+export default TestConfigurator;
