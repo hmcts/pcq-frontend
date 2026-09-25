@@ -3,7 +3,7 @@ import startpage from './startpage/startpage.js';
 import dateofbirth from './dateofbirth/dateofbirth.js';
 import dobprefernottosay from './dateofbirth/prefernottosay.js';
 import dobvalidations from './dateofbirth/dateofbirthvalidations.js';
-import languageprefernottosay from './language/prefernottosay.js';
+import selectlanguageprefernottosay from './language/prefernottosay.js';
 import selectenglish from './language/english.js';
 import selectotherlanguage from './language/otherlanguage.js';
 import selectverywellenglishlevel from './englishlevel/verywell.js';
@@ -36,7 +36,7 @@ import selectyesdisability from './disability/yes.js';
 import selectnodisability from './disability/no.js';
 import selectyeslimitedalot from './disabilityimplications/yeslimitedalot.js';
 import selectdisabilityimplicationsareas from './disabilityimplicationsareas/disabilityimplicationsareas.js';
-import pregnantprefernottosay from './pregnant/prefernottosay.js';
+import selectpregnantprefernottosay from './pregnant/prefernottosay.js';
 import selectyespregnant from './pregnant/yes.js';
 import selectnopregnant from './pregnant/no.js';
 import endpage from './endpage/endpage.js';
@@ -47,7 +47,7 @@ export default () => {
         dateofbirth,
         dobprefernottosay,
         dobvalidations,
-        selectlanguageprefernottosay: languageprefernottosay,
+        selectlanguageprefernottosay,
         selectenglish,
         selectotherlanguage,
         selectverywellenglishlevel,
@@ -80,7 +80,7 @@ export default () => {
         selectnodisability,
         selectyeslimitedalot,
         selectdisabilityimplicationsareas,
-        selectpregnantprefernottosay: pregnantprefernottosay,
+        selectpregnantprefernottosay,
         selectyespregnant,
         selectnopregnant,
         endpage
