@@ -1,8 +1,7 @@
-'use strict';
-const serviceEndpointUrl = require('test/end-to-end/utils').serviceEndpointUrl;
-const {generateToken} = require('app/components/encryption-token');
-const {v4: uuidv4} = require('uuid');
-const CONF = require('config');
+import {serviceEndpointUrl} from 'test/end-to-end/utils.js';
+import {generateToken} from 'app/components/encryption-token.js';
+import {v4 as uuidv4} from 'uuid';
+import CONF from 'config';
 /* eslint-disable no-undef */
 console.log(`Running tests against URL: ${CONF.testUrl}`);
 
