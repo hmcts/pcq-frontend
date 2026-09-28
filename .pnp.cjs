@@ -19138,10 +19138,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["undici", [\
-      ["npm:6.28.0", {\
-        "packageLocation": "./.yarn/cache/undici-npm-6.28.0-8aca65475d-672a7a53bd.zip/node_modules/undici/",\
+      ["npm:6.29.0", {\
+        "packageLocation": "./.yarn/cache/undici-npm-6.29.0-91cf75cb84-fd4969cfc8.zip/node_modules/undici/",\
         "packageDependencies": [\
-          ["undici", "npm:6.28.0"]\
+          ["undici", "npm:6.29.0"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -19400,7 +19400,7 @@ const RAW_RUNTIME_STATE =
           ["@wdio/utils", "npm:9.31.9"],\
           ["deepmerge-ts", "npm:8.0.2"],\
           ["https-proxy-agent", "npm:7.0.6"],\
-          ["undici", "npm:6.28.0"],\
+          ["undici", "npm:6.29.0"],\
           ["webdriver", "npm:9.31.9"],\
           ["ws", "virtual:08886ff07c9ea9ca6ebadb3e205172ddd5a752c307d9fc14934d8e00c19b65d3f1b24719a92a857ea606ee25393e346b0aefb49c920e8d9688102a1ed3769c06#npm:8.21.0"]\
         ],\
