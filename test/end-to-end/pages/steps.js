@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import startpage from './startpage/startpage.js';
 import dateofbirth from './dateofbirth/dateofbirth.js';
 import dobprefernottosay from './dateofbirth/prefernottosay.js';
