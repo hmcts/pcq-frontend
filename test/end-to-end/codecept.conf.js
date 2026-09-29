@@ -1,5 +1,5 @@
-const CONF = require('config');
-exports.config = {
+import CONF from 'config';
+export const config = {
     output: process.cwd()+'/functional-output',
     helpers: {
         Playwright: {
