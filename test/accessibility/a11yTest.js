@@ -1,17 +1,19 @@
-'use strict';
+import co from 'co';
+import request from 'supertest';
+import a11y from 'test/util/a11y.js';
+import chai from 'chai';
+import app from '../../app.js';
+import initSteps from 'app/core/initSteps.js';
+import lodash from 'lodash';
+import nock from 'nock';
+import config from 'config';
+import { fileURLToPath } from 'node:url';
+import commonContent from '../../app/resources/en/translation/common.json' with { type: 'json' };
 
-const co = require('co');
-const request = require('supertest');
-const a11y = require('test/util/a11y');
-const expect = require('chai').expect;
-const app = require('../../app');
-const initSteps = require('app/core/initSteps');
-const {endsWith} = require('lodash');
-const commonContent = require('app/resources/en/translation/common');
+const { expect } = chai;
+const { endsWith } = lodash;
 const stepsToExclude = [];
-const steps = initSteps([`${__dirname}/../../app/steps/ui`], 'en');
-const nock = require('nock');
-const config = require('config');
+const steps = initSteps([fileURLToPath(new URL('../../app/steps/ui', import.meta.url))], 'en');
 const commonSessionData = {
     form: {},
     back: [],
