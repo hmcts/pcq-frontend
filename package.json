@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.296",
+  "version": "1.2.297",
   "license": "MIT",
   "engines": {
     "node": ">=24.0.0"
@@ -29,7 +29,7 @@
     "lint": "NODE_PATH=. eslint .",
     "test:codecov-upload": "NODE_ENV=test NODE_PATH=. nyc --cache false _mocha './test/**/test*.js' -- -R spec && codecov",
     "test:coverage": "NODE_ENV=testing ALLOW_CONFIG_MUTATIONS=true NODE_PATH=. nyc --cache false _mocha './test/**/test*.js'",
-    "test:mutation": "yarn createVersionFile && NODE_ENV=testing ALLOW_CONFIG_MUTATIONS=true NODE_PATH=. stryker run test/mutation/stryker.conf.js",
+    "test:mutation": "yarn createVersionFile && NODE_ENV=testing ALLOW_CONFIG_MUTATIONS=true NODE_PATH=. stryker run test/mutation/stryker.conf.mjs",
     "test:fullfunctional": "./bin/run-full-functional-tests.sh",
     "fortifyScan": "./test/java/gradlew -p test/java fortifyScan",
     "sonar-scan": "sonar-scanner",
