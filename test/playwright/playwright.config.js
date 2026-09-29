@@ -1,7 +1,7 @@
 import { CommonConfig, ProjectsConfig } from '@hmcts/playwright-common';
 import { defineConfig } from '@playwright/test';
 
-module.exports = defineConfig({
+export default defineConfig({
     testDir: './tests',
     outputDir: '../../functional-output/playwright-native',
     reporter: [
