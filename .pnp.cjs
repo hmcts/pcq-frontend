@@ -16125,8 +16125,8 @@ const RAW_RUNTIME_STATE =
           ["deepmerge-ts", "npm:8.0.2"],\
           ["https-proxy-agent", "npm:7.0.6"],\
           ["undici", "npm:6.29.0"],\
-          ["webdriver", "npm:9.31.9"],\
-          ["ws", "virtual:08886ff07c9ea9ca6ebadb3e205172ddd5a752c307d9fc14934d8e00c19b65d3f1b24719a92a857ea606ee25393e346b0aefb49c920e8d9688102a1ed3769c06#npm:8.21.0"]\
+          ["webdriver", "npm:9.32.0"],\
+          ["ws", "virtual:1a95a3106b1464ca91b0d45968469a68fb5501fabf325a9cc2e0ee121d5b8665e966d6adacd3db75020b18a60de8004e724f49f6dceb43747e5661089a4dd481#npm:8.22.0"]\
         ],\
         "linkType": "HARD"\
       }]\
