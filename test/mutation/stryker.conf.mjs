@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     packageManager: 'yarn',
     plugins: ['@stryker-mutator/mocha-runner'],
     reporters:
