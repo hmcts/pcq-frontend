@@ -1,8 +1,8 @@
-'use strict';
+import { test, expect } from '@playwright/test';
+import { v4 as uuidv4 } from 'uuid';
+import encryptionToken from 'app/components/encryption-token.js';
 
-const { test, expect } = require('@playwright/test');
-const { v4: uuidv4 } = require('uuid');
-const { generateToken } = require('app/components/encryption-token');
+const { generateToken } = encryptionToken;
 
 function buildServiceUrl(pcqId) {
     const params = {
