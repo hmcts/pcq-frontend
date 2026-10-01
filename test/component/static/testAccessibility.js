@@ -1,9 +1,7 @@
-'use strict';
-
-const TestWrapper = require('test/util/TestWrapper');
-const config = require('config');
-const commonContent = require('app/resources/en/translation/common');
-const accessibility = require('app/resources/en/translation/static/accessibility');
+import TestWrapper from 'test/util/TestWrapper.js';
+import config from 'config';
+import commonContent from 'app/resources/en/translation/common.json' with { type: 'json' };
+import accessibility from 'app/resources/en/translation/static/accessibility.json' with { type: 'json' };
 
 describe('accessibility', () => {
     let testWrapper;
