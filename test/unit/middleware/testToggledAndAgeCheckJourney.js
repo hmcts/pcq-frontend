@@ -1,10 +1,12 @@
-'use strict';
+import chai from 'chai';
+import rewire from 'rewire';
+import ageCheckQuestionsJourney from '../../data/journeys/ageCheckQuestions.js';
+import toggledAndAgeCheckQuestionsJourney from '../../data/journeys/toggledAndAgeCheckQuestions.js';
+import { createRequire } from 'node:module';
 
-const expect = require('chai').expect;
-const rewire = require('rewire');
+const { expect } = chai;
+const require = createRequire(import.meta.url);
 const setJourney = rewire('app/middleware/setJourney');
-const ageCheckQuestionsJourney = require('test/data/journeys/ageCheckQuestions');
-const toggledAndAgeCheckQuestionsJourney = require('test/data/journeys/toggledAndAgeCheckQuestions');
 
 describe('toggledAndAgeCheckQuestionsJourney', () => {
 

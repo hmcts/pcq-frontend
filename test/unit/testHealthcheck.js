@@ -1,10 +1,10 @@
-'use strict';
+import chai from 'chai';
+import nock from 'nock';
+import app from '../../app.js';
+import request from 'supertest';
+import config from 'config';
 
-const expect = require('chai').expect;
-const nock = require('nock');
-const app = require('../../app');
-const request = require('supertest');
-const config = require('config');
+const { expect } = chai;
 
 describe('Healthcheck', () => {
 

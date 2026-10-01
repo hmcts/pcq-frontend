@@ -1,19 +1,22 @@
-'use strict';
+import chai from 'chai';
+import rewire from 'rewire';
+import initSteps from 'app/core/initSteps.js';
+import serviceData from './testServiceData.json' with { type: 'json' };
+import path from 'node:path';
+import fs from 'node:fs';
+import { createRequire } from 'node:module';
+import { fileURLToPath } from 'node:url';
 
-const expect = require('chai').expect;
-const rewire = require('rewire');
+const { expect } = chai;
+const require = createRequire(import.meta.url);
 const JourneyMap = rewire('app/core/JourneyMap');
-const initSteps = require('app/core/initSteps');
-const steps = initSteps([`${__dirname}/../../../app/steps/ui`]);
-const serviceData = require('test/unit/core/testServiceData.json');
+const steps = initSteps([fileURLToPath(new URL('../../../app/steps/ui', import.meta.url))]);
 const StartPage = steps.StartPage;
 const EndPage = steps.EndPage;
 const ShutterPage = steps.ShutterPage;
 //requiring path and fs modules
-const path = require('path');
-const fs = require('fs');
 //joining path of directory
-const directoryPath = path.join(`${__dirname}/../../../app`, 'journeys');
+const directoryPath = path.join(fileURLToPath(new URL('../../../app', import.meta.url)), 'journeys');
 
 //passsing directoryPath and callback function
 fs.readdir(directoryPath, function (err, files) {

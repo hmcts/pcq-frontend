@@ -1,9 +1,10 @@
-'use strict';
+import chai from 'chai';
+import sinon from 'sinon';
+import rewire from 'rewire';
+import encryptionToken from 'app/components/encryption-token.js';
 
-const expect = require('chai').expect;
-const sinon = require('sinon');
-const rewire = require('rewire');
-const {verifyToken} = require('app/components/encryption-token');
+const { expect } = chai;
+const { verifyToken } = encryptionToken;
 
 describe('VerifyToken', () => {
     it('should fail verification if token is missing from req query', (done) => {

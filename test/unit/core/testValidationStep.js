@@ -1,9 +1,9 @@
-'use strict';
+import chai from 'chai';
+import ValidationStep from 'app/core/steps/ValidationStep.js';
+import FieldError from 'app/components/error.js';
+import i18next from 'i18next';
 
-const expect = require('chai').expect;
-const ValidationStep = require('app/core/steps/ValidationStep');
-const FieldError = require('app/components/error');
-const i18next = require('i18next');
+const { expect } = chai;
 
 describe('ValidationStep', () => {
     describe('schema()', () => {

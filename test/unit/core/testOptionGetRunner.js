@@ -1,13 +1,13 @@
-'use strict';
+import OptionGetRunner from 'app/core/runners/OptionGetRunner.js';
+import sinon from 'sinon';
+import chai from 'chai';
+import sinonChai from 'sinon-chai';
+import initSteps from 'app/core/initSteps.js';
+import journey from 'app/journeys/default.js';
+import { fileURLToPath } from 'node:url';
 
-const OptionGetRunner = require('app/core/runners/OptionGetRunner');
-const sinon = require('sinon');
-const chai = require('chai');
-const expect = chai.expect;
-const sinonChai = require('sinon-chai');
-const initSteps = require('app/core/initSteps');
-const steps = initSteps([`${__dirname}/../../../app/steps/ui`], 'en');
-const journey = require('app/journeys/default');
+const { expect } = chai;
+const steps = initSteps([fileURLToPath(new URL('../../../app/steps/ui', import.meta.url))], 'en');
 
 chai.use(sinonChai);
 

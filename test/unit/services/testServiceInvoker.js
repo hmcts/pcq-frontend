@@ -1,21 +1,20 @@
-'use strict';
+import chai from 'chai';
+import sinon from 'sinon';
+import config from 'config';
+import app from '../../../app.js';
+import nock from 'nock';
+import rewire from 'rewire';
+import request from 'supertest';
+import serviceInvokerData from './testServiceInvokerData.json' with { type: 'json' };
+import registerIncomingServiceModule from 'app/middleware/registerIncomingService.js';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
+import fs from 'node:fs';
 
-const expect = require('chai').expect;
-const sinon = require('sinon');
-const config = require('config');
-const app = require('../../../app');
-const nock = require('nock');
-const rewire = require('rewire');
-const request = require('supertest');
-const serviceInvokerData = require('test/unit/services/testServiceInvokerData.json');
-const {setSession, registerIncomingService} = require('app/middleware/registerIncomingService');
+const { expect } = chai;
+const { setSession, registerIncomingService } = registerIncomingServiceModule;
 const invoker = rewire('app/middleware/invoker');
-
-//requiring path and fs modules
-const path = require('path');
-const fs = require('fs');
-//joining path of directory
-const directoryPath = path.join(`${__dirname}/../../../app`, 'journeys');
+const directoryPath = fileURLToPath(new URL('../../../app/journeys', import.meta.url));
 
 //passsing directoryPath and callback function
 fs.readdir(directoryPath, function (err, files) {
