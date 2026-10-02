@@ -1,9 +1,9 @@
-'use strict';
+import chai from 'chai';
+import TestStep from '../../data/steps/multipartvalidation/TestStep.js';
+import InvalidChildSteps from '../../data/steps/multipartvalidation/InvalidChildSteps.js';
+import i18next from 'i18next';
 
-const expect = require('chai').expect;
-const TestStep = require('test/data/steps/multipartvalidation/TestStep');
-const InvalidChildSteps = require('test/data/steps/multipartvalidation/InvalidChildSteps');
-const i18next = require('i18next');
+const { expect } = chai;
 
 describe('MultiPartValidationStep', () => {
     const steps = {};

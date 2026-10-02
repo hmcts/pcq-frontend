@@ -1,9 +1,9 @@
-'use strict';
+import chai from 'chai';
+import rewire from 'rewire';
+import sinon from 'sinon';
 
-const expect = require('chai').expect;
-const rewire = require('rewire');
+const { expect } = chai;
 const Service = rewire('app/services/Service');
-const sinon = require('sinon');
 
 describe('Service', () => {
     describe('get()', () => {

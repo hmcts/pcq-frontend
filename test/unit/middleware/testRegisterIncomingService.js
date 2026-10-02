@@ -1,15 +1,19 @@
-'use strict';
+import chai from 'chai';
+import sinon from 'sinon';
+import jwt from 'jsonwebtoken';
+import config from 'config';
+import app from '../../../app.js';
+import nock from 'nock';
+import rewire from 'rewire';
+import request from 'supertest';
+import registerIncomingServiceModule from 'app/middleware/registerIncomingService.js';
+import encryptionToken from 'app/components/encryption-token.js';
+import { fileURLToPath } from 'node:url';
 
-const expect = require('chai').expect;
-const sinon = require('sinon');
-const jwt = require('jsonwebtoken');
-const config = require('config');
-const app = require('../../../app');
-const nock = require('nock');
-const rewire = require('rewire');
-const request = require('supertest');
-const {setSession, registerIncomingService} = require('app/middleware/registerIncomingService');
-const {generateToken} = require('app/components/encryption-token');
+const { expect } = chai;
+const appPath = fileURLToPath(new URL('../../../app.js', import.meta.url));
+const { setSession, registerIncomingService } = registerIncomingServiceModule;
+const { generateToken } = encryptionToken;
 
 describe('registerIncomingService', () => {
     describe('middleware', () => {
@@ -257,7 +261,7 @@ describe('registerIncomingService', () => {
                     200,
                     {'pcq-backend': {'status': 'DOWN'}}
                 );
-            const rewiredApp = rewire('../../../app');
+            const rewiredApp = rewire(appPath);
             rewiredApp.__set__('config.services.pcqBackend.enabled', 'false');
             const server = rewiredApp.init();
             const agent = request.agent(server.app);

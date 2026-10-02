@@ -1,10 +1,10 @@
-'use strict';
+import chai from 'chai';
+import FormData from 'app/services/FormData.js';
+import co from 'co';
+import config from 'config';
+import nock from 'nock';
 
-const expect = require('chai').expect;
-const FormData = require('app/services/FormData');
-const co = require('co');
-const config = require('config');
-const nock = require('nock');
+const { expect } = chai;
 
 describe('FormDataService', () => {
     afterEach(() => {

@@ -1,11 +1,13 @@
-'use strict';
+import chai from 'chai';
+import rewire from 'rewire';
+import defaultJourney from 'app/journeys/default.js';
+import probateJourney from 'app/journeys/probate.js';
+import toggledQuestionsJourney from '../../data/journeys/toggledQuestions.js';
+import { createRequire } from 'node:module';
 
-const expect = require('chai').expect;
-const rewire = require('rewire');
+const { expect } = chai;
+const require = createRequire(import.meta.url);
 const setJourney = rewire('app/middleware/setJourney');
-const defaultJourney = require('app/journeys/default');
-const probateJourney = require('app/journeys/probate');
-const toggledQuestionsJourney = require('test/data/journeys/toggledQuestions');
 const actorDefinedJourneys = rewire('test/data/journeys/actorDefinedJourneys');
 
 describe('setJourney', () => {

@@ -1,9 +1,9 @@
-'use strict';
+import chai from 'chai';
+import utils from 'app/components/utils.js';
+import sinon from 'sinon';
+import session from 'express-session';
 
-const expect = require('chai').expect;
-const utils = require('app/components/utils');
-const sinon = require('sinon');
-const session = require('express-session');
+const { expect } = chai;
 
 describe('utils', () => {
 

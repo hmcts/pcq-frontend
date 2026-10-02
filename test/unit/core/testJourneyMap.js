@@ -1,9 +1,10 @@
-'use strict';
+import chai from 'chai';
+import rewire from 'rewire';
+import defaultJourney from 'app/journeys/default.js';
+import toggledQuestions from '../../data/journeys/toggledQuestions.js';
 
-const expect = require('chai').expect;
-const rewire = require('rewire');
+const { expect } = chai;
 const JourneyMap = rewire('app/core/JourneyMap');
-const defaultJourney = require('app/journeys/default');
 
 describe('JourneyMap.js', () => {
     let currentStep;
@@ -114,7 +115,7 @@ describe('JourneyMap.js', () => {
         it('should skip a step if it is in the skip list', (done) => {
             currentStep.name = 'StartPage';
 
-            const journey = require('test/data/journeys/toggledQuestions')();
+            const journey = toggledQuestions();
             journey.skipList = [
                 {stepName: 'ApplicantDateOfBirth'}
             ];
@@ -129,7 +130,7 @@ describe('JourneyMap.js', () => {
         it('should skip a step in the skip list and navigate to the specified next step', (done) => {
             currentStep.name = 'StartPage';
 
-            const journey = require('test/data/journeys/toggledQuestions')();
+            const journey = toggledQuestions();
             journey.skipList = [
                 {stepName: 'ApplicantDateOfBirth', nextStepName: 'ApplicantSex'}
             ];
@@ -144,7 +145,7 @@ describe('JourneyMap.js', () => {
         it('should skip a step in the skip list with linked skip steps', (done) => {
             currentStep.name = 'StartPage';
 
-            const journey = require('test/data/journeys/toggledQuestions')();
+            const journey = toggledQuestions();
             journey.skipList = [
                 {stepName: 'ApplicantDateOfBirth', nextStepName: 'ApplicantSex'},
                 {stepName: 'ApplicantSex'}
@@ -160,7 +161,7 @@ describe('JourneyMap.js', () => {
         it('should skip a step in the skip list with multiple linked skip steps - 1', (done) => {
             currentStep.name = 'StartPage';
 
-            const journey = require('test/data/journeys/toggledQuestions')();
+            const journey = toggledQuestions();
             journey.skipList = [
                 {stepName: 'ApplicantDateOfBirth', nextStepName: 'ApplicantSex'},
                 {stepName: 'ApplicantSex', nextStepName: 'ApplicantSexualOrientation'}
@@ -176,7 +177,7 @@ describe('JourneyMap.js', () => {
         it('should skip a step in the skip list with multiple linked skip steps - 2', (done) => {
             currentStep.name = 'StartPage';
 
-            const journey = require('test/data/journeys/toggledQuestions')();
+            const journey = toggledQuestions();
             journey.skipList = [
                 {stepName: 'ApplicantDateOfBirth', nextStepName: 'ApplicantSex'},
                 {stepName: 'ApplicantSex', nextStepName: 'ApplicantSexualOrientation'},

@@ -1,15 +1,15 @@
-'use strict';
+import chai from 'chai';
+import DateStep from 'app/core/steps/DateStep.js';
+import sinon from 'sinon';
+import i18next from 'i18next';
+import schema from 'app/steps/ui/dateofbirth/schema.json' with { type: 'json' };
 
-const expect = require('chai').expect;
-const DateStep = require('app/core/steps/DateStep');
-const sinon = require('sinon');
-const i18next = require('i18next');
+const { expect } = chai;
 
 describe('DateStep', () => {
     const steps = {};
     const section = 'deceased';
     const resourcePath = 'dateofbirth';
-    const schema = require('app/steps/ui/dateofbirth/schema');
     const language = 'en';
     const dateStep = new DateStep(steps, section, resourcePath, i18next, schema, language);
 

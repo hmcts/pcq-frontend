@@ -1,7 +1,7 @@
-'use strict';
+import chai from 'chai';
+import rewire from 'rewire';
 
-const expect = require('chai').expect;
-const rewire = require('rewire');
+const { expect } = chai;
 const FormatUrl = rewire('app/utils/FormatUrl');
 
 describe('FormatUrl.js', () => {
