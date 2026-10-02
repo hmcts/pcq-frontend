@@ -1,24 +1,21 @@
 /*
  * Decryption script
  */
-'use strict';
-
 const getParam = (param) => {
     const paramIndex = process.argv.indexOf(param);
     return paramIndex !== -1 ? process.argv[paramIndex + 1] : null;
 };
 
-const crypto = require('crypto');
+import crypto from 'node:crypto';
 
 const authTag = getParam('-at');
 const algorithm = authTag ? 'aes-256-gcm' : 'aes-256-cbc';
 const password = getParam('-p') || 'SERVICE_TOKEN_KEY';
 const key = crypto.scryptSync(password, 'salt', 32);
-const iv = Buffer.alloc(16, 0); // Initialization vector.
+const iv = Buffer.alloc(16, 0);
 
 const token = getParam('-t');
 
-// Check for token
 if (!token) {
     throw Error('Token has not been passed! Set using \'-t\' flag.');
 }

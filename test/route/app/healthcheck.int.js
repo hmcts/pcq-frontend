@@ -1,7 +1,9 @@
-const {expect} = require('chai');
-const app = require('../../../app');
-const request = require('supertest');
-const commonContent = require('app/resources/en/translation/common');
+import chai from 'chai';
+import app from '../../../app.js';
+import request from 'supertest';
+import commonContent from '../../../app/resources/en/translation/common.json' with { type: 'json' };
+
+const { expect } = chai;
 
 describe('healthcheck.js', () => {
     it('/health should return the correct params', (done) => {
