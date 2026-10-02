@@ -1,9 +1,7 @@
-'use strict';
-
-const TestWrapper = require('test/util/TestWrapper');
-const ApplicantSex = require('app/steps/ui/sex');
-const testCommonContent = require('test/component/common/testCommonContent.js');
-const config = require('config');
+import TestWrapper from 'test/util/TestWrapper.js';
+import ApplicantSex from 'app/steps/ui/sex/index.js';
+import testCommonContent from 'test/component/common/testCommonContent.js';
+import config from 'config';
 const basePath = config.app.basePath;
 
 describe('ApplicantEnglishLevel', () => {

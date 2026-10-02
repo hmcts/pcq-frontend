@@ -1,14 +1,12 @@
-'use strict';
-
-const TestWrapper = require('test/util/TestWrapper');
-const ApplicantEthnicBackgroundWhite = require('app/steps/ui/ethnicwhite');
-const ApplicantEthnicBackgroundMixed = require('app/steps/ui/ethnicmixed');
-const ApplicantEthnicBackgroundAsian = require('app/steps/ui/ethnicasian');
-const ApplicantEthnicBackgroundBlack = require('app/steps/ui/ethnicblack');
-const ApplicantEthnicBackgroundOther = require('app/steps/ui/ethnicother');
-const ApplicantReligion = require('app/steps/ui/religion');
-const testCommonContent = require('test/component/common/testCommonContent.js');
-const config = require('config');
+import TestWrapper from 'test/util/TestWrapper.js';
+import ApplicantEthnicBackgroundWhite from 'app/steps/ui/ethnicwhite/index.js';
+import ApplicantEthnicBackgroundMixed from 'app/steps/ui/ethnicmixed/index.js';
+import ApplicantEthnicBackgroundAsian from 'app/steps/ui/ethnicasian/index.js';
+import ApplicantEthnicBackgroundBlack from 'app/steps/ui/ethnicblack/index.js';
+import ApplicantEthnicBackgroundOther from 'app/steps/ui/ethnicother/index.js';
+import ApplicantReligion from 'app/steps/ui/religion/index.js';
+import testCommonContent from 'test/component/common/testCommonContent.js';
+import config from 'config';
 const basePath = config.app.basePath;
 
 describe('ApplicantEthnicGroup', () => {
