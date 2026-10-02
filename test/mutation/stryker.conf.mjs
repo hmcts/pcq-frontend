@@ -29,9 +29,7 @@ export default {
         '!version',
         '!app/**',
         '!config/*',
-        '!test/**',
-        'test/unit/core/testServiceData.json',
-        'test/unit/services/testServiceInvokerData.json'
+        '!test/**'
     ],
     testRunner: 'mocha',
     mochaOptions: {
