@@ -85,7 +85,7 @@ const RAW_RUNTIME_STATE =
           ["require-directory", "npm:2.1.1"],\
           ["rewire", "npm:9.0.1"],\
           ["sanitize-html", "npm:2.17.7"],\
-          ["sass", "npm:1.105.0"],\
+          ["sass", "npm:1.105.1"],\
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:22.1.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
@@ -652,7 +652,7 @@ const RAW_RUNTIME_STATE =
           ["@babel/compat-data", "npm:7.29.7"],\
           ["@babel/helper-compilation-targets", "npm:7.29.7"],\
           ["@babel/helper-validator-option", "npm:7.29.7"],\
-          ["browserslist", "npm:4.29.2"],\
+          ["browserslist", "npm:4.29.3"],\
           ["lru-cache", "npm:5.1.1"],\
           ["semver", "npm:6.3.1"]\
         ],\
@@ -664,7 +664,7 @@ const RAW_RUNTIME_STATE =
           ["@babel/compat-data", "npm:8.0.5"],\
           ["@babel/helper-compilation-targets", "npm:8.0.6"],\
           ["@babel/helper-validator-option", "npm:8.0.0"],\
-          ["browserslist", "npm:4.29.2"],\
+          ["browserslist", "npm:4.29.3"],\
           ["flru", "npm:1.0.2"],\
           ["verkit", "npm:0.3.2"]\
         ],\
@@ -6485,15 +6485,15 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["browserslist", [\
-      ["npm:4.29.2", {\
-        "packageLocation": "./.yarn/cache/browserslist-npm-4.29.2-08d4c4eca3-91d11437bc.zip/node_modules/browserslist/",\
+      ["npm:4.29.3", {\
+        "packageLocation": "./.yarn/cache/browserslist-npm-4.29.3-e434930e3a-9649d4d73f.zip/node_modules/browserslist/",\
         "packageDependencies": [\
           ["baseline-browser-mapping", "npm:2.11.26"],\
-          ["browserslist", "npm:4.29.2"],\
-          ["caniuse-lite", "npm:1.0.30001812"],\
+          ["browserslist", "npm:4.29.3"],\
+          ["caniuse-lite", "npm:1.0.30001814"],\
           ["electron-to-chromium", "npm:1.5.439"],\
           ["node-releases", "npm:2.0.57"],\
-          ["update-browserslist-db", "virtual:08d4c4eca3636cf189de25a1c21d817e7a4c9b1a3b70d4e1d4d118f3090456a5fa02fae334c82121db2fd650a0deaa62d2d3b9bc8f246722a4eb152099fffbe3#npm:1.3.3"]\
+          ["update-browserslist-db", "virtual:e434930e3a0789302e9ad48e667e240b5dbd5710b425bb52786ed6ddcde029953329c4d01901798f378eda506584c8fb6c367e1a30e918928f3fbc006b19e59a#npm:1.3.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6680,10 +6680,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["caniuse-lite", [\
-      ["npm:1.0.30001812", {\
-        "packageLocation": "./.yarn/cache/caniuse-lite-npm-1.0.30001812-dc67105abc-5e9356b8c2.zip/node_modules/caniuse-lite/",\
+      ["npm:1.0.30001814", {\
+        "packageLocation": "./.yarn/cache/caniuse-lite-npm-1.0.30001814-f0fbfdefbf-387fa630ee.zip/node_modules/caniuse-lite/",\
         "packageDependencies": [\
-          ["caniuse-lite", "npm:1.0.30001812"]\
+          ["caniuse-lite", "npm:1.0.30001814"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -13684,7 +13684,7 @@ const RAW_RUNTIME_STATE =
           ["require-directory", "npm:2.1.1"],\
           ["rewire", "npm:9.0.1"],\
           ["sanitize-html", "npm:2.17.7"],\
-          ["sass", "npm:1.105.0"],\
+          ["sass", "npm:1.105.1"],\
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:22.1.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
@@ -14433,13 +14433,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sass", [\
-      ["npm:1.105.0", {\
-        "packageLocation": "./.yarn/cache/sass-npm-1.105.0-2095efa3a7-3f6cb44c3e.zip/node_modules/sass/",\
+      ["npm:1.105.1", {\
+        "packageLocation": "./.yarn/cache/sass-npm-1.105.1-098d53c46e-772b894311.zip/node_modules/sass/",\
         "packageDependencies": [\
           ["@parcel/watcher", "npm:2.6.0"],\
           ["chokidar", "npm:5.0.0"],\
           ["immutable", "npm:5.1.9"],\
-          ["sass", "npm:1.105.0"],\
+          ["sass", "npm:1.105.1"],\
           ["source-map-js", "npm:1.2.1"]\
         ],\
         "linkType": "HARD"\
@@ -15932,14 +15932,14 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:08d4c4eca3636cf189de25a1c21d817e7a4c9b1a3b70d4e1d4d118f3090456a5fa02fae334c82121db2fd650a0deaa62d2d3b9bc8f246722a4eb152099fffbe3#npm:1.3.3", {\
-        "packageLocation": "./.yarn/__virtual__/update-browserslist-db-virtual-235ffecfd2/0/cache/update-browserslist-db-npm-1.3.3-02e6a31cfe-c60c18c53b.zip/node_modules/update-browserslist-db/",\
+      ["virtual:e434930e3a0789302e9ad48e667e240b5dbd5710b425bb52786ed6ddcde029953329c4d01901798f378eda506584c8fb6c367e1a30e918928f3fbc006b19e59a#npm:1.3.3", {\
+        "packageLocation": "./.yarn/__virtual__/update-browserslist-db-virtual-c116d8f2a0/0/cache/update-browserslist-db-npm-1.3.3-02e6a31cfe-c60c18c53b.zip/node_modules/update-browserslist-db/",\
         "packageDependencies": [\
           ["@types/browserslist", null],\
-          ["browserslist", "npm:4.29.2"],\
+          ["browserslist", "npm:4.29.3"],\
           ["escalade", "npm:3.2.0"],\
           ["picocolors", "npm:1.1.1"],\
-          ["update-browserslist-db", "virtual:08d4c4eca3636cf189de25a1c21d817e7a4c9b1a3b70d4e1d4d118f3090456a5fa02fae334c82121db2fd650a0deaa62d2d3b9bc8f246722a4eb152099fffbe3#npm:1.3.3"]\
+          ["update-browserslist-db", "virtual:e434930e3a0789302e9ad48e667e240b5dbd5710b425bb52786ed6ddcde029953329c4d01901798f378eda506584c8fb6c367e1a30e918928f3fbc006b19e59a#npm:1.3.3"]\
         ],\
         "packagePeers": [\
           "@types/browserslist",\
@@ -16164,7 +16164,7 @@ const RAW_RUNTIME_STATE =
           ["@webassemblyjs/ast", "npm:1.14.1"],\
           ["@webassemblyjs/wasm-edit", "npm:1.14.1"],\
           ["@webassemblyjs/wasm-parser", "npm:1.14.1"],\
-          ["browserslist", "npm:4.29.2"],\
+          ["browserslist", "npm:4.29.3"],\
           ["chrome-trace-event", "npm:1.0.4"],\
           ["enhanced-resolve", "npm:5.25.1"],\
           ["es-module-lexer", "npm:2.3.2"],\
