@@ -1,6 +1,4 @@
-'use strict';
-
-const MultiPartValidationStep = require('app/core/steps/MultiPartValidationStep');
+import MultiPartValidationStep from 'app/core/steps/MultiPartValidationStep.js';
 
 class ValidWithFields extends MultiPartValidationStep {
 
@@ -13,4 +11,4 @@ class ValidWithFields extends MultiPartValidationStep {
     }
 }
 
-module.exports = ValidWithFields;
+export default ValidWithFields;

@@ -2,10 +2,8 @@ import chai from 'chai';
 import rewire from 'rewire';
 import ageCheckQuestionsJourney from '../../data/journeys/ageCheckQuestions.js';
 import toggledAndAgeCheckQuestionsJourney from '../../data/journeys/toggledAndAgeCheckQuestions.js';
-import { createRequire } from 'node:module';
 
 const { expect } = chai;
-const require = createRequire(import.meta.url);
 const setJourney = rewire('app/middleware/setJourney');
 
 describe('toggledAndAgeCheckQuestionsJourney', () => {
@@ -23,7 +21,7 @@ describe('toggledAndAgeCheckQuestionsJourney', () => {
             };
 
             const revert = setJourney.__set__('getBaseJourney', () => {
-                return require('test/data/journeys/ageCheckQuestions');
+                return ageCheckQuestionsJourney;
             });
 
             await setJourney(req, {});
@@ -103,7 +101,7 @@ describe('toggledAndAgeCheckQuestionsJourney', () => {
             };
 
             const revert = setJourney.__set__('getBaseJourney', () => {
-                return require('test/data/journeys/toggledAndAgeCheckQuestions');
+                return toggledAndAgeCheckQuestionsJourney;
             });
 
             await setJourney(req, res);

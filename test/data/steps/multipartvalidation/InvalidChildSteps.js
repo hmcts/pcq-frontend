@@ -1,8 +1,6 @@
-'use strict';
-
-const MultiPartValidationStep = require('app/core/steps/MultiPartValidationStep');
-const StartPage = require('app/steps/ui/startpage/index');
-const ValidWithFields = require('test/data/steps/multipartvalidation/ValidWithFields');
+import MultiPartValidationStep from 'app/core/steps/MultiPartValidationStep.js';
+import StartPage from 'app/steps/ui/startpage/index.js';
+import ValidWithFields from './ValidWithFields.js';
 
 /**
  * We are using StartPage for this test as it does not inherit from MultiPartValidationStep.
@@ -22,4 +20,4 @@ class InvalidChildSteps extends MultiPartValidationStep {
     }
 }
 
-module.exports = InvalidChildSteps;
+export default InvalidChildSteps;
