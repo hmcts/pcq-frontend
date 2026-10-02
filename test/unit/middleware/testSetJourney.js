@@ -3,12 +3,10 @@ import rewire from 'rewire';
 import defaultJourney from 'app/journeys/default.js';
 import probateJourney from 'app/journeys/probate.js';
 import toggledQuestionsJourney from '../../data/journeys/toggledQuestions.js';
-import { createRequire } from 'node:module';
+import actorDefinedJourney, { withDob, withoutDob } from '../../data/journeys/actorDefinedJourneys.js';
 
 const { expect } = chai;
-const require = createRequire(import.meta.url);
 const setJourney = rewire('app/middleware/setJourney');
-const actorDefinedJourneys = rewire('test/data/journeys/actorDefinedJourneys');
 
 describe('setJourney', () => {
     it('should set req.journey with the default journey when no form session', async () => {
@@ -98,7 +96,7 @@ describe('setJourney', () => {
         };
 
         const revert = setJourney.__set__('getBaseJourney', () => {
-            return require('test/data/journeys/toggledQuestions');
+            return toggledQuestionsJourney;
         });
 
         await setJourney(req, res);
@@ -138,10 +136,8 @@ describe('setJourney', () => {
             };
             const res = {};
 
-            const withDobJourney = actorDefinedJourneys.__get__('withDob');
-
             const revert = setJourney.__set__('getBaseJourney', () => {
-                return require('test/data/journeys/actorDefinedJourneys');
+                return actorDefinedJourney;
             });
 
             await setJourney(req, res);
@@ -151,7 +147,7 @@ describe('setJourney', () => {
                     serviceId: 'TEST',
                     actor: 'WITHDOB'
                 },
-                journey: {stepList: withDobJourney}
+                journey: {stepList: withDob}
             });
 
             revert();
@@ -168,10 +164,8 @@ describe('setJourney', () => {
             };
             const res = {};
 
-            const withoutDobJourney = actorDefinedJourneys.__get__('withoutDob');
-
             const revert = setJourney.__set__('getBaseJourney', () => {
-                return require('test/data/journeys/actorDefinedJourneys');
+                return actorDefinedJourney;
             });
 
             await setJourney(req, res);
@@ -181,7 +175,7 @@ describe('setJourney', () => {
                     serviceId: 'TEST',
                     actor: 'WITHOUTDOB'
                 },
-                journey: {stepList: withoutDobJourney}
+                journey: {stepList: withoutDob}
             });
 
             revert();
