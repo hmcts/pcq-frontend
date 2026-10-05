@@ -1,7 +1,5 @@
-'use strict';
-
-const TestWrapper = require('test/util/TestWrapper');
-const config = require('config');
+import TestWrapper from 'test/util/TestWrapper.js';
+import config from 'config';
 
 describe('cookies', () => {
     let testWrapper;

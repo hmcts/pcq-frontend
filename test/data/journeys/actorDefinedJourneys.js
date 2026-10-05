@@ -1,5 +1,3 @@
-'use strict';
-
 const getJourney = (actor) => {
     return {stepList: actor === 'withdob' ? withDob : withoutDob};
 };
@@ -79,4 +77,5 @@ const withoutDob = {
     ApplicantPregnant: 'EndPage'
 };
 
-module.exports = getJourney;
+export { withDob, withoutDob };
+export default getJourney;

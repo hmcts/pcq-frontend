@@ -1,9 +1,9 @@
-'use strict';
+import chai from 'chai';
+import nock from 'nock';
+import sinon from 'sinon';
+import optOut from 'app/middleware/optOut.js';
 
-const expect = require('chai').expect;
-const nock = require('nock');
-const sinon = require('sinon');
-const optOut = require('app/middleware/optOut');
+const { expect } = chai;
 
 describe('optOut', () => {
     let req = {};

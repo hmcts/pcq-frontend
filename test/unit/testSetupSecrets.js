@@ -1,7 +1,10 @@
-const expect = require('chai').expect;
-const {cloneDeep} = require('lodash');
-const config = require('config');
-const proxyquire = require('proxyquire');
+import chai from 'chai';
+import lodash from 'lodash';
+import config from 'config';
+import rewire from 'rewire';
+
+const { expect } = chai;
+const { cloneDeep } = lodash;
 
 const modulePath = 'app/setupSecrets';
 
@@ -22,8 +25,8 @@ describe(modulePath, () => {
             };
 
             // Update config with secret setup
-            const setupSecrets = proxyquire(modulePath,
-                {config: mockConfig});
+            const setupSecrets = rewire(modulePath);
+            setupSecrets.__set__('config', mockConfig);
             setupSecrets();
 
             expect(mockConfig.redis.password)
@@ -38,8 +41,8 @@ describe(modulePath, () => {
                 pcq: {
                 }
             };
-            const setupSecrets = proxyquire(modulePath,
-                {config: mockConfig});
+            const setupSecrets = rewire(modulePath);
+            setupSecrets.__set__('config', mockConfig);
             setupSecrets();
 
             expect(mockConfig.redis.password)
@@ -52,8 +55,8 @@ describe(modulePath, () => {
             }};
 
             // Update config with secret setup
-            const setupSecrets = proxyquire(modulePath,
-                {config: mockConfig});
+            const setupSecrets = rewire(modulePath);
+            setupSecrets.__set__('config', mockConfig);
             setupSecrets();
 
             expect(mockConfig.redis.password)

@@ -1,7 +1,8 @@
-'use strict';
+import chai from 'chai';
+import stringUtils from 'app/components/string-utils.js';
 
-const expect = require('chai').expect;
-const prefixHttps = require('app/components/string-utils').prefixHttps;
+const { expect } = chai;
+const { prefixHttps } = stringUtils;
 
 
 describe('prefixHttps', () => {

@@ -1,7 +1,5 @@
-'use strict';
-
-const TestWrapper = require('test/util/TestWrapper');
-const commonContent = require('app/resources/en/translation/common');
+import TestWrapper from 'test/util/TestWrapper.js';
+import commonContent from 'app/resources/en/translation/common.json' with { type: 'json' };
 
 class TestCommonContent {
     static runTest(page) {
@@ -24,4 +22,4 @@ class TestCommonContent {
     }
 }
 
-module.exports = TestCommonContent;
+export default TestCommonContent;

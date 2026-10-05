@@ -1,9 +1,7 @@
-'use strict';
-
-const TestWrapper = require('test/util/TestWrapper');
-const ApplicantPregnant = require('app/steps/ui/pregnant');
-const testCommonContent = require('test/component/common/testCommonContent.js');
-const config = require('config');
+import TestWrapper from 'test/util/TestWrapper.js';
+import ApplicantPregnant from 'app/steps/ui/pregnant/index.js';
+import testCommonContent from 'test/component/common/testCommonContent.js';
+import config from 'config';
 const basePath = config.app.basePath;
 
 describe('ApplicantDisabilityImplicationAreas', () => {

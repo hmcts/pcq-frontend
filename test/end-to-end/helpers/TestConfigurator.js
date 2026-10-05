@@ -1,5 +1,5 @@
 import CONF from 'config';
-import testConfig from 'test/config.js';
+import testConfig from 'test/config.mjs';
 import {v4 as uuidv4} from 'uuid';
 import chai from 'chai';
 const {assert} = chai;
