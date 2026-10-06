@@ -170,10 +170,10 @@ class Step {
         return [];
     }
 
-    persistFormData(formdata, sessionID, req) {
+    async persistFormData(formdata, sessionID, req) {
         const token = req.session.token;
         const correlationId = req.session.correlationId;
-        const formData = ServiceMapper.map(
+        const formData = await ServiceMapper.map(
             'FormData',
             [config.services.pcqBackend.url, sessionID]
         );

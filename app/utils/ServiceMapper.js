@@ -1,8 +1,9 @@
 'use strict';
 
 class ServiceMapper {
-    static map(service, params) {
-        const serviceClass = require(`app/services/${service}`);
+    static async map(service, params) {
+        const serviceModule = await import(`../services/${service}.js`);
+        const serviceClass = serviceModule.default;
         return new serviceClass(...params);
     }
 }

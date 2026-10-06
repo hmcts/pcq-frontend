@@ -1,6 +1,4 @@
-'use strict';
-
-const Service = require('./Service');
+import Service from './Service.js';
 
 class FormData extends Service {
     post(token, correlationId, data = {}) {
@@ -17,4 +15,4 @@ class FormData extends Service {
     }
 }
 
-module.exports = FormData;
+export default FormData;
