@@ -4,29 +4,30 @@ const logger = require('app/components/logger');
 
 // Static allowlist of journeys 
 const journeyMap = {
-    probate: require('app/journeys/probate'),
-    cmc: require('app/journeys/cmc'),
-    divorce: require('app/journeys/divorce'),
-    new_divorce_law: require('app/journeys/new_divorce_law'),
-    sscs: require('app/journeys/sscs'),
-    iac: require('app/journeys/iac'),
-    adoption: require('app/journeys/adoption'),
-    et: require('app/journeys/et'),
-    online_plea: require('app/journeys/online_plea'),
-    specialtribunals_cic: require('app/journeys/specialtribunals_cic'),
-    jurordigital: require('app/journeys/jurordigital'),
-    prl_ca: require('app/journeys/prl_ca'),
-    'civil-citizen-ui': require('app/journeys/civil-citizen-ui'),
-    pcs: require('app/journeys/pcs'),
-    default: require('app/journeys/default')
+    probate: () => import('../journeys/probate.js'),
+    cmc: () => import('../journeys/cmc.js'),
+    divorce: () => import('../journeys/divorce.js'),
+    new_divorce_law: () => import('../journeys/new_divorce_law.js'),
+    sscs: () => import('../journeys/sscs.js'),
+    iac: () => import('../journeys/iac.js'),
+    adoption: () => import('../journeys/adoption.js'),
+    et: () => import('../journeys/et.js'),
+    online_plea: () => import('../journeys/online_plea.js'),
+    specialtribunals_cic: () => import('../journeys/specialtribunals_cic.js'),
+    jurordigital: () => import('../journeys/jurordigital.js'),
+    prl_ca: () => import('../journeys/prl_ca.js'),
+    'civil-citizen-ui': () => import('../journeys/civil-citizen-ui.js'),
+    pcs: () => import('../journeys/pcs.js'),
+    default: () => import('../journeys/default.js')
 };
 
-const getBaseJourney = name => {
+const getBaseJourney = async name => {
     const journey = journeyMap[name.toLowerCase()];
     if (!journey) {
         throw new Error(`Unknown journey requested: ${name}`);
     }
-    return journey;
+    const journeyModule = await journey();
+    return journeyModule.default;
 };
 
 const setJourney = async (req, res) => {
@@ -35,7 +36,8 @@ const setJourney = async (req, res) => {
     const ageCheck = req.session.ageCheck;
 
     try {
-        const journey = getBaseJourney(journeyName)(actor.toLowerCase());
+        const baseJourney = await getBaseJourney(journeyName);
+        const journey = baseJourney(actor.toLowerCase());
 
         if (journey.toggledQuestions) {
             journey.skipList = await processToggledQuestions(journey.toggledQuestions, req, res);
@@ -69,7 +71,8 @@ const setJourney = async (req, res) => {
         req.session.journey = journey;
     } catch (err) {
         logger(req.session.sessionId).error(err);
-        req.session.journey = require('app/journeys/default')();
+        const defaultJourney = await import('../journeys/default.js');
+        req.session.journey = defaultJourney.default();
     }
 
     return req.session.journey;
