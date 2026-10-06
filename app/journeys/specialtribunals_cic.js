@@ -1,6 +1,6 @@
 'use strict';
 
-const AgeCheck = require('../utils/Constants');
+import AgeCheck from '../utils/Constants.js';
 
 const stepList = {
     StartPage: 'ApplicantLanguage',
@@ -48,6 +48,4 @@ const ageCheckQuestions = {
     [AgeCheck.LessThanSixteen]: []
 };
 
-module.exports = () => {
-    return {stepList, ageCheckQuestions};
-};
+export default () => ({stepList, ageCheckQuestions});

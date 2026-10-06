@@ -3,37 +3,27 @@ import rewire from 'rewire';
 import initSteps from 'app/core/initSteps.js';
 import serviceData from './testServiceData.json' with { type: 'json' };
 import path from 'node:path';
-import fs from 'node:fs';
-import { createRequire } from 'node:module';
+import { readdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 
 const { expect } = chai;
-const require = createRequire(import.meta.url);
 const JourneyMap = rewire('app/core/JourneyMap');
 const steps = initSteps([fileURLToPath(new URL('../../../app/steps/ui', import.meta.url))]);
 const StartPage = steps.StartPage;
 const EndPage = steps.EndPage;
 const ShutterPage = steps.ShutterPage;
-//requiring path and fs modules
-//joining path of directory
 const directoryPath = path.join(fileURLToPath(new URL('../../../app', import.meta.url)), 'journeys');
 
-//passsing directoryPath and callback function
-fs.readdir(directoryPath, function (err, files) {
-    //handling error
-    if (err) {
-        return console.log('Unable to scan directory: ' + err);
-    }
-    //listing all files using forEach
-    files.forEach(function (file) {
-        // your tests logic
-        console.log(file);
-        const filePathFragments = file.split('.');
-        const serviceName = filePathFragments[0];
-        if (filePathFragments[1] === 'js') {
+const files = await readdir(directoryPath);
+for (const file of files) {
+    console.log(file);
+    const filePathFragments = file.split('.');
+    const serviceName = filePathFragments[0];
+    if (filePathFragments[1] === 'js') {
+        const journeyModule = await import(`../../../app/journeys/${file}`);
+        const serviceJourney = journeyModule.default();
             describe('ServiceJourney : ' + serviceName, () => {
                 const currentStep = {};
-                const serviceJourney = require(`app/journeys/${serviceName}`)();
                 const skipStepName = serviceData.services[serviceName].skipStepName;
                 describe('stepList()', () => {
                     it('should return the journey step list without skip list', (done) => {
@@ -113,7 +103,6 @@ fs.readdir(directoryPath, function (err, files) {
                         });
                     });
                 }
-            });
-        }
-    });
-});
+        });
+    }
+}
