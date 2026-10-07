@@ -20,15 +20,15 @@
     "sass-ie8": "NODE_PATH=. sass --load-path=public app/assets/sass/application-ie8.scss:public/stylesheets/application.css --quiet --style expanded --source-map",
     "test:all": "NODE_ENV=testing yarn test -- $@ && yarn test:mutation -- $@ && yarn test:component -- $@  && yarn test:smoke -- $@ && yarn test:functional -- $@ && yarn test:a11y -- $@ ",
     "test": "yarn test:unit -- $@ && yarn test:component -- $@",
-    "test:unit": "NODE_ENV=testing ALLOW_CONFIG_MUTATIONS=true NODE_PATH=. LOG_LEVEL=error nyc mocha test/unit --reporter spec --recursive --timeout 10000",
+    "test:unit": "NODE_ENV=testing ALLOW_CONFIG_MUTATIONS=true NODE_PATH=. LOG_LEVEL=error c8 mocha test/unit --reporter spec --recursive --timeout 10000",
     "test:component": "NODE_ENV=testing ALLOW_CONFIG_MUTATIONS=true NODE_PATH=. LOG_LEVEL=error mocha test/component --reporter spec --recursive --timeout 10000",
     "test:a11y": "NODE_ENV=testing NODE_PATH=. ALLOW_CONFIG_MUTATIONS=true LOG_LEVEL=error ENABLE_TRACKING=false mocha test/accessibility --timeout 30000 --exit",
     "test:e2e": "NODE_ENV=testing NODE_PATH=. ALLOW_CONFIG_MUTATIONS=true yarn codeceptjs run -c ./test/end-to-end/",
     "test:functional": "yarn playwright install && ./bin/run-functional-tests.sh",
     "test:smoke": "./bin/run-smoke-tests.sh",
     "lint": "NODE_PATH=. eslint .",
-    "test:codecov-upload": "NODE_ENV=test NODE_PATH=. nyc --cache false _mocha './test/**/test*.js' -- -R spec && codecov",
-    "test:coverage": "NODE_ENV=testing ALLOW_CONFIG_MUTATIONS=true NODE_PATH=. nyc --cache false _mocha './test/**/test*.js'",
+    "test:codecov-upload": "NODE_ENV=test NODE_PATH=. c8 _mocha './test/**/test*.js' -- -R spec && codecov",
+    "test:coverage": "NODE_ENV=testing ALLOW_CONFIG_MUTATIONS=true NODE_PATH=. c8 _mocha './test/**/test*.js'",
     "test:mutation": "yarn createVersionFile && NODE_ENV=testing ALLOW_CONFIG_MUTATIONS=true NODE_PATH=. stryker run test/mutation/stryker.conf.mjs",
     "test:fullfunctional": "./bin/run-full-functional-tests.sh",
     "fortifyScan": "./test/java/gradlew -p test/java fortifyScan",
@@ -91,6 +91,7 @@
     "@playwright/test": "1.63.0",
     "@stryker-mutator/core": "^10.0.0",
     "@stryker-mutator/mocha-runner": "10.0.0",
+    "c8": "^12.0.0",
     "chai": "^4.3.10",
     "chokidar": "^4.0.1",
     "codeceptjs": "^4.0.0",
@@ -104,7 +105,6 @@
     "mochawesome": "^8.0.0",
     "nock": "^14.0.0",
     "nodemon": "^3.1.0",
-    "nyc": "^18.0.0",
     "pa11y": "^10.0.0",
     "permissions-policy": "^0.6.0",
     "playwright": "^1.43.1",
@@ -130,14 +130,6 @@
     "form-data": "^4.0.6",
     "@opentelemetry/core": "^2.8.0",
     "browserslist": "^4.28.7"
-  },
-  "nyc": {
-    "report-dir": "functional-output/coverage",
-    "temp-directory": "./coverage",
-    "reporter": [
-      "lcov",
-      "text"
-    ]
   },
   "packageManager": "yarn@4.18.1"
 }
