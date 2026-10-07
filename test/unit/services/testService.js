@@ -61,6 +61,16 @@ describe('Service', () => {
             expect(loggerInfo.calledOnce).to.equal(true);
             done();
         });
+
+        it('should log the message at the requested level', (done) => {
+            const loggerError = sinon.stub();
+            const logger = sinon.stub().returns({error: loggerError});
+            const service = new Service(undefined, 'sid123', {logger});
+            service.log('something failed', 'error');
+            expect(logger.calledWith('sid123')).to.equal(true);
+            expect(loggerError.calledOnceWith('something failed')).to.equal(true);
+            done();
+        });
     });
 
     describe('replacePlaceholderInPath()', () => {
