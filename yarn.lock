@@ -9124,9 +9124,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lockgraph@npm:^0.8.1":
-  version: 0.8.1
-  resolution: "lockgraph@npm:0.8.1"
+"lockgraph@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "lockgraph@npm:0.9.0"
   dependencies:
     node-fetch-native: "npm:^1.6.7"
     pako: "npm:^3.0.1"
@@ -9136,7 +9136,7 @@ __metadata:
   peerDependenciesMeta:
     "@yarnpkg/libzip":
       optional: true
-  checksum: 10/ad84072af4f279f08406fcf5ecbd5bdb62c6f8b91273b69114e37d7f7e1c8cc174f91ef70e0d9b3babece7d28dce92dedde06a414968c25a879c3163088241ec
+  checksum: 10/cff972bbb1d29cbe2efecef21de7e1ac4cc1b05b4539ba104e79d0b6797d0df1b81b83a1a403da72660d9a6783c943ae45418907c97bb90dc7598e0ce2a2ddd6
   languageName: node
   linkType: hard
 
@@ -13717,18 +13717,18 @@ __metadata:
   linkType: hard
 
 "yarn-audit-fix@npm:^11.0.0":
-  version: 11.0.5
-  resolution: "yarn-audit-fix@npm:11.0.5"
+  version: 11.1.0
+  resolution: "yarn-audit-fix@npm:11.1.0"
   dependencies:
     "@types/semver": "npm:^7.8.0"
     "@yarnpkg/libzip": "npm:^3.2.2"
     fast-glob: "npm:^3.3.3"
-    lockgraph: "npm:^0.8.1"
+    lockgraph: "npm:^0.9.0"
     minimist: "npm:^1.2.8"
     semver: "npm:^7.8.5"
   bin:
     yarn-audit-fix: target/esm/cli.mjs
-  checksum: 10/084af44903101eaf3945d627c98be6d4bcfd380bc65e8c43b0ecf60bcf80f52ad769c0099384d0d6c92afbab5d777fc67146be7f529564ad2d89f0e29a2e48ce
+  checksum: 10/0e9dfbaa0d1860ac0d5f23f704255d999a8f87aad6621ee531916d35fdf94511cf78c088ea265ca85ef929328d702383519c32e3fe0b186f1c13b4bbd7c3034e
   languageName: node
   linkType: hard
 
