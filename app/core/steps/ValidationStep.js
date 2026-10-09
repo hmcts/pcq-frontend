@@ -1,10 +1,13 @@
-'use strict';
+import {createRequire} from 'node:module';
+import lodash from 'lodash';
+import Ajv from 'ajv';
+import addFormats from 'ajv-formats';
+import Step from './Step.js';
+import error from '../../components/error.js';
 
-const {mapValues, reduce} = require('lodash');
-const Ajv = require('ajv').default;
-const addFormats = require('ajv-formats');
-const Step = require('app/core/steps/Step');
-const generateErrors = require('app/components/error').generateErrors;
+const require = createRequire(import.meta.url);
+const {mapValues, reduce} = lodash;
+const {generateErrors} = error;
 
 const validator = new Ajv({allErrors: true, strict: false, addUsedSchema: false});
 validator.addMetaSchema(require('ajv/dist/refs/json-schema-draft-06.json'));
@@ -69,4 +72,5 @@ class ValidationStep extends Step {
     }
 }
 
-module.exports = ValidationStep;
+export default ValidationStep;
+export {ValidationStep as 'module.exports'};
