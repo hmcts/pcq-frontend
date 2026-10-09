@@ -4091,15 +4091,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"append-transform@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "append-transform@npm:2.0.0"
-  dependencies:
-    default-require-extensions: "npm:^3.0.0"
-  checksum: 10/f26f393bf7a428fd1bb18f2758a819830a582243310c5170edb3f98fdc5a535333d02b952f7c2d9b14522bd8ead5b132a0b15000eca18fa9f49172963ebbc231
-  languageName: node
-  linkType: hard
-
 "applicationinsights@npm:~3.17.0":
   version: 3.17.0
   resolution: "applicationinsights@npm:3.17.0"
@@ -10534,6 +10525,7 @@ __metadata:
     ajv-formats: "npm:^3.0.0"
     app: "link:./app"
     applicationinsights: "npm:~3.17.0"
+    c8: "npm:^12.0.0"
     chai: "npm:^4.3.10"
     chokidar: "npm:^4.0.1"
     co: "npm:^4.6.0"
