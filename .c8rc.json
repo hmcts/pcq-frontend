@@ -1,0 +1,9 @@
+{
+  "all": true,
+  "src": ["app"],
+  "include": ["app/**/*.js"],
+  "exclude": ["app/assets/**"],
+  "reports-dir": "functional-output/coverage",
+  "temp-directory": "./coverage",
+  "reporter": ["lcov", "text"]
+}

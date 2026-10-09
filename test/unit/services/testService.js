@@ -1,9 +1,8 @@
 import chai from 'chai';
-import rewire from 'rewire';
 import sinon from 'sinon';
+import Service from '../../../app/services/Service.js';
 
 const { expect } = chai;
-const Service = rewire('app/services/Service');
 
 describe('Service', () => {
     describe('get()', () => {
@@ -39,35 +38,37 @@ describe('Service', () => {
     });
 
     describe('log()', () => {
-        let revert;
-
-        beforeEach(() => {
-            revert = Service.__set__('logger', sinon.stub().returns({
-                info: () => true
-            }));
-        });
-
-        afterEach(() => {
-            revert();
-        });
-
         it('should log a message without a sessionId', (done) => {
-            const service = new Service();
+            const loggerInfo = sinon.stub();
+            const logger = sinon.stub().returns({info: loggerInfo});
+            const service = new Service(undefined, undefined, {logger});
             service.log();
-            expect(Service.__get__('logger').calledOnce).to.equal(true);
-            expect(Service.__get__('logger').calledWith('Init')).to.equal(true);
-            revert();
+            expect(logger.calledOnce).to.equal(true);
+            expect(logger.calledWith('Init')).to.equal(true);
+            expect(loggerInfo.calledOnce).to.equal(true);
             done();
         });
 
         it('should log a message with a sessionId', (done) => {
             const sessionId = 'sid123';
-            const service = new Service();
+            const loggerInfo = sinon.stub();
+            const logger = sinon.stub().returns({info: loggerInfo});
+            const service = new Service(undefined, undefined, {logger});
             service.sessionId = sessionId;
             service.log();
-            expect(Service.__get__('logger').calledOnce).to.equal(true);
-            expect(Service.__get__('logger').calledWith(sessionId)).to.equal(true);
-            revert();
+            expect(logger.calledOnce).to.equal(true);
+            expect(logger.calledWith(sessionId)).to.equal(true);
+            expect(loggerInfo.calledOnce).to.equal(true);
+            done();
+        });
+
+        it('should log the message at the requested level', (done) => {
+            const loggerError = sinon.stub();
+            const logger = sinon.stub().returns({error: loggerError});
+            const service = new Service(undefined, 'sid123', {logger});
+            service.log('something failed', 'error');
+            expect(logger.calledWith('sid123')).to.equal(true);
+            expect(loggerError.calledOnceWith('something failed')).to.equal(true);
             done();
         });
     });
@@ -85,60 +86,69 @@ describe('Service', () => {
 
     describe('fetchJson()', () => {
         it('should return a json response', (done) => {
-            const revert = Service.__set__('asyncFetch', class {
-                static fetch() {
-                    return Promise.resolve({result: 'something'});
-                }
-            });
-            const service = new Service();
+            const asyncFetch = {
+                fetch: (url, options, parseBody) => Promise.resolve(parseBody({json: () => ({result: 'something'})}))
+            };
+            const service = new Service(undefined, undefined, {asyncFetch});
             service
                 .fetchJson('http://localhost/forms', {})
                 .then((res) => {
                     expect(res).to.deep.equal({result: 'something'});
-                    revert();
                     done();
                 })
                 .catch((err) => {
                     done(err);
                 });
+        });
+
+        it('should resolve with the error when the fetch fails', async () => {
+            const error = new Error('json failure');
+            const asyncFetch = {fetch: sinon.stub().rejects(error)};
+            const service = new Service(undefined, undefined, {asyncFetch});
+            const res = await service.fetchJson('http://localhost/forms', {});
+            expect(res).to.equal(error);
         });
     });
 
     describe('fetchText()', () => {
         it('should return a text response', (done) => {
-            const revert = Service.__set__('asyncFetch', class {
-                static fetch() {
-                    return Promise.resolve('something');
-                }
-            });
-            const service = new Service();
+            const asyncFetch = {
+                fetch: (url, options, parseBody) => Promise.resolve(parseBody({text: () => 'something'}))
+            };
+            const service = new Service(undefined, undefined, {asyncFetch});
             service
                 .fetchText('http://localhost/forms', {})
                 .then((res) => {
                     expect(res).to.equal('something');
-                    revert();
                     done();
                 })
                 .catch((err) => {
                     done(err);
                 });
         });
+
+        it('should resolve with the error when the fetch fails', async () => {
+            const error = new Error('text failure');
+            const asyncFetch = {fetch: sinon.stub().rejects(error)};
+            const service = new Service(undefined, undefined, {asyncFetch});
+            const res = await service.fetchText('http://localhost/forms', {});
+            expect(res).to.equal(error);
+        });
     });
 
     describe('fetchBuffer()', () => {
         it('should return a buffer response', (done) => {
-            const buffer = new Buffer('really interesting file contents');
-            const revert = Service.__set__('asyncFetch', class {
-                static fetch() {
-                    return Promise.resolve(buffer);
-                }
-            });
-            const service = new Service();
+            const buffer = Buffer.from('really interesting file contents');
+            const asyncFetch = {
+                fetch: (url, options, parseBody) => Promise.resolve(parseBody({
+                    arrayBuffer: () => Promise.resolve(buffer)
+                }))
+            };
+            const service = new Service(undefined, undefined, {asyncFetch});
             service
                 .fetchBuffer('http://localhost/forms', {})
                 .then((res) => {
-                    expect(res).to.equal(buffer);
-                    revert();
+                    expect(res.equals(buffer)).to.equal(true);
                     done();
                 })
                 .catch((err) => {
@@ -158,6 +168,23 @@ describe('Service', () => {
                     expect(err.message).to.contain('fetch failed');
                     done();
                 });
+        });
+
+        it('should log the formatted error and rethrow when the fetch fails', async () => {
+            const asyncFetch = {fetch: sinon.stub().rejects(new Error('buffer failure'))};
+            const service = new Service(undefined, undefined, {asyncFetch});
+            service.log = sinon.spy();
+            let caught;
+            try {
+                await service.fetchBuffer('http://localhost/forms', {});
+            } catch (err) {
+                caught = err;
+            }
+            expect(caught).to.be.instanceOf(Error);
+            expect(caught.message).to.contain('buffer failure');
+            expect(service.log.calledOnce).to.equal(true);
+            expect(service.log.firstCall.args[0]).to.contain('Fetch buffer error: Error: buffer failure');
+            expect(service.log.firstCall.args[1]).to.equal('error');
         });
     });
 
@@ -180,6 +207,22 @@ describe('Service', () => {
             expect(options.body).to.equal(JSON.stringify(data));
             expect(options.headers.get('Content-Type')).to.equal('application/json');
             done();
+        });
+    });
+
+    describe('fetchOptions() defaults', () => {
+        it('should default to empty headers when none are provided', () => {
+            const service = new Service();
+            const options = service.fetchOptions({a: 1}, 'GET');
+            expect(options.method).to.equal('GET');
+            expect(options.body).to.equal(JSON.stringify({a: 1}));
+            expect(Array.from(options.headers.keys())).to.have.lengthOf(0);
+        });
+
+        it('should serialise undefined data to an undefined body', () => {
+            const service = new Service();
+            const options = service.fetchOptions(undefined, 'GET', {});
+            expect(options.body).to.equal(undefined);
         });
     });
 
