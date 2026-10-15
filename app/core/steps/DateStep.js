@@ -1,9 +1,7 @@
-'use strict';
-
-const ValidationStep = require('app/core/steps/ValidationStep');
-const moment = require('moment');
-const config = require('config');
-const utils = require('app/components/step-utils');
+import ValidationStep from './ValidationStep.js';
+import moment from 'moment';
+import config from 'config';
+import utils from '../../components/step-utils.js';
 
 class DateStep extends ValidationStep {
 
@@ -21,7 +19,7 @@ class DateStep extends ValidationStep {
         dateNames.forEach((dateName) => {
             const [day, month, year] = [`${dateName}-day`, `${dateName}-month`, `${dateName}-year`];
 
-            const setDate = (d) => (ctx[d] ? parseInt(ctx[d]) || ctx[d] : ctx[d]);
+            const setDate = (d) => (ctx[d] ? Number.parseInt(ctx[d]) || ctx[d] : ctx[d]);
             ctx[day] = setDate(day);
             ctx[month] = setDate(month);
             ctx[year] = setDate(year);
@@ -40,4 +38,5 @@ class DateStep extends ValidationStep {
     }
 }
 
-module.exports = DateStep;
+export default DateStep;
+export {DateStep as 'module.exports'};

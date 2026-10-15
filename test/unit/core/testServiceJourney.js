@@ -1,13 +1,12 @@
 import chai from 'chai';
-import rewire from 'rewire';
 import initSteps from 'app/core/initSteps.js';
+import JourneyMap from 'app/core/JourneyMap.js';
 import serviceData from './testServiceData.json' with { type: 'json' };
 import path from 'node:path';
 import { readdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 
 const { expect } = chai;
-const JourneyMap = rewire('app/core/JourneyMap');
 const steps = initSteps([fileURLToPath(new URL('../../../app/steps/ui', import.meta.url))]);
 const StartPage = steps.StartPage;
 const EndPage = steps.EndPage;
@@ -37,20 +36,17 @@ for (const file of files) {
                 });
                 describe('nextStep()', () => {
                     let journey;
-                    let revert;
+                    let stepMap;
                     const nextStep = serviceData.services[serviceName].nextStep;
                     const nextStepName = serviceData.services[serviceName].nextStepName;
                     beforeEach(() => {
-                        revert = JourneyMap.__set__('steps', nextStep);
+                        stepMap = nextStep;
                         journey = serviceJourney;
-                    });
-                    afterEach(() => {
-                        revert();
                     });
                     it('should skip a step and go to next step as mentioned in service', (done) => {
                         currentStep.name = serviceData.services[serviceName].currentStep;
                         const ctx = {};
-                        const journeyMap = new JourneyMap(journey);
+                        const journeyMap = new JourneyMap(journey, stepMap);
                         const nextStep = journeyMap.nextStep(currentStep, ctx);
                         expect(nextStep).to.deep.equal(nextStepName);
                         done();

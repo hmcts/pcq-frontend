@@ -1,13 +1,17 @@
-'use strict';
+import {createRequire} from 'node:module';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import requireDir from 'require-directory';
+import loggerFactory from '../components/logger.js';
 
-const requireDir = require('require-directory');
+const require = createRequire(import.meta.url);
 const i18next = require('i18next');
-const logger = require('app/components/logger')('Init');
-const path = require('path');
+const logger = loggerFactory('Init');
+const requireContext = {filename: fileURLToPath(import.meta.url), require};
 const steps = {};
 
 const initStep = (filePath, language) => {
-    const stepObject = require(filePath);
+    const stepObject = requireContext.require(filePath);
     const filePathFragments = filePath.search('ui') >= 0 ? filePath.split(`${path.sep}ui${path.sep}`) : filePath.split(`${path.sep}action${path.sep}`);
     let resourcePath = filePathFragments[1];
     resourcePath = resourcePath.replace(`${path.sep}index.js`, '');
@@ -21,7 +25,7 @@ const initStep = (filePath, language) => {
     let schema;
 
     try {
-        schema = require(schemaPath);
+        schema = requireContext.require(schemaPath);
     } catch {
         schema = {};
     }
@@ -41,14 +45,14 @@ const initSteps = (stepLocations, language = 'en') => {
         return false;
     };
     for (const location of stepLocations) {
-        requireDir(module, location, {include: calculatePath});
+        requireDir(requireContext, location, {include: calculatePath});
     }
 
     return steps;
 };
 
 const initI18Next = () => {
-    const content = requireDir(module, '../', {include: /resources/});
+    const content = requireDir(requireContext, '../', {include: /resources/});
     i18next.createInstance();
     i18next.init(content, (err) => {
         if (err) {
@@ -57,6 +61,9 @@ const initI18Next = () => {
     });
 };
 
-module.exports = initSteps;
-module.exports.initI18Next = initI18Next;
-module.exports.steps = steps;
+initSteps.initI18Next = initI18Next;
+initSteps.steps = steps;
+
+export default initSteps;
+export {initI18Next, steps};
+export {initSteps as 'module.exports'};
