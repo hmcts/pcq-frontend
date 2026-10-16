@@ -73,18 +73,20 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
             contentSecurityPolicy: false,
 
             referrerPolicy: {
-            policy: 'origin'
+                policy: 'origin'
             },
 
             crossOriginOpenerPolicy: {
-            policy: 'same-origin'
+                policy: 'same-origin'
             },
 
             crossOriginEmbedderPolicy: {
-            policy: 'credentialless'
+                policy: 'credentialless'
             },
 
-            crossOriginResourcePolicy: false
+            crossOriginResourcePolicy: {
+                policy: 'same-origin'
+            }
         })
      );
 
