@@ -136,7 +136,9 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
                 'tagmanager.google.com',
                 'fonts.googleapis.com'
             ],
-            frameAncestors: ['\'self\'']
+            frameAncestors: ['\'self\''],
+            formAction: ['\'self\'']
+            
         },
         useDefaults: false
     }));
