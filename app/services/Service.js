@@ -1,17 +1,18 @@
-'use strict';
+import logger from '../components/logger.js';
+import config from 'config';
+import formatUrl from '../utils/FormatUrl.js';
+import AsyncFetch from '../utils/AsyncFetch.js';
 
-const logger = require('app/components/logger');
-const config = require('config');
-const formatUrl = require('app/utils/FormatUrl');
-const AsyncFetch = require('app/utils/AsyncFetch');
 const asyncFetch = new AsyncFetch();
 
 class Service {
-    constructor(endpoint, sessionId) {
+    constructor(endpoint, sessionId, dependencies = {}) {
         this.endpoint = endpoint;
         this.sessionId = sessionId;
         this.config = config;
         this.formatUrl = formatUrl;
+        this.logger = dependencies.logger ?? logger;
+        this.asyncFetch = dependencies.asyncFetch ?? asyncFetch;
     }
 
     get() {
@@ -32,7 +33,7 @@ class Service {
 
     log(message, level = 'info') {
         const sessionId = this.sessionId ? this.sessionId : 'Init';
-        logger(sessionId)[level](message);
+        this.logger(sessionId)[level](message);
     }
 
     replacePlaceholderInPath(path, placeholder, value) {
@@ -40,21 +41,21 @@ class Service {
     }
 
     fetchJson(url, fetchOptions) {
-        return asyncFetch
+        return this.asyncFetch
             .fetch(url, fetchOptions, res => res.json())
             .then(json => json)
             .catch(err => err);
     }
 
     fetchText(url, fetchOptions) {
-        return asyncFetch
+        return this.asyncFetch
             .fetch(url, fetchOptions, res => res.text())
             .then(text => text)
             .catch(err => err);
     }
 
     fetchBuffer(url, fetchOptions) {
-        return asyncFetch
+        return this.asyncFetch
             .fetch(url, fetchOptions, res => res.arrayBuffer().then(buffer => Buffer.from(buffer)))
             .then(buffer => buffer)
             .catch(err => {
@@ -80,4 +81,4 @@ class Service {
     }
 }
 
-module.exports = Service;
+export default Service;
