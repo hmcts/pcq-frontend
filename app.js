@@ -139,7 +139,15 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
                 'fonts.googleapis.com'
             ],
             frameAncestors: ['\'self\''],
-            formAction: ['\'self\'']
+            formAction: [
+                '\'self\'',
+                'https://*.service.gov.uk',
+                'https://*.cjscp.org.uk',
+                'https://*.platform.hmcts.net',
+                'https://*.staging.apps.hmcts.net',
+                'https://*.test.gov.uk',
+                'https://*.apps.hmcts.net'
+            ]
             
         },
         useDefaults: false
