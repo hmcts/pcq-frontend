@@ -62,7 +62,7 @@ withNightlyPipeline(type, product, component) {
         enableSecurityScan(
           urlExclusions: urlExclusions
         )
-      }
+      //}
     }
 
     afterAlways('fullFunctionalTest') {
