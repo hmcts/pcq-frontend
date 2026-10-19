@@ -41,7 +41,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     app.set('view engine', 'html');
     app.set('views', ['app/steps', 'app/views']);
 
-    const isDev = app.get('env') === 'development';
+    const isDev = app.get('env') === 'dev';
 
     const njkEnv = nunjucks.configure([
         'app/steps',
@@ -208,7 +208,6 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         next();
     });
 
-    const isProduction = config.environment === 'prod' || config.environment === 'production';
     app.set('trust proxy', 1);
     // Support session data
     app.use(session({
@@ -219,7 +218,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         cookie: {
             httpOnly: config.redis.cookie.httpOnly,
             sameSite: config.redis.cookie.sameSite,
-            secure: isProduction ? true : config.redis.cookie.secure
+            secure: !isDev ? true : config.redis.cookie.secure
         },
         store: utils.getStore(config.redis, session)
     }));
@@ -331,7 +330,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     // Start the app
     let http;
 
-    if (['development', 'testing'].includes(config.nodeEnvironment)) {
+    if (['testing'].includes(config.nodeEnvironment)) {
         const sslDirectory = path.join(__dirname, 'app', 'resources', 'localhost-ssl');
         const sslOptions = {
             minVersion: 'TLSv1.2',
@@ -350,6 +349,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     }
 
     // PCQ Invoker
+    const isProduction = config.environment === 'prod' || config.environment === 'production';
     if (!isProduction && String(config.invoker.enabled).toLowerCase() === 'true') {
         invoker.addTo(app);
     }
