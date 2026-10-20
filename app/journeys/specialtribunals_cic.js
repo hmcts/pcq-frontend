@@ -48,4 +48,6 @@ const ageCheckQuestions = {
     [AgeCheck.LessThanSixteen]: []
 };
 
-export default () => ({stepList, ageCheckQuestions});
+const specialTribunalsCicJourney = () => ({stepList, ageCheckQuestions});
+
+export default specialTribunalsCicJourney;
