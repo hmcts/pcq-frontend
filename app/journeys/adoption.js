@@ -37,4 +37,6 @@ const stepList = {
     ApplicantDisabilityImplicationAreas: 'EndPage'
 };
 
-export default () => ({stepList});
+const adoptionJourney = () => ({stepList});
+
+export default adoptionJourney;

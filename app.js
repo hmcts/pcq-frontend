@@ -73,18 +73,20 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
             contentSecurityPolicy: false,
 
             referrerPolicy: {
-            policy: 'origin'
+                policy: 'origin'
             },
 
             crossOriginOpenerPolicy: {
-            policy: 'same-origin'
+                policy: 'same-origin'
             },
 
             crossOriginEmbedderPolicy: {
-            policy: 'credentialless'
+                policy: 'credentialless'
             },
 
-            crossOriginResourcePolicy: false
+            crossOriginResourcePolicy: {
+                policy: 'same-origin'
+            }
         })
      );
 
@@ -136,7 +138,17 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
                 'tagmanager.google.com',
                 'fonts.googleapis.com'
             ],
-            frameAncestors: ['\'self\'']
+            frameAncestors: ['\'self\''],
+            formAction: [
+                '\'self\'',
+                'https://*.service.gov.uk',
+                'https://*.cjscp.org.uk',
+                'https://*.platform.hmcts.net',
+                'https://*.staging.apps.hmcts.net',
+                'https://*.test.gov.uk',
+                'https://*.apps.hmcts.net'
+            ]
+            
         },
         useDefaults: false
     }));
