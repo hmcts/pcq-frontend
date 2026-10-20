@@ -41,14 +41,14 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     app.set('view engine', 'html');
     app.set('views', ['app/steps', 'app/views']);
 
-    const isDev = app.get('env') === 'dev';
+    const isDevOrTesting = ['dev', 'testing'].includes(app.get('env'));
 
     const njkEnv = nunjucks.configure([
         'app/steps',
         'app/views',
         govUkFrontendPath
     ], {
-        noCache: isDev,
+        noCache: isDevOrTesting,
         express: app
     });
 
@@ -218,7 +218,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         cookie: {
             httpOnly: config.redis.cookie.httpOnly,
             sameSite: config.redis.cookie.sameSite,
-            secure: !isDev ? true : config.redis.cookie.secure
+            secure: !isDevOrTesting ? true : config.redis.cookie.secure
         },
         store: utils.getStore(config.redis, session)
     }));
