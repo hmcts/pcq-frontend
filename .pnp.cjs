@@ -67,7 +67,7 @@ const RAW_RUNTIME_STATE =
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.5.3"],\
           ["immutable", "npm:5.1.9"],\
           ["ioredis", "npm:6.0.0"],\
-          ["js-yaml", "npm:5.4.3"],\
+          ["js-yaml", "npm:5.5.0"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["lodash", "npm:4.18.1"],\
           ["mocha", "npm:11.8.0"],\
@@ -5885,6 +5885,13 @@ const RAW_RUNTIME_STATE =
           ["argparse", "npm:2.0.1"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:3.0.3", {\
+        "packageLocation": "./.yarn/cache/argparse-npm-3.0.3-1e6689871e-6834e247fe.zip/node_modules/argparse/",\
+        "packageDependencies": [\
+          ["argparse", "npm:3.0.3"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["aria-query", [\
@@ -10894,11 +10901,11 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:5.4.3", {\
-        "packageLocation": "./.yarn/cache/js-yaml-npm-5.4.3-37b77b0eef-2409d1238e.zip/node_modules/js-yaml/",\
+      ["npm:5.5.0", {\
+        "packageLocation": "./.yarn/cache/js-yaml-npm-5.5.0-9105c02476-c01359a4fe.zip/node_modules/js-yaml/",\
         "packageDependencies": [\
-          ["argparse", "npm:2.0.1"],\
-          ["js-yaml", "npm:5.4.3"]\
+          ["argparse", "npm:3.0.3"],\
+          ["js-yaml", "npm:5.5.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -13272,7 +13279,7 @@ const RAW_RUNTIME_STATE =
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.5.3"],\
           ["immutable", "npm:5.1.9"],\
           ["ioredis", "npm:6.0.0"],\
-          ["js-yaml", "npm:5.4.3"],\
+          ["js-yaml", "npm:5.5.0"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["lodash", "npm:4.18.1"],\
           ["mocha", "npm:11.8.0"],\
@@ -15732,7 +15739,7 @@ const RAW_RUNTIME_STATE =
           ["envinfo", "npm:7.21.0"],\
           ["import-local", "npm:3.2.0"],\
           ["interpret", "npm:3.1.1"],\
-          ["js-yaml", "npm:5.4.3"],\
+          ["js-yaml", "npm:5.5.0"],\
           ["json5", null],\
           ["rechoir", "npm:0.8.0"],\
           ["toml", null],\
