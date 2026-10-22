@@ -84,7 +84,7 @@ const RAW_RUNTIME_STATE =
           ["proxyquire", "npm:2.1.3"],\
           ["require-directory", "npm:2.1.1"],\
           ["rewire", "npm:9.0.1"],\
-          ["sanitize-html", "npm:2.18.0"],\
+          ["sanitize-html", "npm:2.18.1"],\
           ["sass", "npm:1.105.1"],\
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:22.1.0"],\
@@ -7670,15 +7670,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["deepmerge", [\
-      ["npm:4.3.1", {\
-        "packageLocation": "./.yarn/cache/deepmerge-npm-4.3.1-4f751a0844-058d9e1b0f.zip/node_modules/deepmerge/",\
-        "packageDependencies": [\
-          ["deepmerge", "npm:4.3.1"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["deepmerge-ts", [\
       ["npm:8.0.2", {\
         "packageLocation": "./.yarn/cache/deepmerge-ts-npm-8.0.2-81c70e8a92-43c1ae06c0.zip/node_modules/deepmerge-ts/",\
@@ -13296,7 +13287,7 @@ const RAW_RUNTIME_STATE =
           ["proxyquire", "npm:2.1.3"],\
           ["require-directory", "npm:2.1.1"],\
           ["rewire", "npm:9.0.1"],\
-          ["sanitize-html", "npm:2.18.0"],\
+          ["sanitize-html", "npm:2.18.1"],\
           ["sass", "npm:1.105.1"],\
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:22.1.0"],\
@@ -14000,17 +13991,16 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sanitize-html", [\
-      ["npm:2.18.0", {\
-        "packageLocation": "./.yarn/cache/sanitize-html-npm-2.18.0-4f9873cc3c-cd67391991.zip/node_modules/sanitize-html/",\
+      ["npm:2.18.1", {\
+        "packageLocation": "./.yarn/cache/sanitize-html-npm-2.18.1-718523d455-930635fcd6.zip/node_modules/sanitize-html/",\
         "packageDependencies": [\
-          ["deepmerge", "npm:4.3.1"],\
           ["escape-string-regexp", "npm:4.0.0"],\
           ["htmlparser2", "npm:10.1.0"],\
           ["is-plain-object", "npm:5.1.0"],\
           ["launder", "npm:1.7.2"],\
           ["parse-srcset", "npm:1.0.2"],\
           ["postcss", "npm:8.5.29"],\
-          ["sanitize-html", "npm:2.18.0"]\
+          ["sanitize-html", "npm:2.18.1"]\
         ],\
         "linkType": "HARD"\
       }]\
