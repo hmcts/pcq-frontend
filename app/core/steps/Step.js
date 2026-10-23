@@ -103,7 +103,7 @@ class Step {
         const contentCtx = {...formdata, ...ctx, ...this.commonProps};
         this.i18next.changeLanguage(language);
 
-        this.content = mapValues(this.content, (value, key) => this.i18next.t(`${this.resourcePath.replace(/\//g, '.')}.${key}`, contentCtx));
+        this.content = mapValues(this.content, (value, key) => this.i18next.t(`${this.resourcePath.replaceAll('/', '.')}.${key}`, contentCtx));
 
         if (formdata?.serviceId && formdata.actor) {
             let variableContent;
@@ -158,7 +158,7 @@ class Step {
         if (fields) {
             Object.keys(fields).forEach(field => {
                 if (!this.nonIntegerFields().includes(field)) {
-                    fields[field] = parseInt(fields[field]);
+                    fields[field] = Number.parseInt(fields[field]);
                 }
             });
         }

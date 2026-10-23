@@ -21,7 +21,7 @@ class DateStep extends ValidationStep {
         dateNames.forEach((dateName) => {
             const [day, month, year] = [`${dateName}-day`, `${dateName}-month`, `${dateName}-year`];
 
-            const setDate = (d) => (ctx[d] ? parseInt(ctx[d]) || ctx[d] : ctx[d]);
+            const setDate = (d) => (ctx[d] ? Number.parseInt(ctx[d]) || ctx[d] : ctx[d]);
             ctx[day] = setDate(day);
             ctx[month] = setDate(month);
             ctx[year] = setDate(year);
