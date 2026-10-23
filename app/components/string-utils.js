@@ -34,7 +34,7 @@ function isUrlWhitelisted(url) {
         const isPrefixWhitelisted = whitelistedPrefixes.some(prefix => url.startsWith(prefix));
 
         return isDomainWhitelisted || isPrefixWhitelisted;
-    } catch (e) {
+    } catch {
         // Return false if the URL is invalid
         return false;
     }
