@@ -6313,17 +6313,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["body-parser", [\
-      ["npm:2.3.0", {\
-        "packageLocation": "./.yarn/cache/body-parser-npm-2.3.0-c6f573225c-94f741ff52.zip/node_modules/body-parser/",\
+      ["npm:2.4.0", {\
+        "packageLocation": "./.yarn/cache/body-parser-npm-2.4.0-3b713870fe-e34971abf7.zip/node_modules/body-parser/",\
         "packageDependencies": [\
-          ["body-parser", "npm:2.3.0"],\
+          ["body-parser", "npm:2.4.0"],\
           ["bytes", "npm:3.1.2"],\
           ["content-type", "npm:2.1.0"],\
           ["debug", "virtual:643ed7cc338bcf145a82d8b05b3bef6bcf150ca545df386225596f10ce53cc90b88b3ca83e348ade1ccea5f3f8e76c92d2f0e2ba544da60d40aff9921c56872d#npm:4.4.3"],\
           ["http-errors", "npm:2.0.1"],\
           ["iconv-lite", "npm:0.7.3"],\
           ["on-finished", "npm:2.4.1"],\
-          ["qs", "npm:6.16.0"],\
+          ["qs", "npm:6.16.1"],\
           ["raw-body", "npm:3.0.2"],\
           ["type-is", "npm:2.1.0"]\
         ],\
@@ -8713,7 +8713,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["accepts", "npm:1.3.8"],\
           ["array-flatten", "npm:1.1.1"],\
-          ["body-parser", "npm:2.3.0"],\
+          ["body-parser", "npm:2.4.0"],\
           ["content-disposition", "npm:0.5.4"],\
           ["content-type", "npm:1.0.5"],\
           ["cookie", "npm:0.7.2"],\
@@ -8750,7 +8750,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/express-npm-5.2.1-d1e97b99e1-4aa545d897.zip/node_modules/express/",\
         "packageDependencies": [\
           ["accepts", "npm:2.0.0"],\
-          ["body-parser", "npm:2.3.0"],\
+          ["body-parser", "npm:2.4.0"],\
           ["content-disposition", "npm:1.1.0"],\
           ["content-type", "npm:1.0.5"],\
           ["cookie", "npm:0.7.2"],\
@@ -13465,6 +13465,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["es-define-property", "npm:1.0.1"],\
           ["qs", "npm:6.16.0"],\
+          ["side-channel", "npm:1.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:6.16.1", {\
+        "packageLocation": "./.yarn/cache/qs-npm-6.16.1-9b77e54f12-e33e0a5cee.zip/node_modules/qs/",\
+        "packageDependencies": [\
+          ["es-define-property", "npm:1.0.1"],\
+          ["qs", "npm:6.16.1"],\
           ["side-channel", "npm:1.1.1"]\
         ],\
         "linkType": "HARD"\
