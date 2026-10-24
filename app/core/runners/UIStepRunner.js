@@ -1,8 +1,10 @@
-'use strict';
+import {createRequire} from 'node:module';
+import co from 'co';
+import lodash from 'lodash';
+import FormatUrl from '../../utils/FormatUrl.js';
 
-const co = require('co');
-const {curry, isEmpty, forEach, omit, set} = require('lodash');
-const FormatUrl = require('app/utils/FormatUrl');
+const require = createRequire(import.meta.url);
+const {curry, isEmpty, forEach, omit, set} = lodash;
 
 class UIStepRunner {
 
@@ -117,4 +119,5 @@ class UIStepRunner {
     }
 }
 
-module.exports = UIStepRunner;
+export default UIStepRunner;
+export {UIStepRunner as 'module.exports'};

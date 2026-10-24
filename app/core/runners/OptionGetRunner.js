@@ -1,6 +1,7 @@
-'use strict';
+import {createRequire} from 'node:module';
+import UIStepRunner from './UIStepRunner.js';
 
-const UIStepRunner = require('app/core/runners/UIStepRunner');
+const require = createRequire(import.meta.url);
 
 class OptionGetRunner extends UIStepRunner {
 
@@ -22,4 +23,5 @@ class OptionGetRunner extends UIStepRunner {
     }
 }
 
-module.exports = OptionGetRunner;
+export default OptionGetRunner;
+export {OptionGetRunner as 'module.exports'};
