@@ -1725,7 +1725,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@hono/node-server", "virtual:74f65b1d832f59c0b51367c06867e5474a5e83d11d70539d31eced87fc380ad166acf908e8b8ce38552781546bd2b31b612fc09c0c2e32c6cdea3c2d4ad25804#npm:2.1.1"],\
           ["@types/hono", null],\
-          ["hono", "npm:4.13.10"]\
+          ["hono", "npm:4.13.13"]\
         ],\
         "packagePeers": [\
           "@types/hono",\
@@ -2367,7 +2367,7 @@ const RAW_RUNTIME_STATE =
           ["eventsource-parser", "npm:3.1.1"],\
           ["express", "npm:5.2.1"],\
           ["express-rate-limit", "virtual:74f65b1d832f59c0b51367c06867e5474a5e83d11d70539d31eced87fc380ad166acf908e8b8ce38552781546bd2b31b612fc09c0c2e32c6cdea3c2d4ad25804#npm:8.7.0"],\
-          ["hono", "npm:4.13.10"],\
+          ["hono", "npm:4.13.13"],\
           ["jose", "npm:6.2.12"],\
           ["json-schema-typed", "npm:8.0.2"],\
           ["pkce-challenge", "npm:5.0.1"],\
@@ -5688,7 +5688,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["ajv", "npm:8.20.0"],\
           ["fast-deep-equal", "npm:3.1.3"],\
-          ["fast-uri", "npm:3.1.8"],\
+          ["fast-uri", "npm:3.1.9"],\
           ["json-schema-traverse", "npm:1.0.0"],\
           ["require-from-string", "npm:2.0.2"]\
         ],\
@@ -6313,17 +6313,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["body-parser", [\
-      ["npm:2.3.0", {\
-        "packageLocation": "./.yarn/cache/body-parser-npm-2.3.0-c6f573225c-94f741ff52.zip/node_modules/body-parser/",\
+      ["npm:2.4.0", {\
+        "packageLocation": "./.yarn/cache/body-parser-npm-2.4.0-3b713870fe-e34971abf7.zip/node_modules/body-parser/",\
         "packageDependencies": [\
-          ["body-parser", "npm:2.3.0"],\
+          ["body-parser", "npm:2.4.0"],\
           ["bytes", "npm:3.1.2"],\
           ["content-type", "npm:2.1.0"],\
           ["debug", "virtual:643ed7cc338bcf145a82d8b05b3bef6bcf150ca545df386225596f10ce53cc90b88b3ca83e348ade1ccea5f3f8e76c92d2f0e2ba544da60d40aff9921c56872d#npm:4.4.3"],\
           ["http-errors", "npm:2.0.1"],\
           ["iconv-lite", "npm:0.7.3"],\
           ["on-finished", "npm:2.4.1"],\
-          ["qs", "npm:6.16.0"],\
+          ["qs", "npm:6.16.1"],\
           ["raw-body", "npm:3.0.2"],\
           ["type-is", "npm:2.1.0"]\
         ],\
@@ -8713,7 +8713,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["accepts", "npm:1.3.8"],\
           ["array-flatten", "npm:1.1.1"],\
-          ["body-parser", "npm:2.3.0"],\
+          ["body-parser", "npm:2.4.0"],\
           ["content-disposition", "npm:0.5.4"],\
           ["content-type", "npm:1.0.5"],\
           ["cookie", "npm:0.7.2"],\
@@ -8750,7 +8750,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/express-npm-5.2.1-d1e97b99e1-4aa545d897.zip/node_modules/express/",\
         "packageDependencies": [\
           ["accepts", "npm:2.0.0"],\
-          ["body-parser", "npm:2.3.0"],\
+          ["body-parser", "npm:2.4.0"],\
           ["content-disposition", "npm:1.1.0"],\
           ["content-type", "npm:1.0.5"],\
           ["cookie", "npm:0.7.2"],\
@@ -8942,10 +8942,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["fast-uri", [\
-      ["npm:3.1.8", {\
-        "packageLocation": "./.yarn/cache/fast-uri-npm-3.1.8-9315bdcd40-d3dfa29fd2.zip/node_modules/fast-uri/",\
+      ["npm:3.1.9", {\
+        "packageLocation": "./.yarn/cache/fast-uri-npm-3.1.9-84586dee2e-4276cf5866.zip/node_modules/fast-uri/",\
         "packageDependencies": [\
-          ["fast-uri", "npm:3.1.8"]\
+          ["fast-uri", "npm:3.1.9"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9785,10 +9785,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["hono", [\
-      ["npm:4.13.10", {\
-        "packageLocation": "./.yarn/cache/hono-npm-4.13.10-474d44f914-a9f9abe8b2.zip/node_modules/hono/",\
+      ["npm:4.13.13", {\
+        "packageLocation": "./.yarn/cache/hono-npm-4.13.13-e9e19270aa-1ff038d6ca.zip/node_modules/hono/",\
         "packageDependencies": [\
-          ["hono", "npm:4.13.10"]\
+          ["hono", "npm:4.13.13"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -13465,6 +13465,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["es-define-property", "npm:1.0.1"],\
           ["qs", "npm:6.16.0"],\
+          ["side-channel", "npm:1.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:6.16.1", {\
+        "packageLocation": "./.yarn/cache/qs-npm-6.16.1-9b77e54f12-e33e0a5cee.zip/node_modules/qs/",\
+        "packageDependencies": [\
+          ["es-define-property", "npm:1.0.1"],\
+          ["qs", "npm:6.16.1"],\
           ["side-channel", "npm:1.1.1"]\
         ],\
         "linkType": "HARD"\
