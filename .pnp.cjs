@@ -155,7 +155,7 @@ const RAW_RUNTIME_STATE =
           ["@standard-schema/spec", "npm:1.1.0"],\
           ["@types/zod", null],\
           ["eventsource-parser", "npm:3.1.1"],\
-          ["undici", "npm:6.29.0"],\
+          ["undici", "npm:6.29.1"],\
           ["zod", "npm:4.6.5"]\
         ],\
         "packagePeers": [\
@@ -15367,10 +15367,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["undici", [\
-      ["npm:6.29.0", {\
-        "packageLocation": "./.yarn/cache/undici-npm-6.29.0-91cf75cb84-fd4969cfc8.zip/node_modules/undici/",\
+      ["npm:6.29.1", {\
+        "packageLocation": "./.yarn/cache/undici-npm-6.29.1-78d25c49fa-92acb64ec1.zip/node_modules/undici/",\
         "packageDependencies": [\
-          ["undici", "npm:6.29.0"]\
+          ["undici", "npm:6.29.1"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -15613,7 +15613,7 @@ const RAW_RUNTIME_STATE =
           ["@wdio/utils", "npm:9.32.0"],\
           ["deepmerge-ts", "npm:8.0.2"],\
           ["https-proxy-agent", "npm:7.0.6"],\
-          ["undici", "npm:6.29.0"],\
+          ["undici", "npm:6.29.1"],\
           ["webdriver", "npm:9.32.0"],\
           ["ws", "virtual:1a95a3106b1464ca91b0d45968469a68fb5501fabf325a9cc2e0ee121d5b8665e966d6adacd3db75020b18a60de8004e724f49f6dceb43747e5661089a4dd481#npm:8.22.0"]\
         ],\
