@@ -20,45 +20,38 @@ class AsyncFetch {
         return url.endsWith('health');
     }
 
-    fetch(url, fetchOptions, parseBody) {
+    async fetch(url, fetchOptions, parseBody) {
         if (!this.isHealthEndpoint(url)) {
             log.info('Calling external service');
         }
 
-        return new Promise((resolve, reject) => {
+        try {
             const asyncReq = this.buildRequest(url, fetchOptions);
-            fetch(asyncReq, this.retryOptions())
-                .then(res => {
-                    if (!this.isHealthEndpoint(url)) {
-                        log.info(`Status: ${res.status}`);
-                    }
-                    if (res.ok) {
-                        return parseBody(res);
-                    }
-                    if (res.status === 400) {
-                        log.error(res.statusText);
-                        return parseBody(res)
-                            .then(body => {
-                                this.logBody(body);
-                                return body;
-                            });
-                    }
-                    log.error(res.statusText);
-                    return parseBody(res)
-                        .then(body => {
-                            this.logBody(body);
-                            reject(new Error(res.statusText));
-                        });
+            const response = await fetch(asyncReq, this.retryOptions());
 
-                })
-                .then(body => {
-                    resolve(body);
-                })
-                .catch(err => {
-                    log.error(`Error${err}`);
-                    reject(Error(err));
-                });
-        });
+            if (!this.isHealthEndpoint(url)) {
+                log.info(`Status: ${response.status}`);
+            }
+
+            if (response.ok) {
+                return await parseBody(response);
+            }
+
+            if (response.status === 400) {
+                log.error(response.statusText);
+                const body = await parseBody(response);
+                this.logBody(body);
+                return body;
+            }
+
+            log.error(response.statusText);
+            const body = await parseBody(response);
+            this.logBody(body);
+            throw new Error(response.statusText);
+        } catch (err) {
+            log.error(`Error${err}`);
+            throw err;
+        }
     }
 
     logBody(body) {
