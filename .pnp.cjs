@@ -7928,16 +7928,6 @@ const RAW_RUNTIME_STATE =
           ["entities", "npm:4.5.0"]\
         ],\
         "linkType": "HARD"\
-      }],\
-      ["npm:3.1.1", {\
-        "packageLocation": "./.yarn/cache/dom-serializer-npm-3.1.1-dcedbe2f45-16004bf603.zip/node_modules/dom-serializer/",\
-        "packageDependencies": [\
-          ["dom-serializer", "npm:3.1.1"],\
-          ["domelementtype", "npm:3.0.0"],\
-          ["domhandler", "npm:6.0.1"],\
-          ["entities", "npm:8.1.0"]\
-        ],\
-        "linkType": "HARD"\
       }]\
     ]],\
     ["domelementtype", [\
@@ -7945,13 +7935,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/domelementtype-npm-2.3.0-02de7cbfba-ee837a318f.zip/node_modules/domelementtype/",\
         "packageDependencies": [\
           ["domelementtype", "npm:2.3.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:3.0.0", {\
-        "packageLocation": "./.yarn/cache/domelementtype-npm-3.0.0-8bfb18c0c9-6b5120222f.zip/node_modules/domelementtype/",\
-        "packageDependencies": [\
-          ["domelementtype", "npm:3.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7964,14 +7947,6 @@ const RAW_RUNTIME_STATE =
           ["domhandler", "npm:5.0.3"]\
         ],\
         "linkType": "HARD"\
-      }],\
-      ["npm:6.0.1", {\
-        "packageLocation": "./.yarn/cache/domhandler-npm-6.0.1-8adcaec607-370e7c121c.zip/node_modules/domhandler/",\
-        "packageDependencies": [\
-          ["domelementtype", "npm:3.0.0"],\
-          ["domhandler", "npm:6.0.1"]\
-        ],\
-        "linkType": "HARD"\
       }]\
     ]],\
     ["domutils", [\
@@ -7982,16 +7957,6 @@ const RAW_RUNTIME_STATE =
           ["domelementtype", "npm:2.3.0"],\
           ["domhandler", "npm:5.0.3"],\
           ["domutils", "npm:3.2.2"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:4.0.2", {\
-        "packageLocation": "./.yarn/cache/domutils-npm-4.0.2-393a526e86-cb1e270d04.zip/node_modules/domutils/",\
-        "packageDependencies": [\
-          ["dom-serializer", "npm:3.1.1"],\
-          ["domelementtype", "npm:3.0.0"],\
-          ["domhandler", "npm:6.0.1"],\
-          ["domutils", "npm:4.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8236,13 +8201,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/entities-npm-7.0.1-61f8ba3430-3c0c58d869.zip/node_modules/entities/",\
         "packageDependencies": [\
           ["entities", "npm:7.0.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:8.1.0", {\
-        "packageLocation": "./.yarn/cache/entities-npm-8.1.0-2241e5925c-bd2fadbcab.zip/node_modules/entities/",\
-        "packageDependencies": [\
-          ["entities", "npm:8.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9961,17 +9919,6 @@ const RAW_RUNTIME_STATE =
           ["domutils", "npm:3.2.2"],\
           ["entities", "npm:7.0.1"],\
           ["htmlparser2", "npm:10.1.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:12.0.0", {\
-        "packageLocation": "./.yarn/cache/htmlparser2-npm-12.0.0-65d402edc6-f5b29381f9.zip/node_modules/htmlparser2/",\
-        "packageDependencies": [\
-          ["domelementtype", "npm:3.0.0"],\
-          ["domhandler", "npm:6.0.1"],\
-          ["domutils", "npm:4.0.2"],\
-          ["entities", "npm:8.1.0"],\
-          ["htmlparser2", "npm:12.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -14126,7 +14073,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/sanitize-html-npm-2.18.1-718523d455-930635fcd6.zip/node_modules/sanitize-html/",\
         "packageDependencies": [\
           ["escape-string-regexp", "npm:4.0.0"],\
-          ["htmlparser2", "npm:12.0.0"],\
+          ["htmlparser2", "npm:10.1.0"],\
           ["is-plain-object", "npm:5.1.0"],\
           ["launder", "npm:1.7.2"],\
           ["parse-srcset", "npm:1.0.2"],\

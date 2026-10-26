@@ -119,6 +119,7 @@
   },
   "resolutions": {
     "body-parser": "^2.0.0",
+    "htmlparser2": "^10.1.0",
     "serialize-javascript": "^7.0.3",
     "minimatch@^10.1.1": "^10.2.4",
     "protobufjs": "^8.0.1",
