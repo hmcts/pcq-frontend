@@ -5115,84 +5115,11 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["@wdio/config", [\
-      ["npm:9.31.9", {\
-        "packageLocation": "./.yarn/cache/@wdio-config-npm-9.31.9-db92d7a4a0-6db1f394d6.zip/node_modules/@wdio/config/",\
+    ["@vercel/oidc", [\
+      ["npm:3.2.0", {\
+        "packageLocation": "./.yarn/cache/@vercel-oidc-npm-3.2.0-4dc9bbea52-2a64ee8062.zip/node_modules/@vercel/oidc/",\
         "packageDependencies": [\
-          ["@wdio/config", "npm:9.31.9"],\
-          ["@wdio/logger", "npm:9.29.1"],\
-          ["@wdio/types", "npm:9.31.2"],\
-          ["@wdio/utils", "npm:9.31.9"],\
-          ["deepmerge-ts", "npm:8.0.2"],\
-          ["glob", "npm:10.5.0"],\
-          ["import-meta-resolve", "npm:4.2.0"],\
-          ["jiti", "npm:2.7.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["@wdio/logger", [\
-      ["npm:9.29.1", {\
-        "packageLocation": "./.yarn/cache/@wdio-logger-npm-9.29.1-a25bbd111c-f6e60bf7bb.zip/node_modules/@wdio/logger/",\
-        "packageDependencies": [\
-          ["@wdio/logger", "npm:9.29.1"],\
-          ["chalk", "npm:5.6.2"],\
-          ["loglevel", "npm:1.9.2"],\
-          ["loglevel-plugin-prefix", "npm:0.8.4"],\
-          ["safe-regex2", "npm:5.1.1"],\
-          ["strip-ansi", "npm:7.2.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["@wdio/protocols", [\
-      ["npm:9.31.5", {\
-        "packageLocation": "./.yarn/cache/@wdio-protocols-npm-9.31.5-32f5904b6d-10e0133cc6.zip/node_modules/@wdio/protocols/",\
-        "packageDependencies": [\
-          ["@wdio/protocols", "npm:9.31.5"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["@wdio/repl", [\
-      ["npm:9.16.2", {\
-        "packageLocation": "./.yarn/cache/@wdio-repl-npm-9.16.2-db14f675ce-b5927a16db.zip/node_modules/@wdio/repl/",\
-        "packageDependencies": [\
-          ["@types/node", "npm:20.19.43"],\
-          ["@wdio/repl", "npm:9.16.2"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["@wdio/types", [\
-      ["npm:9.31.2", {\
-        "packageLocation": "./.yarn/cache/@wdio-types-npm-9.31.2-a32e9bfb14-22fe99242f.zip/node_modules/@wdio/types/",\
-        "packageDependencies": [\
-          ["@types/node", "npm:20.19.43"],\
-          ["@wdio/types", "npm:9.31.2"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["@wdio/utils", [\
-      ["npm:9.31.9", {\
-        "packageLocation": "./.yarn/cache/@wdio-utils-npm-9.31.9-9d600c8dc5-77d52d4b52.zip/node_modules/@wdio/utils/",\
-        "packageDependencies": [\
-          ["@puppeteer/browsers", "npm:2.13.2"],\
-          ["@wdio/logger", "npm:9.29.1"],\
-          ["@wdio/types", "npm:9.31.2"],\
-          ["@wdio/utils", "npm:9.31.9"],\
-          ["decamelize", "npm:6.0.1"],\
-          ["deepmerge-ts", "npm:8.0.2"],\
-          ["edgedriver", "npm:6.3.1"],\
-          ["geckodriver", "npm:6.1.1"],\
-          ["get-port", "npm:7.2.0"],\
-          ["import-meta-resolve", "npm:4.2.0"],\
-          ["locate-app", "npm:2.5.0"],\
-          ["mitt", "npm:3.0.1"],\
-          ["safaridriver", "npm:1.0.1"],\
-          ["split2", "npm:4.2.0"],\
-          ["wait-port", "npm:1.1.0"]\
+          ["@vercel/oidc", "npm:3.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7722,33 +7649,6 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["ecdsa-sig-formatter", "npm:1.0.11"],\
           ["safe-buffer", "npm:5.2.1"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["edge-paths", [\
-      ["npm:3.0.5", {\
-        "packageLocation": "./.yarn/cache/edge-paths-npm-3.0.5-d11790a90d-76ea4380ad.zip/node_modules/edge-paths/",\
-        "packageDependencies": [\
-          ["@types/which", "npm:2.0.2"],\
-          ["edge-paths", "npm:3.0.5"],\
-          ["which", "npm:2.0.2"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["edgedriver", [\
-      ["npm:6.3.1", {\
-        "packageLocation": "./.yarn/cache/edgedriver-npm-6.3.1-25ce1f18c8-af398a79bc.zip/node_modules/edgedriver/",\
-        "packageDependencies": [\
-          ["@wdio/logger", "npm:9.29.1"],\
-          ["@zip.js/zip.js", "npm:2.8.26"],\
-          ["decamelize", "npm:6.0.1"],\
-          ["edge-paths", "npm:3.0.5"],\
-          ["edgedriver", "npm:6.3.1"],\
-          ["http-proxy-agent", "npm:7.0.2"],\
-          ["https-proxy-agent", "npm:7.0.6"],\
-          ["which", "npm:6.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
