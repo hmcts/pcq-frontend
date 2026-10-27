@@ -38,7 +38,7 @@ class TestWrapper {
         });
 
         // Set the journey for each test. Insert before step handlers so it runs first.
-        this.routes.use('*', (req, res, next) => setJourney(req, res).then(() => next()));
+        this.routes.use('/{*splat}', (req, res, next) => setJourney(req, res).then(() => next()));
         const setJourneyLayer = this.routes.stack.pop();
         this.routes.stack.splice(2, 0, setJourneyLayer);
 
