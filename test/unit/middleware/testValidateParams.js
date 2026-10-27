@@ -1,8 +1,8 @@
-'use strict';
+import chai from 'chai';
+import sinon from 'sinon';
+import validateParams from 'app/middleware/validateParams.js';
 
-const expect = require('chai').expect;
-const sinon = require('sinon');
-const validateParams = require('app/middleware/validateParams');
+const { expect } = chai;
 
 describe('validateParams', () => {
     it('should redirect to \'offline\' if params are invalid', (done) => {

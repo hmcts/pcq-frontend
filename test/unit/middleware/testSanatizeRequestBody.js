@@ -1,8 +1,8 @@
-'use strict';
+import sanitizeRequestBody from 'app/middleware/sanitizeRequestBody.js';
+import chai from 'chai';
+import sinon from 'sinon';
 
-const sanitizeRequestBody = require('app/middleware/sanitizeRequestBody');
-const {assert} = require('chai');
-const sinon = require('sinon');
+const { assert } = chai;
 
 describe('SanitizeRequestBody', () => {
     let req;

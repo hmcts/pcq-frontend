@@ -37,6 +37,6 @@ const stepList = {
     ApplicantPregnant: 'EndPage'
 };
 
-module.exports = () => {
-    return {stepList};
-};
+const iacJourney = () => ({stepList});
+
+export default iacJourney;

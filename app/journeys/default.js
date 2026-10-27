@@ -38,6 +38,6 @@ const stepList = {
     ApplicantPregnant: 'EndPage'
 };
 
-module.exports = () => {
-    return {stepList};
-};
+const defaultJourney = () => ({stepList});
+
+export default defaultJourney;

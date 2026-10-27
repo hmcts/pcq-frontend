@@ -1,6 +1,6 @@
 'use strict';
 
-const AgeCheck = require('../utils/Constants');
+import AgeCheck from '../utils/Constants.js';
 
 const stepList = {
     StartPage: 'ApplicantLanguage',
@@ -48,6 +48,6 @@ const ageCheckQuestions = {
     [AgeCheck.LessThanSixteen]: []
 };
 
-module.exports = () => {
-    return {stepList, ageCheckQuestions};
-};
+const specialTribunalsCicJourney = () => ({stepList, ageCheckQuestions});
+
+export default specialTribunalsCicJourney;

@@ -1,10 +1,10 @@
-'use strict';
+import chai from 'chai';
+import rewire from 'rewire';
+import ageCheckQuestionsJourney from '../../data/journeys/ageCheckQuestions.js';
+import toggledAndAgeCheckQuestionsJourney from '../../data/journeys/toggledAndAgeCheckQuestions.js';
 
-const expect = require('chai').expect;
-const rewire = require('rewire');
+const { expect } = chai;
 const setJourney = rewire('app/middleware/setJourney');
-const ageCheckQuestionsJourney = require('test/data/journeys/ageCheckQuestions');
-const toggledAndAgeCheckQuestionsJourney = require('test/data/journeys/toggledAndAgeCheckQuestions');
 
 describe('toggledAndAgeCheckQuestionsJourney', () => {
 
@@ -21,7 +21,7 @@ describe('toggledAndAgeCheckQuestionsJourney', () => {
             };
 
             const revert = setJourney.__set__('getBaseJourney', () => {
-                return require('test/data/journeys/ageCheckQuestions');
+                return ageCheckQuestionsJourney;
             });
 
             await setJourney(req, {});
@@ -101,7 +101,7 @@ describe('toggledAndAgeCheckQuestionsJourney', () => {
             };
 
             const revert = setJourney.__set__('getBaseJourney', () => {
-                return require('test/data/journeys/toggledAndAgeCheckQuestions');
+                return toggledAndAgeCheckQuestionsJourney;
             });
 
             await setJourney(req, res);

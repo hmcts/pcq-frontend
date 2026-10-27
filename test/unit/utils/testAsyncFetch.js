@@ -1,9 +1,9 @@
-'use strict';
+import chai from 'chai';
+import nock from 'nock';
+import rewire from 'rewire';
+import AsyncFetch from 'app/utils/AsyncFetch.js';
 
-const expect = require('chai').expect;
-const nock = require('nock');
-const rewire = require('rewire');
-const AsyncFetch = require('app/utils/AsyncFetch');
+const { expect } = chai;
 const asyncFetch = new AsyncFetch();
 
 describe('AsyncFetch', () => {

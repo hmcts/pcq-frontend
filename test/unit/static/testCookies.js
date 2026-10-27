@@ -1,7 +1,7 @@
-'use strict';
+import Cookies from 'app/steps/ui/static/cookies/index.js';
+import chai from 'chai';
 
-const Cookies = require('app/steps/ui/static/cookies');
-const expect = require('chai').expect;
+const { expect } = chai;
 
 describe('Cookies', () => {
     describe('getUrl()', () => {

@@ -1,8 +1,6 @@
-'use strict';
+import pageUnderTest from 'app/steps/ui/dateofbirth/index.js';
 
-const pageUnderTest = require('app/steps/ui/dateofbirth/index');
-
-module.exports = function (lang) {
+export default function (lang) {
     const I = this;
     console.log(pageUnderTest.getUrl());
     I.amOnPage(pageUnderTest.getUrl());

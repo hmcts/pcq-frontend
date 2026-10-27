@@ -1,8 +1,6 @@
-'use strict';
-
-const TestWrapper = require('test/util/TestWrapper');
-const ApplicantDateOfBirth = require('app/steps/ui/dateofbirth');
-const config = require('config');
+import TestWrapper from 'test/util/TestWrapper.js';
+import ApplicantDateOfBirth from 'app/steps/ui/dateofbirth/index.js';
+import config from 'config';
 const basePath = config.app.basePath;
 
 describe('StartPage', () => {

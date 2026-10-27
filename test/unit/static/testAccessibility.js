@@ -1,7 +1,7 @@
-'use strict';
+import Accessibility from 'app/steps/ui/static/accessibility/index.js';
+import chai from 'chai';
 
-const Accessibility = require('app/steps/ui/static/accessibility');
-const expect = require('chai').expect;
+const { expect } = chai;
 
 describe('Accessibility', () => {
     describe('getUrl()', () => {

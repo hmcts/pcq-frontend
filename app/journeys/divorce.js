@@ -37,6 +37,6 @@ const stepList = {
     ApplicantPregnant: 'EndPage'
 };
 
-module.exports = () => {
-    return {stepList};
-};
+const divorceJourney = () => ({stepList});
+
+export default divorceJourney;

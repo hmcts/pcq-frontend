@@ -1,7 +1,7 @@
-'use strict';
+import chai from 'chai';
+import FieldError from 'app/components/error.js';
 
-const expect = require('chai').expect;
-const FieldError = require('app/components/error');
+const { expect } = chai;
 
 describe('error', () => {
     describe('generateErrors() core branches', () => {

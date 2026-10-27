@@ -1,14 +1,18 @@
-'use strict';
+import lodash from 'lodash';
+import chai from 'chai';
+import rewire from 'rewire';
+import config from 'config';
+import request from 'supertest';
+import initSteps from 'app/core/initSteps.js';
+import setJourney from 'app/middleware/setJourney.js';
+import { createRequire } from 'node:module';
+import { fileURLToPath } from 'node:url';
 
-const {forEach, filter, isEmpty, set, get, cloneDeep} = require('lodash');
-const {expect, assert} = require('chai');
-const rewire = require('rewire');
-const app = rewire('../../app');
-const config = require('config');
-const request = require('supertest');
-const initSteps = require('app/core/initSteps');
-const steps = initSteps([`${__dirname}/../../app/steps/ui`], 'en');
-const setJourney = require('app/middleware/setJourney');
+const {forEach, filter, isEmpty, set, get, cloneDeep} = lodash;
+const {expect, assert} = chai;
+const require = createRequire(import.meta.url);
+const app = rewire(fileURLToPath(new URL('../../app.js', import.meta.url)));
+const steps = initSteps([fileURLToPath(new URL('../../app/steps/ui', import.meta.url))], 'en');
 
 class TestWrapper {
     constructor(stepName, ftValue) {
@@ -34,7 +38,7 @@ class TestWrapper {
         });
 
         // Set the journey for each test. Insert before step handlers so it runs first.
-        this.routes.use('*', (req, res, next) => setJourney(req, res).then(() => next()));
+        this.routes.use('/{*splat}', (req, res, next) => setJourney(req, res).then(() => next()));
         const setJourneyLayer = this.routes.stack.pop();
         this.routes.stack.splice(2, 0, setJourneyLayer);
 
@@ -240,4 +244,4 @@ class TestWrapper {
     }
 }
 
-module.exports = TestWrapper;
+export default TestWrapper;

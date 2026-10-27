@@ -1,8 +1,8 @@
-'use strict';
+import chai from 'chai';
+import rewire from 'rewire';
+import Invoker from 'app/utils/Invoker.js';
 
-const expect = require('chai').expect;
-const rewire = require('rewire');
-const Invoker = require('app/utils/Invoker');
+const { expect } = chai;
 
 describe('Invoker', () => {
     let invoker;

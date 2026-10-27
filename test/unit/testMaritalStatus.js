@@ -1,8 +1,9 @@
-'use strict';
+import initSteps from 'app/core/initSteps.js';
+import chai from 'chai';
+import { fileURLToPath } from 'node:url';
 
-const initSteps = require('app/core/initSteps');
-const expect = require('chai').expect;
-const steps = initSteps([`${__dirname}/../../app/steps/ui`]);
+const { expect } = chai;
+const steps = initSteps([fileURLToPath(new URL('../../app/steps/ui', import.meta.url))]);
 const ApplicantMaritalStatus = steps.ApplicantMaritalStatus;
 
 describe('ApplicantMaritalStatus', () => {

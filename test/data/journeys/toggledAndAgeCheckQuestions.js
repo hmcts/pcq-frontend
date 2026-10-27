@@ -1,6 +1,4 @@
-'use strict';
-
-const AgeCheck = require('app/utils/Constants');
+import AgeCheck from 'app/utils/Constants.js';
 
 const stepList = {
     StartPage: 'ApplicantDateOfBirth',
@@ -62,7 +60,7 @@ const ageCheckQuestions = {
     ]
 };
 
-module.exports = () => {
+export default () => {
     return {
         stepList,
         toggledQuestions,

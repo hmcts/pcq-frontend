@@ -41,14 +41,14 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     app.set('view engine', 'html');
     app.set('views', ['app/steps', 'app/views']);
 
-    const isDev = app.get('env') === 'development';
+    const isDevOrTesting = ['dev', 'testing'].includes(app.get('env'));
 
     const njkEnv = nunjucks.configure([
         'app/steps',
         'app/views',
         govUkFrontendPath
     ], {
-        noCache: isDev,
+        noCache: isDevOrTesting,
         express: app
     });
 
@@ -73,18 +73,20 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
             contentSecurityPolicy: false,
 
             referrerPolicy: {
-            policy: 'origin'
+                policy: 'origin'
             },
 
             crossOriginOpenerPolicy: {
-            policy: 'same-origin'
+                policy: 'same-origin'
             },
 
             crossOriginEmbedderPolicy: {
-            policy: 'credentialless'
+                policy: 'credentialless'
             },
 
-            crossOriginResourcePolicy: false
+            crossOriginResourcePolicy: {
+                policy: 'same-origin'
+            }
         })
      );
 
@@ -136,7 +138,17 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
                 'tagmanager.google.com',
                 'fonts.googleapis.com'
             ],
-            frameAncestors: ['\'self\'']
+            frameAncestors: ['\'self\''],
+            formAction: [
+                '\'self\'',
+                'https://*.service.gov.uk',
+                'https://*.cjscp.org.uk',
+                'https://*.platform.hmcts.net',
+                'https://*.staging.apps.hmcts.net',
+                'https://*.test.gov.uk',
+                'https://*.apps.hmcts.net'
+            ]
+            
         },
         useDefaults: false
     }));
@@ -196,7 +208,6 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         next();
     });
 
-    const isProduction = config.environment === 'prod' || config.environment === 'production';
     app.set('trust proxy', 1);
     // Support session data
     app.use(session({
@@ -207,7 +218,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         cookie: {
             httpOnly: config.redis.cookie.httpOnly,
             sameSite: config.redis.cookie.sameSite,
-            secure: isProduction ? true : config.redis.cookie.secure
+            secure: !isDevOrTesting ? true : config.redis.cookie.secure
         },
         store: utils.getStore(config.redis, session)
     }));
@@ -294,7 +305,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         app.use(utils.forceHttps);
     }
 
-    app.post('*', sanitizeRequestBody);
+    app.post('/{*splat}', sanitizeRequestBody);
 
     app.use(`${config.livenessEndpoint}`, (req, res) => {
         res.json({status: 'UP'});
@@ -319,7 +330,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     // Start the app
     let http;
 
-    if (['development', 'testing'].includes(config.nodeEnvironment)) {
+    if (['testing'].includes(config.nodeEnvironment)) {
         const sslDirectory = path.join(__dirname, 'app', 'resources', 'localhost-ssl');
         const sslOptions = {
             minVersion: 'TLSv1.2',
@@ -338,11 +349,12 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
     }
 
     // PCQ Invoker
+    const isProduction = config.environment === 'prod' || config.environment === 'production';
     if (!isProduction && String(config.invoker.enabled).toLowerCase() === 'true') {
         invoker.addTo(app);
     }
 
-    app.all('*', (req, res) => {
+    app.all('/{*splat}', (req, res) => {
         const commonContent = require(`app/resources/${req.session.language}/translation/common`);
         const content = require(`app/resources/${req.session.language}/translation/errors/404`);
 

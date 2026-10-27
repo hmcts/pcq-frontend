@@ -1,9 +1,11 @@
-'use strict';
+import chai from 'chai';
+import sinon from 'sinon';
+import rewire from 'rewire';
+import request from 'supertest';
+import { fileURLToPath } from 'node:url';
 
-const expect = require('chai').expect;
-const sinon = require('sinon');
-const rewire = require('rewire');
-const request = require('supertest');
+const { expect } = chai;
+const appPath = fileURLToPath(new URL('../../../app.js', import.meta.url));
 const invoker = rewire('app/middleware/invoker');
 
 describe('Invoker', () => {
@@ -89,7 +91,7 @@ describe('Invoker', () => {
 
     describe('Routing', () => {
         it('should load the invoker page when enabled', (done) => {
-            const rewiredApp = rewire('../../../app');
+            const rewiredApp = rewire(appPath);
             rewiredApp.__set__('config.invoker.enabled', 'true');
             const server = rewiredApp.init(false, {});
             const agent = request.agent(server.app);
@@ -106,7 +108,7 @@ describe('Invoker', () => {
         });
 
         it('should not load in prod environment even when enabled', (done) => {
-            const rewiredApp = rewire('../../../app');
+            const rewiredApp = rewire(appPath);
             rewiredApp.__set__('config.environment', 'prod');
             rewiredApp.__set__('config.invoker.enabled', 'true');
             const server = rewiredApp.init(false, {});
@@ -124,7 +126,7 @@ describe('Invoker', () => {
         });
 
         it('should not load in production environment even when enabled', (done) => {
-            const rewiredApp = rewire('../../../app');
+            const rewiredApp = rewire(appPath);
             rewiredApp.__set__('config.environment', 'production');
             rewiredApp.__set__('config.invoker.enabled', 'true');
             const server = rewiredApp.init(false, {});

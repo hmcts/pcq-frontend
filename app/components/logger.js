@@ -39,6 +39,6 @@ const logger = winston.createLogger({
     ]
 });
 
-module.exports = function(sessionId) {
+module.exports = function createLogger(sessionId) {
     return logger.child({ sessionId });
 };

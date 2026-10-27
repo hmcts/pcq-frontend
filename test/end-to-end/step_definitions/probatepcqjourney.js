@@ -1,7 +1,7 @@
-'use strict';
 /* eslint-disable no-undef */
+import TestConfiguratorClass from 'test/end-to-end/helpers/TestConfigurator.js';
 const {I} = inject();
-const TestConfigurator = new (require('test/end-to-end/helpers/TestConfigurator'))();
+const TestConfigurator = new TestConfiguratorClass();
 const pcqId = TestConfigurator.setPcqId();
 let lang = 'en';
 Before((test) => {

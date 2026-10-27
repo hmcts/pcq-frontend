@@ -1,7 +1,7 @@
-'use strict';
+import Privacy from 'app/steps/ui/static/privacy/index.js';
+import chai from 'chai';
 
-const Privacy = require('app/steps/ui/static/privacy');
-const expect = require('chai').expect;
+const { expect } = chai;
 
 describe('PrivacyPolicy', () => {
     describe('getUrl()', () => {

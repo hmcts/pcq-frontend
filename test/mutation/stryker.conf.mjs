@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     packageManager: 'yarn',
     plugins: ['@stryker-mutator/mocha-runner'],
     reporters:
@@ -29,9 +29,7 @@ module.exports = {
         '!version',
         '!app/**',
         '!config/*',
-        '!test/**',
-        'test/unit/core/testServiceData.json',
-        'test/unit/services/testServiceInvokerData.json'
+        '!test/**'
     ],
     testRunner: 'mocha',
     mochaOptions: {

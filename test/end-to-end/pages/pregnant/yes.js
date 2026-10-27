@@ -1,8 +1,6 @@
-'use strict';
+import pageUnderTest from 'app/steps/ui/pregnant/index.js';
 
-const pageUnderTest = require('app/steps/ui/pregnant/index');
-
-module.exports = function (lang) {
+export default function (lang) {
     const I = this;
     I.amOnPage(pageUnderTest.getUrl());
     I.seeCurrentUrlEquals(pageUnderTest.getUrl());

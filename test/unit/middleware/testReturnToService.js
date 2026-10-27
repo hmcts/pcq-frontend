@@ -1,9 +1,9 @@
-'use strict';
+import chai from 'chai';
+import nock from 'nock';
+import sinon from 'sinon';
+import returnToService from 'app/middleware/returnToService.js';
 
-const expect = require('chai').expect;
-const nock = require('nock');
-const sinon = require('sinon');
-const returnToService = require('app/middleware/returnToService');
+const { expect } = chai;
 
 describe('returnToService', () => {
     let req = {};

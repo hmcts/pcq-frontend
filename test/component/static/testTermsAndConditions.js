@@ -1,8 +1,6 @@
-'use strict';
-
-const TestWrapper = require('test/util/TestWrapper');
-const config = require('config');
-const commonContent = require('app/resources/en/translation/common');
+import TestWrapper from 'test/util/TestWrapper.js';
+import config from 'config';
+import commonContent from 'app/resources/en/translation/common.json' with { type: 'json' };
 
 describe('terms-conditions', () => {
     let testWrapper;

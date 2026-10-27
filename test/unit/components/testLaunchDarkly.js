@@ -1,7 +1,7 @@
-'use strict';
+import chai from 'chai';
+import LaunchDarkly from 'app/components/launch-darkly.js';
 
-const expect = require('chai').expect;
-const LaunchDarkly = require('app/components/launch-darkly');
+const { expect } = chai;
 
 describe('LaunchDarkly', () => {
     before(() => new LaunchDarkly().close());

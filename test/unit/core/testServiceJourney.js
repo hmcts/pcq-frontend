@@ -1,44 +1,36 @@
-'use strict';
+import chai from 'chai';
+import rewire from 'rewire';
+import initSteps from 'app/core/initSteps.js';
+import serviceData from './testServiceData.json' with { type: 'json' };
+import path from 'node:path';
+import { readdir } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
 
-const expect = require('chai').expect;
-const rewire = require('rewire');
+const { expect } = chai;
 const JourneyMap = rewire('app/core/JourneyMap');
-const initSteps = require('app/core/initSteps');
-const steps = initSteps([`${__dirname}/../../../app/steps/ui`]);
-const serviceData = require('test/unit/core/testServiceData.json');
+const steps = initSteps([fileURLToPath(new URL('../../../app/steps/ui', import.meta.url))]);
 const StartPage = steps.StartPage;
 const EndPage = steps.EndPage;
 const ShutterPage = steps.ShutterPage;
-//requiring path and fs modules
-const path = require('path');
-const fs = require('fs');
-//joining path of directory
-const directoryPath = path.join(`${__dirname}/../../../app`, 'journeys');
+const directoryPath = path.join(fileURLToPath(new URL('../../../app', import.meta.url)), 'journeys');
 
-//passsing directoryPath and callback function
-fs.readdir(directoryPath, function (err, files) {
-    //handling error
-    if (err) {
-        return console.log('Unable to scan directory: ' + err);
-    }
-    //listing all files using forEach
-    files.forEach(function (file) {
-        // your tests logic
-        console.log(file);
-        const filePathFragments = file.split('.');
-        const serviceName = filePathFragments[0];
-        if (filePathFragments[1] === 'js') {
+const files = await readdir(directoryPath);
+for (const file of files) {
+    console.log(file);
+    const filePathFragments = file.split('.');
+    const serviceName = filePathFragments[0];
+    if (filePathFragments[1] === 'js') {
+        const journeyModule = await import(`../../../app/journeys/${file}`);
+        const serviceJourney = journeyModule.default();
             describe('ServiceJourney : ' + serviceName, () => {
                 const currentStep = {};
-                const serviceJourney = require(`app/journeys/${serviceName}`)();
                 const skipStepName = serviceData.services[serviceName].skipStepName;
                 describe('stepList()', () => {
                     it('should return the journey step list without skip list', (done) => {
                         const journeyMap = new JourneyMap(serviceJourney);
                         const stepList = journeyMap.stepList();
-                        if (stepList !== null) {
-                            expect(stepList).to.not.contain(skipStepName);
-                        }
+                        expect(stepList).to.be.an('object').that.is.not.empty;
+                        expect(stepList).to.not.contain(skipStepName);
                         done();
                     });
                 });
@@ -110,7 +102,6 @@ fs.readdir(directoryPath, function (err, files) {
                         });
                     });
                 }
-            });
-        }
-    });
-});
+        });
+    }
+}

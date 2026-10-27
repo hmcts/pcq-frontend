@@ -1,9 +1,10 @@
-'use strict';
+import initSteps from 'app/core/initSteps.js';
+import { fileURLToPath } from 'node:url';
+import chai from 'chai';
 
-const initSteps = require('app/core/initSteps');
-const steps = initSteps([`${__dirname}/../../app/steps/ui`]);
+const steps = initSteps([fileURLToPath(new URL('../../app/steps/ui', import.meta.url))]);
 const ShutterPage = steps.ShutterPage;
-const expect = require('chai').expect;
+const { expect } = chai;
 
 describe('ShutterPage', () => {
     describe('getUrl()', () => {

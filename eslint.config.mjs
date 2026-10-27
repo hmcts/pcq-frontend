@@ -4,7 +4,7 @@ import globals from 'globals';
 const config = {
 
   languageOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 2026,
     sourceType: 'module',
     globals: {
       ...globals.browser,

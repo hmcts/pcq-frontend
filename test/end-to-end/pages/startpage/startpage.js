@@ -1,10 +1,9 @@
-'use strict';
-const serviceEndpointUrl = require('test/end-to-end/utils').serviceEndpointUrl;
-const {generateToken} = require('app/components/encryption-token');
+import {serviceEndpointUrl} from 'test/end-to-end/utils.js';
+import {generateToken} from 'app/components/encryption-token.js';
 const contBtnCy = 'Ymlaen i’r cwestiynau';
 const contBtnEn = 'Continue to the question';
 
-module.exports = function(pcqId, lang) {
+export default function(pcqId, lang) {
     const I = this;
 
     const params = {

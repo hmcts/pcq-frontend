@@ -1,5 +1,3 @@
-'use strict';
-
 const stepList = {
     StartPage: 'ApplicantDateOfBirth',
     ApplicantDateOfBirth: 'ApplicantLanguage',
@@ -45,7 +43,7 @@ const toggledQuestions = [
     {stepName: 'ApplicantSexualOrientation', ftKey: 'ft_disabled', nextStepName: 'ApplicantEthnicGroup'}
 ];
 
-module.exports = () => {
+export default () => {
     return {
         stepList,
         toggledQuestions
