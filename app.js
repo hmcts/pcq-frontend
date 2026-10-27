@@ -305,7 +305,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         app.use(utils.forceHttps);
     }
 
-    app.post('*', sanitizeRequestBody);
+    app.post('/{*splat}', sanitizeRequestBody);
 
     app.use(`${config.livenessEndpoint}`, (req, res) => {
         res.json({status: 'UP'});
@@ -354,7 +354,7 @@ exports.init = function (isA11yTest = false, a11yTestSession = {}, ftValue) {
         invoker.addTo(app);
     }
 
-    app.all('*', (req, res) => {
+    app.all('/{*splat}', (req, res) => {
         const commonContent = require(`app/resources/${req.session.language}/translation/common`);
         const content = require(`app/resources/${req.session.language}/translation/errors/404`);
 
