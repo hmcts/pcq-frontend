@@ -36,7 +36,7 @@ router.get('/service-endpoint', async (req, res) => {
             }
         })
         .catch(err => {
-            logger.error('Error retrieving app heath: ' + err);
+            logger.error('Error retrieving app health: ' + err);
             serviceDown();
         });
 });
