@@ -17,9 +17,9 @@ const featureToggle = new (require('app/utils/FeatureToggle'))();
 router.use(initSession);
 router.use(registerIncomingService);
 
-router.get('*', (req, res, next) => validateParams(req, res, next));
+router.get('/{*splat}', (req, res, next) => validateParams(req, res, next));
 
-router.all('*', (req, res, next) => {
+router.all('/{*splat}', (req, res, next) => {
     const correlationId = get(req.session, 'correlationId', 'init');
     req.log = logger(correlationId);
     req.log.info(`Processing ${req.method} for ${req.originalUrl}`);
