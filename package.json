@@ -121,7 +121,7 @@
     "body-parser": "^2.0.0",
     "htmlparser2": "^10.1.0",
     "serialize-javascript": "^7.0.3",
-    "minimatch@^10.1.1": "^10.2.4",
+    "minimatch@^10.1.1": "^11.0.0",
     "protobufjs": "^8.0.1",
     "@opentelemetry/sdk-node": "^0.223.0"
   },
