@@ -1,6 +1,5 @@
 import { execSync } from 'node:child_process';
 import { readFileSync, writeFileSync } from 'node:fs';
-import yaml from 'js-yaml';
 
 function runGitCommand(command) {
   try {
@@ -32,13 +31,15 @@ function getAppVersion() {
 
 function createVersionFile() {
     const versionFilePath = `${process.env.NODE_PATH || '.'}/version`;
-    const fileData = {
-        version: getAppVersion(),
-        commit: getCommitHash(),
-        date: getCommitDate(),
-    };
 
-    writeFileSync(versionFilePath, yaml.dump(fileData, {}));
+    const content = [
+    `version: ${getAppVersion()}`,
+    `commit: ${getCommitHash()}`,
+    `date: ${getCommitDate()}`,
+    '',
+  ].join('\n');
+
+    writeFileSync(versionFilePath, content);
 }
 
 createVersionFile();

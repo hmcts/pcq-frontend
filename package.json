@@ -9,7 +9,7 @@
   "scripts": {
     "preinstall": "./bin/preinstall.sh || true",
     "setup": "sh ./bin/setup.sh",
-    "createVersionFile": "NODE_PATH=. node setup/createVersionFile.js",
+    "createVersionFile": "NODE_PATH=. node setup/createVersionFile.mjs",
     "copyGovUkResources": "NODE_PATH=. node setup/copyGovukResources.js",
     "bundle": "NODE_PATH=. yarn webpack --disable-interpret",
     "start": "NODE_PATH=. node server.js",
