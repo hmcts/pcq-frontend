@@ -1,27 +1,27 @@
-const git = require('git-rev-sync');
-const yaml = require('js-yaml');
-const readFileSync = require('fs').readFileSync;
-const writeFileSync = require('fs').writeFileSync;
+import { execSync } from 'node:child_process';
+import { readFileSync, writeFileSync } from 'node:fs';
+import yaml from 'js-yaml';
+
+function runGitCommand(command) {
+  try {
+    return execSync(command, { encoding: 'utf8' }).trim();
+  } catch (e) {
+    console.log(`Failed to run git command "${command}": `, e);
+    return 'unknown';
+  }
+}
 
 function getCommitHash() {
-    let commitHash = 'unknown';
-    try {
-        commitHash = git.long();
-    } catch (e) {
-        console.log('Failed to retrieve commit hash: ', e);
-    }
-    return commitHash;
+  return runGitCommand('git rev-parse HEAD');
 }
 
 function getCommitDate() {
-    let commitDate = 'unknown';
-    try {
-        commitDate = git.date().toUTCString();
-    } catch (e) {
-        console.log('Failed to retrieve commit date: ', e);
-    }
-    return commitDate;
+  const date = runGitCommand('git log -1 --format=%cI');
+
+  return date !== 'unknown' ? new Date(date).toUTCString() : 'unknown';
 }
+
+
 
 function getAppVersion() {
     const packageJsonFilePath = `${process.env.NODE_PATH || '.'}/package.json`;

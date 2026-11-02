@@ -61,7 +61,6 @@ const RAW_RUNTIME_STATE =
           ["express-session", "npm:1.19.0"],\
           ["express-urlrewrite", "npm:2.0.3"],\
           ["fs-extra", "npm:11.4.1"],\
-          ["git-rev-sync", "npm:3.0.2"],\
           ["globals", "npm:17.13.0"],\
           ["govuk-frontend", "npm:5.14.0"],\
           ["helmet", "npm:8.3.0"],\
@@ -8909,15 +8908,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["fs.realpath", [\
-      ["npm:1.0.0", {\
-        "packageLocation": "./.yarn/cache/fs.realpath-npm-1.0.0-c8f05d8126-e703107c28.zip/node_modules/fs.realpath/",\
-        "packageDependencies": [\
-          ["fs.realpath", "npm:1.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["fsevents", [\
       ["patch:fsevents@npm%3A2.3.3#optional!builtin<compat/fsevents>::version=2.3.3&hash=df0bf1", {\
         "packageLocation": "./.yarn/unplugged/fsevents-patch-6b67494872/node_modules/fsevents/",\
@@ -9092,18 +9082,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["git-rev-sync", [\
-      ["npm:3.0.2", {\
-        "packageLocation": "./.yarn/cache/git-rev-sync-npm-3.0.2-ea76b3e6e7-a6c1b8d941.zip/node_modules/git-rev-sync/",\
-        "packageDependencies": [\
-          ["escape-string-regexp", "npm:1.0.5"],\
-          ["git-rev-sync", "npm:3.0.2"],\
-          ["graceful-fs", "npm:4.1.15"],\
-          ["shelljs", "npm:0.8.5"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["glob", [\
       ["npm:10.5.0", {\
         "packageLocation": "./.yarn/cache/glob-npm-10.5.0-b569657078-ab3bccfefc.zip/node_modules/glob/",\
@@ -9125,19 +9103,6 @@ const RAW_RUNTIME_STATE =
           ["minimatch", "npm:10.2.6"],\
           ["minipass", "npm:7.1.3"],\
           ["path-scurry", "npm:2.0.2"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:7.2.3", {\
-        "packageLocation": "./.yarn/cache/glob-npm-7.2.3-2d866d17a5-59452a9202.zip/node_modules/glob/",\
-        "packageDependencies": [\
-          ["fs.realpath", "npm:1.0.0"],\
-          ["glob", "npm:7.2.3"],\
-          ["inflight", "npm:1.0.6"],\
-          ["inherits", "npm:2.0.4"],\
-          ["minimatch", "npm:3.1.5"],\
-          ["once", "npm:1.4.0"],\
-          ["path-is-absolute", "npm:1.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9206,13 +9171,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["graceful-fs", [\
-      ["npm:4.1.15", {\
-        "packageLocation": "./.yarn/cache/graceful-fs-npm-4.1.15-90e9b401bb-eecc88fc44.zip/node_modules/graceful-fs/",\
-        "packageDependencies": [\
-          ["graceful-fs", "npm:4.1.15"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:4.2.11", {\
         "packageLocation": "./.yarn/cache/graceful-fs-npm-4.2.11-24bb648a68-bf152d0ed1.zip/node_modules/graceful-fs/",\
         "packageDependencies": [\
@@ -9622,17 +9580,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["inflight", [\
-      ["npm:1.0.6", {\
-        "packageLocation": "./.yarn/cache/inflight-npm-1.0.6-ccedb4b908-d2ebd65441.zip/node_modules/inflight/",\
-        "packageDependencies": [\
-          ["inflight", "npm:1.0.6"],\
-          ["once", "npm:1.4.0"],\
-          ["wrappy", "npm:1.0.2"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["inherits", [\
       ["npm:2.0.4", {\
         "packageLocation": "./.yarn/cache/inherits-npm-2.0.4-c66b3957a0-cd45e923be.zip/node_modules/inherits/",\
@@ -9688,13 +9635,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["interpret", [\
-      ["npm:1.4.0", {\
-        "packageLocation": "./.yarn/cache/interpret-npm-1.4.0-17b4b5b0a4-5beec568d3.zip/node_modules/interpret/",\
-        "packageDependencies": [\
-          ["interpret", "npm:1.4.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:3.1.1", {\
         "packageLocation": "./.yarn/cache/interpret-npm-3.1.1-715bac2bd7-bc9e111269.zip/node_modules/interpret/",\
         "packageDependencies": [\
@@ -12198,15 +12138,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["path-is-absolute", [\
-      ["npm:1.0.1", {\
-        "packageLocation": "./.yarn/cache/path-is-absolute-npm-1.0.1-31bc695ffd-060840f92c.zip/node_modules/path-is-absolute/",\
-        "packageDependencies": [\
-          ["path-is-absolute", "npm:1.0.1"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["path-key", [\
       ["npm:3.1.1", {\
         "packageLocation": "./.yarn/cache/path-key-npm-3.1.1-0e66ea8321-55cd7a9dd4.zip/node_modules/path-key/",\
@@ -12591,7 +12522,6 @@ const RAW_RUNTIME_STATE =
           ["express-session", "npm:1.19.0"],\
           ["express-urlrewrite", "npm:2.0.3"],\
           ["fs-extra", "npm:11.4.1"],\
-          ["git-rev-sync", "npm:3.0.2"],\
           ["globals", "npm:17.13.0"],\
           ["govuk-frontend", "npm:5.14.0"],\
           ["helmet", "npm:8.3.0"],\
@@ -12848,14 +12778,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["rechoir", [\
-      ["npm:0.6.2", {\
-        "packageLocation": "./.yarn/cache/rechoir-npm-0.6.2-0df5f171ec-fe76bf9c21.zip/node_modules/rechoir/",\
-        "packageDependencies": [\
-          ["rechoir", "npm:0.6.2"],\
-          ["resolve", "patch:resolve@npm%3A1.22.12#optional!builtin<compat/resolve>::version=1.22.12&hash=9bd1a5"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:0.8.0", {\
         "packageLocation": "./.yarn/cache/rechoir-npm-0.8.0-fb660b3bc8-ad3caed8af.zip/node_modules/rechoir/",\
         "packageDependencies": [\
@@ -13395,18 +13317,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/shell-quote-npm-1.12.0-07cdcb44f1-18b3e38227.zip/node_modules/shell-quote/",\
         "packageDependencies": [\
           ["shell-quote", "npm:1.12.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["shelljs", [\
-      ["npm:0.8.5", {\
-        "packageLocation": "./.yarn/cache/shelljs-npm-0.8.5-44be43f84a-f2178274b9.zip/node_modules/shelljs/",\
-        "packageDependencies": [\
-          ["glob", "npm:7.2.3"],\
-          ["interpret", "npm:1.4.0"],\
-          ["rechoir", "npm:0.6.2"],\
-          ["shelljs", "npm:0.8.5"]\
         ],\
         "linkType": "HARD"\
       }]\
