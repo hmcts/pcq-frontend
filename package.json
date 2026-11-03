@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.318",
+  "version": "1.2.319",
   "license": "MIT",
   "engines": {
     "node": ">=24.0.0"
@@ -9,7 +9,7 @@
   "scripts": {
     "preinstall": "./bin/preinstall.sh || true",
     "setup": "sh ./bin/setup.sh",
-    "createVersionFile": "NODE_PATH=. node setup/createVersionFile.js",
+    "createVersionFile": "NODE_PATH=. node setup/createVersionFile.mjs",
     "copyGovUkResources": "NODE_PATH=. node setup/copyGovukResources.js",
     "bundle": "NODE_PATH=. yarn webpack --disable-interpret",
     "start": "NODE_PATH=. node server.js",
@@ -61,7 +61,6 @@
     "express": "^5.0.0",
     "express-session": "^1.18.2",
     "express-urlrewrite": "^2.0.1",
-    "git-rev-sync": "^3.0.2",
     "govuk-frontend": "^5.4.0",
     "helmet": "^8.0.0",
     "i18next": "^26.0.0",
