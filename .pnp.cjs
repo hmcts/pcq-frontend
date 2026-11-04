@@ -34,11 +34,11 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/playwright-common", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:1.1.7"],\
           ["@hmcts/properties-volume", "npm:1.4.1"],\
-          ["@launchdarkly/node-server-sdk", "npm:9.16.0"],\
+          ["@launchdarkly/node-server-sdk", "npm:9.16.1"],\
           ["@parcel/watcher", "npm:2.6.0"],\
           ["@playwright/test", "npm:1.64.1"],\
-          ["@stryker-mutator/core", "npm:10.0.0"],\
-          ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:10.0.0"],\
+          ["@stryker-mutator/core", "npm:10.1.1"],\
+          ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:10.1.1"],\
           ["ajv", "npm:8.20.0"],\
           ["ajv-formats", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.0.1"],\
           ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
@@ -90,7 +90,7 @@ const RAW_RUNTIME_STATE =
           ["sinon", "npm:22.1.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
           ["sonarqube-scanner", "npm:5.0.2"],\
-          ["supertest", "npm:7.3.0"],\
+          ["supertest", "npm:7.3.1"],\
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.14"],\
           ["uuid", "npm:11.1.1"],\
@@ -1671,7 +1671,7 @@ const RAW_RUNTIME_STATE =
           ["@axe-core/playwright", "virtual:c3e0bafeac5f89dab10f1747596d1b95cea736151fd5b8f109e8dfcdde171be2dcd360a6f26a29bcfe98f3e39568bb09049cdd985956059c3b51827847073a0f#npm:4.13.0"],\
           ["@eslint/js", "npm:9.39.5"],\
           ["@hmcts/playwright-common", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:1.1.7"],\
-          ["@playwright/test", "npm:1.64.0"],\
+          ["@playwright/test", "npm:1.64.1"],\
           ["@types/playwright-core", null],\
           ["@types/playwright__test", null],\
           ["@typescript-eslint/eslint-plugin", "virtual:c3e0bafeac5f89dab10f1747596d1b95cea736151fd5b8f109e8dfcdde171be2dcd360a6f26a29bcfe98f3e39568bb09049cdd985956059c3b51827847073a0f#npm:8.71.2"],\
@@ -2320,23 +2320,23 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@launchdarkly/js-server-sdk-common", [\
-      ["npm:2.26.0", {\
-        "packageLocation": "./.yarn/cache/@launchdarkly-js-server-sdk-common-npm-2.26.0-2dfb63648d-2db1c6e3ca.zip/node_modules/@launchdarkly/js-server-sdk-common/",\
+      ["npm:2.26.1", {\
+        "packageLocation": "./.yarn/cache/@launchdarkly-js-server-sdk-common-npm-2.26.1-131e6fa497-9efbd1daeb.zip/node_modules/@launchdarkly/js-server-sdk-common/",\
         "packageDependencies": [\
           ["@launchdarkly/js-sdk-common", "npm:2.32.0"],\
-          ["@launchdarkly/js-server-sdk-common", "npm:2.26.0"],\
+          ["@launchdarkly/js-server-sdk-common", "npm:2.26.1"],\
           ["semver", "npm:7.5.4"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@launchdarkly/node-server-sdk", [\
-      ["npm:9.16.0", {\
-        "packageLocation": "./.yarn/cache/@launchdarkly-node-server-sdk-npm-9.16.0-eaf97bcafc-6d10730bab.zip/node_modules/@launchdarkly/node-server-sdk/",\
+      ["npm:9.16.1", {\
+        "packageLocation": "./.yarn/cache/@launchdarkly-node-server-sdk-npm-9.16.1-2c97c227a0-457d99854a.zip/node_modules/@launchdarkly/node-server-sdk/",\
         "packageDependencies": [\
           ["@launchdarkly/eventsource", "npm:0.2.2"],\
-          ["@launchdarkly/js-server-sdk-common", "npm:2.26.0"],\
-          ["@launchdarkly/node-server-sdk", "npm:9.16.0"],\
+          ["@launchdarkly/js-server-sdk-common", "npm:2.26.1"],\
+          ["@launchdarkly/node-server-sdk", "npm:9.16.1"],\
           ["https-proxy-agent", "npm:7.0.6"]\
         ],\
         "linkType": "HARD"\
@@ -12542,11 +12542,11 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/playwright-common", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:1.1.7"],\
           ["@hmcts/properties-volume", "npm:1.4.1"],\
-          ["@launchdarkly/node-server-sdk", "npm:9.16.0"],\
+          ["@launchdarkly/node-server-sdk", "npm:9.16.1"],\
           ["@parcel/watcher", "npm:2.6.0"],\
           ["@playwright/test", "npm:1.64.1"],\
-          ["@stryker-mutator/core", "npm:10.0.0"],\
-          ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:10.0.0"],\
+          ["@stryker-mutator/core", "npm:10.1.1"],\
+          ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:10.1.1"],\
           ["ajv", "npm:8.20.0"],\
           ["ajv-formats", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.0.1"],\
           ["app", "link:./app::locator=protected-characteristics-frontend%40workspace%3A."],\
@@ -12598,7 +12598,7 @@ const RAW_RUNTIME_STATE =
           ["sinon", "npm:22.1.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
           ["sonarqube-scanner", "npm:5.0.2"],\
-          ["supertest", "npm:7.3.0"],\
+          ["supertest", "npm:7.3.1"],\
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.14"],\
           ["uuid", "npm:11.1.1"],\
