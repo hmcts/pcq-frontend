@@ -1,10 +1,9 @@
 import chai from 'chai';
-import rewire from 'rewire';
 import defaultJourney from 'app/journeys/default.js';
+import JourneyMap from 'app/core/JourneyMap.js';
 import toggledQuestions from '../../data/journeys/toggledQuestions.js';
 
 const { expect } = chai;
-const JourneyMap = rewire('app/core/JourneyMap');
 
 describe('JourneyMap.js', () => {
     let currentStep;
@@ -42,29 +41,25 @@ describe('JourneyMap.js', () => {
     });
 
     describe('nextStep()', () => {
-        let revert;
         let journey;
+        let stepMap;
 
         beforeEach(() => {
-            revert = JourneyMap.__set__('steps', {
+            stepMap = {
                 ApplicantEnglishLevel: {
                     name: 'ApplicantEnglishLevel'
                 },
                 ApplicantGenderSameAsSex: {
                     name: 'ApplicantGenderSameAsSex'
                 }
-            });
+            };
             journey = defaultJourney();
-        });
-
-        afterEach(() => {
-            revert();
         });
 
         it('should return the next option step if the next step is a string', (done) => {
             currentStep.name = 'ApplicantSex';
             const ctx = {};
-            const journeyMap = new JourneyMap(journey);
+            const journeyMap = new JourneyMap(journey, stepMap);
             const nextStep = journeyMap.nextStep(currentStep, ctx);
             expect(nextStep).to.deep.equal({name: 'ApplicantGenderSameAsSex'});
             done();
@@ -75,7 +70,7 @@ describe('JourneyMap.js', () => {
             const ctx = {
                 language: 'optionOther'
             };
-            const journeyMap = new JourneyMap(journey);
+            const journeyMap = new JourneyMap(journey, stepMap);
             const nextStep = journeyMap.nextStep(currentStep, ctx);
             expect(nextStep).to.deep.equal({name: 'ApplicantEnglishLevel'});
             done();
@@ -83,10 +78,10 @@ describe('JourneyMap.js', () => {
     });
 
     describe('nextStep() - With skip list', () => {
-        let revert;
+        let stepMap;
 
         beforeEach(() => {
-            revert = JourneyMap.__set__('steps', {
+            stepMap = {
                 ApplicantDateOfBirth: {
                     name: 'ApplicantDateOfBirth'
                 },
@@ -105,11 +100,7 @@ describe('JourneyMap.js', () => {
                 ApplicantMaritalStatus: {
                     name: 'ApplicantMaritalStatus'
                 }
-            });
-        });
-
-        afterEach(() => {
-            revert();
+            };
         });
 
         it('should skip a step if it is in the skip list', (done) => {
@@ -121,7 +112,7 @@ describe('JourneyMap.js', () => {
             ];
 
             const ctx = {};
-            const journeyMap = new JourneyMap(journey);
+            const journeyMap = new JourneyMap(journey, stepMap);
             const nextStep = journeyMap.nextStep(currentStep, ctx);
             expect(nextStep).to.deep.equal({name: 'ApplicantLanguage'});
             done();
@@ -136,7 +127,7 @@ describe('JourneyMap.js', () => {
             ];
 
             const ctx = {};
-            const journeyMap = new JourneyMap(journey);
+            const journeyMap = new JourneyMap(journey, stepMap);
             const nextStep = journeyMap.nextStep(currentStep, ctx);
             expect(nextStep).to.deep.equal({name: 'ApplicantSex'});
             done();
@@ -152,7 +143,7 @@ describe('JourneyMap.js', () => {
             ];
 
             const ctx = {};
-            const journeyMap = new JourneyMap(journey);
+            const journeyMap = new JourneyMap(journey, stepMap);
             const nextStep = journeyMap.nextStep(currentStep, ctx);
             expect(nextStep).to.deep.equal({name: 'ApplicantGenderSameAsSex'});
             done();
@@ -168,7 +159,7 @@ describe('JourneyMap.js', () => {
             ];
 
             const ctx = {};
-            const journeyMap = new JourneyMap(journey);
+            const journeyMap = new JourneyMap(journey, stepMap);
             const nextStep = journeyMap.nextStep(currentStep, ctx);
             expect(nextStep).to.deep.equal({name: 'ApplicantSexualOrientation'});
             done();
@@ -185,7 +176,7 @@ describe('JourneyMap.js', () => {
             ];
 
             const ctx = {};
-            const journeyMap = new JourneyMap(journey);
+            const journeyMap = new JourneyMap(journey, stepMap);
             const nextStep = journeyMap.nextStep(currentStep, ctx);
             expect(nextStep).to.deep.equal({name: 'ApplicantMaritalStatus'});
             done();
