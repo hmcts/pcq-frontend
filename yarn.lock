@@ -1670,24 +1670,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@launchdarkly/js-server-sdk-common@npm:2.26.0":
-  version: 2.26.0
-  resolution: "@launchdarkly/js-server-sdk-common@npm:2.26.0"
+"@launchdarkly/js-server-sdk-common@npm:2.26.1":
+  version: 2.26.1
+  resolution: "@launchdarkly/js-server-sdk-common@npm:2.26.1"
   dependencies:
     "@launchdarkly/js-sdk-common": "npm:2.32.0"
     semver: "npm:7.5.4"
-  checksum: 10/2db1c6e3ca81d8d084035abba5c80eb91a689a5ee4a011b8c5411ef42d52eca5eda5502b6ed2dc06f42313aa5f5687c248f250a05152f0271a34948802568912
+  checksum: 10/9efbd1daebbc8fe62a1dda122205c22685c6650c32954cee320435bfd1b7f883ac41860b4c04f37af7116c19db523d6c95ebfd5679e2bd1e2c700477f89b92b2
   languageName: node
   linkType: hard
 
 "@launchdarkly/node-server-sdk@npm:^9.10.9":
-  version: 9.16.0
-  resolution: "@launchdarkly/node-server-sdk@npm:9.16.0"
+  version: 9.16.1
+  resolution: "@launchdarkly/node-server-sdk@npm:9.16.1"
   dependencies:
     "@launchdarkly/eventsource": "npm:0.2.2"
-    "@launchdarkly/js-server-sdk-common": "npm:2.26.0"
+    "@launchdarkly/js-server-sdk-common": "npm:2.26.1"
     https-proxy-agent: "npm:^7.0.6"
-  checksum: 10/6d10730babe3caed15c4c620721ac384eba2c6e0b3436bd0ecffac3228a308597d66e9086615dd20e1101e89ebb481947df6cdaaaf8ce4f7fb37cafb099af7ee
+  checksum: 10/457d99854ae3911f6e0542fb494e1d334384e21f9cfc2ad95465fada06d3d61a9cb9a30e9d982483a8c6a633ae1be231ff6a7e63af6e6d9708e4f5b44c95585b
   languageName: node
   linkType: hard
 
@@ -2810,14 +2810,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@playwright/test@npm:1.64.0":
-  version: 1.64.0
-  resolution: "@playwright/test@npm:1.64.0"
+"@playwright/test@npm:1.64.1":
+  version: 1.64.1
+  resolution: "@playwright/test@npm:1.64.1"
   dependencies:
-    playwright: "npm:1.64.0"
+    playwright: "npm:1.64.1"
   bin:
     playwright: cli.js
-  checksum: 10/150071109a165e413f390bea574c2d6508788b713dbc0ae58ba3bfed7d5befa621f862b4a818fab502e409365f465bf90641dc1da7a64ccd4910a0124e8cd3bf
+  checksum: 10/589855c5fbc9ebbfb072e77e4b24a646f302ca9823d56ac3ff08a8e4ecf7ee13a390fe19236f4f9737e9a736194324f244f90c409a10edeb480c5f99ce77d10e
   languageName: node
   linkType: hard
 
@@ -9684,12 +9684,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright-core@npm:1.64.0":
-  version: 1.64.0
-  resolution: "playwright-core@npm:1.64.0"
+"playwright-core@npm:1.64.1":
+  version: 1.64.1
+  resolution: "playwright-core@npm:1.64.1"
   bin:
     playwright-core: cli.js
-  checksum: 10/38b1c9a4ebe96ab5ee282a9743cb57dd5abb4d1370ad5570b676b71d0864e6f9feb9feebe74e15af4af6828ebaca3670f77bdcdc1979a1fa02462465456edc12
+  checksum: 10/4a173590bc784d8d5bfe2cace53ccc31316dac11475660b59cea24a2e833875d87183d41a957a20355301ac2b339a17940faaf0b42217156fa9c0c3cfdd4633c
   languageName: node
   linkType: hard
 
@@ -9709,14 +9709,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright@npm:1.64.0, playwright@npm:^1.43.1":
-  version: 1.64.0
-  resolution: "playwright@npm:1.64.0"
+"playwright@npm:1.64.1, playwright@npm:^1.43.1":
+  version: 1.64.1
+  resolution: "playwright@npm:1.64.1"
   dependencies:
-    playwright-core: "npm:1.64.0"
+    playwright-core: "npm:1.64.1"
   bin:
     playwright: cli.js
-  checksum: 10/8e68bd0db79a9b5812b08c8ad5e9280359b37f38d53bf6eaf73891140014edb61566ab11df2f4401bf70a12a78518467c2d44c258cdf069a5a0469753dbe1c69
+  checksum: 10/1096fa91e433f84c8677433a26052aa4f269bf0811aa793fe667d7053feb1c2852e9f10f9f0cced77fa2678f8580ed47192f29adbc9c027efa5ba87b38e23e50
   languageName: node
   linkType: hard
 
@@ -9845,7 +9845,7 @@ __metadata:
     "@hmcts/properties-volume": "npm:^1.0.0"
     "@launchdarkly/node-server-sdk": "npm:^9.10.9"
     "@parcel/watcher": "npm:^2.4.1"
-    "@playwright/test": "npm:1.64.0"
+    "@playwright/test": "npm:1.64.1"
     "@stryker-mutator/core": "npm:^10.0.0"
     "@stryker-mutator/mocha-runner": "npm:10.1.1"
     ajv: "npm:^8.18.0"
@@ -10989,13 +10989,13 @@ __metadata:
   linkType: hard
 
 "supertest@npm:^7.0.0":
-  version: 7.3.0
-  resolution: "supertest@npm:7.3.0"
+  version: 7.3.1
+  resolution: "supertest@npm:7.3.1"
   dependencies:
     cookie-signature: "npm:^1.2.2"
     methods: "npm:^1.1.2"
     superagent: "npm:^10.3.0"
-  checksum: 10/14f69c5acb497cbb02d681cc1f1b1c8775d42ec063d0c6a794cf12a043d8b5ec7c7c02d239137cb55cdbfadb8b549bb62ea11a6121b93155ce7fcd7776aa9a2c
+  checksum: 10/ea8ea4ec198d97d776d718274e17ec4e7f2ca9b2378215204fcc2f084daf791731553a00eebec96aa579911911aa685a782f948d94c64a96bb28507fb52a54d6
   languageName: node
   linkType: hard
 
