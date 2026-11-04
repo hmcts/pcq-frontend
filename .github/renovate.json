@@ -8,17 +8,7 @@
   {
     "matchPackageNames": ["chai"],
     "allowedVersions": "<5.0.0"
-  },
-  {
-      "groupName": "all patch dependencies",
-      "groupSlug": "all-patch",
-      "matchUpdateTypes": [
-        "patch"
-      ],
-      "matchPackageNames": [
-        "*"
-      ]
-    }
+  }
   ],
   "schedule": [
     "after 3pm and before 7pm every weekday"
