@@ -19,15 +19,16 @@
   "paragraph6": "We provide a text relay service for people who are deaf, hearing impaired or have a speech impediment.If you need information on this website in a different format like accessible PDF, large print, easy read or braille",
   "paragraph7": "Email: <a href=\"mailto:HMCTSforms@justice.gov.uk\" class=\"govuk-link\">HMCTSforms@justice.gov.uk</a>",
   "paragraph8": "<strong>You can also contact us via the following helplines:</strong>",
-  "list2-divorce": "If you were using the Divorce service: 0300 303 0642",
-  "list2-probate": "If you were using the Probate service: 0300 303 0648",
-  "list2-sscs": "If you were appealing to the Social Security and Child Support Tribunal: 0300 123 1142",
+  "list2-divorce": "If you were using the Divorce service: 0300 303 0642 or email contactdivorce@justice.gov.uk",
+  "list2-probate": "If you were using the Probate service: 0300 303 0648 or email probatefeedback@justice.gov.uk",
+  "list2-sscs": "If you were appealing to the Social Security and Child Support Tribunal in England and Wales: 0300 123 1142 or in Scotland: 0300 790 6234 or email HMCTSforms@justice.gov.uk",
   "list2-iac": "If you were appealing to the Immigration or Asylum service: 0300 123 1711 or email contactia@justice.gov.uk",
-  "list2-et": "If you were using the Employment Tribunals service in England and Wales: 0300 123 1024 or in Scotland: 0300 790 6234",
+  "list2-et": "If you were using the Employment Tribunals service in England and Wales: 0300 323 0196 or in Scotland: 0300 790 6234 or email HMCTSforms@justice.gov.uk",
   "list2-online_plea": "If you were using the Make a plea service : 0300 303 0656",
   "list2-specialtribunals_cic": "If you were using the First-tier Tribunal (Criminal Injuries Compensation) service : 0300 790 6234 or email CIC.enquiries@justice.gov.uk",
   "list2-jurordigital": "If you were using the Jury Central Summoning Bureau: 0300 456 1024 (English), 0300 303 5173 (Welsh), Monday to Thursday: 9am to 5pm, Friday: 9am to 3pm or email: jurysummoning@justice.gov.uk",
   "list2-prl_ca": "If you were using the Private Law service: 0300 323 0185 or email: FamilyPrivateLawService@justice.gov.uk.",
+  "list2-prl_child_arrangements": "If you were using the Child Arrangements and Family  Injuctions service: email: C100applications@justice.gov.uk",
   "list2-civil-citizen-ui": "If you were using the Money Claim service: 0300 123 7050 (English), 0300 303 5174 (Welsh), Monday to Friday: 8:30am to 5pm, or email: contactocmc@justice.gov.uk",
   "list2-adoption": "If you were using the adoption service: email: adoptionproject@justice.gov.uk, Monday to Friday: 9am to 5pm.",
   "list2-pcs": "If you were using the Possession Claim service: 03001235577 Email: possession.support@justice.gov.uk Opening hours: Monday to Friday, 8.30am-5.00pm",
@@ -50,6 +51,6 @@
   "paragraph16": "This website is continually tested using accessibility automated tests and basic manual and assistive technology checks. Any new features which are introduced will also be tested internally or with the support of the internal HMCTS accessibility testing team.",
 
   "heading10": "Preparation of this accessibility statement",
-  "paragraph17": "This statement was prepared on 28<sup>th</sup> May 2020. It was last updated on 21<sup>st</sup> April 2026.",
+  "paragraph17": "This statement was prepared on 28<sup>th</sup> May 2020. It was last updated on 05<sup>th</sup> November 2026.",
   "paragraph18": "This website was last tested on 2<sup>nd</sup> April 2025. The audit was carried out by the internal HMCTS accessibility testing team. The team tested against a range of assistive technologies and accessibility testing tools."
 }
