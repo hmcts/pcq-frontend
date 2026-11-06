@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.322",
+  "version": "1.2.323",
   "license": "MIT",
   "engines": {
     "node": ">=24.0.0"
@@ -113,7 +113,7 @@
     "sinon": "^22.0.0",
     "sinon-chai": "^3.4.0",
     "sonarqube-scanner": "^5.0.0",
-    "supertest": "7.3.1",
+    "supertest": "7.3.0",
     "yarn-audit-fix": "^11.0.0"
   },
   "resolutions": {
