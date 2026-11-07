@@ -36,6 +36,7 @@ describe('accessibility', () => {
                 list2specialtribunals_cic: accessibility['list2-specialtribunals_cic'],
                 list2jurordigital: accessibility['list2-jurordigital'],
                 list2prl_ca: accessibility['list2-prl_ca'],
+                list2prl_ca_2: accessibility['list2-prl_child_arrangements'],
                 list2civilcitizenui: accessibility['list2-civil-citizen-ui'],
                 list2Adoption: accessibility['list2-adoption'],
                 list2pcs: accessibility['list2-pcs']
