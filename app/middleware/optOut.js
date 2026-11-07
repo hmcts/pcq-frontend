@@ -9,28 +9,30 @@ const validateUrl = require('app/middleware/validateUrl');
 const setOptOut = async (req, res) => {
     const token = req.session.token;
     const correlationId = req.session.correlationId;
-    try{
-        const formData = await ServiceMapper.map(
-            'FormData',
-            [config.services.pcqBackend.url, req.session.id]
-        );
-        // Set the completed date
-        const form = req.session.form;
-        form.completedDate = moment().toISOString();
+    
+    const formData = ServiceMapper.map(
+        'FormData',
+        [config.services.pcqBackend.url, req.session.id]
+    );
+    // Set the completed date
+    const form = req.session.form;
+    form.completedDate = moment().toISOString();
 
-        // Set the opt out flag
-        form.optOut = 'Y';
+    // Set the opt out flag
+    form.optOut = 'Y';
 
-        //set pcqAnswers to empty to call backend in anycase continue or optout
-        form.pcqAnswers = form.pcqAnswers || {};
+    //set pcqAnswers to empty to call backend in anycase continue or optout
+    form.pcqAnswers = form.pcqAnswers || {};
 
-        return await formData.post(token, correlationId, form);
-    } catch (err) {
-        req.log.error(err);
-    } finally {
-        res.redirect(validateUrl(req));
-    }
+    return formData.post(token, correlationId, form)
+        .catch(err => {
+            req.log.error(err);
+        })
+        .finally(() => {
+            res.redirect(validateUrl(req));
+        });
 };
+
 
 const optOut = (req, res) => {
     const form = req.session.form;

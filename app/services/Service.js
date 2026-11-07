@@ -1,18 +1,19 @@
-import logger from '../components/logger.js';
+import { createRequire } from 'module';
 import config from 'config';
+
+const require = createRequire(import.meta.url);
+import logger from '../components/logger.js';
 import formatUrl from '../utils/FormatUrl.js';
 import AsyncFetch from '../utils/AsyncFetch.js';
 
 const asyncFetch = new AsyncFetch();
 
 class Service {
-    constructor(endpoint, sessionId, dependencies = {}) {
+    constructor(endpoint, sessionId) {
         this.endpoint = endpoint;
         this.sessionId = sessionId;
         this.config = config;
         this.formatUrl = formatUrl;
-        this.logger = dependencies.logger ?? logger;
-        this.asyncFetch = dependencies.asyncFetch ?? asyncFetch;
     }
 
     get() {
@@ -33,7 +34,7 @@ class Service {
 
     log(message, level = 'info') {
         const sessionId = this.sessionId ? this.sessionId : 'Init';
-        this.logger(sessionId)[level](message);
+        logger(sessionId)[level](message);
     }
 
     replacePlaceholderInPath(path, placeholder, value) {
@@ -41,21 +42,21 @@ class Service {
     }
 
     fetchJson(url, fetchOptions) {
-        return this.asyncFetch
+        return asyncFetch
             .fetch(url, fetchOptions, res => res.json())
             .then(json => json)
             .catch(err => err);
     }
 
     fetchText(url, fetchOptions) {
-        return this.asyncFetch
+        return asyncFetch
             .fetch(url, fetchOptions, res => res.text())
             .then(text => text)
             .catch(err => err);
     }
 
     fetchBuffer(url, fetchOptions) {
-        return this.asyncFetch
+        return asyncFetch
             .fetch(url, fetchOptions, res => res.arrayBuffer().then(buffer => Buffer.from(buffer)))
             .then(buffer => buffer)
             .catch(err => {
