@@ -1,9 +1,11 @@
-'use strict';
+import { createRequire } from 'module';
+import config from 'config';
 
-const logger = require('app/components/logger');
-const config = require('config');
-const formatUrl = require('app/utils/FormatUrl');
-const AsyncFetch = require('app/utils/AsyncFetch');
+const require = createRequire(import.meta.url);
+import logger from '../components/logger.js';
+import formatUrl from '../utils/FormatUrl.js';
+import AsyncFetch from '../utils/AsyncFetch.js';
+
 const asyncFetch = new AsyncFetch();
 
 class Service {
@@ -80,4 +82,4 @@ class Service {
     }
 }
 
-module.exports = Service;
+export default Service;
