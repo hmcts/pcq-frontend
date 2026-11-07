@@ -6,10 +6,9 @@ const moment = require('moment');
 const appInsights = require('app/components/app-insights');
 const validateUrl = require('app/middleware/validateUrl');
 
-const setOptOut = async (req, res) => {
+const setOptOut = (req, res) => {
     const token = req.session.token;
     const correlationId = req.session.correlationId;
-    
     const formData = ServiceMapper.map(
         'FormData',
         [config.services.pcqBackend.url, req.session.id]
@@ -32,7 +31,6 @@ const setOptOut = async (req, res) => {
             res.redirect(validateUrl(req));
         });
 };
-
 
 const optOut = (req, res) => {
     const form = req.session.form;
