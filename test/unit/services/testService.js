@@ -2,6 +2,7 @@ import chai from 'chai';
 import nock from 'nock';
 import Service from 'app/services/Service.js';
 import sinon from 'sinon';
+import winston from 'winston';
 
 const { expect } = chai;
 
@@ -47,13 +48,18 @@ describe('Service', () => {
             done();
         });
 
-        it('should log a message with a sessionId', (done) => {
+        it('should pass the sessionId to the logger', (done) => {
             const sessionId = 'sid123';
             const service = new Service();
             service.sessionId = sessionId;
-            service.log = sinon.spy();
-            service.log();
-            expect(service.log.calledOnce).to.equal(true);
+            const childSpy = sinon.spy(winston.Logger.prototype, 'child');
+
+            try {
+                service.log('test message');
+                expect(childSpy.firstCall.args[0].sessionId).to.equal('sid123');
+            } finally {
+                childSpy.restore();
+            }
             done();
         });
     });
