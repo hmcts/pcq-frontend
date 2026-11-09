@@ -17,18 +17,34 @@ class Service {
         this.formatUrl = formatUrl;
     }
 
+    /**
+     * Fetch data via GET request
+     * @returns {Promise}
+     */
     get() {
         throw new ReferenceError('get() must be overridden when extending Service');
     }
 
+    /**
+     * Fetch data via POST request
+     * @returns {Promise}
+     */
     post() {
         throw new ReferenceError('post() must be overridden when extending Service');
     }
 
+    /**
+     * Fetch data via PATCH request
+     * @returns {Promise}
+     */
     patch() {
         throw new ReferenceError('patch() must be overridden when extending Service');
     }
 
+    /**
+     * Fetch data via DELETE request
+     * @returns {Promise}
+     */
     delete() {
         throw new ReferenceError('delete() must be overridden when extending Service');
     }
