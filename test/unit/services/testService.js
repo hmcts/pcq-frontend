@@ -1,4 +1,5 @@
 import chai from 'chai';
+import nock from 'nock';
 import Service from 'app/services/Service.js';
 import sinon from 'sinon';
 
@@ -69,61 +70,76 @@ describe('Service', () => {
     });
 
     describe('fetchJson()', () => {
-        it('should return a json response', (done) => {
+        it('should return a json response', () => {
+            const mockResponse = { id: 123, name: 'Test' };
             const service = new Service();
-            service
-                .fetchJson('http://localhost/forms', {})
-                .then((res) => {
-                    expect(res).to.be.an('object');
-                    done();
-                })
-                .catch((err) => {
-                    // Expected to fail since we're not mocking the fetch
-                    done();
+            const testUrl = 'http://localhost:8080';
+
+            nock(testUrl)
+                .get('/forms')
+                .reply(200, mockResponse);
+
+            return service.fetchJson(`${testUrl}/forms`, {})
+                .then((result) => {
+                    expect(result).to.deep.equal(mockResponse);
                 });
         });
     });
 
     describe('fetchText()', () => {
-        it('should return a text response', (done) => {
+        it('should return a text response', () => {
+            const mockText = 'Hello World';
             const service = new Service();
-            service
-                .fetchText('http://localhost/forms', {})
-                .then((res) => {
-                    expect(res).to.be.a('string');
-                    done();
-                })
-                .catch((err) => {
-                    // Expected to fail since we're not mocking the fetch
-                    done();
+            const testUrl = 'http://localhost:8080';
+
+            nock(testUrl)
+                .get('/forms')
+                .reply(200, mockText);
+
+            return service.fetchText(`${testUrl}/forms`, {})
+                .then((result) => {
+                    expect(result).to.equal(mockText);
                 });
         });
     });
 
     describe('fetchBuffer()', () => {
-        it('should return a buffer response', (done) => {
+        it('should return a buffer response', () => {
+            const expectedBuffer = Buffer.from('test data');
             const service = new Service();
-            service
-                .fetchBuffer('http://localhost/forms', {})
-                .then((res) => {
-                    expect(res).to.be.instanceof(Buffer);
-                    done();
-                })
-                .catch((err) => {
-                    // Expected to fail since we're not mocking the fetch
-                    done();
+            const testUrl = 'http://localhost:8080';
+
+            nock(testUrl)
+                .get('/forms')
+                .reply(200, expectedBuffer);
+
+            return service.fetchBuffer(`${testUrl}/forms`, {})
+                .then((result) => {
+                    expect(result).to.be.instanceof(Buffer);
+                    expect(result).to.deep.equal(expectedBuffer);
                 });
         });
 
-        it('should throw an error', (done) => {
+        it('should log and throw when the request fails', () => {
             const service = new Service();
-            service.log = sinon.spy();
+            const testUrl = 'http://localhost:8080';
+            sinon.stub(service, 'log');
 
-            service
-                .fetchBuffer('http://localhost/forms', {})
-                .catch((err) => {
-                    expect(service.log.called).to.equal(true);
-                    done();
+            nock(testUrl)
+                .get('/forms')
+                .reply(500, 'Internal Server Error');
+
+            return service.fetchBuffer(`${testUrl}/forms`, {})
+                .then(() => {
+                    throw new Error('Expected fetchBuffer to reject');
+                }, (error) => {
+                    expect(error).to.be.instanceOf(Error);
+                    expect(error.message).to.equal('Error: Internal Server Error');
+                    expect(service.log.calledOnce).to.equal(true);
+                    expect(service.log.firstCall.args).to.deep.equal([
+                        'Fetch buffer error: Error: Internal Server Error',
+                        'error'
+                    ]);
                 });
         });
     });
