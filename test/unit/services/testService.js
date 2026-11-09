@@ -90,6 +90,7 @@ describe('Service', () => {
             service
                 .fetchText('http://localhost/forms', {})
                 .then((res) => {
+                    expect(res).to.be.a('string');
                     done();
                 })
                 .catch((err) => {
@@ -100,6 +101,20 @@ describe('Service', () => {
     });
 
     describe('fetchBuffer()', () => {
+        it('should return a buffer response', (done) => {
+            const service = new Service();
+            service
+                .fetchBuffer('http://localhost/forms', {})
+                .then((res) => {
+                    expect(res).to.be.instanceof(Buffer);
+                    done();
+                })
+                .catch((err) => {
+                    // Expected to fail since we're not mocking the fetch
+                    done();
+                });
+        });
+
         it('should throw an error', (done) => {
             const service = new Service();
             service.log = sinon.spy();

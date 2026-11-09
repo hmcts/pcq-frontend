@@ -1,11 +1,12 @@
-import { createRequire } from 'module';
+'use strict';
+
+import { createRequire } from 'node:module';
 import config from 'config';
 
 const require = createRequire(import.meta.url);
-import logger from '../components/logger.js';
-import formatUrl from '../utils/FormatUrl.js';
-import AsyncFetch from '../utils/AsyncFetch.js';
-
+const logger = require('../components/logger');
+const formatUrl = require('../utils/FormatUrl');
+const AsyncFetch = require('../utils/AsyncFetch');
 const asyncFetch = new AsyncFetch();
 
 class Service {

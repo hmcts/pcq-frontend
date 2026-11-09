@@ -1,6 +1,6 @@
 'use strict';
 
-const { createRequire } = require('module');
+const { createRequire } = require('node:module');
 
 class ServiceMapper {
     static map(service, params) {
