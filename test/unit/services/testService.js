@@ -1,9 +1,10 @@
 import chai from 'chai';
-import rewire from 'rewire';
+import nock from 'nock';
+import Service from 'app/services/Service.js';
 import sinon from 'sinon';
+import winston from 'winston';
 
 const { expect } = chai;
-const Service = rewire('app/services/Service');
 
 describe('Service', () => {
     describe('get()', () => {
@@ -39,35 +40,26 @@ describe('Service', () => {
     });
 
     describe('log()', () => {
-        let revert;
-
-        beforeEach(() => {
-            revert = Service.__set__('logger', sinon.stub().returns({
-                info: () => true
-            }));
-        });
-
-        afterEach(() => {
-            revert();
-        });
-
         it('should log a message without a sessionId', (done) => {
             const service = new Service();
+            service.log = sinon.spy();
             service.log();
-            expect(Service.__get__('logger').calledOnce).to.equal(true);
-            expect(Service.__get__('logger').calledWith('Init')).to.equal(true);
-            revert();
+            expect(service.log.calledOnce).to.equal(true);
             done();
         });
 
-        it('should log a message with a sessionId', (done) => {
+        it('should pass the sessionId to the logger', (done) => {
             const sessionId = 'sid123';
             const service = new Service();
             service.sessionId = sessionId;
-            service.log();
-            expect(Service.__get__('logger').calledOnce).to.equal(true);
-            expect(Service.__get__('logger').calledWith(sessionId)).to.equal(true);
-            revert();
+            const childSpy = sinon.spy(winston.Logger.prototype, 'child');
+
+            try {
+                service.log('test message');
+                expect(childSpy.firstCall.args[0].sessionId).to.equal('sid123');
+            } finally {
+                childSpy.restore();
+            }
             done();
         });
     });
@@ -84,79 +76,76 @@ describe('Service', () => {
     });
 
     describe('fetchJson()', () => {
-        it('should return a json response', (done) => {
-            const revert = Service.__set__('asyncFetch', class {
-                static fetch() {
-                    return Promise.resolve({result: 'something'});
-                }
-            });
+        it('should return a json response', () => {
+            const mockResponse = { id: 123, name: 'Test' };
             const service = new Service();
-            service
-                .fetchJson('http://localhost/forms', {})
-                .then((res) => {
-                    expect(res).to.deep.equal({result: 'something'});
-                    revert();
-                    done();
-                })
-                .catch((err) => {
-                    done(err);
+            const testUrl = 'http://localhost:8080';
+
+            nock(testUrl)
+                .get('/forms')
+                .reply(200, mockResponse);
+
+            return service.fetchJson(`${testUrl}/forms`, {})
+                .then((result) => {
+                    expect(result).to.deep.equal(mockResponse);
                 });
         });
     });
 
     describe('fetchText()', () => {
-        it('should return a text response', (done) => {
-            const revert = Service.__set__('asyncFetch', class {
-                static fetch() {
-                    return Promise.resolve('something');
-                }
-            });
+        it('should return a text response', () => {
+            const mockText = 'Hello World';
             const service = new Service();
-            service
-                .fetchText('http://localhost/forms', {})
-                .then((res) => {
-                    expect(res).to.equal('something');
-                    revert();
-                    done();
-                })
-                .catch((err) => {
-                    done(err);
+            const testUrl = 'http://localhost:8080';
+
+            nock(testUrl)
+                .get('/forms')
+                .reply(200, mockText);
+
+            return service.fetchText(`${testUrl}/forms`, {})
+                .then((result) => {
+                    expect(result).to.equal(mockText);
                 });
         });
     });
 
     describe('fetchBuffer()', () => {
-        it('should return a buffer response', (done) => {
-            const buffer = new Buffer('really interesting file contents');
-            const revert = Service.__set__('asyncFetch', class {
-                static fetch() {
-                    return Promise.resolve(buffer);
-                }
-            });
+        it('should return a buffer response', () => {
+            const expectedBuffer = Buffer.from('test data');
             const service = new Service();
-            service
-                .fetchBuffer('http://localhost/forms', {})
-                .then((res) => {
-                    expect(res).to.equal(buffer);
-                    revert();
-                    done();
-                })
-                .catch((err) => {
-                    done(err);
+            const testUrl = 'http://localhost:8080';
+
+            nock(testUrl)
+                .get('/forms')
+                .reply(200, expectedBuffer);
+
+            return service.fetchBuffer(`${testUrl}/forms`, {})
+                .then((result) => {
+                    expect(result).to.be.instanceof(Buffer);
+                    expect(result).to.deep.equal(expectedBuffer);
                 });
         });
 
-        it('should throw an error', (done) => {
+        it('should log and throw when the request fails', () => {
             const service = new Service();
+            const testUrl = 'http://localhost:8080';
+            sinon.stub(service, 'log');
 
-            service.log = sinon.spy();
+            nock(testUrl)
+                .get('/forms')
+                .reply(500, 'Internal Server Error');
 
-            service
-                .fetchBuffer('http://localhost/forms', {})
-                .catch((err) => {
+            return service.fetchBuffer(`${testUrl}/forms`, {})
+                .then(() => {
+                    throw new Error('Expected fetchBuffer to reject');
+                }, (error) => {
+                    expect(error).to.be.instanceOf(Error);
+                    expect(error.message).to.equal('Error: Internal Server Error');
                     expect(service.log.calledOnce).to.equal(true);
-                    expect(err.message).to.contain('fetch failed');
-                    done();
+                    expect(service.log.firstCall.args).to.deep.equal([
+                        'Fetch buffer error: Error: Internal Server Error',
+                        'error'
+                    ]);
                 });
         });
     });
