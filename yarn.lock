@@ -7171,15 +7171,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:^26.0.0":
-  version: 26.7.2
-  resolution: "i18next@npm:26.7.2"
+"i18next@npm:^27.0.0":
+  version: 27.0.1
+  resolution: "i18next@npm:27.0.1"
   peerDependencies:
     typescript: ^5 || ^6 || ^7
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10/43bc0c79b4590108c81887dcf0cf583107bf6052fb7d658281fdabb5a8e7304a1869031acab7dd3cfeb267bb445dfa6f967643a39098666fcfdfcb1d9a494b82
+  checksum: 10/643573479ff16505a442bcbf85f6e121ec23cbbd7bfac7bd92c410dd85d5a3857d2ba692ea9204508e3ce1fca14adf8775585b49ebdb9e751ccaadb90656e570
   languageName: node
   linkType: hard
 
@@ -9815,7 +9815,7 @@ __metadata:
     globals: "npm:^17.0.0"
     govuk-frontend: "npm:^5.4.0"
     helmet: "npm:^8.0.0"
-    i18next: "npm:^26.0.0"
+    i18next: "npm:^27.0.0"
     immutable: "npm:5.1.9"
     ioredis: "npm:^6.0.0"
     js-yaml: "npm:^5.0.0"
