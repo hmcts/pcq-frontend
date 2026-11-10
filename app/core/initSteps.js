@@ -49,8 +49,7 @@ const initSteps = (stepLocations, language = 'en') => {
 
 const initI18Next = () => {
     const content = requireDir(module, '../', {include: /resources/});
-    i18next.createInstance();
-    i18next.init(content, (err) => {
+    i18next.init(content, {fallbackLng: 'en'}, (err) => {
         if (err) {
             logger.error(err);
         }
