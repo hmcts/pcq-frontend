@@ -10,6 +10,10 @@
     "allowedVersions": "<5.0.0"
   },
   {
+    "matchPackageNames": ["supertest"],
+    "allowedVersions": "7.3.0"
+  },
+  {
       "groupName": "all patch dependencies",
       "groupSlug": "all-patch",
       "matchUpdateTypes": [
