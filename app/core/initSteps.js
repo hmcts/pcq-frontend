@@ -31,7 +31,7 @@ const initStep = (filePath, language) => {
 };
 
 const initSteps = (stepLocations, language = 'en') => {
-    initI18Next();
+    initI18Next(language);
     const calculatePath = sPath => {
         if ((/index.js$/).test(sPath)) {
             const step = initStep(sPath, language);
@@ -47,9 +47,9 @@ const initSteps = (stepLocations, language = 'en') => {
     return steps;
 };
 
-const initI18Next = () => {
+const initI18Next = (language = 'en') => {
     const content = requireDir(module, '../', {include: /resources/});
-    i18next.init(content, {fallbackLng: 'en'}, (err) => {
+    i18next.init(content, {fallbackLng: language}, (err) => {
         if (err) {
             logger.error(err);
         }
