@@ -1,15 +1,18 @@
-'use strict';
+import {createRequire} from 'node:module';
+import lodash from 'lodash';
+import UIStepRunner from '../runners/UIStepRunner.js';
+import JourneyMap from '../JourneyMap.js';
+import error from '../../components/error.js';
+import config from 'config';
+import ServiceMapper from '../../utils/ServiceMapper.js';
+import FeatureToggle from '../../utils/FeatureToggle.js';
+import utils from '../../components/step-utils.js';
+import moment from 'moment';
+import logger from '../../components/logger.js';
 
-const {mapValues, map, reduce, escape, isObject, isEmpty, forEach, has} = require('lodash');
-const UIStepRunner = require('app/core/runners/UIStepRunner');
-const JourneyMap = require('app/core/JourneyMap');
-const mapErrorsToFields = require('app/components/error').mapErrorsToFields;
-const config = require('config');
-const ServiceMapper = require('app/utils/ServiceMapper');
-const FeatureToggle = require('app/utils/FeatureToggle');
-const utils = require('app/components/step-utils');
-const moment = require('moment');
-const logger = require('app/components/logger');
+const require = createRequire(import.meta.url);
+const {mapValues, map, reduce, escape, isObject, isEmpty, forEach, has} = lodash;
+const {mapErrorsToFields} = error;
 
 class Step {
 
@@ -215,4 +218,5 @@ class Step {
     }
 }
 
-module.exports = Step;
+export default Step;
+export {Step as 'module.exports'};
