@@ -89,7 +89,7 @@ const RAW_RUNTIME_STATE =
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:22.1.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-          ["sonarqube-scanner", "npm:5.0.2"],\
+          ["sonarqube-scanner", "npm:5.1.0"],\
           ["supertest", "npm:7.3.0"],\
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.14"],\
@@ -5938,22 +5938,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["axios", [\
-      ["npm:1.20.0", {\
-        "packageLocation": "./.yarn/cache/axios-npm-1.20.0-0de8ee0ccf-0376b6178b.zip/node_modules/axios/",\
-        "packageDependencies": [\
-          ["axios", "npm:1.20.0"],\
-          ["follow-redirects", "virtual:0de8ee0ccf1cc6d6d0ba568f07319c0f67fa0587ed0ac4847469c623cd8d5cd1beffd54aecdb94df90e216359637d89e7519a1d553a93edace44300538549c89#npm:1.16.2"],\
-          ["form-data", "npm:4.0.6"],\
-          ["https-proxy-agent", "npm:5.0.1"],\
-          ["proxy-from-env", "npm:2.1.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:1.21.0", {\
         "packageLocation": "./.yarn/cache/axios-npm-1.21.0-69fd520960-1d350436e2.zip/node_modules/axios/",\
         "packageDependencies": [\
           ["axios", "npm:1.21.0"],\
-          ["follow-redirects", "virtual:0de8ee0ccf1cc6d6d0ba568f07319c0f67fa0587ed0ac4847469c623cd8d5cd1beffd54aecdb94df90e216359637d89e7519a1d553a93edace44300538549c89#npm:1.16.2"],\
+          ["follow-redirects", "virtual:69fd520960149f72a3b465ab7c853fd7f62af9877540c683a9ade76a8714a7ca1f9ad6b16ebe7bf2d4c28c180f71b5a099479abee1d723fbf142fdc710ee43ce#npm:1.16.2"],\
           ["form-data", "npm:4.0.6"],\
           ["https-proxy-agent", "npm:5.0.1"],\
           ["proxy-from-env", "npm:2.1.0"]\
@@ -8816,12 +8805,12 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:0de8ee0ccf1cc6d6d0ba568f07319c0f67fa0587ed0ac4847469c623cd8d5cd1beffd54aecdb94df90e216359637d89e7519a1d553a93edace44300538549c89#npm:1.16.2", {\
-        "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-58f10f4945/0/cache/follow-redirects-npm-1.16.2-fb70e4b665-3303addfa9.zip/node_modules/follow-redirects/",\
+      ["virtual:69fd520960149f72a3b465ab7c853fd7f62af9877540c683a9ade76a8714a7ca1f9ad6b16ebe7bf2d4c28c180f71b5a099479abee1d723fbf142fdc710ee43ce#npm:1.16.2", {\
+        "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-36833c885a/0/cache/follow-redirects-npm-1.16.2-fb70e4b665-3303addfa9.zip/node_modules/follow-redirects/",\
         "packageDependencies": [\
           ["@types/debug", null],\
           ["debug", null],\
-          ["follow-redirects", "virtual:0de8ee0ccf1cc6d6d0ba568f07319c0f67fa0587ed0ac4847469c623cd8d5cd1beffd54aecdb94df90e216359637d89e7519a1d553a93edace44300538549c89#npm:1.16.2"]\
+          ["follow-redirects", "virtual:69fd520960149f72a3b465ab7c853fd7f62af9877540c683a9ade76a8714a7ca1f9ad6b16ebe7bf2d4c28c180f71b5a099479abee1d723fbf142fdc710ee43ce#npm:1.16.2"]\
         ],\
         "packagePeers": [\
           "@types/debug",\
@@ -11625,10 +11614,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["node-forge", [\
-      ["npm:1.4.0", {\
-        "packageLocation": "./.yarn/cache/node-forge-npm-1.4.0-646822c506-d70fd76976.zip/node_modules/node-forge/",\
+      ["npm:1.4.3", {\
+        "packageLocation": "./.yarn/cache/node-forge-npm-1.4.3-d1bd874493-e0341f8932.zip/node_modules/node-forge/",\
         "packageDependencies": [\
-          ["node-forge", "npm:1.4.0"]\
+          ["node-forge", "npm:1.4.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -12548,7 +12537,7 @@ const RAW_RUNTIME_STATE =
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:22.1.0"],\
           ["sinon-chai", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.7.0"],\
-          ["sonarqube-scanner", "npm:5.0.2"],\
+          ["sonarqube-scanner", "npm:5.1.0"],\
           ["supertest", "npm:7.3.0"],\
           ["test", "link:./test::locator=protected-characteristics-frontend%40workspace%3A."],\
           ["traverse", "npm:0.6.14"],\
@@ -13165,6 +13154,13 @@ const RAW_RUNTIME_STATE =
           ["semver", "npm:7.8.5"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:7.8.6", {\
+        "packageLocation": "./.yarn/cache/semver-npm-7.8.6-233581c96f-76fd62a781.zip/node_modules/semver/",\
+        "packageDependencies": [\
+          ["semver", "npm:7.8.6"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["send", [\
@@ -13447,19 +13443,19 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sonarqube-scanner", [\
-      ["npm:5.0.2", {\
-        "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-5.0.2-f48c0ccd69-e75ece20f9.zip/node_modules/sonarqube-scanner/",\
+      ["npm:5.1.0", {\
+        "packageLocation": "./.yarn/cache/sonarqube-scanner-npm-5.1.0-0d0c7de3a3-e49306a574.zip/node_modules/sonarqube-scanner/",\
         "packageDependencies": [\
           ["adm-zip", "npm:0.6.1"],\
-          ["axios", "npm:1.20.0"],\
+          ["axios", "npm:1.21.0"],\
           ["commander", "npm:15.0.0"],\
           ["hpagent", "npm:1.2.0"],\
-          ["node-forge", "npm:1.4.0"],\
+          ["node-forge", "npm:1.4.3"],\
           ["properties-file", "npm:5.0.7"],\
           ["proxy-from-env", "npm:2.1.0"],\
-          ["semver", "npm:7.8.5"],\
+          ["semver", "npm:7.8.6"],\
           ["slugify", "npm:1.6.9"],\
-          ["sonarqube-scanner", "npm:5.0.2"],\
+          ["sonarqube-scanner", "npm:5.1.0"],\
           ["tar-stream", "npm:3.2.2"]\
         ],\
         "linkType": "HARD"\
