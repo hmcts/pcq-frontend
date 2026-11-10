@@ -36,7 +36,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/properties-volume", "npm:1.4.1"],\
           ["@launchdarkly/node-server-sdk", "npm:9.16.3"],\
           ["@parcel/watcher", "npm:2.6.0"],\
-          ["@playwright/test", "npm:1.64.0"],\
+          ["@playwright/test", "npm:1.65.0"],\
           ["@stryker-mutator/core", "npm:10.1.1"],\
           ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:10.1.1"],\
           ["ajv", "npm:8.20.0"],\
@@ -79,7 +79,7 @@ const RAW_RUNTIME_STATE =
           ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
           ["pa11y", "npm:10.0.0"],\
           ["permissions-policy", "npm:0.6.0"],\
-          ["playwright", "npm:1.64.0"],\
+          ["playwright", "npm:1.65.0"],\
           ["protected-characteristics-frontend", "workspace:."],\
           ["proxyquire", "npm:2.1.3"],\
           ["require-directory", "npm:2.1.1"],\
@@ -1678,7 +1678,7 @@ const RAW_RUNTIME_STATE =
           ["@axe-core/playwright", "virtual:c3e0bafeac5f89dab10f1747596d1b95cea736151fd5b8f109e8dfcdde171be2dcd360a6f26a29bcfe98f3e39568bb09049cdd985956059c3b51827847073a0f#npm:4.13.0"],\
           ["@eslint/js", "npm:9.39.5"],\
           ["@hmcts/playwright-common", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:1.1.7"],\
-          ["@playwright/test", "npm:1.64.0"],\
+          ["@playwright/test", "npm:1.65.0"],\
           ["@types/playwright-core", null],\
           ["@types/playwright__test", null],\
           ["@typescript-eslint/eslint-plugin", "virtual:c3e0bafeac5f89dab10f1747596d1b95cea736151fd5b8f109e8dfcdde171be2dcd360a6f26a29bcfe98f3e39568bb09049cdd985956059c3b51827847073a0f#npm:8.71.2"],\
@@ -4170,11 +4170,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@playwright/test", [\
-      ["npm:1.64.0", {\
-        "packageLocation": "./.yarn/cache/@playwright-test-npm-1.64.0-913f1a3416-150071109a.zip/node_modules/@playwright/test/",\
+      ["npm:1.65.0", {\
+        "packageLocation": "./.yarn/cache/@playwright-test-npm-1.65.0-f72bb587f5-12837b3c86.zip/node_modules/@playwright/test/",\
         "packageDependencies": [\
-          ["@playwright/test", "npm:1.64.0"],\
-          ["playwright", "npm:1.64.0"]\
+          ["@playwright/test", "npm:1.65.0"],\
+          ["playwright", "npm:1.65.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -12294,20 +12294,20 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["playwright", [\
-      ["npm:1.64.0", {\
-        "packageLocation": "./.yarn/cache/playwright-npm-1.64.0-37a301422c-8e68bd0db7.zip/node_modules/playwright/",\
+      ["npm:1.65.0", {\
+        "packageLocation": "./.yarn/cache/playwright-npm-1.65.0-3da210035d-bda489bad0.zip/node_modules/playwright/",\
         "packageDependencies": [\
-          ["playwright", "npm:1.64.0"],\
-          ["playwright-core", "npm:1.64.0"]\
+          ["playwright", "npm:1.65.0"],\
+          ["playwright-core", "npm:1.65.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["playwright-core", [\
-      ["npm:1.64.0", {\
-        "packageLocation": "./.yarn/cache/playwright-core-npm-1.64.0-281d3eefba-38b1c9a4eb.zip/node_modules/playwright-core/",\
+      ["npm:1.65.0", {\
+        "packageLocation": "./.yarn/cache/playwright-core-npm-1.65.0-816b8868d1-77c76725d9.zip/node_modules/playwright-core/",\
         "packageDependencies": [\
-          ["playwright-core", "npm:1.64.0"]\
+          ["playwright-core", "npm:1.65.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -12488,7 +12488,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/properties-volume", "npm:1.4.1"],\
           ["@launchdarkly/node-server-sdk", "npm:9.16.3"],\
           ["@parcel/watcher", "npm:2.6.0"],\
-          ["@playwright/test", "npm:1.64.0"],\
+          ["@playwright/test", "npm:1.65.0"],\
           ["@stryker-mutator/core", "npm:10.1.1"],\
           ["@stryker-mutator/mocha-runner", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:10.1.1"],\
           ["ajv", "npm:8.20.0"],\
@@ -12531,7 +12531,7 @@ const RAW_RUNTIME_STATE =
           ["nunjucks", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:3.2.4"],\
           ["pa11y", "npm:10.0.0"],\
           ["permissions-policy", "npm:0.6.0"],\
-          ["playwright", "npm:1.64.0"],\
+          ["playwright", "npm:1.65.0"],\
           ["protected-characteristics-frontend", "workspace:."],\
           ["proxyquire", "npm:2.1.3"],\
           ["require-directory", "npm:2.1.1"],\
