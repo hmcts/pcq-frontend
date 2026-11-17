@@ -2,10 +2,12 @@
 
 {% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
 {% from "govuk/components/header/macro.njk" import govukHeader %}
+{% from "govuk/components/service-navigation/macro.njk" import govukServiceNavigation %}
 {% from "govuk/components/back-link/macro.njk" import govukBackLink %}
 {% from "govuk/components/footer/macro.njk" import govukFooter %}
 
 {% set htmlLang = language %}
+{% set cspNonce = globals.nonce %}
 
 {% block pageTitle %}
     {% if title == undefined %}
@@ -26,16 +28,20 @@
 
 {% block bodyStart %}
     {% include "includes/tag_manager_nojs.html" %}
-{% endblock %}
-
-{% block header %}
     {% block cookiebanner %}
         {% include "includes/cookie-banner.html" %}
     {% endblock %}
+{% endblock %}
 
+{% block govukHeader %}
     {{ govukHeader({
         homepageUrl: "#",
-        containerClasses: "govuk-width-container",
+        containerClasses: "govuk-width-container"
+    }) }}
+{% endblock %}
+
+{% block govukServiceNavigation %}
+    {{ govukServiceNavigation({
         serviceName: serviceName | safe,
         serviceUrl: (globals.basePath if globals.basePath) + "/"
     }) }}
@@ -60,9 +66,11 @@
     <script src="{{ globals.basePath }}/public/javascripts/back-button.js"></script>
 {% endblock %}
 
-{% block footer %}
+{% block govukFooter %}
     {% include "includes/footer_links.html" %}
+{% endblock %}
 
+{% block footerEnd %}
     <!-- dtrum session properties -->
     {% if app.version %}
         <div id="app_version" style="display: none">{{ app.version }}</div>
