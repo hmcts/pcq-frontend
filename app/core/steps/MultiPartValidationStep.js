@@ -1,7 +1,5 @@
-'use strict';
-
-const ValidationStep = require('app/core/steps/ValidationStep');
-const logger = require('app/components/logger');
+import ValidationStep from './ValidationStep.js';
+import logger from '../../components/logger.js';
 
 class MultiPartValidationStep extends ValidationStep {
     static fields() {
@@ -48,4 +46,5 @@ class MultiPartValidationStep extends ValidationStep {
     }
 }
 
-module.exports = MultiPartValidationStep;
+export default MultiPartValidationStep;
+export {MultiPartValidationStep as 'module.exports'};

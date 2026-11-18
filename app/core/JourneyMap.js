@@ -1,11 +1,12 @@
-'use strict';
+import lodash from 'lodash';
+import {steps} from './initSteps.js';
 
-const {get} = require('lodash');
-const steps = require('app/core/initSteps').steps;
+const {get} = lodash;
 
 class JourneyMap {
-    constructor(journey) {
+    constructor(journey, stepMap = steps) {
         this.journey = journey;
+        this.steps = stepMap;
         if (journey.skipList) {
             this.skipList = journey.skipList;
         }
@@ -24,7 +25,7 @@ class JourneyMap {
             nextStepName = nextStepName[this.nextOptionStep(currentStep, ctx)];
         }
 
-        return this.skipList ? this.skipListNextStep(nextStepName, ctx) : steps[nextStepName];
+        return this.skipList ? this.skipListNextStep(nextStepName, ctx) : this.steps[nextStepName];
     }
 
     skipListNextStep(nextStepName, ctx) {
@@ -42,9 +43,9 @@ class JourneyMap {
                  */
                 return this.skipListNextStep(skipStep.nextStepName, ctx);
             }
-            return this.nextStep(steps[nextStepName], ctx);
+            return this.nextStep(this.steps[nextStepName], ctx);
         }
-        return steps[nextStepName];
+        return this.steps[nextStepName];
     }
 
     stepList() {
@@ -52,4 +53,5 @@ class JourneyMap {
     }
 }
 
-module.exports = JourneyMap;
+export default JourneyMap;
+export {JourneyMap as 'module.exports'};
