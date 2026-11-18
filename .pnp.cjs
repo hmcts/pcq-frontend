@@ -62,7 +62,7 @@ const RAW_RUNTIME_STATE =
           ["express-urlrewrite", "npm:2.0.3"],\
           ["fs-extra", "npm:11.4.1"],\
           ["globals", "npm:17.14.0"],\
-          ["govuk-frontend", "npm:5.14.0"],\
+          ["govuk-frontend", "npm:6.4.0"],\
           ["helmet", "npm:8.3.0"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.7.2"],\
           ["immutable", "npm:5.2.1"],\
@@ -9286,10 +9286,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["govuk-frontend", [\
-      ["npm:5.14.0", {\
-        "packageLocation": "./.yarn/cache/govuk-frontend-npm-5.14.0-921256176a-be321340f4.zip/node_modules/govuk-frontend/",\
+      ["npm:6.4.0", {\
+        "packageLocation": "./.yarn/cache/govuk-frontend-npm-6.4.0-da08d50e9c-e98a24d8e6.zip/node_modules/govuk-frontend/",\
         "packageDependencies": [\
-          ["govuk-frontend", "npm:5.14.0"]\
+          ["govuk-frontend", "npm:6.4.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -12611,7 +12611,7 @@ const RAW_RUNTIME_STATE =
           ["express-urlrewrite", "npm:2.0.3"],\
           ["fs-extra", "npm:11.4.1"],\
           ["globals", "npm:17.14.0"],\
-          ["govuk-frontend", "npm:5.14.0"],\
+          ["govuk-frontend", "npm:6.4.0"],\
           ["helmet", "npm:8.3.0"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.7.2"],\
           ["immutable", "npm:5.2.1"],\

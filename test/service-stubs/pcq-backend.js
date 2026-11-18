@@ -1,12 +1,11 @@
 import config from 'config';
 import express from 'express';
-import bodyParser from 'body-parser';
 const app = express();
 const router = express.Router();
 const BACKEND_PORT = config.services.pcqBackend.port;
 const SUBMIT_ANSWERS_URL = config.services.pcqBackend.paths.forms;
 
-app.use(bodyParser.json());
+app.use(express.json());
 
 router.get('/health/readiness', (req, res) => {
     res.contentType('application/json');
