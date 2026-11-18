@@ -23,7 +23,7 @@ router.get('/service-endpoint', async (req, res) => {
     asyncFetch
         .fetch(frontendHealthUrl, {}, fetchRes => fetchRes.json())
         .then(async json => {
-            if ((json['pcq-backend'] && json['pcq-backend'].status === 'UP') || config.services.pcqBackend.enabled === 'false') {
+            if (json['pcq-backend']?.status === 'UP' || config.services.pcqBackend.enabled === 'false') {
                 // Reject invalid service registrations before any journey selection takes place
                 if (!registerIncomingService(req)) {
                     return res.redirect(`${config.app.basePath}/offline`);
@@ -36,7 +36,7 @@ router.get('/service-endpoint', async (req, res) => {
             }
         })
         .catch(err => {
-            logger.error('Error retrieving app heath: ' + err);
+            logger.error('Error retrieving app health: ' + err);
             serviceDown();
         });
 });

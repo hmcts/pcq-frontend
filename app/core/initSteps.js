@@ -3,7 +3,7 @@
 const requireDir = require('require-directory');
 const i18next = require('i18next');
 const logger = require('app/components/logger')('Init');
-const path = require('path');
+const path = require('node:path');
 const steps = {};
 
 const initStep = (filePath, language) => {

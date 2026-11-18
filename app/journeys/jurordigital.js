@@ -37,4 +37,6 @@ const stepList = {
     ApplicantPregnant: 'EndPage'
 };
 
-export default () => ({stepList});
+const jurorDigitalJourney = () => ({stepList});
+
+export default jurorDigitalJourney;

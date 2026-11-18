@@ -42,9 +42,11 @@ const toggledQuestions = [
     {stepName: 'ApplicantDisabilityImplicationAreas', ftKey: 'ft_sscs_disability_stage_2'},
 ];
 
-export default () => {
+const sscsJourney = () => {
     return {
         stepList,
         toggledQuestions,
     };
 };
+
+export default sscsJourney;

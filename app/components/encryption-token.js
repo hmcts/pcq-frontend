@@ -1,6 +1,6 @@
 'use strict';
 
-const crypto = require('crypto');
+const crypto = require('node:crypto');
 const config = require('config');
 const logger = require('app/components/logger')('Init');
 

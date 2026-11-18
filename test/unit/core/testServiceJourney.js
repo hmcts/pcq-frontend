@@ -29,9 +29,8 @@ for (const file of files) {
                     it('should return the journey step list without skip list', (done) => {
                         const journeyMap = new JourneyMap(serviceJourney);
                         const stepList = journeyMap.stepList();
-                        if (stepList !== null) {
-                            expect(stepList).to.not.contain(skipStepName);
-                        }
+                        expect(stepList).to.be.an('object').that.is.not.empty;
+                        expect(stepList).to.not.contain(skipStepName);
                         done();
                     });
                 });

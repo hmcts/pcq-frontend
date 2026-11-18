@@ -199,5 +199,5 @@ describe('JourneyMap.js', () => {
             expect(stepList).to.deep.equal(defaultJourney.stepList);
             done();
         });
-    });
+     });
 });

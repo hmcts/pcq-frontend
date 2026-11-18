@@ -2,8 +2,11 @@ plugins {
     id 'application'
 }
 
-sourceCompatibility = '21'
-targetCompatibility = '21'
+java {
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(25)
+  }
+}
 
 // tag::repositories[]
 repositories {
@@ -26,7 +29,11 @@ dependencies {
 // end::dependencies[]
 
 task fortifyScan(type: JavaExec)  {
-    main = "uk.gov.hmcts.fortifyclient.FortifyClientMainApp"
+    mainClass = "uk.gov.hmcts.fortifyclient.FortifyClientMainApp"
     classpath += sourceSets.test.runtimeClasspath
     jvmArgs = ['--add-opens=java.base/java.lang.reflect=ALL-UNNAMED']
+}
+
+dependencyLocking {
+  lockAllConfigurations()
 }

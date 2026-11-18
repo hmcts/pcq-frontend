@@ -37,4 +37,6 @@ const stepList = {
     ApplicantPregnant: 'EndPage'
 };
 
-export default () => ({stepList});
+const civilCitizenUiJourney = () => ({stepList});
+
+export default civilCitizenUiJourney;

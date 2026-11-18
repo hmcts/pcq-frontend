@@ -254,6 +254,24 @@ describe('registerIncomingService', () => {
                 });
         });
 
+        it('should redirect to /offline if the backend health check is missing', (done) => {
+            nock('http://localhost:4000')
+                .get('/health')
+                .reply(200, {status: 'UP'});
+            const server = app.init();
+            const agent = request.agent(server.app);
+            agent.get('/service-endpoint')
+                .expect(302)
+                .end((err, res) => {
+                    server.http.close();
+                    if (err) {
+                        throw err;
+                    }
+                    expect(res.header.location).to.equal('/offline');
+                    done();
+                });
+        });
+
         it('should redirect to /start-page if the backend is DOWN and backend \'enabled\' is set to false', (done) => {
             nock('http://localhost:4000')
                 .get('/health')

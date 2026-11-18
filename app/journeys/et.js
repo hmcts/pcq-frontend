@@ -35,4 +35,6 @@ const stepList = {
     ApplicantPregnant: 'EndPage'
 };
 
-export default () => ({stepList});
+const etJourney = () => ({stepList});
+
+export default etJourney;

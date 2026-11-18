@@ -37,4 +37,6 @@ const stepList = {
     ApplicantPregnant: 'EndPage'
 };
 
-export default () => ({stepList});
+const onlinePleaJourney = () => ({stepList});
+
+export default onlinePleaJourney;

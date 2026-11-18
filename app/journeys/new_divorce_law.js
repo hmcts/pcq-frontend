@@ -37,4 +37,6 @@ const stepList = {
     ApplicantPregnant: 'EndPage'
 };
 
-export default () => ({stepList});
+const newDivorceLawJourney = () => ({stepList});
+
+export default newDivorceLawJourney;

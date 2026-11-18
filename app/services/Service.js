@@ -1,9 +1,12 @@
 'use strict';
 
-const logger = require('app/components/logger');
-const config = require('config');
-const formatUrl = require('app/utils/FormatUrl');
-const AsyncFetch = require('app/utils/AsyncFetch');
+import { createRequire } from 'node:module';
+import config from 'config';
+
+const require = createRequire(import.meta.url);
+const logger = require('../components/logger');
+const formatUrl = require('../utils/FormatUrl');
+const AsyncFetch = require('../utils/AsyncFetch');
 const asyncFetch = new AsyncFetch();
 
 class Service {
@@ -14,18 +17,34 @@ class Service {
         this.formatUrl = formatUrl;
     }
 
+    /**
+     * Fetch data via GET request
+     * @returns {Promise}
+     */
     get() {
         throw new ReferenceError('get() must be overridden when extending Service');
     }
 
+    /**
+     * Fetch data via POST request
+     * @returns {Promise}
+     */
     post() {
         throw new ReferenceError('post() must be overridden when extending Service');
     }
 
+    /**
+     * Fetch data via PATCH request
+     * @returns {Promise}
+     */
     patch() {
         throw new ReferenceError('patch() must be overridden when extending Service');
     }
 
+    /**
+     * Fetch data via DELETE request
+     * @returns {Promise}
+     */
     delete() {
         throw new ReferenceError('delete() must be overridden when extending Service');
     }
@@ -80,4 +99,4 @@ class Service {
     }
 }
 
-module.exports = Service;
+export default Service;
