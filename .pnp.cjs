@@ -1742,17 +1742,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@hono/node-server", [\
-      ["npm:2.1.5", {\
-        "packageLocation": "./.yarn/cache/@hono-node-server-npm-2.1.5-d77c4196a1-4b6f21fe37.zip/node_modules/@hono/node-server/",\
+      ["npm:2.1.9", {\
+        "packageLocation": "./.yarn/cache/@hono-node-server-npm-2.1.9-ad03f59ec0-4abe314821.zip/node_modules/@hono/node-server/",\
         "packageDependencies": [\
-          ["@hono/node-server", "npm:2.1.5"]\
+          ["@hono/node-server", "npm:2.1.9"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:cc1564c572d5906136da2071e34c43c1925376e175b992a6c943b92a9aff66ae316831bd5adc30df1216ff297a400513362375923bc0a0f23b6f266d893ebf69#npm:2.1.5", {\
-        "packageLocation": "./.yarn/__virtual__/@hono-node-server-virtual-937c37cc64/0/cache/@hono-node-server-npm-2.1.5-d77c4196a1-4b6f21fe37.zip/node_modules/@hono/node-server/",\
+      ["virtual:cc1564c572d5906136da2071e34c43c1925376e175b992a6c943b92a9aff66ae316831bd5adc30df1216ff297a400513362375923bc0a0f23b6f266d893ebf69#npm:2.1.9", {\
+        "packageLocation": "./.yarn/__virtual__/@hono-node-server-virtual-32197052a9/0/cache/@hono-node-server-npm-2.1.9-ad03f59ec0-4abe314821.zip/node_modules/@hono/node-server/",\
         "packageDependencies": [\
-          ["@hono/node-server", "virtual:cc1564c572d5906136da2071e34c43c1925376e175b992a6c943b92a9aff66ae316831bd5adc30df1216ff297a400513362375923bc0a0f23b6f266d893ebf69#npm:2.1.5"],\
+          ["@hono/node-server", "virtual:cc1564c572d5906136da2071e34c43c1925376e175b992a6c943b92a9aff66ae316831bd5adc30df1216ff297a400513362375923bc0a0f23b6f266d893ebf69#npm:2.1.9"],\
           ["@types/hono", null],\
           ["hono", "npm:4.13.19"]\
         ],\
@@ -2401,7 +2401,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@modelcontextprotocol-sdk-virtual-cc1564c572/0/cache/@modelcontextprotocol-sdk-npm-1.32.1-581278e61d-0078f2782a.zip/node_modules/@modelcontextprotocol/sdk/",\
         "packageDependencies": [\
           ["@cfworker/json-schema", null],\
-          ["@hono/node-server", "virtual:cc1564c572d5906136da2071e34c43c1925376e175b992a6c943b92a9aff66ae316831bd5adc30df1216ff297a400513362375923bc0a0f23b6f266d893ebf69#npm:2.1.5"],\
+          ["@hono/node-server", "virtual:cc1564c572d5906136da2071e34c43c1925376e175b992a6c943b92a9aff66ae316831bd5adc30df1216ff297a400513362375923bc0a0f23b6f266d893ebf69#npm:2.1.9"],\
           ["@modelcontextprotocol/sdk", "virtual:ad6f63088e0c8893c3b1013ad5bb844c950cf9d18641344af4e3adf169d8bd21f2713c19ab811152ab8eba7b834e56c87953ab6335ed037c8d6ffe674ab81d7f#npm:1.32.1"],\
           ["@types/cfworker__json-schema", null],\
           ["@types/zod", null],\
