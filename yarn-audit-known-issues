@@ -1,3 +1,5 @@
+
 {"value":"@opentelemetry/sdk-trace-base","children":{"ID":"@opentelemetry/sdk-trace-base (deprecation)","Issue":"Use @opentelemetry/sdk-trace package","Severity":"moderate","Vulnerable Versions":"2.11.0","Tree Versions":["2.11.0"],"Dependents":["applicationinsights@npm:3.17.1"]}}
 {"value":"@opentelemetry/sdk-trace-node","children":{"ID":"@opentelemetry/sdk-trace-node (deprecation)","Issue":"Use @opentelemetry/sdk-trace package","Severity":"moderate","Vulnerable Versions":"2.11.0","Tree Versions":["2.11.0"],"Dependents":["applicationinsights@npm:3.17.1"]}}
 {"value":"@opentelemetry/sdk-trace-web","children":{"ID":"@opentelemetry/sdk-trace-web (deprecation)","Issue":"Use @opentelemetry/sdk-trace package","Severity":"moderate","Vulnerable Versions":"2.11.0","Tree Versions":["2.11.0"],"Dependents":["@azure/opentelemetry-instrumentation-azure-sdk@npm:1.0.0"]}}
+{"value":"picomatch","children":{"ID":1247710,"Issue":"picomatch vulnerable to ReDoS through single-branch repeated extglobs","URL":"https://github.com/advisories/GHSA-fc5q-39xc-vjpf","Severity":"high","Vulnerable Versions":"<=4.0.7","Tree Versions":["4.0.7"],"Dependents":["@parcel/watcher@npm:2.6.0"]}}
