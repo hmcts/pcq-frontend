@@ -1754,7 +1754,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@hono/node-server", "virtual:cc1564c572d5906136da2071e34c43c1925376e175b992a6c943b92a9aff66ae316831bd5adc30df1216ff297a400513362375923bc0a0f23b6f266d893ebf69#npm:2.1.5"],\
           ["@types/hono", null],\
-          ["hono", "npm:4.13.13"]\
+          ["hono", "npm:4.13.19"]\
         ],\
         "packagePeers": [\
           "@types/hono",\
@@ -2414,7 +2414,7 @@ const RAW_RUNTIME_STATE =
           ["eventsource-parser", "npm:3.1.1"],\
           ["express", "npm:5.2.1"],\
           ["express-rate-limit", "virtual:cc1564c572d5906136da2071e34c43c1925376e175b992a6c943b92a9aff66ae316831bd5adc30df1216ff297a400513362375923bc0a0f23b6f266d893ebf69#npm:8.7.0"],\
-          ["hono", "npm:4.13.13"],\
+          ["hono", "npm:4.13.19"],\
           ["jose", "npm:6.2.12"],\
           ["json-schema-typed", "npm:8.0.2"],\
           ["pkce-challenge", "npm:5.0.1"],\
@@ -9406,10 +9406,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["hono", [\
-      ["npm:4.13.13", {\
-        "packageLocation": "./.yarn/cache/hono-npm-4.13.13-e9e19270aa-1ff038d6ca.zip/node_modules/hono/",\
+      ["npm:4.13.19", {\
+        "packageLocation": "./.yarn/cache/hono-npm-4.13.19-675d7b5b3f-6412590d31.zip/node_modules/hono/",\
         "packageDependencies": [\
-          ["hono", "npm:4.13.13"]\
+          ["hono", "npm:4.13.19"]\
         ],\
         "linkType": "HARD"\
       }]\
