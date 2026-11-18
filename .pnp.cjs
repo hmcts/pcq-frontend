@@ -65,7 +65,7 @@ const RAW_RUNTIME_STATE =
           ["govuk-frontend", "npm:5.14.0"],\
           ["helmet", "npm:8.3.0"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.7.2"],\
-          ["immutable", "npm:5.1.10"],\
+          ["immutable", "npm:5.2.1"],\
           ["ioredis", "npm:6.0.0"],\
           ["js-yaml", "npm:5.5.0"],\
           ["jsonwebtoken", "npm:9.0.3"],\
@@ -9633,17 +9633,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["immutable", [\
-      ["npm:5.1.10", {\
-        "packageLocation": "./.yarn/cache/immutable-npm-5.1.10-5fa420e338-2f96ba9546.zip/node_modules/immutable/",\
-        "packageDependencies": [\
-          ["immutable", "npm:5.1.10"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:5.1.9", {\
         "packageLocation": "./.yarn/cache/immutable-npm-5.1.9-35365e455d-dc61ea6f79.zip/node_modules/immutable/",\
         "packageDependencies": [\
           ["immutable", "npm:5.1.9"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:5.2.1", {\
+        "packageLocation": "./.yarn/cache/immutable-npm-5.2.1-1b9374055f-0ff0f0afdc.zip/node_modules/immutable/",\
+        "packageDependencies": [\
+          ["immutable", "npm:5.2.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -12614,7 +12614,7 @@ const RAW_RUNTIME_STATE =
           ["govuk-frontend", "npm:5.14.0"],\
           ["helmet", "npm:8.3.0"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.7.2"],\
-          ["immutable", "npm:5.1.10"],\
+          ["immutable", "npm:5.2.1"],\
           ["ioredis", "npm:6.0.0"],\
           ["js-yaml", "npm:5.5.0"],\
           ["jsonwebtoken", "npm:9.0.3"],\
