@@ -35,8 +35,7 @@
 
 {% block govukHeader %}
     {{ govukHeader({
-        homepageUrl: "#",
-        containerClasses: "govuk-width-container"
+        homepageUrl: "#"
     }) }}
 {% endblock %}
 
@@ -47,14 +46,17 @@
     }) }}
 {% endblock %}
 
-{% block beforeContent %}
+{% block headerEnd %}
     {{ govukPhaseBanner({
+        classes: "govuk-width-container",
         tag: {
             text: common.phase | safe
         },
         html: (common.feedback + common.languageToggle) | replace("{smartSurveyFeedbackUrl}", globals.links.survey) | replace("{currentPageUrl}", pageUrl) | safe
     }) }}
+{% endblock %}
 
+{% block containerStart %}
     {{ govukBackLink({
         text: common.back | safe,
         href: "#",
