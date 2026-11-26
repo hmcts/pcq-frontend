@@ -34,7 +34,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/playwright-common", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:1.1.7"],\
           ["@hmcts/properties-volume", "npm:1.4.1"],\
-          ["@launchdarkly/node-server-sdk", "npm:9.16.5"],\
+          ["@launchdarkly/node-server-sdk", "npm:9.17.1"],\
           ["@parcel/watcher", "npm:2.6.0"],\
           ["@playwright/test", "npm:1.65.1"],\
           ["@stryker-mutator/core", "npm:10.1.1"],\
@@ -2340,41 +2340,41 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@launchdarkly/eventsource", [\
-      ["npm:0.2.4", {\
-        "packageLocation": "./.yarn/cache/@launchdarkly-eventsource-npm-0.2.4-fb27b0950e-021f58c561.zip/node_modules/@launchdarkly/eventsource/",\
+      ["npm:0.2.5", {\
+        "packageLocation": "./.yarn/cache/@launchdarkly-eventsource-npm-0.2.5-6cda31c1eb-d622e2b0a2.zip/node_modules/@launchdarkly/eventsource/",\
         "packageDependencies": [\
-          ["@launchdarkly/eventsource", "npm:0.2.4"]\
+          ["@launchdarkly/eventsource", "npm:0.2.5"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@launchdarkly/js-sdk-common", [\
-      ["npm:2.32.2", {\
-        "packageLocation": "./.yarn/cache/@launchdarkly-js-sdk-common-npm-2.32.2-19b315e98c-3dc1fc2f2c.zip/node_modules/@launchdarkly/js-sdk-common/",\
+      ["npm:2.32.3", {\
+        "packageLocation": "./.yarn/cache/@launchdarkly-js-sdk-common-npm-2.32.3-a7188a0731-f164b921a4.zip/node_modules/@launchdarkly/js-sdk-common/",\
         "packageDependencies": [\
-          ["@launchdarkly/js-sdk-common", "npm:2.32.2"]\
+          ["@launchdarkly/js-sdk-common", "npm:2.32.3"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@launchdarkly/js-server-sdk-common", [\
-      ["npm:2.26.5", {\
-        "packageLocation": "./.yarn/cache/@launchdarkly-js-server-sdk-common-npm-2.26.5-4bcafea330-3408b1c2a1.zip/node_modules/@launchdarkly/js-server-sdk-common/",\
+      ["npm:2.26.8", {\
+        "packageLocation": "./.yarn/cache/@launchdarkly-js-server-sdk-common-npm-2.26.8-dc200fe9fe-ed056dc1ce.zip/node_modules/@launchdarkly/js-server-sdk-common/",\
         "packageDependencies": [\
-          ["@launchdarkly/js-sdk-common", "npm:2.32.2"],\
-          ["@launchdarkly/js-server-sdk-common", "npm:2.26.5"],\
+          ["@launchdarkly/js-sdk-common", "npm:2.32.3"],\
+          ["@launchdarkly/js-server-sdk-common", "npm:2.26.8"],\
           ["semver", "npm:7.5.4"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@launchdarkly/node-server-sdk", [\
-      ["npm:9.16.5", {\
-        "packageLocation": "./.yarn/cache/@launchdarkly-node-server-sdk-npm-9.16.5-ab1842fdc2-1244f25eca.zip/node_modules/@launchdarkly/node-server-sdk/",\
+      ["npm:9.17.1", {\
+        "packageLocation": "./.yarn/cache/@launchdarkly-node-server-sdk-npm-9.17.1-516b7224e9-8661653529.zip/node_modules/@launchdarkly/node-server-sdk/",\
         "packageDependencies": [\
-          ["@launchdarkly/eventsource", "npm:0.2.4"],\
-          ["@launchdarkly/js-server-sdk-common", "npm:2.26.5"],\
-          ["@launchdarkly/node-server-sdk", "npm:9.16.5"],\
+          ["@launchdarkly/eventsource", "npm:0.2.5"],\
+          ["@launchdarkly/js-server-sdk-common", "npm:2.26.8"],\
+          ["@launchdarkly/node-server-sdk", "npm:9.17.1"],\
           ["https-proxy-agent", "npm:7.0.6"]\
         ],\
         "linkType": "HARD"\
@@ -12583,7 +12583,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/playwright-common", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:1.1.7"],\
           ["@hmcts/properties-volume", "npm:1.4.1"],\
-          ["@launchdarkly/node-server-sdk", "npm:9.16.5"],\
+          ["@launchdarkly/node-server-sdk", "npm:9.17.1"],\
           ["@parcel/watcher", "npm:2.6.0"],\
           ["@playwright/test", "npm:1.65.1"],\
           ["@stryker-mutator/core", "npm:10.1.1"],\
