@@ -66,7 +66,7 @@ const RAW_RUNTIME_STATE =
           ["helmet", "npm:8.3.0"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.7.2"],\
           ["immutable", "npm:5.2.1"],\
-          ["ioredis", "npm:6.0.0"],\
+          ["ioredis", "npm:6.1.0"],\
           ["js-yaml", "npm:5.5.0"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["lodash", "npm:4.18.1"],\
@@ -2177,10 +2177,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@ioredis/commands", [\
-      ["npm:2.0.0", {\
-        "packageLocation": "./.yarn/cache/@ioredis-commands-npm-2.0.0-d3a65b0c9e-03c0e0735a.zip/node_modules/@ioredis/commands/",\
+      ["npm:2.4.0", {\
+        "packageLocation": "./.yarn/cache/@ioredis-commands-npm-2.4.0-468158d32a-b9454a5d32.zip/node_modules/@ioredis/commands/",\
         "packageDependencies": [\
-          ["@ioredis/commands", "npm:2.0.0"]\
+          ["@ioredis/commands", "npm:2.4.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6813,15 +6813,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["cluster-key-slot", [\
-      ["npm:1.1.1", {\
-        "packageLocation": "./.yarn/cache/cluster-key-slot-npm-1.1.1-95cf628278-2b926e8ebe.zip/node_modules/cluster-key-slot/",\
-        "packageDependencies": [\
-          ["cluster-key-slot", "npm:1.1.1"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["co", [\
       ["npm:4.6.0", {\
         "packageLocation": "./.yarn/cache/co-npm-4.6.0-03f2d1feb6-a5d9f37091.zip/node_modules/co/",\
@@ -9779,14 +9770,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["ioredis", [\
-      ["npm:6.0.0", {\
-        "packageLocation": "./.yarn/cache/ioredis-npm-6.0.0-ca28410308-afd383b034.zip/node_modules/ioredis/",\
+      ["npm:6.1.0", {\
+        "packageLocation": "./.yarn/cache/ioredis-npm-6.1.0-82cc9715e4-82a136edd7.zip/node_modules/ioredis/",\
         "packageDependencies": [\
-          ["@ioredis/commands", "npm:2.0.0"],\
-          ["cluster-key-slot", "npm:1.1.1"],\
+          ["@ioredis/commands", "npm:2.4.0"],\
           ["debug", "virtual:643ed7cc338bcf145a82d8b05b3bef6bcf150ca545df386225596f10ce53cc90b88b3ca83e348ade1ccea5f3f8e76c92d2f0e2ba544da60d40aff9921c56872d#npm:4.4.3"],\
           ["denque", "npm:2.1.0"],\
-          ["ioredis", "npm:6.0.0"],\
+          ["ioredis", "npm:6.1.0"],\
           ["redis-errors", "npm:1.2.0"],\
           ["standard-as-callback", "npm:2.1.0"]\
         ],\
@@ -12607,7 +12597,7 @@ const RAW_RUNTIME_STATE =
           ["helmet", "npm:8.3.0"],\
           ["i18next", "virtual:4988fc10d27710cdb3e57dc0e556fd1d3b78e0a4d35d5725b1ddaa965a40cf5f6ea242a6d7b282a5264da04a4e9f3a153d26f33d87257cd2a848cb2105ced64c#npm:26.7.2"],\
           ["immutable", "npm:5.2.1"],\
-          ["ioredis", "npm:6.0.0"],\
+          ["ioredis", "npm:6.1.0"],\
           ["js-yaml", "npm:5.5.0"],\
           ["jsonwebtoken", "npm:9.0.3"],\
           ["lodash", "npm:4.18.1"],\
