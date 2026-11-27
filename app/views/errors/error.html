@@ -13,11 +13,14 @@
     </div>
 {% endblock %}
 
-{% block beforeContent %}
+{% block headerEnd %}
     {{ govukPhaseBanner({
+        classes: "govuk-width-container",
         tag: {
             text: common.phase | safe
         },
         html: common.feedback | replace("{smartSurveyFeedbackUrl}", globals.links.survey) | replace("{currentPageUrl}", error) | safe
     }) }}
 {% endblock %}
+
+{% block containerStart %}{% endblock %}

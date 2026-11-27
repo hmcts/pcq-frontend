@@ -1,7 +1,7 @@
 {
   "name": "protected-characteristics-frontend",
   "description": "Protected Characteristics web app",
-  "version": "1.2.327",
+  "version": "1.2.328",
   "license": "MIT",
   "engines": {
     "node": ">=24.0.0"
@@ -17,7 +17,6 @@
     "start:dev": "concurrently --kill-others --names sass,server \"yarn sass:watch\" \"NODE_ENV=dev NODE_PATH=. nodemon -e js,json --watch 'app/' --watch 'test/' -x 'node server.js'\"",
     "sass:watch": "NODE_PATH=. sass --load-path=public --watch app/assets/sass/application.scss:public/stylesheets/application.css --quiet --style expanded --source-map",
     "sass": "NODE_PATH=. sass --load-path=public app/assets/sass/application.scss:public/stylesheets/application.css --quiet --style expanded --source-map",
-    "sass-ie8": "NODE_PATH=. sass --load-path=public app/assets/sass/application-ie8.scss:public/stylesheets/application.css --quiet --style expanded --source-map",
     "test:all": "NODE_ENV=testing yarn test -- $@ && yarn test:mutation -- $@ && yarn test:component -- $@  && yarn test:smoke -- $@ && yarn test:functional -- $@ && yarn test:a11y -- $@ ",
     "test": "yarn test:unit -- $@ && yarn test:component -- $@",
     "test:unit": "NODE_ENV=testing ALLOW_CONFIG_MUTATIONS=true NODE_PATH=. LOG_LEVEL=error c8 mocha test/unit --reporter spec --recursive --timeout 10000",
@@ -61,7 +60,7 @@
     "express": "^5.0.0",
     "express-session": "^1.18.2",
     "express-urlrewrite": "^2.0.1",
-    "govuk-frontend": "^5.4.0",
+    "govuk-frontend": "6.4.0",
     "helmet": "^8.0.0",
     "i18next": "^26.0.0",
     "ioredis": "^6.0.0",
